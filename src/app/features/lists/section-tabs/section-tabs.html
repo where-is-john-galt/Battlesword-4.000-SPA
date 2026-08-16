@@ -1,0 +1,12 @@
+<nav class="tabs" aria-label="Kategorie">
+  @for (category of section().categories; track category.path) {
+    <a
+      class="tabs__link"
+      [routerLink]="['/' + section().path, category.path]"
+      routerLinkActive="tabs__link--active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      {{ category.label }}
+    </a>
+  }
+</nav>

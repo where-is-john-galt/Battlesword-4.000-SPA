@@ -1,0 +1,26 @@
+.pred {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pred__group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pred__label {
+  color: var(--color-bronze);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.pred__values {
+  color: var(--color-ink-muted);
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  line-height: 1.4;
+}

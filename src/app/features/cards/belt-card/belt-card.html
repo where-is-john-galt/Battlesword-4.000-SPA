@@ -1,0 +1,24 @@
+<app-card-shell [type]="'belt'" [id]="belt().id">
+  <a class="card-title" [routerLink]="['/karta', 'belt', belt().id]">{{ belt().name }}</a>
+
+  <div class="card-section">
+    @if (belt().requiredWealth !== undefined) {
+      <div class="stat">
+        <span class="stat__label">Majętność</span>
+        <span class="stat__value">{{ belt().requiredWealth }}</span>
+      </div>
+    }
+    @if (belt().handItemSlots !== undefined) {
+      <div class="stat">
+        <span class="stat__label">Slotów na przedmioty</span>
+        <span class="stat__value">{{ belt().handItemSlots }}</span>
+      </div>
+    }
+    @if (belt().effect) {
+      <div class="stat">
+        <span class="stat__label">Efekt</span>
+        <span class="stat__value">{{ belt().effect }}</span>
+      </div>
+    }
+  </div>
+</app-card-shell>

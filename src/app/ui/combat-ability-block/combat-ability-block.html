@@ -1,0 +1,38 @@
+@let a = ability();
+
+<div class="combat">
+  <div class="combat__head">
+    <h4 class="combat__name">{{ a.name }}</h4>
+    @if (a.purchaseCost) {
+      <span class="combat__cost">{{ a.purchaseCost }}</span>
+    }
+  </div>
+
+  @if (metaItems().length) {
+    <div class="combat__meta">
+      @for (item of metaItems(); track item) {
+        <span class="combat__meta-item">{{ item }}</span>
+      }
+    </div>
+  }
+
+  @if (a.requirements?.length) {
+    <p class="combat__requirements">Wymagania: {{ a.requirements.join(', ') }}</p>
+  }
+
+  @if (a.activationCost?.length) {
+    <p class="combat__cost-line">Koszt: {{ a.activationCost.join(', ') }}</p>
+  }
+
+  @if (a.description) {
+    <p class="combat__desc">{{ a.description }}</p>
+  }
+
+  @if (a.enhancements?.length) {
+    <ul class="combat__enhancements">
+      @for (enh of a.enhancements; track enh) {
+        <li>{{ enh }}</li>
+      }
+    </ul>
+  }
+</div>

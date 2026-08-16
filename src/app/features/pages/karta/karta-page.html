@@ -1,0 +1,15 @@
+@if (!isValidType()) {
+  <p class="karta__status">Nieznany typ pozycji.</p>
+} @else if (loading()) {
+  <p class="karta__status">Ładowanie…</p>
+} @else if (entry()) {
+  <nav class="karta__crumb" aria-label="Okruszki">
+    <a [routerLink]="'/' + meta()!.section">{{ meta()!.sectionLabel }}</a>
+    <span class="karta__sep">/</span>
+    <span>{{ meta()!.categoryLabel }}</span>
+  </nav>
+  <app-deco-line />
+  <app-entity-card [type]="type()" [entry]="entry()!" />
+} @else {
+  <p class="karta__status">Nie znaleziono pozycji.</p>
+}

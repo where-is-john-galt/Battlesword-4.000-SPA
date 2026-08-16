@@ -1,0 +1,10 @@
+<app-frame>
+  <div class="card">
+    <div class="card__favorite">
+      <app-favorite-button [type]="type()" [id]="id()" />
+    </div>
+    <div class="card__body">
+      <ng-content />
+    </div>
+  </div>
+</app-frame>

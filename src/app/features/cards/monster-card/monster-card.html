@@ -1,0 +1,87 @@
+@let m = monster();
+
+<app-card-shell [type]="'monster'" [id]="m.id">
+  <a class="card-title" [routerLink]="['/karta', 'monster', m.id]">{{ m.name }}</a>
+
+  <div class="chip-row">
+    @if (m.tier) {
+      <app-tag [label]="m.tier" variant="gold" />
+    }
+    @if (m.size) {
+      <app-tag [label]="m.size" variant="muted" />
+    }
+    @for (tag of m.tags ?? []; track tag) {
+      <app-tag [label]="tag" />
+    }
+  </div>
+
+  <div class="card-section">
+    @if (m.hp) {
+      <div class="stat">
+        <span class="stat__label">HP</span>
+        <span class="stat__value">{{ m.hp }}</span>
+      </div>
+    }
+    @if (m.armor) {
+      <div class="stat">
+        <span class="stat__label">Pancerz</span>
+        <span class="stat__value">{{ m.armor }}</span>
+      </div>
+    }
+  </div>
+
+  @if (m.resistances?.length) {
+    <div class="card-section">
+      <span class="card-over">Odporności</span>
+      <div class="chip-row">
+        @for (resistance of m.resistances; track resistance) {
+          <app-tag [label]="resistance" variant="gold" />
+        }
+      </div>
+    </div>
+  }
+
+  @if (m.vulnerabilities?.length) {
+    <div class="card-section">
+      <span class="card-over">Podatności</span>
+      <div class="chip-row">
+        @for (vulnerability of m.vulnerabilities; track vulnerability) {
+          <app-tag [label]="vulnerability" variant="danger" />
+        }
+      </div>
+    </div>
+  }
+
+  @if (m.traits?.length) {
+    <div class="card-section">
+      <span class="card-over">Cechy</span>
+      @for (trait of m.traits; track trait) {
+        <app-ability-block [ability]="trait" />
+      }
+    </div>
+  }
+
+  @if (m.actions?.length) {
+    <div class="card-section">
+      <span class="card-over">Akcje</span>
+      @for (action of m.actions; track action) {
+        <div class="monster-action">
+          <div class="monster-action__head">
+            <h4 class="monster-action__name">{{ action.name }}</h4>
+            <span class="monster-action__meta">
+              @if (action.range) {
+                {{ action.range }}
+              }
+              @if (action.test) {
+                · test: {{ action.test }}
+              }
+            </span>
+          </div>
+          @if (action.effect) {
+            <p class="monster-action__effect">{{ action.effect }}</p>
+          }
+        </div>
+      }
+    </div>
+  }
+</app-card-shell>

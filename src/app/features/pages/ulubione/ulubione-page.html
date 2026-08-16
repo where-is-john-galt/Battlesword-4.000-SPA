@@ -1,0 +1,23 @@
+<app-heading text="Ulubione" />
+<app-deco-line />
+
+@if (items().length) {
+  @for (group of groups(); track group.label) {
+    <div class="fav__group">
+      <span class="card-over">{{ group.label }}</span>
+      <ul class="fav__list">
+        @for (item of group.items; track item.ref.type + ':' + item.ref.id) {
+          <li class="fav__item">
+            <a class="fav__name" [routerLink]="['/karta', item.ref.type, item.ref.id]">
+              {{ item.entry.name }}
+            </a>
+            <span class="fav__category">{{ typeMetaLabel(item.ref.type) }}</span>
+            <app-favorite-button [type]="item.ref.type" [id]="item.ref.id" />
+          </li>
+        }
+      </ul>
+    </div>
+  }
+} @else {
+  <p class="fav__empty">Nie masz jeszcze żadnych ulubionych pozycji.</p>
+}

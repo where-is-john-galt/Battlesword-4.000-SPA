@@ -1,0 +1,62 @@
+<header class="shell__header">
+  <div class="shell__bar">
+    <a class="shell__brand" routerLink="/">
+      <span class="shell__brand-title">Battlesword</span>
+      <span class="shell__brand-sub">4.000 · Kompendium</span>
+    </a>
+
+    <nav class="shell__nav" aria-label="Nawigacja główna">
+      @for (item of navItems; track item.path) {
+        <a
+          class="shell__link"
+          [routerLink]="item.path"
+          routerLinkActive="shell__link--active"
+        >
+          {{ item.label }}
+        </a>
+      }
+    </nav>
+
+    <div class="shell__search">
+      <app-search-input (submitted)="onSearch($event)" />
+    </div>
+
+    <button
+      class="shell__burger"
+      type="button"
+      (click)="menuOpen.set(!menuOpen())"
+      [attr.aria-expanded]="menuOpen()"
+      aria-label="Menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+@if (menuOpen()) {
+  <div class="shell__overlay">
+    <nav class="shell__overlay-nav" aria-label="Nawigacja mobilna">
+      @for (item of navItems; track item.path) {
+        <a
+          class="shell__overlay-link"
+          [routerLink]="item.path"
+          routerLinkActive="shell__overlay-link--active"
+          (click)="menuOpen.set(false)"
+        >
+          {{ item.label }}
+        </a>
+      }
+    </nav>
+    <app-search-input (submitted)="onSearch($event)" />
+  </div>
+}
+
+<main class="shell__main">
+  <router-outlet />
+</main>
+
+<footer class="shell__footer">
+  <span>Battlesword 4.000 Kompendium</span>
+</footer>

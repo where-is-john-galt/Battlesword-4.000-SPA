@@ -7,19 +7,25 @@ informacji o systemie.
 Źródłem prawdy o zasadach jest submodule `Battlesword-4.000/` (pliki Markdown). Aplikacja **nie**
 zastępuje tych plików — jest warstwą prezentacyjną na ich bazie.
 
+> **Aktualny status:** dane zostały już wyekstrahowane z submodułu do ustrukturyzowanych plików
+> **JSON** w `src/assets/data/` (rasy, profesje, klasy, perki, ekwipunek, bestiariusz, glosariusz
+> oraz zagregowany indeks `index.json`). Aplikacja **nie czyta już Markdowna** — konsumuje te pliki
+> JSON jako statyczne assety. Kompendium to jedyna planowana sekcja aplikacji.
+
 Zakres celowo **ograniczony do kompendium**: bez kreatora postaci, bez cyfrowej karty postaci, bez
-kalkulatorów i trackerów walki. To leksykon i podręcznik referencyjny.
+kalkulatorów i trackerów walki, bez przeglądarki zasad w formie renderowanego Markdowna. To leksykon
+i podręcznik referencyjny oparty na gotowych danych JSON.
 
 ---
 
 ## 1. Cel i filozofia
 
-- **Podręcznik online** — czytelne, nawigowalne zasady zamiast surowych plików `.md`.
 - **Kompendium treści** — rasy, profesje, klasy, perki, ekwipunek i bestiariusz jako przeglądalne,
   filtrowalne karty.
-- **Szybkie wyszukiwanie** — znalezienie reguły, statystyki, broni czy przeciwnika w kilka sekund.
-- **Zawsze aktualne** — treść generowana z submodułu, dzięki czemu zmiany zasad upstream są widoczne
-  po aktualizacji submodułu.
+- **Szybkie wyszukiwanie** — znalezienie statystyki, broni czy przeciwnika w kilka sekund.
+- **Glosariusz** — definicje pojęć z tooltipami podpiętymi pod całą aplikację.
+- **Zawsze aktualne** — treść pochodzi z wygenerowanych plików JSON, dzięki czemu zmiany zasad
+  upstream są widoczne po ponownej generacji danych i aktualizacji submodułu.
 
 Ton: klimatyczny, dark-fantasy (spójny z `docs/DESIGN.md`, inspiracja Baldur's Gate 3), ale z
 priorytetem czytelności — to narzędzie referencyjne, nie wizytówka.
@@ -28,46 +34,24 @@ priorytetem czytelności — to narzędzie referencyjne, nie wizytówka.
 
 ## 2. Architektura informacji
 
-Podział na sekcje odpowiadające strukturze submodułu:
+Podział na sekcje odpowiadające kategoriom wygenerowanych danych:
 
-| Sekcja | Zawartość (źródło w submodule) |
-|--------|--------------------------------|
-| **Zasady / Podręcznik** | `mechaniki_bazowe/` — testy, statystyki, rozwój postaci, poczytalność, mądrość, sława, szczęście, crafting, przerwy między przygodami; oraz `tworzenie_postaci/tworzenie_postaci.md` — proces tworzenia postaci |
-| **Walka** | `walka/` — akcje, inicjatywa, ruch, rzuty na atak, obrażenia i śmierć, statusy, morale, miniony, skradanie, dual wielding, typy terenów, pojazdy i wierzchowce |
-| **Postać** | `tworzenie_postaci/` — rasy, profesje, klasy, perki |
-| **Ekwipunek** | `ekwipunek/` — broń, pancerze, paski, przedmioty podręczne, majętność, reszta ekwipunku |
-| **Bestiariusz** | `bestiariusz/` — rodzaje oponentów, statblocki (nieumarli, zwierzaki) |
-| **Patch notes** | `patch_notes.md`, `TODO` — kronika zmian i roadmapa systemu |
-| **Ulubione** | — (wybór użytkownika, zapis w localStorage; nie pochodzi z submodułu) |
+| Sekcja | Zawartość (plik JSON w `src/assets/data/`) |
+|--------|--------------------------------------------|
+| **Postać** | `rasy.json`, `profesje.json`, `klasy.json`, `perki.json` |
+| **Ekwipunek** | `bron.json`, `pancerze.json`, `paski.json`, `przedmioty_podreczne.json`, `przedmioty_magiczne.json`, `reszta_ekwipunku.json` |
+| **Bestiariusz** | `bestiariusz.json` — statblocki (Trep/Elita/Mistrz/Boss) |
+| **Glosariusz** | `glosariusz.json` — pojęcia typu „Bramy Śmierci", „ułatwienie", „Bariera", „Majętność" |
+| **Ulubione** | — (wybór użytkownika, zapis w localStorage; nie pochodzi z danych) |
 
-Dodatkowo: **glosariusz** pojęć typu „Bramy Śmierci", „ułatwienie", „obrażenia eskalujące",
-„Bariera", „Majętność" — z tooltipami podpiętymi pod całą aplikację.
-
-**Dlaczego „Tworzenie postaci" nie jest osobną sekcją:** katalog `tworzenie_postaci/` w submodule
-miesza dwie rzeczy — jednorazowy **proces** tworzenia (plik `tworzenie_postaci.md`) oraz **opcje
-postaci** (rasy, profesje, klasy, perki), z których gracz korzysta przez cały cykl życia bohatera:
-przy tworzeniu, przy rozwoju (wydawanie PD na perki/umiejętności) i w trakcie gry (cechy pasywne,
-umiejętności bojowe, wyposażenie). Dlatego w nawigacji je rozdzielamy:
-
-- **proces tworzenia** → sekcja *Zasady / Podręcznik* (to reguła, nie treść referencyjna),
-- **opcje postaci** → sekcja *Postać* jako stałe, przeszukiwalne kompendium opcji.
+Wszystkie pozycje są też dostępne przez zagregowany indeks `index.json` (id, typ, nazwa, źródło,
+status `detailed`/`stub`), który napędza wyszukiwarkę i listy.
 
 ---
 
 ## 3. Funkcje szczegółowe
 
-### 3.1. Podręcznik (przeglądarka zasad)
-
-- Renderowanie plików Markdown z submodułu z **nawigacją boczną** (drzewo katalogów).
-- **Wyszukiwarka pełnotekstowa** po wszystkich zasadach (np. fraza „pochwycenie" → trafienia w
-  `stamina_mana_i_podsatwowe_ataki.md`, `statusy.md` itd.).
-- **Linkowanie krzyżowe**: pojęcia (statystyki, statusy, bronie, klasy, perki) są automatycznie
-  wykrywane i linkują do definicji / karty obiektu.
-- **Tooltipy glosariusza** na terminach (np. „ułatwienie" = „rzut 2k20, wybierasz lepszy").
-- Czytelne oznaczenia bloków: poziomy trudności, tabele rzutów (k100 crafting, delirium), listy
-  wzmocnień kosztujących Staminę/Manę.
-
-### 3.2. Kompendium (karty obiektów)
+### 3.1. Kompendium (karty obiektów)
 
 - **Rasy** — karty z bonusami, rozmiarem, cechą pasywną i umiejętnością aktywną.
 - **Profesje** — karty z predyspozycjami, majętnością/sławą, cechami, wyposażeniem startowym i
@@ -75,68 +59,51 @@ umiejętności bojowe, wyposażenie). Dlatego w nawigacji je rozdzielamy:
 - **Klasy** — karty pogrupowane po archetypach, z predyspozycjami, umiejętnościami bojowymi,
   uzbrojeniem i sposobem liczenia PŻ.
 - **Perki** — karty z wymaganiami, kosztem PD i opisem.
-- **Ekwipunek** — broń, pancerze, paski, przedmioty podręczne jako filtrowalne/sortowalne tabele
-  (typ broni, bazowa statystyka, użycie, wymagana majętność).
+- **Ekwipunek** — broń, pancerze, paski, przedmioty podręczne i magiczne jako filtrowalne/sortowalne
+  tabele (typ broni, bazowa statystyka, użycie, wymagana majętność).
 - **Bestiariusz** — statblocki (typ, tagi, odporności/podatności, HP, pancerz, akcje) w czytelnej
   formie; filtrowanie po typie (Trep/Elita/Mistrz/Boss) i tagach.
+- **Glosariusz** — karty terminów z definicjami; tooltipy podpięte pod nazwy obiektów w całej
+  aplikacji.
 
 Każda karta obiektu posiada **filtry** (np. klasy wg archetypu, broń wg bazowej statystyki) oraz
 **linkowanie krzyżowe** do powiązanych obiektów (profesja → predyspozycje, klasa → archetyp).
 
+### 3.2. Wyszukiwarka
+
+- Wyszukiwanie pełnotekstowe po `index.json` (nazwy obiektów, kategorie, tagi, statusy).
+- Wyniki pogrupowane wg typu encji z linkami do kart.
+
 ### 3.3. Ulubione
 
-- Każda pozycja (zasada, karta rasy/profesji/klasy/perku, element ekwipunku, statblock, wpis
-  patch notes) ma przycisk **dodania do ulubionych** (ikona gwiazdki/serducha).
+- Każda pozycja (karta rasy/profesji/klasy/perku, element ekwipunku, statblock, termin glosariusza)
+  ma przycisk **dodania do ulubionych** (ikona gwiazdki/serducha).
 - Osobna **zakładka Ulubione** agreguje wszystkie zapisane pozycje, z możliwością grupowania wg
   sekcji oraz usuwania pojedynczych wpisów.
 - Ulubione są **trwałe**: zapisywane w `localStorage` (identyfikatory pozycji + typ), więc
   przetrwają odświeżenie i kolejne sesje na tym samym urządzeniu/przeglądarce.
 - Opcjonalnie: sortowanie wg daty dodania, kolejność ręczna (przeciąganie) w przyszłości.
 
-### 3.4. Patch notes / roadmap
-
-- Kronika zmian (`patch_notes.md`) i status prac (`TODO`) w formie listy wersji z filtrem.
-
 ---
 
 ## 4. Podejście do danych
 
-Kluczowa decyzja architektoniczna: **jak zamienić Markdown submodułu na dane aplikacji**.
+Kluczowa decyzja architektoniczna została już podjęta i zrealizowana: **dane są wygenerowane i
+commitowane jako JSON**, a aplikacja nie dotyka Markdowna w runtime.
 
-- Submoduł jest źródłem prawdy i **nie może być edytowany** z tego repo.
-- Strategia: **opencode (zainstalowany w devcontainerze) konwertuje Markdown → ustrukturyzowany
-  JSON**, w procesie *offline* (jednorazowo lub przy aktualizacji submodułu), a nie w runtime. Wynik
-  zapisywany jako pliki JSON/TS w `src/assets/data/` (lub generowane moduły TS) i **commitowany do
-  repo**.
-- Dla plików tabelarycznych (broń, pancerze, paski, przedmioty podręczne, wierzchowce, pojazdy) —
-  mapowanie tabel Markdown do obiektów.
-- Dla plików opisowych (rasy, profesje, klasy, perki, bestiariusz) — mapowanie nagłówków, list i
-  sekcji na pola struktury (nazwa, sekcje, listy, wymagania, koszty).
-- Dla tekstu zasad — renderowanie Markdown z rozszerzeniami (tooltipy, linkowanie, komponenty
-  specjalne) zamiast generowania struktury.
+- Submoduł `Battlesword-4.000/` jest źródłem prawdy i **nie jest edytowany** z tego repo.
+- Proces *offline* (już wykonany): konwersja Markdown submodułu → ustrukturyzowane pliki JSON w
+  `src/assets/data/`, commitowane do repo.
+- Pliki tabelaryczne (broń, pancerze, paski, przedmioty podręczne) mapowane na obiekty; pliki
+  opisowe (rasy, profesje, klasy, perki, bestiariusz, glosariusz) mapowane na pola struktury
+  (nazwa, sekcje, listy, wymagania, koszty).
+- Aplikacja ładuje JSON jako statyczne assety (bez backendu, w pełni statyczna SPA).
+- **Schemat TypeScript** w `src/app/models/compendium.ts` opisuje typy encji (`Race`, `Profession`,
+  `CharacterClass`, `Perk`, `Weapon`, `Armor`, `Belt`, `HandItem`, `MagicItem`, `MiscItem`,
+  `Monster`, `GlossaryEntry`) oraz `IndexEntry`.
 
-**Dlaczego opencode zamiast skryptu-parsera:** pliki submodułu są luźne i niespójne (swobodna
-polszczyzna, mieszane tabele/listy/nagłówki, sekcje o różnej strukturze). Ręczny parser byłby kruchy
-i wymagałby ciągłych poprawek przy każdej zmianie upstream. opencode (agent LLM) solidniej radzi
-sobie z mapowaniem semantycznym (np. rozpoznanie, że „Koszt wykupienia"/„Wymagania"/„Opis" perka to
-pola struktury), a do tego jest już dostępny w środowisku — bez dodatkowego kosztu zewnętrznego API.
-
-**Warunki brzegowe (bez nich LLM jest ryzykowny):**
-
-1. **Ścisły schemat JSON** per typ encji, z walidacją (liczba rekordów, kompletność pól) — łapie
-   pominięcia i nadmiarowe pozycje.
-2. **Ekstrakcja wierna** — bez przepisywania/streszczania; zakaz dopowiadania danych spoza źródła
-   (zero halucynacji — każda wartość musi pochodzić z pliku).
-3. **Zdeterminowany, wersjonowany output** — wygenerowany JSON commitowany, dzięki czemu SPA jest
-   w pełni statyczne i niezależne od LLM w runtime; przy aktualizacji submodułu generujesz ponownie
-   i porównujesz diff.
-4. **Zadanie opencode (agent/subagent)** — zdefiniowana instrukcja dla opencode, która czyta pliki
-   submodułu, zwraca JSON zgodny ze schematem i nie rusza samych plików źródłowych. Walidacja
-   uruchamiana po generacji; ewentualnie wywołanie przez `opencode run` w `tools/` do automatyzacji.
-
-**Koszty i kompromisy (do akceptacji):** koszt jest jednorazowy i ograniczony (tylko przy
-generacji/aktualizacji, nigdy w runtime); wyjście bywa niedeterministyczne — stąd wymóg walidacji i
-kontroli wersji (diff między generacjami pokazuje tylko rzeczywiste zmiany zasad vs. szum modelu).
+**Odświeżanie:** przy aktualizacji submodułu dane generuje się ponownie i commituje jako diff —
+SPA pozostaje statyczne i niezależne od procesu generacji w runtime.
 
 ---
 
@@ -155,29 +122,25 @@ kontroli wersji (diff między generacjami pokazuje tylko rzeczywiste zmiany zasa
 - Zgodnie z istniejącym stosem: **Angular 22 standalone**, Tailwind v4, Vitest, Storybook.
 - Routing: `provideRouter` (już skonfigurowany) — trasy per sekcja.
 - Stan: sygnały (bez NgRx); ustawienia (np. zapamiętane filtry) oraz **ulubione** w localStorage.
-- Dane statyczne: generowane przy buildzie (parser), ładowane jako statyczne assety.
+- Dane statyczne: gotowe pliki JSON w `src/assets/data/`, ładowane jako statyczne assety.
 - GitHub Pages (deployment już skonfigurowany — bez backendu, w pełni statyczna SPA).
 
 ---
 
 ## 7. Proponowana kolejność prac (roadmap)
 
-1. **Fundament** — generacja danych (opencode) → walidacja, layout, nawigacja, glosariusz, wyszukiwarka.
-2. **Podręcznik** — renderowanie zasad z linkowaniem i tabelami.
-3. **Kompendium** — ekwipunek, bestiariusz, rasy/profesje/klasy/perki jako karty + filtry.
-4. **Ulubione** — przycisk dodawania na kartach + zakładka z zapisem w localStorage.
-5. **Patch notes / roadmap** — kronika zmian i status prac.
-6. **Dopracowanie** — a11y, storybook dla komponentów, testy, responsywność.
+1. **Fundament** — layout, nawigacja per sekcja, wyszukiwarka oparta na `index.json`, glosariusz z
+   tooltipami.
+2. **Kompendium** — ekwipunek, bestiariusz, rasy/profesje/klasy/perki jako karty + filtry.
+3. **Ulubione** — przycisk dodawania na kartach + zakładka z zapisem w localStorage.
+4. **Dopracowanie** — a11y, storybook dla komponentów, testy, responsywność.
 
 ---
 
 ## 8. Otwarte pytania
 
-1. **Zakres sekcji** — czy kompendium obejmuje cały podręcznik zasad (mechaniki + walka), czy
-   wyłącznie karty obiektów (rasy, profesje, klasy, perki, ekwipunek, bestiariusz)?
-2. **Auto-generowanie danych** — potwierdzona strategia opencode (offline, walidacja, commit
-   outputu); do ustalenia: konkretna instrukcja/schemat per encja oraz jak często odświeżać (ręcznie
-   vs. `opencode run` przy aktualizacji submodułu).
-3. **Język interfejsu** — całość po polsku (spójnie z treścią zasad)?
-4. **Filtry i sortowanie** — które pola mają być filtrowalne w pierwszej wersji (np. broń wg bazowej
+1. **Filtry i sortowanie** — które pola mają być filtrowalne w pierwszej wersji (np. broń wg bazowej
    statystyki, klasy wg archetypu)?
+2. **Język interfejsu** — całość po polsku (spójnie z treścią zasad)?
+3. **Obsługa `stub`** — jak prezentować pozycje o statusie `stub` (tylko nazwa w indeksie, bez
+   pełnej karty) — ukryć, wyszarzyć, czy pokazać jako „w przygotowaniu"?

@@ -1,0 +1,10 @@
+<app-card-shell [type]="'miscItem'" [id]="miscItem().id">
+  <a class="card-title" [routerLink]="['/karta', 'miscItem', miscItem().id]">{{ miscItem().name }}</a>
+
+  @if (miscItem().requiredWealth !== undefined) {
+    <div class="stat">
+      <span class="stat__label">Majętność</span>
+      <span class="stat__value">{{ miscItem().requiredWealth }}</span>
+    </div>
+  }
+</app-card-shell>

@@ -1,0 +1,24 @@
+<app-card-shell [type]="'perk'" [id]="perk().id">
+  <a class="card-title" [routerLink]="['/karta', 'perk', perk().id]">{{ perk().name }}</a>
+
+  @if (perk().requirements || perk().cost) {
+    <div class="card-section">
+      @if (perk().requirements) {
+        <div class="stat">
+          <span class="stat__label">Wymagania</span>
+          <span class="stat__value">{{ perk().requirements }}</span>
+        </div>
+      }
+      @if (perk().cost) {
+        <div class="stat">
+          <span class="stat__label">Koszt</span>
+          <span class="stat__value">{{ perk().cost }}</span>
+        </div>
+      }
+    </div>
+  }
+
+  @if (perk().description) {
+    <p class="perk__desc">{{ perk().description }}</p>
+  }
+</app-card-shell>

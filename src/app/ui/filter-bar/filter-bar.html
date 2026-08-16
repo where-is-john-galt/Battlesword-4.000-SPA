@@ -1,0 +1,25 @@
+@if (groups().length) {
+  <div class="filter-bar" role="group" aria-label="Filtry">
+    @for (group of groups(); track group.key) {
+      <div class="filter-bar__group">
+        <span class="filter-bar__label">{{ group.label }}</span>
+        <div class="filter-bar__chips">
+          @for (value of group.values; track value) {
+            <button
+              class="filter-chip"
+              type="button"
+              [class.filter-chip--active]="isActive(group.key, value)"
+              [attr.aria-pressed]="isActive(group.key, value)"
+              (click)="toggled.emit({ key: group.key, value: value })"
+            >
+              {{ value }}
+            </button>
+          }
+        </div>
+      </div>
+    }
+    @if (hasSelection()) {
+      <button class="filter-bar__clear" type="button" (click)="cleared.emit()">Wyczyść</button>
+    }
+  </div>
+}

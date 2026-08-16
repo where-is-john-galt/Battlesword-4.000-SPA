@@ -1,0 +1,27 @@
+<app-heading text="Szukaj" />
+<app-deco-line />
+
+<app-search-input [value]="query()" (submitted)="onSearch($event)" />
+
+@if (query()) {
+  @if (results().length) {
+    <p class="szukaj__count">Znaleziono: {{ results().length }}</p>
+    @for (group of groups(); track group.type) {
+      <div class="szukaj__group">
+        <span class="card-over">{{ group.label }}</span>
+        <ul class="szukaj__list">
+          @for (entry of group.entries; track entry.id) {
+            <li class="szukaj__item">
+              <a [routerLink]="['/karta', entry.type, entry.id]">{{ entry.name }}</a>
+              @if (entry.status === 'stub') {
+                <app-tag label="w przygotowaniu" variant="muted" />
+              }
+            </li>
+          }
+        </ul>
+      </div>
+    }
+  } @else {
+    <p class="szukaj__empty">Brak wyników dla „{{ query() }}".</p>
+  }
+}

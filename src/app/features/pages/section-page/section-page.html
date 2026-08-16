@@ -1,0 +1,8 @@
+<app-heading [text]="section().label" />
+<app-deco-line />
+
+@if (section().categories.length > 1) {
+  <app-section-tabs [section]="section()" />
+}
+
+<app-compendium-list [type]="type()" />

@@ -1,0 +1,65 @@
+@let c = classEntry();
+
+<app-card-shell [type]="'class'" [id]="c.id">
+  <a class="card-title" [routerLink]="['/karta', 'class', c.id]">{{ c.name }}</a>
+
+  @if (c.archetype) {
+    <app-tag [label]="c.archetype" />
+  }
+
+  @if (c.predispositions) {
+    <div class="card-section">
+      <span class="card-over">Predyspozycje</span>
+      <app-predispositions [predispositions]="c.predispositions" />
+    </div>
+  }
+
+  @if (c.startingEquipment?.length) {
+    <div class="card-section">
+      <span class="card-over">Wyposażenie startowe</span>
+      <ul class="list-plain">
+        @for (item of c.startingEquipment; track item) {
+          <li>{{ item }}</li>
+        }
+      </ul>
+    </div>
+  }
+
+  @if (c.hitPoints?.length) {
+    <div class="card-section">
+      <span class="card-over">Punkty życia</span>
+      <ul class="list-plain">
+        @for (line of c.hitPoints; track line) {
+          <li>{{ line }}</li>
+        }
+      </ul>
+    </div>
+  }
+
+  @if (c.combatAbilities?.starting.length) {
+    <div class="card-section">
+      <span class="card-over">Umiejętności bojowe — startowe</span>
+      @for (ability of c.combatAbilities.starting; track ability) {
+        <app-combat-ability-block [ability]="ability" />
+      }
+    </div>
+  }
+
+  @if (c.combatAbilities?.purchasable.length) {
+    <div class="card-section">
+      <span class="card-over">Umiejętności bojowe — do wykupienia</span>
+      @for (ability of c.combatAbilities.purchasable; track ability) {
+        <app-combat-ability-block [ability]="ability" />
+      }
+    </div>
+  }
+
+  @if (c.explorationAbilities?.length) {
+    <div class="card-section">
+      <span class="card-over">Umiejętności eksploracyjne</span>
+      @for (ability of c.explorationAbilities; track ability) {
+        <app-ability-block [ability]="ability" />
+      }
+    </div>
+  }
+</app-card-shell>

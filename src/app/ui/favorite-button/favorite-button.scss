@@ -1,0 +1,30 @@
+:host {
+  display: inline-flex;
+}
+
+.favorite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-bronze-dark);
+  cursor: pointer;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--color-bronze);
+  }
+
+  &--active {
+    color: var(--color-gold);
+  }
+
+  svg {
+    width: 22px;
+    height: 22px;
+  }
+}

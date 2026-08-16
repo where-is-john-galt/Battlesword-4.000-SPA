@@ -5,6 +5,21 @@ import { dirname, join } from 'node:path';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const dataDir = join(root, 'src', 'assets', 'data');
 
+const MAGIC_RARITIES = ['Niezwykłe', 'Rzadkie', 'Potężne', 'Arcymistrzowskie', 'Mityczne', 'Boskie'];
+const MAGIC_TYPES = [
+  'Amulet',
+  'Buty',
+  'Hełm',
+  'Peleryna',
+  'Rękawice',
+  'Pierścień',
+  'Tarcza',
+  'Pancerz',
+  'Broń',
+  'Broń dystansowa',
+  'Pas',
+];
+
 const files = {
   rasy: { file: 'rasy.json', type: 'race', expected: 17, detailed: 6 },
   profesje: { file: 'profesje.json', type: 'profession', expected: 40, detailed: 7 },
@@ -57,6 +72,16 @@ for (const [key, cfg] of Object.entries(files)) {
     if (!e.id || !e.name || !e.source || !e.status) {
       console.error(`[FAIL] ${cfg.file}: brak wymaganego pola w ${e.id ?? '(brak id)'}`);
       failed = true;
+    }
+    if (cfg.type === 'magicItem') {
+      if (!MAGIC_RARITIES.includes(e.rarity)) {
+        console.error(`[FAIL] ${cfg.file}: nieznana rzadkość "${e.rarity}" w ${e.id}`);
+        failed = true;
+      }
+      if (!MAGIC_TYPES.includes(e.type)) {
+        console.error(`[FAIL] ${cfg.file}: nieznany typ "${e.type}" w ${e.id}`);
+        failed = true;
+      }
     }
     index.push({ id: e.id, type: cfg.type, name: e.name, source: e.source, status: e.status });
   }

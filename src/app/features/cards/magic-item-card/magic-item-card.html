@@ -1,0 +1,119 @@
+@let m = magicItem();
+
+<app-card-shell [type]="'magicItem'" [id]="m.id">
+  <a class="card-title" [routerLink]="['/karta', 'magicItem', m.id]">{{ m.name }}</a>
+
+  <div class="chip-row">
+    <app-tag [label]="m.rarity" variant="gold" />
+    <app-tag [label]="m.type" />
+    @if (m.baseItem) {
+      <app-tag [label]="m.baseItem" variant="muted" />
+    }
+  </div>
+
+  <div class="card-section">
+    @if (m.damage) {
+      <div class="stat">
+        <span class="stat__label">Obrażenia</span>
+        <span class="stat__value">{{ m.damage }}</span>
+      </div>
+    }
+    @if (m.usage) {
+      <div class="stat">
+        <span class="stat__label">Użycie</span>
+        <span class="stat__value">{{ m.usage }}</span>
+      </div>
+    }
+    @if (m.baseStat) {
+      <div class="stat">
+        <span class="stat__label">Statystyka</span>
+        <span class="stat__value">{{ m.baseStat }}</span>
+      </div>
+    }
+    @if (m.range) {
+      <div class="stat">
+        <span class="stat__label">Zasięg</span>
+        <span class="stat__value">{{ m.range }}</span>
+      </div>
+    }
+    @if (m.armor !== undefined) {
+      <div class="stat">
+        <span class="stat__label">Pancerz</span>
+        <span class="stat__value">{{ m.armor }}</span>
+      </div>
+    }
+    @if (m.barrier !== undefined) {
+      <div class="stat">
+        <span class="stat__label">Bariera</span>
+        <span class="stat__value">{{ m.barrier }}</span>
+      </div>
+    }
+    @if (m.requirements) {
+      <div class="stat">
+        <span class="stat__label">Wymagania</span>
+        <span class="stat__value">{{ m.requirements }}</span>
+      </div>
+    }
+    @if (m.handItemSlots !== undefined) {
+      <div class="stat">
+        <span class="stat__label">Slotów</span>
+        <span class="stat__value">{{ m.handItemSlots }}</span>
+      </div>
+    }
+  </div>
+
+  @if (m.specialFeatures?.length) {
+    <div class="card-section">
+      <span class="card-over">Cechy specjalne</span>
+      <div class="chip-row">
+        @for (feature of m.specialFeatures; track feature) {
+          <app-tag [label]="feature" />
+        }
+      </div>
+    </div>
+  }
+
+  @if (m.modifiers?.length) {
+    <div class="card-section">
+      <span class="card-over">Modyfikatory</span>
+      <ul class="list-plain">
+        @for (modifier of m.modifiers; track modifier) {
+          <li>{{ modifier }}</li>
+        }
+      </ul>
+    </div>
+  }
+
+  @if (m.effects?.length) {
+    <div class="card-section">
+      <span class="card-over">Efekty</span>
+      <ul class="list-plain">
+        @for (effect of m.effects; track effect) {
+          <li>{{ effect }}</li>
+        }
+      </ul>
+    </div>
+  }
+
+  @if (m.corrupted?.length) {
+    <div class="card-section">
+      <span class="card-over">Spaczenie</span>
+      <ul class="list-plain">
+        @for (effect of m.corrupted; track effect) {
+          <li>{{ effect }}</li>
+        }
+      </ul>
+    </div>
+  }
+
+  @if (m.newAbility) {
+    <div class="card-section">
+      <span class="card-over">Nowa umiejętność</span>
+      <app-combat-ability-block [ability]="m.newAbility" />
+    </div>
+  }
+
+  @if (m.description) {
+    <p class="magic__desc">{{ m.description }}</p>
+  }
+</app-card-shell>

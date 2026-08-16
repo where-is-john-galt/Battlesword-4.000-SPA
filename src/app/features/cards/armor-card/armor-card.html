@@ -1,0 +1,34 @@
+@let a = armor();
+
+<app-card-shell [type]="'armor'" [id]="a.id">
+  <a class="card-title" [routerLink]="['/karta', 'armor', a.id]">{{ a.name }}</a>
+
+  <app-tag [label]="a.category" />
+
+  <div class="card-section">
+    @if (a.armor !== undefined) {
+      <div class="stat">
+        <span class="stat__label"><app-glossary-tooltip term="Pancerz" /></span>
+        <span class="stat__value">{{ a.armor }}</span>
+      </div>
+    }
+    @if (a.barrier !== undefined) {
+      <div class="stat">
+        <span class="stat__label"><app-glossary-tooltip term="Bariera" /></span>
+        <span class="stat__value">{{ a.barrier }}</span>
+      </div>
+    }
+    @if (a.requirements) {
+      <div class="stat">
+        <span class="stat__label">Wymagania</span>
+        <span class="stat__value">{{ a.requirements }}</span>
+      </div>
+    }
+    @if (a.requiredWealth !== undefined) {
+      <div class="stat">
+        <span class="stat__label"><app-glossary-tooltip term="Majętność" /></span>
+        <span class="stat__value">{{ a.requiredWealth }}</span>
+      </div>
+    }
+  </div>
+</app-card-shell>

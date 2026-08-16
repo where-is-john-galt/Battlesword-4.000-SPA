@@ -1,0 +1,50 @@
+:host {
+  display: block;
+}
+
+.fav__group {
+  margin-top: 28px;
+}
+
+.fav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.fav__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--color-bronze-dark);
+}
+
+.fav__name {
+  flex: 1;
+  color: var(--color-ink);
+  font-family: var(--font-serif);
+  font-size: 17px;
+
+  &:hover {
+    color: var(--color-gold);
+  }
+}
+
+.fav__category {
+  color: var(--color-bronze);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.fav__empty {
+  margin: 0;
+  color: var(--color-ink-muted);
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+}

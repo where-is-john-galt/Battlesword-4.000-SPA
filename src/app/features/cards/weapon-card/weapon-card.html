@@ -1,0 +1,49 @@
+<app-card-shell [type]="'weapon'" [id]="weapon().id">
+  <a class="card-title" [routerLink]="['/karta', 'weapon', weapon().id]">{{ weapon().name }}</a>
+
+  <app-tag [label]="weapon().category" />
+
+  <div class="card-section">
+    @if (weapon().damage) {
+      <div class="stat">
+        <span class="stat__label">Obrażenia</span>
+        <span class="stat__value">{{ weapon().damage }}</span>
+      </div>
+    }
+    @if (weapon().usage) {
+      <div class="stat">
+        <span class="stat__label">Użycie</span>
+        <span class="stat__value">{{ weapon().usage }}</span>
+      </div>
+    }
+    @if (weapon().baseStat) {
+      <div class="stat">
+        <span class="stat__label">Statystyka</span>
+        <span class="stat__value">{{ weapon().baseStat }}</span>
+      </div>
+    }
+    @if (weapon().range) {
+      <div class="stat">
+        <span class="stat__label">Zasięg</span>
+        <span class="stat__value">{{ weapon().range }}</span>
+      </div>
+    }
+    @if (weapon().requiredWealth !== undefined) {
+      <div class="stat">
+        <span class="stat__label">Majętność</span>
+        <span class="stat__value">{{ weapon().requiredWealth }}</span>
+      </div>
+    }
+  </div>
+
+  @if (weapon().specialFeatures?.length) {
+    <div class="card-section">
+      <span class="card-over">Cechy specjalne</span>
+      <div class="chip-row">
+        @for (feature of weapon().specialFeatures; track feature) {
+          <app-tag [label]="feature" />
+        }
+      </div>
+    </div>
+  }
+</app-card-shell>

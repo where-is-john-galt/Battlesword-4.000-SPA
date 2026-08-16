@@ -1,0 +1,23 @@
+@if (loading()) {
+  <p class="list__status">Ładowanie…</p>
+} @else if (error()) {
+  <p class="list__status list__status--error">{{ error() }}</p>
+} @else {
+  @if (filterGroups().length) {
+    <app-filter-bar
+      [groups]="filterGroups()"
+      [selection]="selection()"
+      (toggled)="onToggle($event)"
+      (cleared)="clearFilters()"
+    />
+  }
+  @if (filtered().length) {
+    <div class="list__grid">
+      @for (entry of filtered(); track entry.id) {
+        <app-entity-card [type]="type()" [entry]="entry" />
+      }
+    </div>
+  } @else {
+    <p class="list__status">Brak wyników dla wybranych filtrów.</p>
+  }
+}

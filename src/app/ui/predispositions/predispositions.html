@@ -1,0 +1,22 @@
+@let p = predispositions();
+
+<div class="pred">
+  @if (p.primary.length) {
+    <div class="pred__group">
+      <span class="pred__label">Pierwszorzędne</span>
+      <span class="pred__values">{{ p.primary.join(', ') }}</span>
+    </div>
+  }
+  @if (p.defensive?.length) {
+    <div class="pred__group">
+      <span class="pred__label">Defensywne</span>
+      <span class="pred__values">{{ p.defensive.join(', ') }}</span>
+    </div>
+  }
+  @if (p.secondary.length) {
+    <div class="pred__group">
+      <span class="pred__label">Drugorzędne</span>
+      <span class="pred__values">{{ p.secondary.join(', ') }}</span>
+    </div>
+  }
+</div>

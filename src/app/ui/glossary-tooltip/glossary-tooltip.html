@@ -1,0 +1,13 @@
+@if (definition()) {
+  <span
+    class="gloss"
+    tabindex="0"
+    role="button"
+    [attr.aria-label]="term() + ' — definicja'"
+  >
+    <span class="gloss__term">{{ term() }}</span>
+    <span class="gloss__tip" role="tooltip">{{ definition() }}</span>
+  </span>
+} @else {
+  <span class="gloss">{{ term() }}</span>
+}

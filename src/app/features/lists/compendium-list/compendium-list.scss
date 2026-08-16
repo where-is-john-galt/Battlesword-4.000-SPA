@@ -1,0 +1,28 @@
+:host {
+  display: block;
+}
+
+.list__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.list__status {
+  margin: 0;
+  color: var(--color-ink-muted);
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+
+  &--error {
+    color: var(--color-danger-bright);
+  }
+}

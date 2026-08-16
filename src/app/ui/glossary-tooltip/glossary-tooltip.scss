@@ -1,0 +1,53 @@
+:host {
+  display: inline;
+}
+
+:host([data-variant='label']) .gloss {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-bottom: 1px dashed var(--color-bronze-dark);
+}
+
+.gloss {
+  position: relative;
+  cursor: help;
+  border-bottom: 1px dashed var(--color-bronze);
+  color: var(--color-bronze);
+  outline: none;
+}
+
+.gloss__tip {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  z-index: 30;
+  width: 240px;
+  padding: 12px 14px;
+  border: 1px solid var(--color-bronze-soft);
+  background: rgba(0, 0, 0, 0.96);
+  color: var(--color-ink-muted);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.4;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease;
+
+  @media (max-width: 767px) {
+    width: 200px;
+  }
+}
+
+.gloss:hover .gloss__tip,
+.gloss:focus .gloss__tip,
+.gloss:focus-visible .gloss__tip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}

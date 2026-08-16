@@ -1,0 +1,29 @@
+:host {
+  --tag-color: var(--color-bronze);
+  display: inline-flex;
+}
+
+:host([data-variant='gold']) {
+  --tag-color: var(--color-gold);
+}
+
+:host([data-variant='muted']) {
+  --tag-color: hsl(0 0% 100% / 0.45);
+}
+
+:host([data-variant='danger']) {
+  --tag-color: var(--color-danger-bright);
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border: 1px solid var(--tag-color);
+  color: var(--tag-color);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}

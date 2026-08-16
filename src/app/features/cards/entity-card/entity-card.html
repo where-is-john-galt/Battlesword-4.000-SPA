@@ -1,0 +1,42 @@
+@if (entry().status === 'stub') {
+  <app-stub-card [type]="type()" [entry]="entry()" />
+} @else {
+  @switch (type()) {
+    @case ('race') {
+      <app-race-card [race]="$any(entry())" />
+    }
+    @case ('profession') {
+      <app-profession-card [profession]="$any(entry())" />
+    }
+    @case ('class') {
+      <app-class-card [classEntry]="$any(entry())" />
+    }
+    @case ('perk') {
+      <app-perk-card [perk]="$any(entry())" />
+    }
+    @case ('weapon') {
+      <app-weapon-card [weapon]="$any(entry())" />
+    }
+    @case ('armor') {
+      <app-armor-card [armor]="$any(entry())" />
+    }
+    @case ('belt') {
+      <app-belt-card [belt]="$any(entry())" />
+    }
+    @case ('handItem') {
+      <app-hand-item-card [handItem]="$any(entry())" />
+    }
+    @case ('magicItem') {
+      <app-magic-item-card [magicItem]="$any(entry())" />
+    }
+    @case ('miscItem') {
+      <app-misc-item-card [miscItem]="$any(entry())" />
+    }
+    @case ('monster') {
+      <app-monster-card [monster]="$any(entry())" />
+    }
+    @case ('glossary') {
+      <app-glossary-card [entry]="$any(entry())" />
+    }
+  }
+}

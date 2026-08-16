@@ -1,0 +1,44 @@
+:host {
+  display: block;
+}
+
+.monster-action {
+  padding: 10px 0;
+  border-top: 1px solid var(--color-bronze-dark);
+
+  &:first-of-type {
+    border-top: 0;
+  }
+}
+
+.monster-action__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.monster-action__name {
+  margin: 0;
+  color: var(--color-gold);
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.monster-action__meta {
+  color: var(--color-bronze);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.monster-action__effect {
+  margin: 4px 0 0;
+  color: var(--color-ink-muted);
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  line-height: 1.4;
+}

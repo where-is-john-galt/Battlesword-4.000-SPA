@@ -1,0 +1,65 @@
+@let p = profession();
+
+<app-card-shell [type]="'profession'" [id]="p.id">
+  <a class="card-title" [routerLink]="['/karta', 'profession', p.id]">{{ p.name }}</a>
+
+  @if (p.predispositions) {
+    <div class="card-section">
+      <span class="card-over">Predyspozycje</span>
+      <app-predispositions [predispositions]="p.predispositions" />
+    </div>
+  }
+
+  @if (p.startingWealth !== undefined || p.fame !== undefined) {
+    <div class="card-section">
+      @if (p.startingWealth !== undefined) {
+        <div class="stat">
+          <span class="stat__label"><app-glossary-tooltip term="Majętność" /></span>
+          <span class="stat__value">{{ p.startingWealth }}</span>
+        </div>
+      }
+      @if (p.fame !== undefined) {
+        <div class="stat">
+          <span class="stat__label"><app-glossary-tooltip term="Sława" /></span>
+          <span class="stat__value">{{ p.fame }}</span>
+        </div>
+      }
+    </div>
+  }
+
+  @if (p.passiveAbilities?.length) {
+    <div class="card-section">
+      <span class="card-over">Cechy pasywne</span>
+      @for (ability of p.passiveAbilities; track ability) {
+        <app-ability-block [ability]="ability" />
+      }
+    </div>
+  }
+
+  @if (p.activeAbilities?.length) {
+    <div class="card-section">
+      <span class="card-over">Cechy aktywne</span>
+      @for (ability of p.activeAbilities; track ability) {
+        <app-ability-block [ability]="ability" />
+      }
+    </div>
+  }
+
+  @if (p.startingEquipment?.length) {
+    <div class="card-section">
+      <span class="card-over">Wyposażenie startowe</span>
+      <ul class="list-plain">
+        @for (item of p.startingEquipment; track item) {
+          <li>{{ item }}</li>
+        }
+      </ul>
+    </div>
+  }
+
+  @if (p.professionalBreak) {
+    <div class="card-section">
+      <span class="card-over">Przerwa profesyjna</span>
+      <app-ability-block [ability]="p.professionalBreak" />
+    </div>
+  }
+</app-card-shell>

@@ -14,6 +14,25 @@ export type CompendiumType =
   | 'miscItem'
   | 'glossary';
 
+export const COMPENDIUM_TYPES: readonly CompendiumType[] = [
+  'race',
+  'profession',
+  'class',
+  'perk',
+  'weapon',
+  'armor',
+  'belt',
+  'handItem',
+  'magicItem',
+  'monster',
+  'miscItem',
+  'glossary',
+] as const;
+
+export function isCompendiumType(value: string): value is CompendiumType {
+  return (COMPENDIUM_TYPES as readonly string[]).includes(value);
+}
+
 export interface BaseEntry {
   id: string;
   name: string;
@@ -114,9 +133,40 @@ export interface HandItem extends BaseEntry {
   effect?: string;
 }
 
+export type MagicItemRarity =
+  | 'Niezwykłe'
+  | 'Rzadkie'
+  | 'Potężne'
+  | 'Arcymistrzowskie'
+  | 'Mityczne'
+  | 'Boskie';
+
+export const RARITY_ORDER: readonly MagicItemRarity[] = [
+  'Niezwykłe',
+  'Rzadkie',
+  'Potężne',
+  'Arcymistrzowskie',
+  'Mityczne',
+  'Boskie',
+] as const;
+
+export type MagicItemType =
+  | 'Amulet'
+  | 'Buty'
+  | 'Hełm'
+  | 'Peleryna'
+  | 'Rękawice'
+  | 'Pierścień'
+  | 'Tarcza'
+  | 'Pancerz'
+  | 'Broń'
+  | 'Broń dystansowa'
+  | 'Pas';
+
 export interface MagicItem extends BaseEntry {
-  type: string;
-  rarity: string;
+  type: MagicItemType;
+  baseItem?: string;
+  rarity: MagicItemRarity;
   damage?: string;
   usage?: string;
   baseStat?: string;
