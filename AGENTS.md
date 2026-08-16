@@ -2,6 +2,14 @@
 
 Angular 22.1 standalone SPA (no NgModules) with Tailwind CSS v4, tested with Vitest, deployed to GitHub Pages.
 
+## Project purpose
+
+This repo is a **SPA that assists play of the "Battlesword 4.000" RPG system**. The system itself is NOT authored here — it lives in the `Battlesword-4.000/` git submodule (upstream: https://github.com/Iwanuss/Battlesword-4.000), which is the source of truth for the rules written in Polish Markdown files (`manifest.me`, `TODO`, `patch_notes.md`, and directories `bestiariusz/`, `ekwipunek/`, `mechaniki_bazowe/`, `tworzenie_postaci/`, `walka/`).
+
+- The rules are the specification. When building features, read the relevant `.md` from `Battlesword-4.000/` first and match it (it is a work-in-progress alpha — content changes over time).
+- Battlesword is a d100-style roll-under system: roll ≤ stat succeeds, and how far under determines degrees of success. Combat is old-school, favoring planning/preparation; characters have a **profession** (past skills/passives) and a **combat class**; progression spends PD (XP) on stats/talents/perks — closest to Dark Heresy.
+- The submodule is a separate repo; do not edit its files from here (changes must go upstream).
+
 ## Commands
 
 | Task | Command |
