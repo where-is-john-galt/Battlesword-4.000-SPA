@@ -6,7 +6,8 @@
       routerLinkActive="tabs__link--active"
       [routerLinkActiveOptions]="{ exact: true }"
     >
-      {{ category.label }}
+      <app-icon [name]="iconFor(category.type)" />
+      <span>{{ category.label }}</span>
     </a>
   }
 </nav>

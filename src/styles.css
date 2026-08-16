@@ -99,6 +99,7 @@
     display: block;
     margin: 0 0 10px;
     padding-right: 44px;
+    padding-left: 44px;
     font-family: var(--font-display);
     font-size: 22px;
     font-weight: 400;

@@ -1,5 +1,8 @@
 <app-frame>
   <div class="card">
+    <div class="card__type">
+      <app-icon [type]="type()" />
+    </div>
     <div class="card__favorite">
       <app-favorite-button [type]="type()" [id]="id()" />
     </div>

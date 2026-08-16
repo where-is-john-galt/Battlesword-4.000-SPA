@@ -2,6 +2,23 @@
   position: relative;
 }
 
+.card__type {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 22px;
+  color: var(--color-bronze);
+
+  app-icon {
+    font-size: 20px;
+  }
+}
+
 .card__favorite {
   position: absolute;
   top: 4px;

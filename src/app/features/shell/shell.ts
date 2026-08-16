@@ -2,7 +2,9 @@ import { Component, inject, signal } from '@angular/core';
 import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 import { SearchInput } from '../../ui/search-input/search-input';
+import { Icon } from '../../ui/icon/icon';
 import { SECTIONS } from '../../models/sections';
+import { sectionIcon } from '../../models/icons';
 
 interface NavItem {
   path: string;
@@ -11,7 +13,7 @@ interface NavItem {
 
 @Component({
   selector: 'app-shell',
-  imports: [RouterOutlet, RouterLink, RouterLinkActive, SearchInput],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, SearchInput, Icon],
   templateUrl: './shell.html',
   styleUrl: './shell.scss',
 })
@@ -28,5 +30,9 @@ export class Shell {
   protected onSearch(query: string): void {
     this.menuOpen.set(false);
     this.router.navigate(['/szukaj'], { queryParams: query ? { q: query } : {} });
+  }
+
+  protected iconFor(path: string): string {
+    return sectionIcon(path);
   }
 }

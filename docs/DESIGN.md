@@ -85,7 +85,34 @@ Decorative cornered border frame with filigree corner ornaments. Variants: `defa
 - **List**: gold bullet icon, gradient underline (`#c19976 → #6d523b`), radial hover glow.
 - **Container / two-column / section-shadow** utilities.
 
-## 6. Implementation notes
+## 6. Icons
+
+Icons use **RPG-Awesome** (fantasy icon font based on Game-Icons.net vectors).
+
+- **Font**: self-hosted in `src/vendor/rpg-awesome/` (`rpg-awesome.min.css` + `fonts/`). Loaded through the
+  global `styles` array in `angular.json`, so it is bundled, hashed and cached — no CDN. The `@font-face`
+  keeps only WOFF + TTF (legacy EOT/SVG dropped).
+- **Licence**: font `SIL OFL 1.1`, CSS `MIT`; glyphs originate from Game-Icons.net (`CC BY 3.0`) — attribution
+  in the shell footer.
+- **Usage**: `<app-icon>` (`src/app/ui/icon/`) renders `<i class="ra ra-{name}">`. Inputs: `name` (icon id,
+  e.g. `sword`), `type` (`CompendiumType` → auto-mapped), `size` (`lg|2x|3x|4x|5x`), `fixedWidth`. Color
+  inherits `currentColor`; size/weight are styled by the parent context.
+- **Map**: `src/app/models/icons.ts` (`TYPE_ICONS`, `SECTION_ICONS`) is the single source of truth for the
+  glyph used by sections, category tabs and card headers.
+
+| Type | Icon | Type | Icon |
+|------|------|------|------|
+| race | `player` | weapon | `sword` |
+| profession | `anvil` | armor | `shield` |
+| class | `crossed-swords` | belt | `chain` |
+| perk | `trophy` | handItem | `hand` |
+| monster | `monster-skull` | magicItem | `crystal-wand` |
+| glossary | `book` | miscItem | `candle` |
+
+Sections: Postać `player`, Ekwipunek `ammo-bag`, Bestiariusz `monster-skull`, Glosariusz `book`,
+Ulubione `two-hearts`.
+
+## 7. Implementation notes
 
 - Tokens live in `src/styles.css` as Tailwind v4 `@theme` variables → utilities (`text-h2`, `bg-bg`,
   `text-gold`, `font-display`, etc.).

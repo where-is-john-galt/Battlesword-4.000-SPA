@@ -12,7 +12,8 @@
           [routerLink]="item.path"
           routerLinkActive="shell__link--active"
         >
-          {{ item.label }}
+          <app-icon [name]="iconFor(item.path)" />
+          <span>{{ item.label }}</span>
         </a>
       }
     </nav>
@@ -45,7 +46,8 @@
           routerLinkActive="shell__overlay-link--active"
           (click)="menuOpen.set(false)"
         >
-          {{ item.label }}
+          <app-icon [name]="iconFor(item.path)" />
+          <span>{{ item.label }}</span>
         </a>
       }
     </nav>
@@ -59,4 +61,5 @@
 
 <footer class="shell__footer">
   <span>Battlesword 4.000 Kompendium</span>
+  <span class="shell__footer-note">Ikony: RPG-Awesome / Game-Icons.net (CC BY 3.0)</span>
 </footer>

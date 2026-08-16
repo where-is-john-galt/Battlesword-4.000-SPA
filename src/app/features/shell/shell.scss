@@ -64,6 +64,9 @@
 }
 
 .shell__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   padding: 8px 14px;
   color: var(--color-ink-muted);
   font-family: var(--font-display);
@@ -72,6 +75,10 @@
   text-transform: uppercase;
   text-decoration: none;
   transition: color 0.2s ease;
+
+  app-icon {
+    font-size: 15px;
+  }
 
   &:hover {
     color: var(--color-gold);
@@ -140,6 +147,9 @@
 }
 
 .shell__overlay-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
   padding: 14px 0;
   color: var(--color-ink);
   font-family: var(--font-display);
@@ -147,6 +157,10 @@
   text-transform: uppercase;
   text-decoration: none;
   border-bottom: 1px solid var(--color-bronze-dark);
+
+  app-icon {
+    font-size: 22px;
+  }
 
   &--active {
     color: var(--color-gold);
@@ -171,10 +185,19 @@
   text-align: center;
 
   span {
+    display: block;
     font-family: var(--font-sans);
     font-size: 12px;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: var(--color-ink-muted);
   }
+}
+
+.shell__footer-note {
+  margin-top: 8px;
+  font-size: 11px !important;
+  letter-spacing: 1px !important;
+  text-transform: none !important;
+  color: hsl(0 0% 100% / 0.35) !important;
 }
