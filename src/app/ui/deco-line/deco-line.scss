@@ -1,0 +1,21 @@
+.deco-line {
+  position: relative;
+  height: 1px;
+  margin: 18px 0;
+  background: linear-gradient(90deg, #e0ccb1, #b78f6d);
+}
+
+.deco-line__cap {
+  position: absolute;
+  bottom: -3px;
+  height: 7px;
+  width: 8px;
+}
+
+.deco-line__cap--left {
+  left: -5px;
+}
+
+.deco-line__cap--right {
+  left: 100%;
+}

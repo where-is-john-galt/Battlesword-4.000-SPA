@@ -1,1 +1,95 @@
 @import "tailwindcss";
+
+@theme {
+  --font-display: "QuadraatOffcPro Demibold", Georgia, serif;
+  --font-serif: "QuadraatOffcPro Regular", Georgia, serif;
+  --font-sans: "Gothic A1", system-ui, sans-serif;
+
+  --color-bg: #000000;
+  --color-ink: #ffffff;
+  --color-ink-muted: hsl(0 0% 100% / 0.65);
+  --color-gold: #fbcea0;
+  --color-gold-soft: #fbcfa0;
+  --color-bronze: #c19976;
+  --color-bronze-soft: #b99b77;
+  --color-bronze-deep: #b78f6d;
+  --color-bronze-dark: #6d523b;
+  --color-parchment: #ddc9a7;
+  --color-parchment-light: #e0ccb1;
+  --color-success: #008951;
+  --color-success-bright: #00c071;
+  --color-info: #c8aa34;
+  --color-info-bright: #ffe270;
+  --color-danger: #b51111;
+  --color-danger-bright: #cf3939;
+
+  --text-h1: clamp(48px, 3rem + 12 * (100vw - 970px) / 950, 60px);
+  --text-h2: clamp(38px, 2.375rem + 10 * (100vw - 970px) / 950, 48px);
+  --text-h3: clamp(28px, 1.75rem + 6 * (100vw - 970px) / 950, 34px);
+  --text-h4: clamp(24px, 1.5rem + 4 * (100vw - 970px) / 950, 28px);
+  --text-body: clamp(14px, 0.875rem + 2 * (100vw - 970px) / 950, 16px);
+  --text-base: clamp(16px, 1rem + 2 * (100vw - 970px) / 950, 18px);
+}
+
+@utility text-gradient {
+  background: linear-gradient(135deg, #fff, #fbcea0 66%, #fbcfa0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@utility deco-label {
+  color: var(--color-gold);
+  font-family: var(--font-display);
+  font-size: 13px;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-serif);
+    font-size: var(--text-base);
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: 1.1;
+  }
+
+  h2,
+  h3 {
+    text-transform: uppercase;
+  }
+
+  h4 {
+    color: var(--color-gold);
+    font-family: var(--font-serif);
+    font-weight: 400;
+  }
+
+  p {
+    color: var(--color-ink-muted);
+    font-family: var(--font-sans);
+    font-size: var(--text-body);
+    line-height: 1.4;
+  }
+
+  a {
+    color: var(--color-bronze);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--color-bronze);
+    }
+  }
+}

@@ -1,0 +1,94 @@
+$btn-clip: polygon(
+  12px 0,
+  calc(50% - 16px) 0,
+  50% 8px,
+  calc(50% + 16px) 0,
+  calc(100% - 12px) 0,
+  100% 12px,
+  100% calc(100% - 12px),
+  calc(100% - 12px) 100%,
+  calc(50% + 16px) 100%,
+  50% calc(100% - 8px),
+  calc(50% - 16px) 100%,
+  12px 100%,
+  0 calc(100% - 12px),
+  0 12px
+);
+
+:host {
+  display: inline-flex;
+  position: relative;
+  height: 47px;
+  min-width: 200px;
+  font-family: var(--font-display);
+  vertical-align: middle;
+
+  &[data-variant='large'] {
+    height: 66px;
+  }
+}
+
+.btn {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  background: linear-gradient(135deg, #e0ccb1, #b99b77 60%, #b78f6d);
+  clip-path: $btn-clip;
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.45;
+  }
+}
+
+.btn__inner {
+  position: absolute;
+  inset: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+  clip-path: $btn-clip;
+  transition: background-color 0.4s ease;
+}
+
+.btn__label {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 30px;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+:host([data-variant='large']) .btn__label {
+  background: linear-gradient(135deg, #fff, #fbcea0 66%, #fbcfa0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px;
+}
+
+.btn:hover:not(:disabled) .btn__inner {
+  background-color: rgba(193, 153, 118, 0.28);
+}
+
+:host([data-variant='large']) .btn:hover:not(:disabled) .btn__inner {
+  background-color: rgba(251, 206, 160, 0.88);
+}
+
+:host([data-variant='large']) .btn:hover:not(:disabled) .btn__label {
+  background: #000;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -4,10 +4,14 @@
     "dockerfile": "Dockerfile"
   },
 
-  "forwardPorts": [4200],
+  "forwardPorts": [4200, 6006],
   "portsAttributes": {
     "4200": {
       "label": "Angular development server",
+      "onAutoForward": "openPreview"
+    },
+    "6006": {
+      "label": "Storybook",
       "onAutoForward": "openPreview"
     }
   },

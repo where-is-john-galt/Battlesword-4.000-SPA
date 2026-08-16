@@ -1,0 +1,102 @@
+:host {
+  --frame-color: var(--color-bronze-soft);
+  display: block;
+}
+
+:host([data-variant='success']) {
+  --frame-color: var(--color-success-bright);
+}
+
+:host([data-variant='info']) {
+  --frame-color: var(--color-info-bright);
+}
+
+:host([data-variant='error']) {
+  --frame-color: var(--color-danger-bright);
+}
+
+.frame {
+  position: relative;
+  padding: 28px;
+  color: var(--frame-color);
+}
+
+.frame__edge {
+  position: absolute;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--frame-color) 15%,
+    var(--frame-color) 85%,
+    transparent
+  );
+}
+
+.frame__edge--top {
+  top: 0;
+  left: 18px;
+  right: 18px;
+  height: 1px;
+}
+
+.frame__edge--bottom {
+  bottom: 0;
+  left: 18px;
+  right: 18px;
+  height: 1px;
+}
+
+.frame__edge--left,
+.frame__edge--right {
+  top: 18px;
+  bottom: 18px;
+  width: 1px;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    var(--frame-color) 15%,
+    var(--frame-color) 85%,
+    transparent
+  );
+}
+
+.frame__edge--left {
+  left: 0;
+}
+
+.frame__edge--right {
+  right: 0;
+}
+
+.frame__corner {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+}
+
+.frame__corner--tl {
+  top: 0;
+  left: 0;
+}
+
+.frame__corner--tr {
+  top: 0;
+  right: 0;
+  transform: scaleX(-1);
+}
+
+.frame__corner--bl {
+  bottom: 0;
+  left: 0;
+  transform: scaleY(-1);
+}
+
+.frame__corner--br {
+  bottom: 0;
+  right: 0;
+  transform: scale(-1);
+}
+
+.frame__content {
+  position: relative;
+}

@@ -1,0 +1,14 @@
+<div class="frame">
+  <span class="frame__edge frame__edge--top"></span>
+  <span class="frame__edge frame__edge--bottom"></span>
+  <span class="frame__edge frame__edge--left"></span>
+  <span class="frame__edge frame__edge--right"></span>
+  @for (corner of ['tl', 'tr', 'bl', 'br']; track corner) {
+    <svg class="frame__corner frame__corner--{{ corner }}" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+      <path d="M18 1.5H3.5L1.5 3.5V18" stroke="currentColor" stroke-width="1.25" />
+      <path d="M18 6.5H8.5L6.5 8.5" stroke="currentColor" stroke-width="1.25" />
+      <path d="M1.5 14.5l3-3 2.5 2.5" stroke="currentColor" stroke-width="1.25" />
+    </svg>
+  }
+  <div class="frame__content"><ng-content /></div>
+</div>

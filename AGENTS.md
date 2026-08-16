@@ -10,6 +10,8 @@ Angular 22.1 standalone SPA (no NgModules) with Tailwind CSS v4, tested with Vit
 | Build | `npm run build` (`ng build`, production by default) |
 | Watch build | `npm run watch` |
 | Unit tests | `npm test` (`ng test`) |
+| Storybook | `npm run storybook` (`ng run battlesword-spa:storybook`, http://localhost:6006) |
+| Storybook build | `npm run build-storybook` (`ng run battlesword-spa:build-storybook`) |
 | Generate | `npm run ng -- generate component name` |
 
 - There is **no lint script** and no ESLint config. Use `ng build` for type/template checking.
@@ -31,6 +33,15 @@ Angular 22.1 standalone SPA (no NgModules) with Tailwind CSS v4, tested with Vit
 - Zoneless by default; `app.config.ts` only registers `provideBrowserGlobalErrorListeners()` and `provideRouter(routes)`. Do not add `provideZoneChangeDetection`.
 - Root component is `App` (`app-root`) — the new convention drops the `Component` suffix. Component selector prefix is `app`.
 - Uses signals and `@for`/`@if` control flow (no `*ngIf`/`*ngFor`).
+
+## Storybook
+
+- Storybook 10.5 must be driven through the **Angular builder** (wired in `angular.json` as `storybook` / `build-storybook` targets with `browserTarget: battlesword-spa:build`). Do NOT run `storybook dev`/`storybook build` directly — it throws `AngularLegacyBuildOptionsError`.
+- Targets set `tsConfig: .storybook/tsconfig.json`, which must `include` both `src/**/*.ts` (the components + stories) and `.storybook/*.ts` (preview). `@ngtools/webpack` errors if a compiled file is missing from the TS program.
+- `experimentalZoneless: true` (default for Angular ≥21) avoids injecting `zone.js` into the preview.
+- `@angular-devkit/build-angular` is pinned to `22.x` (not the latest `21.x` npm would resolve) to match Angular 22 peer deps — it provides the webpack config Storybook reuses.
+- Addons: only `@storybook/addon-docs` and `@storybook/addon-a11y` are versioned at 10.x; the essentials (controls/actions/backgrounds/viewport) are built into Storybook core.
+- Design tokens live in `src/styles.css` (Tailwind v4 `@theme`); components under `src/app/ui/` with colocated `*.stories.ts`. See `docs/DESIGN.md`.
 
 ## Deploy
 
