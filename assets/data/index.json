@@ -1883,275 +1883,779 @@
     "status": "detailed"
   },
   {
-    "id": "test",
-    "type": "glossary",
-    "name": "Test",
-    "source": "mechaniki_bazowe/testy.md",
+    "id": "sila",
+    "type": "stat",
+    "name": "Siła",
+    "source": "mechaniki_bazowe/statystyki.md",
     "status": "detailed"
   },
   {
-    "id": "testy_przeciwstawne",
-    "type": "glossary",
-    "name": "Test przeciwstawny",
-    "source": "mechaniki_bazowe/testy.md",
+    "id": "zrecznosc",
+    "type": "stat",
+    "name": "Zręczność",
+    "source": "mechaniki_bazowe/statystyki.md",
     "status": "detailed"
   },
   {
-    "id": "poziomy_trudności",
-    "type": "glossary",
-    "name": "Poziomy trudności",
-    "source": "mechaniki_bazowe/testy.md",
+    "id": "inteligencja",
+    "type": "stat",
+    "name": "Inteligencja",
+    "source": "mechaniki_bazowe/statystyki.md",
     "status": "detailed"
   },
   {
-    "id": "ułatwienie",
-    "type": "glossary",
-    "name": "Ułatwienie",
-    "source": "mechaniki_bazowe/testy.md",
+    "id": "percepcja",
+    "type": "stat",
+    "name": "Percepcja",
+    "source": "mechaniki_bazowe/statystyki.md",
     "status": "detailed"
   },
   {
-    "id": "utrudnienie",
-    "type": "glossary",
-    "name": "Utrudnienie",
-    "source": "mechaniki_bazowe/testy.md",
+    "id": "charyzma",
+    "type": "stat",
+    "name": "Charyzma",
+    "source": "mechaniki_bazowe/statystyki.md",
     "status": "detailed"
   },
   {
-    "id": "sukcesy_i_porażki",
-    "type": "glossary",
-    "name": "Sukcesy i porażki",
-    "source": "mechaniki_bazowe/testy.md",
+    "id": "wytrzymalosc",
+    "type": "stat",
+    "name": "Wytrzymałość",
+    "source": "mechaniki_bazowe/statystyki.md",
     "status": "detailed"
   },
   {
-    "id": "krytyczny_sukces",
-    "type": "glossary",
-    "name": "Krytyczny sukces",
-    "source": "mechaniki_bazowe/testy.md",
+    "id": "unik",
+    "type": "stat",
+    "name": "Unik",
+    "source": "mechaniki_bazowe/statystyki.md",
     "status": "detailed"
   },
   {
-    "id": "krytyczna_porażka",
-    "type": "glossary",
-    "name": "Krytyczna porażka",
-    "source": "mechaniki_bazowe/testy.md",
+    "id": "spryt",
+    "type": "stat",
+    "name": "Spryt",
+    "source": "mechaniki_bazowe/statystyki.md",
     "status": "detailed"
   },
   {
-    "id": "ekstremalna_manifestacja_chaosu",
-    "type": "glossary",
-    "name": "Ekstremalna manifestacja chaosu",
-    "source": "mechaniki_bazowe/testy.md",
+    "id": "ostroznosc",
+    "type": "stat",
+    "name": "Ostrożność",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "sila_woli",
+    "type": "stat",
+    "name": "Siła Woli",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "atletyka",
+    "type": "stat",
+    "name": "Atletyka",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "kowalstwo",
+    "type": "stat",
+    "name": "Kowalstwo",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "plywanie",
+    "type": "stat",
+    "name": "Pływanie",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "wspinaczka",
+    "type": "stat",
+    "name": "Wspinaczka",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zastraszanie",
+    "type": "stat",
+    "name": "Zastraszanie",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "akrobatyka",
+    "type": "stat",
+    "name": "Akrobatyka",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "jezdziectwo",
+    "type": "stat",
+    "name": "Jeździectwo",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "majsterkowanie",
+    "type": "stat",
+    "name": "Majsterkowanie",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "otwieranie_zamkow",
+    "type": "stat",
+    "name": "Otwieranie zamków",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "prowadzenie",
+    "type": "stat",
+    "name": "Prowadzenie",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "skradanie",
+    "type": "stat",
+    "name": "Skradanie",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zwinne_dlonie",
+    "type": "stat",
+    "name": "Zwinne dłonie",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zeglarstwo",
+    "type": "stat",
+    "name": "Żeglarstwo",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "arkana",
+    "type": "stat",
+    "name": "Arkana",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "ksiegowosc",
+    "type": "stat",
+    "name": "Księgowość",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "lingwistyka",
+    "type": "stat",
+    "name": "Lingwistyka",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "medycyna",
+    "type": "stat",
+    "name": "Medycyna",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "sztuka_przetrwania",
+    "type": "stat",
+    "name": "Sztuka Przetrwania",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "wiedza",
+    "type": "stat",
+    "name": "Wiedza",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "wynalazczosc",
+    "type": "stat",
+    "name": "Wynalazczość",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "analiza",
+    "type": "stat",
+    "name": "Analiza",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "nawigacja",
+    "type": "stat",
+    "name": "Nawigacja",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "psychologia",
+    "type": "stat",
+    "name": "Psychologia",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "spostrzegawczosc",
+    "type": "stat",
+    "name": "Spostrzegawczość",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "znajdowanie",
+    "type": "stat",
+    "name": "Znajdowanie",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "dowodzenie",
+    "type": "stat",
+    "name": "Dowodzenie",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "gadanina",
+    "type": "stat",
+    "name": "Gadanina",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "oszustwo",
+    "type": "stat",
+    "name": "Oszustwo",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "przekonywanie",
+    "type": "stat",
+    "name": "Przekonywanie",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "sztuka",
+    "type": "stat",
+    "name": "Sztuka",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "targowanie",
+    "type": "stat",
+    "name": "Targowanie",
+    "source": "mechaniki_bazowe/statystyki.md",
     "status": "detailed"
   },
   {
     "id": "szczęście",
-    "type": "glossary",
+    "type": "stat",
     "name": "Szczęście",
     "source": "mechaniki_bazowe/szczęście.md",
     "status": "detailed"
   },
   {
-    "id": "nagięcie_losu",
-    "type": "glossary",
-    "name": "Nagięcie losu",
-    "source": "mechaniki_bazowe/szczęście.md",
-    "status": "detailed"
-  },
-  {
     "id": "poczytalność",
-    "type": "glossary",
+    "type": "stat",
     "name": "Poczytalność",
     "source": "mechaniki_bazowe/poczytalność.md",
     "status": "detailed"
   },
   {
-    "id": "delirium",
-    "type": "glossary",
-    "name": "Delirium",
-    "source": "mechaniki_bazowe/poczytalność.md",
-    "status": "detailed"
-  },
-  {
     "id": "mądrość",
-    "type": "glossary",
+    "type": "stat",
     "name": "Mądrość",
     "source": "mechaniki_bazowe/mądrość.md",
     "status": "detailed"
   },
   {
-    "id": "sława",
-    "type": "glossary",
-    "name": "Sława",
-    "source": "mechaniki_bazowe/sława.md",
-    "status": "detailed"
-  },
-  {
-    "id": "reputacja",
-    "type": "glossary",
-    "name": "Reputacja",
-    "source": "mechaniki_bazowe/sława.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majętność",
-    "type": "glossary",
-    "name": "Majętność",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "pd",
-    "type": "glossary",
-    "name": "PD",
-    "source": "mechaniki_bazowe/rozwój_postaci.md",
-    "status": "detailed"
-  },
-  {
-    "id": "predyspozycje",
-    "type": "glossary",
-    "name": "Predyspozycje",
-    "source": "mechaniki_bazowe/rozwój_postaci.md",
-    "status": "detailed"
-  },
-  {
     "id": "pancerz",
-    "type": "glossary",
+    "type": "stat",
     "name": "Pancerz",
     "source": "mechaniki_bazowe/statystyki.md",
     "status": "detailed"
   },
   {
     "id": "punkty_życia",
-    "type": "glossary",
+    "type": "stat",
     "name": "Punkty Życia",
     "source": "mechaniki_bazowe/statystyki.md",
     "status": "detailed"
   },
   {
     "id": "odporność_na_śmierć",
-    "type": "glossary",
+    "type": "stat",
     "name": "Odporność na Śmierć",
     "source": "mechaniki_bazowe/statystyki.md",
     "status": "detailed"
   },
   {
     "id": "stamina_mana",
-    "type": "glossary",
+    "type": "stat",
     "name": "Stamina / Mana",
     "source": "walka/stamina_mana_i_podsatwowe_ataki.md",
     "status": "detailed"
   },
   {
     "id": "bariera",
-    "type": "glossary",
+    "type": "stat",
     "name": "Bariera",
     "source": "mechaniki_bazowe/statystyki.md",
     "status": "detailed"
   },
   {
+    "id": "majętność",
+    "type": "stat",
+    "name": "Majętność",
+    "source": "ekwipunek/majętność.md",
+    "status": "detailed"
+  },
+  {
+    "id": "sława",
+    "type": "stat",
+    "name": "Sława",
+    "source": "mechaniki_bazowe/sława.md",
+    "status": "detailed"
+  },
+  {
+    "id": "test",
+    "type": "mechanic",
+    "name": "Test",
+    "source": "mechaniki_bazowe/testy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "testy_przeciwstawne",
+    "type": "mechanic",
+    "name": "Test przeciwstawny",
+    "source": "mechaniki_bazowe/testy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "poziomy_trudności",
+    "type": "mechanic",
+    "name": "Poziomy trudności",
+    "source": "mechaniki_bazowe/testy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "ułatwienie",
+    "type": "mechanic",
+    "name": "Ułatwienie",
+    "source": "mechaniki_bazowe/testy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "utrudnienie",
+    "type": "mechanic",
+    "name": "Utrudnienie",
+    "source": "mechaniki_bazowe/testy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "sukcesy_i_porażki",
+    "type": "mechanic",
+    "name": "Sukcesy i porażki",
+    "source": "mechaniki_bazowe/testy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "krytyczny_sukces",
+    "type": "mechanic",
+    "name": "Krytyczny sukces",
+    "source": "mechaniki_bazowe/testy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "krytyczna_porażka",
+    "type": "mechanic",
+    "name": "Krytyczna porażka",
+    "source": "mechaniki_bazowe/testy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "ekstremalna_manifestacja_chaosu",
+    "type": "mechanic",
+    "name": "Ekstremalna manifestacja chaosu",
+    "source": "mechaniki_bazowe/testy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "nagięcie_losu",
+    "type": "mechanic",
+    "name": "Nagięcie losu",
+    "source": "mechaniki_bazowe/szczęście.md",
+    "status": "detailed"
+  },
+  {
+    "id": "delirium",
+    "type": "mechanic",
+    "name": "Delirium",
+    "source": "mechaniki_bazowe/poczytalność.md",
+    "status": "detailed"
+  },
+  {
+    "id": "reputacja",
+    "type": "mechanic",
+    "name": "Reputacja",
+    "source": "mechaniki_bazowe/sława.md",
+    "status": "detailed"
+  },
+  {
+    "id": "pd",
+    "type": "mechanic",
+    "name": "PD",
+    "source": "mechaniki_bazowe/rozwój_postaci.md",
+    "status": "detailed"
+  },
+  {
+    "id": "predyspozycje",
+    "type": "mechanic",
+    "name": "Predyspozycje",
+    "source": "mechaniki_bazowe/rozwój_postaci.md",
+    "status": "detailed"
+  },
+  {
+    "id": "crafting",
+    "type": "mechanic",
+    "name": "Crafting",
+    "source": "mechaniki_bazowe/crafting.md",
+    "status": "detailed"
+  },
+  {
+    "id": "wytworstwo_eksperymentalne",
+    "type": "mechanic",
+    "name": "Wytwórstwo eksperymentalne",
+    "source": "mechaniki_bazowe/crafting.md",
+    "status": "detailed"
+  },
+  {
+    "id": "spaczenie",
+    "type": "mechanic",
+    "name": "Spaczenie",
+    "source": "mechaniki_bazowe/crafting.md",
+    "status": "detailed"
+  },
+  {
+    "id": "rzadkosc_przedmiotow",
+    "type": "mechanic",
+    "name": "Rzadkość przedmiotów",
+    "source": "mechaniki_bazowe/crafting.md",
+    "status": "detailed"
+  },
+  {
+    "id": "przerwy_miedzy_przygodami",
+    "type": "mechanic",
+    "name": "Przerwy między przygodami",
+    "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
+    "status": "detailed"
+  },
+  {
+    "id": "szczesliwy_traf",
+    "type": "mechanic",
+    "name": "Szczęśliwy traf",
+    "source": "mechaniki_bazowe/szczęście.md",
+    "status": "detailed"
+  },
+  {
     "id": "bramy_śmierci",
-    "type": "glossary",
+    "type": "combat",
     "name": "Bramy Śmierci",
     "source": "walka/obrażenia_i_śmierć.md",
     "status": "detailed"
   },
   {
-    "id": "obrażenia_eskalujące",
-    "type": "glossary",
-    "name": "Obrażenia eskalujące",
+    "id": "pochwycenie",
+    "type": "combat",
+    "name": "Pochwycenie",
+    "source": "walka/stamina_mana_i_podsatwowe_ataki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "na_wierzchowcu",
+    "type": "combat",
+    "name": "Na wierzchowcu",
+    "source": "walka/statusy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "oszołomienie",
+    "type": "combat",
+    "name": "Oszołomienie",
+    "source": "walka/statusy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "oślepienie",
+    "type": "combat",
+    "name": "Oślepienie",
+    "source": "walka/statusy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "unieruchomienie",
+    "type": "combat",
+    "name": "Unieruchomienie",
+    "source": "walka/statusy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "ukryty",
+    "type": "combat",
+    "name": "Ukryty",
+    "source": "walka/statusy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "krwawienie",
+    "type": "combat",
+    "name": "Krwawienie",
+    "source": "walka/statusy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "panika",
+    "type": "combat",
+    "name": "Panika",
+    "source": "walka/statusy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "podpalenie",
+    "type": "combat",
+    "name": "Podpalenie",
+    "source": "walka/statusy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "pokiereszowanie",
+    "type": "combat",
+    "name": "Pokiereszowanie",
+    "source": "walka/statusy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "porażenie",
+    "type": "combat",
+    "name": "Porażenie",
+    "source": "walka/statusy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zamrożenie",
+    "type": "combat",
+    "name": "Zamrożenie",
+    "source": "walka/statusy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zatrucie",
+    "type": "combat",
+    "name": "Zatrucie",
+    "source": "walka/statusy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zmęczenie",
+    "type": "combat",
+    "name": "Zmęczenie",
     "source": "walka/statusy.md",
     "status": "detailed"
   },
   {
     "id": "statusy_pojedyncze",
-    "type": "glossary",
+    "type": "combat",
     "name": "Status pojedynczy",
     "source": "walka/statusy.md",
     "status": "detailed"
   },
   {
     "id": "statusy_wielokrotne",
-    "type": "glossary",
+    "type": "combat",
     "name": "Status wielokrotny",
     "source": "walka/statusy.md",
     "status": "detailed"
   },
   {
+    "id": "obrażenia_eskalujące",
+    "type": "combat",
+    "name": "Obrażenia eskalujące",
+    "source": "walka/statusy.md",
+    "status": "detailed"
+  },
+  {
     "id": "typy_obrażeń",
-    "type": "glossary",
+    "type": "combat",
     "name": "Typy obrażeń",
     "source": "walka/obrażenia_i_śmierć.md",
     "status": "detailed"
   },
   {
     "id": "odporność_podatność",
-    "type": "glossary",
+    "type": "combat",
     "name": "Odporność / Podatność / Niewrażliwość",
     "source": "walka/obrażenia_i_śmierć.md",
     "status": "detailed"
   },
   {
     "id": "leczenie",
-    "type": "glossary",
+    "type": "combat",
     "name": "Leczenie",
     "source": "walka/obrażenia_i_śmierć.md",
     "status": "detailed"
   },
   {
     "id": "sektor",
-    "type": "glossary",
+    "type": "combat",
     "name": "Sektor",
     "source": "walka/typy_terenów.md",
     "status": "detailed"
   },
   {
     "id": "morale",
-    "type": "glossary",
+    "type": "combat",
     "name": "Morale",
     "source": "walka/morale.md",
     "status": "detailed"
   },
   {
     "id": "miniony",
-    "type": "glossary",
+    "type": "combat",
     "name": "Miniony",
     "source": "walka/miniony.md",
     "status": "detailed"
   },
   {
     "id": "inicjatywa",
-    "type": "glossary",
+    "type": "combat",
     "name": "Inicjatywa",
     "source": "walka/inicjatywa.md",
     "status": "detailed"
   },
   {
-    "id": "pochwycenie",
-    "type": "glossary",
-    "name": "Pochwycenie",
-    "source": "walka/stamina_mana_i_podsatwowe_ataki.md",
-    "status": "detailed"
-  },
-  {
     "id": "nokaut",
-    "type": "glossary",
+    "type": "combat",
     "name": "Nokaut",
     "source": "walka/stamina_mana_i_podsatwowe_ataki.md",
     "status": "detailed"
   },
   {
+    "id": "tiery_oponentów",
+    "type": "combat",
+    "name": "Tiery oponentów",
+    "source": "bestiariusz/rodzaje_oponentów.md",
+    "status": "detailed"
+  },
+  {
     "id": "horda",
-    "type": "glossary",
+    "type": "combat",
     "name": "Horda",
     "source": "bestiariusz/rodzaje_oponentów.md",
     "status": "detailed"
   },
   {
-    "id": "tiery_oponentów",
-    "type": "glossary",
-    "name": "Tiery oponentów",
+    "id": "obrażenia_fizyczne",
+    "type": "combat",
+    "name": "Fizyczne",
+    "source": "walka/obrażenia_i_śmierć.md",
+    "status": "detailed"
+  },
+  {
+    "id": "obrażenia_ogniste",
+    "type": "combat",
+    "name": "Ogniste",
+    "source": "walka/obrażenia_i_śmierć.md",
+    "status": "detailed"
+  },
+  {
+    "id": "obrażenia_zimne",
+    "type": "combat",
+    "name": "Zimne",
+    "source": "walka/obrażenia_i_śmierć.md",
+    "status": "detailed"
+  },
+  {
+    "id": "obrażenia_elektryczne",
+    "type": "combat",
+    "name": "Elektryczne",
+    "source": "walka/obrażenia_i_śmierć.md",
+    "status": "detailed"
+  },
+  {
+    "id": "obrażenia_chaotyczne",
+    "type": "combat",
+    "name": "Chaotyczne",
+    "source": "walka/obrażenia_i_śmierć.md",
+    "status": "detailed"
+  },
+  {
+    "id": "obrażenia_żrące",
+    "type": "combat",
+    "name": "Żrące",
+    "source": "walka/obrażenia_i_śmierć.md",
+    "status": "detailed"
+  },
+  {
+    "id": "obrażenia_święte",
+    "type": "combat",
+    "name": "Święte",
+    "source": "walka/obrażenia_i_śmierć.md",
+    "status": "detailed"
+  },
+  {
+    "id": "trep",
+    "type": "combat",
+    "name": "Trep",
+    "source": "bestiariusz/rodzaje_oponentów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "elita",
+    "type": "combat",
+    "name": "Elita",
+    "source": "bestiariusz/rodzaje_oponentów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "mistrz",
+    "type": "combat",
+    "name": "Mistrz",
+    "source": "bestiariusz/rodzaje_oponentów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "boss",
+    "type": "combat",
+    "name": "Boss",
+    "source": "bestiariusz/rodzaje_oponentów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "uber_boss",
+    "type": "combat",
+    "name": "Uber boss",
     "source": "bestiariusz/rodzaje_oponentów.md",
     "status": "detailed"
   }
