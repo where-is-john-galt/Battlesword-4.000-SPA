@@ -24,6 +24,16 @@ export const SECTIONS: SectionDef[] = [
     ],
   },
   {
+    path: 'statystyki',
+    label: 'Statystyki',
+    categories: [{ path: 'statystyki', label: 'Statystyki', type: 'stat' }],
+  },
+  {
+    path: 'mechaniki',
+    label: 'Mechaniki',
+    categories: [{ path: 'mechaniki', label: 'Mechaniki', type: 'mechanic' }],
+  },
+  {
     path: 'ekwipunek',
     label: 'Ekwipunek',
     categories: [
@@ -36,14 +46,14 @@ export const SECTIONS: SectionDef[] = [
     ],
   },
   {
+    path: 'walka',
+    label: 'Walka',
+    categories: [{ path: 'walka', label: 'Walka', type: 'combat' }],
+  },
+  {
     path: 'bestiariusz',
     label: 'Bestiariusz',
     categories: [{ path: 'bestiariusz', label: 'Bestiariusz', type: 'monster' }],
-  },
-  {
-    path: 'glosariusz',
-    label: 'Glosariusz',
-    categories: [{ path: 'glosariusz', label: 'Glosariusz', type: 'glossary' }],
   },
 ];
 

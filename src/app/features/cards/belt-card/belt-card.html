@@ -14,10 +14,10 @@
         <span class="stat__value">{{ belt().handItemSlots }}</span>
       </div>
     }
-    @if (belt().effect) {
+    @if (belt().effect; as effect) {
       <div class="stat">
         <span class="stat__label">Efekt</span>
-        <span class="stat__value">{{ belt().effect }}</span>
+        <span class="stat__value"><app-linked-text [text]="effect" /></span>
       </div>
     }
   </div>

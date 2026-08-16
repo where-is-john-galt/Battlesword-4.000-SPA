@@ -14,6 +14,15 @@
     @case ('perk') {
       <app-perk-card [perk]="$any(entry())" />
     }
+    @case ('stat') {
+      <app-stat-card [stat]="$any(entry())" />
+    }
+    @case ('mechanic') {
+      <app-rule-card [type]="type()" [entry]="$any(entry())" />
+    }
+    @case ('combat') {
+      <app-rule-card [type]="type()" [entry]="$any(entry())" />
+    }
     @case ('weapon') {
       <app-weapon-card [weapon]="$any(entry())" />
     }
@@ -34,9 +43,6 @@
     }
     @case ('monster') {
       <app-monster-card [monster]="$any(entry())" />
-    }
-    @case ('glossary') {
-      <app-glossary-card [entry]="$any(entry())" />
     }
   }
 }

@@ -5,6 +5,9 @@ export const TYPE_ICONS: Record<CompendiumType, string> = {
   profession: 'anvil',
   class: 'crossed-swords',
   perk: 'trophy',
+  stat: 'dice-five',
+  mechanic: 'scroll-unfurled',
+  combat: 'sword',
   weapon: 'sword',
   armor: 'shield',
   belt: 'chain',
@@ -12,14 +15,15 @@ export const TYPE_ICONS: Record<CompendiumType, string> = {
   magicItem: 'crystal-wand',
   monster: 'monster-skull',
   miscItem: 'candle',
-  glossary: 'book',
 };
 
 export const SECTION_ICONS: Record<string, string> = {
   postac: 'player',
+  statystyki: 'dice-five',
+  mechaniki: 'scroll-unfurled',
   ekwipunek: 'ammo-bag',
+  walka: 'crossed-swords',
   bestiariusz: 'monster-skull',
-  glosariusz: 'book',
   ulubione: 'two-hearts',
 };
 

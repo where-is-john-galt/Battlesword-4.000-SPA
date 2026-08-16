@@ -168,6 +168,8 @@
     font-family: var(--font-sans);
     font-size: var(--text-body);
     text-align: right;
+    min-width: 0;
+    overflow-wrap: anywhere;
   }
 
   .list-plain {
@@ -182,6 +184,38 @@
       font-family: var(--font-sans);
       font-size: var(--text-body);
       line-height: 1.4;
+    }
+  }
+
+  .equip-link {
+    color: var(--color-bronze);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--color-bronze-dark);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--color-gold);
+      border-bottom-color: var(--color-gold);
+    }
+  }
+
+  .chip-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 10px;
+    border: 1px solid var(--color-bronze);
+    color: var(--color-bronze);
+    font-family: var(--font-sans);
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--color-gold);
+      border-color: var(--color-gold);
     }
   }
 }

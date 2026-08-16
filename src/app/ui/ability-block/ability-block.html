@@ -4,11 +4,11 @@
   @if (a.name) {
     <h4 class="ability__name">{{ a.name }}</h4>
   }
-  <p class="ability__desc">{{ a.description }}</p>
+  <p class="ability__desc"><app-linked-text [text]="a.description" /></p>
   @if (a.effects?.length) {
     <ul class="ability__effects">
       @for (effect of a.effects; track effect) {
-        <li>{{ effect }}</li>
+        <li><app-linked-text [text]="effect" /></li>
       }
     </ul>
   }

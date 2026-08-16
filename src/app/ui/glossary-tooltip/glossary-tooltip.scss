@@ -18,6 +18,17 @@
   outline: none;
 }
 
+.gloss__link {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.gloss__link:hover,
+.gloss__link:focus-visible {
+  color: var(--color-gold);
+}
+
 .gloss__tip {
   position: absolute;
   bottom: calc(100% + 10px);

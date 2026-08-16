@@ -1,0 +1,609 @@
+[
+  {
+    "id": "sila",
+    "name": "Siła",
+    "group": "pierwszorzędna",
+    "definition": "Statystyka pierwszorzędna — kategoria fizycznej siły i tężyzny.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "aliases": [
+      "siły",
+      "siłę"
+    ]
+  },
+  {
+    "id": "zrecznosc",
+    "name": "Zręczność",
+    "group": "pierwszorzędna",
+    "definition": "Statystyka pierwszorzędna — kategoria zręczności, koordynacji i refleksu.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "aliases": [
+      "zręczności",
+      "zręczność"
+    ]
+  },
+  {
+    "id": "inteligencja",
+    "name": "Inteligencja",
+    "group": "pierwszorzędna",
+    "definition": "Statystyka pierwszorzędna — kategoria wiedzy i sprawności umysłowej.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "aliases": [
+      "inteligencji",
+      "inteligencję"
+    ]
+  },
+  {
+    "id": "percepcja",
+    "name": "Percepcja",
+    "group": "pierwszorzędna",
+    "definition": "Statystyka pierwszorzędna — kategoria spostrzegawczości i zmysłów.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "aliases": [
+      "percepcji",
+      "percepcję"
+    ]
+  },
+  {
+    "id": "charyzma",
+    "name": "Charyzma",
+    "group": "pierwszorzędna",
+    "definition": "Statystyka pierwszorzędna — kategoria prezencji i oddziaływania społecznego.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "aliases": [
+      "charyzmy",
+      "charyzmę"
+    ]
+  },
+  {
+    "id": "wytrzymalosc",
+    "name": "Wytrzymałość",
+    "group": "defensywna",
+    "definition": "Odporność na ataki fizyczne oraz efekty środowiskowe i choroby.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "aliases": [
+      "wytrzymałości",
+      "wytrzymałość"
+    ]
+  },
+  {
+    "id": "unik",
+    "name": "Unik",
+    "group": "defensywna",
+    "definition": "Szansa na uchylenie się przed nadchodzącymi atakami oraz zagrożeniami.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "aliases": [
+      "uniku",
+      "unik"
+    ]
+  },
+  {
+    "id": "spryt",
+    "name": "Spryt",
+    "group": "defensywna",
+    "definition": "Szansa na przewidzenie i uprzedzenie ruchu przeciwnika.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "aliases": [
+      "sprytu",
+      "spryt"
+    ]
+  },
+  {
+    "id": "ostroznosc",
+    "name": "Ostrożność",
+    "group": "defensywna",
+    "definition": "Szansa na wykrycie pułapki, uniknięcie zaskoczenia i szybkiej reakcji.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "aliases": [
+      "ostrożności",
+      "ostrożność"
+    ]
+  },
+  {
+    "id": "sila_woli",
+    "name": "Siła Woli",
+    "group": "defensywna",
+    "definition": "Obrona przed atakami psychicznymi.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "aliases": [
+      "siły woli"
+    ]
+  },
+  {
+    "id": "atletyka",
+    "name": "Atletyka",
+    "group": "drugorzędna",
+    "definition": "Przenoszenie bardzo ciężkich przedmiotów, rozwiązania siłowe, siłowe wyrywanie się z pułapek.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "sila",
+    "aliases": [
+      "atletyki"
+    ]
+  },
+  {
+    "id": "kowalstwo",
+    "name": "Kowalstwo",
+    "group": "drugorzędna",
+    "definition": "Rzemiosło oparte o pracę mięśni.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "sila",
+    "aliases": [
+      "kowalstwa"
+    ]
+  },
+  {
+    "id": "plywanie",
+    "name": "Pływanie",
+    "group": "drugorzędna",
+    "definition": "Ustala prędkość poruszania się w wodzie, umiejętność przetrwania podczas sytuacji ekstremalnych w wodzie.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "sila",
+    "aliases": [
+      "pływania"
+    ]
+  },
+  {
+    "id": "wspinaczka",
+    "name": "Wspinaczka",
+    "group": "drugorzędna",
+    "definition": "Ustala prędkość poruszania się po ścianach, umiejętność utrzymania się na nich.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "sila",
+    "aliases": [
+      "wspinaczki"
+    ]
+  },
+  {
+    "id": "zastraszanie",
+    "name": "Zastraszanie",
+    "group": "drugorzędna",
+    "definition": "Argument siły.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "sila",
+    "aliases": [
+      "zastraszania"
+    ]
+  },
+  {
+    "id": "akrobatyka",
+    "name": "Akrobatyka",
+    "group": "drugorzędna",
+    "definition": "Umiejętność balansowania na niewielkich powierzchniach, zwinne wyrywanie się z pułapek.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "zrecznosc",
+    "aliases": [
+      "akrobatyki"
+    ]
+  },
+  {
+    "id": "jezdziectwo",
+    "name": "Jeździectwo",
+    "group": "drugorzędna",
+    "definition": "Ustala prędkość poruszania się na wierzchowcach i umiejętność utrzymywania się na nich.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "zrecznosc",
+    "aliases": [
+      "jeździectwa"
+    ]
+  },
+  {
+    "id": "majsterkowanie",
+    "name": "Majsterkowanie",
+    "group": "drugorzędna",
+    "definition": "Rzemiosło oparte o pracę manualną.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "zrecznosc",
+    "aliases": [
+      "majsterkowania"
+    ]
+  },
+  {
+    "id": "otwieranie_zamkow",
+    "name": "Otwieranie zamków",
+    "group": "drugorzędna",
+    "definition": "Umiejętność cichego otwierania drzwi, sejfów, skrzyń, itp.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "zrecznosc",
+    "aliases": [
+      "otwierania zamków"
+    ]
+  },
+  {
+    "id": "prowadzenie",
+    "name": "Prowadzenie",
+    "group": "drugorzędna",
+    "definition": "Kierowanie pojazdami mechanicznymi i ciągniętymi.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "zrecznosc",
+    "aliases": [
+      "prowadzenia"
+    ]
+  },
+  {
+    "id": "skradanie",
+    "name": "Skradanie",
+    "group": "drugorzędna",
+    "definition": "Umiejętność ukrywania się oraz cichego przemieszczania.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "zrecznosc",
+    "aliases": [
+      "skradania"
+    ]
+  },
+  {
+    "id": "zwinne_dlonie",
+    "name": "Zwinne dłonie",
+    "group": "drugorzędna",
+    "definition": "Kradzież kieszonkowa, precyzyjne operacje manualne.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "zrecznosc",
+    "aliases": [
+      "zwinnych dłoni"
+    ]
+  },
+  {
+    "id": "zeglarstwo",
+    "name": "Żeglarstwo",
+    "group": "drugorzędna",
+    "definition": "Umiejętność obsługi statków, w tym ich sterowania.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "zrecznosc",
+    "aliases": [
+      "żeglarstwa"
+    ]
+  },
+  {
+    "id": "arkana",
+    "name": "Arkana",
+    "group": "drugorzędna",
+    "definition": "Wiedza tajemna i zakazana.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "inteligencja",
+    "aliases": [
+      "arkan"
+    ]
+  },
+  {
+    "id": "ksiegowosc",
+    "name": "Księgowość",
+    "group": "drugorzędna",
+    "definition": "Zarządzanie majątkiem, umiejętności wyceny.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "inteligencja",
+    "aliases": [
+      "księgowości"
+    ]
+  },
+  {
+    "id": "lingwistyka",
+    "name": "Lingwistyka",
+    "group": "drugorzędna",
+    "definition": "Znajomość egzotycznych i starożytnych języków.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "inteligencja",
+    "aliases": [
+      "lingwistyki"
+    ]
+  },
+  {
+    "id": "medycyna",
+    "name": "Medycyna",
+    "group": "drugorzędna",
+    "definition": "Udzielanie pierwszej pomocy, leczenie, diagnozowanie chorób, wytwarzanie lekarstw.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "inteligencja",
+    "aliases": [
+      "medycyny"
+    ]
+  },
+  {
+    "id": "sztuka_przetrwania",
+    "name": "Sztuka Przetrwania",
+    "group": "drugorzędna",
+    "definition": "Umiejętność przetrwania poza cywilizacją oraz poziom wiedzy przyrodniczej.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "inteligencja",
+    "aliases": [
+      "sztuki przetrwania"
+    ]
+  },
+  {
+    "id": "wiedza",
+    "name": "Wiedza",
+    "group": "drugorzędna",
+    "definition": "Generalna wiedza na temat niszowych tematów.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "inteligencja",
+    "aliases": [
+      "wiedzy"
+    ]
+  },
+  {
+    "id": "wynalazczosc",
+    "name": "Wynalazczość",
+    "group": "drugorzędna",
+    "definition": "Rzemiosło oparte o projektowanie.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "inteligencja",
+    "aliases": [
+      "wynalazczości"
+    ]
+  },
+  {
+    "id": "analiza",
+    "name": "Analiza",
+    "group": "drugorzędna",
+    "definition": "Przeszukiwanie zbiorów w poszukiwaniu informacji.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "percepcja",
+    "aliases": [
+      "analizy"
+    ]
+  },
+  {
+    "id": "nawigacja",
+    "name": "Nawigacja",
+    "group": "drugorzędna",
+    "definition": "Odnajdywanie kierunków i tras, ułatwianie podróży, sterowanie pojazdami wszelakimi.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "percepcja",
+    "aliases": [
+      "nawigacji"
+    ]
+  },
+  {
+    "id": "psychologia",
+    "name": "Psychologia",
+    "group": "drugorzędna",
+    "definition": "Określanie motywacji i emocji innych.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "percepcja",
+    "aliases": [
+      "psychologii"
+    ]
+  },
+  {
+    "id": "spostrzegawczosc",
+    "name": "Spostrzegawczość",
+    "group": "drugorzędna",
+    "definition": "Spostrzegawczość, przeszukiwanie.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "percepcja",
+    "aliases": [
+      "spostrzegawczości"
+    ]
+  },
+  {
+    "id": "znajdowanie",
+    "name": "Znajdowanie",
+    "group": "drugorzędna",
+    "definition": "Rzemiosło oparte o percepcję.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "percepcja",
+    "aliases": [
+      "znajdowania"
+    ]
+  },
+  {
+    "id": "dowodzenie",
+    "name": "Dowodzenie",
+    "group": "drugorzędna",
+    "definition": "Przewodzenie innym, organizacja i podburzanie tłumów.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "charyzma",
+    "aliases": [
+      "dowodzenia"
+    ]
+  },
+  {
+    "id": "gadanina",
+    "name": "Gadanina",
+    "group": "drugorzędna",
+    "definition": "Nawijanie długo, acz niekoniecznie z sensem.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "charyzma",
+    "aliases": [
+      "gadaniny"
+    ]
+  },
+  {
+    "id": "oszustwo",
+    "name": "Oszustwo",
+    "group": "drugorzędna",
+    "definition": "Wciskanie kitu innym.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "charyzma",
+    "aliases": [
+      "oszustwa"
+    ]
+  },
+  {
+    "id": "przekonywanie",
+    "name": "Przekonywanie",
+    "group": "drugorzędna",
+    "definition": "Siła argumentów.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "charyzma",
+    "aliases": [
+      "przekonywania"
+    ]
+  },
+  {
+    "id": "sztuka",
+    "name": "Sztuka",
+    "group": "drugorzędna",
+    "definition": "Rzemiosło oparte o ekspresję.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "charyzma",
+    "aliases": [
+      "sztuki"
+    ]
+  },
+  {
+    "id": "targowanie",
+    "name": "Targowanie",
+    "group": "drugorzędna",
+    "definition": "Ubijanie interesów.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "basedOn": "charyzma",
+    "aliases": [
+      "targowania"
+    ]
+  },
+  {
+    "id": "szczęście",
+    "name": "Szczęście",
+    "group": "trzeciorzędna",
+    "definition": "Statystyka trzeciorzędna (1-20) reprezentująca szansę na przychylność losu. Można je wykorzystać do przerzutu lub do testu Szczęścia (znalezienie zwykłego przedmiotu).",
+    "source": "mechaniki_bazowe/szczęście.md",
+    "status": "detailed",
+    "aliases": [
+      "szczęścia"
+    ]
+  },
+  {
+    "id": "poczytalność",
+    "name": "Poczytalność",
+    "group": "trzeciorzędna",
+    "definition": "Statystyka (1-100) opisująca stopień przyklejenia do rzeczywistości. Test Poczytalności to rzut 1k100, wynik ≤ wartości oznacza sukces; porażka wymusza rzut na Delirium.",
+    "source": "mechaniki_bazowe/poczytalność.md",
+    "status": "detailed",
+    "aliases": [
+      "poczytalności"
+    ]
+  },
+  {
+    "id": "mądrość",
+    "name": "Mądrość",
+    "group": "trzeciorzędna",
+    "definition": "Wyznacznik ogólnego poziomu doświadczenia Bohatera: 1 za każde wydane 1000 PD. Często bywa wymaganiem umiejętności i perków.",
+    "source": "mechaniki_bazowe/mądrość.md",
+    "status": "detailed",
+    "aliases": [
+      "mądrości"
+    ]
+  },
+  {
+    "id": "pancerz",
+    "name": "Pancerz",
+    "group": "trzeciorzędna",
+    "definition": "Pozwala na wchłanianie i redukcję otrzymywanych obrażeń; u BG odejmowany od sumy obrażeń (jeśli zredukuje wszystko, postać i tak traci 1 PŻ).",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "aliases": [
+      "pancerza",
+      "pancerz"
+    ]
+  },
+  {
+    "id": "punkty_życia",
+    "name": "Punkty Życia",
+    "group": "trzeciorzędna",
+    "definition": "Maksymalne Punkty Życia określają, ile jest w stanie wytrzymać bohater, nim stanie u progu Bram Śmierci. Nie mogą spaść poniżej 0.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "aliases": [
+      "punktów życia",
+      "punkty życia"
+    ]
+  },
+  {
+    "id": "odporność_na_śmierć",
+    "name": "Odporność na Śmierć",
+    "group": "trzeciorzędna",
+    "definition": "Testowana za każdym razem, gdy postać otrzyma obrażenia będąc u Bram Śmierci; porażka oznacza koniec przygód. Regeneruje się o 1 dziennie (maks. 19).",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "aliases": [
+      "odporności na śmierć"
+    ]
+  },
+  {
+    "id": "stamina_mana",
+    "name": "Stamina / Mana",
+    "group": "trzeciorzędna",
+    "definition": "Zasoby do wzmacniania ataków i aktywowania umiejętności; bazowa wartość to połowa statystyki powiązanej z bronią (zaokrąglona w dół).",
+    "source": "walka/stamina_mana_i_podsatwowe_ataki.md",
+    "status": "detailed",
+    "aliases": [
+      "staminy i many",
+      "staminy",
+      "many"
+    ]
+  },
+  {
+    "id": "bariera",
+    "name": "Bariera",
+    "group": "trzeciorzędna",
+    "definition": "Defensywny zasób postaci, pochłaniający obrażenia niezależnie od Punktów Życia; wartość bazowa wynika ze statystyk.",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed",
+    "aliases": [
+      "bariery",
+      "barierę"
+    ]
+  },
+  {
+    "id": "majętność",
+    "name": "Majętność",
+    "group": "drużynowa",
+    "definition": "Statystyka drużynowa określająca poziom zamożności i siły nabywczej; aby nabyć przedmiot, Majętność Drużyny musi być równa lub wyższa od jego wymagań.",
+    "source": "ekwipunek/majętność.md",
+    "status": "detailed",
+    "aliases": [
+      "majętności"
+    ]
+  },
+  {
+    "id": "sława",
+    "name": "Sława",
+    "group": "drużynowa",
+    "definition": "Statystyka drużynowa (1-20) określająca rozpoznawalność Drużyny w świecie; testowana, gdy trzeba ustalić, czy ktoś rozpoznał Drużynę.",
+    "source": "mechaniki_bazowe/sława.md",
+    "status": "detailed",
+    "aliases": [
+      "sławy",
+      "sławę"
+    ]
+  }
+]

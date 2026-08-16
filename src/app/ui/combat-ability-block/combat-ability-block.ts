@@ -1,8 +1,10 @@
 import { Component, computed, input } from '@angular/core';
 import type { CombatAbility } from '../../models/compendium';
+import { LinkedText } from '../linked-text/linked-text';
 
 @Component({
   selector: 'app-combat-ability-block',
+  imports: [LinkedText],
   templateUrl: './combat-ability-block.html',
   styleUrl: './combat-ability-block.scss',
 })

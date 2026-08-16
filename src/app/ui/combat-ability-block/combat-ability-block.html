@@ -17,21 +17,21 @@
   }
 
   @if (a.requirements?.length) {
-    <p class="combat__requirements">Wymagania: {{ a.requirements.join(', ') }}</p>
+    <p class="combat__requirements">Wymagania: <app-linked-text [text]="a.requirements.join(', ')" /></p>
   }
 
   @if (a.activationCost?.length) {
-    <p class="combat__cost-line">Koszt: {{ a.activationCost.join(', ') }}</p>
+    <p class="combat__cost-line">Koszt: <app-linked-text [text]="a.activationCost.join(', ')" /></p>
   }
 
   @if (a.description) {
-    <p class="combat__desc">{{ a.description }}</p>
+    <p class="combat__desc"><app-linked-text [text]="a.description" /></p>
   }
 
   @if (a.enhancements?.length) {
     <ul class="combat__enhancements">
       @for (enh of a.enhancements; track enh) {
-        <li>{{ enh }}</li>
+        <li><app-linked-text [text]="enh" /></li>
       }
     </ul>
   }

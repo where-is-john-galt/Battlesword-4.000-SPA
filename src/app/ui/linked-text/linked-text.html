@@ -1,0 +1,16 @@
+@for (token of tokens(); track $index) {
+  @if (token.link; as link) {
+    <a
+      class="linked"
+      [routerLink]="['/karta', link.type, link.id]"
+      [attr.aria-label]="definition(link.type, link.id) ? token.text + ' — definicja' : null"
+    >
+      {{ token.text }}
+      @if (definition(link.type, link.id); as def) {
+        <span class="linked__tip" role="tooltip">{{ def }}</span>
+      }
+    </a>
+  } @else {
+    <ng-container>{{ token.text }}</ng-container>
+  }
+}

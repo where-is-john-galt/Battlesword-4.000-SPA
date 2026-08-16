@@ -14,13 +14,13 @@
     <div class="card-section">
       @if (p.startingWealth !== undefined) {
         <div class="stat">
-          <span class="stat__label"><app-glossary-tooltip term="Majętność" /></span>
+          <span class="stat__label"><app-glossary-tooltip term="Majętność" [linkable]="true" /></span>
           <span class="stat__value">{{ p.startingWealth }}</span>
         </div>
       }
       @if (p.fame !== undefined) {
         <div class="stat">
-          <span class="stat__label"><app-glossary-tooltip term="Sława" /></span>
+          <span class="stat__label"><app-glossary-tooltip term="Sława" [linkable]="true" /></span>
           <span class="stat__value">{{ p.fame }}</span>
         </div>
       }
@@ -49,8 +49,14 @@
     <div class="card-section">
       <span class="card-over">Wyposażenie startowe</span>
       <ul class="list-plain">
-        @for (item of p.startingEquipment; track item) {
-          <li>{{ item }}</li>
+        @for (item of equipmentLinks(); track item.text) {
+          <li>
+            @if (item.target; as target) {
+              <a class="equip-link" [routerLink]="['/karta', target.type, target.id]">{{ item.text }}</a>
+            } @else {
+              {{ item.text }}
+            }
+          </li>
         }
       </ul>
     </div>

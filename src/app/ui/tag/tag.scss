@@ -27,3 +27,14 @@
   text-transform: uppercase;
   white-space: nowrap;
 }
+
+.tag--link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tag--link:hover,
+.tag--link:focus-visible {
+  color: var(--color-gold);
+  border-color: var(--color-gold);
+}

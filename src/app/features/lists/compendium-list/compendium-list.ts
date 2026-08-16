@@ -1,4 +1,6 @@
 import { Component, computed, effect, inject, input, signal } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { toSignal } from '@angular/core/rxjs-interop';
 import type {
   BaseEntry,
   CharacterClass,
@@ -51,6 +53,8 @@ const FILTER_DIMS: Partial<Record<CompendiumType, FilterDim[]>> = {
 })
 export class CompendiumList {
   private readonly compendium = inject(CompendiumService);
+  private readonly route = inject(ActivatedRoute);
+  private readonly queryParams = toSignal(this.route.queryParams);
 
   readonly type = input.required<CompendiumType>();
 
@@ -64,8 +68,18 @@ export class CompendiumList {
     this.compendium.load();
     effect(() => {
       this.type();
-      this._selection.set({});
+      this._selection.set(this.selectionFromQuery(this.type()));
     });
+  }
+
+  private selectionFromQuery(type: CompendiumType): Record<string, string[]> {
+    if (type === 'class') {
+      const archetyp = this.queryParams()?.['archetyp'];
+      if (archetyp) {
+        return { archetype: [archetyp] };
+      }
+    }
+    return {};
   }
 
   protected readonly entries = computed(() => this.compendium.byType(this.type())());

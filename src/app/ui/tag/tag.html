@@ -1,1 +1,5 @@
-<span class="tag">{{ label() }}</span>
+@if (link(); as target) {
+  <a class="tag tag--link" [routerLink]="['/karta', target.type, target.id]">{{ label() }}</a>
+} @else {
+  <span class="tag">{{ label() }}</span>
+}

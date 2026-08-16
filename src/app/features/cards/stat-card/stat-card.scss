@@ -1,0 +1,19 @@
+:host {
+  display: block;
+}
+
+.stat__basedon {
+  margin: 8px 0 0;
+  color: var(--color-ink-muted);
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  line-height: 1.4;
+}
+
+.stat__definition {
+  margin: 8px 0 0;
+  color: var(--color-ink-muted);
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  line-height: 1.4;
+}

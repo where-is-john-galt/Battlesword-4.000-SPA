@@ -4,19 +4,31 @@
   @if (p.primary.length) {
     <div class="pred__group">
       <span class="pred__label">Pierwszorzędne</span>
-      <span class="pred__values">{{ p.primary.join(', ') }}</span>
+      <span class="pred__values">
+        @for (stat of p.primary; track stat; let last = $last) {
+          <app-linked-text [text]="stat" />{{ last ? '' : ', ' }}
+        }
+      </span>
     </div>
   }
   @if (p.defensive?.length) {
     <div class="pred__group">
       <span class="pred__label">Defensywne</span>
-      <span class="pred__values">{{ p.defensive.join(', ') }}</span>
+      <span class="pred__values">
+        @for (stat of p.defensive; track stat; let last = $last) {
+          <app-linked-text [text]="stat" />{{ last ? '' : ', ' }}
+        }
+      </span>
     </div>
   }
   @if (p.secondary.length) {
     <div class="pred__group">
       <span class="pred__label">Drugorzędne</span>
-      <span class="pred__values">{{ p.secondary.join(', ') }}</span>
+      <span class="pred__values">
+        @for (stat of p.secondary; track stat; let last = $last) {
+          <app-linked-text [text]="stat" />{{ last ? '' : ', ' }}
+        }
+      </span>
     </div>
   }
 </div>

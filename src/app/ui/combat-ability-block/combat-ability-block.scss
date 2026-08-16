@@ -17,6 +17,8 @@
   font-family: var(--font-serif);
   font-weight: 400;
   font-size: 18px;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .combat__cost {

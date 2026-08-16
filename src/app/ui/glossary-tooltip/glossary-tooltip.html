@@ -1,12 +1,18 @@
-@if (definition()) {
+@if (target(); as t) {
   <span
     class="gloss"
     tabindex="0"
     role="button"
     [attr.aria-label]="term() + ' — definicja'"
   >
-    <span class="gloss__term">{{ term() }}</span>
-    <span class="gloss__tip" role="tooltip">{{ definition() }}</span>
+    @if (linkable()) {
+      <a class="gloss__link" [routerLink]="['/karta', t.type, t.id]">{{ term() }}</a>
+    } @else {
+      <span class="gloss__term">{{ term() }}</span>
+    }
+    @if (definition(); as def) {
+      <span class="gloss__tip" role="tooltip">{{ def }}</span>
+    }
   </span>
 } @else {
   <span class="gloss">{{ term() }}</span>

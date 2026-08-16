@@ -32,7 +32,9 @@ const files = {
   przedmioty_magiczne: { file: 'przedmioty_magiczne.json', type: 'magicItem', expected: 44, detailed: 44 },
   bestiariusz: { file: 'bestiariusz.json', type: 'monster', expected: 10, detailed: 10 },
   reszta_ekwipunku: { file: 'reszta_ekwipunku.json', type: 'miscItem', expected: 6, detailed: 6 },
-  glosariusz: { file: 'glosariusz.json', type: 'glossary', expected: 39, detailed: 39 }
+  statystyki: { file: 'statystyki.json', type: 'stat', expected: 51, detailed: 51 },
+  mechaniki: { file: 'mechaniki.json', type: 'mechanic', expected: 20, detailed: 20 },
+  walka: { file: 'walka.json', type: 'combat', expected: 40, detailed: 40 }
 };
 
 let failed = false;

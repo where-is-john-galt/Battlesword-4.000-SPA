@@ -5,20 +5,25 @@ export type CompendiumType =
   | 'profession'
   | 'class'
   | 'perk'
+  | 'stat'
+  | 'mechanic'
+  | 'combat'
   | 'weapon'
   | 'armor'
   | 'belt'
   | 'handItem'
   | 'magicItem'
   | 'monster'
-  | 'miscItem'
-  | 'glossary';
+  | 'miscItem';
 
 export const COMPENDIUM_TYPES: readonly CompendiumType[] = [
   'race',
   'profession',
   'class',
   'perk',
+  'stat',
+  'mechanic',
+  'combat',
   'weapon',
   'armor',
   'belt',
@@ -26,7 +31,6 @@ export const COMPENDIUM_TYPES: readonly CompendiumType[] = [
   'magicItem',
   'monster',
   'miscItem',
-  'glossary',
 ] as const;
 
 export function isCompendiumType(value: string): value is CompendiumType {
@@ -206,9 +210,23 @@ export interface MiscItem extends BaseEntry {
   requiredWealth?: number;
 }
 
-export interface GlossaryEntry extends BaseEntry {
-  term: string;
+export type StatGroup =
+  | 'pierwszorzędna'
+  | 'defensywna'
+  | 'drugorzędna'
+  | 'trzeciorzędna'
+  | 'drużynowa';
+
+export interface Stat extends BaseEntry {
+  group: StatGroup;
+  basedOn?: string;
   definition: string;
+  aliases?: string[];
+}
+
+export interface Rule extends BaseEntry {
+  definition: string;
+  aliases?: string[];
 }
 
 export interface IndexEntry {

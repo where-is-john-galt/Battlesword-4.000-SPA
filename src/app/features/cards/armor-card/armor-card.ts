@@ -4,10 +4,11 @@ import type { Armor } from '../../../models/compendium';
 import { CardShell } from '../../../ui/card-shell/card-shell';
 import { Tag } from '../../../ui/tag/tag';
 import { GlossaryTooltip } from '../../../ui/glossary-tooltip/glossary-tooltip';
+import { LinkedText } from '../../../ui/linked-text/linked-text';
 
 @Component({
   selector: 'app-armor-card',
-  imports: [CardShell, Tag, GlossaryTooltip, RouterLink],
+  imports: [CardShell, Tag, GlossaryTooltip, LinkedText, RouterLink],
   templateUrl: './armor-card.html',
   styleUrl: './armor-card.scss',
 })

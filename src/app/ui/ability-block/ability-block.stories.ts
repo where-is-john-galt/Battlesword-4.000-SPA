@@ -1,10 +1,13 @@
 import type { Meta, StoryObj } from '@storybook/angular';
+import { applicationConfig } from '@storybook/angular';
+import { provideHttpClient } from '@angular/common/http';
 import { AbilityBlock } from './ability-block';
 
 const meta: Meta<AbilityBlock> = {
   title: 'Components/AbilityBlock',
   component: AbilityBlock,
   tags: ['autodocs'],
+  decorators: [applicationConfig({ providers: [provideHttpClient()] })],
   args: {
     ability: {
       name: 'Ferwor wiary',

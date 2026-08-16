@@ -1,10 +1,13 @@
 import type { Meta, StoryObj } from '@storybook/angular';
+import { applicationConfig } from '@storybook/angular';
+import { provideHttpClient } from '@angular/common/http';
 import { CombatAbilityBlock } from './combat-ability-block';
 
 const meta: Meta<CombatAbilityBlock> = {
   title: 'Components/CombatAbilityBlock',
   component: CombatAbilityBlock,
   tags: ['autodocs'],
+  decorators: [applicationConfig({ providers: [provideHttpClient()] })],
   args: {
     ability: {
       name: 'Remiks',

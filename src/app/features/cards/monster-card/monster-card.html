@@ -5,7 +5,11 @@
 
   <div class="chip-row">
     @if (m.tier) {
-      <app-tag [label]="m.tier" variant="gold" />
+      @if (tierTarget(); as target) {
+        <app-tag [label]="m.tier" variant="gold" [link]="target" />
+      } @else {
+        <app-tag [label]="m.tier" variant="gold" />
+      }
     }
     @if (m.size) {
       <app-tag [label]="m.size" variant="muted" />
@@ -34,8 +38,12 @@
     <div class="card-section">
       <span class="card-over">Odporności</span>
       <div class="chip-row">
-        @for (resistance of m.resistances; track resistance) {
-          <app-tag [label]="resistance" variant="gold" />
+        @for (resistance of resistanceLinks(); track resistance.name) {
+          @if (resistance.target; as target) {
+            <app-tag [label]="resistance.name" variant="gold" [link]="target" />
+          } @else {
+            <app-tag [label]="resistance.name" variant="gold" />
+          }
         }
       </div>
     </div>
@@ -45,8 +53,12 @@
     <div class="card-section">
       <span class="card-over">Podatności</span>
       <div class="chip-row">
-        @for (vulnerability of m.vulnerabilities; track vulnerability) {
-          <app-tag [label]="vulnerability" variant="danger" />
+        @for (vulnerability of vulnerabilityLinks(); track vulnerability.name) {
+          @if (vulnerability.target; as target) {
+            <app-tag [label]="vulnerability.name" variant="danger" [link]="target" />
+          } @else {
+            <app-tag [label]="vulnerability.name" variant="danger" />
+          }
         }
       </div>
     </div>
@@ -78,7 +90,7 @@
             </span>
           </div>
           @if (action.effect) {
-            <p class="monster-action__effect">{{ action.effect }}</p>
+            <p class="monster-action__effect"><app-linked-text [text]="action.effect" /></p>
           }
         </div>
       }

@@ -3,6 +3,7 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { isCompendiumType, type CompendiumType } from '../../../models/compendium';
 import { typeMeta } from '../../../models/sections';
+import { BacklinksService } from '../../../services/backlinks.service';
 import { CompendiumService } from '../../../services/compendium.service';
 import { DecoLine } from '../../../ui/deco-line/deco-line';
 import { EntityCard } from '../../cards/entity-card/entity-card';
@@ -16,6 +17,7 @@ import { EntityCard } from '../../cards/entity-card/entity-card';
 export class KartaPage {
   private readonly route = inject(ActivatedRoute);
   private readonly compendium = inject(CompendiumService);
+  private readonly backlinksService = inject(BacklinksService);
   private readonly params = toSignal(this.route.params);
 
   protected readonly loading = this.compendium.loading;
@@ -42,5 +44,12 @@ export class KartaPage {
       return undefined;
     }
     return this.compendium.byType(this.type())().find((entry) => entry.id === this.id());
+  });
+
+  protected readonly backlinks = computed(() => {
+    if (!this.isValidType() || !this.id()) {
+      return [];
+    }
+    return this.backlinksService.backlinksFor(this.type(), this.id()).slice(0, 20);
   });
 }

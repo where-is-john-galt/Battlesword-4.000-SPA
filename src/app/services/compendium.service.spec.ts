@@ -13,6 +13,9 @@ describe('CompendiumService', () => {
     'profesje.json',
     'klasy.json',
     'perki.json',
+    'statystyki.json',
+    'mechaniki.json',
+    'walka.json',
     'bron.json',
     'pancerze.json',
     'paski.json',
@@ -20,7 +23,6 @@ describe('CompendiumService', () => {
     'przedmioty_magiczne.json',
     'reszta_ekwipunku.json',
     'bestiariusz.json',
-    'glosariusz.json',
     'index.json',
   ];
 

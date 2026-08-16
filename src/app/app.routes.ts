@@ -11,6 +11,22 @@ export const routes: Routes = [
     loadComponent: () => import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
   },
   {
+    path: 'statystyki',
+    loadComponent: () => import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
+  },
+  {
+    path: 'statystyki/:kategoria',
+    loadComponent: () => import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
+  },
+  {
+    path: 'mechaniki',
+    loadComponent: () => import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
+  },
+  {
+    path: 'mechaniki/:kategoria',
+    loadComponent: () => import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
+  },
+  {
     path: 'ekwipunek',
     loadComponent: () => import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
   },
@@ -19,11 +35,15 @@ export const routes: Routes = [
     loadComponent: () => import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
   },
   {
-    path: 'bestiariusz',
+    path: 'walka',
     loadComponent: () => import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
   },
   {
-    path: 'glosariusz',
+    path: 'walka/:kategoria',
+    loadComponent: () => import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
+  },
+  {
+    path: 'bestiariusz',
     loadComponent: () => import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
   },
   {

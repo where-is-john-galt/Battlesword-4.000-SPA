@@ -24,6 +24,8 @@
   font-family: var(--font-serif);
   font-weight: 400;
   font-size: 17px;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .monster-action__meta {

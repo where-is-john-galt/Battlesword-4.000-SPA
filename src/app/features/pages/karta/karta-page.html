@@ -10,6 +10,17 @@
   </nav>
   <app-deco-line />
   <app-entity-card [type]="type()" [entry]="entry()!" />
+
+  @if (backlinks().length) {
+    <section class="karta__backlinks" aria-label="Zobacz też">
+      <span class="card-over">Zobacz też</span>
+      <div class="chip-row">
+        @for (link of backlinks(); track link.type + ':' + link.id) {
+          <a class="chip-link" [routerLink]="['/karta', link.type, link.id]">{{ link.name }}</a>
+        }
+      </div>
+    </section>
+  }
 } @else {
   <p class="karta__status">Nie znaleziono pozycji.</p>
 }

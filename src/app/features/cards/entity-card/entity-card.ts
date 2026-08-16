@@ -11,7 +11,8 @@ import { HandItemCard } from '../hand-item-card/hand-item-card';
 import { MagicItemCard } from '../magic-item-card/magic-item-card';
 import { MiscItemCard } from '../misc-item-card/misc-item-card';
 import { MonsterCard } from '../monster-card/monster-card';
-import { GlossaryCard } from '../glossary-card/glossary-card';
+import { RuleCard } from '../rule-card/rule-card';
+import { StatCard } from '../stat-card/stat-card';
 import { StubCard } from '../stub-card/stub-card';
 
 @Component({
@@ -21,6 +22,8 @@ import { StubCard } from '../stub-card/stub-card';
     ProfessionCard,
     ClassCard,
     PerkCard,
+    StatCard,
+    RuleCard,
     WeaponCard,
     ArmorCard,
     BeltCard,
@@ -28,7 +31,6 @@ import { StubCard } from '../stub-card/stub-card';
     MagicItemCard,
     MiscItemCard,
     MonsterCard,
-    GlossaryCard,
     StubCard,
   ],
   templateUrl: './entity-card.html',

@@ -8,25 +8,25 @@
   <div class="card-section">
     @if (a.armor !== undefined) {
       <div class="stat">
-        <span class="stat__label"><app-glossary-tooltip term="Pancerz" /></span>
+        <span class="stat__label"><app-glossary-tooltip term="Pancerz" [linkable]="true" /></span>
         <span class="stat__value">{{ a.armor }}</span>
       </div>
     }
     @if (a.barrier !== undefined) {
       <div class="stat">
-        <span class="stat__label"><app-glossary-tooltip term="Bariera" /></span>
+        <span class="stat__label"><app-glossary-tooltip term="Bariera" [linkable]="true" /></span>
         <span class="stat__value">{{ a.barrier }}</span>
       </div>
     }
     @if (a.requirements) {
       <div class="stat">
         <span class="stat__label">Wymagania</span>
-        <span class="stat__value">{{ a.requirements }}</span>
+        <span class="stat__value"><app-linked-text [text]="a.requirements" /></span>
       </div>
     }
     @if (a.requiredWealth !== undefined) {
       <div class="stat">
-        <span class="stat__label"><app-glossary-tooltip term="Majętność" /></span>
+        <span class="stat__label"><app-glossary-tooltip term="Majętność" [linkable]="true" /></span>
         <span class="stat__value">{{ a.requiredWealth }}</span>
       </div>
     }

@@ -3,10 +3,10 @@
 
   @if (perk().requirements || perk().cost) {
     <div class="card-section">
-      @if (perk().requirements) {
+      @if (perk().requirements; as req) {
         <div class="stat">
           <span class="stat__label">Wymagania</span>
-          <span class="stat__value">{{ perk().requirements }}</span>
+          <span class="stat__value"><app-linked-text [text]="req" /></span>
         </div>
       }
       @if (perk().cost) {
@@ -18,7 +18,7 @@
     </div>
   }
 
-  @if (perk().description) {
-    <p class="perk__desc">{{ perk().description }}</p>
+  @if (perk().description; as description) {
+    <p class="perk__desc"><app-linked-text [text]="description" /></p>
   }
 </app-card-shell>

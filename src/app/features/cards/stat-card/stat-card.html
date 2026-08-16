@@ -1,0 +1,17 @@
+@let s = stat();
+
+<app-card-shell [type]="'stat'" [id]="s.id">
+  <h3 class="card-title">{{ s.name }}</h3>
+
+  <div class="chip-row">
+    <app-tag [label]="groupLabel()" />
+  </div>
+
+  @if (baseName(); as base) {
+    <p class="stat__basedon">
+      Oparta na: <app-linked-text [text]="base" />
+    </p>
+  }
+
+  <p class="stat__definition"><app-linked-text [text]="s.definition" /></p>
+</app-card-shell>

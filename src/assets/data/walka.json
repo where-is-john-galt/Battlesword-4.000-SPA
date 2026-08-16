@@ -1,0 +1,371 @@
+[
+  {
+    "id": "bramy_śmierci",
+    "name": "Bramy Śmierci",
+    "definition": "Status nakładany, gdy Punkty Życia spadną do 0: utrudnienie na wszystkie testy i ataki; kolejne obrażenia wymuszają test Odporności na Śmierć. Ustępuje po odzyskaniu HP.",
+    "source": "walka/obrażenia_i_śmierć.md",
+    "status": "detailed"
+  },
+  {
+    "id": "pochwycenie",
+    "name": "Pochwycenie",
+    "definition": "Zamiast zadawać obrażenia można pochwycić przeciwnika (koszt Staminy wg tieru); pochwyconego można poddusić, zaatakować, rzucić lub wypuścić.",
+    "source": "walka/stamina_mana_i_podsatwowe_ataki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "na_wierzchowcu",
+    "name": "Na wierzchowcu",
+    "definition": "Postać dosiada wierzchowca i przemieszcza się razem z nim, wykorzystując jego możliwości ruchu.",
+    "source": "walka/statusy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "oszołomienie",
+    "name": "Oszołomienie",
+    "definition": "Postać traci swoją turę. Następnie, status zostaje zniesiony. W przypadku bossów, tracą oni jedną ze swoich tur.",
+    "source": "walka/statusy.md",
+    "status": "detailed",
+    "aliases": [
+      "oszołomieni",
+      "oszołomienia"
+    ]
+  },
+  {
+    "id": "oślepienie",
+    "name": "Oślepienie",
+    "definition": "Postać automatycznie przegrywa wszystkie testy oparte o wzrok. Ataki w zwarciu wykonywane są z utrudnieniem. Ataki dystansowe są niemożliwe.",
+    "source": "walka/statusy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "unieruchomienie",
+    "name": "Unieruchomienie",
+    "definition": "Postać nie może wykonywać akcji ruchu. Wyzwolenie powinno być sprecyzowane w trakcie nałożenia statusu. W przeciwnym przypadku mija na koniec tury unieruchomionego.",
+    "source": "walka/statusy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "ukryty",
+    "name": "Ukryty",
+    "definition": "Bohaterowie: postać nie może być wzięta na cel ataku lub pojedynczy cel ataku obszarowego. NPC: postać staje się niewidoczna dla pozostałych. Zapewnia ułatwienie do ataków dla ukrytego.",
+    "source": "walka/statusy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "krwawienie",
+    "name": "Krwawienie",
+    "definition": "Każdy poziom statusu powoduje fizyczne obrażenia eskalujące na początku tury. Zatamowanie krwawienia wymaga w ramach akcji zdania testu Medycyny. Każdy sukces obniża poziom Krwawienia o 1.",
+    "source": "walka/statusy.md",
+    "status": "detailed",
+    "aliases": [
+      "krwawienia"
+    ]
+  },
+  {
+    "id": "panika",
+    "name": "Panika",
+    "definition": "Bohaterowie: na początku tury test Poczytalności z ujemnym modyfikatorem równym poziomowi Paniki; porażka powoduje zawał, spadek HP do 0 i status Bram Śmierci. NPC: ataki przeciwko źródłu Paniki z utrudnieniem, przeciwnik liczony jako martwy na potrzeby Morale.",
+    "source": "walka/statusy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "podpalenie",
+    "name": "Podpalenie",
+    "definition": "Każdy poziom statusu powoduje obrażenia eskalujące na początku tury. Ugaszenie wymaga w ramach akcji zdania testu Akrobatyki. Każdy sukces obniża poziom Podpalenia o 1.",
+    "source": "walka/statusy.md",
+    "status": "detailed",
+    "aliases": [
+      "podpalenia"
+    ]
+  },
+  {
+    "id": "pokiereszowanie",
+    "name": "Pokiereszowanie",
+    "definition": "Zwiększa otrzymywane obrażenia o 10% i zmniejsza zadawane obrażenia o 2. Na koniec tury poziom statusu spada o 1. Poziom 10 lub wyższy natychmiast redukuje HP do zera.",
+    "source": "walka/statusy.md",
+    "status": "detailed",
+    "aliases": [
+      "pokiereszowania"
+    ]
+  },
+  {
+    "id": "porażenie",
+    "name": "Porażenie",
+    "definition": "Zwiększa otrzymywane obrażenia o 1 kostkę. Każde otrzymane obrażenia zmniejsza poziom statusu o 1.",
+    "source": "walka/statusy.md",
+    "status": "detailed",
+    "aliases": [
+      "porażenia",
+      "porażeniem"
+    ]
+  },
+  {
+    "id": "zamrożenie",
+    "name": "Zamrożenie",
+    "definition": "Bohaterowie: na początku tury test Wytrzymałości z ujemnym modyfikatorem równym poziomowi Zamrożenia; porażka nakłada 1 poziom Zmęczenia. NPC: dwa rzuty k20; wynik ≤ poziomowi statusu oznacza utratę 1 akcji.",
+    "source": "walka/statusy.md",
+    "status": "detailed",
+    "aliases": [
+      "zamrożenia"
+    ]
+  },
+  {
+    "id": "zatrucie",
+    "name": "Zatrucie",
+    "definition": "Każdy poziom statusu powoduje żrące obrażenia eskalujące na początku tury, po czym poziom spada o 1. Zatruty otrzymuje utrudnienie do wszystkich ataków.",
+    "source": "walka/statusy.md",
+    "status": "detailed",
+    "aliases": [
+      "zatrucia",
+      "zatruciem"
+    ]
+  },
+  {
+    "id": "zmęczenie",
+    "name": "Zmęczenie",
+    "definition": "Bohaterowie: każdy poziom narzuca modyfikator (-1) do wszystkich testów oraz obniża zadawane obrażenia o jedną kostkę. NPC otrzymują zamiast tego poziomy Pokiereszowania. Poziom 10 lub wyższy natychmiast redukuje HP do zera.",
+    "source": "walka/statusy.md",
+    "status": "detailed",
+    "aliases": [
+      "zmęczenia"
+    ]
+  },
+  {
+    "id": "statusy_pojedyncze",
+    "name": "Status pojedynczy",
+    "definition": "Status przyjmujący dwie wartości (nałożony/brak), np. Bramy Śmierci, Oszołomienie, Oślepienie, Pochwycenie, Unieruchomienie.",
+    "source": "walka/statusy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "statusy_wielokrotne",
+    "name": "Status wielokrotny",
+    "definition": "Status określany w poziomach (np. Krwawienie, Panika, Podpalenie, Zamrożenie, Zatrucie, Zmęczenie); im wyższy poziom, tym większy efekt.",
+    "source": "walka/statusy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "obrażenia_eskalujące",
+    "name": "Obrażenia eskalujące",
+    "definition": "Obrażenia rosnące z poziomem statusu: 1. 2k4, 2. 2k6, 3. 2k8, 4. 2k12, 5. 2k20; każdy kolejny poziom dodaje 2k20.",
+    "source": "walka/statusy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "typy_obrażeń",
+    "name": "Typy obrażeń",
+    "definition": "Fizyczne, Ogniste, Zimne, Elektryczne, Chaotyczne, Żrące, Święte; obrażenia od ognia, lodu i elektryczności to obrażenia od żywiołów.",
+    "source": "walka/obrażenia_i_śmierć.md",
+    "status": "detailed"
+  },
+  {
+    "id": "odporność_podatność",
+    "name": "Odporność / Podatność / Niewrażliwość",
+    "definition": "Odporność redukuje obrażenia danego typu o połowę, podatność podwaja je, a niewrażliwość redukuje o 100%. Naliczane przed redukcją z pancerza.",
+    "source": "walka/obrażenia_i_śmierć.md",
+    "status": "detailed"
+  },
+  {
+    "id": "leczenie",
+    "name": "Leczenie",
+    "definition": "Małe (25%+1d4), Średnie (50%+1k8), Duże (75%+1k12), Pełne (100%) Punktów Życia.",
+    "source": "walka/obrażenia_i_śmierć.md",
+    "status": "detailed"
+  },
+  {
+    "id": "sektor",
+    "name": "Sektor",
+    "definition": "Obszar pola bitwy oznaczony etykietą terenu; jednostka pozycji i ruchu w walce.",
+    "source": "walka/typy_terenów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "morale",
+    "name": "Morale",
+    "definition": "System opisujący, czy przeciwnicy wytrwają w walce; gdy spada do zera, przeciwnicy uciekają lub poddają się.",
+    "source": "walka/morale.md",
+    "status": "detailed"
+  },
+  {
+    "id": "miniony",
+    "name": "Miniony",
+    "definition": "Słudzy, sojusznicy, wasale lub magiczne konstrukty towarzyszące Bohaterom; mogą być wzmacniani Staminą lub testem Dowodzenia.",
+    "source": "walka/miniony.md",
+    "status": "detailed"
+  },
+  {
+    "id": "inicjatywa",
+    "name": "Inicjatywa",
+    "definition": "Drużyna Bohaterów wykonuje akcje naprzemiennie z przeciwnikami; wyjątki: zaskoczenie i walka z bossem (boss działa po każdej turze Bohatera).",
+    "source": "walka/inicjatywa.md",
+    "status": "detailed"
+  },
+  {
+    "id": "nokaut",
+    "name": "Nokaut",
+    "definition": "Zneutralizowanie przeciwnika bez zabijania: redukcja HP do 0, wydanie 3 Staminy/Many i rzut k20 (1-3 to porażka nokautu).",
+    "source": "walka/stamina_mana_i_podsatwowe_ataki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "tiery_oponentów",
+    "name": "Tiery oponentów",
+    "definition": "Trep (najsłabsi), Elita (wyspecjalizowani), Mistrz (wszechstronnie wyszkoleni), Boss (stawia czoła drużynie, działa między turami), Uber boss (finalny przeciwnik kampanii).",
+    "source": "bestiariusz/rodzaje_oponentów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "horda",
+    "name": "Horda",
+    "definition": "Ataki grupy trepów traktowane jako wspólny atak; minimum 3 trepów, cel testu defensywnego z modyfikatorem (-2), obrażenia rosną o kość za każde 2 członków.",
+    "source": "bestiariusz/rodzaje_oponentów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "obrażenia_fizyczne",
+    "name": "Fizyczne",
+    "definition": "Obrażenia fizyczne — cięcia, uderzenia i inne obrażenia mechaniczne.",
+    "source": "walka/obrażenia_i_śmierć.md",
+    "status": "detailed",
+    "aliases": [
+      "fizyczne",
+      "fizycznym",
+      "fizycznych"
+    ]
+  },
+  {
+    "id": "obrażenia_ogniste",
+    "name": "Ogniste",
+    "definition": "Obrażenia od ognia — jeden z typów obrażeń od żywiołów.",
+    "source": "walka/obrażenia_i_śmierć.md",
+    "status": "detailed",
+    "aliases": [
+      "ogniste",
+      "ogień",
+      "ognia",
+      "ogniem",
+      "ognistych"
+    ]
+  },
+  {
+    "id": "obrażenia_zimne",
+    "name": "Zimne",
+    "definition": "Obrażenia od lodu — jeden z typów obrażeń od żywiołów.",
+    "source": "walka/obrażenia_i_śmierć.md",
+    "status": "detailed",
+    "aliases": [
+      "zimne",
+      "zimno",
+      "zimna",
+      "zimnem",
+      "zimnych"
+    ]
+  },
+  {
+    "id": "obrażenia_elektryczne",
+    "name": "Elektryczne",
+    "definition": "Obrażenia od elektryczności — jeden z typów obrażeń od żywiołów.",
+    "source": "walka/obrażenia_i_śmierć.md",
+    "status": "detailed",
+    "aliases": [
+      "elektryczne",
+      "elektryczność",
+      "elektryczności"
+    ]
+  },
+  {
+    "id": "obrażenia_chaotyczne",
+    "name": "Chaotyczne",
+    "definition": "Obrażenia chaotyczne — obrażenia o niszczycielskiej, nieprzewidywalnej naturze.",
+    "source": "walka/obrażenia_i_śmierć.md",
+    "status": "detailed",
+    "aliases": [
+      "chaotyczne",
+      "chaotycznych"
+    ]
+  },
+  {
+    "id": "obrażenia_żrące",
+    "name": "Żrące",
+    "definition": "Obrażenia żrące — kwasy i substancje rozpuszczające.",
+    "source": "walka/obrażenia_i_śmierć.md",
+    "status": "detailed",
+    "aliases": [
+      "żrące",
+      "żrących"
+    ]
+  },
+  {
+    "id": "obrażenia_święte",
+    "name": "Święte",
+    "definition": "Obrażenia święte.",
+    "source": "walka/obrażenia_i_śmierć.md",
+    "status": "detailed",
+    "aliases": [
+      "święte",
+      "świętych"
+    ]
+  },
+  {
+    "id": "trep",
+    "name": "Trep",
+    "definition": "Najsłabsi przeciwnicy, często stanowiący mięso armatnie, ale niebezpieczni w większych grupach.",
+    "source": "bestiariusz/rodzaje_oponentów.md",
+    "status": "detailed",
+    "aliases": [
+      "trepem",
+      "trepa",
+      "trepy",
+      "trepów"
+    ]
+  },
+  {
+    "id": "elita",
+    "name": "Elita",
+    "definition": "Silniejsi przeciwnicy dodatkowo wyspecjalizowani w jednej dziedzinie walki.",
+    "source": "bestiariusz/rodzaje_oponentów.md",
+    "status": "detailed",
+    "aliases": [
+      "elitą",
+      "elity",
+      "elitarnych",
+      "elitarni"
+    ]
+  },
+  {
+    "id": "mistrz",
+    "name": "Mistrz",
+    "definition": "Wytrzymali przeciwnicy wszechstronnie wyszkoleni z szeroką paletą akcji.",
+    "source": "bestiariusz/rodzaje_oponentów.md",
+    "status": "detailed",
+    "aliases": [
+      "mistrzem",
+      "mistrza",
+      "mistrzowskich",
+      "mistrzowscy"
+    ]
+  },
+  {
+    "id": "boss",
+    "name": "Boss",
+    "definition": "Najsilniejsi oponenci zdolni do samodzielnego stawienia czoła drużynie; wykonują 1 akcję i 1 ruch pomiędzy turami bohaterów.",
+    "source": "bestiariusz/rodzaje_oponentów.md",
+    "status": "detailed",
+    "aliases": [
+      "bossem",
+      "bossa"
+    ]
+  },
+  {
+    "id": "uber_boss",
+    "name": "Uber boss",
+    "definition": "Finalny przeciwnik całej kampanii.",
+    "source": "bestiariusz/rodzaje_oponentów.md",
+    "status": "detailed",
+    "aliases": [
+      "uber bossem",
+      "uber bossa"
+    ]
+  }
+]
