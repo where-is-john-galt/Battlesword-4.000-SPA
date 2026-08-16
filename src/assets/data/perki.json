@@ -1,0 +1,290 @@
+[
+  {
+    "id": "życie_na_krawędzi",
+    "name": "Życie na krawędzi",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Siła Woli 11; Mądrość 3",
+    "cost": "500 PD",
+    "description": "HP zawsze wynosi 0. Bramy Śmierci nie nakładają żadnych kar. Zapewani niewrażliwość na obrażenia od chaosu i świętości."
+  },
+  {
+    "id": "nienaturalna_więź",
+    "name": "Nienaturalna więź",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Charyzma 10",
+    "cost": "400 PD",
+    "description": "Przywoływanie i tworzenie minionów nie kosztuje Many. Na stałe zajmuje jedną dłoń."
+  },
+  {
+    "id": "awatar_ognia",
+    "name": "Awatar ognia",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Inteligencja 10",
+    "cost": "400 PD",
+    "description": "Wszystkie zadawane obrażenia są zawsze obrażeniami od ognia. Zwiększanie obrażeń za Staminę lub Manę jest podwójne efektywne."
+  },
+  {
+    "id": "przymierze_czarnego_ognia",
+    "name": "Przymierze czarnego ognia",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Inteligencja 8; Siła Woli 8",
+    "cost": "200 PD",
+    "description": "Wszystkie zadawane obrażenia od ognia są zamiast tego obrażeniami od chaosu. Nakładane Podpalenie zadaje eskalujące obrażenia od chaosu."
+  },
+  {
+    "id": "magia_krwi",
+    "name": "Magia krwi",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Inteligencja 9",
+    "cost": "300 PD",
+    "description": "Brak Many. Umożliwia wzmacnianie zaklęć Punktami Życia. Zapewnia małe leczenie (25%+1d4) na początku kazdej tury."
+  },
+  {
+    "id": "bastion",
+    "name": "Bastion",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Wytrzymałość 9",
+    "cost": "300 PD",
+    "description": "Testy Wytrzymałości i Uniku zawsze kończą się porażką. Zapewnia odporność na obrażenia fizyczne i 1 wybrany typ obrażeń od żywiołów."
+  },
+  {
+    "id": "karmazynowy_szturm",
+    "name": "Karmazynowy szturm",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Siła 8",
+    "cost": "100 PD",
+    "description": "Podwaja nakładane Krawienie. Przeciwnicy z nałożonym w ten sposób Krwawieniem otrzymują dodatkowe obrażenia eskalujące za każdym razem, gdy wykonają akcję ruchu."
+  },
+  {
+    "id": "taniec_ze_śmiercią",
+    "name": "Taniec ze śmiercią",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Zręczność 12; Mądrość 4",
+    "cost": "600 PD",
+    "description": "Podwaja Staminę, jeśli postać uzbrojona jest tylko w jedną broń jednoręczną, a druga ręka pozostaje wolna."
+  },
+  {
+    "id": "kosmiczna_bateria",
+    "name": "Kosmiczna bateria",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Inteligencja 11; Mądrość 3",
+    "cost": "500 PD",
+    "description": "Dodaje Barierę do Many. Podwaja koszty Many. Blokuje regenerację Many na początku tury."
+  },
+  {
+    "id": "ekwilibrium_żywiołów",
+    "name": "Ekwilibrium żywiołów",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Inteligencja 9",
+    "cost": "300 PD",
+    "description": "Umożliwia nakładanie Podpalenia, Zamrożenia i Szoku, jeśli atak umożliwiał nałożenie jednego z nich."
+  },
+  {
+    "id": "wieczna_młodość",
+    "name": "Wieczna młodość",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Wytrzymałość 11; Mądrość 3",
+    "cost": "500 PD",
+    "description": "Małe leczenie (25%+1d4) na początku każdej tury. Zmniejsza leczenie miksturami o połowę."
+  },
+  {
+    "id": "krew_gigantów",
+    "name": "Krew gigantów",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Siła 18; Mądrość 3",
+    "cost": "500 PD",
+    "description": "Umożliwia trzymanie broni dwuręcznej w jednej dłoni. Neguje bonusy ze statystyk do podstawowej wartości Punktów Życia."
+  },
+  {
+    "id": "szalone_uniki",
+    "name": "Szalone uniki",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Wytrzymałość 8; Zręczność 8; Spryt 8; Ostrożność 8; Siła Woli 8; Mądrość 4",
+    "cost": "600 PD",
+    "description": "Ułatwienie do wszystkich rzutów defensywnych. Umożliwia przerzut nieudanych testów defensywnych kosztem 1 Szczęścia."
+  },
+  {
+    "id": "zawałowiec",
+    "name": "Zawałowiec",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Wytrzymałość 8",
+    "cost": "200 PD",
+    "description": "Zapewnia niewrażliwość na wszystkie obrażenia eskalujące. Zwiększa maksymalną wartość Odporności na Śmierć o 1. Wszystkie testy Odporności na Śmierć wykonywane są z utrudnieniem."
+  },
+  {
+    "id": "technika_pustej_dłoni",
+    "name": "Technika pustej dłoni",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Zręczność 11",
+    "cost": "500 PD",
+    "description": "Jeśli postać nie jest uzbrojona, ataki bez broni zyskują cechę Krytyczny i zyskuje 3 Staminy."
+  },
+  {
+    "id": "żelazny_refleks",
+    "name": "Żelazny refleks",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Zręczność 8",
+    "cost": "200 PD",
+    "description": "Konwertuje wszystkie rozwinięcia Uniku na Pancerz."
+  },
+  {
+    "id": "władca_dzików",
+    "name": "Władca dzików",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Sztuka przetrwania 12",
+    "cost": "400 PD",
+    "description": "Pozwala w ramach akcji na przywołanie dzika."
+  },
+  {
+    "id": "umysł_ponad_materią",
+    "name": "Umysł ponad materią",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Siła Woli 10; Mądrość 3",
+    "cost": "500 PD",
+    "description": "Stamina, która pozostaje na koniec tury jest konwertowana na Pancerz. Mana, która pozostaje na koniec tury jest konwertowana na Barierę. Trwa do poczatku kolejnej tury. Regeneracja Staminy i Many spada o połowę."
+  },
+  {
+    "id": "nekromantyczny_talizman",
+    "name": "Nekromantyczny talizman",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Charyzma 9",
+    "cost": "300 PD",
+    "description": "Bonusy z wyekwipowanego amuletu są zanegowane. Zwiększa obrażenia zadawane przez kontrolowe miniony o 1 kostkę oraz ich HP o 5 za każdy stopień rzadkości amuletu (Niezwykły +1/+5; Rzadki +2/+10; Potężne +3/+15; Arcymistrzowskie +4/+20; Mityczne +5/+25; Boskie +6/+30)."
+  },
+  {
+    "id": "oaza",
+    "name": "Oaza",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Sztuka przetrwania 9",
+    "cost": "100 PD",
+    "description": "Uniemożliwia korzystania z pierścieni i amuletów. Podwaja efekty przedmiotów podręcznych."
+  },
+  {
+    "id": "zestrojenie_z_bólem",
+    "name": "Zestrojenie z bólem",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Wytrzymałość 12; Mądrość 4",
+    "cost": "600 PD",
+    "description": "Ułatwienie do wszystkich testów i ataków podczas Bram Śmierci."
+  },
+  {
+    "id": "pierwotny_głód",
+    "name": "Pierwotny głód",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Sztuka przetrwania 12",
+    "cost": "400 PD",
+    "description": "Każdy zabity przeciwnik przywraca 1 HP. Na koniec walki należy wykonać test Siły Woli. Porażka oznacza utratę 1 punktu Poczytalności."
+  },
+  {
+    "id": "przewidywalna_technika",
+    "name": "Przewidywalna technika",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Spryt 10",
+    "cost": "400 PD",
+    "description": "Ciosy krytyczne nie powodują już eksplodujących obrażeń. Zamiast tego, obrażenia danej kości są podwajane."
+  },
+  {
+    "id": "rezonans",
+    "name": "Rezonans",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Inteligencja 11; Mądrość 3",
+    "cost": "500 PD",
+    "description": "Odwzajemnia otrzymywane statusy na nakładającym. Otrzymuje statusy nakładane na sojuszników w tym samym sektorze."
+  },
+  {
+    "id": "rytualny_rytm",
+    "name": "Rytualny rytm",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Inteligencja 8",
+    "cost": "200 PD",
+    "description": "W ramach akcji pozwala na wybranie jednego zaklęcia, które będzie automatycznie rzucane na początku każdej tury do końca walki za darmo. Zaklęcie może być wzmocnione tylko raz."
+  },
+  {
+    "id": "zabliźniona_wiara",
+    "name": "Zabliźniona wiara",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Siła Woli 8",
+    "cost": "200 PD",
+    "description": "Każdy udany test defensywny generuje 1 Bariery. Nakłada modyfikator (-1) na wszystkie testy defensywne."
+  },
+  {
+    "id": "zaufana_kompania",
+    "name": "Zaufana kompania",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Charyzma 10",
+    "cost": "400 PD",
+    "description": "Zadawane obrażenia zwiększają sie o jedną kostkę za każdego sojusznika, który zaatakował ten sam cel w trakcie tej samej rundy. Zmniejsza Pancerz o 1."
+  },
+  {
+    "id": "niezłomna_postawa",
+    "name": "Niezłomna postawa",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Wytrzymałość 12; Mądrość 4",
+    "cost": "600 PD",
+    "description": "Zapewnia odporność na wszystkie statusy poza Bramami Śmierci i Zmęczeniem. Nakłada utrudnienie na wszystkie testy defensywne."
+  },
+  {
+    "id": "szepty_zagłady",
+    "name": "Szepty zagłady",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Siła Woli 12; Mądrość 4",
+    "cost": "600 PD",
+    "description": "Pozwala na wykonanie 2. tury w rundzie. Za każdym razem postać traci 1 punkt Poczytalności."
+  },
+  {
+    "id": "inkantancje_dzikiego_przypływu",
+    "name": "Inkantancje dzikiego przypływu",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Sztuka przetrwania 12",
+    "cost": "400 PD",
+    "description": "Pozwala w ramach akcji zamienić wybrany sektor w średnim zasięgu w ciężki teren. Można skorzystać raz na walkę."
+  },
+  {
+    "id": "przysięga_dewoty",
+    "name": "Przysięga dewoty",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Siła Woli 12; Mądrość 4",
+    "cost": "600 PD",
+    "description": "Nadwyżka leczenia, która przekroczyłaby wartość maksymalnego HP jest konwertowana na dodatkową Barierę. Bariera z innych źródeł jest zmniejszona o połowę."
+  },
+  {
+    "id": "pakt_feniksa",
+    "name": "Pakt Feniksa",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed",
+    "requirements": "Mądrość 5",
+    "cost": "500 PD",
+    "description": "Można skorzystać raz na postać. Przegrany test Odporności na Śmierć pozwala na powrót do życia i pełnych sił w kolejnej turze. Nie można korzystać z misktur życia."
+  }
+]

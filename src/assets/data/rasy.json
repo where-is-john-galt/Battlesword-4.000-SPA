@@ -1,0 +1,212 @@
+[
+  {
+    "id": "człowiek",
+    "name": "Człowiek",
+    "source": "tworzenie_postaci/rasy/człowiek.md",
+    "status": "detailed",
+    "bonuses": ["+1 do Charyzmy"],
+    "size": "Średni",
+    "passiveAbilities": [
+      {
+        "name": "Wszyscy nas lubią",
+        "description": "Zapewnia +1 do testu opartego o Charyzmę, jeśli drugą stroną jest przedstawiciel innej rasy."
+      }
+    ],
+    "activeAbilities": [
+      {
+        "name": "Ferwor wiary",
+        "description": "W ramach akcji, pozwala na wykonie testu Szczęścia. Sukces w teście zapewnia jedno z poniższych:",
+        "effects": [
+          "+1 do wybranej statystyki pierwszorzędnej na 3 rundy",
+          "Uleczenie się za 25%+1k4 HP",
+          "Usunięcie wszystkich statusów",
+          "W przypadku sukcesu, nie można więcej skorzystać z tej umiejętności do końca walki."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "elf",
+    "name": "Elf",
+    "source": "tworzenie_postaci/rasy/lista_ras.md",
+    "status": "stub"
+  },
+  {
+    "id": "krasnolud",
+    "name": "Krasnolud",
+    "source": "tworzenie_postaci/rasy/krasnolud.md",
+    "status": "detailed",
+    "bonuses": ["+2 do Siły", "-1 do Charyzmy"],
+    "size": "Średni (1x1)",
+    "passiveAbilities": [
+      {
+        "name": "Twardy niczym stal",
+        "description": "Krasnolud zyskuje premię +1 do Pancerza oraz jest niewrażliwy na wszelkie umiejętności przesuwające przeciwników."
+      }
+    ],
+    "activeAbilities": [
+      {
+        "name": "Krasnoludzkie rzemiosło",
+        "description": "W ramach akcji, pozwala na wykonanie testu Kowalstwa, Majsterkowania, Wynalazczości, Znajdowaia lub Sztuki. Sukces pozwala na zwiększenie Pancerza o 1. Dodatkowe sukcesy pozwalają również na zwiększenie Pancerza sojuszników w tym samym sektorze o 1. Premia ta trwa do końca walki. W przypadku sukcesu, nie można już skorzystać z tej umiejętności do końca walki."
+      }
+    ]
+  },
+  {
+    "id": "niziołek",
+    "name": "Niziołek",
+    "source": "tworzenie_postaci/rasy/lista_ras.md",
+    "status": "stub"
+  },
+  {
+    "id": "gnom",
+    "name": "Gnom",
+    "source": "tworzenie_postaci/rasy/lista_ras.md",
+    "status": "stub"
+  },
+  {
+    "id": "mykonid",
+    "name": "Mykonid",
+    "source": "tworzenie_postaci/rasy/mykonid.md",
+    "status": "detailed",
+    "bonuses": ["+1 do Inteligencji", "+1 do Percepcji", "-1 do Charyzmy"],
+    "size": "Średni",
+    "passiveAbilities": [
+      {
+        "name": "Więź z mycellium",
+        "description": "Zapewnia ułatwienia do testów opartych o Percepcję podczas przebywania w lesie."
+      },
+      {
+        "name": "Odporność Prastarej Harmonii",
+        "description": "Dzięki swojej unikalnej fizjologii są odporni na obrażenia żrące."
+      },
+      {
+        "description": "Mykonidy nie muszą mówić na głos do innych mykoidów. Wypuszczają niewidoczne chmury zarodników, które pozwalają im przesyłać obrazy, emocje i proste myśli w promieniu 100 metrów."
+      }
+    ],
+    "activeAbilities": [
+      {
+        "name": "Fungalne egzospory mykoidalne",
+        "description": "W ramach akcji, umożliwia na wypełnienie całego sektora, w którym znajduje się Bohater zarodnikami. Sojusznicy kończący swoją turę w chmurze zarodników uzyskują małe leczenie (25%+1d4). Przeciwnicy wchodzący w chmurę pierwszy raz w swojej turze otrzymują 2k6 obrażeń żrących i zyskują 1 stan zatrucia. Chmura utrzymuje się przez 3 rundy. Z umiejętności można skorzystać raz na turę."
+      },
+      {
+        "name": "Ekspansja Mycelium",
+        "description": "Podczas długiego odpoczynku Mykonid może zapuścić w ziemię mikroskopijne nitki grzybni. Dzięki temu „staje się\" okolicą. Nie można go zaskoczyć, a on sam wyczuwa ruch każdej istoty dotykającej ziemi w promieniu 500 metrów. Musi być to jednak ziemia, która jest częscią większej całości a nie doniczka lub wanna z ziemią. Gdy wchodzi w ten tryb jego ciało transformuje sie zlewając się z lokalna fałną oraz tkanką rzeczywistości przebywając częściowo jednocześnie na planie materialnym oraz Feywild."
+      }
+    ],
+    "vulnerabilities": ["Wrażliwość na Wysuszenie: Podatność na obrażenia od ognia"]
+  },
+  {
+    "id": "automat",
+    "name": "Automat",
+    "source": "tworzenie_postaci/rasy/automat.md",
+    "status": "detailed",
+    "bonuses": ["+2 do Inteligencji", "+1 do Siły", "+1 do Percepcji", "-1 do Zręczności", "-1 do Charyzmy"],
+    "size": "Średni",
+    "passiveAbilities": [
+      {
+        "name": "Nie pije, nie śpi, a jeździ",
+        "description": "Automat może ignorować efekty Zmęczenia tak długo jak nie są one śmiertelne."
+      }
+    ],
+    "activeAbilities": [
+      {
+        "name": "Przeciążenie",
+        "description": "W ramach akcji, może poświęcić 25% swojego Maksymalnego HP, aby zyskać 2k4 Staminy lub Many."
+      }
+    ],
+    "resistances": ["Odporność na obrażenia od Chaosu"],
+    "vulnerabilities": ["Podatność na obrażenia od elektryczności"]
+  },
+  {
+    "id": "centaur",
+    "name": "Centaur",
+    "source": "tworzenie_postaci/rasy/centaur.md",
+    "status": "detailed",
+    "bonuses": ["+2 do Siły", "-1 do Zręczności"],
+    "size": "Duży (2x2)",
+    "passiveAbilities": [
+      {
+        "name": "Pół człowiek, pół koń",
+        "description": "Centaur może zawsze korzystać z dodatkowych cech wynikających z jazdy na wierchowcu, choć z oczywistych przyczyn nie można go z żadnego wierzchowca zrzucić."
+      }
+    ],
+    "activeAbilities": [
+      {
+        "name": "Z kopyta",
+        "description": "Centaur może skorzystać z jednego z dwóch wzmocnień podczas wykonywania akcji Ruchu:",
+        "effects": [
+          "Przemieszcza się o dwa sektory, zamiast jednego",
+          "Przemieszcza się o jeden sektor i wykonuje atak kopnięcia przeciwko wybranemu przeciwnikowi w sektorze docelowym - kopnięcie zadaje bazowo 3k8 obrażeń fizycznych, bazuje na Sile i posiada cechę Ogłuszający."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "drakonid",
+    "name": "Drakonid",
+    "source": "tworzenie_postaci/rasy/lista_ras.md",
+    "status": "stub"
+  },
+  {
+    "id": "ork",
+    "name": "Ork",
+    "source": "tworzenie_postaci/rasy/lista_ras.md",
+    "status": "stub"
+  },
+  {
+    "id": "ryboczłek",
+    "name": "Ryboczłek",
+    "source": "tworzenie_postaci/rasy/lista_ras.md",
+    "status": "stub"
+  },
+  {
+    "id": "minotaur",
+    "name": "Minotaur",
+    "source": "tworzenie_postaci/rasy/lista_ras.md",
+    "status": "stub"
+  },
+  {
+    "id": "ogr",
+    "name": "Ogr",
+    "source": "tworzenie_postaci/rasy/lista_ras.md",
+    "status": "stub"
+  },
+  {
+    "id": "plazmoid",
+    "name": "Plazmoid",
+    "source": "tworzenie_postaci/rasy/plazmoid.md",
+    "status": "detailed",
+    "bonuses": ["+2 do Zręczność", "-1 do Charyzmy"],
+    "size": "Średni (1x1)",
+    "passiveAbilities": [
+      {
+        "name": "Z gumy",
+        "description": "Plazmoid może dowolnie zmienić swój kształt, o ile zachowa swój oryginalny rozmiar."
+      }
+    ],
+    "activeAbilities": [
+      {
+        "name": "Pochłonięcie",
+        "description": "W ramach akcji, Plazmoid może pochłonąć przeciwnika o tym samym lub mniejszym rozmiarze, zajmując okupowane przez niego miejsce. Pochłoniety przeciwnik jest traktowany jako Unieruchomiony i otrzymuje 3k6 obrażeń żrących na początku każdej swojej tury. W tym samym czasie, Plazmoid musi wykonać test Atletyki, aby uytrzymać pochłoniętego przeciwnika w sobie."
+      }
+    ]
+  },
+  {
+    "id": "diablę",
+    "name": "Diablę",
+    "source": "tworzenie_postaci/rasy/lista_ras.md",
+    "status": "stub"
+  },
+  {
+    "id": "anielę",
+    "name": "Anielę",
+    "source": "tworzenie_postaci/rasy/lista_ras.md",
+    "status": "stub"
+  },
+  {
+    "id": "wilkołak",
+    "name": "Wilkołak",
+    "source": "tworzenie_postaci/rasy/lista_ras.md",
+    "status": "stub"
+  }
+]

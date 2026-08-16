@@ -1,0 +1,10 @@
+[
+  { "id": "pasek", "name": "Pasek", "source": "ekwipunek/paski.md", "status": "detailed", "requiredWealth": 15, "handItemSlots": 3, "effect": "Brak" },
+  { "id": "szeroki_pasek", "name": "Szeroki pasek", "source": "ekwipunek/paski.md", "status": "detailed", "requiredWealth": 30, "handItemSlots": 4, "effect": "Brak" },
+  { "id": "długi_pasek", "name": "Długi pasek", "source": "ekwipunek/paski.md", "status": "detailed", "requiredWealth": 30, "handItemSlots": 3, "effect": "+1 bazowej Staminy / Many" },
+  { "id": "kolczy_pasek", "name": "Kolczy pasek", "source": "ekwipunek/paski.md", "status": "detailed", "requiredWealth": 30, "handItemSlots": 3, "effect": "+1 Pancerza" },
+  { "id": "podwójny_pasek", "name": "Podwójny pasek", "source": "ekwipunek/paski.md", "status": "detailed", "requiredWealth": 45, "handItemSlots": 5, "effect": "Brak" },
+  { "id": "płytowy_pasek", "name": "Płytowy pasek", "source": "ekwipunek/paski.md", "status": "detailed", "requiredWealth": 45, "handItemSlots": 4, "effect": "+1 Pancerza" },
+  { "id": "ornamentalny_pasek", "name": "Ornamentalny pasek", "source": "ekwipunek/paski.md", "status": "detailed", "requiredWealth": 45, "handItemSlots": 4, "effect": "+1 bazowej Staminy / Many" },
+  { "id": "ciężki_pasek", "name": "Ciężki pasek", "source": "ekwipunek/paski.md", "status": "detailed", "requiredWealth": 45, "handItemSlots": 3, "effect": "+1 Pancerza, +1 bazowej Staminy / Many" }
+]

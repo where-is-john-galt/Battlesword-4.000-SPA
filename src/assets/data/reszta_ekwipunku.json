@@ -1,0 +1,8 @@
+[
+  { "id": "pierścienie", "name": "Pierścienie", "source": "ekwipunek/reszta_ekwipunku.md", "status": "detailed", "requiredWealth": 35 },
+  { "id": "amulety", "name": "Amulety", "source": "ekwipunek/reszta_ekwipunku.md", "status": "detailed", "requiredWealth": 30 },
+  { "id": "klejnoty", "name": "Klejnoty", "source": "ekwipunek/reszta_ekwipunku.md", "status": "detailed", "requiredWealth": 27 },
+  { "id": "hełmy", "name": "Hełmy", "source": "ekwipunek/reszta_ekwipunku.md", "status": "detailed", "requiredWealth": 25 },
+  { "id": "buty", "name": "Buty", "source": "ekwipunek/reszta_ekwipunku.md", "status": "detailed", "requiredWealth": 20 },
+  { "id": "rękawice", "name": "Rękawice", "source": "ekwipunek/reszta_ekwipunku.md", "status": "detailed", "requiredWealth": 15 }
+]
