@@ -1,0 +1,391 @@
+[
+  {
+    "id": "aptekarz",
+    "name": "Aptekarz",
+    "source": "tworzenie_postaci/profesje/aptekarz.md",
+    "status": "detailed",
+    "predispositions": {
+      "primary": ["Inteligencja"],
+      "secondary": ["Majsterkowanie", "Lingwistyka", "Medycyna", "Wiedza", "Wynalazczość"]
+    },
+    "startingWealth": 18,
+    "fame": 4,
+    "passiveAbilities": [
+      {
+        "name": "Maść na ból wszystkiego",
+        "description": "Skraca czas niezbędny do wytworzenia mikstur i lekarstw o połowę."
+      }
+    ],
+    "activeAbilities": [
+      {
+        "name": "Potki na każdą okazję",
+        "description": "W ramach akcji, pozwala na uzupełnienie jednej z mikstur i eliksirów i trucizn wybranego sojusznika lub swoich."
+      }
+    ],
+    "startingEquipment": ["Apteka", "Średnia flaszka życia", "Mała flaszka many lub staminy", "Elektrolity"],
+    "professionalBreak": {
+      "name": "Eksperymentalne mikstury",
+      "description": "W ramach przerwy między przygodami, Aptekarz może podjąć się tworzenia całkowicie nowych, unikatowych mikstur, tynktur i eliksirów.\n\nW ramach akcji przerwy, Aptekarz może wykonać testy i zsumować sukcesy:\n* Znajdowania\n* Wynalazczości\n* Medycyny\n\nKażde 5 sukcesów pozwala na dodanie jednego z efektów z poniższej listy do dowolnego przedmiotu podręcznego. Efekty nie mogą się dublować na jednym przedmiocie.\n\n1. Zmniejsza zuzycia o 1. Postać odzyskuje wszystkie HP na koniec rundy.\n2. Postać otrzymuje obrażenia od chaosu równe Max HP. Podwaja zadawane obrażenia do końca rundy.\n3. Zmniejsza zużycia do 1. Postać automatycznie zyskuje małe leczenie następnym razem, gdy stanie u Bram Śmierci.\n4. Zmniejsza zużycia do 1. Podwaja zyskiwaną Stamine i Manę do końca rundy.\n5. Zmniejsza zużycia o 1. Postać poświęca HP równe 25% Max HP. Postać natychmiast odzyskuje całą Barierę.\n6. Zwiększa Szczęście o 1k6 do końca walki. Postać świeci się jak psu jajca. Postać zyskuje widzenie w ciemności. Postać zyskuje odpornośc na święte obrażenia.\n7. Zapewnia średnie leczenie. Spawnuje 2 wrogo nastawione robale.\n8. Neguje jedną wybraną podatność na obrażenia do końca walki.\n9. Zamienia wszystkie HP -1 na Barierę.\n10. Zamienia połowę otrzymywanych obrażeń od ognia i błyskawic na obrażenia od zimna. Postać otrzymuje o połowę mniej stanów Zamrożenia i traci je dwa razy szybciej.\n11. Uświęca sektor wokół postaci. Zadaje 3k12 świętych obrażeń wszystkim przeciwnikom w tym samym sektorze.\n12. Ciosy krytyczne nakładają stany Zatrucia zamiast zadawać eksplopdujące obrażenia do końca walki.\n13. Neguje następny otrzymany cios kosztem 1 Pancerza do końca walki.\n14. Zapewnia duże leczenie. Postać otrzymuje obrażenia od chaosu równe 25% Max HP.\n15. Zapewnia niewrażliwość na Zamrożenie, klątwy i Zmęczenie na 2 rundy.\n16. Nakłada 1 Paniki na wszystkich przeciwników w tym samym sektorze. Każdy otrzymany cios w zwarciu pozwala na wykonanie testu Atletyki, by wyprzeć przeciwnika do sąsiedniego sektora przez 3 tury.\n17. Neguje następny otrzymany cios kosztem 1 Szczęścia do końca walki.\n18. Uświęca sektor wokół postaci. Postać zyskuje perka Kosmiczna bateria do końca walki.\n19. Sektor wokół postaci zostaje zadymiony. Postać zyskuje perka Karmazynowy szturm do końca walki.\n20. Blokuje odzyskiwanie Staminy i Many do końca walki. Pozwala na wzmacnianie umiejętności kosztem Poczytalności.\n21. Postać zyskuje 1 Staminy lub Many za każdego zabitego przeciwnika do końca walki.\n22. Obniżenie poziomu Szoku i Podpalenia do końca walki.\n23. Uświęca sektor wokół postaci. Podwaja przywracane HP i zmniejsza dwukrotnie przywracaną Staminę i Manę przez 3 rundy.\n24. Uświęca sektor wokół postaci. Postać zyskuje perka Przysięga dewoty do końca walki.\n25. Neguje następny otrzymany cios. Przeciwnik zadający ten cios zyskuje 1 poziom Pokiereszowania.\n26. Zwiększa zużycia o 2. Postać zyskuje ułatwienie do losowego testu losowej statystyki defensywnej na 3 rundy.\n27. Każda akcja ruchu pozwala na nałożenie 1 poziomu Pokiereszowania wybranemu przeciwnikowi w sektorach wzdłuż trasy ruchu.\n28. Zwiększa zużycia o 1. Każdy nałożony poziom Podpalenia nakłada również poziom Krwawienia.\n29. Sektor wokół postaci zostaje zadymiony. Nakłada losowy efekt z listy z pozycji 1-6 (k6).\n30. Przez 3 rundy, zabicie przeciwnika nakłada 1k4 poziomów Podpalenia na każdego przeciwnika w tym sektorze co zabity."
+    }
+  },
+  {
+    "id": "akolita",
+    "name": "Akolita",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "bagiennik",
+    "name": "Bagiennik",
+    "source": "tworzenie_postaci/profesje/bagiennik.md",
+    "status": "detailed",
+    "predispositions": {
+      "primary": ["Percepcja"],
+      "secondary": ["Nawigacja", "Spostrzegawczość", "Sztuka Przetrwania", "Wiedza", "Znajdowanie"]
+    },
+    "startingWealth": 12,
+    "fame": 2,
+    "passiveAbilities": [
+      {
+        "name": "Pana, bagno",
+        "description": "Bagiennik nie ponosi żadnych kar za poruszanie się po ciężkim terenie."
+      }
+    ],
+    "activeAbilities": [
+      {
+        "name": "Bagno kieszonkowe",
+        "description": "W ramach akcji, Bagiennik może zamienić jeden z sektorów pola bitwy w sektor bagienny. Bagiennik ma również ułatwienie we wszystkich atakach przeciwko przeciwnikom znajdującym się w sektorze bagiennym."
+      }
+    ],
+    "startingEquipment": ["Cebula po ogrzemu", "Ciastko z dmuchawca", "Flaszka z Kanbaty"]
+  },
+  {
+    "id": "banita",
+    "name": "Banita",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "botanik",
+    "name": "Botanik",
+    "source": "tworzenie_postaci/profesje/botanik.md",
+    "status": "detailed",
+    "predispositions": {
+      "primary": ["Inteligencja"],
+      "secondary": ["Medycyna", "Sztuka Przetrwania", "Wiedza", "Analiza", "Znajdowanie"]
+    },
+    "startingWealth": 17,
+    "fame": 2,
+    "passiveAbilities": [
+      {
+        "name": "Znam ten krzak",
+        "description": "ułatwienie przy identyfikacji roślin, trucizn i naturalnych substancji. Automatycznie może przywoływać informacje na temat tych zidentyfikowanych lub znanych. Skraca czas potrzebny na wytworzenie przedmiotów pochodzenia naturalnego o połowę."
+      }
+    ],
+    "activeAbilities": [
+      {
+        "name": "Nawóz na porost żywopłotów",
+        "description": "Raz na turę, w ramach akcji, może wyhodować żywopłot o wysokości 15 stóp na dwóch sąsiadujących ze sobą granicach sektora w którym się znajduje lub rozdzielając sektor w którym się znaduje na dwa mniejsze."
+      }
+    ],
+    "startingEquipment": ["Średnia flaszka życia", "Mała flaszka życia", "Ciastko z dmuchawca"],
+    "professionalBreak": {
+      "name": "Ogród",
+      "description": "W ramach przerwy między przygodami, Botanik może podjąć się tworzenia i rozwijania ogrodu botanicznego.\n\nW ramach akcji przerwy, Botanik może wykonac testy:\n* Sztuka Przetrwania\n* Wiedza\n* Znajdowanie\n\nSukcesy należy zsumować. Za każde 5 sukcesów, Botanik może zasadzić nową roślinę w ogrodzie. Każda roślina zapewnia jedną z dwóch premii w każdej przerwie między przygodami do kolejnej przerwy:\n* Agurk - ataki wybraną bronią nakładają stan Zatrucia lub wybrana postać podwaja nakładane stany Zatrucia\n* Alfunas - zwiększa Odporność na Śmierć wybranej postaci o 1 lub wybrana postać zyskuje 2 Pancerza (Rafał)\n* Feuille de blessure - wybrany przedmiot podręczny zapewnia dodatkowo małe leczenie lub wybrana postać zyskuje niewrażliwość na Krwawienie\n* Mogilny korzeń - wybrana postać nakłada 2k4 poziomy Zatrucia każdym atakiem przeciwko nieumarłym lub wybrana postać zyskuje 2 Pancerza przeciwko atakom nieumarłych\n* Swędzik - wybrana postać zyskuje odporność na obrażenia od zimna lub wybrana postać zyskuje niewrażliwość na Zamrożenie\n* Czaroliść - wybrana postać zyskuje +1 do bazowej Many (Aurora) lub wybrana postać zyskuje ułatwienia we wszystkich testach Arkanów (Mycelis)\n* Schlafenkraut - przedmiot podręczny: napar nasenny (podany doustnie usypia postać na 1k10 godzin) lub wybrana broń nakłada stan Oszołomienia za 1 Staminy\n* Przygłupnik - przedmiot podręczny: napar uspokajający (zastępuje efekt Delirium utrudnieniem w testach opartych o Inteligencję) lub przedmiot podręczny: kataplazm tamujący (usuwa wszystkie poziomy Krawienia i zapewnia niewrażliwość na Krwawienie do końca walki)\n* Plamiste ziele - wybrana postać zyskuje +5 do Max HP lub +1 do Wytrzymałości\n* Czaroziele (tylko dla postaci dysponujących Maną) - wybrana postać traci 1 bazowej Many i zyskuje ułatwienie we wszystkich testach Ostrożności, Sprytu oraz Siły Woli (Aurora) lub wybrana postać traci 1 bazowej Many, ale jej magia jest niewyczuwalna detektorami magicznymi (Velo)\n* Pajęczy liść - ulepsza leczenie jednej wybranej misktury o jeden stopień (z małego na średni, z dużego na pełne) (Crossword) lub przedmiot podręczny: pastylka z pajęczego liścia (usuwa wszystkie poziomy Porażenia i zapewnia niewrażliwość na Porażenie do końca walki)\n* Tarrabeth - wybrana postać otrzymuje podwójne leczenie lub wybrana postać może nakładać swoimi atakami 1k4 poziomów Pokiereszowania kosztem 1 Staminy (Rafał)\n* Trunkoziele - przedmiot podręczny: liść trunkoziela (usuwa 1k4 Zmęczenia) lub wybrana broń może być wzmacniania w unikalny sposób (+1 dmg oraz 2 Zatrucia kosztem 1 Staminy)\n* Waleriana - przedmiot podręczny: herbatka z waleriany (usuwa wszystkie poziomy Paniki i zapewnia niewrażliwość na Panikę do końca walki) lub wybrana postać zyskuje +5 do Max HP.\n* Wanera - wybrana postać zyskuje odporność na negatywne efekty Zmęczenia do 10 poziomów lub wybrana postać zyskuje odporność na Porażenie\n* Czerstwiak - wybrana postać może wykonywać czwartą akcję kosztem 1 Zmęczenia lub wybrana postać może zyskać tymczasową odpornośc na otrzymany cios kosztem 1 Zmęczenia"
+    }
+  },
+  {
+    "id": "chłop",
+    "name": "Chłop",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "ciura_obozowa",
+    "name": "Ciura obozowa",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "cyrkowiec",
+    "name": "Cyrkowiec",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "doker",
+    "name": "Doker",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "gazeciarz",
+    "name": "Gazeciarz",
+    "source": "tworzenie_postaci/profesje/gazeciarz.md",
+    "status": "detailed",
+    "predispositions": {
+      "primary": ["Inteligencja"],
+      "secondary": ["Lingwistyka", "Wiedza", "Sztuka", "Analiza", "Oszustwo"]
+    },
+    "startingWealth": 12,
+    "fame": 4,
+    "passiveAbilities": [
+      {
+        "name": "Zbrodniarz wojenny na 9",
+        "description": "Gazeciarz zyskuje ułatwienia we wszystkich testach związanych z rozpowszechnianiem i zbieraniem informacji od innych osób."
+      }
+    ],
+    "activeAbilities": [
+      {
+        "name": "Rozwiązania krzyżówek prosimy przesyłać na adres",
+        "description": "W ramach akcji gazeciarz może wykonać test Oszustwa. Sukces oznacza, że wszyscy przeciwnicy zyskują 1 poziom Pokiereszowania, a ich Morale spada o 1."
+      }
+    ],
+    "startingEquipment": ["Mała flaszka życia", "Kawusia po Po-Singarsku", "Expresso"],
+    "professionalBreak": {
+      "name": "Mistrzowskie Krzyżówki",
+      "description": "W trakcie przerwy między przygodami, gazeciarz może skupić się na tworzeniu krzyżówek dołączanych do swoich gazet.\n\nW ramach akcji przerwy między przygodami, gazeciarz może wykonać następujące testy i zsumować sukcesy:\n* Sztuka\n* Analiza\n* Wiedza\n\nKażde 5 sukcesów pozwala na ułożenie jednej mistrzowskiej krzyżówki. Mistrzowskie krzyżówki można następnie przypiąć do wybranego przedmiotu przy pomocy woskowej pieczęci, wzmacniając go. Każdy postać może być wyposażona maksymalnie w jedną krzyżówkę danego typu.\n* Jolka (https://pl.wikipedia.org/wiki/Jolka_(krzy%C5%BC%C3%B3wka))\n    * Broń - Pozwala na rzucenie bronią białą, wykonując nią atak na krótki zasięg. Broń wraca do ręki właściciela na koniec tury.\n    * Pancerz - +1 do Pancerza\n    * Biżuteria - +1 do wybranej statystyki pierwszorzędnej\n* Krzyżówka magiczna (https://pl.wikipedia.org/wiki/Krzy%C5%BC%C3%B3wka_magiczna)\n    * Broń - Zwiększa bazową Staminę / Manę o 1\n    * Pancerz - Wytrzymałość +2\n    * Biżuteria - Zmniejsza obrażenia otrzymywanne ze wszystkich źródeł o 2\n* Krzyżówka panoramiczna (https://pl.wikipedia.org/wiki/Krzy%C5%BC%C3%B3wka_panoramiczna)\n    * Broń - Pozwala na wykonanie czwartej akcji kosztem 1 Zmęczenia\n    * Pancerz - Ataki przeciwko postaci są wykonywane z utrudnieniem\n    * Biżuteria - Testy defensywne przeciwko magii są wykonywane z ułatwieniem\n* Ukośnik (https://pl.wikipedia.org/wiki/Uko%C5%9Bnik_(krzy%C5%BC%C3%B3wka))\n    * Broń - Jeśli postać wyposażona w tę broń obroni się przed atakiem w zwarciu, może wykonać test Atletyki, by zniszczyć broń przeciwnika\n    * Pancerz - Jeśli postać odziana w ten pancerz otrzyma obrażenia stawiające ją pod Bramami Śmierci, może wykonać test Wytrzymałości z ujemnym modyfikator -1 za każde brakujące 5 HP do wytrzymania tego ciosu. Sukces oznacza, że cios nie zadał żadnych obrażeń.\n    * Biżuteria - W ramach akcji można zadać przeciwnikom na polu bitwy zagadkę krzyżówkową. Tracą oni wtedy jedną akcję w swojej następnej turze. Można użyć raz na walkę.\n* Krzyżówka hetmańska (https://pl.wikipedia.org/wiki/Krzy%C5%BC%C3%B3wka_hetma%C5%84ska)\n    * Broń - Broń ta ignoruje Pancerz przeciwnika.\n    * Pancerz - Max HP +5\n    * Biżuteria - Postać zyskuje niewrażliwość na Panikę.\n* Wykreślanka\n    * Broń - Ataki wykonywane są zawsze z ułatwieniem.\n    * Pancerz - Ataki dystansowe przeciwko postaci są osłabione o 1 kostkę.\n    * Biżuteria - Na koniec sesji, postać może wykonać dwa testy w celu odzyskania Szczęścia zamiast jednego."
+    }
+  },
+  {
+    "id": "rycerz",
+    "name": "Rycerz",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "gladiator",
+    "name": "Gladiator",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "górnik",
+    "name": "Górnik",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "grabarz",
+    "name": "Grabarz",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "handlarz",
+    "name": "Handlarz",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "szuler",
+    "name": "Szuler",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "latarnik",
+    "name": "Latarnik",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "leśnik",
+    "name": "Leśnik",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "łowca_nagród",
+    "name": "Łowca nagród",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "mieszczanin",
+    "name": "Mieszczanin",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "urzędnik_skarbowy",
+    "name": "Urzędnik Skarbowy",
+    "source": "tworzenie_postaci/profesje/urzędnik_skarbowy.md",
+    "status": "detailed",
+    "predispositions": {
+      "primary": ["Percepcja"],
+      "secondary": ["Zastraszanie", "Księgowość", "Analiza", "Spostrzegawczość", "Targowanie"]
+    },
+    "startingWealth": 15,
+    "fame": 1,
+    "passiveAbilities": [
+      {
+        "name": "Faktura na firmę",
+        "description": "Zmniejsza koszt Majętności przy pozyskiwaniu przedmiotów magicznych o 1."
+      }
+    ],
+    "activeAbilities": [
+      {
+        "name": "Okradam cię w imieniu prawa",
+        "description": "Pozwala na wykonanie testu Księgowości przed każdym testem Targowania. Ilość sukcesów w tym pierwszym to dodatkowy modyfikator w tym drugim."
+      }
+    ],
+    "startingEquipment": ["Liczydło", "Expresso", "Kawusia po Po-Singarsku", "Piekielny lubrykant"]
+  },
+  {
+    "id": "ochroniarz",
+    "name": "Ochroniarz",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "oprych",
+    "name": "Oprych",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "podżegacz",
+    "name": "Podżegacz",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "posłaniec",
+    "name": "Posłaniec",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "przemytnik",
+    "name": "Przemytnik",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "prezewoźnik",
+    "name": "Prezewoźnik",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "rybak",
+    "name": "Rybak",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "skryba",
+    "name": "Skryba",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "sługa",
+    "name": "Sługa",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "strażnik_miejski",
+    "name": "Strażnik miejski",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "szlachic",
+    "name": "Szlachic",
+    "source": "tworzenie_postaci/profesje/szlachic.md",
+    "status": "detailed",
+    "predispositions": {
+      "primary": ["Charyzma"],
+      "secondary": ["Jeździectwo", "Lingwistyka", "Dowodzenie", "Przekonywanie", "Sztuka"]
+    },
+    "startingWealth": 25,
+    "fame": 5,
+    "passiveAbilities": [
+      {
+        "name": "Immunitet",
+        "description": "Zapewnia niewrażliwość na Panikę oraz odporność na wszystkie obrażenia w 1. rundzie każdej walki. Szlachcic może również korzystać z licznych przywilejów takich jak immunitet osobisty czy współudział w lokalnej władzy."
+      }
+    ],
+    "activeAbilities": [
+      {
+        "name": "I to wszystko nasze",
+        "description": "Zapewnia ułatwienie we wszystkich testach Sławy swojej Drużyny oraz pozwala na wykonanie testu Sławy, by tymczasowo zwiększyć Majętność Drużyny o połowę sukcesów do następnej przerwy."
+      }
+    ],
+    "startingEquipment": ["Mała flaszka życia", "Herbata Sułtańska", "Czekolada z Eversong"],
+    "professionalBreak": {
+      "name": "Wielka Polityka",
+      "description": "W ramach przerwy między przygodami, szlachcic może rozwijać swoje polityczne koneksje i forsować swoją agendę.\n\nW ramach akcji przerwy, szlachci może wykonać następujące testy i zsumować sukcesy:\n* Lingiwstyka\n* Dowodzenie\n* Przekonywanie\n\nZa każde 5 sukcesów, szlachcic może zawrzeć sojusz lub zaszkodzić wybranemu rodowi oraz zyskać związaną z tym premię:\n* Ród Białego Morza\n    * Sojusz - Zmniejsza koszt kupna rzadkich i potężnych przedmiotów o 1. *\n    * Wrogość - Pozwala na zakup dwóch niezwykłych przedmiotów w cenie jednego.\n* Ród Teunìlaa\n    * Sojusz - Przeciwnicy obciążeni są utrudnieniem do wszystkich zadawanych obrażeń na morzu. *\n    * Wrogość - Ułatwienie do wszystkich zadawanych obrażeń na morzu.\n* Ród Al-Qadir\n    * Sojusz - Zapewnia odporność na obrażenia od ognia. *\n    * Wrogość - Podwaja zadawane obrażenia od ognia.\n* Ród Liawarin\n    * Sojusz - Zapewnia jedno dodatkowe użycie wszystkim przedmiotom podręcznym.\n    * Wrogość - Pozwala na wykorzystanie dwóch przedmiotów podręcznych w ramach jednej akcji. *\n* Ród Żelaznorękich\n    * Sojusz - Usuwa wymagania statystyk dla wszystkich pancerzy dla jednej postaci. *(Rafał)\n    * Wrogość - Zwiększa wymagania statystyk dla wszystkich pancerzy dla jednej postaci o 2, ale zwiększa Pancerz o 1.\n* Ród Rust\n    * Sojusz - Zapewnia ułatwienia do wszystkich testów związanych z rzemiosłem.\n    * Wrogość - Zmniejsza poziom trudności wytwarzania przedmiotów o 5. *\n* Ród Larethorn\n    * Sojusz - W trakcie walki, raz na rundę, powala dwóm Bohaterom Gracza na wykonanie swoich tur pod rząd bez tury przeciwnika między nimi. *\n    * Wrogość - Raz na walkę, jeden członek Drużyny może pominąć swoją turę, by wyleczyć wszystkich członków Drużyny do 100% HP."
+    }
+  },
+  {
+    "id": "śmieciarz",
+    "name": "Śmieciarz",
+    "source": "tworzenie_postaci/profesje/śmieciarz.md",
+    "status": "detailed",
+    "predispositions": {
+      "primary": ["Percepcja"],
+      "secondary": ["Majsterkowanie", "Skradanie", "Spostrzegawczość", "Sztuka przetrwania", "Znajdowanie"]
+    },
+    "startingWealth": 2,
+    "fame": 0,
+    "passiveAbilities": [
+      {
+        "name": "Coś z niczego",
+        "description": "Zapewnia ułatwienie w testach przeszukiwania pomieszczeń i obszarów oraz targowania się. Zapewnia dodatkowe 2 sukcesy w przypadku udanego testu."
+      }
+    ],
+    "activeAbilities": [
+      {
+        "name": "Wyniesienie śmieci",
+        "description": "W ramach akcji Śmieciarz może wykonać test Znajdowania i przeszukać dowolne zwłoki znajdujace się w tym samym sektorze co on. W przypadku sukcesu, Śmieciarz odnawia wszystkie wyekwipowane przedmioty podręczne."
+      }
+    ],
+    "startingEquipment": ["Miętówka z Altdris", "Wóda", "Ser \"Śmigło Kelemvora\""]
+  },
+  {
+    "id": "kominiarz",
+    "name": "Kominiarz",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "włóczykij",
+    "name": "Włóczykij",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "zarządca",
+    "name": "Zarządca",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "złodziej",
+    "name": "Złodziej",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "naukowiec",
+    "name": "Naukowiec",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "żeglarz",
+    "name": "Żeglarz",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "oficer",
+    "name": "Oficer",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  }
+]

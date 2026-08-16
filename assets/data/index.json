@@ -1,0 +1,2158 @@
+[
+  {
+    "id": "człowiek",
+    "type": "race",
+    "name": "Człowiek",
+    "source": "tworzenie_postaci/rasy/człowiek.md",
+    "status": "detailed"
+  },
+  {
+    "id": "elf",
+    "type": "race",
+    "name": "Elf",
+    "source": "tworzenie_postaci/rasy/lista_ras.md",
+    "status": "stub"
+  },
+  {
+    "id": "krasnolud",
+    "type": "race",
+    "name": "Krasnolud",
+    "source": "tworzenie_postaci/rasy/krasnolud.md",
+    "status": "detailed"
+  },
+  {
+    "id": "niziołek",
+    "type": "race",
+    "name": "Niziołek",
+    "source": "tworzenie_postaci/rasy/lista_ras.md",
+    "status": "stub"
+  },
+  {
+    "id": "gnom",
+    "type": "race",
+    "name": "Gnom",
+    "source": "tworzenie_postaci/rasy/lista_ras.md",
+    "status": "stub"
+  },
+  {
+    "id": "mykonid",
+    "type": "race",
+    "name": "Mykonid",
+    "source": "tworzenie_postaci/rasy/mykonid.md",
+    "status": "detailed"
+  },
+  {
+    "id": "automat",
+    "type": "race",
+    "name": "Automat",
+    "source": "tworzenie_postaci/rasy/automat.md",
+    "status": "detailed"
+  },
+  {
+    "id": "centaur",
+    "type": "race",
+    "name": "Centaur",
+    "source": "tworzenie_postaci/rasy/centaur.md",
+    "status": "detailed"
+  },
+  {
+    "id": "drakonid",
+    "type": "race",
+    "name": "Drakonid",
+    "source": "tworzenie_postaci/rasy/lista_ras.md",
+    "status": "stub"
+  },
+  {
+    "id": "ork",
+    "type": "race",
+    "name": "Ork",
+    "source": "tworzenie_postaci/rasy/lista_ras.md",
+    "status": "stub"
+  },
+  {
+    "id": "ryboczłek",
+    "type": "race",
+    "name": "Ryboczłek",
+    "source": "tworzenie_postaci/rasy/lista_ras.md",
+    "status": "stub"
+  },
+  {
+    "id": "minotaur",
+    "type": "race",
+    "name": "Minotaur",
+    "source": "tworzenie_postaci/rasy/lista_ras.md",
+    "status": "stub"
+  },
+  {
+    "id": "ogr",
+    "type": "race",
+    "name": "Ogr",
+    "source": "tworzenie_postaci/rasy/lista_ras.md",
+    "status": "stub"
+  },
+  {
+    "id": "plazmoid",
+    "type": "race",
+    "name": "Plazmoid",
+    "source": "tworzenie_postaci/rasy/plazmoid.md",
+    "status": "detailed"
+  },
+  {
+    "id": "diablę",
+    "type": "race",
+    "name": "Diablę",
+    "source": "tworzenie_postaci/rasy/lista_ras.md",
+    "status": "stub"
+  },
+  {
+    "id": "anielę",
+    "type": "race",
+    "name": "Anielę",
+    "source": "tworzenie_postaci/rasy/lista_ras.md",
+    "status": "stub"
+  },
+  {
+    "id": "wilkołak",
+    "type": "race",
+    "name": "Wilkołak",
+    "source": "tworzenie_postaci/rasy/lista_ras.md",
+    "status": "stub"
+  },
+  {
+    "id": "aptekarz",
+    "type": "profession",
+    "name": "Aptekarz",
+    "source": "tworzenie_postaci/profesje/aptekarz.md",
+    "status": "detailed"
+  },
+  {
+    "id": "akolita",
+    "type": "profession",
+    "name": "Akolita",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "bagiennik",
+    "type": "profession",
+    "name": "Bagiennik",
+    "source": "tworzenie_postaci/profesje/bagiennik.md",
+    "status": "detailed"
+  },
+  {
+    "id": "banita",
+    "type": "profession",
+    "name": "Banita",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "botanik",
+    "type": "profession",
+    "name": "Botanik",
+    "source": "tworzenie_postaci/profesje/botanik.md",
+    "status": "detailed"
+  },
+  {
+    "id": "chłop",
+    "type": "profession",
+    "name": "Chłop",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "ciura_obozowa",
+    "type": "profession",
+    "name": "Ciura obozowa",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "cyrkowiec",
+    "type": "profession",
+    "name": "Cyrkowiec",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "doker",
+    "type": "profession",
+    "name": "Doker",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "gazeciarz",
+    "type": "profession",
+    "name": "Gazeciarz",
+    "source": "tworzenie_postaci/profesje/gazeciarz.md",
+    "status": "detailed"
+  },
+  {
+    "id": "rycerz",
+    "type": "profession",
+    "name": "Rycerz",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "gladiator",
+    "type": "profession",
+    "name": "Gladiator",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "górnik",
+    "type": "profession",
+    "name": "Górnik",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "grabarz",
+    "type": "profession",
+    "name": "Grabarz",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "handlarz",
+    "type": "profession",
+    "name": "Handlarz",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "szuler",
+    "type": "profession",
+    "name": "Szuler",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "latarnik",
+    "type": "profession",
+    "name": "Latarnik",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "leśnik",
+    "type": "profession",
+    "name": "Leśnik",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "łowca_nagród",
+    "type": "profession",
+    "name": "Łowca nagród",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "mieszczanin",
+    "type": "profession",
+    "name": "Mieszczanin",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "urzędnik_skarbowy",
+    "type": "profession",
+    "name": "Urzędnik Skarbowy",
+    "source": "tworzenie_postaci/profesje/urzędnik_skarbowy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "ochroniarz",
+    "type": "profession",
+    "name": "Ochroniarz",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "oprych",
+    "type": "profession",
+    "name": "Oprych",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "podżegacz",
+    "type": "profession",
+    "name": "Podżegacz",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "posłaniec",
+    "type": "profession",
+    "name": "Posłaniec",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "przemytnik",
+    "type": "profession",
+    "name": "Przemytnik",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "prezewoźnik",
+    "type": "profession",
+    "name": "Prezewoźnik",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "rybak",
+    "type": "profession",
+    "name": "Rybak",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "skryba",
+    "type": "profession",
+    "name": "Skryba",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "sługa",
+    "type": "profession",
+    "name": "Sługa",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "strażnik_miejski",
+    "type": "profession",
+    "name": "Strażnik miejski",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "szlachic",
+    "type": "profession",
+    "name": "Szlachic",
+    "source": "tworzenie_postaci/profesje/szlachic.md",
+    "status": "detailed"
+  },
+  {
+    "id": "śmieciarz",
+    "type": "profession",
+    "name": "Śmieciarz",
+    "source": "tworzenie_postaci/profesje/śmieciarz.md",
+    "status": "detailed"
+  },
+  {
+    "id": "kominiarz",
+    "type": "profession",
+    "name": "Kominiarz",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "włóczykij",
+    "type": "profession",
+    "name": "Włóczykij",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "zarządca",
+    "type": "profession",
+    "name": "Zarządca",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "złodziej",
+    "type": "profession",
+    "name": "Złodziej",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "naukowiec",
+    "type": "profession",
+    "name": "Naukowiec",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "żeglarz",
+    "type": "profession",
+    "name": "Żeglarz",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "oficer",
+    "type": "profession",
+    "name": "Oficer",
+    "source": "tworzenie_postaci/profesje/lista_profesji.md",
+    "status": "stub"
+  },
+  {
+    "id": "alchemik",
+    "type": "class",
+    "name": "Alchemik",
+    "source": "tworzenie_postaci/klasy/alchemik.md",
+    "status": "detailed"
+  },
+  {
+    "id": "taktyk",
+    "type": "class",
+    "name": "Taktyk",
+    "source": "tworzenie_postaci/klasy/lista_klas.md",
+    "status": "stub"
+  },
+  {
+    "id": "łowca",
+    "type": "class",
+    "name": "Łowca",
+    "source": "tworzenie_postaci/klasy/lista_klas.md",
+    "status": "stub"
+  },
+  {
+    "id": "legionista",
+    "type": "class",
+    "name": "Legionista",
+    "source": "tworzenie_postaci/klasy/lista_klas.md",
+    "status": "stub"
+  },
+  {
+    "id": "skrytobójca",
+    "type": "class",
+    "name": "Skrytobójca",
+    "source": "tworzenie_postaci/klasy/lista_klas.md",
+    "status": "stub"
+  },
+  {
+    "id": "sabotażysta",
+    "type": "class",
+    "name": "Sabotażysta",
+    "source": "tworzenie_postaci/klasy/sabotażysta.md",
+    "status": "detailed"
+  },
+  {
+    "id": "oszust",
+    "type": "class",
+    "name": "Oszust",
+    "source": "tworzenie_postaci/klasy/lista_klas.md",
+    "status": "stub"
+  },
+  {
+    "id": "tytan",
+    "type": "class",
+    "name": "Tytan",
+    "source": "tworzenie_postaci/klasy/tytan.md",
+    "status": "detailed"
+  },
+  {
+    "id": "berserk",
+    "type": "class",
+    "name": "Berserk",
+    "source": "tworzenie_postaci/klasy/lista_klas.md",
+    "status": "stub"
+  },
+  {
+    "id": "watażka",
+    "type": "class",
+    "name": "Watażka",
+    "source": "tworzenie_postaci/klasy/lista_klas.md",
+    "status": "stub"
+  },
+  {
+    "id": "nekromanta",
+    "type": "class",
+    "name": "Nekromanta",
+    "source": "tworzenie_postaci/klasy/nekromanta.md",
+    "status": "detailed"
+  },
+  {
+    "id": "okultysta",
+    "type": "class",
+    "name": "Okultysta",
+    "source": "tworzenie_postaci/klasy/lista_klas.md",
+    "status": "stub"
+  },
+  {
+    "id": "kanał_żywej_magii",
+    "type": "class",
+    "name": "Kanał Żywej Magii",
+    "source": "tworzenie_postaci/klasy/lista_klas.md",
+    "status": "stub"
+  },
+  {
+    "id": "chronomanta",
+    "type": "class",
+    "name": "Chronomanta",
+    "source": "tworzenie_postaci/klasy/lista_klas.md",
+    "status": "stub"
+  },
+  {
+    "id": "elementalista",
+    "type": "class",
+    "name": "Elementalista",
+    "source": "tworzenie_postaci/klasy/lista_klas.md",
+    "status": "stub"
+  },
+  {
+    "id": "iluzjonista",
+    "type": "class",
+    "name": "Iluzjonista",
+    "source": "tworzenie_postaci/klasy/lista_klas.md",
+    "status": "stub"
+  },
+  {
+    "id": "snajper",
+    "type": "class",
+    "name": "Snajper",
+    "source": "tworzenie_postaci/klasy/lista_klas.md",
+    "status": "stub"
+  },
+  {
+    "id": "stróż",
+    "type": "class",
+    "name": "Stróż",
+    "source": "tworzenie_postaci/klasy/lista_klas.md",
+    "status": "stub"
+  },
+  {
+    "id": "pionier",
+    "type": "class",
+    "name": "Pionier",
+    "source": "tworzenie_postaci/klasy/lista_klas.md",
+    "status": "stub"
+  },
+  {
+    "id": "inkwizytor",
+    "type": "class",
+    "name": "Inkwizytor",
+    "source": "tworzenie_postaci/klasy/lista_klas.md",
+    "status": "stub"
+  },
+  {
+    "id": "hierofanta",
+    "type": "class",
+    "name": "Hierofanta",
+    "source": "tworzenie_postaci/klasy/lista_klas.md",
+    "status": "stub"
+  },
+  {
+    "id": "strażnik",
+    "type": "class",
+    "name": "Strażnik",
+    "source": "tworzenie_postaci/klasy/lista_klas.md",
+    "status": "stub"
+  },
+  {
+    "id": "akolita_otchłani",
+    "type": "class",
+    "name": "Akolita Otchłani",
+    "source": "tworzenie_postaci/klasy/lista_klas.md",
+    "status": "stub"
+  },
+  {
+    "id": "liturgista",
+    "type": "class",
+    "name": "Liturgista",
+    "source": "tworzenie_postaci/klasy/lista_klas.md",
+    "status": "stub"
+  },
+  {
+    "id": "przewodnik",
+    "type": "class",
+    "name": "Przewodnik",
+    "source": "tworzenie_postaci/klasy/lista_klas.md",
+    "status": "stub"
+  },
+  {
+    "id": "mistrz_przemian",
+    "type": "class",
+    "name": "Mistrz Przemian",
+    "source": "tworzenie_postaci/klasy/lista_klas.md",
+    "status": "stub"
+  },
+  {
+    "id": "grzybiarz",
+    "type": "class",
+    "name": "Grzybiarz",
+    "source": "tworzenie_postaci/klasy/grzybiarz.md",
+    "status": "detailed"
+  },
+  {
+    "id": "władca_lasów",
+    "type": "class",
+    "name": "Władca Lasów",
+    "source": "tworzenie_postaci/klasy/władca_lasów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "kawalerzysta",
+    "type": "class",
+    "name": "Kawalerzysta",
+    "source": "tworzenie_postaci/klasy/kawalerzysta.md",
+    "status": "detailed"
+  },
+  {
+    "id": "bębniarz_wojny",
+    "type": "class",
+    "name": "Bębniarz Wojny",
+    "source": "tworzenie_postaci/klasy/lista_klas.md",
+    "status": "stub"
+  },
+  {
+    "id": "krasomówca",
+    "type": "class",
+    "name": "Krasomówca",
+    "source": "tworzenie_postaci/klasy/lista_klas.md",
+    "status": "stub"
+  },
+  {
+    "id": "jesienny_gawędziarz",
+    "type": "class",
+    "name": "Jesienny Gawędziarz",
+    "source": "tworzenie_postaci/klasy/lista_klas.md",
+    "status": "stub"
+  },
+  {
+    "id": "kowal_run",
+    "type": "class",
+    "name": "Kowal Run",
+    "source": "tworzenie_postaci/klasy/lista_klas.md",
+    "status": "stub"
+  },
+  {
+    "id": "grenadier",
+    "type": "class",
+    "name": "Grenadier",
+    "source": "tworzenie_postaci/klasy/lista_klas.md",
+    "status": "stub"
+  },
+  {
+    "id": "życie_na_krawędzi",
+    "type": "perk",
+    "name": "Życie na krawędzi",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "nienaturalna_więź",
+    "type": "perk",
+    "name": "Nienaturalna więź",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "awatar_ognia",
+    "type": "perk",
+    "name": "Awatar ognia",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "przymierze_czarnego_ognia",
+    "type": "perk",
+    "name": "Przymierze czarnego ognia",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "magia_krwi",
+    "type": "perk",
+    "name": "Magia krwi",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "bastion",
+    "type": "perk",
+    "name": "Bastion",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "karmazynowy_szturm",
+    "type": "perk",
+    "name": "Karmazynowy szturm",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "taniec_ze_śmiercią",
+    "type": "perk",
+    "name": "Taniec ze śmiercią",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "kosmiczna_bateria",
+    "type": "perk",
+    "name": "Kosmiczna bateria",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "ekwilibrium_żywiołów",
+    "type": "perk",
+    "name": "Ekwilibrium żywiołów",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "wieczna_młodość",
+    "type": "perk",
+    "name": "Wieczna młodość",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "krew_gigantów",
+    "type": "perk",
+    "name": "Krew gigantów",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "szalone_uniki",
+    "type": "perk",
+    "name": "Szalone uniki",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zawałowiec",
+    "type": "perk",
+    "name": "Zawałowiec",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "technika_pustej_dłoni",
+    "type": "perk",
+    "name": "Technika pustej dłoni",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "żelazny_refleks",
+    "type": "perk",
+    "name": "Żelazny refleks",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "władca_dzików",
+    "type": "perk",
+    "name": "Władca dzików",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "umysł_ponad_materią",
+    "type": "perk",
+    "name": "Umysł ponad materią",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "nekromantyczny_talizman",
+    "type": "perk",
+    "name": "Nekromantyczny talizman",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "oaza",
+    "type": "perk",
+    "name": "Oaza",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zestrojenie_z_bólem",
+    "type": "perk",
+    "name": "Zestrojenie z bólem",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "pierwotny_głód",
+    "type": "perk",
+    "name": "Pierwotny głód",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "przewidywalna_technika",
+    "type": "perk",
+    "name": "Przewidywalna technika",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "rezonans",
+    "type": "perk",
+    "name": "Rezonans",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "rytualny_rytm",
+    "type": "perk",
+    "name": "Rytualny rytm",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zabliźniona_wiara",
+    "type": "perk",
+    "name": "Zabliźniona wiara",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zaufana_kompania",
+    "type": "perk",
+    "name": "Zaufana kompania",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "niezłomna_postawa",
+    "type": "perk",
+    "name": "Niezłomna postawa",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "szepty_zagłady",
+    "type": "perk",
+    "name": "Szepty zagłady",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "inkantancje_dzikiego_przypływu",
+    "type": "perk",
+    "name": "Inkantancje dzikiego przypływu",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "przysięga_dewoty",
+    "type": "perk",
+    "name": "Przysięga dewoty",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "pakt_feniksa",
+    "type": "perk",
+    "name": "Pakt Feniksa",
+    "source": "tworzenie_postaci/perki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "długi_miecz",
+    "type": "weapon",
+    "name": "Długi miecz",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "rapier",
+    "type": "weapon",
+    "name": "Rapier",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "krótki_miecz",
+    "type": "weapon",
+    "name": "Krótki miecz",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "miecz_dwuręczny",
+    "type": "weapon",
+    "name": "Miecz dwuręczny",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "buława",
+    "type": "weapon",
+    "name": "Buława",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "budzdygan",
+    "type": "weapon",
+    "name": "Budzdygan",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "wielka_laga",
+    "type": "weapon",
+    "name": "Wielka laga",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "glewia",
+    "type": "weapon",
+    "name": "Glewia",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "berło",
+    "type": "weapon",
+    "name": "Berło",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "włócznia",
+    "type": "weapon",
+    "name": "Włócznia",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "kostur",
+    "type": "weapon",
+    "name": "Kostur",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "różdżka",
+    "type": "weapon",
+    "name": "Różdżka",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "siekiera",
+    "type": "weapon",
+    "name": "Siekiera",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "topór",
+    "type": "weapon",
+    "name": "Topór",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "szpony",
+    "type": "weapon",
+    "name": "Szpony",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "sztylet",
+    "type": "weapon",
+    "name": "Sztylet",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "sztylet_sprężynowy",
+    "type": "weapon",
+    "name": "Sztylet sprężynowy",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "kopia",
+    "type": "weapon",
+    "name": "Kopia",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "lanca",
+    "type": "weapon",
+    "name": "Lanca",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "łuk",
+    "type": "weapon",
+    "name": "Łuk",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "kusza",
+    "type": "weapon",
+    "name": "Kusza",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "kusza_pistoletowa",
+    "type": "weapon",
+    "name": "Kusza pistoletowa",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "pistolet",
+    "type": "weapon",
+    "name": "Pistolet",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "muszkiet",
+    "type": "weapon",
+    "name": "Muszkiet",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "broń_rzucana",
+    "type": "weapon",
+    "name": "Broń rzucana",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "prosta_szata",
+    "type": "armor",
+    "name": "Prosta szata",
+    "source": "ekwipunek/pancerze.md",
+    "status": "detailed"
+  },
+  {
+    "id": "szaty_naukowca",
+    "type": "armor",
+    "name": "Szaty naukowca",
+    "source": "ekwipunek/pancerze.md",
+    "status": "detailed"
+  },
+  {
+    "id": "ornat_maga",
+    "type": "armor",
+    "name": "Ornat maga",
+    "source": "ekwipunek/pancerze.md",
+    "status": "detailed"
+  },
+  {
+    "id": "jedwabna_szata",
+    "type": "armor",
+    "name": "Jedwabna szata",
+    "source": "ekwipunek/pancerze.md",
+    "status": "detailed"
+  },
+  {
+    "id": "szaty_mędrca",
+    "type": "armor",
+    "name": "Szaty mędrca",
+    "source": "ekwipunek/pancerze.md",
+    "status": "detailed"
+  },
+  {
+    "id": "ornat_zaklinacza",
+    "type": "armor",
+    "name": "Ornat zaklinacza",
+    "source": "ekwipunek/pancerze.md",
+    "status": "detailed"
+  },
+  {
+    "id": "świetlista_szata",
+    "type": "armor",
+    "name": "Świetlista szata",
+    "source": "ekwipunek/pancerze.md",
+    "status": "detailed"
+  },
+  {
+    "id": "regalia_niszczyciela",
+    "type": "armor",
+    "name": "Regalia niszczyciela",
+    "source": "ekwipunek/pancerze.md",
+    "status": "detailed"
+  },
+  {
+    "id": "szaty_geniusza",
+    "type": "armor",
+    "name": "Szaty geniusza",
+    "source": "ekwipunek/pancerze.md",
+    "status": "detailed"
+  },
+  {
+    "id": "regalia_feniksa",
+    "type": "armor",
+    "name": "Regalia Feniksa",
+    "source": "ekwipunek/pancerze.md",
+    "status": "detailed"
+  },
+  {
+    "id": "tajemny_ornat",
+    "type": "armor",
+    "name": "Tajemny ornat",
+    "source": "ekwipunek/pancerze.md",
+    "status": "detailed"
+  },
+  {
+    "id": "szata_utkana_z_nocy",
+    "type": "armor",
+    "name": "Szata utkana z nocy",
+    "source": "ekwipunek/pancerze.md",
+    "status": "detailed"
+  },
+  {
+    "id": "regalia_zaćmienia",
+    "type": "armor",
+    "name": "Regalia Zaćmienia",
+    "source": "ekwipunek/pancerze.md",
+    "status": "detailed"
+  },
+  {
+    "id": "kurtka_pikowana",
+    "type": "armor",
+    "name": "Kurtka pikowana",
+    "source": "ekwipunek/pancerze.md",
+    "status": "detailed"
+  },
+  {
+    "id": "skórznia",
+    "type": "armor",
+    "name": "Skórznia",
+    "source": "ekwipunek/pancerze.md",
+    "status": "detailed"
+  },
+  {
+    "id": "skórznia_ćwiekowana",
+    "type": "armor",
+    "name": "Skórznia ćwiekowana",
+    "source": "ekwipunek/pancerze.md",
+    "status": "detailed"
+  },
+  {
+    "id": "kolczuga",
+    "type": "armor",
+    "name": "Kolczuga",
+    "source": "ekwipunek/pancerze.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zbroja_kolcza",
+    "type": "armor",
+    "name": "Zbroja kolcza",
+    "source": "ekwipunek/pancerze.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zbroja_łuskowa",
+    "type": "armor",
+    "name": "Zbroja łuskowa",
+    "source": "ekwipunek/pancerze.md",
+    "status": "detailed"
+  },
+  {
+    "id": "pancerz_półpłytowy",
+    "type": "armor",
+    "name": "Pancerz półpłytowy",
+    "source": "ekwipunek/pancerze.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zbroja_płytowa",
+    "type": "armor",
+    "name": "Zbroja płytowa",
+    "source": "ekwipunek/pancerze.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zbroja_adamntytowa",
+    "type": "armor",
+    "name": "Zbroja adamntytowa",
+    "source": "ekwipunek/pancerze.md",
+    "status": "detailed"
+  },
+  {
+    "id": "tarcza_drewniana",
+    "type": "armor",
+    "name": "Tarcza drewniana",
+    "source": "ekwipunek/pancerze.md",
+    "status": "detailed"
+  },
+  {
+    "id": "tarcza_metalowa",
+    "type": "armor",
+    "name": "Tarcza metalowa",
+    "source": "ekwipunek/pancerze.md",
+    "status": "detailed"
+  },
+  {
+    "id": "tarcza_adamntytowa",
+    "type": "armor",
+    "name": "Tarcza adamntytowa",
+    "source": "ekwipunek/pancerze.md",
+    "status": "detailed"
+  },
+  {
+    "id": "pasek",
+    "type": "belt",
+    "name": "Pasek",
+    "source": "ekwipunek/paski.md",
+    "status": "detailed"
+  },
+  {
+    "id": "szeroki_pasek",
+    "type": "belt",
+    "name": "Szeroki pasek",
+    "source": "ekwipunek/paski.md",
+    "status": "detailed"
+  },
+  {
+    "id": "długi_pasek",
+    "type": "belt",
+    "name": "Długi pasek",
+    "source": "ekwipunek/paski.md",
+    "status": "detailed"
+  },
+  {
+    "id": "kolczy_pasek",
+    "type": "belt",
+    "name": "Kolczy pasek",
+    "source": "ekwipunek/paski.md",
+    "status": "detailed"
+  },
+  {
+    "id": "podwójny_pasek",
+    "type": "belt",
+    "name": "Podwójny pasek",
+    "source": "ekwipunek/paski.md",
+    "status": "detailed"
+  },
+  {
+    "id": "płytowy_pasek",
+    "type": "belt",
+    "name": "Płytowy pasek",
+    "source": "ekwipunek/paski.md",
+    "status": "detailed"
+  },
+  {
+    "id": "ornamentalny_pasek",
+    "type": "belt",
+    "name": "Ornamentalny pasek",
+    "source": "ekwipunek/paski.md",
+    "status": "detailed"
+  },
+  {
+    "id": "ciężki_pasek",
+    "type": "belt",
+    "name": "Ciężki pasek",
+    "source": "ekwipunek/paski.md",
+    "status": "detailed"
+  },
+  {
+    "id": "mała_flaszka_życia",
+    "type": "handItem",
+    "name": "Mała flaszka życia",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "średnia_flaszka_życia",
+    "type": "handItem",
+    "name": "Średnia flaszka życia",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "duża_flaszka_życia",
+    "type": "handItem",
+    "name": "Duża flaszka życia",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "mała_flaszka_many",
+    "type": "handItem",
+    "name": "Mała flaszka many",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "średnia_flaszka_many",
+    "type": "handItem",
+    "name": "Średnia flaszka many",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "duża_flaszka_many",
+    "type": "handItem",
+    "name": "Duża flaszka many",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "mała_flaszka_staminy",
+    "type": "handItem",
+    "name": "Mała flaszka staminy",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "średnia_flaszka_staminy",
+    "type": "handItem",
+    "name": "Średnia flaszka staminy",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "duża_flaszka_staminy",
+    "type": "handItem",
+    "name": "Duża flaszka staminy",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "expresso",
+    "type": "handItem",
+    "name": "Expresso",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "wóda",
+    "type": "handItem",
+    "name": "Wóda",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "tabasko",
+    "type": "handItem",
+    "name": "Tabasko",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "herbata_sułtańska",
+    "type": "handItem",
+    "name": "Herbata Sułtańska",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "elektrolity",
+    "type": "handItem",
+    "name": "Elektrolity",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "woda_święcona",
+    "type": "handItem",
+    "name": "Woda święcona",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "kremówka_silvermana",
+    "type": "handItem",
+    "name": "Kremówka Silvermana",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "miętówka_z_altdris",
+    "type": "handItem",
+    "name": "Miętówka z Altdris",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "majonez_chodziaża",
+    "type": "handItem",
+    "name": "Majonez Chodziaża",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "kawusia_po_po-singarsku",
+    "type": "handItem",
+    "name": "Kawusia po Po-Singarsku",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "czekolada_z_eversong",
+    "type": "handItem",
+    "name": "Czekolada z Eversong",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "ciasteczko_z_wróżbą",
+    "type": "handItem",
+    "name": "Ciasteczko z wróżbą",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "skyr_z_oporuru",
+    "type": "handItem",
+    "name": "Skyr z Oporuru",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "cebula_po_ogrzemu",
+    "type": "handItem",
+    "name": "Cebula po ogrzemu",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "piekielny_lubrykant",
+    "type": "handItem",
+    "name": "Piekielny lubrykant",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "ciastko_z_dmuchawca",
+    "type": "handItem",
+    "name": "Ciastko z dmuchawca",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "flaszka_z_kanbaty",
+    "type": "handItem",
+    "name": "Flaszka z Kanbaty",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "ser_śmigło_kelemvora",
+    "type": "handItem",
+    "name": "Ser \"Śmigło Kelemvora\"",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zupa_przemijania",
+    "type": "handItem",
+    "name": "Zupa Przemijania",
+    "source": "ekwipunek/przedmioty_podręczne.md",
+    "status": "detailed"
+  },
+  {
+    "id": "alarmująca_peleryna",
+    "type": "magicItem",
+    "name": "Alarmująca Peleryna",
+    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/alarmująca_peleryna.md",
+    "status": "detailed"
+  },
+  {
+    "id": "amulet_alertu_dobrej_okazji",
+    "type": "magicItem",
+    "name": "Amulet Alertu Dobrej Okazji",
+    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/amulet_alertu_dobrej_okazji.md",
+    "status": "detailed"
+  },
+  {
+    "id": "amulet_zastygłego_oka",
+    "type": "magicItem",
+    "name": "Amulet Zastygłego Oka",
+    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/amulet_zastygłego_oka.md",
+    "status": "detailed"
+  },
+  {
+    "id": "amulet_św_krzysztofa",
+    "type": "magicItem",
+    "name": "Amulet Św. Krzysztofa",
+    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/amulet_św_krzysztofa.md",
+    "status": "detailed"
+  },
+  {
+    "id": "buty_kowala",
+    "type": "magicItem",
+    "name": "Buty Kowala",
+    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/buty_kowala.md",
+    "status": "detailed"
+  },
+  {
+    "id": "buty_uzdrowiciela",
+    "type": "magicItem",
+    "name": "Buty Uzdrowiciela",
+    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/buty_uzdrowiciela.md",
+    "status": "detailed"
+  },
+  {
+    "id": "buty_wędrowca_bez_kresu",
+    "type": "magicItem",
+    "name": "Buty Wędrowca Bez Kresu",
+    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/buty_wędrowca_bez_kresu.md",
+    "status": "detailed"
+  },
+  {
+    "id": "hełm_strażnika_baszty",
+    "type": "magicItem",
+    "name": "Hełm Strażnika Baszty",
+    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/hełm_strażnika_baszty.md",
+    "status": "detailed"
+  },
+  {
+    "id": "kostur_oświecenia",
+    "type": "magicItem",
+    "name": "Kostur Oświecenia",
+    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/kostur_oświecenia.md",
+    "status": "detailed"
+  },
+  {
+    "id": "pas_powerlifterski",
+    "type": "magicItem",
+    "name": "Pas Powerlifterski",
+    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/pas_powerlifterski.md",
+    "status": "detailed"
+  },
+  {
+    "id": "peleryna_snów",
+    "type": "magicItem",
+    "name": "Peleryna Snów",
+    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/peleryna_snów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "pierścień_niewzruszonego_umysłu",
+    "type": "magicItem",
+    "name": "Pierścień Niewzruszonego Umysłu",
+    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/pierścień_niewzruszonego_umysłu.md",
+    "status": "detailed"
+  },
+  {
+    "id": "pierścionek_stymulujący",
+    "type": "magicItem",
+    "name": "Pierścionek Stymulujący",
+    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/pierścionek_stymulujący.md",
+    "status": "detailed"
+  },
+  {
+    "id": "pierścionek_z_języczkiem",
+    "type": "magicItem",
+    "name": "Pierścionek z Języczkiem",
+    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/pierścionek_z_języczkiem.md",
+    "status": "detailed"
+  },
+  {
+    "id": "rękawice_srebrnego_splotu",
+    "type": "magicItem",
+    "name": "Rękwice Srebrnego Splotu",
+    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_srebrnego_splotu.md",
+    "status": "detailed"
+  },
+  {
+    "id": "skórznia_widzącego",
+    "type": "magicItem",
+    "name": "Skórznia Widzącego",
+    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/skórznia_widzącego.md",
+    "status": "detailed"
+  },
+  {
+    "id": "tarcza_szarżującego_kawalerzysty",
+    "type": "magicItem",
+    "name": "Tarcza Szarżującego Kawalerzysty",
+    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/tarcza_szarżującego_kawalerzysty.md",
+    "status": "detailed"
+  },
+  {
+    "id": "cichy_klucz",
+    "type": "magicItem",
+    "name": "Cichy Klucz",
+    "source": "ekwipunek/przedmioty_magiczne/rzadkie/cichy_klucz.md",
+    "status": "detailed"
+  },
+  {
+    "id": "kostur_żelazdnego_rachmistrza",
+    "type": "magicItem",
+    "name": "Kostur Żelaznego Rachmistrza",
+    "source": "ekwipunek/przedmioty_magiczne/rzadkie/kostur_żelazdnego_rachmistrza.md",
+    "status": "detailed"
+  },
+  {
+    "id": "krasnoludzki_ładny_hełm",
+    "type": "magicItem",
+    "name": "Krasnoludzki Ładny Hełm",
+    "source": "ekwipunek/przedmioty_magiczne/rzadkie/krasnoludzki_ładny_hełm.md",
+    "status": "detailed"
+  },
+  {
+    "id": "krystaliczna_tarcza_energetyczna",
+    "type": "magicItem",
+    "name": "Krystaliczna Tarcza Eneretyczna",
+    "source": "ekwipunek/przedmioty_magiczne/rzadkie/krystaliczna_tarcza_energetyczna.md",
+    "status": "detailed"
+  },
+  {
+    "id": "księga_protekcji",
+    "type": "magicItem",
+    "name": "Księga Protekcji",
+    "source": "ekwipunek/przedmioty_magiczne/rzadkie/księga_protekcji.md",
+    "status": "detailed"
+  },
+  {
+    "id": "maska_tharizduna",
+    "type": "magicItem",
+    "name": "Maska Tharizduna",
+    "source": "ekwipunek/przedmioty_magiczne/rzadkie/maska_tharizduna.md",
+    "status": "detailed"
+  },
+  {
+    "id": "mundur_gwardii_feniksa",
+    "type": "magicItem",
+    "name": "Mundur Gwardii Feniksa",
+    "source": "ekwipunek/przedmioty_magiczne/rzadkie/mundur_gwardii_feniksa.md",
+    "status": "detailed"
+  },
+  {
+    "id": "pas_kupca-naczelnika",
+    "type": "magicItem",
+    "name": "Pas Kupca-Naczelnika",
+    "source": "ekwipunek/przedmioty_magiczne/rzadkie/pas_kupca-naczelnika.md",
+    "status": "detailed"
+  },
+  {
+    "id": "pas_nieskończonych_możliwości",
+    "type": "magicItem",
+    "name": "Pas Nieskończonych Możliwości",
+    "source": "ekwipunek/przedmioty_magiczne/rzadkie/pas_nieskończonych_możliwości.md",
+    "status": "detailed"
+  },
+  {
+    "id": "peleryna_wędrowca_tysiąca_dachów",
+    "type": "magicItem",
+    "name": "Peleryna Wędrowca Tysiąca Dachów",
+    "source": "ekwipunek/przedmioty_magiczne/rzadkie/peleryna_wędrowca_tysiąca_dachów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "pierścień_odkrywcy",
+    "type": "magicItem",
+    "name": "Pierścień Odkrywcy",
+    "source": "ekwipunek/przedmioty_magiczne/rzadkie/pierścień_odkrywcy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "rękawice_do_przesadzania",
+    "type": "magicItem",
+    "name": "Rękawice Do Przesadzania",
+    "source": "ekwipunek/przedmioty_magiczne/rzadkie/rękawice_do_przesadzania.md",
+    "status": "detailed"
+  },
+  {
+    "id": "tarcza_milczącej_kniei",
+    "type": "magicItem",
+    "name": "Tarcza Milczącej Kniei",
+    "source": "ekwipunek/przedmioty_magiczne/rzadkie/tarcza_milczącej_kniei.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zbroja_czerwonych_łusek",
+    "type": "magicItem",
+    "name": "Zbroja czerwonych łusek",
+    "source": "ekwipunek/przedmioty_magiczne/rzadkie/zbroja_czerwonych_łusek.md",
+    "status": "detailed"
+  },
+  {
+    "id": "idealne_buty",
+    "type": "magicItem",
+    "name": "Idealne Buty",
+    "source": "ekwipunek/przedmioty_magiczne/potężne/idealne_buty.md",
+    "status": "detailed"
+  },
+  {
+    "id": "miażdżyciel",
+    "type": "magicItem",
+    "name": "Miażdżyciel",
+    "source": "ekwipunek/przedmioty_magiczne/potężne/miażdżyciel.md",
+    "status": "detailed"
+  },
+  {
+    "id": "ostrze_armageddonu",
+    "type": "magicItem",
+    "name": "Ostrze Armageddonu",
+    "source": "ekwipunek/przedmioty_magiczne/potężne/ostrze_armageddonu.md",
+    "status": "detailed"
+  },
+  {
+    "id": "odkupienie",
+    "type": "magicItem",
+    "name": "Odkupienie",
+    "source": "ekwipunek/przedmioty_magiczne/potężne/odkupienie.md",
+    "status": "detailed"
+  },
+  {
+    "id": "pas_nuggitha",
+    "type": "magicItem",
+    "name": "Pas Nuggitha",
+    "source": "ekwipunek/przedmioty_magiczne/potężne/pas_nuggitha.md",
+    "status": "detailed"
+  },
+  {
+    "id": "peleryna_podróżna",
+    "type": "magicItem",
+    "name": "Peleryna Podróżna",
+    "source": "ekwipunek/przedmioty_magiczne/potężne/peleryna_podróżna.md",
+    "status": "detailed"
+  },
+  {
+    "id": "rogaty_hełm_najeźdzcy",
+    "type": "magicItem",
+    "name": "Rogaty Hełm Najeźdzcy",
+    "source": "ekwipunek/przedmioty_magiczne/potężne/rogaty_hełm_najeźdzcy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "trzask",
+    "type": "magicItem",
+    "name": "Trzask",
+    "source": "ekwipunek/przedmioty_magiczne/potężne/trzask.md",
+    "status": "detailed"
+  },
+  {
+    "id": "wybebeszacz",
+    "type": "magicItem",
+    "name": "Wybebeszacz",
+    "source": "ekwipunek/przedmioty_magiczne/potężne/wybebeszacz.md",
+    "status": "detailed"
+  },
+  {
+    "id": "cewka_liminalna",
+    "type": "magicItem",
+    "name": "Cewka Liminalna",
+    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/cewka_liminalna.md",
+    "status": "detailed"
+  },
+  {
+    "id": "mocarny_nożyk_motylkowy",
+    "type": "magicItem",
+    "name": "Mocarny Nożyk Motylkowy",
+    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/mocarny_nożyk_motylkowy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "warkocz_środka_nocy",
+    "type": "magicItem",
+    "name": "Warkocz Środka Nocy",
+    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/warkocz_środka_nocy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zapomniany_strażnik",
+    "type": "magicItem",
+    "name": "Zapomniany Strażnik",
+    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/zapomniany_strażnik.md",
+    "status": "detailed"
+  },
+  {
+    "id": "szkielet",
+    "type": "monster",
+    "name": "Szkielet",
+    "source": "bestiariusz/nieumarli/szkielet.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zombie",
+    "type": "monster",
+    "name": "Zombie",
+    "source": "bestiariusz/nieumarli/zombie.md",
+    "status": "detailed"
+  },
+  {
+    "id": "gryf",
+    "type": "monster",
+    "name": "Gryf",
+    "source": "bestiariusz/zwierzaki/gryf.md",
+    "status": "detailed"
+  },
+  {
+    "id": "konik_błotny",
+    "type": "monster",
+    "name": "Konik błotny",
+    "source": "bestiariusz/zwierzaki/konik_błotny.md",
+    "status": "detailed"
+  },
+  {
+    "id": "koń_pociągowy",
+    "type": "monster",
+    "name": "Koń Pociągowy",
+    "source": "bestiariusz/zwierzaki/koń_pociągowy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "koń_wierzchowy",
+    "type": "monster",
+    "name": "Koń Wierzchowy",
+    "source": "bestiariusz/zwierzaki/koń_wierzchowy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "niedźwiedź",
+    "type": "monster",
+    "name": "Niedźwiedź",
+    "source": "bestiariusz/zwierzaki/niedźwiedź.md",
+    "status": "detailed"
+  },
+  {
+    "id": "pegaz",
+    "type": "monster",
+    "name": "Pegaz",
+    "source": "bestiariusz/zwierzaki/pegaz.md",
+    "status": "detailed"
+  },
+  {
+    "id": "rumak",
+    "type": "monster",
+    "name": "Rumak",
+    "source": "bestiariusz/zwierzaki/rumak.md",
+    "status": "detailed"
+  },
+  {
+    "id": "wilk",
+    "type": "monster",
+    "name": "Wilk",
+    "source": "bestiariusz/zwierzaki/wilk.md",
+    "status": "detailed"
+  },
+  {
+    "id": "pierścienie",
+    "type": "miscItem",
+    "name": "Pierścienie",
+    "source": "ekwipunek/reszta_ekwipunku.md",
+    "status": "detailed"
+  },
+  {
+    "id": "amulety",
+    "type": "miscItem",
+    "name": "Amulety",
+    "source": "ekwipunek/reszta_ekwipunku.md",
+    "status": "detailed"
+  },
+  {
+    "id": "klejnoty",
+    "type": "miscItem",
+    "name": "Klejnoty",
+    "source": "ekwipunek/reszta_ekwipunku.md",
+    "status": "detailed"
+  },
+  {
+    "id": "hełmy",
+    "type": "miscItem",
+    "name": "Hełmy",
+    "source": "ekwipunek/reszta_ekwipunku.md",
+    "status": "detailed"
+  },
+  {
+    "id": "buty",
+    "type": "miscItem",
+    "name": "Buty",
+    "source": "ekwipunek/reszta_ekwipunku.md",
+    "status": "detailed"
+  },
+  {
+    "id": "rękawice",
+    "type": "miscItem",
+    "name": "Rękawice",
+    "source": "ekwipunek/reszta_ekwipunku.md",
+    "status": "detailed"
+  },
+  {
+    "id": "test",
+    "type": "glossary",
+    "name": "Test",
+    "source": "mechaniki_bazowe/testy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "testy_przeciwstawne",
+    "type": "glossary",
+    "name": "Test przeciwstawny",
+    "source": "mechaniki_bazowe/testy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "poziomy_trudności",
+    "type": "glossary",
+    "name": "Poziomy trudności",
+    "source": "mechaniki_bazowe/testy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "ułatwienie",
+    "type": "glossary",
+    "name": "Ułatwienie",
+    "source": "mechaniki_bazowe/testy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "utrudnienie",
+    "type": "glossary",
+    "name": "Utrudnienie",
+    "source": "mechaniki_bazowe/testy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "sukcesy_i_porażki",
+    "type": "glossary",
+    "name": "Sukcesy i porażki",
+    "source": "mechaniki_bazowe/testy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "krytyczny_sukces",
+    "type": "glossary",
+    "name": "Krytyczny sukces",
+    "source": "mechaniki_bazowe/testy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "krytyczna_porażka",
+    "type": "glossary",
+    "name": "Krytyczna porażka",
+    "source": "mechaniki_bazowe/testy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "ekstremalna_manifestacja_chaosu",
+    "type": "glossary",
+    "name": "Ekstremalna manifestacja chaosu",
+    "source": "mechaniki_bazowe/testy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "szczęście",
+    "type": "glossary",
+    "name": "Szczęście",
+    "source": "mechaniki_bazowe/szczęście.md",
+    "status": "detailed"
+  },
+  {
+    "id": "nagięcie_losu",
+    "type": "glossary",
+    "name": "Nagięcie losu",
+    "source": "mechaniki_bazowe/szczęście.md",
+    "status": "detailed"
+  },
+  {
+    "id": "poczytalność",
+    "type": "glossary",
+    "name": "Poczytalność",
+    "source": "mechaniki_bazowe/poczytalność.md",
+    "status": "detailed"
+  },
+  {
+    "id": "delirium",
+    "type": "glossary",
+    "name": "Delirium",
+    "source": "mechaniki_bazowe/poczytalność.md",
+    "status": "detailed"
+  },
+  {
+    "id": "mądrość",
+    "type": "glossary",
+    "name": "Mądrość",
+    "source": "mechaniki_bazowe/mądrość.md",
+    "status": "detailed"
+  },
+  {
+    "id": "sława",
+    "type": "glossary",
+    "name": "Sława",
+    "source": "mechaniki_bazowe/sława.md",
+    "status": "detailed"
+  },
+  {
+    "id": "reputacja",
+    "type": "glossary",
+    "name": "Reputacja",
+    "source": "mechaniki_bazowe/sława.md",
+    "status": "detailed"
+  },
+  {
+    "id": "majętność",
+    "type": "glossary",
+    "name": "Majętność",
+    "source": "ekwipunek/majętność.md",
+    "status": "detailed"
+  },
+  {
+    "id": "pd",
+    "type": "glossary",
+    "name": "PD",
+    "source": "mechaniki_bazowe/rozwój_postaci.md",
+    "status": "detailed"
+  },
+  {
+    "id": "predyspozycje",
+    "type": "glossary",
+    "name": "Predyspozycje",
+    "source": "mechaniki_bazowe/rozwój_postaci.md",
+    "status": "detailed"
+  },
+  {
+    "id": "pancerz",
+    "type": "glossary",
+    "name": "Pancerz",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "punkty_życia",
+    "type": "glossary",
+    "name": "Punkty Życia",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "odporność_na_śmierć",
+    "type": "glossary",
+    "name": "Odporność na Śmierć",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "stamina_mana",
+    "type": "glossary",
+    "name": "Stamina / Mana",
+    "source": "walka/stamina_mana_i_podsatwowe_ataki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "bariera",
+    "type": "glossary",
+    "name": "Bariera",
+    "source": "mechaniki_bazowe/statystyki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "bramy_śmierci",
+    "type": "glossary",
+    "name": "Bramy Śmierci",
+    "source": "walka/obrażenia_i_śmierć.md",
+    "status": "detailed"
+  },
+  {
+    "id": "obrażenia_eskalujące",
+    "type": "glossary",
+    "name": "Obrażenia eskalujące",
+    "source": "walka/statusy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "statusy_pojedyncze",
+    "type": "glossary",
+    "name": "Status pojedynczy",
+    "source": "walka/statusy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "statusy_wielokrotne",
+    "type": "glossary",
+    "name": "Status wielokrotny",
+    "source": "walka/statusy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "typy_obrażeń",
+    "type": "glossary",
+    "name": "Typy obrażeń",
+    "source": "walka/obrażenia_i_śmierć.md",
+    "status": "detailed"
+  },
+  {
+    "id": "odporność_podatność",
+    "type": "glossary",
+    "name": "Odporność / Podatność / Niewrażliwość",
+    "source": "walka/obrażenia_i_śmierć.md",
+    "status": "detailed"
+  },
+  {
+    "id": "leczenie",
+    "type": "glossary",
+    "name": "Leczenie",
+    "source": "walka/obrażenia_i_śmierć.md",
+    "status": "detailed"
+  },
+  {
+    "id": "sektor",
+    "type": "glossary",
+    "name": "Sektor",
+    "source": "walka/typy_terenów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "morale",
+    "type": "glossary",
+    "name": "Morale",
+    "source": "walka/morale.md",
+    "status": "detailed"
+  },
+  {
+    "id": "miniony",
+    "type": "glossary",
+    "name": "Miniony",
+    "source": "walka/miniony.md",
+    "status": "detailed"
+  },
+  {
+    "id": "inicjatywa",
+    "type": "glossary",
+    "name": "Inicjatywa",
+    "source": "walka/inicjatywa.md",
+    "status": "detailed"
+  },
+  {
+    "id": "pochwycenie",
+    "type": "glossary",
+    "name": "Pochwycenie",
+    "source": "walka/stamina_mana_i_podsatwowe_ataki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "nokaut",
+    "type": "glossary",
+    "name": "Nokaut",
+    "source": "walka/stamina_mana_i_podsatwowe_ataki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "horda",
+    "type": "glossary",
+    "name": "Horda",
+    "source": "bestiariusz/rodzaje_oponentów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "tiery_oponentów",
+    "type": "glossary",
+    "name": "Tiery oponentów",
+    "source": "bestiariusz/rodzaje_oponentów.md",
+    "status": "detailed"
+  }
+]

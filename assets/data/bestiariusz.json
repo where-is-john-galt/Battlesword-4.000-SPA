@@ -1,0 +1,230 @@
+[
+  {
+    "id": "szkielet",
+    "name": "Szkielet",
+    "source": "bestiariusz/nieumarli/szkielet.md",
+    "status": "detailed",
+    "tier": "Trep",
+    "tags": ["Nieumarły", "Szkielet"],
+    "resistances": ["Chaotyczne"],
+    "vulnerabilities": ["Święte"],
+    "hp": "10",
+    "armor": "Brak",
+    "traits": [
+      {
+        "name": "Nieumarły upór",
+        "description": "Pierwszy cios, który zredukuje szkieleta do 0 HP, nie uśmierca go. Dopiero drugi osiąga zamierzony efekt."
+      }
+    ],
+    "actions": [
+      { "name": "Atak mieczem", "range": "Zwarcie", "test": "Wytrzymałość", "effect": "1k8+3 fizycznych" },
+      { "name": "Strzał z łuku", "range": "Średni", "test": "Unik", "effect": "1k6+3 fizycznych" }
+    ]
+  },
+  {
+    "id": "zombie",
+    "name": "Zombie",
+    "source": "bestiariusz/nieumarli/zombie.md",
+    "status": "detailed",
+    "tier": "Trep",
+    "tags": ["Nieumarły", "Szkielet"],
+    "resistances": ["Chaotyczne"],
+    "vulnerabilities": ["Święte"],
+    "hp": "20",
+    "armor": "Brak",
+    "traits": [
+      {
+        "name": "Nieumarły upór",
+        "description": "Pierwszy cios, który zredukuje truposza do 0 HP, nie uśmierca go. Dopiero drugi osiąga zamierzony efekt."
+      }
+    ],
+    "actions": [
+      { "name": "Atak mieczem", "range": "Zwarcie", "test": "Wytrzymałość", "effect": "1k6+3 fizycznych" }
+    ]
+  },
+  {
+    "id": "gryf",
+    "name": "Gryf",
+    "source": "bestiariusz/zwierzaki/gryf.md",
+    "status": "detailed",
+    "tier": "Elita",
+    "tags": ["Zwierzak", "Wierzchowiec", "Latający"],
+    "size": "Duży (2x2)",
+    "resistances": ["Fizyczne"],
+    "vulnerabilities": ["Ogień"],
+    "hp": "300",
+    "armor": "Średni",
+    "traits": [
+      {
+        "name": "Władca Pomorza",
+        "description": "Prędkość gryfa to 2 sektory na akcję, umie on również latać. To krnąbrne stworzenie jest odporne na Panikę i Pokiereszowanie."
+      }
+    ],
+    "actions": [
+      { "name": "Ugryzienie", "range": "Zwarcie", "test": "Unik", "effect": "2k8+6 fizycznych; 1k4 poziomy Krwawienia" },
+      { "name": "Szpony", "range": "Zwarcie", "test": "Ostrożność", "effect": "2k8+6 fizycznych; Pochwycenie" },
+      { "name": "Okrutny krzyk", "range": "Zwarcie, Cały sektor", "test": "Siła Woli", "effect": "1k6+6 fizycznych; 1k4 poziomy Paniki" }
+    ]
+  },
+  {
+    "id": "konik_błotny",
+    "name": "Konik błotny",
+    "source": "bestiariusz/zwierzaki/konik_błotny.md",
+    "status": "detailed",
+    "tier": "Trep",
+    "tags": ["Zwierzak", "Nieagresywny", "Wierzchowiec"],
+    "size": "Duży (2x2)",
+    "resistances": ["Zimno"],
+    "vulnerabilities": ["Ogień"],
+    "hp": "45",
+    "armor": "Lekki",
+    "traits": [
+      {
+        "name": "Błotnisty łowca dżdżownic",
+        "description": "Ignoruje kary za ciężki teren w przypadku błotnistych sektorów. Jego prędkośc to 2 sektory na akcję."
+      }
+    ],
+    "actions": [
+      { "name": "Dziobnięcie", "range": "Zwarcie", "test": "Wytrzymałość (+2)", "effect": "1k6+3 fizycznych; 1k4 Krwawienia" },
+      { "name": "Wbicie w błoto", "range": "Zwarcie", "test": "Unik (+2)", "effect": "1k8+3 fizycznych; Pochwycenie" }
+    ]
+  },
+  {
+    "id": "koń_pociągowy",
+    "name": "Koń Pociągowy",
+    "source": "bestiariusz/zwierzaki/koń_pociągowy.md",
+    "status": "detailed",
+    "tier": "Trep",
+    "tags": ["Zwierzak", "Nieagresywny", "Wierzchowiec"],
+    "size": "Duży (2x2)",
+    "resistances": ["Fizyczne"],
+    "vulnerabilities": ["Żrące"],
+    "hp": "90",
+    "armor": "Brak",
+    "traits": [
+      {
+        "name": "Silny jak koń",
+        "description": "Zdolny do przenoszenia wielkich ciężarów. Potrafi udźwignąć jeźdzca i dwóch pasażerów. Jego prędkość to 1 sektor na akcję."
+      }
+    ],
+    "actions": [
+      { "name": "Ugryzienie", "range": "Zwarcie", "test": "Unik (+2)", "effect": "1k10+3 fizycznych" },
+      { "name": "Kop", "range": "Zwarcie", "test": "Ostrożność (+2)", "effect": "1k8+3 fizycznych; 1 poziom Pokiereszowania" }
+    ]
+  },
+  {
+    "id": "koń_wierzchowy",
+    "name": "Koń Wierzchowy",
+    "source": "bestiariusz/zwierzaki/koń_wierzchowy.md",
+    "status": "detailed",
+    "tier": "Trep",
+    "tags": ["Zwierzak", "Nieagresywny", "Wierzchowiec"],
+    "size": "Duży (2x2)",
+    "resistances": ["Fizyczne"],
+    "vulnerabilities": ["Żrące"],
+    "hp": "90",
+    "armor": "Brak",
+    "traits": [
+      {
+        "name": "Szybki i zwinny",
+        "description": "Prędkość konia wierzchowego to 2 sektory na akcję."
+      }
+    ],
+    "actions": [
+      { "name": "Ugryzienie", "range": "Zwarcie", "test": "Unik (+2)", "effect": "1k10+3 fizycznych" },
+      { "name": "Kop", "range": "Zwarcie", "test": "Ostrożność (+2)", "effect": "1k8+3 fizycznych; 1 poziom Pokiereszowania" }
+    ]
+  },
+  {
+    "id": "niedźwiedź",
+    "name": "Niedźwiedź",
+    "source": "bestiariusz/zwierzaki/niedźwiedź.md",
+    "status": "detailed",
+    "tier": "Elita",
+    "tags": ["Zwierzak", "Duży (2x2)"],
+    "resistances": ["Fizyczne"],
+    "vulnerabilities": ["Ogień"],
+    "hp": "90",
+    "armor": "Średni",
+    "traits": [
+      {
+        "name": "Miodek",
+        "description": "Jeśli HP spadnie poniżej 50%, Niedźwiedź automatycznie poświęca jedną swoja akcję, aby skonsumować podręczny słoiczek miodu i uzyskać małe leczenie (25%+1d4)."
+      }
+    ],
+    "actions": [
+      { "name": "Rozszarpanie", "range": "Zwarcie", "test": "Unik", "effect": "2k6+6 fizycznych; 1k4 poziomy Krwawienia" },
+      { "name": "Przytulenie", "range": "Zwarcie", "test": "Ostrożność", "effect": "2k8+6 fizycznych; Pochwycenie" },
+      { "name": "Ugryzienie", "range": "Zwarcie", "test": "Wytrzymałość", "effect": "2k8+6 fizycznych; 1 poziom Pokiereszowania" }
+    ]
+  },
+  {
+    "id": "pegaz",
+    "name": "Pegaz",
+    "source": "bestiariusz/zwierzaki/pegaz.md",
+    "status": "detailed",
+    "tier": "Elita",
+    "tags": ["Zwierzak", "Wierzchowiec", "Latający"],
+    "size": "Duży (2x2)",
+    "resistances": ["Święte"],
+    "vulnerabilities": ["Elektryczność"],
+    "hp": "300",
+    "armor": "Brak",
+    "traits": [
+      {
+        "name": "Król przestworzy",
+        "description": "Prędkość pegaza to 2 sektory na akcję, umie on również latać."
+      }
+    ],
+    "actions": [
+      { "name": "Ugryzienie", "range": "Zwarcie", "test": "Unik", "effect": "2k10+6 fizycznych" },
+      { "name": "Kop", "range": "Zwarcie", "test": "Ostrożność", "effect": "2k8+6 fizycznych; 1 poziom Pokiereszowania" },
+      { "name": "Wichura", "range": "Zwarcie, Cały sektor", "test": "Wytrzymałość", "effect": "2k6+6 fizycznych; Unieruchomienie" }
+    ]
+  },
+  {
+    "id": "rumak",
+    "name": "Rumak",
+    "source": "bestiariusz/zwierzaki/rumak.md",
+    "status": "detailed",
+    "tier": "Trep",
+    "tags": ["Zwierzak", "Wierzchowiec"],
+    "size": "Duży (2x2)",
+    "resistances": ["Fizyczne"],
+    "vulnerabilities": ["Żrące"],
+    "hp": "135",
+    "armor": "Brak",
+    "traits": [
+      {
+        "name": "Wytresowany i bojowy",
+        "description": "Prędkość rumaka to 2 sektory na akcję. Zapewnia ułatwienie do ataków kawaleryjskich przeprowadzanych z jego grzbietu."
+      }
+    ],
+    "actions": [
+      { "name": "Ugryzienie", "range": "Zwarcie", "test": "Unik (+2)", "effect": "1k10+3 fizycznych" },
+      { "name": "Kop", "range": "Zwarcie", "test": "Ostrożność (+2)", "effect": "1k8+3 fizycznych; 1 poziom Pokiereszowania" }
+    ]
+  },
+  {
+    "id": "wilk",
+    "name": "Wilk",
+    "source": "bestiariusz/zwierzaki/wilk.md",
+    "status": "detailed",
+    "tier": "Trep",
+    "tags": ["Zwierzak"],
+    "resistances": ["Fizyczne"],
+    "vulnerabilities": ["Ogień"],
+    "hp": "30",
+    "armor": "Lekki",
+    "traits": [
+      {
+        "name": "Wataha",
+        "description": "Jeśli Wilki atakują jako horda, obrażenia są dodatkowo zwiększone o 10% za każdego członka hordy ponad pierwszego."
+      }
+    ],
+    "actions": [
+      { "name": "Ugryzienie", "range": "Zwarcie", "test": "Ostrożność (+2)", "effect": "1k10+3 fizycznych" },
+      { "name": "Rozszarpanie", "range": "Zwarcie", "test": "Wytrzymałość (+2)", "effect": "1k8+3 fizycznych; 1 poziom Krwawienia" }
+    ]
+  }
+]
