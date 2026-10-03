@@ -1,0 +1,115 @@
+name: Sync compendium
+
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Generate and test candidates without committing or deploying'
+        type: boolean
+        default: true
+      full:
+        description: 'Reconcile all categories, even if the source SHA is unchanged'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: compendium-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: github.ref == 'refs/heads/main' && (github.event_name != 'schedule' || vars.COMPENDIUM_SYNC_ENABLED == 'true')
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          submodules: true
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Detect upstream changes
+        id: source
+        env:
+          FULL_SYNC: ${{ inputs.full == true }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git -C Battlesword-4.000 fetch --no-tags origin HEAD
+          target=$(git -C Battlesword-4.000 rev-parse FETCH_HEAD)
+          echo "sha=$target" >> "$GITHUB_OUTPUT"
+          TARGET_SHA="$target" node --input-type=module <<'NODE'
+          import { existsSync, readFileSync, appendFileSync } from 'node:fs';
+          import { execFileSync } from 'node:child_process';
+          const state = existsSync('.github/compendium-state.json')
+            ? JSON.parse(readFileSync('.github/compendium-state.json', 'utf8')) : null;
+          const baseline = execFileSync('git', ['rev-parse', 'HEAD:Battlesword-4.000'], { encoding: 'utf8' }).trim();
+          if (state && (state.version !== 1 || state.sourceSha !== baseline || state.upstream !== 'https://github.com/Iwanuss/Battlesword-4.000')) {
+            throw new Error('Sync metadata differs from the committed submodule; reconcile the baseline');
+          }
+          const changed = process.env.FULL_SYNC === 'true' || !state || state.sourceSha !== process.env.TARGET_SHA;
+          appendFileSync(process.env.GITHUB_OUTPUT, `changed=${changed}\n`);
+          if (!changed) appendFileSync(process.env.GITHUB_STEP_SUMMARY, 'Upstream unchanged; no AI requests or deployment.\n');
+          NODE
+
+      - run: npm ci
+        if: steps.source.outputs.changed == 'true'
+
+      - name: Test importer
+        if: steps.source.outputs.changed == 'true'
+        run: npm run test:compendium
+
+      - name: Generate and validate candidates
+        if: steps.source.outputs.changed == 'true'
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_MODEL: ${{ vars.DEEPSEEK_MODEL || 'deepseek-flash' }}
+          TARGET_SHA: ${{ steps.source.outputs.sha }}
+          FULL_SYNC: ${{ inputs.full == true }}
+          COMPENDIUM_DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
+        shell: bash
+        run: |
+          args=(--apply --target-sha "$TARGET_SHA")
+          if [[ "$FULL_SYNC" == "true" ]]; then args+=(--full); fi
+          npm run compendium:sync -- "${args[@]}"
+
+      - name: Test candidate app
+        if: steps.source.outputs.changed == 'true'
+        run: npm test -- --watch=false
+
+      - name: Build candidate for GitHub Pages
+        if: steps.source.outputs.changed == 'true'
+        run: npm run build -- --base-href /Battlesword-4.000-SPA/
+
+      - name: Commit validated data
+        if: steps.source.outputs.changed == 'true' && (github.event_name != 'workflow_dispatch' || !inputs.dry_run)
+        run: node scripts/compendium/publish.mjs
+
+      - name: Trigger deployment explicitly
+        if: steps.source.outputs.changed == 'true' && (github.event_name != 'workflow_dispatch' || !inputs.dry_run)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
+
+      - name: Keep candidates and report
+        if: always() && steps.source.outputs.changed == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: compendium-sync-${{ github.run_id }}
+          path: .compendium-sync/
+          include-hidden-files: true
+          if-no-files-found: ignore
+          retention-days: 14

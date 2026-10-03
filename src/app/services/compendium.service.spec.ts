@@ -23,6 +23,7 @@ describe('CompendiumService', () => {
     'przedmioty_magiczne.json',
     'reszta_ekwipunku.json',
     'bestiariusz.json',
+    'niespojnosci.json',
     'index.json',
   ];
 
@@ -49,7 +50,9 @@ describe('CompendiumService', () => {
           { id: 'człowiek', name: 'Człowiek', source: 'rasy/człowiek.md', status: 'detailed' },
         ]);
       } else if (file === 'index.json') {
-        request.flush([{ id: 'człowiek', type: 'race', name: 'Człowiek', source: 'x', status: 'detailed' }]);
+        request.flush([
+          { id: 'człowiek', type: 'race', name: 'Człowiek', source: 'x', status: 'detailed' },
+        ]);
       } else {
         request.flush([]);
       }
@@ -59,13 +62,16 @@ describe('CompendiumService', () => {
     expect(service.error()).toBeNull();
     expect(service.races()).toHaveLength(1);
     expect(service.index()).toHaveLength(1);
+    expect(service.inconsistencies()).toEqual([]);
   });
 
   it('exposes entries through byType and byId', () => {
     service.load();
-    http.expectOne('assets/data/rasy.json').flush([
-      { id: 'człowiek', name: 'Człowiek', source: 'rasy/człowiek.md', status: 'detailed' },
-    ]);
+    http
+      .expectOne('assets/data/rasy.json')
+      .flush([
+        { id: 'człowiek', name: 'Człowiek', source: 'rasy/człowiek.md', status: 'detailed' },
+      ]);
     for (const file of FILES.slice(1)) {
       http.expectOne(`assets/data/${file}`).flush([]);
     }

@@ -4,51 +4,68 @@ export const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'postac/rasy' },
   {
     path: 'postac',
-    loadComponent: () => import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
+    loadComponent: () =>
+      import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
   },
   {
     path: 'postac/:kategoria',
-    loadComponent: () => import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
+    loadComponent: () =>
+      import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
   },
   {
     path: 'statystyki',
-    loadComponent: () => import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
+    loadComponent: () =>
+      import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
   },
   {
     path: 'statystyki/:kategoria',
-    loadComponent: () => import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
+    loadComponent: () =>
+      import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
   },
   {
     path: 'mechaniki',
-    loadComponent: () => import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
+    loadComponent: () =>
+      import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
   },
   {
     path: 'mechaniki/:kategoria',
-    loadComponent: () => import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
+    loadComponent: () =>
+      import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
   },
   {
     path: 'ekwipunek',
-    loadComponent: () => import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
+    loadComponent: () =>
+      import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
   },
   {
     path: 'ekwipunek/:kategoria',
-    loadComponent: () => import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
+    loadComponent: () =>
+      import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
   },
   {
     path: 'walka',
-    loadComponent: () => import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
+    loadComponent: () =>
+      import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
   },
   {
     path: 'walka/:kategoria',
-    loadComponent: () => import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
+    loadComponent: () =>
+      import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
   },
   {
     path: 'bestiariusz',
-    loadComponent: () => import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
+    loadComponent: () =>
+      import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
+  },
+  {
+    path: 'niespojnosci',
+    loadComponent: () =>
+      import('./features/pages/section-page/section-page').then((m) => m.SectionPage),
   },
   {
     path: 'ulubione',
-    loadComponent: () => import('./features/pages/ulubione/ulubione-page').then((m) => m.UlubionePage),
+    loadComponent: () =>
+      import('./features/pages/ulubione/ulubione-page').then((m) => m.UlubionePage),
   },
   {
     path: 'szukaj',

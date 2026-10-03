@@ -8,11 +8,18 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: github-pages-deploy
+  cancel-in-progress: false
+
 jobs:
   build-and-deploy:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-node@v4
         with:
@@ -27,7 +34,19 @@ jobs:
       - name: Copy index.html to 404.html
         run: cp dist/battlesword-spa/browser/index.html dist/battlesword-spa/browser/404.html
 
+      - name: Check that this is still the latest main
+        id: current
+        shell: bash
+        run: |
+          git fetch --no-tags origin main
+          if [[ "$(git rev-parse HEAD)" == "$(git rev-parse FETCH_HEAD)" ]]; then
+            echo 'publish=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'Skipping an obsolete build; main has advanced.' >> "$GITHUB_STEP_SUMMARY"
+          fi
+
       - name: Deploy
+        if: steps.current.outputs.publish == 'true'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

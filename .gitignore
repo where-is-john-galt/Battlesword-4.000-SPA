@@ -6,6 +6,7 @@
 /out-tsc
 /bazel-out
 /storybook-static
+/.compendium-sync
 
 # Node
 /node_modules

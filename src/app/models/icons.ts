@@ -15,6 +15,7 @@ export const TYPE_ICONS: Record<CompendiumType, string> = {
   magicItem: 'crystal-wand',
   monster: 'monster-skull',
   miscItem: 'candle',
+  inconsistency: 'scroll-unfurled',
 };
 
 export const SECTION_ICONS: Record<string, string> = {
@@ -24,6 +25,7 @@ export const SECTION_ICONS: Record<string, string> = {
   ekwipunek: 'ammo-bag',
   walka: 'crossed-swords',
   bestiariusz: 'monster-skull',
+  niespojnosci: 'scroll-unfurled',
   ulubione: 'two-hearts',
 };
 

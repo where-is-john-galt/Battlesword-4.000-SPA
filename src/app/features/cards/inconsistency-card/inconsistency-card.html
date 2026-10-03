@@ -1,0 +1,16 @@
+<app-card-shell type="inconsistency" [id]="entry().id">
+  <span class="card-over">{{ kindLabel[entry().kind] }}</span>
+  <h3 class="card-title">{{ entry().name }}</h3>
+  <p class="inconsistency__details"><app-linked-text [text]="entry().details" /></p>
+
+  @if (entry().evidence) {
+    <blockquote class="inconsistency__evidence">{{ entry().evidence }}</blockquote>
+  }
+
+  <div class="inconsistency__sources">
+    <span class="card-over">Źródła</span>
+    @for (source of entry().relatedSources; track source) {
+      <a [href]="sourceUrl(source)" target="_blank" rel="noopener noreferrer">{{ source }}</a>
+    }
+  </div>
+</app-card-shell>

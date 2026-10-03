@@ -1,0 +1,37 @@
+:host {
+  display: block;
+}
+
+.inconsistency__details {
+  color: var(--color-ink-muted);
+  line-height: 1.5;
+}
+
+.inconsistency__evidence {
+  margin: 12px 0;
+  padding: 10px 14px;
+  border-left: 2px solid var(--color-bronze);
+  color: var(--color-ink);
+  font-family: var(--font-serif);
+  white-space: pre-wrap;
+}
+
+.inconsistency__sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px solid var(--color-bronze-dark);
+
+  .card-over {
+    flex-basis: 100%;
+  }
+
+  a {
+    color: var(--color-bronze);
+    font-family: var(--font-sans);
+    font-size: 12px;
+    overflow-wrap: anywhere;
+  }
+}

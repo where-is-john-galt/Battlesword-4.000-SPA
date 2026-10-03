@@ -44,5 +44,8 @@
     @case ('monster') {
       <app-monster-card [monster]="$any(entry())" />
     }
+    @case ('inconsistency') {
+      <app-inconsistency-card [entry]="$any(entry())" />
+    }
   }
 }

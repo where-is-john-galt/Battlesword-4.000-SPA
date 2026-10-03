@@ -14,6 +14,7 @@ import { MonsterCard } from '../monster-card/monster-card';
 import { RuleCard } from '../rule-card/rule-card';
 import { StatCard } from '../stat-card/stat-card';
 import { StubCard } from '../stub-card/stub-card';
+import { InconsistencyCard } from '../inconsistency-card/inconsistency-card';
 
 @Component({
   selector: 'app-entity-card',
@@ -32,6 +33,7 @@ import { StubCard } from '../stub-card/stub-card';
     MiscItemCard,
     MonsterCard,
     StubCard,
+    InconsistencyCard,
   ],
   templateUrl: './entity-card.html',
   styleUrl: './entity-card.scss',

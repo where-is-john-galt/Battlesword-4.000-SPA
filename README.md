@@ -1,5 +1,7 @@
 # BattleswordSpa
 
+Automatyczna aktualizacja danych przez DeepSeek i GitHub Actions: [konfiguracja i obsługa](docs/COMPENDIUM-SYNC.md).
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.4.
 
 ## Development server

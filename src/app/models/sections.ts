@@ -55,6 +55,11 @@ export const SECTIONS: SectionDef[] = [
     label: 'Bestiariusz',
     categories: [{ path: 'bestiariusz', label: 'Bestiariusz', type: 'monster' }],
   },
+  {
+    path: 'niespojnosci',
+    label: 'Niespójności',
+    categories: [{ path: 'niespojnosci', label: 'Niespójność', type: 'inconsistency' }],
+  },
 ];
 
 export interface TypeMeta {

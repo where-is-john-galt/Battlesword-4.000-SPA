@@ -10,6 +10,7 @@ import type {
   CompendiumType,
   HandItem,
   IndexEntry,
+  Inconsistency,
   MagicItem,
   MiscItem,
   Monster,
@@ -36,6 +37,7 @@ const DATA_FILES: Record<CompendiumType, string> = {
   magicItem: 'przedmioty_magiczne.json',
   monster: 'bestiariusz.json',
   miscItem: 'reszta_ekwipunku.json',
+  inconsistency: 'niespojnosci.json',
 };
 
 interface CompendiumData {
@@ -54,6 +56,7 @@ interface CompendiumData {
   miscItems: MiscItem[];
   monsters: Monster[];
   index: IndexEntry[];
+  inconsistencies: Inconsistency[];
 }
 
 @Injectable({ providedIn: 'root' })
@@ -78,6 +81,7 @@ export class CompendiumService {
   readonly miscItems = signal<MiscItem[]>([]);
   readonly monsters = signal<Monster[]>([]);
   readonly index = signal<IndexEntry[]>([]);
+  readonly inconsistencies = signal<Inconsistency[]>([]);
 
   private loaded = false;
 
@@ -107,6 +111,7 @@ export class CompendiumService {
       miscItems: this.http.get<MiscItem[]>(url(DATA_FILES.miscItem)),
       monsters: this.http.get<Monster[]>(url(DATA_FILES.monster)),
       index: this.http.get<IndexEntry[]>(url('index.json')),
+      inconsistencies: this.http.get<Inconsistency[]>(url(DATA_FILES.inconsistency)),
     }).subscribe({
       next: (data: CompendiumData) => {
         this.races.set(data.races);
@@ -124,6 +129,7 @@ export class CompendiumService {
         this.miscItems.set(data.miscItems);
         this.monsters.set(data.monsters);
         this.index.set(data.index);
+        this.inconsistencies.set(data.inconsistencies);
         this.loading.set(false);
       },
       error: (err: unknown) => {
@@ -163,6 +169,8 @@ export class CompendiumService {
         return this.monsters;
       case 'miscItem':
         return this.miscItems;
+      case 'inconsistency':
+        return this.inconsistencies;
     }
   }
 
@@ -190,7 +198,10 @@ export class CompendiumService {
 }
 
 function normalizeName(value: string): string {
-  return value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  return value
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase();
 }
 
 export function cleanItemName(name: string): string {

@@ -14,7 +14,8 @@ export type CompendiumType =
   | 'handItem'
   | 'magicItem'
   | 'monster'
-  | 'miscItem';
+  | 'miscItem'
+  | 'inconsistency';
 
 export const COMPENDIUM_TYPES: readonly CompendiumType[] = [
   'race',
@@ -31,6 +32,7 @@ export const COMPENDIUM_TYPES: readonly CompendiumType[] = [
   'magicItem',
   'monster',
   'miscItem',
+  'inconsistency',
 ] as const;
 
 export function isCompendiumType(value: string): value is CompendiumType {
@@ -46,6 +48,7 @@ export interface BaseEntry {
 
 export interface NamedAbility {
   name?: string;
+  duration?: string;
   description: string;
   effects?: string[];
 }
@@ -138,12 +141,7 @@ export interface HandItem extends BaseEntry {
 }
 
 export type MagicItemRarity =
-  | 'Niezwykłe'
-  | 'Rzadkie'
-  | 'Potężne'
-  | 'Arcymistrzowskie'
-  | 'Mityczne'
-  | 'Boskie';
+  'Niezwykłe' | 'Rzadkie' | 'Potężne' | 'Arcymistrzowskie' | 'Mityczne' | 'Boskie';
 
 export const RARITY_ORDER: readonly MagicItemRarity[] = [
   'Niezwykłe',
@@ -211,11 +209,7 @@ export interface MiscItem extends BaseEntry {
 }
 
 export type StatGroup =
-  | 'pierwszorzędna'
-  | 'defensywna'
-  | 'drugorzędna'
-  | 'trzeciorzędna'
-  | 'drużynowa';
+  'pierwszorzędna' | 'defensywna' | 'drugorzędna' | 'trzeciorzędna' | 'drużynowa';
 
 export interface Stat extends BaseEntry {
   group: StatGroup;
@@ -235,4 +229,16 @@ export interface IndexEntry {
   name: string;
   source: string;
   status: EntryStatus;
+}
+
+export type InconsistencyKind =
+  'conflict' | 'missing_detail' | 'asymmetry' | 'ambiguity' | 'typo' | 'other';
+
+export interface Inconsistency extends BaseEntry {
+  kind: InconsistencyKind;
+  details: string;
+  evidence: string;
+  relatedSources: string[];
+  relatedEntryIds: string[];
+  revision: string;
 }
