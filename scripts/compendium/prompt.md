@@ -28,10 +28,15 @@ report the collision in unresolved instead of inventing an arbitrary qualifier.
 
 Every omitted old ID must appear in removed, with a specific reason grounded in the sources.
 If a removal could be a rename and identity is ambiguous, put that in unresolved instead.
-For every current owned source provide coverage with its source path and entryIds. A source with
-no entries in THIS category needs a nonempty ignoredReason (e.g. an introduction or empty alpha
-placeholder). Do not use ignoredReason to discard rules that need a new interface: report those
-in unresolved. Each returned entry must be covered by its own source.
+For every current owned source provide coverage with its source path and entryIds. `entryIds` must
+be exactly the IDs of returned entries whose `source` field is that path: include every such ID,
+and do not include IDs whose `source` points to a different file, even if their name also appears
+in this file's list. For example, when a list names a class that has its own description file, the
+class entry belongs to the description file and its ID must not appear in the list file's coverage.
+A source with no entries in THIS category needs an empty `entryIds` and a nonempty `ignoredReason`
+(e.g. an introduction or empty alpha placeholder). When `entryIds` is nonempty, `ignoredReason`
+must be an empty string. Do not use `ignoredReason` to discard rules that need a new interface:
+report those in `unresolved`. Each returned entry must be covered by its own source.
 
 Record source problems in findings and keep extracting the faithfully representable content. Never
 stop because the source has a contradiction, omission, typo, asymmetry or ambiguous rule. Do not

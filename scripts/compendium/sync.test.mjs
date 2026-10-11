@@ -171,6 +171,13 @@ describe('identity and coverage', () => {
       ),
     ).toThrow('unresolved');
   });
+  it('reports expected and declared IDs when source coverage disagrees', () => {
+    const invalid = result();
+    invalid.coverage[0].entryIds = ['different_entry'];
+    expect(() => reconcile(batch, invalid, [], schemas.race, sources, new Map())).toThrow(
+      'entryIds mismatch (expected ["elf"], received ["different_entry"])',
+    );
+  });
   it('records incomplete source text as a linked inconsistency finding', () => {
     const finding = {
       id: 'missing_shock',

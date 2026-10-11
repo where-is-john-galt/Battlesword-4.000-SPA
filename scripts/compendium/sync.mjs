@@ -104,12 +104,20 @@ export function reconcile(
       .filter((e) => e.source === path)
       .map((e) => e.id)
       .sort(compare);
-    if (
-      canonical([...entry.entryIds].sort(compare)) !== canonical(expected) ||
-      (!expected.length && !entry.ignoredReason.trim()) ||
-      (expected.length && entry.ignoredReason.trim())
-    ) {
-      throw new Error(`${batch.type}: invalid coverage for ${path}`);
+    const declared = [...entry.entryIds].sort(compare);
+    if (canonical(declared) !== canonical(expected)) {
+      throw new Error(
+        `${batch.type}: invalid coverage for ${path}: entryIds mismatch ` +
+          `(expected ${JSON.stringify(expected)}, received ${JSON.stringify(declared)})`,
+      );
+    }
+    if (!expected.length && !entry.ignoredReason.trim()) {
+      throw new Error(
+        `${batch.type}: invalid coverage for ${path}: empty source needs ignoredReason`,
+      );
+    }
+    if (expected.length && entry.ignoredReason.trim()) {
+      throw new Error(`${batch.type}: invalid coverage for ${path}: ignoredReason must be empty`);
     }
   }
   return result.entries;
