@@ -238,6 +238,15 @@ describe('DeepSeek boundary', () => {
     ).rejects.toThrow('503');
     expect(failing).toHaveBeenCalledTimes(3);
   });
+  it('retries a timeout while reading the response body', async () => {
+    const timeout = new DOMException('timed out', 'TimeoutError');
+    const fetchImpl = vi
+      .fn()
+      .mockResolvedValueOnce({ ok: true, json: async () => { throw timeout; } })
+      .mockResolvedValueOnce(response(completion()));
+    await expect(requestJson([], { apiKey: 'test', fetchImpl, wait: async () => {} })).resolves.toEqual({});
+    expect(fetchImpl).toHaveBeenCalledTimes(2);
+  });
   it.each([
     ['', 'stop'],
     ['{', 'stop'],

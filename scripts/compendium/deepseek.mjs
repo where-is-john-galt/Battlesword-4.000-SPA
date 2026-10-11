@@ -43,7 +43,19 @@ export async function requestJson(
       }
       throw new Error(`DeepSeek HTTP ${response.status}`);
     }
-    const body = await response.json();
+    let body;
+    try {
+      // The timeout signal also covers reading the response body. DeepSeek can return headers
+      // promptly while the generated JSON is still taking a long time to arrive.
+      body = await response.json();
+    } catch (error) {
+      const retryable =
+        error?.name === 'TimeoutError' || error?.name === 'AbortError' || error instanceof TypeError;
+      if (!retryable) throw new Error('DeepSeek returned invalid JSON');
+      if (attempt === 2) throw new Error('DeepSeek network error or timeout after 3 attempts');
+      await wait(1000 * 2 ** attempt);
+      continue;
+    }
     onUsage(body.usage ?? {});
     const choice = body.choices?.[0];
     if (choice?.finish_reason !== 'stop') {
