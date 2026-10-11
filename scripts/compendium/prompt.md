@@ -10,6 +10,11 @@ Produce the COMPLETE category, not a patch. Extract entries only from ownedSourc
 help interpret them but belong to other categories. Follow the supplied entry schema exactly.
 Keep existing entry IDs verbatim, including for renames, moved sources and stub -> detailed changes.
 Prefer the dedicated description over a list when a list entry acquires a dedicated document.
+When a list file contains a stub with the same entity name as a dedicated description file, treat
+them as the same entity: keep the existing stub ID, move its `source` to the dedicated file, and
+omit that entity from the list file's entries and coverage. Do not create a suffixed second ID or
+report this ordinary list-to-description transition as unresolved unless the source explicitly
+distinguishes two different entities with that same name.
 For genuinely new entities use a lowercase Polish ID with underscores instead of whitespace.
 Never reuse a removed entity's ID for a different entity. Avoid duplicate entities across list files
 and dedicated files. Preserve existing entry order; append new entries in source/name order.
