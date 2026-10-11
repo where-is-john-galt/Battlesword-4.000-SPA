@@ -1,6 +1,8 @@
 name: Sync compendium
 
 on:
+  push:
+    branches: [main]
   schedule:
     - cron: '17 * * * *'
   workflow_dispatch:
@@ -8,7 +10,7 @@ on:
       dry_run:
         description: 'Generate and test candidates without committing or deploying'
         type: boolean
-        default: true
+        default: false
       full:
         description: 'Reconcile all categories, even if the source SHA is unchanged'
         type: boolean
@@ -23,7 +25,7 @@ concurrency:
 
 jobs:
   sync:
-    if: github.ref == 'refs/heads/main' && (github.event_name != 'schedule' || vars.COMPENDIUM_SYNC_ENABLED == 'true')
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     permissions:

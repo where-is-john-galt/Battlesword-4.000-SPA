@@ -1,9 +1,9 @@
 # Automatyczna synchronizacja kompendium
 
-Workflow **Sync compendium** sprawdza repo `Iwanuss/Battlesword-4.000` co godzinę,
-w 17. minucie. Pobiera HEAD domyślnej gałęzi upstreamu (obecnie `master`), ustala jego SHA,
-a następnie pracuje wyłącznie na tej wersji. Kilka nowych commitów jest przetwarzanych razem.
-Brak nowej wersji oznacza brak wywołań DeepSeek i brak deploymentu.
+Workflow **Sync compendium** sprawdza repo `Iwanuss/Battlesword-4.000` po każdym pushu na `main`
+i dodatkowo co godzinę, w 17. minucie. Pobiera HEAD domyślnej gałęzi upstreamu (obecnie `master`),
+ustala jego SHA, a następnie pracuje wyłącznie na tej wersji. Kilka nowych commitów jest
+przetwarzanych razem. Brak nowej wersji oznacza brak wywołań DeepSeek i brak deploymentu.
 
 ## Uruchomienie na GitHubie
 
@@ -17,13 +17,12 @@ Brak nowej wersji oznacza brak wywołań DeepSeek i brak deploymentu.
 3. Umieść zmiany na `main`. Repo musi dopuszczać `contents: write` dla zapisu danych
    i `actions: write` do wywołania deploymentu. Ochrona `main` wymagająca PR blokuje ten wariant
    pełnego automatu; workflow jej nie obchodzi.
-4. Harmonogram jest wyłączony, dopóki zmienna Actions `COMPENDIUM_SYNC_ENABLED` nie wynosi
-   dokładnie `true`. Najpierw uruchom workflow ręcznie z
-   **dry_run=true** (domyślne). Próba korzysta z płatnego API, generuje kandydatów i wykonuje
-   testy oraz build, ale nie zapisuje niczego w zdalnym repo ani na stronie.
-5. Pobierz artefakt `compendium-sync-<run_id>` i porównaj `data/` oraz `report.json` ze źródłami
-   wskazanymi przez SHA. Potem uruchom z **dry_run=false** i ustaw zmienną Actions
-   `COMPENDIUM_SYNC_ENABLED=true`. Od tej chwili harmonogram publikuje automatycznie.
+4. Po pushu na `main` workflow od razu sprawdza źródło; potem sprawdza je co godzinę.
+   Ręczne uruchomienie domyślnie działa produkcyjnie (**dry_run=false**). Opcja
+   **dry_run=true** pozwala wygenerować kandydatów i wykonać testy oraz build bez zapisu w repo
+   i wdrożenia. Każda synchronizacja, która wykryje nowy SHA, korzysta z płatnego API.
+5. Pierwszą publikację i kolejne wyniki sprawdzaj w artefakcie `compendium-sync-<run_id>`;
+   zawiera `data/` i `report.json` z SHA źródła.
 
 Nie dodawaj ręcznie pliku `.github/compendium-state.json`. Pierwsza udana synchronizacja
 tworzy go dopiero po pełnym uzgodnieniu wszystkich kategorii. Dzięki temu obecny wskaźnik
