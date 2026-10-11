@@ -11,7 +11,8 @@ Brak nowej wersji oznacza brak wywołań DeepSeek i brak deploymentu.
    Klucz jest używany tylko w kroku ekstrakcji i nigdy nie trafia do aplikacji ani artefaktów.
 2. Opcjonalnie dodaj zmienną Actions `DEEPSEEK_MODEL`. Domyślnie: `deepseek-flash`.
    Model musi obsługiwać Chat Completions, JSON Output, `thinking: disabled` i limit odpowiedzi
-   32768 tokenów. Zmiana modelu nie powoduje sama w sobie ponownego przetwarzania danych;
+   co najmniej 131072 tokenów. Domyślny limit odpowiedzi to 131072 tokenów.
+   Zmiana modelu nie powoduje sama w sobie ponownego przetwarzania danych;
    do tego służy ręczne `full`.
 3. Umieść zmiany na `main`. Repo musi dopuszczać `contents: write` dla zapisu danych
    i `actions: write` do wywołania deploymentu. Ochrona `main` wymagająca PR blokuje ten wariant

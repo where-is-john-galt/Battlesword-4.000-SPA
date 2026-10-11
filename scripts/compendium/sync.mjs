@@ -261,19 +261,34 @@ export async function synchronize({
     if (Buffer.byteLength(content) > 700_000)
       throw new Error(`${batch.type}: context exceeds 700 KB; split the category before retrying`);
     console.log(`Extracting ${batch.type} (${payload.ownedSources.length} source files)`);
-    const result = await request(
-      [
-        { role: 'system', content: prompt },
-        { role: 'user', content },
-      ],
-      {
-        apiKey,
-        model,
-        onUsage: (usage) => {
-          for (const key of Object.keys(report.usage)) report.usage[key] += Number(usage[key]) || 0;
+    let result;
+    try {
+      result = await request(
+        [
+          { role: 'system', content: prompt },
+          { role: 'user', content },
+        ],
+        {
+          apiKey,
+          model,
+          onUsage: (usage) => {
+            for (const key of Object.keys(report.usage))
+              report.usage[key] += Number(usage[key]) || 0;
+          },
         },
-      },
-    );
+      );
+    } catch (error) {
+      // Preserve a concise, credential-free diagnostic even when the provider truncates output.
+      await writeFile(
+        join(output, 'responses', `${batch.type}.error.json`),
+        `${JSON.stringify(
+          { category: batch.type, error: error instanceof Error ? error.message : String(error) },
+          null,
+          2,
+        )}\n`,
+      );
+      throw error;
+    }
     // Keep the model's answer even if reconciliation fails, so a rejected extraction is reviewable.
     // Prompts and credentials are never written here.
     await writeFile(

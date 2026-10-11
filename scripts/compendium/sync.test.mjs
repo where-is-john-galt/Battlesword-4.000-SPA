@@ -209,6 +209,7 @@ describe('DeepSeek boundary', () => {
     await expect(requestJson([], { apiKey: 'test', fetchImpl, onUsage })).resolves.toEqual({});
     const body = JSON.parse(fetchImpl.mock.calls[0][1].body);
     expect(body.response_format).toEqual({ type: 'json_object' });
+    expect(body.max_tokens).toBe(131072);
     expect(body.tools).toBeUndefined();
     expect(onUsage).toHaveBeenCalledWith({
       prompt_tokens: 10,
@@ -240,7 +241,7 @@ describe('DeepSeek boundary', () => {
         apiKey: 'test',
         fetchImpl: async () => response(completion(content, reason)),
       }),
-    ).rejects.toThrow();
+    ).rejects.toThrow(reason === 'length' ? 'finish_reason=length' : 'DeepSeek');
   });
   it('does not retry credentials errors or expose response bodies', async () => {
     const fetchImpl = vi.fn().mockResolvedValue(response({ error: 'sensitive' }, 401));
@@ -424,6 +425,9 @@ describe('complete offline synchronization', () => {
         },
       }),
     ).rejects.toThrow('API failed');
+    expect(
+      JSON.parse(await readFile(join(root, '.compendium-sync/responses/race.error.json'), 'utf8')),
+    ).toEqual({ category: 'race', error: 'API failed' });
     expect(git(root, 'status', '--porcelain')).toBe('');
   });
   it('rejects a corrupt index', async () => {

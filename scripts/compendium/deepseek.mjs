@@ -8,7 +8,7 @@ export async function requestJson(
     fetchImpl = fetch,
     wait = sleep,
     onUsage = () => {},
-    maxTokens = 32768,
+    maxTokens = 131072,
   } = {},
 ) {
   if (!apiKey)
@@ -46,8 +46,13 @@ export async function requestJson(
     const body = await response.json();
     onUsage(body.usage ?? {});
     const choice = body.choices?.[0];
-    if (choice?.finish_reason !== 'stop')
-      throw new Error('DeepSeek response incomplete or truncated');
+    if (choice?.finish_reason !== 'stop') {
+      const completionTokens = Number(body.usage?.completion_tokens) || 0;
+      throw new Error(
+        `DeepSeek response incomplete (finish_reason=${choice?.finish_reason ?? 'missing'}, ` +
+          `completion_tokens=${completionTokens}, max_tokens=${maxTokens})`,
+      );
+    }
     if (!choice.message?.content?.trim()) throw new Error('DeepSeek returned empty JSON content');
     try {
       return JSON.parse(choice.message.content);
