@@ -135,8 +135,12 @@ export function reconcileFindings(paths, result, previous, schema, sources, know
   const ids = new Set();
   for (const finding of result.findings) {
     validate(draftSchema, finding, `findings.${finding.id}`);
-    if (!paths.includes(finding.source))
-      throw new Error(`Finding source is not owned: ${finding.source}`);
+    if (!paths.includes(finding.source)) {
+      throw new Error(
+        `Finding source is outside findingSources: ${finding.source} ` +
+          `(allowed: ${paths.join(', ') || 'none'})`,
+      );
+    }
     if (
       !finding.relatedSources.includes(finding.source) ||
       finding.relatedSources.some((path) => !sources.has(path))

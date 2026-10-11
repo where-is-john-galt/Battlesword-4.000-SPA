@@ -53,8 +53,12 @@ Each finding must contain: a stable ID, a short name, its primary source path, k
 missing_detail, asymmetry, ambiguity, typo, other), details that neutrally explain the issue, an
 exact short evidence excerpt copied from the source, every related source path, and related entry
 IDs if applicable. Findings may link only to files supplied in ownedSources or contextSources.
-Produce the complete current findings for findingSources. Preserve IDs from previousFindings for
-the same issue; explicitly list resolved findings in removedFindings with a source-grounded reason.
+Produce findings and removedFindings ONLY for paths listed in `findingSources`. `ownedSources`
+grants permission to extract entries, but not to create findings for every owned path. Shared source
+files have one canonical findings category; if a shared file is absent from `findingSources`, do not
+report its findings in this response. Produce the complete current findings for `findingSources`.
+Preserve IDs from previousFindings for the same issue; explicitly list resolved findings in
+removedFindings with a source-grounded reason.
 Do not call ordinary wording choices, optional unnamed fields or unsupported assumptions errors.
 Record only verifiable source problems and rules that affect play. Ignore unrelated narrative lore.
 
