@@ -149,7 +149,7 @@ describe('identity and coverage', () => {
   it('rejects missing coverage, foreign sources and unresolved rules', () => {
     expect(() =>
       reconcile(batch, { ...result(), coverage: [] }, [entry], schemas.race, sources, sources),
-    ).toThrow('coverage');
+    ).toThrow('incomplete source coverage (missing: tworzenie_postaci/rasy/elf.md; unexpected: none)');
     expect(() =>
       reconcile(
         batch,

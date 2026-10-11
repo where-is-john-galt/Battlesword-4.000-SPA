@@ -33,6 +33,10 @@ be exactly the IDs of returned entries whose `source` field is that path: includ
 and do not include IDs whose `source` points to a different file, even if their name also appears
 in this file's list. For example, when a list names a class that has its own description file, the
 class entry belongs to the description file and its ID must not appear in the list file's coverage.
+A source may be owned by more than one category. In that case, cover it separately in every
+category. For example, `mechaniki_bazowe/mądrość.md` is owned by both `stat` and `mechanic`, but
+defines only the Mądrość stat; in `mechanic`, return empty `entryIds` and explain in `ignoredReason`
+that the stat is represented in the stat category. Do not omit the source from coverage.
 A source with no entries in THIS category needs an empty `entryIds` and a nonempty `ignoredReason`
 (e.g. an introduction or empty alpha placeholder). When `entryIds` is nonempty, `ignoredReason`
 must be an empty string. Do not use `ignoredReason` to discard rules that need a new interface:

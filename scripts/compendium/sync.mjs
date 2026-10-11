@@ -93,11 +93,16 @@ export function reconcile(
     }
   }
   const coverage = new Map(result.coverage.map((entry) => [entry.source, entry]));
-  if (
-    coverage.size !== result.coverage.length ||
-    canonical([...coverage.keys()].sort(compare)) !== canonical([...currentOwned].sort(compare))
-  ) {
-    throw new Error(`${batch.type}: incomplete source coverage`);
+  if (coverage.size !== result.coverage.length) {
+    throw new Error(`${batch.type}: duplicate source coverage`);
+  }
+  const missingCoverage = currentOwned.filter((path) => !coverage.has(path));
+  const unexpectedCoverage = [...coverage.keys()].filter((path) => !currentOwned.includes(path));
+  if (missingCoverage.length || unexpectedCoverage.length) {
+    throw new Error(
+      `${batch.type}: incomplete source coverage (missing: ${missingCoverage.join(', ') || 'none'}; ` +
+        `unexpected: ${unexpectedCoverage.join(', ') || 'none'})`,
+    );
   }
   for (const [path, entry] of coverage) {
     const expected = result.entries
