@@ -2,7 +2,7 @@
   {
     "id": "test",
     "name": "Test",
-    "definition": "Test statystyki wykonuje się rzutem k20. Aby zdać test, należy wyrzucić liczbę równą lub mniejszą od posiadanej statystyki. Im wyższa statystyka i im niższy rzut, tym lepiej.",
+    "definition": "Test statystyki wykonuje się w odniesieniu do statystyk defensywnych, drugorzędnych, szczęścia i sławy poprzez rzut k20. Aby zdać test, należy wyrzucić liczbę równą lub mniejszą od posiadanej statystyki. Oznacza to, że im wyższa testowana statystyka i im niższy rzut, tym lepiej.",
     "source": "mechaniki_bazowe/testy.md",
     "status": "detailed",
     "aliases": [
@@ -12,21 +12,21 @@
   {
     "id": "testy_przeciwstawne",
     "name": "Test przeciwstawny",
-    "definition": "W przypadku testów przeciwstawnych zwycięża ten, kto osiągnie wyższy poziom sukcesów.",
+    "definition": "W przypadku testów przeciwstawnych, zwycięża ten kto osiągnie wyższy poziom sukcesów.",
     "source": "mechaniki_bazowe/testy.md",
     "status": "detailed"
   },
   {
     "id": "poziomy_trudności",
     "name": "Poziomy trudności",
-    "definition": "Modyfikatory zmieniające wartość testowanej statystyki na potrzeby rzutu: od Trywialny +6, przez Przeciętny 0, do Piekielnie trudny -6.",
+    "definition": "Modyfikatory zmieniające wartość testowanej statystyki na potrzeby rzutu: Trywialny +6, Banalny +5, Śmiesznie prosty +4, Bardzo łatwy +3, Łatwy +2, Prosty +1, Przeciętny 0, Ciężki -1, Trudny -2, Bardzo trudny -3, Ekstremalnie trudny -4, Pojebanie trudny -5, Piekielnie trudny -6.",
     "source": "mechaniki_bazowe/testy.md",
     "status": "detailed"
   },
   {
     "id": "ułatwienie",
     "name": "Ułatwienie",
-    "definition": "Test wykonywany przy pomocy dwóch k20, spośród których wybierany jest wynik bardziej korzystny dla BG.",
+    "definition": "Test wykonywany przy pomocy dwóch k20, spośród których do ustalenia wyniku testu wybierana jest ta bardziej korzystna dla BG. Ułatwienia w testach zapewniają: pomoc innego BG posiadającego przynajmniej dwa rozwinięcia w testowanej statystyce; posiadanie odpowiednich narzędzi przy wykonywaniu zadania, np. kotwiczka z liną do wspinaczki lub łom do wyważania drzwi; cechy i umiejętności specjalne.",
     "source": "mechaniki_bazowe/testy.md",
     "status": "detailed",
     "aliases": [
@@ -36,7 +36,7 @@
   {
     "id": "utrudnienie",
     "name": "Utrudnienie",
-    "definition": "Test wykonywany przy pomocy dwóch k20, spośród których wybierany jest wynik bardziej niekorzystny dla BG.",
+    "definition": "Test wykonywany przy pomocy dwóch k20, spośród których wybiera się kość z wynikiem bardziej niekorzystnym. Utrudnienia w testach zapewniają: zmęczenie; stanie u progu bram śmierci; nieposiadanie niezbędnych narzędzi do wykonywania zadania, np. brak siodła przy jeździe konnej lub brak opatrunków przy udzielaniu pierwszej pomocy.",
     "source": "mechaniki_bazowe/testy.md",
     "status": "detailed",
     "aliases": [
@@ -46,28 +46,28 @@
   {
     "id": "sukcesy_i_porażki",
     "name": "Sukcesy i porażki",
-    "definition": "1 poziom sukcesu za każdy punkt różnicy między testowaną statystyką a wynikiem rzutu; analogicznie 1 poziom porażki przy przekroczeniu statystyki.",
+    "definition": "1 poziom sukcesu za każdy punkt różnicy pomiędzy testowaną statystyką a wynikiem rzutu; analogicznie 1 poziom porażki przy przekroczeniu statystyki.",
     "source": "mechaniki_bazowe/testy.md",
     "status": "detailed"
   },
   {
     "id": "krytyczny_sukces",
     "name": "Krytyczny sukces",
-    "definition": "Po wyrzuceniu 1 na k20 należy rzucić dodatkową k20; kolejna 1 oznacza krytyczny sukces.",
+    "definition": "Po wyrzuceniu 1 na k20 należy rzucić dodatkową k20; kolejna 1 oznacza krytyczny sukces. Krytyczne sukcesy mają wyższą wartość od dowolnego poziomu sukcesów, również w przypadku testów przeciwstawnych.",
     "source": "mechaniki_bazowe/testy.md",
     "status": "detailed"
   },
   {
     "id": "krytyczna_porażka",
     "name": "Krytyczna porażka",
-    "definition": "Po wyrzuceniu 20 na k20 należy rzucić dodatkową k20; kolejna 20 oznacza krytyczną porażkę.",
+    "definition": "Po wyrzuceniu 20 na k20 należy rzucić dodatkową k20; kolejna 20 oznacza krytyczną porażkę. Krytyczne porażki mają wyższą wartość od dowolnego poziomu porażek, również w przypadku testów przeciwstawnych.",
     "source": "mechaniki_bazowe/testy.md",
     "status": "detailed"
   },
   {
     "id": "ekstremalna_manifestacja_chaosu",
     "name": "Ekstremalna manifestacja chaosu",
-    "definition": "Trzy kolejne wyniki 6 na k20 w tym samym teście oznaczają ekstremalną manifestację chaosu.",
+    "definition": "Jeśli w teście na kości wypadnie wynik 6, należy rzucić dodatkową k20. Jeśli i na niej wypadnie wynik 6, należy rzucić trzeci raz. Trzecia szóstka oznacza ekstremalną manifestację chaosu.",
     "source": "mechaniki_bazowe/testy.md",
     "status": "detailed"
   },
@@ -108,7 +108,7 @@
   {
     "id": "predyspozycje",
     "name": "Predyspozycje",
-    "definition": "Predyspozycja w danej statystyce zapewnia 50% zniżki przy jej rozwijaniu; podwójna predyspozycja — 75%.",
+    "definition": "Predyspozycja w danej statystyce zapewnia zniżkę 50% przy jej rozwijaniu. Podwójna predyspozycja zapewnia zniżkę 75%. Potrójna zniżka nie zapewnia dalszych premii.",
     "source": "mechaniki_bazowe/rozwój_postaci.md",
     "status": "detailed",
     "aliases": [
@@ -155,6 +155,132 @@
     "name": "Szczęśliwy traf",
     "definition": "Test Szczęścia pozwala znaleźć zwykły przedmiot, którego Bohater nie wpisał do ekwipunku.",
     "source": "mechaniki_bazowe/szczęście.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zakupy",
+    "name": "Zakupy",
+    "definition": "Podstawowa funkcja Majętności: aby nabyć przedmiot lub usługę, Majętność Drużyny musi być równa lub wyższa od jego wymagań. Nabywanie niemagicznych przedmiotów nie obniża Majętności. Nabywanie niepowszechnych magicznych przedmiotów drenuje Majętność zależnie od rzadkości: Niezwykłe - 1, Rzadkie - 3, Potężne - 10, Arcymistrzowskie - 50, Mityczne - 200, Boskie - Niedostępne.",
+    "source": "ekwipunek/majętność.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zwiekszanie_majetnosci",
+    "name": "Zwiększanie Majętności",
+    "definition": "Sposoby wzrostu Majętności: zdobywanie złota (wzrost na wyższy poziom, gdy Drużyna uzbiera złoto w ilości nowy poziom x 1000); sprzedaż drogocennych przedmiotów / przedmiotów magicznych; inwestycje; działalność gospodarcza; nadania i nagrody (każda zmiana wartości Sławy powinna znajdować odzwierciedlenie w Majętności).",
+    "source": "ekwipunek/majętność.md",
+    "status": "detailed"
+  },
+  {
+    "id": "targowanie_kosztownosci_i_złoto",
+    "name": "Targowanie - Kosztowności i złoto",
+    "definition": "Gdy Drużyna zbierze odpowiednią ilość kosztowności lub złota, aby podnieść Majętność, członkowie mogą próbować je upłynnić. Należy wykonać test Targowania. Sukces oznacza, że Majętność zwiększa się o 1. Co 3 dodatkowe sukcesy, Majętność zwiększa się o dodatkowy punkt. Porażka oznacza, że Majętność zwiększa się o 0,5 punktu.",
+    "source": "ekwipunek/majętność.md",
+    "status": "detailed"
+  },
+  {
+    "id": "handel_przedmiotami",
+    "name": "Handel przedmiotami",
+    "definition": "Każda postać może podjąć się jednorazowo w trakcie przerwy tej akcji za darmo. Postać może nabyć przedmioty o łącznej wartości nieprzekraczającej dwukrotności Majętności Drużyny, a wymagana Majętność pojedynczych przedmiotów nie może przekraczać Majętności Drużyny. W przypadku sprzedaży można podjąć próbę upłynnienia dowolnej ilości zasobów: test Targowania, każdy sukces zwiększa uzyskaną Majętność o 1/3 wartości upłynnianych zasobów.",
+    "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
+    "status": "detailed"
+  },
+  {
+    "id": "inwestycje",
+    "name": "Inwestycje",
+    "definition": "W ramach jednej akcji przerwy postać może zainwestować do połowy Majętności Drużyny. Następnie wykonuje test Księgowości. Każdy sukces to zysk w postaci 10% wkładu. Porażka oznacza jednak utratę zainwestowanych środków.",
+    "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
+    "status": "detailed"
+  },
+  {
+    "id": "dzialalnosc_gospodarcza",
+    "name": "Działalność gospodarcza",
+    "definition": "Postać może zarabiać pieniądze wykonując swoją profesję. Należy ustalić statystykę najbliżej powiązaną z daną profesją. Ilość sukcesów podzielona na 3 i zaokrąglona w górę w tym teście jest podniesioną wartością Majętności. Sukces oznacza również zdobycie poziomu reputacji w miejscu wykonywania zawodu i związane z tym zwiększenie Sławy o 1.",
+    "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
+    "status": "detailed"
+  },
+  {
+    "id": "wytworstwo_w_przerwie",
+    "name": "Wytwórstwo (przerwa)",
+    "definition": "Postać zajmuje się wytwarzaniem lub ulepszaniem przedmiotów. Należy ustalić: co ma być wytworzone, rzadkość przedmiotu, koszt składników niezbędnych do wytworzenia. Im potężniejszy, rzadszy i droższy przedmiot, tym wyższy poziom trudności wytwórstwa, co wpływa na ilość niezbędnych sukcesów. Testy dzielone są pomiędzy statystyki: Kowalstwo, Majsterkowanie, Wynalazczość, Znajdowanie, Sztuka oraz Arkana (jeśli wytwórstwo ma związek z badaniami magicznymi). W ramach akcji postać może wykonać 3 wybrane testy.",
+    "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
+    "status": "detailed"
+  },
+  {
+    "id": "trening",
+    "name": "Trening",
+    "definition": "Postać poświęca czas na szlifowanie umiejętności bojowych. Za każdą poświęconą na to akcję, Bazowa Stamina / Mana zwiększa się o 1 do następnej przerwy.",
+    "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
+    "status": "detailed"
+  },
+  {
+    "id": "bardzo_dlugi_odpoczynek",
+    "name": "Bardzo długi odpoczynek",
+    "definition": "Postać wykorzystuje ten czas na odpoczynek i rekonwalescencję. Wszelkiego rodzaju urazy i choroby kończą się. Postać odzyskuje również 2k10 punktów Poczytalności.",
+    "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
+    "status": "detailed"
+  },
+  {
+    "id": "impreza_okolicznosciowa",
+    "name": "Impreza okolicznościowa",
+    "definition": "W ramach akcji postać wyprawia imprezę z okazji urodzin, imienin lub ważnego dla niej święta. Wszyscy zaproszeni mogą wykonać 3 testy Szczęścia. Każda porażka zwiększa ich Szczęście o 1.",
+    "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
+    "status": "detailed"
+  },
+  {
+    "id": "studiowanie_tajemnych_tomow",
+    "name": "Studiowanie tajemnych tomów",
+    "definition": "Postać spędza czas na poszerzaniu wiedzy. Pozwala na zmianę wyniku na kości na 1 w dowolnym teście Wiedzy oraz Arkan kosztem 1 Szczęścia do następnej przerwy. Pozwala 3 razy na wykonanie akcji bojowej Analizy w ramach akcji natychmiastowej.",
+    "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
+    "status": "detailed"
+  },
+  {
+    "id": "kreatywna_ksiegowosc",
+    "name": "Kreatywna księgowość",
+    "definition": "Postać stara się zorganizować tymczasowe dodatkowe środki. W ramach akcji należy wykonać test Księgowości z dodatkowym modyfikatorem równym połowie Sławy. Ilość sukcesów w tym teście zwiększa tymczasowo Majętność Drużyny do następnej przerwy.",
+    "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
+    "status": "detailed"
+  },
+  {
+    "id": "behawiorystyka",
+    "name": "Behawiorystyka",
+    "definition": "Postać zacieśnia więzi ze swoim zwierzęcym towarzyszem, np. wierzchowcem lub minionem. W ramach akcji należy wykonać test Dowodzenia, Psychologii lub Sztuki Przetrwania. Sukces pozwala na rozwinięcie jednej cechy lub umiejętności kompana.",
+    "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
+    "status": "detailed"
+  },
+  {
+    "id": "rozwoj_statystyk_pierwszorzednych",
+    "name": "Rozwój statystyk pierwszorzędnych",
+    "definition": "Koszt rozwijania statystyk pierwszorzędnych: 1. rozwinięcie - 500 PD, 2. - 750 PD, 3. - 1000 PD, 4. - 1250 PD, 5. - 1500 PD.",
+    "source": "mechaniki_bazowe/rozwój_postaci.md",
+    "status": "detailed"
+  },
+  {
+    "id": "rozwoj_statystyk_defensywnych",
+    "name": "Rozwój statystyk defensywnych",
+    "definition": "Koszt rozwijania statystyk defensywnych: 1. rozwinięcie - 250 PD, 2. - 500 PD, 3. - 750 PD, 4. - 1000 PD, 5. - 1250 PD.",
+    "source": "mechaniki_bazowe/rozwój_postaci.md",
+    "status": "detailed"
+  },
+  {
+    "id": "rozwoj_statystyk_drugorzednych",
+    "name": "Rozwój statystyk drugorzędnych",
+    "definition": "Koszt rozwijania statystyk drugorzędnych: 1. rozwinięcie - 100 PD, 2. - 200 PD, 3. - 300 PD, 4. - 400 PD, 5. - 500 PD.",
+    "source": "mechaniki_bazowe/rozwój_postaci.md",
+    "status": "detailed"
+  },
+  {
+    "id": "rozwoj_statystyk_trzeciorzednych",
+    "name": "Rozwój statystyk trzeciorzędnych",
+    "definition": "Szczęście - na koniec każdej sesji należy wykonać test Szczęścia; w przypadku porażki wartość Szczęścia zwiększa się o 1. Poczytalność - przywrócenie 1% poczytalności kosztuje 100 PD. Mądrość - za każde WYDANE 1000 PD wartość Mądrości rośnie o 1. Maksymalne Punkty Życia - zwiększenie Max PŻ o 1 kosztuje 100 PD, każde kolejne rozwinięcie kosztuje o 100 PD więcej. Odporność na Śmierć - regeneruje się w tempie 1 dziennie. Stamina / Mana - bazowa wartość rośnie wraz z rozwijaniem cechy powiązanej z daną bronią.",
+    "source": "mechaniki_bazowe/rozwój_postaci.md",
+    "status": "detailed"
+  },
+  {
+    "id": "umiejetnosci_oraz_perki",
+    "name": "Umiejętności oraz perki",
+    "definition": "Po spełnieniu wymagań, należy wydać ilość PD wyszczególnioną przy danej umiejętności lub perku, aby je odblokować.",
+    "source": "mechaniki_bazowe/rozwój_postaci.md",
     "status": "detailed"
   }
 ]
