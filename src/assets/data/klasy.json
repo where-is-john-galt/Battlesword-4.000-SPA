@@ -6,11 +6,27 @@
     "status": "detailed",
     "archetype": "Rzemieślnicy",
     "predispositions": {
-      "primary": ["Zręczność"],
-      "defensive": ["Unik", "Percepcja"],
-      "secondary": ["Analiza", "Majsterkowanie", "Wynalazczość", "Znajdowanie", "Zwinne dłonie"]
+      "primary": [
+        "Zręczność"
+      ],
+      "defensive": [
+        "Unik",
+        "Percepcja"
+      ],
+      "secondary": [
+        "Analiza",
+        "Majsterkowanie",
+        "Wynalazczość",
+        "Znajdowanie",
+        "Zwinne dłonie"
+      ]
     },
-    "startingEquipment": ["Flakony na mikstury", "Pistolet", "Łuk", "Kurtka pikowana"],
+    "startingEquipment": [
+      "Flakony na mikstury",
+      "Pistolet",
+      "Łuk",
+      "Kurtka pikowana"
+    ],
     "hitPoints": [
       "Bazowa wartość = 10 + Wytrzymałość",
       "Bazowa Bariera = Percepcja",
@@ -30,7 +46,7 @@
             "Zwiększenie zasięgu do długiego - 3 Staminy",
             "Nałożenie 1 poziomu Podpalenia - 1 Staminy",
             "Zaatakowanie wszystkich w wybranym sektorze - 3 Staminy",
-            "Zaatakowanie wszystkich (ale tylko przecieników) w wybranym sektorze - 5 Staminy"
+            "Zaatakowanie wszystkich (ale tylko przeciwników) w wybranym sektorze - 5 Staminy"
           ]
         },
         {
@@ -58,7 +74,8 @@
           "enhancements": [
             "Zwiększenie zasięgu do krótkiego - 1 Staminy / Many",
             "Zwiększenie zasięgu do średniego - 2 Staminy / Many",
-            "Zwiększenie zasięgu do długiego - 3 Staminy / Many"
+            "Zwiększenie zasięgu do długiego - 3 Staminy / Many",
+            "Nałożenie 1 poziomu Podpalenia lub Zamrożenia na wszystkich w wybranym sektorze - 1 Staminy / Many"
           ]
         },
         {
@@ -66,17 +83,40 @@
           "purchaseCost": "250 PD",
           "activationTime": "Akcja",
           "range": "Krótki",
-          "activationCost": ["3 Staminy"],
-          "description": "Wybrany przeciwnik w zasięgu otrzymuje 1k10 losowego statusu wielokrotnego."
+          "activationCost": [
+            "3 Staminy / Many"
+          ],
+          "description": "Wybrany przeciwnik w zasięgu otrzymuje 1k10 poziomów losowego statusu wielokrotnego.",
+          "enhancements": [
+            "Zwiększenie nałożonych poziomów statusu - 2 Staminy / Many",
+            "Wybranie konkretnego statusu, który zostanie nałożony - 3 Staminy / Many"
+          ]
+        },
+        {
+          "name": "Trawiący kwas",
+          "purchaseCost": "500 PD",
+          "activationTime": "Akcja",
+          "range": "Krótki",
+          "description": "Wybrany sektor w zasięgu staje się Strawiony, a wszyscy w nim się znajdujący otrzymują 1k6 obrażeń żrących omijających Barierę",
+          "enhancements": [
+            "Zwiększenie zasięgu do średniego - 1 Staminy / Many",
+            "Zwiększenie zasięgu do dużego - 2 Staminy / Many",
+            "+1 kość obrażeń - 1 Staminy / Many",
+            "Zaatakowanie jedynie przeciwników w wybranym sektorze - 3 Staminy / Many"
+          ]
         },
         {
           "name": "Wybuch",
-          "requirements": ["8 Mądrości"],
+          "requirements": [
+            "8 Mądrości"
+          ],
           "purchaseCost": "800 PD",
           "activationTime": "Akcja",
           "range": "Bespośredni",
-          "activationCost": ["10 Staminy"],
-          "description": "Alchemik zadaje obrażenia wszystkich przeciwnikom na polu bitwy w wysokości 10k10 obrażeń żrących oraz leczy wszystkich sojuszników (duże leczenie)."
+          "activationCost": [
+            "10 Staminy / Many"
+          ],
+          "description": "Alchemik zadaje obrażenia wszystkim przeciwnikom na polu bitwy w wysokości 10k10 obrażeń żrących oraz leczy wszystkich sojuszników (duże leczenie)."
         }
       ]
     }
@@ -84,9 +124,135 @@
   {
     "id": "taktyk",
     "name": "Taktyk",
-    "source": "tworzenie_postaci/klasy/lista_klas.md",
-    "status": "stub",
-    "archetype": "Żołnierze"
+    "source": "tworzenie_postaci/klasy/taktyk.md",
+    "status": "detailed",
+    "archetype": "Żołnierze",
+    "predispositions": {
+      "primary": [
+        "Inteligencja"
+      ],
+      "defensive": [
+        "Spryt",
+        "Ostrożność"
+      ],
+      "secondary": [
+        "Jeździectwo",
+        "Wiedza",
+        "Analiza",
+        "Psychologia",
+        "Dowodzenie"
+      ]
+    },
+    "startingEquipment": [
+      "Rapier",
+      "Pistolet",
+      "Berło",
+      "Ornat maga lub Skórznia ćwiekowana"
+    ],
+    "hitPoints": [
+      "Bazowa wartość = 10 + Wytrzymałość",
+      "Bazowa Bariera = Spryt + Ostrożność"
+    ],
+    "combatAbilities": {
+      "starting": [
+        {
+          "name": "Rozkaz",
+          "activationTime": "Akcja",
+          "range": "Średni (do 2 sąsiednich sektorów)",
+          "description": "Wybrany sojusznik w zasięgu natychmiast wykonuje dodatkową akcję, poza swoją kolejnością.",
+          "enhancements": [
+            "Sojusznik zyskuje 1 Energii - 1 staminy",
+            "Sojusznik zyskuje dodatkową akcję - 5 staminy",
+            "Dodatkowy sojusznik wykonuje akcję - 3 staminy",
+            "Wydłużenie zasięgu do długiego - 3 staminy",
+            "Wydłużenie zasięgu do pola bitwy - 7 staminy"
+          ]
+        },
+        {
+          "name": "Oznaczenie celu",
+          "activationTime": "Akcja",
+          "range": "Długi (do 3 sąsiednich sektorów)",
+          "description": "Taktyk wskazuje wybranego oponenta i ułatwia wszystkie ataki sojuszników przeciwko niemu do końca rundy.",
+          "enhancements": [
+            "Efekt trwa do końca następnej rundy - 1 staminy",
+            "Dodatkowy oponent zostaje oznaczony - 3 staminy",
+            "Oznaczony oponent traci 1 Pancerza do końca rundy - 1 staminy"
+          ]
+        }
+      ],
+      "purchasable": [
+        {
+          "name": "Zasadzka",
+          "purchaseCost": "250 PD",
+          "activationTime": "Akcja",
+          "range": "Średni (do 2 sąsiednich sektorów)",
+          "requirements": [
+            "Spełnione warunki do wykonania ataku z zaskoczenia"
+          ],
+          "activationCost": [
+            "1 staminy za każdego sojusznika zaangażowanego w akcję"
+          ],
+          "description": "Wybrani sojusznicy w zasięgu wykonują dodatkową rundę zaskoczenia, a oponenci nie mogą na niego zareagować.",
+          "enhancements": [
+            "Dodatkowe 1 Energii dla sojuszników - 1 staminy",
+            "Ułatwienie do wszystkich wykonywanych testów i ataków w trakcie obydwu rund zaskoczenia - 3 staminy",
+            "Podwojenie nakładanych przez sojuszników statusów w trakcie obydwu rund zaskoczenia - 5 staminy"
+          ]
+        },
+        {
+          "name": "Linia obrony",
+          "purchaseCost": "250 PD",
+          "activationTime": "Akcja",
+          "range": "Średni (do 2 sąsiednich sektorów)",
+          "activationCost": [
+            "1 staminy za każdego wybranego sojusznika"
+          ],
+          "description": "Obejmuje wszystkich sojuszników w zasięgu możliwością darmowej reakcji w momencie przyjęcia ciosu.",
+          "enhancements": [
+            "+1 Pancerza dla wybranego sojusznika - 1 staminy",
+            "Zapewnia odporność na wybrany typ obrażeń do pierwszego otrzymania tego typu obrażeń - 2 staminy",
+            "Wybrany sojusznik otrzymuje małe leczenie (25%+1d4) - 2 staminy",
+            "Wybrany sojusznik otrzymuje średnie leczenie (50%+1d6) - 4 staminy",
+            "Wybrany sojusznik otrzymuje duże leczenie (75%+1d8) - 6 staminy",
+            "Wybrany sojusznik otrzymuje pełne leczenie (100%) - 8 staminy"
+          ]
+        },
+        {
+          "name": "Manewr okrążający",
+          "requirements": [
+            "5 Mądrości"
+          ],
+          "purchaseCost": "500 PD",
+          "activationTime": "3 akcje",
+          "range": "Długi (do 3 sąsiednich sektorów)",
+          "description": "Wszyscy sojusznicy w zasięgu mogą przemieścić się o 2 sektory i wykonać atak przeciwko wybranemu oponentowi. Wybrany oponent musi zostać zaatakowany przez przynajmniej dwóch sojuszników.",
+          "enhancements": [
+            "Dodatkowe 1 Energii dla sojuszników - 1 staminy",
+            "Nałożenie statusu Unieruchomienia na oponenta - 3 staminy",
+            "Nałożenie 1 poziomu Pokiereszowania - 2 staminy",
+            "Nałożenie 1 poziomu Porażenia - 1 staminy"
+          ]
+        },
+        {
+          "name": "Plan doskonały",
+          "requirements": [
+            "8 Mądrości"
+          ],
+          "purchaseCost": "800 PD",
+          "activationTime": "3 akcje",
+          "range": "Pole bitwy",
+          "activationCost": [
+            "1 staminy za każdego oponenta"
+          ],
+          "description": "Taktyk ujawnia słabość całego szyku wroga. Każdy sojusznik na polu bitwy natychmiast wykonuje dodatkową rundę, a wszyscy oponenci otrzymują status Paniki.",
+          "enhancements": [
+            "Dodatkowe 1 Energii dla każdego sojusznika - 1 staminy",
+            "Nałożenie statusu Oślepienia na oponentów - 6 staminy",
+            "Nałożenie dodatkowego 1 poziomu Paniki na jednego oponenta - 1 staminy"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "łowca",
@@ -105,9 +271,115 @@
   {
     "id": "skrytobójca",
     "name": "Skrytobójca",
-    "source": "tworzenie_postaci/klasy/lista_klas.md",
-    "status": "stub",
-    "archetype": "Cienie"
+    "source": "tworzenie_postaci/klasy/skrytobójca.md",
+    "status": "detailed",
+    "archetype": "Cienie",
+    "predispositions": {
+      "primary": [
+        "Zręczność"
+      ],
+      "defensive": [
+        "Unik",
+        "Spryt"
+      ],
+      "secondary": [
+        "Wspinaczka",
+        "Akrobatyka",
+        "Otwieranie zamków",
+        "Skradanie",
+        "Medycyna"
+      ]
+    },
+    "startingEquipment": [
+      "Sztylet",
+      "Sztylet sprężynowy",
+      "Kusza pistoletowa",
+      "Krótki miecz",
+      "Skórznia"
+    ],
+    "hitPoints": [
+      "Bazowa wartość = 10 + Wytrzymałość + Unik*2"
+    ],
+    "combatAbilities": {
+      "starting": [
+        {
+          "name": "Cios w potylicę",
+          "activationTime": "Akcja",
+          "range": "Jak użytej broni",
+          "description": "Skrytobójca wykorzystuje okazję i zadaje cios we wrażliwy punkt oponenta. Skrytobójca redukuje poziomy wszystkich statusów przeciwnika do zera. Za każdy zredukowany poziom statusu, zwiększa obrażenia o 2 kości. Bazowe obrażenia równe są obrażeniom użytej broni.",
+          "enhancements": [
+            "+1 kość obrażeń - 1 Staminy",
+            "Zaatakowanie dodatkowego celu w zasięgu - 3 Staminy"
+          ]
+        },
+        {
+          "name": "Odsłonięcie",
+          "activationTime": "Akcja",
+          "range": "Jak użytej broni",
+          "description": "Skrytobójca dezorientuje oponenta szybkim atakiem, wystawiając go na nadchodzący, decydujący atak. Bazowe obrażenia równe są obrażeniom użytej broni.",
+          "enhancements": [
+            "+1 kość obrażeń - 1 Staminy",
+            "Nałożenie 1 poziomu Porażenia - 1 Staminy",
+            "Zaatakowanie dodatkowego celu w zasięgu - 3 Staminy"
+          ]
+        }
+      ],
+      "purchasable": [
+        {
+          "name": "Spopielenie / Zamrożenie",
+          "purchaseCost": "250 PD",
+          "activationTime": "Akcja",
+          "range": "Bespośredni",
+          "description": "Alchemik popala lub zamraża cały wybrany sektor w zasięgu",
+          "enhancements": [
+            "Zwiększenie zasięgu do krótkiego - 1 Staminy / Many",
+            "Zwiększenie zasięgu do średniego - 2 Staminy / Many",
+            "Zwiększenie zasięgu do długiego - 3 Staminy / Many",
+            "Nałożenie 1 poziomu Podpalenia lub Zamrożenia na wszystkich w wybranym sektorze - 1 Staminy / Many"
+          ]
+        },
+        {
+          "name": "Kto wie?",
+          "purchaseCost": "250 PD",
+          "activationTime": "Akcja",
+          "range": "Krótki",
+          "activationCost": [
+            "3 Staminy / Many"
+          ],
+          "description": "Wybrany przeciwnik w zasięgu otrzymuje 1k10 poziomów losowego statusu wielokrotnego.",
+          "enhancements": [
+            "Zwiększenie nałożonych poziomów statusu - 2 Staminy / Many",
+            "Wybranie konkretnego statusu, który zostanie nałożony - 3 Staminy / Many"
+          ]
+        },
+        {
+          "name": "Trawiący kwas",
+          "purchaseCost": "500 PD",
+          "activationTime": "Akcja",
+          "range": "Krótki",
+          "description": "Wybrany sektor w zasięgu staje się Strawiony, a wszyscy w nim się znajdujący otrzymują 1k6 obrażeń żrących omijających Barierę",
+          "enhancements": [
+            "Zwiększenie zasięgu do średniego - 1 Staminy / Many",
+            "Zwiększenie zasięgu do dużego - 2 Staminy / Many",
+            "+1 kość obrażeń - 1 Staminy / Many",
+            "Zaatakowanie jedynie przeciwników w wybranym sektorze - 3 Staminy / Many"
+          ]
+        },
+        {
+          "name": "Wybuch",
+          "requirements": [
+            "8 Mądrości"
+          ],
+          "purchaseCost": "800 PD",
+          "activationTime": "Akcja",
+          "range": "Bespośredni",
+          "activationCost": [
+            "10 Staminy / Many"
+          ],
+          "description": "Alchemik zadaje obrażenia wszystkim przeciwnikom na polu bitwy w wysokości 10k10 obrażeń żrących oraz leczy wszystkich sojuszników (duże leczenie)."
+        }
+      ]
+    }
   },
   {
     "id": "sabotażysta",
@@ -116,11 +388,28 @@
     "status": "detailed",
     "archetype": "Cienie",
     "predispositions": {
-      "primary": ["Zręczność"],
-      "defensive": ["Unik", "Spryt", "Ostrożność"],
-      "secondary": ["Wspinaczka", "Akrobatyka", "Otwieranie zamków", "Skradanie", "Zwinne dłonie"]
+      "primary": [
+        "Zręczność"
+      ],
+      "defensive": [
+        "Unik",
+        "Spryt",
+        "Ostrożność"
+      ],
+      "secondary": [
+        "Wspinaczka",
+        "Akrobatyka",
+        "Otwieranie zamków",
+        "Skradanie",
+        "Zwinne dłonie"
+      ]
     },
-    "startingEquipment": ["Łuk", "[Niezwykły] Sztylet sprężynowy (+1 kostka obrażeń)", "Sztylet", "Skórznia"],
+    "startingEquipment": [
+      "Łuk",
+      "[Niezwykły] Sztylet sprężynowy (+1 kostka obrażeń)",
+      "Sztylet",
+      "Skórznia"
+    ],
     "hitPoints": [
       "Bazowa wartość = 15 + Wytrzymałość",
       "Każdy udany test defensywny przywraca 1 HP"
@@ -131,7 +420,9 @@
           "name": "Rozstawienie pułapki",
           "activationTime": "Akcja",
           "range": "Bezpośredni (obecny sektor)",
-          "requirements": ["Status ukrycia"],
+          "requirements": [
+            "Status ukrycia"
+          ],
           "description": "Obszar sektora, w którym znajduje się Bohater (30 stóp wokół) zostaje pokryty pułapkami. Za każde pole przebyte przez przeciwnika w tym obszarze, istnieje 5% szans na aktywację pułapki. W takim przypadku, przeciwnik otrzymuje 3k10+10 obrażeń od ognia lub fizycznych. Po tym, obszar nie jest już traktowany jako pokryty pułapkami.",
           "enhancements": [
             "Zwiększenie obrażeń o 1k10 - 1 staminy",
@@ -144,7 +435,9 @@
           "name": "Pozbawienie pancerza",
           "activationTime": "Akcja",
           "range": "Bezpośredni (obecny sektor)",
-          "requirements": ["Status ukrycia"],
+          "requirements": [
+            "Status ukrycia"
+          ],
           "description": "Wybrany zwyczajny przeciwnik traci jedną warstwę pancerza (np. z ciężkiego na średni, z lekkiego na brak).",
           "enhancements": [
             "Pozbawienie pancerza elitarnego przeciwnika - 1 staminy",
@@ -161,7 +454,9 @@
           "purchaseCost": "250 PD",
           "activationTime": "Akcja",
           "range": "Bezpośredni (obecny sektor)",
-          "requirements": ["Status ukrycia"],
+          "requirements": [
+            "Status ukrycia"
+          ],
           "description": "Wybrany zwyczajny przeciwnik zostaje pozbawiony jednego z posiadanych oręży, jeśli nie jest on bronią integralną dla danego przeciwnika (np. pazury, szpony, zęby).",
           "enhancements": [
             "Rozbrojenie elitarnego przeciwnika - 1 staminy",
@@ -185,21 +480,29 @@
         },
         {
           "name": "Opóźniony zapłon",
-          "requirements": ["5 Mądrości"],
+          "requirements": [
+            "5 Mądrości"
+          ],
           "purchaseCost": "500 PD",
           "activationTime": "Akcja",
           "range": "Średni (60 stóp) (do 2 sąsiednich sektorów)",
           "description": "Pozwala na powiązanie oczekiwanego wydarzenia na polu bitwy z eksplozją ładunków wybuchowych w innym, np. ładunki pod murem obronnym wybuchną, gry strzelec na strażnicy zaatakuje drużynowego kapłana. Im mniej precyzyjny będzie opis aktywatora wybuchu, tym więcej staminy kosztować będzie użycie tej umiejętności. Eksplozja wywołana aktywatorem obejmuje wszystkich przeciwników w danym sektorze pola bitwy i zadaje im 3k10+10 obrażeń od ognia.",
-          "enhancements": ["Zwiększenie obrazeń o 1k10 - 1 staminy"]
+          "enhancements": [
+            "Zwiększenie obrazeń o 1k10 - 1 staminy"
+          ]
         },
         {
           "name": "Reakcja łańcuchowa",
-          "requirements": ["8 Mądrości"],
+          "requirements": [
+            "8 Mądrości"
+          ],
           "purchaseCost": "800 PD",
           "activationTime": "3 akcje",
           "range": "Pole bitwy",
           "description": "Zużywa 10 staminy. Można użyć raz na walkę. Wybrany przeciwnik otrzymuje 5k10+10 obrażeń od ognia. Kolejny najbliższy przeciwnik otrzymuje 4k10+8 obrażeń od ognia, następny 3k10+6, kolejny 2k10+4 i ostatni 1k10+2. W przypadku, gdy więcej niż jeden przeciwnik jest w tej samej odległości od poprzedniego, Bohater może samemu wybrać kolejny cel spośród nich.",
-          "enhancements": ["Zwiększenie zadawanych obrażeń o 1k10+2 i dodanie kolejnego celu - 5 staminy"]
+          "enhancements": [
+            "Zwiększenie zadawanych obrażeń o 1k10+2 i dodanie kolejnego celu - 5 staminy"
+          ]
         }
       ]
     },
@@ -235,24 +538,46 @@
     "status": "detailed",
     "archetype": "Wojownicy",
     "predispositions": {
-      "primary": ["Siła"],
-      "defensive": ["Wytrzymałość", "Unik"],
-      "secondary": ["Atletyka", "Kowalstwo", "Wspinaczka", "Spostrzegawczość", "Zastraszanie"]
+      "primary": [
+        "Siła"
+      ],
+      "defensive": [
+        "Wytrzymałość",
+        "Unik"
+      ],
+      "secondary": [
+        "Atletyka",
+        "Kowalstwo",
+        "Wspinaczka",
+        "Spostrzegawczość",
+        "Zastraszanie"
+      ]
     },
-    "startingEquipment": ["Glewia", "Buława", "Tarcza metalowa", "Pancerz półpłytowy lub Kurtka pikowana"],
-    "hitPoints": ["Bazowa wartość = 15 + Wytrzymałość * 2 + Unik"],
+    "startingEquipment": [
+      "Glewia",
+      "Buława",
+      "Tarcza metalowa",
+      "Pancerz półpłytowy lub Kurtka pikowana"
+    ],
+    "hitPoints": [
+      "Bazowa wartość = 15 + Wytrzymałość * 2 + Unik"
+    ],
     "combatAbilities": {
       "starting": [
         {
           "name": "Przygotowanie na zderzenie",
           "activationTime": "Reakcja",
           "description": "Tytan szykuje się na nadchodzący cios i zyskuje 3 Bariery.",
-          "enhancements": ["+1 do Pancerza do końca rundy - 1 Staminy"]
+          "enhancements": [
+            "+1 do Pancerza do końca rundy - 1 Staminy"
+          ]
         },
         {
           "name": "Niezmordowany",
           "activationTime": "Reakcja",
-          "activationCost": ["1 Staminy"],
+          "activationCost": [
+            "1 Staminy"
+          ],
           "description": "Tytan zyskuje odporność na wybrany typ obrażeń do końca walki. Ponowne wykorzystanie tej reakcji i wybranie innego typu obrażeń kończy odporność zyskaną wcześniej."
         }
       ],
@@ -263,7 +588,11 @@
           "activationTime": "Akcja",
           "range": "Zwarcie",
           "description": "Tytan zakłada przeciwnikowi chomąto, pochwytując go.",
-          "activationCost": ["Trep - 1 Staminy", "Elita - 2 Staminy", "Mistrz - 3 Staminy"],
+          "activationCost": [
+            "Trep - 1 Staminy",
+            "Elita - 2 Staminy",
+            "Mistrz - 3 Staminy"
+          ],
           "enhancements": [
             "Pochwycony przeciwnik traci 10% HP - 1 Staminy",
             "Rzut pochwyconym przeciwnikiem do sąsiedniego sektora - koszt równy kosztowi aktywacji"
@@ -274,13 +603,20 @@
           "purchaseCost": "250 PD",
           "activationTime": "Akcja",
           "range": "Krótki",
-          "activationCost": ["Bazowa Stamina spada o 1 do końca walki"],
+          "activationCost": [
+            "Bazowa Stamina spada o 1 do końca walki"
+          ],
           "description": "Do końca walki, za każdym razem, gdy Tytan otrzyma obrażenia w krótkim zasięgu, atakujący przeciwnik otrzymuje identyczne obrażenia. Wysokość tych obrażeń nie uwzględnia redukcji obrażeń i odporności Tytana.",
-          "enhancements": ["Odbite obrażenia są większe o 1 kość - 1 Staminy"]
+          "enhancements": [
+            "Odbite obrażenia są większe o 1 kość - 1 Staminy"
+          ]
         },
         {
           "name": "Odmowa Śmierci",
-          "requirements": ["5 Mądrości", "Zdanie testu Odporności na Śmierć"],
+          "requirements": [
+            "5 Mądrości",
+            "Zdanie testu Odporności na Śmierć"
+          ],
           "purchaseCost": "500 PD",
           "activationTime": "Reakcja",
           "description": "Po zdaniu testu Odporności na Śmierć, Tytan zyskuje małe leczenie (25%+1d4).",
@@ -292,11 +628,15 @@
         },
         {
           "name": "Niezniszczalny, Niepokonany, Niezwyciężony",
-          "requirements": ["8 Mądrości"],
+          "requirements": [
+            "8 Mądrości"
+          ],
           "purchaseCost": "800 PD",
           "activationTime": "1 akcja",
           "description": "Tytan staje się niewrażliwy na obrażenia na 1 rundę. W czasie trwania nie odzyskuje bazowej Staminy.",
-          "enhancements": ["Zwiększenie czasu trwania o 1 rundę - 1 Staminy"]
+          "enhancements": [
+            "Zwiększenie czasu trwania o 1 rundę - 1 Staminy"
+          ]
         }
       ]
     },
@@ -338,20 +678,42 @@
     "status": "detailed",
     "archetype": "Czarnoksiężnicy",
     "predispositions": {
-      "primary": ["Inteligencja"],
-      "defensive": ["Spryt", "Siła Woli"],
-      "secondary": ["Arkana", "Wiedza", "Analiza", "Oszustwo", "Znajdowanie"]
+      "primary": [
+        "Inteligencja"
+      ],
+      "defensive": [
+        "Spryt",
+        "Siła Woli"
+      ],
+      "secondary": [
+        "Arkana",
+        "Wiedza",
+        "Analiza",
+        "Oszustwo",
+        "Znajdowanie"
+      ]
     },
-    "startingEquipment": ["Różdżka", "Berło", "[Niezwykłe] Szaty naukowca (+1 do rzutów obronnych na śmierć)"],
-    "hitPoints": ["Bazowa wartość = 10 + Wytrzymałość", "Bazowa Bariera = Spryt + Siła Woli"],
+    "startingEquipment": [
+      "Różdżka",
+      "Berło",
+      "[Niezwykłe] Szaty naukowca (+1 do rzutów obronnych na śmierć)"
+    ],
+    "hitPoints": [
+      "Bazowa wartość = 10 + Wytrzymałość",
+      "Bazowa Bariera = Spryt + Siła Woli"
+    ],
     "combatAbilities": {
       "starting": [
         {
           "name": "Wskrzeszanie umarłych (trep)",
           "activationTime": "Akcja",
           "range": "krótki (obecny lub sąsiedni sektor)",
-          "requirements": ["Zwłoki"],
-          "activationCost": ["N+1 many, gdzie N to ilość już kontrolowanych zwłok."],
+          "requirements": [
+            "Zwłoki"
+          ],
+          "activationCost": [
+            "N+1 many, gdzie N to ilość już kontrolowanych zwłok."
+          ],
           "description": "Zwłoki zostają wskrzeszone jako zombie (tank) lub szkieletor (dps) i są minionem aż do końca walki.",
           "enhancements": [
             "Wskrzeszony ma łuk - 2 many",
@@ -397,11 +759,16 @@
         },
         {
           "name": "Wskrzeszanie umarłych (elita)",
-          "requirements": ["Mądrość 3", "Zwłoki"],
+          "requirements": [
+            "Mądrość 3",
+            "Zwłoki"
+          ],
           "purchaseCost": "300 PD",
           "activationTime": "Akcja",
           "range": "krótki (obecny lub sąsiedni sektor)",
-          "activationCost": ["N+2 many, gdzie N to ilość już kontrolowanych zwłok."],
+          "activationCost": [
+            "N+2 many, gdzie N to ilość już kontrolowanych zwłok."
+          ],
           "description": "Zwłoki zostają wskrzeszone jako szkielet wojownik (tank) lub duch (dps) i są minionem aż do końca walki.",
           "enhancements": [
             "Wskrzeszony ma łuk - 2 many",
@@ -413,11 +780,16 @@
         },
         {
           "name": "Wskrzeszanie umarłych (mistrz)",
-          "requirements": ["Mądrość 4", "Zwłoki"],
+          "requirements": [
+            "Mądrość 4",
+            "Zwłoki"
+          ],
           "purchaseCost": "400 PD",
           "activationTime": "Akcja",
           "range": "krótki (obecny lub sąsiedni sektor)",
-          "activationCost": ["N+3 many, gdzie N to ilość już kontrolowanych zwłok."],
+          "activationCost": [
+            "N+3 many, gdzie N to ilość już kontrolowanych zwłok."
+          ],
           "description": "Zwłoki zostają wskrzeszone jako rycerz śmierci (tank) lub szkieletor mag (dps) i są minionem aż do końca walki.",
           "enhancements": [
             "Wskrzeszony ma łuk lub kostur - 2 many",
@@ -429,12 +801,16 @@
         },
         {
           "name": "Przywołanie awatara śmierci",
-          "requirements": ["8 Mądrości"],
+          "requirements": [
+            "8 Mądrości"
+          ],
           "purchaseCost": "800 PD",
           "activationTime": "3 akcje",
           "range": "Pole bitwy",
           "description": "Zużywa 10 staminy. Można użyć raz na walkę. W wybranym miejscu na polu bitwy pojawia się Awatar Śmierci i jest mioninem do końca walki.",
-          "enhancements": ["+5 hp dla Awatara - 2 staminy"]
+          "enhancements": [
+            "+5 hp dla Awatara - 2 staminy"
+          ]
         }
       ]
     },
@@ -543,9 +919,136 @@
   {
     "id": "liturgista",
     "name": "Liturgista",
-    "source": "tworzenie_postaci/klasy/lista_klas.md",
-    "status": "stub",
-    "archetype": "Kapłani"
+    "source": "tworzenie_postaci/klasy/liturgista.md",
+    "status": "detailed",
+    "archetype": "Kapłani",
+    "predispositions": {
+      "primary": [
+        "Inteligencja"
+      ],
+      "defensive": [
+        "Wytrzymałosć",
+        "Siła Woli"
+      ],
+      "secondary": [
+        "Arkana",
+        "Lingwistyka",
+        "Wiedza",
+        "Przekonywanie",
+        "Sztuka"
+      ]
+    },
+    "startingEquipment": [
+      "Budzdygan",
+      "Kostur",
+      "Jedwabna szata lub Kolczuga lub Kurtka pikowana",
+      "Symbol świętości (relikwiarz lub święta księga)"
+    ],
+    "hitPoints": [
+      "Bazowa wartość = 10 + Wytrzymałość*2",
+      "Bazowa bariera = Siła Woli"
+    ],
+    "combatAbilities": {
+      "starting": [
+        {
+          "name": "Błogosławieństwo",
+          "activationTime": "Akcja",
+          "range": "Średni (do 2 sąsiednich sektorów)",
+          "description": "Wybrany sojusznik w zasięgu otrzymuje 5 Bariery.",
+          "enhancements": [
+            "+5 Bariery - 1 many",
+            "Następne obrażenia zadane przez sojusznika są zwiekszone o wartość jego głównej statystyki - 2 many",
+            "Usunięcie 1 poziomu paniki - 1 many",
+            "Usunięcie 1 poziomu pokiereszowania - 2 many",
+            "Dodatkowy sojusznik otrzymuje błogosławieństwo - 2 many",
+            "Wydłużenie zasięgu do długiego - 1 many"
+          ]
+        },
+        {
+          "name": "Święty cios",
+          "activationTime": "Akcja",
+          "range": "Zwarcie",
+          "description": "Liturgista zbliża się do zasięgu zwarcia do wybranego oponenta i wykonuje przeciwko niemu atak bronią białą, zadając obrażenia święte.",
+          "enhancements": [
+            "Dodatkowa kostka obrażeń - 1 staminy",
+            "Nałożenie statusu Oślepienia - 1 staminy",
+            "Nałożenie 1 poziomu Porażenia - 1 staminy",
+            "Nałożenie 1 poziomu Paniki - 1 staminy"
+          ]
+        },
+        {
+          "name": "Modlitwa",
+          "activationTime": "Akcja",
+          "description": "Liturgista wykonuje test Arkan i zyskuje punkty Many równe sukcesom."
+        }
+      ],
+      "purchasable": [
+        {
+          "name": "Uzdrawiająca litania",
+          "purchaseCost": "250 PD",
+          "activationTime": "Akcja",
+          "range": "Krótki",
+          "description": "Wszyscy wybrani sojusznicy w zasięgu zyskują małe leczenie (25%+1d4).",
+          "enhancements": [
+            "Zwiększenie leczenia do średniego (50%+1d6) - 2 many",
+            "Zwiększenie leczenia do dużego (75%+1d8) - 3 many",
+            "Zwiększenie leczenia do pełnego (100%) - 3 many",
+            "Usunięcie 1 poziomu statusu z wybranego sojusznika - 1 many",
+            "Dodatkowy sojusznik zostaje uleczony - 3 many",
+            "Wydłużenie zasięgu do średniego - 2 many",
+            "Wydłużenie zasięgu do długiego - 3 many"
+          ]
+        },
+        {
+          "name": "Napiętnowanie",
+          "purchaseCost": "250 PD",
+          "activationTime": "Akcja",
+          "range": "Bezpośredni",
+          "description": "Zadaje 1k8 świętych obrażeń wybranemu oponentowi. Atakowanie napiętnowanego oponenta jest wykonywane z ułatwieniem do końca rundy.",
+          "enhancements": [
+            "Dodatkowa kostka obrażeń - 1 many",
+            "Nałożenie 1 poziomu Podpalenia - 1 many",
+            "Nałożenie statusu Oślepienie - 2 many",
+            "Wydłużenie zasięgu do krótkiego - 1 many",
+            "Wydłużenie zasięgu do średniego - 2 many",
+            "Wydłużenie zasięgu do długiego - 3 many",
+            "Zaatakowanie dodatkowego oponenta w zasięgu - 2 many"
+          ]
+        },
+        {
+          "name": "Kazanie grozy",
+          "requirements": [
+            "5 Mądrości"
+          ],
+          "purchaseCost": "500 PD",
+          "activationTime": "2 akcje",
+          "range": "Długi (do 3 sąsiednich sektorów)",
+          "description": "Liturgista wygłasza przemowę, która porusza serca sojuszników i przeraża wrogów. Wszyscy sojusznicy w zasięgu otrzymują 10 Bariery, a wszyscy oponenci otrzymują 1 poziom paniki.",
+          "enhancements": [
+            "+5 Bariery dla wszystkich sojuszników - 2 many",
+            "Dodatkowy poziom paniki dla oponentów - 2 many",
+            "Uświęcenie wybranego sektora w zasięgu - 2 many",
+            "Zadanie 1k8 świętych obrażeń wszystkim przeciwnikom - 2 many"
+          ]
+        },
+        {
+          "name": "Cud",
+          "requirements": [
+            "8 Mądrości"
+          ],
+          "purchaseCost": "800 PD",
+          "activationTime": "3 akcje",
+          "range": "Pole bitwy",
+          "description": "Zadaje 10k10 świętych obrażeń wybranemu oponentowi, a wszyscy sojusznicy na polu bitwy odzyskują wszystkie punktów życia.",
+          "enhancements": [
+            "Dodatkowa kostka obrażeń - 1 many",
+            "+5 Bariery dla wszystkich sojuszników - 2 many",
+            "Nałożenie statusu Oślepienia - 2 many",
+            "Nałożenie 1 poziomu pokiereszowania - 2 many"
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "przewodnik",
@@ -568,20 +1071,42 @@
     "status": "detailed",
     "archetype": "Druid",
     "predispositions": {
-      "primary": ["Inteligencja"],
-      "defensive": ["Wytrzymałość", "Ostrożność"],
-      "secondary": ["Arkana", "Medycyna", "Sztuka Przetrwania", "Nawigacja", "Dowodzenie"]
+      "primary": [
+        "Inteligencja"
+      ],
+      "defensive": [
+        "Wytrzymałość",
+        "Ostrożność"
+      ],
+      "secondary": [
+        "Arkana",
+        "Medycyna",
+        "Sztuka Przetrwania",
+        "Nawigacja",
+        "Dowodzenie"
+      ]
     },
-    "startingEquipment": ["[Niezwykły] Kostur (Kanalizujący +1)", "Sztylet", "Skórznia"],
-    "hitPoints": ["Bazowa wartość = 10 + Wytrzymałość", "Bazowa Bariera = Wytrzymałość + Ostrożność"],
+    "startingEquipment": [
+      "[Niezwykły] Kostur (Kanalizujący +1)",
+      "Sztylet",
+      "Skórznia"
+    ],
+    "hitPoints": [
+      "Bazowa wartość = 10 + Wytrzymałość",
+      "Bazowa Bariera = Wytrzymałość + Ostrożność"
+    ],
     "combatAbilities": {
       "starting": [
         {
           "name": "Opętanie zarodnikami (trepy)",
           "activationTime": "Akcja",
           "range": "krótki (obecny lub sąsiedni sektor)",
-          "requirements": ["Przeciwnik musi być trepem"],
-          "activationCost": ["N+1 many, gdzie N to ilość już opętanych przeciwników w tej walce."],
+          "requirements": [
+            "Przeciwnik musi być trepem"
+          ],
+          "activationCost": [
+            "N+1 many, gdzie N to ilość już opętanych przeciwników w tej walce."
+          ],
           "description": "Wybrany przeciwnik trep zostaje tymczasowym minionem na 1 rundę.",
           "enhancements": [
             "Wydłużenie czasu trwania o 1 rundę - 1 many",
@@ -641,7 +1166,9 @@
         },
         {
           "name": "Pacyfikująca chmura Muscariae",
-          "requirements": ["3 Mądrości"],
+          "requirements": [
+            "3 Mądrości"
+          ],
           "purchaseCost": "300 PD",
           "activationTime": "2 akcje",
           "range": "Bezpośredni (obecny sektor)",
@@ -658,11 +1185,16 @@
         },
         {
           "name": "Opętanie zarodnikami (elity)",
-          "requirements": ["3 Mądrości", "Przeciwnik musi być elitą"],
+          "requirements": [
+            "3 Mądrości",
+            "Przeciwnik musi być elitą"
+          ],
           "purchaseCost": "300 PD",
           "activationTime": "Akcja",
           "range": "krótki (obecny lub sąsiedni sektor)",
-          "activationCost": ["N+1 many, gdzie N to ilość już opętanych przeciwników w tej walce."],
+          "activationCost": [
+            "N+1 many, gdzie N to ilość już opętanych przeciwników w tej walce."
+          ],
           "description": "Wybrany elitarny przeciwnik zostaje tymczasowym minionem na 1 rundę.",
           "enhancements": [
             "Wydłużenie czasu trwania o 1 rundę - 1 many",
@@ -673,11 +1205,16 @@
         },
         {
           "name": "Opętanie zarodnikami (mistrzowie)",
-          "requirements": ["4 Mądrości", "Przeciwnik musi być mistrzem"],
+          "requirements": [
+            "4 Mądrości",
+            "Przeciwnik musi być mistrzem"
+          ],
           "purchaseCost": "400 PD",
           "activationTime": "Akcja",
           "range": "krótki (obecny lub sąsiedni sektor)",
-          "activationCost": ["N+1 many, gdzie N to ilość już opętanych przeciwników w tej walce."],
+          "activationCost": [
+            "N+1 many, gdzie N to ilość już opętanych przeciwników w tej walce."
+          ],
           "description": "Wybrany mistrzowski przeciwnik zostaje tymczasowym minionem na 1 rundę.",
           "enhancements": [
             "Wydłużenie czasu trwania o 1 rundę - 1 many",
@@ -688,12 +1225,16 @@
         },
         {
           "name": "Armia grzybów",
-          "requirements": ["8 Mądrości"],
+          "requirements": [
+            "8 Mądrości"
+          ],
           "purchaseCost": "800 PD",
           "activationTime": "3 akcje",
           "range": "Pole bitwy",
           "description": "Zużywa 10 staminy. Można użyć raz na walkę. W wybranych miejscach na polu bitwy, spod ziemi wychodzi 10 grzybowych minionów w randze trepa. Miniony pozostają na polu bitwy maksymalnie do końca walki.",
-          "enhancements": ["Dodanie dodatkowego miniona - 2 staminy"]
+          "enhancements": [
+            "Dodanie dodatkowego miniona - 2 staminy"
+          ]
         }
       ]
     },
@@ -722,12 +1263,31 @@
     "status": "detailed",
     "archetype": "Druid",
     "predispositions": {
-      "primary": ["Charyzma"],
-      "defensive": ["Spryt", "Siła Woli"],
-      "secondary": ["Dowodzenie", "Nawigacja", "Sztuka Przetrwania", "Wiedza", "Znajdowanie"]
+      "primary": [
+        "Charyzma"
+      ],
+      "defensive": [
+        "Spryt",
+        "Siła Woli"
+      ],
+      "secondary": [
+        "Dowodzenie",
+        "Nawigacja",
+        "Sztuka Przetrwania",
+        "Wiedza",
+        "Znajdowanie"
+      ]
     },
-    "startingEquipment": ["Różdżka", "Berło", "Wielka laga", "Ornat zaklinacza lub Kurtka pikowana"],
-    "hitPoints": ["Bazowa wartość = 10 + Wytrzymałość", "Bazowa Bariera = Spryt + Siła Woli"],
+    "startingEquipment": [
+      "Różdżka",
+      "Berło",
+      "Wielka laga",
+      "Ornat zaklinacza lub Kurtka pikowana"
+    ],
+    "hitPoints": [
+      "Bazowa wartość = 10 + Wytrzymałość",
+      "Bazowa Bariera = Spryt + Siła Woli"
+    ],
     "combatAbilities": {
       "starting": [
         {
@@ -781,17 +1341,39 @@
           "purchaseCost": "250 PD",
           "activationTime": "Akcja",
           "range": "Krótki",
-          "activationCost": ["Bazowa Stamina spada o 1 do końca walki"],
+          "activationCost": [
+            "Bazowa Stamina spada o 1 do końca walki"
+          ],
           "description": "Do końca walki, za każdym razem, gdy Władca Lasu otrzyma obrażenia w krótkim zasięgu, atakujący przeciwnik otrzymuje identyczne obrażenia. Wysokość tych obrażeń nie uwzględnia redukcji obrażeń i odporności Władcy Lasu.",
-          "enhancements": ["Odbite obrażenia są większe o 1 kość - 1 Staminy"]
+          "enhancements": [
+            "Odbite obrażenia są większe o 1 kość - 1 Staminy"
+          ]
+        },
+        {
+          "name": "Podróż Przez Knieje",
+          "purchaseCost": "500 PD",
+          "activationTime": "Akcja",
+          "range": "Długi",
+          "activationCost": [
+            "1 Staminy / Many za każdy przebyty sektor"
+          ],
+          "description": "Władca Lasu wykorzystuje mistyczne ścieżki życia obecne w każdym ekosystemie i natychmiastowo przemieszcza się w wybrane miejse w wybranym sektorze w zasięgu.",
+          "enhancements": [
+            "Dodatkowe małe leczenie (25%+1d4) - 1 Staminy / Many",
+            "Dodatkowe średnie leczenie (50%+1d6) - 2 Staminy / Many",
+            "Dodatkowe duże leczenie (75%+1d8) - 3 Staminy / Many",
+            "Dodatkowe pełne leczenie (100%) - 4 Staminy / Many"
+          ]
         },
         {
           "name": "Las Już Tu Jest",
-          "requirements": ["8 Mądrości"],
+          "requirements": [
+            "8 Mądrości"
+          ],
           "purchaseCost": "800 PD",
           "activationTime": "Akcja",
           "range": "Bespośredni",
-          "description": "Władca lasu przywołuje na pomoc 1 smoka, który walczy po jego stronie do końca walki.",
+          "description": "Władca lasu przywołuje na pomoc 1 zielonego smoka, który walczy po jego stronie do końca walki.",
           "enhancements": [
             "+50 Max HP dla smoka - 1 Staminy / Many",
             "+1 kość obrażeń dla smoka - 1 Staminy / Many",
@@ -810,19 +1392,39 @@
     "status": "detailed",
     "archetype": null,
     "predispositions": {
-      "primary": ["Zręczność"],
-      "defensive": ["Unik", "Ostrożność"],
-      "secondary": ["Jeździectwo", "Akrobatyka", "Nawigacja", "Spostrzegawczość", "Dowodzenie"]
+      "primary": [
+        "Zręczność"
+      ],
+      "defensive": [
+        "Unik",
+        "Ostrożność"
+      ],
+      "secondary": [
+        "Jeździectwo",
+        "Akrobatyka",
+        "Nawigacja",
+        "Spostrzegawczość",
+        "Dowodzenie"
+      ]
     },
-    "startingEquipment": ["Kopia lub Lanca", "Tarcza metalowa", "Pistolet", "Pancerz półpłytowy lub Kolczuga lub Kurtka pikowana"],
-    "hitPoints": ["Bazowa wartość = 15 + Wytrzymałość + Unik + Ostrożność"],
+    "startingEquipment": [
+      "Kopia lub Lanca",
+      "Tarcza metalowa",
+      "Pistolet",
+      "Pancerz półpłytowy lub Kolczuga lub Kurtka pikowana"
+    ],
+    "hitPoints": [
+      "Bazowa wartość = 15 + Wytrzymałość + Unik + Ostrożność"
+    ],
     "combatAbilities": {
       "starting": [
         {
           "name": "Szarża",
           "activationTime": "Akcja",
           "range": "Krótki (obecny lub sąsiedni sektor)",
-          "requirements": ["Na wierzchowcu"],
+          "requirements": [
+            "Na wierzchowcu"
+          ],
           "description": "Bohater zbliża się do zasięgu zwarcia do wybranego oponenta i wykonuje przeciwko niemu atak bronią białą.",
           "enhancements": [
             "Dodatkowa kostka obrażeń - 1 staminy",
@@ -837,7 +1439,9 @@
         {
           "name": "Manewr",
           "activationTime": "Akcja",
-          "requirements": ["Na wierzchowcu"],
+          "requirements": [
+            "Na wierzchowcu"
+          ],
           "description": "Bohater wykonuje test Jeździectwa i zyskuje punkty Staminy równe sukcesom."
         }
       ],
@@ -847,7 +1451,9 @@
           "purchaseCost": "250 PD",
           "activationTime": "Akcja",
           "range": "Taki sam jak broni",
-          "requirements": ["Na wierzchowcu"],
+          "requirements": [
+            "Na wierzchowcu"
+          ],
           "description": "Bohater wykonuje atak bronią dystansową.",
           "enhancements": [
             "Dodatkowa kostka obrażeń - 1 staminy",
@@ -872,7 +1478,10 @@
         },
         {
           "name": "Tratowanie",
-          "requirements": ["5 Mądrości", "Na wierzchowcu"],
+          "requirements": [
+            "5 Mądrości",
+            "Na wierzchowcu"
+          ],
           "purchaseCost": "500 PD",
           "activationTime": "3 akcje",
           "range": "Długi (do 3 sąsiednich sektorów)",
@@ -887,7 +1496,9 @@
         },
         {
           "name": "Szturm teleportu",
-          "requirements": ["8 Mądrości"],
+          "requirements": [
+            "8 Mądrości"
+          ],
           "purchaseCost": "800 PD",
           "activationTime": "3 akcje",
           "range": "Pole bitwy",

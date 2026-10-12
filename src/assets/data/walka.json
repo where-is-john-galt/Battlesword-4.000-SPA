@@ -367,5 +367,257 @@
       "uber bossem",
       "uber bossa"
     ]
+  },
+  {
+    "id": "akcje",
+    "name": "Akcje",
+    "definition": "Każdy Bohater Gracza dysponuje trzema akcjami, które odnawiają się na końcu jego tury. Akcje dzielą się na akcje główne (wykonywane w turze, mogą być wielokrotne w rundzie) i reakcje (poza turami, jedna reakcja raz na turę). Przeciwnicy mają własne akcje główne i nie mogą używać reakcji.",
+    "source": "walka/akcje.md",
+    "status": "detailed"
+  },
+  {
+    "id": "akcje_glowne",
+    "name": "Akcje główne",
+    "definition": "Atak, Ruch, Analiza, Ukrywanie, Postawa obronna, Stworzenie otwarcia, Użycie przedmiotu, Zdolność specjalna, Szukanie, Dowodzenie.",
+    "source": "walka/akcje.md",
+    "status": "detailed"
+  },
+  {
+    "id": "reakcje",
+    "name": "Reakcje",
+    "definition": "Wsparcie, Reakcja specjalna, Przekazanie przedmiotu, Przyjęcie ciosu.",
+    "source": "walka/akcje.md",
+    "status": "detailed"
+  },
+  {
+    "id": "dual_wielding",
+    "name": "Dual wielding",
+    "definition": "Zasady jednoczesnego ataku dwoma broniami jednoręcznymi: podział Staminy/Many przy różnych statystykach, sumowanie obrażeń bazowych, przypisanie wzmocnień i cech do konkretnej broni oraz rozszerzenie cechy na obie bronie za 1 Staminy.",
+    "source": "walka/dual_wielding.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zaskoczenie",
+    "name": "Zaskoczenie",
+    "definition": "Sytuacja, gdy jedna strona działa, zanim druga zorientuje się w zagrożeniu. Rozstrzygane testem Czujności (gdy drużyna jest zaskakiwana) lub Skradania (gdy drużyna zaskakuje); efekty zależą od sumy poziomów sukcesów.",
+    "source": "walka/inicjatywa.md",
+    "status": "detailed"
+  },
+  {
+    "id": "poczatkowe_morale",
+    "name": "Początkowe morale",
+    "definition": "Morale zależne od klasy oponentów: Trep 1, Elita 3, Mistrz 7.",
+    "source": "walka/morale.md",
+    "status": "detailed"
+  },
+  {
+    "id": "utrata_morale",
+    "name": "Utrata morale",
+    "definition": "Morale spada o podwojoną wartość pokonanego przeciwnika: Trep 2, Elita 6, Mistrz 14. Każdy przeciwnik z poziomami Paniki obniża morale o 1.",
+    "source": "walka/morale.md",
+    "status": "detailed"
+  },
+  {
+    "id": "odzyskiwanie_morale",
+    "name": "Odzyskiwanie morale",
+    "definition": "Morale rośnie, gdy do walki dołączają posiłki, Bohater staje u progu Bram Śmierci (+1), zda test Odporności na Śmierć (+1), zginie (+5), a minion lub sojusznik zostanie pokonany (+0,5).",
+    "source": "walka/morale.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zlamane_morale",
+    "name": "Złamane morale",
+    "definition": "Gdy morale zostaje złamane, przeciwnicy w sektorach z Bohaterem poddają się, a pozostali uciekają. Pościg rozstrzygany testem poruszania się z modyfikatorami zależnymi od odległości, terenu i tieru przeciwnika.",
+    "source": "walka/morale.md",
+    "status": "detailed"
+  },
+  {
+    "id": "morale_bossowie",
+    "name": "Bossowie (morale)",
+    "definition": "Jeśli w walce bierze udział boss, system morale zostaje zawieszony i zostaje automatycznie złamany dopiero po pokonaniu bossa.",
+    "source": "walka/morale.md",
+    "status": "detailed"
+  },
+  {
+    "id": "wzmacnianie_minionow_stamina",
+    "name": "Wzmacnianie minionów Staminą",
+    "definition": "Bohater dzierżący oręż z cechą Dowodzący może wydawać Staminę na wzmacnianie minionów: dodatkowa akcja (1), przejęcie ciosu (1), małe leczenie (2), cecha Przeciwpancerny (1).",
+    "source": "walka/miniony.md",
+    "status": "detailed"
+  },
+  {
+    "id": "wzmacnianie_minionow_dowodzenie",
+    "name": "Wzmacnianie minionów Dowodzeniem",
+    "definition": "Test Dowodzenia pozwala wydać sukcesy na wzmocnienia minionów: małe leczenie (1), 2k10 Bariery (2), 5 Max HP (1), dodatkowa kość obrażeń (1), usunięcie poziomów jednego statusu (1), usunięcie wszystkich statusów (2).",
+    "source": "walka/miniony.md",
+    "status": "detailed"
+  },
+  {
+    "id": "pancerz_przeciwnikow",
+    "name": "Pancerz przeciwników",
+    "definition": "Lekki pancerz absorbuje 1 punkt obrażeń za każdą kość ataku, średni 2 punkty za każdą kość, ciężki absorbuje połowę punktów obrażeń.",
+    "source": "walka/obrażenia_i_śmierć.md",
+    "status": "detailed"
+  },
+  {
+    "id": "pancerz_bohaterow",
+    "name": "Pancerz Bohaterów",
+    "definition": "Po otrzymaniu ciosu od sumy obrażeń odejmuje się wartość Pancerza BG; jeśli pancerz zredukował wszystkie obrażenia, postać nadal traci 1 Punkt Życia.",
+    "source": "walka/obrażenia_i_śmierć.md",
+    "status": "detailed"
+  },
+  {
+    "id": "jezdziectwo_w_walce",
+    "name": "Jeździectwo w walce",
+    "definition": "Testy Jeździectwa wykonuje się w miejsce Atletyki, Akrobatyki, Pływania i Wspinaczki oraz opcjonalnie Uniku, gdy postać dosiada wierzchowca. Wierzchowiec i jeździec są jednym bytem; wierzchowiec nie ma własnej puli HP i nie zwiększa puli akcji.",
+    "source": "walka/pojazdy_i_wierzchowce.md",
+    "status": "detailed"
+  },
+  {
+    "id": "powozenie",
+    "name": "Powożenie",
+    "definition": "Testy Powożenia wykonuje się w miejsce Uniku, Atletyki, Akrobatyki, Pływania i Wspinaczki przy prowadzeniu pojazdu. Każdy zwykły ruch pojazdem wymaga testu Powożenia; sukces podwaja ruch.",
+    "source": "walka/pojazdy_i_wierzchowce.md",
+    "status": "detailed"
+  },
+  {
+    "id": "wierzchowce",
+    "name": "Wierzchowce",
+    "definition": "Tabela wierzchowców z wymaganą Majętnością i Jeździectwem: Koń pociągowy (15/1), Koń wierzchowy (45/5), Rumak (60/10), Pegaz (80/12), Gryf (100/14).",
+    "source": "walka/pojazdy_i_wierzchowce.md",
+    "status": "detailed"
+  },
+  {
+    "id": "pojazdy",
+    "name": "Pojazdy",
+    "definition": "Tabela pojazdów z wymaganą Majętnością, modyfikatorem Powożenia i liczbą pasażerów: Otwarty wóz (15/-1/4), Kryty wóz (30/0/5), Karoca (45/1/6), Wóz bojowy (60/3/5), Królewski wóz bojowy (75/5/6).",
+    "source": "walka/pojazdy_i_wierzchowce.md",
+    "status": "detailed"
+  },
+  {
+    "id": "ruch",
+    "name": "Ruch",
+    "definition": "Ruch rozliczany na kratki (5x5 stóp) lub sektory (30x30 stóp). Domyślny ruch postaci to 30 stóp, czyli 1 sektor; każda akcja przeznaczona na ruch pozwala wykorzystać ten ruch.",
+    "source": "walka/ruch.md",
+    "status": "detailed"
+  },
+  {
+    "id": "typy_ruchu",
+    "name": "Typy ruchu",
+    "definition": "Naziemny, Lot, Pływanie, Wspinaczka, Jeździectwo, Jazda pojazdem — każdy z własnymi zasadami i wymaganymi testami.",
+    "source": "walka/ruch.md",
+    "status": "detailed"
+  },
+  {
+    "id": "ciezki_teren",
+    "name": "Ciężki teren",
+    "definition": "Poruszanie się po ciężkim terenie jest utrudnione: w systemie kratek zajmuje podwójny ruch, w systemie sektorów wyjście z sektora wymaga dodatkowych 30 stóp ruchu.",
+    "source": "walka/ruch.md",
+    "status": "detailed"
+  },
+  {
+    "id": "rzuty_na_atak",
+    "name": "Rzuty na atak",
+    "definition": "Bohaterowie Graczy nie wykonują rzutów na trafienie — od razu rzucają na obrażenia (kości broni/umiejętności + modyfikatory + statystyka). BN również nie rzucają na trafienie; cele wykonują rzut obronny wskazany w opisie ataku.",
+    "source": "walka/rzuty_na_atak.md",
+    "status": "detailed"
+  },
+  {
+    "id": "ulatwienia_i_utrudnienia_w_ataku",
+    "name": "Ułatwienia i utrudnienia w ataku",
+    "definition": "Przy co najmniej dwóch ułatwieniach rzuca się podwójną pulą kości i odrzuca połowę najniższych; przy utrudnieniach odrzuca się najwyższe. Jednoczesne ułatwienie i utrudnienie dają rzut zwyczajny.",
+    "source": "walka/rzuty_na_atak.md",
+    "status": "detailed"
+  },
+  {
+    "id": "trafienia_krytyczne",
+    "name": "Trafienia krytyczne",
+    "definition": "Gdy na co najmniej jednej kości obrażeń wypadnie najwyższy możliwy wynik, cios jest krytyczny: rzuca się kolejnymi kośćmi tego samego typu w liczbie kości z najwyższym wynikiem i dodaje wynik; przy ponownym najwyższym wyniku rzuca się ponownie.",
+    "source": "walka/rzuty_na_atak.md",
+    "status": "detailed"
+  },
+  {
+    "id": "skradanie_w_walce",
+    "name": "Skradanie w walce",
+    "definition": "Postać może rozpocząć walkę Ukryta przy próbie zaskoczenia, udanym teście Skradania i co najmniej jednym rozwinięciu Skradania. Ukryta postać nie może być głównym celem ataków i ma ułatwienie do ataków; test Ukrycia tylko raz na walkę.",
+    "source": "walka/skradanie.md",
+    "status": "detailed"
+  },
+  {
+    "id": "poziom_ukrycia",
+    "name": "Poziom ukrycia",
+    "definition": "Liczba sukcesów w teście Skradania staje się poziomem ukrycia i obowiązuje do końca walki. Poziom spada o 1 za każdą akcję Szukania przeciwnika oraz na koniec tury postaci.",
+    "source": "walka/skradanie.md",
+    "status": "detailed"
+  },
+  {
+    "id": "skradanie_bn",
+    "name": "Skradanie Bohaterów Niezależnych",
+    "definition": "Gdy BN ukrywa się w walce, przeciwnicy wykonują grupowy test Ostrożności (+1 za każdego miniona i sojusznika). W przypadku porażki BN staje się Ukryty. W starciu BN vs BN rzut k20: 1-10 oznacza Ukrycie.",
+    "source": "walka/skradanie.md",
+    "status": "detailed"
+  },
+  {
+    "id": "skradanie_eksploracja",
+    "name": "Skradanie w eksploracji",
+    "definition": "Poza walką wykonuje się grupowy test Skradania; suma sukcesów i porażek równa lub większa od zera oznacza skuteczne przekradnięcie się grupy.",
+    "source": "walka/skradanie.md",
+    "status": "detailed"
+  },
+  {
+    "id": "stamina_mana",
+    "name": "Stamina / Mana (walka)",
+    "definition": "Bazowa wartość to połowa statystyki powiązanej z bronią zaokrąglona w dół. Przy zmianie broni lub dwóch broniach z różnymi statystykami wartość równa jest najniższej z nich i aktualnej rezerwy. Stamina wzmacnia ataki fizyczne, mana magiczne.",
+    "source": "walka/stamina_mana_i_podsatwowe_ataki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "ataki_bronia_biala",
+    "name": "Ataki bronią białą",
+    "definition": "Wzmocnienia ataków w zwarciu: dodatkowa kostka obrażeń (1 Staminy), dodatkowe trafienie przeciwnika w tym samym sektorze (1 Staminy), nałożenie 1 poziomu Krwawienia (1 Staminy).",
+    "source": "walka/stamina_mana_i_podsatwowe_ataki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "ataki_bronia_dystansowa",
+    "name": "Ataki bronią dystansową",
+    "definition": "Wzmocnienia ataków z dystansu: dodatkowa kostka obrażeń (1 Staminy), nałożenie 1 poziomu Krwawienia (1 Staminy), przycelowanie we wrażliwy punkt (3 Staminy).",
+    "source": "walka/stamina_mana_i_podsatwowe_ataki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "popychanie",
+    "name": "Popychanie",
+    "definition": "W ramach akcji: wydać 3 Staminy, wykonać test Atletyki z modyfikatorami zależnymi od tieru celu (+2 Trep, 0 Elita, -2 Mistrz, -6 Boss); zepchnięcie do sąsiedniego sektora nakłada dodatkowy modyfikator (-3).",
+    "source": "walka/stamina_mana_i_podsatwowe_ataki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "walka_bez_broni",
+    "name": "Walka bez broni",
+    "definition": "Atak pięścią, kopniakiem itp. zadaje bazowo 1k4 obrażeń fizycznych, bazuje na Sile, ma zasięg zwarcia i nie posiada cech specjalnych.",
+    "source": "walka/stamina_mana_i_podsatwowe_ataki.md",
+    "status": "detailed"
+  },
+  {
+    "id": "tereny_zwykle",
+    "name": "Tereny zwykłe",
+    "definition": "Woda i Bagno — tereny z zasadami przemieszczania się i efektami dla Bohaterów Graczy i NPC.",
+    "source": "walka/typy_terenów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "tereny_specjalne",
+    "name": "Tereny specjalne",
+    "definition": "Spaczony, Zamrożony, Podpalony, Zagrzybiały, Uświęcony, Naelektryzowany, Zadymiony, Strawiony, Halucynogenny — tereny z efektami przy wejściu lub wykonywaniu akcji.",
+    "source": "walka/typy_terenów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "specjalizacje_elit",
+    "name": "Specjalizacje elit",
+    "definition": "Elitarni przeciwnicy specjalizują się w rolach na polu bitwy, m.in.: zadawanie obrażeń, wytrzymywanie ciosów, leczenie sojuszników, dowodzenie, wspieranie sojuszników.",
+    "source": "bestiariusz/rodzaje_oponentów.md",
+    "status": "detailed"
   }
 ]
