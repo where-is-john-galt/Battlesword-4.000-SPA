@@ -20,12 +20,12 @@
       "sourceBlob": "01c435a7d313fcf2698b124c6e02fda1ed2a5f0b",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit",
-      "status": "blocked",
-      "attempts": 3,
-      "updatedAt": "2026-10-14T20:14:53.935Z",
+      "status": "queued",
+      "attempts": 0,
+      "updatedAt": "2026-10-14T20:22:21.493528+00:00",
       "reason": "Pierwszy pełny audyt źródła.",
       "startedAt": "2026-10-14T20:12:02.657Z",
-      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
+      "lastError": "Ponowienie po poprawce ścieżek walidatora wyniku."
     },
     "bestiariusz/nieumarli/zombie.md": {
       "id": "0e5c9325e1a0e201",
