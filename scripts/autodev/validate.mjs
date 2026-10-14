@@ -19,6 +19,9 @@ const changed = allChanged.filter((path) => path !== 'Battlesword-4.000');
 const sourceHead = execFileSync('git', ['-C', 'Battlesword-4.000', 'rev-parse', 'HEAD'], {
   encoding: 'utf8',
 }).trim();
+const repositoryHead = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
+if (process.env.AUTODEV_EXPECTED_HEAD && repositoryHead !== process.env.AUTODEV_EXPECTED_HEAD)
+  throw new Error('The agent changed the checked-out application commit');
 if (sourceHead !== task.sourceSha)
   throw new Error('The agent changed the Battlesword source checkout');
 if (

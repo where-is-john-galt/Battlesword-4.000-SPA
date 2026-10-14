@@ -102,6 +102,7 @@ jobs:
             --add-host=host.docker.internal:host-gateway \
             --tmpfs /tmp:rw,nosuid,nodev,exec,uid="$(id -u)",gid="$(id -g)" \
             --volume "$GITHUB_WORKSPACE:/workspace" \
+            --volume "$GITHUB_WORKSPACE/.git:/workspace/.git:ro" \
             --workdir /workspace \
             --env DEEPSEEK_BASE_URL=http://host.docker.internal:4317/v1 \
             --env DEEPSEEK_API_KEY="$AUTODEV_PROXY_TOKEN" \
@@ -110,6 +111,7 @@ jobs:
             --env AUTODEV_RESULT_FILE=/workspace/.autodev-runtime/result.json \
             --env AUTODEV_RESULT_SUMMARY=/workspace/.autodev-runtime/summary.json \
             --env AUTODEV_LOG_FILE=/workspace/.autodev-runtime/agent.log \
+            --env GIT_OPTIONAL_LOCKS=0 \
             battlesword-autodev:1.19.0 \
             bash -lc 'opencode debug config --pure >/dev/null && node scripts/autodev/run-opencode.mjs'
 
@@ -124,6 +126,7 @@ jobs:
           AUTODEV_TASK_FILE: ${{ steps.prepare.outputs.task_file }}
           AUTODEV_RESULT_FILE: ${{ runner.temp }}/autodev-output/result.json
           AUTODEV_REVIEW_FILE: ${{ github.workspace }}/.autodev-runtime/review.json
+          AUTODEV_EXPECTED_HEAD: ${{ github.sha }}
           AUTODEV_VALIDATED_REPORT: ${{ runner.temp }}/autodev-output/validated-report.json
         run: |
           for protected in .github/workflows/autodev.yml .github/autodev .opencode scripts/autodev AGENTS.md; do
