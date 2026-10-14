@@ -1,6 +1,0 @@
-{
-  "version": 1,
-  "upstream": "https://github.com/Iwanuss/Battlesword-4.000",
-  "sourceSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e",
-  "model": "deepseek-flash"
-}
