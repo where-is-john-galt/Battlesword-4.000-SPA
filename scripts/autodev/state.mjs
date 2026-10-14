@@ -4,6 +4,7 @@ import { createHash } from 'node:crypto';
 import { join } from 'node:path';
 import { actualAttemptCost, addDailySpend, recoverLegacySpent } from './budget.mjs';
 import { createBatchTask, selectTaskBatch, transitionTaskBatch } from './queue.mjs';
+import { sourceChangesFromGitOutput, sourceFilesFromGitOutput } from './source.mjs';
 
 const repo = process.env.GITHUB_REPOSITORY;
 const token = process.env.GH_TOKEN;
@@ -83,25 +84,25 @@ function dayKey() {
 }
 
 function sourceFilesAt(sha) {
-  return git(['-C', sourceDir, 'ls-tree', '-r', '--name-only', sha])
-    .split('\n')
-    .filter(Boolean)
-    .filter((file) => /\.md$/i.test(file) || ['manifest.me', 'TODO'].includes(file));
+  return sourceFilesFromGitOutput(
+    git(['-c', 'core.quotepath=false', '-C', sourceDir, 'ls-tree', '-r', '--name-only', sha]),
+  );
 }
 
 function changedSourceFiles(from, to) {
   if (!from) return sourceFilesAt(to).map((path) => ({ path, change: 'initial audit' }));
-  const output = git(['-C', sourceDir, 'diff', '--name-status', '-M', from, to]);
-  return output
-    .split('\n')
-    .filter(Boolean)
-    .flatMap((line) => {
-      const [status, first, second] = line.split('\t');
-      const paths = status.startsWith('R') ? [first, second] : [first];
-      return paths
-        .filter((path) => /\.md$/i.test(path) || ['manifest.me', 'TODO'].includes(path))
-        .map((path) => ({ path, change: status }));
-    });
+  const result = git([
+    '-c',
+    'core.quotepath=false',
+    '-C',
+    sourceDir,
+    'diff',
+    '--name-status',
+    '-M',
+    from,
+    to,
+  ]);
+  return sourceChangesFromGitOutput(result);
 }
 
 function blobAt(sha, path) {
@@ -179,8 +180,17 @@ async function prepare() {
   const sourceSha = process.env.AUTODEV_SOURCE_SHA;
   if (!sourceSha) throw new Error('AUTODEV_SOURCE_SHA is required');
   state.auditBaseSha ??= historicalSourceBaseline(sourceSha);
-  const sourceChanges = changedSourceFiles(state.lastDiscoveredSha, sourceSha);
-  for (const { path, change } of sourceChanges) {
+  const sourceChanges = new Map();
+  for (const item of changedSourceFiles(state.lastDiscoveredSha, sourceSha))
+    sourceChanges.set(item.path, item.change);
+  const auditBaselineSha = state.lastCompletedSha ?? state.auditBaseSha;
+  for (const item of changedSourceFiles(auditBaselineSha, sourceSha))
+    sourceChanges.set(item.path, item.change);
+  for (const path of sourceFilesAt(sourceSha)) {
+    if (!state.tasks[path] && !sourceChanges.has(path))
+      sourceChanges.set(path, 'initial audit (queue reconciliation)');
+  }
+  for (const [path, change] of sourceChanges) {
     const digest = blobAt(sourceSha, path);
     const existing = state.tasks[path];
     if (
@@ -198,9 +208,9 @@ async function prepare() {
       status: 'queued',
       attempts: 0,
       updatedAt: new Date().toISOString(),
-      reason: state.lastDiscoveredSha
-        ? `Zmiana ${change} pliku źródłowego od ${state.lastDiscoveredSha}.`
-        : 'Pierwszy pełny audyt źródła.',
+      reason: change.startsWith('initial audit')
+        ? 'Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.'
+        : `Zmiana ${change} pliku źródłowego od ${auditBaselineSha}.`,
     };
   }
   for (const task of Object.values(state.tasks)) {
@@ -208,7 +218,7 @@ async function prepare() {
   }
   state.lastDiscoveredSha = sourceSha;
 
-  const baselineSha = state.lastCompletedSha ?? state.auditBaseSha;
+  const baselineSha = auditBaselineSha;
   const priorityPaths = changedSourceFiles(baselineSha, sourceSha).map((item) => item.path);
   const catchUp = state.lastCompletedSha !== sourceSha;
   const pendingPriorityCount = Object.values(state.tasks).filter(
