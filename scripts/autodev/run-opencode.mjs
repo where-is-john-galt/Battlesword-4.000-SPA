@@ -1,6 +1,7 @@
 import { spawn } from 'node:child_process';
 import { createWriteStream } from 'node:fs';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { parseReview } from './review.mjs';
 
 const task = JSON.parse(await readFile(process.env.AUTODEV_TASK_FILE, 'utf8'));
 const runtimeDirectory = '/workspace/.autodev-runtime';
@@ -165,17 +166,6 @@ async function acceptWrittenResult(code, label) {
     // A CLI error without a complete task result remains a hard failure.
   }
   return code;
-}
-
-function parseReview(response) {
-  const jsonStart = response.indexOf('{');
-  const jsonEnd = response.lastIndexOf('}');
-  if (jsonStart < 0 || jsonEnd <= jsonStart)
-    throw new Error('Reviewer final response does not contain a JSON object');
-  const parsed = JSON.parse(response.slice(jsonStart, jsonEnd + 1));
-  if (!['pass', 'fail'].includes(parsed.status) || !Array.isArray(parsed.findings))
-    throw new Error('Reviewer response has an invalid status/findings schema');
-  return parsed;
 }
 
 const implementPrompt = [
