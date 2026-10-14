@@ -7,14 +7,13 @@ informacji o systemie.
 Źródłem prawdy o zasadach jest submodule `Battlesword-4.000/` (pliki Markdown). Aplikacja **nie**
 zastępuje tych plików — jest warstwą prezentacyjną na ich bazie.
 
-> **Aktualny status:** dane zostały już wyekstrahowane z submodułu do ustrukturyzowanych plików
-> **JSON** w `src/assets/data/` (rasy, profesje, klasy, perki, ekwipunek, bestiariusz, glosariusz
-> oraz zagregowany indeks `index.json`). Aplikacja **nie czyta już Markdowna** — konsumuje te pliki
-> JSON jako statyczne assety. Kompendium to jedyna planowana sekcja aplikacji.
+> **Aktualny status:** aplikacja prezentuje ustrukturyzowane pliki JSON w `src/assets/data/` jako
+> statyczne assety. Workflow autonomicznego rozwoju analizuje źródłowe Markdown i może rozszerzać
+> model danych oraz aplikację o nowe elementy systemu.
 
-Zakres celowo **ograniczony do kompendium**: bez kreatora postaci, bez cyfrowej karty postaci, bez
-kalkulatorów i trackerów walki, bez przeglądarki zasad w formie renderowanego Markdowna. To leksykon
-i podręcznik referencyjny oparty na gotowych danych JSON.
+Zakres może rosnąć wraz z systemem: poza leksykonem i podręcznikiem referencyjnym aplikacja może
+otrzymać narzędzia dla graczy, kalkulatory, kreatory i nowe sposoby przeglądania zasad, jeśli agent
+wykaże ich oparcie w źródle i uzasadni je w zadaniu. Aplikacja pozostaje statyczną SPA.
 
 ---
 
@@ -36,13 +35,13 @@ priorytetem czytelności — to narzędzie referencyjne, nie wizytówka.
 
 Podział na sekcje odpowiadające kategoriom wygenerowanych danych:
 
-| Sekcja | Zawartość (plik JSON w `src/assets/data/`) |
-|--------|--------------------------------------------|
-| **Postać** | `rasy.json`, `profesje.json`, `klasy.json`, `perki.json` |
-| **Ekwipunek** | `bron.json`, `pancerze.json`, `paski.json`, `przedmioty_podreczne.json`, `przedmioty_magiczne.json`, `reszta_ekwipunku.json` |
-| **Bestiariusz** | `bestiariusz.json` — statblocki (Trep/Elita/Mistrz/Boss) |
-| **Glosariusz** | `glosariusz.json` — pojęcia typu „Bramy Śmierci", „ułatwienie", „Bariera", „Majętność" |
-| **Ulubione** | — (wybór użytkownika, zapis w localStorage; nie pochodzi z danych) |
+| Sekcja          | Zawartość (plik JSON w `src/assets/data/`)                                                                                   |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| **Postać**      | `rasy.json`, `profesje.json`, `klasy.json`, `perki.json`                                                                     |
+| **Ekwipunek**   | `bron.json`, `pancerze.json`, `paski.json`, `przedmioty_podreczne.json`, `przedmioty_magiczne.json`, `reszta_ekwipunku.json` |
+| **Bestiariusz** | `bestiariusz.json` — statblocki (Trep/Elita/Mistrz/Boss)                                                                     |
+| **Glosariusz**  | `glosariusz.json` — pojęcia typu „Bramy Śmierci", „ułatwienie", „Bariera", „Majętność"                                       |
+| **Ulubione**    | — (wybór użytkownika, zapis w localStorage; nie pochodzi z danych)                                                           |
 
 Wszystkie pozycje są też dostępne przez zagregowany indeks `index.json` (id, typ, nazwa, źródło,
 status `detailed`/`stub`), który napędza wyszukiwarkę i listy.
@@ -88,12 +87,14 @@ Każda karta obiektu posiada **filtry** (np. klasy wg archetypu, broń wg bazowe
 
 ## 4. Podejście do danych
 
-Kluczowa decyzja architektoniczna została już podjęta i zrealizowana: **dane są wygenerowane i
-commitowane jako JSON**, a aplikacja nie dotyka Markdowna w runtime.
+Kluczowa decyzja architektoniczna pozostaje taka: **dane są commitowane jako JSON**, a aplikacja nie
+czyta Markdowna w runtime. Workflow AI analizuje źródło Markdown podczas zmian i rozwija JSON oraz
+kod aplikacji w repozytorium.
 
 - Submoduł `Battlesword-4.000/` jest źródłem prawdy i **nie jest edytowany** z tego repo.
-- Proces *offline* (już wykonany): konwersja Markdown submodułu → ustrukturyzowane pliki JSON w
-  `src/assets/data/`, commitowane do repo.
+- Proces rozwoju: analiza źródłowych zmian → zaplanowanie funkcji → aktualizacja JSON i kodu SPA →
+  testy i deployment. Agent może dodać nowy sposób prezentacji albo narzędzie dla gracza, kiedy
+  wynika to z zasad.
 - Pliki tabelaryczne (broń, pancerze, paski, przedmioty podręczne) mapowane na obiekty; pliki
   opisowe (rasy, profesje, klasy, perki, bestiariusz, glosariusz) mapowane na pola struktury
   (nazwa, sekcje, listy, wymagania, koszty).
@@ -102,8 +103,9 @@ commitowane jako JSON**, a aplikacja nie dotyka Markdowna w runtime.
   `CharacterClass`, `Perk`, `Weapon`, `Armor`, `Belt`, `HandItem`, `MagicItem`, `MiscItem`,
   `Monster`, `GlossaryEntry`) oraz `IndexEntry`.
 
-**Odświeżanie:** przy aktualizacji submodułu dane generuje się ponownie i commituje jako diff —
-SPA pozostaje statyczne i niezależne od procesu generacji w runtime.
+**Odświeżanie:** GitHub Actions wykrywa zmiany submodułu, kolejkuje zadania i po niezależnych
+kontrolach publikuje kompletny rozwój SPA. Aplikacja pozostaje statyczna i niezależna od AI podczas
+działania w przeglądarce.
 
 ---
 

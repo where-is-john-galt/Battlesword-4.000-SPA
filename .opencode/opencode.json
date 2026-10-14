@@ -1,0 +1,75 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "deepseek-proxy": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "DeepSeek through the budget gateway",
+      "options": {
+        "baseURL": "{env:DEEPSEEK_BASE_URL}",
+        "apiKey": "{env:DEEPSEEK_API_KEY}"
+      },
+      "models": {
+        "deepseek-flash": {
+          "name": "DeepSeek V4.1 Flash",
+          "limit": {
+            "context": 65536,
+            "output": 4096
+          },
+          "options": {
+            "temperature": 0.1
+          }
+        }
+      }
+    }
+  },
+  "agent": {
+    "battlesword-dev": {
+      "description": "Autonomously implements one source-driven Battlesword SPA task.",
+      "mode": "primary",
+      "model": "deepseek-proxy/deepseek-flash",
+      "prompt": "{file:./agents/battlesword-dev.md}",
+      "steps": 100,
+      "permission": {
+        "edit": "allow",
+        "bash": "allow",
+        "read": "allow",
+        "glob": "allow",
+        "grep": "allow",
+        "webfetch": "allow",
+        "websearch": "allow",
+        "task": "deny",
+        "question": "deny",
+        "skill": "deny",
+        "doom_loop": "allow",
+        "external_directory": {
+          "/autodev-output/**": "allow",
+          "*": "deny"
+        }
+      }
+    },
+    "battlesword-reviewer": {
+      "description": "Independently checks a compendium change against the published source.",
+      "mode": "primary",
+      "model": "deepseek-proxy/deepseek-flash",
+      "prompt": "{file:./agents/battlesword-reviewer.md}",
+      "steps": 40,
+      "permission": {
+        "edit": "deny",
+        "bash": "deny",
+        "read": "allow",
+        "glob": "allow",
+        "grep": "allow",
+        "webfetch": "allow",
+        "websearch": "allow",
+        "task": "deny",
+        "question": "deny",
+        "skill": "deny",
+        "doom_loop": "allow",
+        "external_directory": {
+          "/autodev-output/**": "allow",
+          "*": "deny"
+        }
+      }
+    }
+  }
+}
