@@ -1,6 +1,11 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { actualAttemptCost, addDailySpend, recoverLegacySpent } from './budget.mjs';
+import {
+  actualAttemptCost,
+  addDailySpend,
+  recoverLegacySpent,
+  reserveAttemptBudget,
+} from './budget.mjs';
 
 test('records actual spend without subtracting the reservation a second time', () => {
   const actual = actualAttemptCost({ spent: 0.346533, reserved: 0 }, 2);
@@ -15,4 +20,9 @@ test('charges outstanding provider reservations conservatively', () => {
 test('recovers totals written by the previous double-subtraction bug', () => {
   assert.equal(recoverLegacySpent(-1.653467, 2), 0.346533);
   assert.equal(recoverLegacySpent(1, 2), 1);
+});
+
+test('uses remaining daily budget for a smaller final attempt', () => {
+  assert.equal(reserveAttemptBudget(3.58, 5, 3), 1.42);
+  assert.equal(reserveAttemptBudget(4.8, 5, 3), 0);
 });

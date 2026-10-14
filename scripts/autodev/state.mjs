@@ -2,7 +2,12 @@ import { execFileSync } from 'node:child_process';
 import { mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { join } from 'node:path';
-import { actualAttemptCost, addDailySpend, recoverLegacySpent } from './budget.mjs';
+import {
+  actualAttemptCost,
+  addDailySpend,
+  recoverLegacySpent,
+  reserveAttemptBudget,
+} from './budget.mjs';
 import { createBatchTask, selectTaskBatch, transitionTaskBatch } from './queue.mjs';
 import { sourceChangesFromGitOutput, sourceFilesFromGitOutput } from './source.mjs';
 
@@ -161,7 +166,10 @@ async function prepare() {
       }
     }
     if (state.reservation.date === today)
-      state.daily.spent = Math.min(dailyBudget, state.daily.spent + attemptBudget);
+      state.daily.spent = Math.min(
+        dailyBudget,
+        state.daily.spent + (state.reservation.amount ?? attemptBudget),
+      );
     state.reservation = null;
   }
 
@@ -226,6 +234,7 @@ async function prepare() {
   ).length;
   const batchSize = pendingPriorityCount ? Math.min(2, pendingPriorityCount) : catchUp ? 2 : 1;
   const selected = selectTaskBatch(state.tasks, priorityPaths, batchSize);
+  const availableBudget = reserveAttemptBudget(state.daily.spent, dailyBudget, attemptBudget);
   if (selected.length === 0) {
     const pending = Object.values(state.tasks).some((item) => item.status === 'queued');
     const allComplete =
@@ -250,11 +259,11 @@ async function prepare() {
     await saveState(state, 'autodev: record source scan');
     output({
       has_work: 'false',
-      budget_exhausted: String(pending && state.daily.spent + attemptBudget > dailyBudget),
+      budget_exhausted: String(pending && availableBudget === 0),
     });
     return;
   }
-  if (state.daily.spent + attemptBudget > dailyBudget) {
+  if (availableBudget === 0) {
     await saveState(state, 'autodev: defer for daily budget');
     output({ has_work: 'false', budget_exhausted: 'true' });
     return;
@@ -269,7 +278,7 @@ async function prepare() {
   state.reservation = {
     taskId: batch.id,
     taskIds: selected.map((task) => task.id),
-    amount: attemptBudget,
+    amount: availableBudget,
     date: today,
   };
   await saveState(state, `autodev: start batch ${batch.id}`);
@@ -284,7 +293,7 @@ async function prepare() {
     catch_up: String(catchUp),
     task_file: taskFile,
     source_sha: sourceSha,
-    available_budget: String(dailyBudget - state.daily.spent),
+    available_budget: String(availableBudget),
   });
 }
 
@@ -300,8 +309,9 @@ async function finish() {
   const usage = JSON.parse(
     await readFile(process.env.AUTODEV_USAGE_FILE, 'utf8').catch(() => '{"spent":0}'),
   );
-  const actual = actualAttemptCost(usage, attemptBudget);
-  if (state.reservation?.taskId === taskIdValue) {
+  const reservation = state.reservation?.taskId === taskIdValue ? state.reservation : null;
+  const actual = actualAttemptCost(usage, reservation?.amount ?? attemptBudget);
+  if (reservation) {
     state.reservation = null;
     state.daily.spent = addDailySpend(state.daily.spent, actual, dailyBudget);
   }
