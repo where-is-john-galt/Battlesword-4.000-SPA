@@ -290,11 +290,12 @@
       "sourceBlob": "bb21ef918b1ee4f68c31567ebba987ea06bf8f62",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-10-14T19:55:13.957Z",
+      "updatedAt": "2026-10-14T20:55:37.293Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-10-14T20:42:07.310Z"
+      "startedAt": "2026-10-14T20:42:07.310Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "tworzenie_postaci/klasy/alchemik.md": {
       "id": "302c5ed3b048b1dd",
@@ -654,25 +655,18 @@
       "sourceBlob": "82cf226b26a83c5860df6af421e8b5a6470e7e1b",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-10-14T19:55:14.040Z",
+      "updatedAt": "2026-10-14T20:55:37.293Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-10-14T20:42:07.310Z"
+      "startedAt": "2026-10-14T20:42:07.310Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     }
   },
   "daily": {
     "date": "2026-10-14",
-    "spent": 1.6065168
+    "spent": 3.5809302
   },
-  "reservation": {
-    "taskId": "1ab469414b26f165",
-    "taskIds": [
-      "8acae4ee0e6ac98d",
-      "eb874603c4712c50"
-    ],
-    "amount": 2,
-    "date": "2026-10-14"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
