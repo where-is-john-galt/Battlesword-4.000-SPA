@@ -2,6 +2,7 @@ import { execFileSync } from 'node:child_process';
 import { readFile, writeFile } from 'node:fs/promises';
 
 const task = JSON.parse(await readFile(process.env.AUTODEV_TASK_FILE, 'utf8'));
+const taskPaths = task.paths ?? [task.path];
 const result = JSON.parse(await readFile(process.env.AUTODEV_RESULT_FILE, 'utf8'));
 const review = JSON.parse(await readFile(process.env.AUTODEV_REVIEW_FILE, 'utf8'));
 const tracked = execFileSync('git', ['diff', '--name-only', 'HEAD'], { encoding: 'utf8' })
@@ -61,8 +62,11 @@ if (review.status !== 'pass' || !Array.isArray(review.findings) || review.findin
 }
 if (!['complete', 'no_change'].includes(result.status))
   throw new Error('Invalid task result status');
-if (!Array.isArray(result.sourceFiles) || !result.sourceFiles.includes(task.path))
-  throw new Error('Task result must cite the changed source file');
+if (
+  !Array.isArray(result.sourceFiles) ||
+  !taskPaths.every((path) => result.sourceFiles.includes(path))
+)
+  throw new Error('Task result must cite every source file in the batch');
 if (result.status === 'no_change' && (!result.noChangeReason || changed.length))
   throw new Error('A no_change result needs a reason and must not contain app edits');
 if (result.status === 'complete') {
@@ -101,7 +105,7 @@ await writeFile(
   [
     '# Autonomiczny rozwój kompendium',
     '',
-    `- Zadanie: ${task.path}`,
+    `- Zadania źródłowe: ${taskPaths.join(', ')}`,
     `- Źródłowy SHA: \`${task.sourceSha}\``,
     `- Wynik: ${report.status}`,
     `- Opis: ${report.summary}`,

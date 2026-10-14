@@ -44,7 +44,7 @@ jobs:
           git -C Battlesword-4.000 checkout --detach "$source_sha"
           echo "source_sha=$source_sha" >> "$GITHUB_OUTPUT"
 
-      - name: Load queue and claim one task
+      - name: Load queue and claim catch-up batch
         id: prepare
         env:
           GH_TOKEN: ${{ github.token }}
@@ -52,12 +52,12 @@ jobs:
         run: node scripts/autodev/state.mjs prepare
 
       - name: Build isolated agent image
-        if: steps.prepare.outputs.has_work == 'true' && steps.prepare.outputs.deploy_only != 'true'
+        if: steps.prepare.outputs.has_work == 'true' && steps.prepare.outputs.deploy_only != 'true' && steps.prepare.outputs.sync_pointer_only != 'true'
         run: docker build --pull --tag battlesword-autodev:1.19.0 --file .github/autodev/Dockerfile .github/autodev
 
       - name: Start the metered DeepSeek gateway
         id: gateway
-        if: steps.prepare.outputs.has_work == 'true' && steps.prepare.outputs.deploy_only != 'true'
+        if: steps.prepare.outputs.has_work == 'true' && steps.prepare.outputs.deploy_only != 'true' && steps.prepare.outputs.sync_pointer_only != 'true'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           AUTODEV_DAILY_REMAINING: ${{ steps.prepare.outputs.available_budget }}
@@ -86,7 +86,7 @@ jobs:
 
       - name: Run OpenCode in an isolated container
         id: agent
-        if: steps.prepare.outputs.has_work == 'true' && steps.prepare.outputs.deploy_only != 'true'
+        if: steps.prepare.outputs.has_work == 'true' && steps.prepare.outputs.deploy_only != 'true' && steps.prepare.outputs.sync_pointer_only != 'true'
         env:
           AUTODEV_TASK_FILE: ${{ steps.prepare.outputs.task_file }}
           AUTODEV_PROXY_TOKEN: ${{ steps.gateway.outputs.proxy_token }}
@@ -121,7 +121,7 @@ jobs:
 
       - name: Verify agent result and protected files
         id: validate
-        if: steps.prepare.outputs.has_work == 'true' && steps.prepare.outputs.deploy_only != 'true'
+        if: steps.prepare.outputs.has_work == 'true' && steps.prepare.outputs.deploy_only != 'true' && steps.prepare.outputs.sync_pointer_only != 'true'
         env:
           AUTODEV_TASK_FILE: ${{ steps.prepare.outputs.task_file }}
           AUTODEV_RESULT_FILE: ${{ github.workspace }}/.autodev-runtime/result.json
@@ -136,20 +136,20 @@ jobs:
             fi
           done
           node scripts/autodev/validate.mjs
-          node -e "const r=require(process.env.AUTODEV_VALIDATED_REPORT); require('node:fs').appendFileSync(process.env.GITHUB_OUTPUT, 'has_changes='+String(r.changedFiles.length>0)+'\\nhas_repository_changes='+String(r.repositoryChanges.length>0)+'\\nsummary='+r.summary.replace(/[\\r\\n]/g,' ')+'\\n')"
+          node -e "const r=require(process.env.AUTODEV_VALIDATED_REPORT); require('node:fs').appendFileSync(process.env.GITHUB_OUTPUT, 'has_changes='+String(r.changedFiles.length>0)+'\\nhas_repository_changes='+String(r.changedFiles.length>0)+'\\nsummary='+r.summary.replace(/[\\r\\n]/g,' ')+'\\n')"
 
       - name: Verify the automation budget gateway
-        if: steps.prepare.outputs.has_work == 'true' && steps.prepare.outputs.deploy_only != 'true'
+        if: steps.prepare.outputs.has_work == 'true' && steps.prepare.outputs.deploy_only != 'true' && steps.prepare.outputs.sync_pointer_only != 'true'
         run: npm run test:autodev
 
       - name: Run Angular unit tests
-        if: steps.prepare.outputs.has_work == 'true' && steps.prepare.outputs.deploy_only != 'true'
+        if: steps.prepare.outputs.has_work == 'true' && steps.prepare.outputs.deploy_only != 'true' && steps.prepare.outputs.sync_pointer_only != 'true'
         run: |
           npm ci
           npm test -- --watch=false
 
       - name: Run Playwright browser tests
-        if: steps.prepare.outputs.has_work == 'true' && steps.prepare.outputs.deploy_only != 'true'
+        if: steps.prepare.outputs.has_work == 'true' && steps.prepare.outputs.deploy_only != 'true' && steps.prepare.outputs.sync_pointer_only != 'true'
         run: |
           docker run --rm --init --ipc=host \
             --user "$(id -u):$(id -g)" \
@@ -161,12 +161,12 @@ jobs:
             npx playwright test
 
       - name: Build for GitHub Pages
-        if: steps.prepare.outputs.has_work == 'true' && steps.prepare.outputs.deploy_only != 'true'
+        if: steps.prepare.outputs.has_work == 'true' && steps.prepare.outputs.deploy_only != 'true' && steps.prepare.outputs.sync_pointer_only != 'true'
         run: npx ng build --configuration production --base-href /Battlesword-4.000-SPA/
 
       - name: Publish the validated change
         id: publish
-        if: steps.prepare.outputs.has_work == 'true' && steps.prepare.outputs.deploy_only != 'true' && steps.validate.outputs.has_repository_changes == 'true'
+        if: steps.prepare.outputs.has_work == 'true' && steps.prepare.outputs.deploy_only != 'true' && steps.prepare.outputs.sync_pointer_only != 'true' && steps.validate.outputs.has_repository_changes == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         shell: bash
@@ -175,11 +175,25 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           gh auth setup-git
-          git add -u
+          git add -u -- . ':(exclude)Battlesword-4.000'
           git ls-files --others --exclude-standard -z | xargs -0 -r git add --
           git commit -m "feat(compendium): autonomously update from Battlesword"
           git push origin HEAD:main
           echo "pushed_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Finalize Battlesword source pointer after the full audit
+        if: steps.prepare.outputs.sync_pointer_only == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          gh auth setup-git
+          git add -u -- Battlesword-4.000
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "chore: sync Battlesword source after full audit"
+          git push origin HEAD:main
 
       - name: Deploy the published commit
         id: deploy
@@ -193,7 +207,7 @@ jobs:
           echo "deployed_sha=$sha" >> "$GITHUB_OUTPUT"
 
       - name: Record task outcome
-        if: always() && steps.prepare.outputs.has_work == 'true'
+        if: always() && steps.prepare.outputs.has_work == 'true' && steps.prepare.outputs.sync_pointer_only != 'true'
         env:
           GH_TOKEN: ${{ github.token }}
           AUTODEV_TASK_ID: ${{ steps.prepare.outputs.task_id }}
@@ -207,7 +221,7 @@ jobs:
         run: node scripts/autodev/state.mjs finish
 
       - name: Upload agent report and traces
-        if: always() && steps.prepare.outputs.deploy_only != 'true' && steps.prepare.outputs.has_work == 'true'
+        if: always() && steps.prepare.outputs.deploy_only != 'true' && steps.prepare.outputs.sync_pointer_only != 'true' && steps.prepare.outputs.has_work == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: autodev-${{ github.run_id }}

@@ -3,7 +3,10 @@
 Workflow `Autonomous compendium development` co godzinę sprawdza gałąź `master` repozytorium
 [`Iwanuss/Battlesword-4.000`](https://github.com/Iwanuss/Battlesword-4.000). Dzieli zmienione pliki
 zasad na zadania, a przy pierwszym uruchomieniu kolejkuje audyt wszystkich źródeł Markdown oraz
-`manifest.me` i `TODO`. W jednym uruchomieniu przetwarza najwyżej jedno zadanie.
+`manifest.me` i `TODO`. Podczas nadrabiania zaległości najpierw łączy w jedno zadanie do czterech
+plików zmienionych od ostatniej sprawdzonej wersji źródła, a pozostałe audyty grupuje po dwa pliki.
+Po ukończeniu audytu wraca do jednego zadania na uruchomienie. Wskaźnik submodułu jest
+aktualizowany dopiero po zakończeniu pełnego audytu.
 
 Do pracy nad kodem używa OpenCode CLI 1.19.0 i DeepSeek V4.1 Flash. Agent może podejmować decyzje
 o architekturze produktu, dodawać widoki, typy danych, narzędzia dla graczy i testy. Zachowuje

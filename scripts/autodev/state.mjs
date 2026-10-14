@@ -3,6 +3,7 @@ import { mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { join } from 'node:path';
 import { actualAttemptCost, addDailySpend, recoverLegacySpent } from './budget.mjs';
+import { createBatchTask, selectTaskBatch, transitionTaskBatch } from './queue.mjs';
 
 const repo = process.env.GITHUB_REPOSITORY;
 const token = process.env.GH_TOKEN;
@@ -115,6 +116,31 @@ function taskId(path) {
   return createHash('sha256').update(path).digest('hex').slice(0, 16);
 }
 
+function historicalSourceBaseline(sourceSha) {
+  const commits = git([
+    '-C',
+    process.env.GITHUB_WORKSPACE,
+    'log',
+    '--format=%H',
+    '--',
+    'Battlesword-4.000',
+  ]).split('\n');
+  for (const commit of commits) {
+    try {
+      const sha = git([
+        '-C',
+        process.env.GITHUB_WORKSPACE,
+        'rev-parse',
+        `${commit}:Battlesword-4.000`,
+      ]);
+      if (sha !== sourceSha) return sha;
+    } catch {
+      // Ignore commits before the submodule was added.
+    }
+  }
+  return git(['-C', process.env.GITHUB_WORKSPACE, 'rev-parse', 'HEAD:Battlesword-4.000']);
+}
+
 async function prepare() {
   const state = await openState();
   const today = dayKey();
@@ -124,11 +150,14 @@ async function prepare() {
     state.daily.spent = recoverLegacySpent(state.daily.spent, attemptBudget);
 
   if (state.reservation) {
-    const interrupted = state.tasks[state.reservation.taskId];
-    if (interrupted?.status === 'running') {
-      interrupted.status = interrupted.attempts >= 3 ? 'blocked' : 'queued';
-      interrupted.lastError = 'Próba przerwana przez zakończenie lub anulowanie workflow.';
-      interrupted.updatedAt = new Date().toISOString();
+    const interruptedIds = state.reservation.taskIds ?? [state.reservation.taskId];
+    for (const id of interruptedIds) {
+      const interrupted = Object.values(state.tasks).find((item) => item.id === id);
+      if (interrupted?.status === 'running') {
+        interrupted.status = interrupted.attempts >= 3 ? 'blocked' : 'queued';
+        interrupted.lastError = 'Próba przerwana przez zakończenie lub anulowanie workflow.';
+        interrupted.updatedAt = new Date().toISOString();
+      }
     }
     if (state.reservation.date === today)
       state.daily.spent = Math.min(dailyBudget, state.daily.spent + attemptBudget);
@@ -142,12 +171,14 @@ async function prepare() {
       deploy_only: 'true',
       deploy_sha: state.pendingDeployment.sha,
       task_id: state.pendingDeployment.taskId,
+      task_ids: (state.pendingDeployment.taskIds ?? [state.pendingDeployment.taskId]).join(','),
     });
     return;
   }
 
   const sourceSha = process.env.AUTODEV_SOURCE_SHA;
   if (!sourceSha) throw new Error('AUTODEV_SOURCE_SHA is required');
+  state.auditBaseSha ??= historicalSourceBaseline(sourceSha);
   const sourceChanges = changedSourceFiles(state.lastDiscoveredSha, sourceSha);
   for (const { path, change } of sourceChanges) {
     const digest = blobAt(sourceSha, path);
@@ -177,11 +208,35 @@ async function prepare() {
   }
   state.lastDiscoveredSha = sourceSha;
 
-  const task = Object.values(state.tasks)
-    .filter((item) => item.status === 'queued' && item.attempts < 3)
-    .sort((a, b) => a.path.localeCompare(b.path, 'pl'))[0];
-  if (!task) {
+  const baselineSha = state.lastCompletedSha ?? state.auditBaseSha;
+  const priorityPaths = changedSourceFiles(baselineSha, sourceSha).map((item) => item.path);
+  const catchUp = state.lastCompletedSha !== sourceSha;
+  const pendingPriorityCount = Object.values(state.tasks).filter(
+    (task) => priorityPaths.includes(task.path) && task.status === 'queued' && task.attempts < 3,
+  ).length;
+  const batchSize = pendingPriorityCount ? Math.min(4, pendingPriorityCount) : catchUp ? 2 : 1;
+  const selected = selectTaskBatch(state.tasks, priorityPaths, batchSize);
+  if (selected.length === 0) {
     const pending = Object.values(state.tasks).some((item) => item.status === 'queued');
+    const allComplete =
+      Object.values(state.tasks).length > 0 &&
+      Object.values(state.tasks).every((item) => item.status === 'complete');
+    const currentPointer = git([
+      '-C',
+      process.env.GITHUB_WORKSPACE,
+      'rev-parse',
+      'HEAD:Battlesword-4.000',
+    ]);
+    if (allComplete && state.lastCompletedSha === sourceSha && currentPointer !== sourceSha) {
+      await saveState(state, 'autodev: source audit complete');
+      output({
+        has_work: 'true',
+        sync_pointer_only: 'true',
+        deploy_only: 'false',
+        source_sha: sourceSha,
+      });
+      return;
+    }
     await saveState(state, 'autodev: record source scan');
     output({
       has_work: 'false',
@@ -195,17 +250,28 @@ async function prepare() {
     return;
   }
 
-  task.status = 'running';
-  task.attempts++;
-  task.startedAt = new Date().toISOString();
-  state.reservation = { taskId: task.id, amount: attemptBudget, date: today };
-  await saveState(state, `autodev: start ${task.id}`);
+  const batch = createBatchTask(selected, sourceSha);
+  for (const task of selected) {
+    task.status = 'running';
+    task.attempts++;
+    task.startedAt = new Date().toISOString();
+  }
+  state.reservation = {
+    taskId: batch.id,
+    taskIds: selected.map((task) => task.id),
+    amount: attemptBudget,
+    date: today,
+  };
+  await saveState(state, `autodev: start batch ${batch.id}`);
   const taskFile = join(process.env.RUNNER_TEMP, 'autodev-task.json');
-  await writeFile(taskFile, JSON.stringify(task, null, 2));
+  await writeFile(taskFile, JSON.stringify(batch, null, 2));
   output({
     has_work: 'true',
     deploy_only: 'false',
-    task_id: task.id,
+    task_id: batch.id,
+    task_ids: selected.map((task) => task.id).join(','),
+    task_count: String(selected.length),
+    catch_up: String(catchUp),
     task_file: taskFile,
     source_sha: sourceSha,
     available_budget: String(dailyBudget - state.daily.spent),
@@ -215,7 +281,12 @@ async function prepare() {
 async function finish() {
   const state = await openState();
   const taskIdValue = process.env.AUTODEV_TASK_ID;
-  const task = Object.values(state.tasks).find((item) => item.id === taskIdValue);
+  const taskIds =
+    state.reservation?.taskId === taskIdValue
+      ? (state.reservation.taskIds ?? [taskIdValue])
+      : (state.pendingDeployment?.taskIds ??
+        [Object.values(state.tasks).find((item) => item.id === taskIdValue)?.id].filter(Boolean));
+  const tasks = taskIds.map((id) => Object.values(state.tasks).find((item) => item.id === id));
   const usage = JSON.parse(
     await readFile(process.env.AUTODEV_USAGE_FILE, 'utf8').catch(() => '{"spent":0}'),
   );
@@ -224,28 +295,29 @@ async function finish() {
     state.reservation = null;
     state.daily.spent = addDailySpend(state.daily.spent, actual, dailyBudget);
   }
-  if (!task) throw new Error(`Unknown task ${taskIdValue}`);
+  if (tasks.length === 0 || tasks.some((task) => !task))
+    throw new Error(`Unknown task batch ${taskIdValue}`);
 
   const deployedSha = process.env.AUTODEV_DEPLOYED_SHA || '';
   const pushedSha = process.env.AUTODEV_PUSHED_SHA || '';
   const completed = process.env.AUTODEV_JOB_SUCCESS === 'true';
   const changed = process.env.AUTODEV_HAS_CHANGES === 'true';
-  if (changed && pushedSha && !deployedSha) {
-    task.status = 'deploy_pending';
-    state.pendingDeployment = { sha: pushedSha, taskId: task.id };
+  const needsDeployment = changed && pushedSha && !deployedSha;
+  const status = transitionTaskBatch(tasks, {
+    success: completed,
+    needsDeployment,
+    summary: process.env.AUTODEV_SUMMARY || '',
+    error: process.env.AUTODEV_FAILURE_REASON || '',
+  });
+  if (needsDeployment) {
+    state.pendingDeployment = { sha: pushedSha, taskId: taskIdValue, taskIds };
   } else if (completed) {
-    task.status = 'complete';
-    task.completedAt = new Date().toISOString();
-    task.summary = process.env.AUTODEV_SUMMARY || 'Zadanie nie wymagało zmian w aplikacji.';
     if (Object.values(state.tasks).every((item) => item.status === 'complete'))
       state.lastCompletedSha = state.lastDiscoveredSha;
-    if (state.pendingDeployment?.taskId === task.id && deployedSha) state.pendingDeployment = null;
-  } else {
-    task.status = task.attempts >= 3 ? 'blocked' : 'queued';
-    task.lastError = process.env.AUTODEV_FAILURE_REASON || 'Zadanie nie przeszło weryfikacji.';
-    task.updatedAt = new Date().toISOString();
+    if (state.pendingDeployment?.taskId === taskIdValue && deployedSha)
+      state.pendingDeployment = null;
   }
-  await saveState(state, `autodev: ${task.status} ${task.id}`);
+  await saveState(state, `autodev: ${status} batch ${taskIdValue}`);
 }
 
 if (process.argv[2] === 'prepare') await prepare();
