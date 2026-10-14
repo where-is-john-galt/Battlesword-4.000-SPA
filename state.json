@@ -668,11 +668,12 @@
       "sourceBlob": "a79f8c031103d8f3f93c0737218f1998f2f28964",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "A",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-10-14T20:58:03.080Z",
+      "updatedAt": "2026-10-14T21:08:31.614Z",
       "reason": "Zmiana A pliku źródłowego od 65cce70e28f70cde8c97ef4ae7eb8f49db86b31e.",
-      "startedAt": "2026-10-14T21:00:09.801Z"
+      "startedAt": "2026-10-14T21:00:09.801Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/mityczny/zaduma_świtu_otulającego_lodowy_grobowiec.md": {
       "id": "0c85db70c24d9067",
@@ -680,11 +681,12 @@
       "sourceBlob": "1469a9a0c1f81ef9504239faefa6fc743b6269a8",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "A",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-10-14T20:58:03.083Z",
+      "updatedAt": "2026-10-14T21:08:31.614Z",
       "reason": "Zmiana A pliku źródłowego od 65cce70e28f70cde8c97ef4ae7eb8f49db86b31e.",
-      "startedAt": "2026-10-14T21:00:09.801Z"
+      "startedAt": "2026-10-14T21:00:09.801Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "bestiariusz/rodzaje_oponentów.md": {
       "id": "31ca40329c08a1b4",
@@ -1580,16 +1582,8 @@
   },
   "daily": {
     "date": "2026-10-14",
-    "spent": 3.5809302
+    "spent": 4.941255
   },
-  "reservation": {
-    "taskId": "ed36fec341a043a4",
-    "taskIds": [
-      "dc04c9ff27cd35d1",
-      "0c85db70c24d9067"
-    ],
-    "amount": 1.4190698,
-    "date": "2026-10-14"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
