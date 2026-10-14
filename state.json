@@ -20,9 +20,9 @@
       "sourceBlob": "01c435a7d313fcf2698b124c6e02fda1ed2a5f0b",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit",
-      "status": "running",
+      "status": "blocked",
       "attempts": 3,
-      "updatedAt": "2026-10-14T20:11:24.243Z",
+      "updatedAt": "2026-10-14T20:14:53.935Z",
       "reason": "Pierwszy pełny audyt źródła.",
       "startedAt": "2026-10-14T20:12:02.657Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
@@ -657,11 +657,7 @@
   },
   "daily": {
     "date": "2026-10-14",
-    "spent": 0.6291300000000002
+    "spent": 0.7684773000000001
   },
-  "reservation": {
-    "taskId": "82bc419b8c9cd745",
-    "amount": 2,
-    "date": "2026-10-14"
-  }
+  "reservation": null
 }
