@@ -290,10 +290,11 @@
       "sourceBlob": "bb21ef918b1ee4f68c31567ebba987ea06bf8f62",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T19:55:13.957Z",
-      "reason": "Pierwszy pełny audyt źródła."
+      "reason": "Pierwszy pełny audyt źródła.",
+      "startedAt": "2026-10-14T20:42:07.310Z"
     },
     "tworzenie_postaci/klasy/alchemik.md": {
       "id": "302c5ed3b048b1dd",
@@ -653,15 +654,25 @@
       "sourceBlob": "82cf226b26a83c5860df6af421e8b5a6470e7e1b",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T19:55:14.040Z",
-      "reason": "Pierwszy pełny audyt źródła."
+      "reason": "Pierwszy pełny audyt źródła.",
+      "startedAt": "2026-10-14T20:42:07.310Z"
     }
   },
   "daily": {
     "date": "2026-10-14",
     "spent": 1.6065168
   },
-  "reservation": null
+  "reservation": {
+    "taskId": "1ab469414b26f165",
+    "taskIds": [
+      "8acae4ee0e6ac98d",
+      "eb874603c4712c50"
+    ],
+    "amount": 2,
+    "date": "2026-10-14"
+  },
+  "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
