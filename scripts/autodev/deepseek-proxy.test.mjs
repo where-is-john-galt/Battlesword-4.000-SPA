@@ -92,7 +92,7 @@ test('proxy keeps the provider key private, caps output, and enforces attempt bu
       headers: { authorization: `Bearer ${token}`, 'content-type': 'application/json' },
       body: JSON.stringify({
         model: 'deepseek-flash',
-        messages: [{ role: 'user', content: 'x'.repeat(70_000) }],
+        messages: [{ role: 'user', content: 'x'.repeat(300_000) }],
       }),
     });
     assert.equal(oversized.status, 413);

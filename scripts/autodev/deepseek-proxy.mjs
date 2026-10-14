@@ -8,7 +8,8 @@ const statePath = process.env.AUTODEV_USAGE_FILE;
 const dailyLimit = Number(process.env.AUTODEV_DAILY_REMAINING ?? 5);
 const attemptLimit = Number(process.env.AUTODEV_ATTEMPT_BUDGET ?? 2);
 const prices = { input: 0.3, output: 1.2 };
-const maxInputBytes = 65_536;
+// OpenCode serializes tool context and system prompts alongside the task prompt.
+const maxInputBytes = 262_144;
 const maxOutputTokens = 4096;
 let spent = 0;
 let reserved = 0;
@@ -30,7 +31,7 @@ function requestPayload(raw) {
   const body = JSON.parse(raw.toString('utf8'));
   const inputSize = Buffer.byteLength(JSON.stringify(body));
   if (inputSize > maxInputBytes)
-    throw Object.assign(new Error('Prompt exceeds the 64 KiB request budget'), { status: 413 });
+    throw Object.assign(new Error('Prompt exceeds the 256 KiB request budget'), { status: 413 });
   if (body.stream) body.stream_options = { ...body.stream_options, include_usage: true };
   body.max_tokens = Math.min(
     Number(body.max_tokens ?? body.max_completion_tokens ?? maxOutputTokens),

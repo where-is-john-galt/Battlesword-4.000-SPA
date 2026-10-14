@@ -141,6 +141,35 @@ async function readJson(path, description) {
   }
 }
 
+async function acceptWrittenResult(code, label) {
+  if (code === 0) return code;
+  try {
+    const candidate = await readJson(resultPath, 'Implementation agent');
+    if (
+      candidate.taskId === task.id &&
+      candidate.sourceSha === task.sourceSha &&
+      ['complete', 'no_change'].includes(candidate.status)
+    ) {
+      writeLog(`${label} wrote a valid result despite OpenCode exit ${code}; continuing checks.\n`);
+      return 0;
+    }
+  } catch {
+    // A CLI error without a complete task result remains a hard failure.
+  }
+  return code;
+}
+
+function parseReview(response) {
+  const jsonStart = response.indexOf('{');
+  const jsonEnd = response.lastIndexOf('}');
+  if (jsonStart < 0 || jsonEnd <= jsonStart)
+    throw new Error('Reviewer final response does not contain a JSON object');
+  const parsed = JSON.parse(response.slice(jsonStart, jsonEnd + 1));
+  if (!['pass', 'fail'].includes(parsed.status) || !Array.isArray(parsed.findings))
+    throw new Error('Reviewer response has an invalid status/findings schema');
+  return parsed;
+}
+
 const implementPrompt = [
   taskBrief,
   'Implement this source-driven product task. Follow AGENTS.md and .opencode/agents/battlesword-dev.md.',
@@ -148,6 +177,7 @@ const implementPrompt = [
 ].join('\n\n');
 
 let { exitCode } = await runOpenCode('battlesword-dev', implementPrompt, 'implementation');
+exitCode = await acceptWrittenResult(exitCode, 'Implementation agent');
 let checks = { passed: false, lines: [], outputPath: '' };
 let review = null;
 let result = null;
@@ -175,17 +205,20 @@ for (let iteration = 0; iteration <= 2; iteration++) {
     reviewPrompt,
     `independent review ${iteration}`,
   );
-  exitCode = reviewerRun.exitCode;
-  if (exitCode !== 0) break;
   try {
-    const jsonStart = reviewerRun.response.indexOf('{');
-    const jsonEnd = reviewerRun.response.lastIndexOf('}');
-    if (jsonStart < 0 || jsonEnd <= jsonStart)
-      throw new Error('Reviewer final response does not contain a JSON object');
-    review = JSON.parse(reviewerRun.response.slice(jsonStart, jsonEnd + 1));
+    review = parseReview(reviewerRun.response);
     await writeFile(reviewPath, JSON.stringify(review, null, 2));
+    exitCode = reviewerRun.exitCode;
+    if (exitCode !== 0) {
+      writeLog(`Reviewer produced a valid review despite OpenCode exit ${exitCode}; using it.\n`);
+      exitCode = 0;
+    }
   } catch (error) {
     writeLog(`${error.message}\n`);
+    exitCode = reviewerRun.exitCode || 1;
+    break;
+  }
+  if (review.status !== 'pass' && review.status !== 'fail') {
     exitCode = 1;
     break;
   }
@@ -215,6 +248,7 @@ for (let iteration = 0; iteration <= 2; iteration++) {
     ].join('\n\n'),
     `repair ${iteration + 1}`,
   ));
+  exitCode = await acceptWrittenResult(exitCode, `Repair ${iteration + 1}`);
 }
 
 writeLog('', true);
