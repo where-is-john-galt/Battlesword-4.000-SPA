@@ -22,6 +22,26 @@ test('catch-up batch prioritizes upstream changes and excludes complete/exhauste
   );
 });
 
+test('catch-up can take the first two changed files before auditing the rest', () => {
+  const changedTasks = {
+    ...tasks,
+    'nowy-a.md': { id: '5', path: 'nowy-a.md', status: 'queued', attempts: 0, sourceBlob: 'e' },
+    'nowy-b.md': { id: '6', path: 'nowy-b.md', status: 'queued', attempts: 0, sourceBlob: 'f' },
+    'walka/statusy.md': {
+      id: '7',
+      path: 'walka/statusy.md',
+      status: 'queued',
+      attempts: 0,
+      sourceBlob: 'g',
+    },
+  };
+  const priorityPaths = ['patch_notes.md', 'walka/statusy.md', 'nowy-a.md', 'nowy-b.md'];
+  assert.deepEqual(
+    selectTaskBatch(changedTasks, priorityPaths, 2).map((task) => task.path),
+    ['nowy-a.md', 'nowy-b.md'],
+  );
+});
+
 test('batch identity binds source SHA and exact source blobs', () => {
   const selected = selectTaskBatch(tasks, ['patch_notes.md'], 2);
   const batch = createBatchTask(selected, 'source-sha');

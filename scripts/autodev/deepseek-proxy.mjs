@@ -6,7 +6,7 @@ const key = process.env.DEEPSEEK_API_KEY;
 const authToken = process.env.AUTODEV_PROXY_TOKEN;
 const statePath = process.env.AUTODEV_USAGE_FILE;
 const dailyLimit = Number(process.env.AUTODEV_DAILY_REMAINING ?? 5);
-const attemptLimit = Number(process.env.AUTODEV_ATTEMPT_BUDGET ?? 2);
+const attemptLimit = Number(process.env.AUTODEV_ATTEMPT_BUDGET ?? 3);
 const prices = { input: 0.3, output: 1.2 };
 // OpenCode serializes tool context and system prompts alongside the task prompt.
 const maxInputBytes = 262_144;

@@ -72,7 +72,7 @@ jobs:
             DEEPSEEK_API_KEY="$DEEPSEEK_API_KEY" \
             AUTODEV_PROXY_TOKEN="$proxy_token" \
             AUTODEV_DAILY_REMAINING="$AUTODEV_DAILY_REMAINING" \
-            AUTODEV_ATTEMPT_BUDGET=2 \
+            AUTODEV_ATTEMPT_BUDGET=3 \
             AUTODEV_USAGE_FILE="$RUNNER_TEMP/autodev-usage.json" \
             node scripts/autodev/deepseek-proxy.mjs \
             > "$RUNNER_TEMP/autodev-proxy.log" 2>&1 < /dev/null &

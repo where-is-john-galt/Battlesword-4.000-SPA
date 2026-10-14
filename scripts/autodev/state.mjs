@@ -12,7 +12,7 @@ const stateDir = join(process.env.RUNNER_TEMP, 'autodev-state');
 const sourceDir = join(process.env.GITHUB_WORKSPACE, 'Battlesword-4.000');
 const stateFile = join(stateDir, 'state.json');
 const stateBranch = 'automation-state';
-const attemptBudget = 2;
+const attemptBudget = 3;
 const dailyBudget = 5;
 
 if (!repo || !token || !process.env.GITHUB_OUTPUT)
@@ -224,7 +224,7 @@ async function prepare() {
   const pendingPriorityCount = Object.values(state.tasks).filter(
     (task) => priorityPaths.includes(task.path) && task.status === 'queued' && task.attempts < 3,
   ).length;
-  const batchSize = pendingPriorityCount ? Math.min(4, pendingPriorityCount) : catchUp ? 2 : 1;
+  const batchSize = pendingPriorityCount ? Math.min(2, pendingPriorityCount) : catchUp ? 2 : 1;
   const selected = selectTaskBatch(state.tasks, priorityPaths, batchSize);
   if (selected.length === 0) {
     const pending = Object.values(state.tasks).some((item) => item.status === 'queued');

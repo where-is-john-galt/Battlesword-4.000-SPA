@@ -3,7 +3,7 @@
 Workflow `Autonomous compendium development` co godzinę sprawdza gałąź `master` repozytorium
 [`Iwanuss/Battlesword-4.000`](https://github.com/Iwanuss/Battlesword-4.000). Dzieli zmienione pliki
 zasad na zadania, a przy pierwszym uruchomieniu kolejkuje audyt wszystkich źródeł Markdown oraz
-`manifest.me` i `TODO`. Podczas nadrabiania zaległości najpierw łączy w jedno zadanie do czterech
+`manifest.me` i `TODO`. Podczas nadrabiania zaległości najpierw łączy w jedno zadanie do dwóch
 plików zmienionych od ostatniej sprawdzonej wersji źródła, a pozostałe audyty grupuje po dwa pliki.
 Po ukończeniu audytu wraca do jednego zadania na uruchomienie. Wskaźnik submodułu jest
 aktualizowany dopiero po zakończeniu pełnego audytu.
@@ -32,10 +32,10 @@ konkretnego SHA. Stan kolejki, pokrycia, prób i kosztów jest zapisywany w gał
 
 ## Limity i awarie
 
-Budżet to 5 USD na dobę UTC i maksymalnie 2 USD na próbę. Bramka wymusza limit wielkości kontekstu
+Budżet to 5 USD na dobę UTC i maksymalnie 3 USD na próbę. Bramka wymusza limit wielkości kontekstu
 i odpowiedzi oraz sprawdza koszty przed kolejnym wywołaniem. Stawki wylicza konserwatywnie według
 cen szczytowych DeepSeek; rzeczywisty rachunek może się różnić, a bieżące stawki dostawcy mogą się
-zmienić. Przerwana próba rezerwuje pełne 2 USD, aby restart workflow nie odzyskał wydanych środków.
+zmienić. Przerwana próba rezerwuje pełne 3 USD, aby restart workflow nie odzyskał wydanych środków.
 
 Każde zadanie ma do trzech prób. Po trzech błędach zostaje odłożone do czasu zmiany odpowiedniego
 źródła lub kodu. Awarie deploymentu nie uruchamiają ponownie AI: workflow ponawia publikację tego
