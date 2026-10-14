@@ -33,11 +33,12 @@
       "sourceBlob": "0c4a4383b6730ec529d49c229c318b1c62f594a9",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-10-14T19:55:13.894Z",
+      "updatedAt": "2026-10-14T20:21:24.930Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-10-14T20:17:16.055Z"
+      "startedAt": "2026-10-14T20:17:16.055Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "bestiariusz/zwierzaki/gryf.md": {
       "id": "cf5a26554e56a5b5",
@@ -658,11 +659,7 @@
   },
   "daily": {
     "date": "2026-10-14",
-    "spent": 0.7684773000000001
+    "spent": 1.1252025
   },
-  "reservation": {
-    "taskId": "0e5c9325e1a0e201",
-    "amount": 2,
-    "date": "2026-10-14"
-  }
+  "reservation": null
 }
