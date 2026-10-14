@@ -90,9 +90,11 @@ jobs:
         env:
           AUTODEV_TASK_FILE: ${{ steps.prepare.outputs.task_file }}
           AUTODEV_PROXY_TOKEN: ${{ steps.gateway.outputs.proxy_token }}
+          AUTODEV_REVIEW_FILE: ${{ github.workspace }}/.autodev-runtime/review.json
         shell: bash
         run: |
-          mkdir -p "$RUNNER_TEMP/autodev-output"
+          mkdir -p "$GITHUB_WORKSPACE/.autodev-runtime"
+          cp "$AUTODEV_TASK_FILE" "$GITHUB_WORKSPACE/.autodev-runtime/task.json"
           timeout --signal=TERM --kill-after=30s 2700 docker run --rm \
             --init \
             --ipc=host \
@@ -100,16 +102,14 @@ jobs:
             --add-host=host.docker.internal:host-gateway \
             --tmpfs /tmp:rw,nosuid,nodev,exec,uid="$(id -u)",gid="$(id -g)" \
             --volume "$GITHUB_WORKSPACE:/workspace" \
-            --volume "$AUTODEV_TASK_FILE:/tmp/autodev-task.json:ro" \
-            --volume "$RUNNER_TEMP/autodev-output:/autodev-output" \
             --workdir /workspace \
             --env DEEPSEEK_BASE_URL=http://host.docker.internal:4317/v1 \
             --env DEEPSEEK_API_KEY="$AUTODEV_PROXY_TOKEN" \
             --env AUTODEV_PROXY_TOKEN="$AUTODEV_PROXY_TOKEN" \
-            --env AUTODEV_TASK_FILE=/tmp/autodev-task.json \
-            --env AUTODEV_RESULT_FILE=/autodev-output/result.json \
-            --env AUTODEV_RESULT_SUMMARY=/autodev-output/summary.json \
-            --env AUTODEV_LOG_FILE=/autodev-output/agent.log \
+            --env AUTODEV_TASK_FILE=/workspace/.autodev-runtime/task.json \
+            --env AUTODEV_RESULT_FILE=/workspace/.autodev-runtime/result.json \
+            --env AUTODEV_RESULT_SUMMARY=/workspace/.autodev-runtime/summary.json \
+            --env AUTODEV_LOG_FILE=/workspace/.autodev-runtime/agent.log \
             battlesword-autodev:1.19.0 \
             bash -lc 'opencode debug config --pure >/dev/null && node scripts/autodev/run-opencode.mjs'
 
@@ -123,7 +123,7 @@ jobs:
         env:
           AUTODEV_TASK_FILE: ${{ steps.prepare.outputs.task_file }}
           AUTODEV_RESULT_FILE: ${{ runner.temp }}/autodev-output/result.json
-          AUTODEV_REVIEW_FILE: ${{ runner.temp }}/autodev-output/review.json
+          AUTODEV_REVIEW_FILE: ${{ github.workspace }}/.autodev-runtime/review.json
           AUTODEV_VALIDATED_REPORT: ${{ runner.temp }}/autodev-output/validated-report.json
         run: |
           for protected in .github/workflows/autodev.yml .github/autodev .opencode scripts/autodev AGENTS.md; do
@@ -209,8 +209,9 @@ jobs:
         with:
           name: autodev-${{ github.run_id }}
           path: |
-            ${{ runner.temp }}/autodev-output/
+            ${{ github.workspace }}/.autodev-runtime/
             playwright-report/
             test-results/
           if-no-files-found: ignore
           retention-days: 14
+          include-hidden-files: true

@@ -3,13 +3,28 @@ import { createWriteStream } from 'node:fs';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 
 const task = JSON.parse(await readFile(process.env.AUTODEV_TASK_FILE, 'utf8'));
-const resultPath = process.env.AUTODEV_RESULT_FILE ?? '/autodev-output/result.json';
-const reviewPath = '/autodev-output/review.json';
-const summaryPath = process.env.AUTODEV_RESULT_SUMMARY ?? '/autodev-output/summary.json';
-const log = createWriteStream(process.env.AUTODEV_LOG_FILE ?? '/autodev-output/agent.log', {
+const runtimeDirectory = '/workspace/.autodev-runtime';
+const resultPath = process.env.AUTODEV_RESULT_FILE ?? `${runtimeDirectory}/result.json`;
+const reviewPath = process.env.AUTODEV_REVIEW_FILE ?? `${runtimeDirectory}/review.json`;
+const summaryPath = process.env.AUTODEV_RESULT_SUMMARY ?? `${runtimeDirectory}/summary.json`;
+const log = createWriteStream(process.env.AUTODEV_LOG_FILE ?? `${runtimeDirectory}/agent.log`, {
   flags: 'w',
 });
+const proxyToken = process.env.AUTODEV_PROXY_TOKEN ?? '';
+let pendingLog = '';
 let finalText = '';
+
+function writeLog(value, flush = false) {
+  pendingLog += value.toString();
+  const lines = pendingLog.split('\n');
+  pendingLog = lines.pop() ?? '';
+  const safeText = lines.length ? `${lines.join('\n')}\n` : '';
+  log.write(proxyToken ? safeText.replaceAll(proxyToken, '[REDACTED]') : safeText);
+  if (flush && pendingLog) {
+    log.write(proxyToken ? pendingLog.replaceAll(proxyToken, '[REDACTED]') : pendingLog);
+    pendingLog = '';
+  }
+}
 
 await mkdir('/tmp/autodev-home', { recursive: true });
 await writeFile(resultPath, '');
@@ -34,7 +49,7 @@ function inspectEvent(line) {
 }
 
 async function runOpenCode(agent, prompt, label) {
-  log.write(`\n===== ${label} (${agent}) =====\n`);
+  writeLog(`\n===== ${label} (${agent}) =====\n`);
   const child = spawn(
     'opencode',
     [
@@ -54,26 +69,26 @@ async function runOpenCode(agent, prompt, label) {
   );
   let stdoutBuffer = '';
   child.stdout.on('data', (chunk) => {
-    log.write(chunk);
+    writeLog(chunk);
     stdoutBuffer += chunk.toString();
     const lines = stdoutBuffer.split('\n');
     stdoutBuffer = lines.pop() ?? '';
     for (const line of lines) inspectEvent(line);
   });
-  child.stderr.on('data', (chunk) => log.write(chunk));
+  child.stderr.on('data', writeLog);
   const exitCode = await new Promise((resolve, reject) => {
     child.once('error', reject);
     child.once('close', resolve);
   });
   if (stdoutBuffer) inspectEvent(stdoutBuffer);
-  log.write(`\n===== ${label} exit ${exitCode} =====\n`);
+  writeLog(`\n===== ${label} exit ${exitCode} =====\n`);
   const response = finalText;
   finalText = '';
   return { exitCode, response };
 }
 
 async function runChecks(iteration) {
-  const outputPath = `/autodev-output/checks-${iteration}.log`;
+  const outputPath = `${runtimeDirectory}/checks-${iteration}.log`;
   const commands = [
     ['npm', ['ci']],
     ['npm', ['test', '--', '--watch=false']],
@@ -86,19 +101,22 @@ async function runChecks(iteration) {
   const lines = [];
   for (const [command, args] of commands) {
     log.write(`\n===== pre-review check: ${command} ${args.join(' ')} =====\n`);
+    const checkEnv = { ...process.env };
+    delete checkEnv.AUTODEV_PROXY_TOKEN;
+    delete checkEnv.DEEPSEEK_API_KEY;
     const child = spawn(command, args, {
       cwd: '/workspace',
-      env: process.env,
+      env: checkEnv,
       stdio: ['ignore', 'pipe', 'pipe'],
     });
     let stdout = '';
     child.stdout.on('data', (chunk) => {
       stdout += chunk.toString();
-      log.write(chunk);
+      writeLog(chunk);
     });
     child.stderr.on('data', (chunk) => {
       stdout += chunk.toString();
-      log.write(chunk);
+      writeLog(chunk);
     });
     const exitCode = await new Promise((resolve, reject) => {
       child.once('error', reject);
@@ -139,7 +157,7 @@ for (let iteration = 0; iteration <= 2; iteration++) {
   try {
     result = await readJson(resultPath, 'Implementation agent');
   } catch (error) {
-    log.write(`${error.message}\n`);
+    writeLog(`${error.message}\n`);
     break;
   }
   checks = await runChecks(iteration);
@@ -167,7 +185,7 @@ for (let iteration = 0; iteration <= 2; iteration++) {
     review = JSON.parse(reviewerRun.response.slice(jsonStart, jsonEnd + 1));
     await writeFile(reviewPath, JSON.stringify(review, null, 2));
   } catch (error) {
-    log.write(`${error.message}\n`);
+    writeLog(`${error.message}\n`);
     exitCode = 1;
     break;
   }
@@ -199,7 +217,17 @@ for (let iteration = 0; iteration <= 2; iteration++) {
   ));
 }
 
-await log.end();
-await new Promise((resolve) => log.once('finish', resolve));
-await writeFile(summaryPath, JSON.stringify({ exitCode, checks, review, result }));
+writeLog('', true);
+const logFinished = new Promise((resolve) => log.once('finish', resolve));
+log.end();
+await logFinished;
+const summary = JSON.stringify({ exitCode, checks, review, result });
+await writeFile(summaryPath, proxyToken ? summary.replaceAll(proxyToken, '[REDACTED]') : summary);
+if (proxyToken) {
+  for (const path of [resultPath, reviewPath]) {
+    const contents = await readFile(path, 'utf8').catch(() => '');
+    if (contents.includes(proxyToken))
+      await writeFile(path, contents.replaceAll(proxyToken, '[REDACTED]'));
+  }
+}
 if (exitCode !== 0) process.exit(exitCode ?? 1);

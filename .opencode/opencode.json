@@ -28,7 +28,7 @@
       "mode": "primary",
       "model": "deepseek-proxy/deepseek-flash",
       "prompt": "{file:./agents/battlesword-dev.md}",
-      "steps": 100,
+      "steps": 200,
       "permission": {
         "edit": "allow",
         "bash": "allow",
@@ -42,7 +42,7 @@
         "skill": "deny",
         "doom_loop": "allow",
         "external_directory": {
-          "/autodev-output/**": "allow",
+          "/tmp/autodev-home/.local/share/opencode/tool-output/*": "allow",
           "*": "deny"
         }
       }
@@ -52,7 +52,7 @@
       "mode": "primary",
       "model": "deepseek-proxy/deepseek-flash",
       "prompt": "{file:./agents/battlesword-reviewer.md}",
-      "steps": 40,
+      "steps": 60,
       "permission": {
         "edit": "deny",
         "bash": "deny",
@@ -66,7 +66,7 @@
         "skill": "deny",
         "doom_loop": "allow",
         "external_directory": {
-          "/autodev-output/**": "allow",
+          "/tmp/autodev-home/.local/share/opencode/tool-output/*": "allow",
           "*": "deny"
         }
       }

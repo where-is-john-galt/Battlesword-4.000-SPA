@@ -2,6 +2,7 @@ import { execFileSync } from 'node:child_process';
 import { mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { join } from 'node:path';
+import { actualAttemptCost, addDailySpend, recoverLegacySpent } from './budget.mjs';
 
 const repo = process.env.GITHUB_REPOSITORY;
 const token = process.env.GH_TOKEN;
@@ -118,6 +119,9 @@ async function prepare() {
   const state = await openState();
   const today = dayKey();
   if (!state.daily || state.daily.date !== today) state.daily = { date: today, spent: 0 };
+  // Recover totals from the earlier implementation that deducted its reservation twice.
+  if (state.daily.spent < 0)
+    state.daily.spent = recoverLegacySpent(state.daily.spent, attemptBudget);
 
   if (state.reservation) {
     const interrupted = state.tasks[state.reservation.taskId];
@@ -215,13 +219,10 @@ async function finish() {
   const usage = JSON.parse(
     await readFile(process.env.AUTODEV_USAGE_FILE, 'utf8').catch(() => '{"spent":0}'),
   );
-  const reportedCost = Number(usage.spent);
-  const actual = Number.isFinite(reportedCost)
-    ? Math.min(attemptBudget, reportedCost)
-    : attemptBudget;
+  const actual = actualAttemptCost(usage, attemptBudget);
   if (state.reservation?.taskId === taskIdValue) {
     state.reservation = null;
-    state.daily.spent = Math.min(dailyBudget, state.daily.spent - attemptBudget + actual);
+    state.daily.spent = addDailySpend(state.daily.spent, actual, dailyBudget);
   }
   if (!task) throw new Error(`Unknown task ${taskIdValue}`);
 
