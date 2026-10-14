@@ -124,10 +124,10 @@ jobs:
         if: steps.prepare.outputs.has_work == 'true' && steps.prepare.outputs.deploy_only != 'true'
         env:
           AUTODEV_TASK_FILE: ${{ steps.prepare.outputs.task_file }}
-          AUTODEV_RESULT_FILE: ${{ runner.temp }}/autodev-output/result.json
+          AUTODEV_RESULT_FILE: ${{ github.workspace }}/.autodev-runtime/result.json
           AUTODEV_REVIEW_FILE: ${{ github.workspace }}/.autodev-runtime/review.json
           AUTODEV_EXPECTED_HEAD: ${{ github.sha }}
-          AUTODEV_VALIDATED_REPORT: ${{ runner.temp }}/autodev-output/validated-report.json
+          AUTODEV_VALIDATED_REPORT: ${{ github.workspace }}/.autodev-runtime/validated-report.json
         run: |
           for protected in .github/workflows/autodev.yml .github/autodev .opencode scripts/autodev AGENTS.md; do
             if ! git diff --quiet HEAD -- "$protected"; then
