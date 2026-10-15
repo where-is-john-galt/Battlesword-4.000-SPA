@@ -85,6 +85,116 @@ describe('bestiariusz.json — zombie z bestiariusz/nieumarli/zombie.md', () => 
   });
 });
 
+describe('bestiariusz.json — zwierzaki z bestiariusz/zwierzaki/*.md', () => {
+  it('odwzorowuje blok statystyk Gryfa zgodnie ze źródłem', () => {
+    const entry = monster('gryf');
+
+    expect(entry.name).toBe('Gryf');
+    expect(entry.source).toBe('bestiariusz/zwierzaki/gryf.md');
+    expect(entry.status).toBe('detailed');
+    expect(entry.tier).toBe('Elita');
+    expect(entry.tags).toEqual(['Zwierzak', 'Wierzchowiec', 'Latający']);
+    expect(entry.size).toBe('Duży (2x2)');
+    expect(entry.resistances).toEqual(['Fizyczne']);
+    expect(entry.vulnerabilities).toEqual(['Ogień']);
+    expect(entry.hp).toBe('300');
+    expect(entry.armor).toBe('Średni');
+  });
+
+  it('zachowuje cechę Władca Pomorza oraz trzy akcje Gryfa', () => {
+    const entry = monster('gryf');
+
+    expect(entry.traits).toHaveLength(1);
+    expect(entry.traits?.[0].name).toBe('Władca Pomorza');
+    expect(entry.traits?.[0].description).toContain('2 sektory na akcję');
+    expect(entry.traits?.[0].description).toContain('latać');
+    expect(entry.traits?.[0].description).toContain('odporne na Panikę i Pokiereszowanie');
+
+    expect(entry.actions).toEqual([
+      {
+        name: 'Ugryzienie',
+        range: 'Zwarcie',
+        test: 'Unik',
+        effect: '2k8+6 fizycznych; 1k4 poziomy Krwawienia',
+      },
+      {
+        name: 'Szpony',
+        range: 'Zwarcie',
+        test: 'Ostrożność',
+        effect: '2k8+6 fizycznych; Pochwycenie',
+      },
+      {
+        name: 'Okrutny krzyk',
+        range: 'Zwarcie, Cały sektor',
+        test: 'Siła Woli',
+        effect: '1k6+6 fizycznych; 1k4 poziomy Paniki',
+      },
+    ]);
+  });
+
+  it('odwzorowuje blok statystyk Konika błotnego zgodnie ze źródłem', () => {
+    const entry = monster('konik_błotny');
+
+    expect(entry.name).toBe('Konik błotny');
+    expect(entry.source).toBe('bestiariusz/zwierzaki/konik_błotny.md');
+    expect(entry.status).toBe('detailed');
+    expect(entry.tier).toBe('Trep');
+    expect(entry.tags).toEqual(['Zwierzak', 'Nieagresywny', 'Wierzchowiec']);
+    expect(entry.size).toBe('Duży (2x2)');
+    expect(entry.resistances).toEqual(['Zimno']);
+    expect(entry.vulnerabilities).toEqual(['Ogień']);
+    expect(entry.hp).toBe('45');
+    expect(entry.armor).toBe('Lekki');
+  });
+
+  it('zachowuje cechę Błotnisty łowca dżdżownic oraz akcje Konika błotnego', () => {
+    const entry = monster('konik_błotny');
+
+    expect(entry.traits).toHaveLength(1);
+    expect(entry.traits?.[0].name).toBe('Błotnisty łowca dżdżownic');
+    expect(entry.traits?.[0].description).toContain('Ignoruje kary za ciężki teren');
+    expect(entry.traits?.[0].description).toContain('błotnistych sektorów');
+    expect(entry.traits?.[0].description).toContain('prędkośc to 2 sektory na akcję');
+
+    expect(entry.actions).toEqual([
+      {
+        name: 'Dziobnięcie',
+        range: 'Zwarcie',
+        test: 'Wytrzymałość (+2)',
+        effect: '1k6+3 fizycznych; 1k4 Krwawienia',
+      },
+      {
+        name: 'Wbicie w błoto',
+        range: 'Zwarcie',
+        test: 'Unik (+2)',
+        effect: '1k8+3 fizycznych; Pochwycenie',
+      },
+    ]);
+  });
+
+  it('rejestruje Gryfa i Konika błotnego w indeksie wyszukiwania', () => {
+    const gryf = indexEntry('gryf', 'monster');
+    expect(gryf.name).toBe('Gryf');
+    expect(gryf.source).toBe('bestiariusz/zwierzaki/gryf.md');
+    expect(gryf.status).toBe('detailed');
+
+    const konik = indexEntry('konik_błotny', 'monster');
+    expect(konik.name).toBe('Konik błotny');
+    expect(konik.source).toBe('bestiariusz/zwierzaki/konik_błotny.md');
+    expect(konik.status).toBe('detailed');
+  });
+
+  it('odnotowuje w Niespójnościach literówkę "prędkośc" ze źródła Konika błotnego', () => {
+    const inconsistency = niespojnosci.find((item) => item.id === 'konik_blotny_typo_predkosc');
+
+    expect(inconsistency).toBeDefined();
+    expect(inconsistency?.kind).toBe('typo');
+    expect(inconsistency?.source).toBe('bestiariusz/zwierzaki/konik_błotny.md');
+    expect(inconsistency?.evidence).toContain('prędkośc');
+    expect(inconsistency?.relatedEntryIds).toContain('konik_błotny');
+  });
+});
+
 describe('walka.json — rodzaje oponentów z bestiariusz/rodzaje_oponentów.md', () => {
   it('odwzorowuje wszystkie tiery jako osobne wpisy', () => {
     const tiers: [string, string][] = [
