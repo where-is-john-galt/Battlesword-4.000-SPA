@@ -71,3 +71,26 @@ describe('walka.json — statusy z walka/statusy.md', () => {
     expect(combat('zmęczenie').definition).toContain('których nie może odzyskiwać');
   });
 });
+
+describe('walka.json — wierzchowce z walka/pojazdy_i_wierzchowce.md', () => {
+  it('zawiera tabelę wierzchowców z wymaganą Majętnością i Jeździectwem', () => {
+    const entry = combat('wierzchowce');
+
+    expect(entry.name).toBe('Wierzchowce');
+    expect(entry.source).toBe('walka/pojazdy_i_wierzchowce.md');
+    expect(entry.status).toBe('detailed');
+    expect(entry.definition).toContain('Koń pociągowy (15/1)');
+    expect(entry.definition).toContain('Koń wierzchowy (45/5)');
+    expect(entry.definition).toContain('Rumak (60/10)');
+    expect(entry.definition).toContain('Pegaz (80/12)');
+    expect(entry.definition).toContain('Gryf (100/14)');
+  });
+
+  it('rejestruje regułę wierzchowców w indeksie wyszukiwania', () => {
+    const entry = indexEntry('wierzchowce');
+
+    expect(entry.name).toBe('Wierzchowce');
+    expect(entry.source).toBe('walka/pojazdy_i_wierzchowce.md');
+    expect(entry.status).toBe('detailed');
+  });
+});

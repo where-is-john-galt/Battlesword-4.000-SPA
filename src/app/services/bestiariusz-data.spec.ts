@@ -172,6 +172,106 @@ describe('bestiariusz.json — zwierzaki z bestiariusz/zwierzaki/*.md', () => {
     ]);
   });
 
+  it('odwzorowuje blok statystyk Konia Pociągowego zgodnie ze źródłem', () => {
+    const entry = monster('koń_pociągowy');
+
+    expect(entry.name).toBe('Koń Pociągowy');
+    expect(entry.source).toBe('bestiariusz/zwierzaki/koń_pociągowy.md');
+    expect(entry.status).toBe('detailed');
+    expect(entry.tier).toBe('Trep');
+    expect(entry.tags).toEqual(['Zwierzak', 'Nieagresywny', 'Wierzchowiec']);
+    expect(entry.size).toBe('Duży (2x2)');
+    expect(entry.resistances).toEqual(['Fizyczne']);
+    expect(entry.vulnerabilities).toEqual(['Żrące']);
+    expect(entry.hp).toBe('90');
+    expect(entry.armor).toBe('Brak');
+  });
+
+  it('zachowuje cechę Silny jak koń oraz akcje Konia Pociągowego', () => {
+    const entry = monster('koń_pociągowy');
+
+    expect(entry.traits).toHaveLength(1);
+    expect(entry.traits?.[0].name).toBe('Silny jak koń');
+    expect(entry.traits?.[0].description).toContain('wielkich ciężarów');
+    expect(entry.traits?.[0].description).toContain('jeźdzca i dwóch pasażerów');
+    expect(entry.traits?.[0].description).toContain('1 sektor na akcję');
+
+    expect(entry.actions).toEqual([
+      {
+        name: 'Ugryzienie',
+        range: 'Zwarcie',
+        test: 'Unik (+2)',
+        effect: '1k10+3 fizycznych',
+      },
+      {
+        name: 'Kop',
+        range: 'Zwarcie',
+        test: 'Ostrożność (+2)',
+        effect: '1k8+3 fizycznych; 1 poziom Pokiereszowania',
+      },
+    ]);
+  });
+
+  it('odwzorowuje blok statystyk Konia Wierzchowego zgodnie ze źródłem', () => {
+    const entry = monster('koń_wierzchowy');
+
+    expect(entry.name).toBe('Koń Wierzchowy');
+    expect(entry.source).toBe('bestiariusz/zwierzaki/koń_wierzchowy.md');
+    expect(entry.status).toBe('detailed');
+    expect(entry.tier).toBe('Trep');
+    expect(entry.tags).toEqual(['Zwierzak', 'Nieagresywny', 'Wierzchowiec']);
+    expect(entry.size).toBe('Duży (2x2)');
+    expect(entry.resistances).toEqual(['Fizyczne']);
+    expect(entry.vulnerabilities).toEqual(['Żrące']);
+    expect(entry.hp).toBe('90');
+    expect(entry.armor).toBe('Brak');
+  });
+
+  it('zachowuje cechę Szybki i zwinny oraz akcje Konia Wierzchowego', () => {
+    const entry = monster('koń_wierzchowy');
+
+    expect(entry.traits).toHaveLength(1);
+    expect(entry.traits?.[0].name).toBe('Szybki i zwinny');
+    expect(entry.traits?.[0].description).toContain('2 sektory na akcję');
+
+    expect(entry.actions).toEqual([
+      {
+        name: 'Ugryzienie',
+        range: 'Zwarcie',
+        test: 'Unik (+2)',
+        effect: '1k10+3 fizycznych',
+      },
+      {
+        name: 'Kop',
+        range: 'Zwarcie',
+        test: 'Ostrożność (+2)',
+        effect: '1k8+3 fizycznych; 1 poziom Pokiereszowania',
+      },
+    ]);
+  });
+
+  it('rejestruje oba konie w indeksie wyszukiwania', () => {
+    const pociągowy = indexEntry('koń_pociągowy', 'monster');
+    expect(pociągowy.name).toBe('Koń Pociągowy');
+    expect(pociągowy.source).toBe('bestiariusz/zwierzaki/koń_pociągowy.md');
+    expect(pociągowy.status).toBe('detailed');
+
+    const wierzchowy = indexEntry('koń_wierzchowy', 'monster');
+    expect(wierzchowy.name).toBe('Koń Wierzchowy');
+    expect(wierzchowy.source).toBe('bestiariusz/zwierzaki/koń_wierzchowy.md');
+    expect(wierzchowy.status).toBe('detailed');
+  });
+
+  it('odnotowuje w Niespójnościach literówkę "jeźdzca" ze źródła Konia Pociągowego', () => {
+    const inconsistency = niespojnosci.find((item) => item.id === 'kon_pociagowy_typo_jezdzca');
+
+    expect(inconsistency).toBeDefined();
+    expect(inconsistency?.kind).toBe('typo');
+    expect(inconsistency?.source).toBe('bestiariusz/zwierzaki/koń_pociągowy.md');
+    expect(inconsistency?.evidence).toContain('jeźdzca');
+    expect(inconsistency?.relatedEntryIds).toContain('koń_pociągowy');
+  });
+
   it('rejestruje Gryfa i Konika błotnego w indeksie wyszukiwania', () => {
     const gryf = indexEntry('gryf', 'monster');
     expect(gryf.name).toBe('Gryf');
