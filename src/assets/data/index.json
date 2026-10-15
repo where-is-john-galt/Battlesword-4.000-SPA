@@ -5229,6 +5229,13 @@
     "status": "detailed"
   },
   {
+    "id": "czarne_serce_potępienia",
+    "type": "magicItem",
+    "name": "Czarne Serce Potępienia",
+    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/czarne_serce_potępienia.md",
+    "status": "detailed"
+  },
+  {
     "id": "czytelnik_wód",
     "type": "magicItem",
     "name": "Czytelnik Wód",
@@ -5576,6 +5583,13 @@
     "type": "magicItem",
     "name": "Wybebeszacz",
     "source": "ekwipunek/przedmioty_magiczne/potężne/wybebeszacz.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zaduma_świtu_otulającego_lodowy_grobowiec",
+    "type": "magicItem",
+    "name": "Zaduma Świtu Otulającego Lodowy Grobowiec",
+    "source": "ekwipunek/przedmioty_magiczne/mityczny/zaduma_świtu_otulającego_lodowy_grobowiec.md",
     "status": "detailed"
   },
   {

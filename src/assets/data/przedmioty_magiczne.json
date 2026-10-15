@@ -1115,5 +1115,70 @@
       "Rozwinięcia statystyk defensywnych wliczają się do Pancerza zamiast do statystyk defensywnych"
     ],
     "description": "Oby twój upór nigdy się nie ugiął.\n\nDruidzi przyrzekli, że będą bronili Lasu Altdris swoimi własnymi życiami.\n\nSzybki umysł rozwiązuje problemy zanim się pojawią."
+  },
+  {
+    "id": "czarne_serce_potępienia",
+    "name": "Czarne Serce Potępienia",
+    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/czarne_serce_potępienia.md",
+    "status": "detailed",
+    "type": "Pierścień",
+    "rarity": "Arcymistrzowskie",
+    "modifiers": [
+      "Zwiększa zadawane obrażenia od chaosu o 20%",
+      "Na początku tury regeneruj 2 HP",
+      "Siła Woli +1",
+      "Podwaja nakładane poziomy Paniki",
+      "Bazowa Energia +1",
+      "Odporność na obrażenia elektryczne",
+      "Każde 5 nałożonych poziomów powoduje nałożenie 6-tego za darmo!"
+    ],
+    "description": "Strach jest bardzo zaraźliwy.\n\nTam, gdzie powinny być jej usta, była tylko wirująca, czarna pustka."
+  },
+  {
+    "id": "zaduma_świtu_otulającego_lodowy_grobowiec",
+    "name": "Zaduma Świtu Otulającego Lodowy Grobowiec",
+    "source": "ekwipunek/przedmioty_magiczne/mityczny/zaduma_świtu_otulającego_lodowy_grobowiec.md",
+    "status": "detailed",
+    "type": "Pancerz",
+    "rarity": "Mityczne",
+    "armor": 7,
+    "barrier": 12,
+    "requirements": "Siła 10, Inteligencja 6",
+    "newAbility": {
+      "name": "Rytuał odnowy",
+      "activationTime": "Akcja",
+      "range": "Bezpośredni",
+      "description": "Na jedną rundę tworzy magiczny sygil, umagiczniający sektor i zwiększający Pancerz o 1 dla wszystkich sojuszników stojących w nim.",
+      "enhancements": [
+        "Zwiększa zasięg do krótkiego - 1 Energii",
+        "Zwiększa zasięg do średniego - 2 Energii",
+        "Zwiększa zasięg do długiego - 3 Energii",
+        "Zwiększenie długości trwania o 1 rundę - 1 Energii",
+        "Sygil zapewnia dodatkowe +1 Pancerza - 1 Energii",
+        "Sygil zapewnia również ułatwienie w testach defensywnych - 2 Energii",
+        "Sygil zapewnia również 5 Bariery dla wszystkich sojuszników, którzy wejdą w niego po raz pierwszy w swojej turze (może być wykorzystane wielokrotnie) - 2 Energii"
+      ]
+    },
+    "modifiers": [
+      "+1 do Energii za każdego miniona pod kontrolą na początku tury",
+      "Odporność na obrażenia żrące",
+      "Odporność na obrażenia fizyczne",
+      "Otwieranie zamków +2",
+      "Przekonywanie +2",
+      "Zastraszanie +2",
+      "Dowodzenie +2",
+      "Lingwistyka +2",
+      "Każdy otrzymany cios powoduje obrażenia odbite równe Bazowej Energii",
+      "Zwyczajne flaszki życia na wyposażeniu nakładają swoje efekty automatycznie na początku każdej tury"
+    ],
+    "corrupted": [
+      "Inteligencja nie dolicza się do zadawanych obrażeń",
+      "Bazowa Mana wynikająca z Inteligencji jest obniżona o połowę",
+      "Podatność na obrażenia ogniste",
+      "Uniemożliwia korzystanie z flaszek życia",
+      "HP odzyskane z flaszek życia nie może być nałożone na cokolwiek innego niż użytkownik",
+      "Obniża HP odzyskiwane z flaszek życia o połowę"
+    ],
+    "description": "Ani nocny blask, ani szczerzone kły nie zdołały powstrzymać wschodu słońca.\n\nGdy Pelor zamknie swe płonące oko na końcu czasów, świat pochłonie lód.\n\n\"Nie rozpaczaj! Oddaj się lasom! Stań się pustym, a Bogini cię znajdzie. Z jej korzeni... nadejdzie odnowa.\"\n- Pytonż IV z Altdris\n\nEnfolding Dawn\nThe gleam of the night and the howling teeth alike could not abate the rising of the sun.\n\nIcetomb\nWhen Solaris closes his burning eye\nAt the end of time,\nthe world will perish in ice.\n\nReverie\n\"Do not despair! Give yourself to the woods!\nBecome empty, and the Goddess will find you.\nFrom within her roots... you shall be restored.\"\n- Cirel of Caer Tarth"
   }
 ]
