@@ -2,14 +2,14 @@
   {
     "id": "bramy_śmierci",
     "name": "Bramy Śmierci",
-    "definition": "Status nakładany, gdy Punkty Życia spadną do 0: utrudnienie na wszystkie testy i ataki; kolejne obrażenia wymuszają test Odporności na Śmierć. Ustępuje po odzyskaniu HP.",
+    "definition": "Status nakładany, gdy Punkty Życia spadną do 0: utrudnienie na wszystkie testy i ataki. Każde otrzymane obrażenia wymuszają test Odporności na Śmierć — porażka oznacza koniec przygody dla tej postaci, a sukces obniża jej Odporność na Śmierć oraz Poczytalność o 1. Ustępuje automatycznie po odzyskaniu jakichkolwiek HP.",
     "source": "walka/obrażenia_i_śmierć.md",
     "status": "detailed"
   },
   {
     "id": "pochwycenie",
     "name": "Pochwycenie",
-    "definition": "Zamiast zadawać obrażenia można pochwycić przeciwnika (koszt Staminy wg tieru); pochwyconego można poddusić, zaatakować, rzucić lub wypuścić.",
+    "definition": "Postać została pochwycona przez kogoś innego (patrz Walka: Stamina, Mana i podstawowe ataki) i nie może wykonywać akcji ruchu. Zamiast zadawać obrażenia można pochwycić przeciwnika (koszt Staminy wg tieru); pochwyconego można poddusić, zaatakować, rzucić lub wypuścić.",
     "source": "walka/stamina_mana_i_podsatwowe_ataki.md",
     "status": "detailed"
   },
@@ -53,6 +53,17 @@
     "status": "detailed"
   },
   {
+    "id": "osłabienie",
+    "name": "Osłabienie",
+    "definition": "Następne zadane przez postać obrażenia są zmniejszone o połowę. Mnożnik ten nakłada się niezależnie od odporności i podatności na obrażenia.",
+    "source": "walka/statusy.md",
+    "status": "detailed",
+    "aliases": [
+      "osłabienia",
+      "osłabieniem"
+    ]
+  },
+  {
     "id": "krwawienie",
     "name": "Krwawienie",
     "definition": "Każdy poziom statusu powoduje fizyczne obrażenia eskalujące na początku tury. Zatamowanie krwawienia wymaga w ramach akcji zdania testu Medycyny. Każdy sukces obniża poziom Krwawienia o 1.",
@@ -65,14 +76,14 @@
   {
     "id": "panika",
     "name": "Panika",
-    "definition": "Bohaterowie: na początku tury test Poczytalności z ujemnym modyfikatorem równym poziomowi Paniki; porażka powoduje zawał, spadek HP do 0 i status Bram Śmierci. NPC: ataki przeciwko źródłu Paniki z utrudnieniem, przeciwnik liczony jako martwy na potrzeby Morale.",
+    "definition": "Bohaterowie: na początku tury test Poczytalności z ujemnym modyfikatorem równym poziomowi Paniki; porażka powoduje zawał, spadek HP do 0 i status Bram Śmierci, następnie poziom statusu spada o 1. NPC: ataki przeciwko źródłu Paniki z utrudnieniem, przeciwnik traktowany jakby miał odporność na zadawane obrażenia i liczony jako martwy na potrzeby Morale; na koniec tury poziom statusu spada o 1.",
     "source": "walka/statusy.md",
     "status": "detailed"
   },
   {
     "id": "podpalenie",
     "name": "Podpalenie",
-    "definition": "Każdy poziom statusu powoduje obrażenia eskalujące na początku tury. Ugaszenie wymaga w ramach akcji zdania testu Akrobatyki. Każdy sukces obniża poziom Podpalenia o 1.",
+    "definition": "Każdy poziom statusu powoduje obrażenia eskalujące na początku tury. Ugaszenie wymaga w ramach akcji zdania testu Akrobatyki. Każdy sukces obniża poziom Podpalenia o 1. Każdy poziom Zamrożenia nałożony na postać z poziomami Podpalenia niweluje je i nakłada poziom Pokiereszowania.",
     "source": "walka/statusy.md",
     "status": "detailed",
     "aliases": [
@@ -82,7 +93,7 @@
   {
     "id": "pokiereszowanie",
     "name": "Pokiereszowanie",
-    "definition": "Zwiększa otrzymywane obrażenia o 10% i zmniejsza zadawane obrażenia o 2. Na koniec tury poziom statusu spada o 1. Poziom 10 lub wyższy natychmiast redukuje HP do zera.",
+    "definition": "Zwiększa otrzymywane obrażenia o 10% i zmniejsza zadawane obrażenia o 2. Na koniec tury poziom statusu spada o 1. Poziom 10 lub wyższy natychmiastowo odbiera postaci wszystkie HP, których nie może odzyskiwać, dopóki poziom Pokiereszowania nie spadnie poniżej 10.",
     "source": "walka/statusy.md",
     "status": "detailed",
     "aliases": [
@@ -103,7 +114,7 @@
   {
     "id": "zamrożenie",
     "name": "Zamrożenie",
-    "definition": "Bohaterowie: na początku tury test Wytrzymałości z ujemnym modyfikatorem równym poziomowi Zamrożenia; porażka nakłada 1 poziom Zmęczenia. NPC: dwa rzuty k20; wynik ≤ poziomowi statusu oznacza utratę 1 akcji.",
+    "definition": "Bohaterowie: na początku tury test Wytrzymałości z ujemnym modyfikatorem równym poziomowi Zamrożenia; porażka nakłada 1 poziom Zmęczenia; na koniec tury poziom statusu spada o 1. NPC: dwa rzuty k20; wynik ≤ poziomowi statusu oznacza utratę 1 akcji. Każdy poziom Podpalenia nałożony na postać z poziomami Zamrożenia niweluje je i powoduje utratę 2k10 HP.",
     "source": "walka/statusy.md",
     "status": "detailed",
     "aliases": [
@@ -124,7 +135,7 @@
   {
     "id": "zmęczenie",
     "name": "Zmęczenie",
-    "definition": "Bohaterowie: każdy poziom narzuca modyfikator (-1) do wszystkich testów oraz obniża zadawane obrażenia o jedną kostkę. NPC otrzymują zamiast tego poziomy Pokiereszowania. Poziom 10 lub wyższy natychmiast redukuje HP do zera.",
+    "definition": "Bohaterowie: każdy poziom narzuca modyfikator (-1) do wszystkich testów oraz obniża zadawane obrażenia o jedną kostkę. NPC nie mogą otrzymywać poziomów Zmęczenia — zamiast tego otrzymują poziomy Pokiereszowania. Poziom 10 lub wyższy natychmiastowo odbiera postaci wszystkie HP, których nie może odzyskiwać, dopóki poziom Zmęczenia nie spadnie poniżej 10.",
     "source": "walka/statusy.md",
     "status": "detailed",
     "aliases": [
@@ -132,16 +143,27 @@
     ]
   },
   {
+    "id": "pąkle",
+    "name": "Pąkle",
+    "definition": "Każda wykonana akcja powoduje otrzymanie 1k10 obrażeń fizycznych za każdy nałożony poziom statusu, po czym poziom statusu spada o 1. Pąkle można również usunąć udanym testem Sztuki Przetrwania lub Medycyny w ramach akcji.",
+    "source": "walka/statusy.md",
+    "status": "detailed",
+    "aliases": [
+      "pąkli",
+      "pąklami"
+    ]
+  },
+  {
     "id": "statusy_pojedyncze",
     "name": "Status pojedynczy",
-    "definition": "Status przyjmujący dwie wartości (nałożony/brak), np. Bramy Śmierci, Oszołomienie, Oślepienie, Pochwycenie, Unieruchomienie.",
+    "definition": "Status przyjmujący dwie wartości (nałożony/brak), np. Bramy Śmierci, Na wierzchowcu, Oszołomienie, Oślepienie, Pochwycenie, Unieruchomienie, Ukryty, Osłabienie.",
     "source": "walka/statusy.md",
     "status": "detailed"
   },
   {
     "id": "statusy_wielokrotne",
     "name": "Status wielokrotny",
-    "definition": "Status określany w poziomach (np. Krwawienie, Panika, Podpalenie, Zamrożenie, Zatrucie, Zmęczenie); im wyższy poziom, tym większy efekt.",
+    "definition": "Status określany w poziomach (np. Krwawienie, Panika, Podpalenie, Pokiereszowanie, Porażenie, Zamrożenie, Zatrucie, Zmęczenie, Pąkle); im wyższy poziom, tym większy efekt.",
     "source": "walka/statusy.md",
     "status": "detailed"
   },

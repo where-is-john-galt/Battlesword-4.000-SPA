@@ -686,6 +686,13 @@
     "status": "detailed"
   },
   {
+    "id": "osłabienie",
+    "type": "combat",
+    "name": "Osłabienie",
+    "source": "walka/statusy.md",
+    "status": "detailed"
+  },
+  {
     "id": "oślepienie",
     "type": "combat",
     "name": "Oślepienie",
@@ -774,6 +781,13 @@
     "type": "combat",
     "name": "Poziom ukrycia",
     "source": "walka/skradanie.md",
+    "status": "detailed"
+  },
+  {
+    "id": "pąkle",
+    "type": "combat",
+    "name": "Pąkle",
+    "source": "walka/statusy.md",
     "status": "detailed"
   },
   {
