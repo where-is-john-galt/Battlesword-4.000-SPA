@@ -240,7 +240,7 @@
   {
     "id": "horda",
     "name": "Horda",
-    "definition": "Ataki grupy trepów traktowane jako wspólny atak; minimum 3 trepów, cel testu defensywnego z modyfikatorem (-2), obrażenia rosną o kość za każde 2 członków.",
+    "definition": "Ataki grupy trepów tego samego typu traktowane jako wspólny atak; hordy tworzone są ad hoc. Minimalna ilość członków hordy wynosi 3 trepów, cel wykonuje standardowy test defensywny obciążony modyfikatorem (-2), a obrażenia ataku rosną o jedną kość za każde 2 członków. Po rozliczeniu efektów ataku horda jest rozwiązywana, a atakowanie jej członków rozlicza się jako ataki przeciwko indywidualnym celom.",
     "source": "bestiariusz/rodzaje_oponentów.md",
     "status": "detailed"
   },
@@ -371,7 +371,7 @@
   {
     "id": "boss",
     "name": "Boss",
-    "definition": "Najsilniejsi oponenci zdolni do samodzielnego stawienia czoła drużynie; wykonują 1 akcję i 1 ruch pomiędzy turami bohaterów.",
+    "definition": "Najsilniejsi oponenci zdolni do samodzielnego stawienia czoła drużynie bohaterów; wykonują 1 akcję i 1 ruch pomiędzy turami każdego bohatera, nie posiadając własnej, dedykowanej rundy.",
     "source": "bestiariusz/rodzaje_oponentów.md",
     "status": "detailed",
     "aliases": [
