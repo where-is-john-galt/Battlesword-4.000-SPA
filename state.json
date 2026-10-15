@@ -290,11 +290,11 @@
       "sourceBlob": "bb21ef918b1ee4f68c31567ebba987ea06bf8f62",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 1,
+      "status": "running",
+      "attempts": 2,
       "updatedAt": "2026-10-14T20:55:37.293Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-10-14T20:42:07.310Z",
+      "startedAt": "2026-10-15T10:02:38.022Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "tworzenie_postaci/klasy/alchemik.md": {
@@ -655,11 +655,11 @@
       "sourceBlob": "82cf226b26a83c5860df6af421e8b5a6470e7e1b",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 1,
+      "status": "running",
+      "attempts": 2,
       "updatedAt": "2026-10-14T20:55:37.293Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-10-14T20:42:07.310Z",
+      "startedAt": "2026-10-15T10:02:38.022Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/arcymistrzowskie/czarne_serce_potępienia.md": {
@@ -1588,6 +1588,14 @@
     "date": "2026-10-15",
     "spent": 1.5104739
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "1ab469414b26f165",
+    "taskIds": [
+      "8acae4ee0e6ac98d",
+      "eb874603c4712c50"
+    ],
+    "amount": 3,
+    "date": "2026-10-15"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
