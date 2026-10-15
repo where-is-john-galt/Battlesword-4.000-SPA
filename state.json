@@ -50,11 +50,13 @@
       "sourceBlob": "6f59fbc27b84f414798f8e7e7dd5febea2dab13a",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit",
-      "status": "running",
+      "status": "complete",
       "attempts": 1,
       "updatedAt": "2026-10-14T19:55:13.897Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-10-15T19:14:09.214Z"
+      "startedAt": "2026-10-15T19:14:09.214Z",
+      "completedAt": "2026-10-15T19:20:03.893Z",
+      "summary": "Audyt plików bestiariusz/zwierzaki/gryf.md oraz bestiariusz/zwierzaki/konik_błotny.md. Oba wpisy są już wiernie odwzorowane w bestiariusz.json (blok statystyk, cechy i akcje co do znaku, wraz z literówką 'prędkośc' Konika błotnego), zarejestrowane w index.json, a literówka Konika ma już odnotowaną niespójność 'konik_blotny_typo_predkosc'. Brakowało natomiast trwałego pokrycia testowego — dodano testy regresyjne w bestiariusz-data.spec.ts, które przypinają te dwa wpisy (statystyki, cechy, akcje, indeks oraz niespójność) do źródła."
     },
     "bestiariusz/zwierzaki/pegaz.md": {
       "id": "42c28d8e75b0ee62",
@@ -719,11 +721,13 @@
       "sourceBlob": "4daede4511ab45821b094b13ff287c70a727f4a1",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "complete",
       "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.093Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-15T19:14:09.214Z"
+      "startedAt": "2026-10-15T19:14:09.214Z",
+      "completedAt": "2026-10-15T19:20:03.893Z",
+      "summary": "Audyt plików bestiariusz/zwierzaki/gryf.md oraz bestiariusz/zwierzaki/konik_błotny.md. Oba wpisy są już wiernie odwzorowane w bestiariusz.json (blok statystyk, cechy i akcje co do znaku, wraz z literówką 'prędkośc' Konika błotnego), zarejestrowane w index.json, a literówka Konika ma już odnotowaną niespójność 'konik_blotny_typo_predkosc'. Brakowało natomiast trwałego pokrycia testowego — dodano testy regresyjne w bestiariusz-data.spec.ts, które przypinają te dwa wpisy (statystyki, cechy, akcje, indeks oraz niespójność) do źródła."
     },
     "bestiariusz/zwierzaki/koń_pociągowy.md": {
       "id": "6a97cb77b161985d",
@@ -1597,16 +1601,8 @@
   },
   "daily": {
     "date": "2026-10-15",
-    "spent": 3.5089895999999996
+    "spent": 3.9574028999999995
   },
-  "reservation": {
-    "taskId": "c61da1486ad2a3c4",
-    "taskIds": [
-      "cf5a26554e56a5b5",
-      "0a077fa8227ddf8b"
-    ],
-    "amount": 1.4910104000000004,
-    "date": "2026-10-15"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
