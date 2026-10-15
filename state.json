@@ -35,12 +35,14 @@
       "sourceBlob": "0c4a4383b6730ec529d49c229c318b1c62f594a9",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit",
-      "status": "running",
+      "status": "complete",
       "attempts": 2,
       "updatedAt": "2026-10-14T20:21:24.930Z",
       "reason": "Pierwszy pełny audyt źródła.",
       "startedAt": "2026-10-15T15:07:04.331Z",
-      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem.",
+      "completedAt": "2026-10-15T15:13:49.958Z",
+      "summary": "Audyt dwóch plików bestiariusza. Wpis Zombie z bestiariusz/nieumarli/zombie.md jest już wiernie odwzorowany w bestiariusz.json (tier Trep, tagi, odporności/podatności, HP 20, pancerz, cecha Nieumarły upór, akcja Atak mieczem), a błędny źródłowy tag 'Szkielet' ma już odnotowaną niespójność 'zombie_tag_szkielet'. W regułach z bestiariusz/rodzaje_oponentów.md brakowało jednak fragmentów mechaniki, więc uzupełniono definicję 'Horda' (tworzenie ad hoc, minimum 3 trepów, kara (-2), kość za każde 2 członków, rozwiązanie hordy po ataku i rozliczanie jej członków jako celów indywidualnych) oraz definicję 'Boss' (brak własnej, dedykowanej rundy). Dodano test danych bestiariusz-data.spec.ts pokrywający oba audytowane źródła."
     },
     "bestiariusz/zwierzaki/gryf.md": {
       "id": "cf5a26554e56a5b5",
@@ -702,11 +704,13 @@
       "sourceBlob": "96a5dbc234475f51b65a258f3de970f13a93fc5e",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "complete",
       "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.090Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-15T15:07:04.331Z"
+      "startedAt": "2026-10-15T15:07:04.331Z",
+      "completedAt": "2026-10-15T15:13:49.958Z",
+      "summary": "Audyt dwóch plików bestiariusza. Wpis Zombie z bestiariusz/nieumarli/zombie.md jest już wiernie odwzorowany w bestiariusz.json (tier Trep, tagi, odporności/podatności, HP 20, pancerz, cecha Nieumarły upór, akcja Atak mieczem), a błędny źródłowy tag 'Szkielet' ma już odnotowaną niespójność 'zombie_tag_szkielet'. W regułach z bestiariusz/rodzaje_oponentów.md brakowało jednak fragmentów mechaniki, więc uzupełniono definicję 'Horda' (tworzenie ad hoc, minimum 3 trepów, kara (-2), kość za każde 2 członków, rozwiązanie hordy po ataku i rozliczanie jej członków jako celów indywidualnych) oraz definicję 'Boss' (brak własnej, dedykowanej rundy). Dodano test danych bestiariusz-data.spec.ts pokrywający oba audytowane źródła."
     },
     "bestiariusz/zwierzaki/konik_błotny.md": {
       "id": "0a077fa8227ddf8b",
@@ -1591,16 +1595,8 @@
   },
   "daily": {
     "date": "2026-10-15",
-    "spent": 2.8588655999999997
+    "spent": 3.5089895999999996
   },
-  "reservation": {
-    "taskId": "7926154be10e6864",
-    "taskIds": [
-      "0e5c9325e1a0e201",
-      "31ca40329c08a1b4"
-    ],
-    "amount": 2.1411344000000003,
-    "date": "2026-10-15"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
