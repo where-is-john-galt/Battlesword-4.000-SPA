@@ -290,12 +290,14 @@
       "sourceBlob": "bb21ef918b1ee4f68c31567ebba987ea06bf8f62",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit",
-      "status": "running",
+      "status": "complete",
       "attempts": 2,
       "updatedAt": "2026-10-14T20:55:37.293Z",
       "reason": "Pierwszy pełny audyt źródła.",
       "startedAt": "2026-10-15T10:02:38.022Z",
-      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem.",
+      "completedAt": "2026-10-15T10:14:56.784Z",
+      "summary": "Audyt patch_notes.md (wersja 0.1.23) i walka/statusy.md: dodano brakujące statusy Osłabienie i Pąkle jako pełne wpisy walki, zarejestrowano je w indeksie wyszukiwania oraz uzupełniono opisy istniejących statusów (Bramy Śmierci, Pochwycenie, Panika, Podpalenie, Pokiereszowanie, Zamrożenie, Zmęczenie) i listy grup statusów o reguły pominięte wcześniej, a obecne w źródle. Zmiany objęte nowymi testami jednostkowymi."
     },
     "tworzenie_postaci/klasy/alchemik.md": {
       "id": "302c5ed3b048b1dd",
@@ -655,12 +657,14 @@
       "sourceBlob": "82cf226b26a83c5860df6af421e8b5a6470e7e1b",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit",
-      "status": "running",
+      "status": "complete",
       "attempts": 2,
       "updatedAt": "2026-10-14T20:55:37.293Z",
       "reason": "Pierwszy pełny audyt źródła.",
       "startedAt": "2026-10-15T10:02:38.022Z",
-      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem.",
+      "completedAt": "2026-10-15T10:14:56.784Z",
+      "summary": "Audyt patch_notes.md (wersja 0.1.23) i walka/statusy.md: dodano brakujące statusy Osłabienie i Pąkle jako pełne wpisy walki, zarejestrowano je w indeksie wyszukiwania oraz uzupełniono opisy istniejących statusów (Bramy Śmierci, Pochwycenie, Panika, Podpalenie, Pokiereszowanie, Zamrożenie, Zmęczenie) i listy grup statusów o reguły pominięte wcześniej, a obecne w źródle. Zmiany objęte nowymi testami jednostkowymi."
     },
     "ekwipunek/przedmioty_magiczne/arcymistrzowskie/czarne_serce_potępienia.md": {
       "id": "dc04c9ff27cd35d1",
@@ -1586,16 +1590,8 @@
   },
   "daily": {
     "date": "2026-10-15",
-    "spent": 1.5104739
+    "spent": 2.8588655999999997
   },
-  "reservation": {
-    "taskId": "1ab469414b26f165",
-    "taskIds": [
-      "8acae4ee0e6ac98d",
-      "eb874603c4712c50"
-    ],
-    "amount": 3,
-    "date": "2026-10-15"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
