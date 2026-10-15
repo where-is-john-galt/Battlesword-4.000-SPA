@@ -735,10 +735,11 @@
       "sourceBlob": "690c9aeb82101cc4a4231f549f5aee8271182945",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.096Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-15T22:28:13.153Z"
     },
     "bestiariusz/zwierzaki/koń_wierzchowy.md": {
       "id": "61a9ef49a666f883",
@@ -746,10 +747,11 @@
       "sourceBlob": "26a46b066773c7685a4f59b195ec609af429d5d6",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.098Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-15T22:28:13.153Z"
     },
     "bestiariusz/zwierzaki/niedźwiedź.md": {
       "id": "98f45c27a3576d80",
@@ -1603,6 +1605,14 @@
     "date": "2026-10-15",
     "spent": 3.9574028999999995
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "806b2b963a6dcb9b",
+    "taskIds": [
+      "6a97cb77b161985d",
+      "61a9ef49a666f883"
+    ],
+    "amount": 1.0425971000000005,
+    "date": "2026-10-15"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
