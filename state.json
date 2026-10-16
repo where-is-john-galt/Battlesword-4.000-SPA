@@ -78,10 +78,11 @@
       "sourceBlob": "dfb210f67b7660fa0c82bd0d65abc987eb07aa99",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T19:55:13.903Z",
-      "reason": "Pierwszy pełny audyt źródła."
+      "reason": "Pierwszy pełny audyt źródła.",
+      "startedAt": "2026-10-16T07:19:03.991Z"
     },
     "bestiariusz/zwierzaki/wilk.md": {
       "id": "586ebade23534df9",
@@ -89,10 +90,11 @@
       "sourceBlob": "3e598732ef1e398a04fc2bc3a154171e15183d78",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T19:55:13.906Z",
-      "reason": "Pierwszy pełny audyt źródła."
+      "reason": "Pierwszy pełny audyt źródła.",
+      "startedAt": "2026-10-16T07:19:03.991Z"
     },
     "ekwipunek/pancerze.md": {
       "id": "bd7f5091f84603da",
@@ -1615,6 +1617,14 @@
     "date": "2026-10-16",
     "spent": 0.6050295
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "33eacd5e6e76136b",
+    "taskIds": [
+      "1aadd178de60fd74",
+      "586ebade23534df9"
+    ],
+    "amount": 3,
+    "date": "2026-10-16"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
