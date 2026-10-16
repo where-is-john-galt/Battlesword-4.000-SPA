@@ -106,11 +106,13 @@
       "sourceBlob": "02ea1fdfe89faee2c08b5b12ab6b4e9ac8302dce",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit",
-      "status": "running",
+      "status": "complete",
       "attempts": 1,
       "updatedAt": "2026-10-14T19:55:13.909Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-10-16T18:09:11.413Z"
+      "startedAt": "2026-10-16T18:09:11.413Z",
+      "completedAt": "2026-10-16T18:17:43.178Z",
+      "summary": "Audyt źródeł ekwipunek/pancerze.md i ekwipunek/paski.md dla 0f32397. Sprawdzono 25 wierszy pancerzy (Szaty magiczne, Lekkie, Średnie, Ciężkie, Tarcza) oraz 8 wierszy pasków i potwierdzono, że dane w src/assets/data/pancerze.json i paski.json wiernie odwzorowują aktualne tabele (wymagania Inteligencja 8 / Siła 10 / Siła 14, brak wymagań dla Lekkich i Tarcz, wartości pancerza/bariery, majętność, slotów i efektów). Jedyną wykrytą luką było nieodnotowane odstępstwo w źródle: materiał zapisano jako 'adamntytowa' (Zbroja adamntytowa, Tarcza adamntytowa), mimo że w pozostałych plikach występuje 'adamantyt'. Dodano wpis niespójności 'pancerze_typo_adamntytowa' (kind: typo) wraz z odpowiadającym wpisem indeksu wyszukiwania oraz nowy zestaw testów audytowych danych. Build i testy przechodzą."
     },
     "ekwipunek/paski.md": {
       "id": "d628b844d9fcf85d",
@@ -118,11 +120,13 @@
       "sourceBlob": "e7d578ad5d4c9af8ec560b1c970d1944299d8349",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit",
-      "status": "running",
+      "status": "complete",
       "attempts": 1,
       "updatedAt": "2026-10-14T19:55:13.912Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-10-16T18:09:11.413Z"
+      "startedAt": "2026-10-16T18:09:11.413Z",
+      "completedAt": "2026-10-16T18:17:43.178Z",
+      "summary": "Audyt źródeł ekwipunek/pancerze.md i ekwipunek/paski.md dla 0f32397. Sprawdzono 25 wierszy pancerzy (Szaty magiczne, Lekkie, Średnie, Ciężkie, Tarcza) oraz 8 wierszy pasków i potwierdzono, że dane w src/assets/data/pancerze.json i paski.json wiernie odwzorowują aktualne tabele (wymagania Inteligencja 8 / Siła 10 / Siła 14, brak wymagań dla Lekkich i Tarcz, wartości pancerza/bariery, majętność, slotów i efektów). Jedyną wykrytą luką było nieodnotowane odstępstwo w źródle: materiał zapisano jako 'adamntytowa' (Zbroja adamntytowa, Tarcza adamntytowa), mimo że w pozostałych plikach występuje 'adamantyt'. Dodano wpis niespójności 'pancerze_typo_adamntytowa' (kind: typo) wraz z odpowiadającym wpisem indeksu wyszukiwania oraz nowy zestaw testów audytowych danych. Build i testy przechodzą."
     },
     "ekwipunek/przedmioty_magiczne/arcymistrzowskie/cewka_liminalna.md": {
       "id": "cc4d6d9289897228",
@@ -1627,16 +1631,8 @@
   },
   "daily": {
     "date": "2026-10-16",
-    "spent": 3.2396823
+    "spent": 4.219649400000001
   },
-  "reservation": {
-    "taskId": "3c844b5695b1a840",
-    "taskIds": [
-      "bd7f5091f84603da",
-      "d628b844d9fcf85d"
-    ],
-    "amount": 1.7603176999999999,
-    "date": "2026-10-16"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
