@@ -4123,6 +4123,13 @@
     "status": "detailed"
   },
   {
+    "id": "pancerze_typo_adamntytowa",
+    "type": "inconsistency",
+    "name": "Pancerze: literówka 'adamntytowa'",
+    "source": "ekwipunek/pancerze.md",
+    "status": "detailed"
+  },
+  {
     "id": "pas_cyrkowca_typo_krępować",
     "type": "inconsistency",
     "name": "Pas Cyrkowca: literówka 'krępować'",

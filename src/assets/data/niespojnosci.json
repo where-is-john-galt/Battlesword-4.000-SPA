@@ -7044,6 +7044,23 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
+    "id": "pancerze_typo_adamntytowa",
+    "name": "Pancerze: literówka 'adamntytowa'",
+    "source": "ekwipunek/pancerze.md",
+    "kind": "typo",
+    "details": "W tabelach Ciężkie i Tarcza materiał zapisano jako 'adamntytowa' (Zbroja adamntytowa, Tarcza adamntytowa), pomijając literę 'a'. W pozostałych plikach źródłowych ten materiał występuje jako 'adamantyt' (np. mechaniki_bazowe/crafting.md, ekwipunek/przedmioty_magiczne/arcymistrzowskie/zapomniany_strażnik.md).",
+    "evidence": "| Zbroja adamntytowa  | 55                 | 9       |\n| Tarcza adamntytowa  | 45                 | 3       |",
+    "relatedSources": [
+      "ekwipunek/pancerze.md"
+    ],
+    "relatedEntryIds": [
+      "zbroja_adamntytowa",
+      "tarcza_adamntytowa"
+    ],
+    "status": "detailed",
+    "revision": "0f3239726b687f085593266a088c843f63d032ce"
+  },
+  {
     "id": "pas_cyrkowca_typo_krępować",
     "name": "Pas Cyrkowca: literówka 'krępować'",
     "source": "ekwipunek/przedmioty_magiczne/niezwykłe/pas_cyrkowca.md",
