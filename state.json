@@ -786,11 +786,13 @@
       "sourceBlob": "7ba301e1984d514fab64807a387587612114fffb",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "complete",
       "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.103Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-16T13:20:24.463Z"
+      "startedAt": "2026-10-16T13:20:24.463Z",
+      "completedAt": "2026-10-16T13:33:10.402Z",
+      "summary": "Uzupełniono reprezentację dwóch plików źródłowych. Z ekwipunek/broń.md dodano 19 haseł słowniczka cech specjalnych broni jako mechaniki (z zachowaniem literówek źródła), powiązano je z indeksem i podlinkowano etykiety cech na kartach broni. Z ekwipunek/majętność.md zapisano w sekcji Niespójności konflikt definicji „Rzadkość przedmiotów” między majętność.md a mechaniki_bazowe/crafting.md."
     },
     "ekwipunek/majętność.md": {
       "id": "7c04a3fd63355b7e",
@@ -798,11 +800,13 @@
       "sourceBlob": "01501c484315cdb7a31f16e72d5a6fa81de83b53",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "complete",
       "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.106Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-16T13:20:24.463Z"
+      "startedAt": "2026-10-16T13:20:24.463Z",
+      "completedAt": "2026-10-16T13:33:10.402Z",
+      "summary": "Uzupełniono reprezentację dwóch plików źródłowych. Z ekwipunek/broń.md dodano 19 haseł słowniczka cech specjalnych broni jako mechaniki (z zachowaniem literówek źródła), powiązano je z indeksem i podlinkowano etykiety cech na kartach broni. Z ekwipunek/majętność.md zapisano w sekcji Niespójności konflikt definicji „Rzadkość przedmiotów” między majętność.md a mechaniki_bazowe/crafting.md."
     },
     "ekwipunek/przedmioty_magiczne/arcymistrzowskie/brązowa_broda.md": {
       "id": "11486bce332efd84",
@@ -1621,16 +1625,8 @@
   },
   "daily": {
     "date": "2026-10-16",
-    "spent": 1.6798256999999999
+    "spent": 3.2396823
   },
-  "reservation": {
-    "taskId": "8fa3a10d37ba0eda",
-    "taskIds": [
-      "ecbee65038f1f56c",
-      "7c04a3fd63355b7e"
-    ],
-    "amount": 3,
-    "date": "2026-10-16"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
