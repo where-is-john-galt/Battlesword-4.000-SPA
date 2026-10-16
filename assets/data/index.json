@@ -5033,6 +5033,20 @@
     "status": "detailed"
   },
   {
+    "id": "wilk_brak_rozmiaru",
+    "type": "inconsistency",
+    "name": "Wilk: brak pola Rozmiar",
+    "source": "bestiariusz/zwierzaki/wilk.md",
+    "status": "detailed"
+  },
+  {
+    "id": "wilk_wataha_horda_niejasnosc",
+    "type": "inconsistency",
+    "name": "Wilk: niejasna interakcja cechy Wataha z zasadą hord",
+    "source": "bestiariusz/zwierzaki/wilk.md",
+    "status": "detailed"
+  },
+  {
     "id": "wladca_lasow_typo_miejse",
     "type": "inconsistency",
     "name": "Władca Lasów: literówka 'miejse'",
