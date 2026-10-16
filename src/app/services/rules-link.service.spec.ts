@@ -22,6 +22,7 @@ describe('RulesLinkService', () => {
     compendium.mechanics.set([
       { id: 'test', name: 'Test', definition: 'y', source: 's', status: 'detailed' },
       { id: 'test_przeciwstawny', name: 'Test przeciwstawny', definition: 'z', source: 's', status: 'detailed' },
+      { id: 'krotki', name: 'Krótki', definition: 'q', source: 's', status: 'detailed', autoLink: false },
     ]);
     compendium.combat.set([
       { id: 'porażenie', name: 'Porażenie', definition: 'x', source: 's', status: 'detailed', aliases: ['porażenia', 'porażeniem'] },
@@ -89,6 +90,14 @@ describe('RulesLinkService', () => {
     expect(service.resolve('Porażenie')).toEqual({ type: 'combat', id: 'porażenie' });
     expect(service.resolve('porażenia')).toEqual({ type: 'combat', id: 'porażenie' });
     expect(service.resolve('nieznane')).toBeUndefined();
+  });
+
+  it('does not auto-link mechanics flagged with autoLink: false', () => {
+    expect(service.linkify('Atak Krótki w zwarciu')).toEqual([{ text: 'Atak Krótki w zwarciu' }]);
+  });
+
+  it('still resolves autoLink: false mechanics for tooltips and tags', () => {
+    expect(service.resolve('Krótki')).toEqual({ type: 'mechanic', id: 'krotki' });
   });
 
   it('handles empty and whitespace text', () => {

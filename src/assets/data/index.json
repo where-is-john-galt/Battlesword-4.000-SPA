@@ -7201,5 +7201,145 @@
     "name": "Łuk",
     "source": "ekwipunek/broń.md",
     "status": "detailed"
+  },
+  {
+    "id": "cecha_wszechstronny",
+    "type": "mechanic",
+    "name": "Wszechstronny",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "cecha_przeciwpancerny",
+    "type": "mechanic",
+    "name": "Przeciwpancerny",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "cecha_parujacy",
+    "type": "mechanic",
+    "name": "Parujący",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "cecha_druzgocacy",
+    "type": "mechanic",
+    "name": "Druzgocący",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "cecha_ogluszajacy",
+    "type": "mechanic",
+    "name": "Ogłuszający",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "cecha_miazdzacy",
+    "type": "mechanic",
+    "name": "Miażdżący",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "cecha_wyprzedzajacy",
+    "type": "mechanic",
+    "name": "Wyprzedzający",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "cecha_dowodzacy",
+    "type": "mechanic",
+    "name": "Dowodzący",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "cecha_magiczny",
+    "type": "mechanic",
+    "name": "Magiczny",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "cecha_kanalizujacy",
+    "type": "mechanic",
+    "name": "Kanalizujący",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "cecha_rabiacy",
+    "type": "mechanic",
+    "name": "Rąbiący",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "cecha_wysysajacy",
+    "type": "mechanic",
+    "name": "Wysysający",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "cecha_krotki",
+    "type": "mechanic",
+    "name": "Krótki",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "cecha_skrytobojczy",
+    "type": "mechanic",
+    "name": "Skrytobójczy",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "cecha_krytyczny",
+    "type": "mechanic",
+    "name": "Krytyczny",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "cecha_kawaleryjski",
+    "type": "mechanic",
+    "name": "Kawaleryjski",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "cecha_szybkostrzelny",
+    "type": "mechanic",
+    "name": "Szybkostrzelny",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "cecha_glosny",
+    "type": "mechanic",
+    "name": "Głośny",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "cecha_niebezpieczny",
+    "type": "mechanic",
+    "name": "Niebezpieczny",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed"
+  },
+  {
+    "id": "majetnosc_rzadkosc_przedmiotow_konflikt",
+    "type": "inconsistency",
+    "name": "Rzadkość przedmiotów: rozbieżne definicje Majętność vs Crafting",
+    "source": "ekwipunek/majętność.md",
+    "status": "detailed"
   }
 ]

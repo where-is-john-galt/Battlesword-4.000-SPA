@@ -41,7 +41,7 @@
       <span class="card-over">Cechy specjalne</span>
       <div class="chip-row">
         @for (feature of weapon().specialFeatures; track feature) {
-          <app-tag [label]="feature" />
+          <app-tag [label]="feature" [link]="featureLink(feature)" />
         }
       </div>
     </div>

@@ -221,6 +221,12 @@ export interface Stat extends BaseEntry {
 export interface Rule extends BaseEntry {
   definition: string;
   aliases?: string[];
+  /**
+   * Gdy `false`, hasło jest nadal rozpoznawane (np. podpowiedzi/odnośniki), ale
+   * nie jest automatycznie podlinkowywane w tekście. Używane dla haseł
+   * słownikowych o bardzo krótkich, wieloznacznych nazwach (np. cechy broni).
+   */
+  autoLink?: boolean;
 }
 
 export interface IndexEntry {

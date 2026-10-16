@@ -15,6 +15,7 @@ export interface LinkToken {
 interface TermEntry {
   normalized: string;
   target: LinkTarget;
+  autoLink: boolean;
 }
 
 const ENTITY_LINK_TYPES: readonly CompendiumType[] = ['weapon', 'armor', 'magicItem', 'handItem'];
@@ -66,7 +67,13 @@ export class RulesLinkService {
   private readonly terms = computed<TermEntry[]>(() => {
     const entries: TermEntry[] = [];
 
-    const add = (type: CompendiumType, name: string, aliases: readonly string[] | undefined, id: string) => {
+    const add = (
+      type: CompendiumType,
+      name: string,
+      aliases: readonly string[] | undefined,
+      id: string,
+      autoLink = true,
+    ) => {
       const forms = [name, ...(aliases ?? [])];
       for (const form of forms) {
         if (!form) {
@@ -74,7 +81,7 @@ export class RulesLinkService {
         }
         const normalized = normalize(form);
         if (normalized && !entries.some((e) => e.normalized === normalized)) {
-          entries.push({ normalized, target: { type, id } });
+          entries.push({ normalized, target: { type, id }, autoLink });
         }
       }
     };
@@ -83,7 +90,7 @@ export class RulesLinkService {
       add('stat', stat.name, stat.aliases, stat.id);
     }
     for (const rule of this.compendium.mechanics()) {
-      add('mechanic', rule.name, rule.aliases, rule.id);
+      add('mechanic', rule.name, rule.aliases, rule.id, rule.autoLink !== false);
     }
     for (const rule of this.compendium.combat()) {
       add('combat', rule.name, rule.aliases, rule.id);
@@ -111,7 +118,7 @@ export class RulesLinkService {
     if (!text) {
       return [{ text: '' }];
     }
-    const terms = this.terms();
+    const terms = this.terms().filter((term) => term.autoLink);
     if (terms.length === 0) {
       return [{ text }];
     }
