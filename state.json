@@ -106,10 +106,11 @@
       "sourceBlob": "02ea1fdfe89faee2c08b5b12ab6b4e9ac8302dce",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T19:55:13.909Z",
-      "reason": "Pierwszy pełny audyt źródła."
+      "reason": "Pierwszy pełny audyt źródła.",
+      "startedAt": "2026-10-16T18:09:11.413Z"
     },
     "ekwipunek/paski.md": {
       "id": "d628b844d9fcf85d",
@@ -117,10 +118,11 @@
       "sourceBlob": "e7d578ad5d4c9af8ec560b1c970d1944299d8349",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T19:55:13.912Z",
-      "reason": "Pierwszy pełny audyt źródła."
+      "reason": "Pierwszy pełny audyt źródła.",
+      "startedAt": "2026-10-16T18:09:11.413Z"
     },
     "ekwipunek/przedmioty_magiczne/arcymistrzowskie/cewka_liminalna.md": {
       "id": "cc4d6d9289897228",
@@ -1627,6 +1629,14 @@
     "date": "2026-10-16",
     "spent": 3.2396823
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "3c844b5695b1a840",
+    "taskIds": [
+      "bd7f5091f84603da",
+      "d628b844d9fcf85d"
+    ],
+    "amount": 1.7603176999999999,
+    "date": "2026-10-16"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
