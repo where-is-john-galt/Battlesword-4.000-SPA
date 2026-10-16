@@ -786,10 +786,11 @@
       "sourceBlob": "7ba301e1984d514fab64807a387587612114fffb",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.103Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-16T13:20:24.463Z"
     },
     "ekwipunek/majętność.md": {
       "id": "7c04a3fd63355b7e",
@@ -797,10 +798,11 @@
       "sourceBlob": "01501c484315cdb7a31f16e72d5a6fa81de83b53",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.106Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-16T13:20:24.463Z"
     },
     "ekwipunek/przedmioty_magiczne/arcymistrzowskie/brązowa_broda.md": {
       "id": "11486bce332efd84",
@@ -1621,6 +1623,14 @@
     "date": "2026-10-16",
     "spent": 1.6798256999999999
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "8fa3a10d37ba0eda",
+    "taskIds": [
+      "ecbee65038f1f56c",
+      "7c04a3fd63355b7e"
+    ],
+    "amount": 3,
+    "date": "2026-10-16"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
