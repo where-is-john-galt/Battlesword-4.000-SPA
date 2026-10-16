@@ -78,11 +78,13 @@
       "sourceBlob": "dfb210f67b7660fa0c82bd0d65abc987eb07aa99",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit",
-      "status": "running",
+      "status": "complete",
       "attempts": 1,
       "updatedAt": "2026-10-14T19:55:13.903Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-10-16T07:19:03.991Z"
+      "startedAt": "2026-10-16T07:19:03.991Z",
+      "completedAt": "2026-10-16T07:28:30.343Z",
+      "summary": "Zweryfikowałem, że Rumak i Wilk są już wiernie odwzorowani w bestiariusz.json, index.json i danych walki (Rumak 60/10 w wierzchowcach). Nie zmieniałem danych bestiariusza; dodałem testy bloku statystyk, cech, akcji i wpisów indeksu dla obu zwierzaków oraz uzupełniłem sekcję Niespójności o brak pola Rozmiar w źródle Wilka i niejasną interakcję cechy Wataha z ogólną zasadą hord, wraz z odpowiadającymi wpisami indeksu wyszukiwania."
     },
     "bestiariusz/zwierzaki/wilk.md": {
       "id": "586ebade23534df9",
@@ -90,11 +92,13 @@
       "sourceBlob": "3e598732ef1e398a04fc2bc3a154171e15183d78",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit",
-      "status": "running",
+      "status": "complete",
       "attempts": 1,
       "updatedAt": "2026-10-14T19:55:13.906Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-10-16T07:19:03.991Z"
+      "startedAt": "2026-10-16T07:19:03.991Z",
+      "completedAt": "2026-10-16T07:28:30.343Z",
+      "summary": "Zweryfikowałem, że Rumak i Wilk są już wiernie odwzorowani w bestiariusz.json, index.json i danych walki (Rumak 60/10 w wierzchowcach). Nie zmieniałem danych bestiariusza; dodałem testy bloku statystyk, cech, akcji i wpisów indeksu dla obu zwierzaków oraz uzupełniłem sekcję Niespójności o brak pola Rozmiar w źródle Wilka i niejasną interakcję cechy Wataha z ogólną zasadą hord, wraz z odpowiadającymi wpisami indeksu wyszukiwania."
     },
     "ekwipunek/pancerze.md": {
       "id": "bd7f5091f84603da",
@@ -1615,16 +1619,8 @@
   },
   "daily": {
     "date": "2026-10-16",
-    "spent": 0.6050295
+    "spent": 1.6798256999999999
   },
-  "reservation": {
-    "taskId": "33eacd5e6e76136b",
-    "taskIds": [
-      "1aadd178de60fd74",
-      "586ebade23534df9"
-    ],
-    "amount": 3,
-    "date": "2026-10-16"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
