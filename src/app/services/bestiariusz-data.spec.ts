@@ -293,6 +293,135 @@ describe('bestiariusz.json — zwierzaki z bestiariusz/zwierzaki/*.md', () => {
     expect(inconsistency?.evidence).toContain('prędkośc');
     expect(inconsistency?.relatedEntryIds).toContain('konik_błotny');
   });
+
+  it('odwzorowuje blok statystyk Niedźwiedzia zgodnie ze źródłem', () => {
+    const entry = monster('niedźwiedź');
+
+    expect(entry.name).toBe('Niedźwiedź');
+    expect(entry.source).toBe('bestiariusz/zwierzaki/niedźwiedź.md');
+    expect(entry.status).toBe('detailed');
+    expect(entry.tier).toBe('Elita');
+    expect(entry.tags).toEqual(['Zwierzak', 'Duży (2x2)']);
+    expect(entry.size).toBeUndefined();
+    expect(entry.resistances).toEqual(['Fizyczne']);
+    expect(entry.vulnerabilities).toEqual(['Ogień']);
+    expect(entry.hp).toBe('90');
+    expect(entry.armor).toBe('Średni');
+  });
+
+  it('zachowuje cechę Miodek oraz trzy akcje Niedźwiedzia', () => {
+    const entry = monster('niedźwiedź');
+
+    expect(entry.traits).toHaveLength(1);
+    expect(entry.traits?.[0].name).toBe('Miodek');
+    expect(entry.traits?.[0].description).toContain('poniżej 50%');
+    expect(entry.traits?.[0].description).toContain('małe leczenie (25%+1d4)');
+
+    expect(entry.actions).toEqual([
+      {
+        name: 'Rozszarpanie',
+        range: 'Zwarcie',
+        test: 'Unik',
+        effect: '2k6+6 fizycznych; 1k4 poziomy Krwawienia',
+      },
+      {
+        name: 'Przytulenie',
+        range: 'Zwarcie',
+        test: 'Ostrożność',
+        effect: '2k8+6 fizycznych; Pochwycenie',
+      },
+      {
+        name: 'Ugryzienie',
+        range: 'Zwarcie',
+        test: 'Wytrzymałość',
+        effect: '2k8+6 fizycznych; 1 poziom Pokiereszowania',
+      },
+    ]);
+  });
+
+  it('odnotowuje w Niespójnościach rozmiar Niedźwiedzia wpisany w tagi zamiast pola Rozmiar', () => {
+    const inconsistency = niespojnosci.find((item) => item.id === 'niedzwiedz_tag_rozmiar');
+
+    expect(inconsistency).toBeDefined();
+    expect(inconsistency?.kind).toBe('asymmetry');
+    expect(inconsistency?.source).toBe('bestiariusz/zwierzaki/niedźwiedź.md');
+    expect(inconsistency?.evidence).toContain('Duży (2x2)');
+    expect(inconsistency?.relatedEntryIds).toContain('niedźwiedź');
+  });
+
+  it('odnotowuje w Niespójnościach literówkę "swoja" i format leczenia w Miodku', () => {
+    const typo = niespojnosci.find((item) => item.id === 'niedzwiedz_typo_swoja');
+
+    expect(typo).toBeDefined();
+    expect(typo?.kind).toBe('typo');
+    expect(typo?.source).toBe('bestiariusz/zwierzaki/niedźwiedź.md');
+    expect(typo?.evidence).toContain('swoja');
+    expect(typo?.relatedEntryIds).toContain('niedźwiedź');
+
+    const format = niespojnosci.find((item) => item.id === 'niedzwiedz_miodek_leczenie_format');
+
+    expect(format).toBeDefined();
+    expect(format?.source).toBe('bestiariusz/zwierzaki/niedźwiedź.md');
+    expect(format?.evidence).toContain('(25%+1d4)');
+    expect(format?.relatedEntryIds).toContain('niedźwiedź');
+  });
+
+  it('odwzorowuje blok statystyk Pegaza zgodnie ze źródłem', () => {
+    const entry = monster('pegaz');
+
+    expect(entry.name).toBe('Pegaz');
+    expect(entry.source).toBe('bestiariusz/zwierzaki/pegaz.md');
+    expect(entry.status).toBe('detailed');
+    expect(entry.tier).toBe('Elita');
+    expect(entry.tags).toEqual(['Zwierzak', 'Wierzchowiec', 'Latający']);
+    expect(entry.size).toBe('Duży (2x2)');
+    expect(entry.resistances).toEqual(['Święte']);
+    expect(entry.vulnerabilities).toEqual(['Elektryczność']);
+    expect(entry.hp).toBe('300');
+    expect(entry.armor).toBe('Brak');
+  });
+
+  it('zachowuje cechę Król przestworzy oraz trzy akcje Pegaza', () => {
+    const entry = monster('pegaz');
+
+    expect(entry.traits).toHaveLength(1);
+    expect(entry.traits?.[0].name).toBe('Król przestworzy');
+    expect(entry.traits?.[0].description).toContain('2 sektory na akcję');
+    expect(entry.traits?.[0].description).toContain('latać');
+
+    expect(entry.actions).toEqual([
+      {
+        name: 'Ugryzienie',
+        range: 'Zwarcie',
+        test: 'Unik',
+        effect: '2k10+6 fizycznych',
+      },
+      {
+        name: 'Kop',
+        range: 'Zwarcie',
+        test: 'Ostrożność',
+        effect: '2k8+6 fizycznych; 1 poziom Pokiereszowania',
+      },
+      {
+        name: 'Wichura',
+        range: 'Zwarcie, Cały sektor',
+        test: 'Wytrzymałość',
+        effect: '2k6+6 fizycznych; Unieruchomienie',
+      },
+    ]);
+  });
+
+  it('rejestruje Niedźwiedzia i Pegaza w indeksie wyszukiwania', () => {
+    const niedzwiedz = indexEntry('niedźwiedź', 'monster');
+    expect(niedzwiedz.name).toBe('Niedźwiedź');
+    expect(niedzwiedz.source).toBe('bestiariusz/zwierzaki/niedźwiedź.md');
+    expect(niedzwiedz.status).toBe('detailed');
+
+    const pegaz = indexEntry('pegaz', 'monster');
+    expect(pegaz.name).toBe('Pegaz');
+    expect(pegaz.source).toBe('bestiariusz/zwierzaki/pegaz.md');
+    expect(pegaz.status).toBe('detailed');
+  });
 });
 
 describe('walka.json — rodzaje oponentów z bestiariusz/rodzaje_oponentów.md', () => {
