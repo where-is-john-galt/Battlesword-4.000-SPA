@@ -134,10 +134,11 @@
       "sourceBlob": "df7df0b9bb6b31357487b8886afe4c28992b3ef9",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T19:55:13.915Z",
-      "reason": "Pierwszy pełny audyt źródła."
+      "reason": "Pierwszy pełny audyt źródła.",
+      "startedAt": "2026-10-16T21:20:54.582Z"
     },
     "ekwipunek/przedmioty_magiczne/arcymistrzowskie/duchowa_szata_gorzkiego_rozkwitu.md": {
       "id": "9ac3a888a698583d",
@@ -820,10 +821,11 @@
       "sourceBlob": "b3e294a02d3a4778ec2df39c3aec8b263db5ad64",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.108Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-16T21:20:54.582Z"
     },
     "ekwipunek/przedmioty_magiczne/arcymistrzowskie/mocarny_nożyk_motylkowy.md": {
       "id": "901a6d40552cd8f3",
@@ -1633,6 +1635,14 @@
     "date": "2026-10-16",
     "spent": 4.219649400000001
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "f2847cddb8c6586a",
+    "taskIds": [
+      "11486bce332efd84",
+      "cc4d6d9289897228"
+    ],
+    "amount": 0.7803505999999993,
+    "date": "2026-10-16"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
