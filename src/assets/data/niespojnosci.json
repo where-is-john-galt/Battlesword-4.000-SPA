@@ -9137,6 +9137,40 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
+    "id": "wilk_brak_rozmiaru",
+    "name": "Wilk: brak pola Rozmiar",
+    "source": "bestiariusz/zwierzaki/wilk.md",
+    "kind": "missing_detail",
+    "details": "Blok statystyk Wilka, w przeciwieństwie do pozostałych zwierzaków, nie zawiera wiersza 'Rozmiar'. Rozmiar ma znaczenie mechaniczne (m.in. zajmowany obszar), a dla Wilka nie został określony.",
+    "evidence": "* Typ - Trep\n* Tagi - Zwierzak\n* Odporności - Fizyczne\n* Podatności - Ogień\n* HP - 30\n* Pancerz - Lekki",
+    "relatedSources": [
+      "bestiariusz/zwierzaki/wilk.md"
+    ],
+    "relatedEntryIds": [
+      "wilk"
+    ],
+    "status": "detailed",
+    "revision": "0f3239726b687f085593266a088c843f63d032ce"
+  },
+  {
+    "id": "wilk_wataha_horda_niejasnosc",
+    "name": "Wilk: niejasna interakcja cechy Wataha z zasadą hord",
+    "source": "bestiariusz/zwierzaki/wilk.md",
+    "kind": "ambiguity",
+    "details": "Cecha 'Wataha' zwiększa obrażenia hordy wilków o 10% za każdego członka ponad pierwszego, podczas gdy ogólna zasada hord premiuje atak o jedną dodatkową kość za każdych 2 członków. Źródła nie precyzują, czy bonus 'Watachy' sumuje się z regułą hord, ani jak traktować wartość procentową przy niecałkowitej liczbie kości.",
+    "evidence": "Jeśli Wilki atakują jako horda, obrażenia są dodatkowo zwiększone o 10% za każdego członka hordy ponad pierwszego.",
+    "relatedSources": [
+      "bestiariusz/zwierzaki/wilk.md",
+      "bestiariusz/rodzaje_oponentów.md"
+    ],
+    "relatedEntryIds": [
+      "wilk",
+      "horda"
+    ],
+    "status": "detailed",
+    "revision": "0f3239726b687f085593266a088c843f63d032ce"
+  },
+  {
     "id": "wladca_lasow_typo_miejse",
     "name": "Władca Lasów: literówka 'miejse'",
     "source": "tworzenie_postaci/klasy/władca_lasów.md",

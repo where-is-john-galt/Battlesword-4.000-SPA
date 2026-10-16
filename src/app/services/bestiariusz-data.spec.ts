@@ -424,6 +424,126 @@ describe('bestiariusz.json — zwierzaki z bestiariusz/zwierzaki/*.md', () => {
   });
 });
 
+describe('bestiariusz.json — Rumak i Wilk z bestiariusz/zwierzaki/*.md', () => {
+  it('odwzorowuje blok statystyk Rumaka zgodnie ze źródłem', () => {
+    const entry = monster('rumak');
+
+    expect(entry.name).toBe('Rumak');
+    expect(entry.source).toBe('bestiariusz/zwierzaki/rumak.md');
+    expect(entry.status).toBe('detailed');
+    expect(entry.tier).toBe('Trep');
+    expect(entry.tags).toEqual(['Zwierzak', 'Wierzchowiec']);
+    expect(entry.size).toBe('Duży (2x2)');
+    expect(entry.resistances).toEqual(['Fizyczne']);
+    expect(entry.vulnerabilities).toEqual(['Żrące']);
+    expect(entry.hp).toBe('135');
+    expect(entry.armor).toBe('Brak');
+  });
+
+  it('zachowuje cechę Wytresowany i bojowy oraz akcje Rumaka', () => {
+    const entry = monster('rumak');
+
+    expect(entry.traits).toHaveLength(1);
+    expect(entry.traits?.[0].name).toBe('Wytresowany i bojowy');
+    expect(entry.traits?.[0].description).toContain('2 sektory na akcję');
+    expect(entry.traits?.[0].description).toContain('ułatwienie do ataków kawaleryjskich');
+    expect(entry.traits?.[0].description).toContain('z jego grzbietu');
+
+    expect(entry.actions).toEqual([
+      {
+        name: 'Ugryzienie',
+        range: 'Zwarcie',
+        test: 'Unik (+2)',
+        effect: '1k10+3 fizycznych',
+      },
+      {
+        name: 'Kop',
+        range: 'Zwarcie',
+        test: 'Ostrożność (+2)',
+        effect: '1k8+3 fizycznych; 1 poziom Pokiereszowania',
+      },
+    ]);
+  });
+
+  it('odwzorowuje blok statystyk Wilka zgodnie ze źródłem', () => {
+    const entry = monster('wilk');
+
+    expect(entry.name).toBe('Wilk');
+    expect(entry.source).toBe('bestiariusz/zwierzaki/wilk.md');
+    expect(entry.status).toBe('detailed');
+    expect(entry.tier).toBe('Trep');
+    expect(entry.tags).toEqual(['Zwierzak']);
+    expect(entry.size).toBeUndefined();
+    expect(entry.resistances).toEqual(['Fizyczne']);
+    expect(entry.vulnerabilities).toEqual(['Ogień']);
+    expect(entry.hp).toBe('30');
+    expect(entry.armor).toBe('Lekki');
+  });
+
+  it('zachowuje cechę Wataha oraz akcje Wilka', () => {
+    const entry = monster('wilk');
+
+    expect(entry.traits).toHaveLength(1);
+    expect(entry.traits?.[0].name).toBe('Wataha');
+    expect(entry.traits?.[0].description).toContain('10% za każdego członka hordy ponad pierwszego');
+
+    expect(entry.actions).toEqual([
+      {
+        name: 'Ugryzienie',
+        range: 'Zwarcie',
+        test: 'Ostrożność (+2)',
+        effect: '1k10+3 fizycznych',
+      },
+      {
+        name: 'Rozszarpanie',
+        range: 'Zwarcie',
+        test: 'Wytrzymałość (+2)',
+        effect: '1k8+3 fizycznych; 1 poziom Krwawienia',
+      },
+    ]);
+  });
+
+  it('rejestruje Rumaka i Wilka w indeksie wyszukiwania', () => {
+    const rumak = indexEntry('rumak', 'monster');
+    expect(rumak.name).toBe('Rumak');
+    expect(rumak.source).toBe('bestiariusz/zwierzaki/rumak.md');
+    expect(rumak.status).toBe('detailed');
+
+    const wilk = indexEntry('wilk', 'monster');
+    expect(wilk.name).toBe('Wilk');
+    expect(wilk.source).toBe('bestiariusz/zwierzaki/wilk.md');
+    expect(wilk.status).toBe('detailed');
+  });
+
+  it('odnotowuje w Niespójnościach brak pola Rozmiar w źródle Wilka', () => {
+    const inconsistency = niespojnosci.find((item) => item.id === 'wilk_brak_rozmiaru');
+
+    expect(inconsistency).toBeDefined();
+    expect(inconsistency?.kind).toBe('missing_detail');
+    expect(inconsistency?.source).toBe('bestiariusz/zwierzaki/wilk.md');
+    expect(inconsistency?.evidence).toContain('Pancerz - Lekki');
+    expect(inconsistency?.relatedEntryIds).toContain('wilk');
+
+    const idx = indexEntry('wilk_brak_rozmiaru', 'inconsistency');
+    expect(idx.source).toBe('bestiariusz/zwierzaki/wilk.md');
+  });
+
+  it('odnotowuje w Niespójnościach niejasną interakcję cechy Wataha z zasadą hord', () => {
+    const inconsistency = niespojnosci.find((item) => item.id === 'wilk_wataha_horda_niejasnosc');
+
+    expect(inconsistency).toBeDefined();
+    expect(inconsistency?.kind).toBe('ambiguity');
+    expect(inconsistency?.source).toBe('bestiariusz/zwierzaki/wilk.md');
+    expect(inconsistency?.evidence).toContain('10% za każdego członka hordy ponad pierwszego');
+    expect(inconsistency?.relatedSources).toContain('bestiariusz/rodzaje_oponentów.md');
+    expect(inconsistency?.relatedEntryIds).toContain('wilk');
+    expect(inconsistency?.relatedEntryIds).toContain('horda');
+
+    const idx = indexEntry('wilk_wataha_horda_niejasnosc', 'inconsistency');
+    expect(idx.source).toBe('bestiariusz/zwierzaki/wilk.md');
+  });
+});
+
 describe('walka.json — rodzaje oponentów z bestiariusz/rodzaje_oponentów.md', () => {
   it('odwzorowuje wszystkie tiery jako osobne wpisy', () => {
     const tiers: [string, string][] = [
