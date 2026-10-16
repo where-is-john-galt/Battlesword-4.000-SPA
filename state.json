@@ -64,10 +64,11 @@
       "sourceBlob": "e0b73b617d447eea601de4c8520578bccd96a32f",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T19:55:13.900Z",
-      "reason": "Pierwszy pełny audyt źródła."
+      "reason": "Pierwszy pełny audyt źródła.",
+      "startedAt": "2026-10-16T01:28:31.867Z"
     },
     "bestiariusz/zwierzaki/rumak.md": {
       "id": "1aadd178de60fd74",
@@ -763,10 +764,11 @@
       "sourceBlob": "45807e6225fd9e53c2ed4af1d85d8e245eb54da7",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.101Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-16T01:28:31.867Z"
     },
     "ekwipunek/broń.md": {
       "id": "ecbee65038f1f56c",
@@ -1606,9 +1608,17 @@
     }
   },
   "daily": {
-    "date": "2026-10-15",
-    "spent": 4.6657703999999995
+    "date": "2026-10-16",
+    "spent": 0
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "3a573aa649f4045d",
+    "taskIds": [
+      "98f45c27a3576d80",
+      "42c28d8e75b0ee62"
+    ],
+    "amount": 3,
+    "date": "2026-10-16"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
