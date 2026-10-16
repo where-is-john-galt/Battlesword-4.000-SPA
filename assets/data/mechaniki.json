@@ -282,5 +282,163 @@
     "definition": "Po spełnieniu wymagań, należy wydać ilość PD wyszczególnioną przy danej umiejętności lub perku, aby je odblokować.",
     "source": "mechaniki_bazowe/rozwój_postaci.md",
     "status": "detailed"
+  },
+  {
+    "id": "cecha_wszechstronny",
+    "name": "Wszechstronny",
+    "definition": "Zapewnia darmowe użycie jednego wzmocnienia umiejętności w trakcie rundy, wyłączając bezpośrednie zwiększenie obrażeń.",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed",
+    "aliases": [
+      "Wszechtronny"
+    ],
+    "autoLink": false
+  },
+  {
+    "id": "cecha_przeciwpancerny",
+    "name": "Przeciwpancerny",
+    "definition": "Na potrzeby określenia obrażeń, zmniejsza klasę pancerza oponenta o 1.",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed",
+    "autoLink": false
+  },
+  {
+    "id": "cecha_parujacy",
+    "name": "Parujący",
+    "definition": "Jeśli postać uzbrojona w taką broń obroni się przed atakiem wykonywanym w zwarciu, automatyczie zadaje atakującemu podstawowe obrażenia.",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed",
+    "autoLink": false
+  },
+  {
+    "id": "cecha_druzgocacy",
+    "name": "Druzgocący",
+    "definition": "Pozwala raz na turę na uzyskanie przewagi w ataku kosztem 1 Staminy.",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed",
+    "autoLink": false
+  },
+  {
+    "id": "cecha_ogluszajacy",
+    "name": "Ogłuszający",
+    "definition": "Zwyczajni przeciwnicy trafieni tą bronią, zostają Oszołomieni na 1 turę. Oszołomienie elitarnych i mistrzowskich przeciwników jest również możliwe poprzez wmocnienie ataku kosztem odpowiednia 1 i 2 Staminy. Bossowie są odporni na Oszołomienie.",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed",
+    "autoLink": false
+  },
+  {
+    "id": "cecha_miazdzacy",
+    "name": "Miażdżący",
+    "definition": "Umożliwia przy każdym ataku jednorazowe nałożenie przeciwnikowi stanu Pokiereszowany kosztem 1 Staminy.",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed",
+    "autoLink": false
+  },
+  {
+    "id": "cecha_wyprzedzajacy",
+    "name": "Wyprzedzający",
+    "definition": "Jeśli postać uzbrojona w taką broń zostanie zaatakowana w zwarciu, przed wykonaniem testu, może wykorzystać swoją reakcję, aby zaatakować oponenta.",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed",
+    "autoLink": false
+  },
+  {
+    "id": "cecha_dowodzacy",
+    "name": "Dowodzący",
+    "definition": "Pozwala na wykorzystywanie Staminy do wydawania rozkazów na polu bitwy. Więcej o rozkazach w rozdziale poświęconym minionom.",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed",
+    "autoLink": false
+  },
+  {
+    "id": "cecha_magiczny",
+    "name": "Magiczny",
+    "definition": "Stamina zamienia się w Manę pozwalającą na wzmacnianie rzucanych zaklęć.",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed",
+    "autoLink": false
+  },
+  {
+    "id": "cecha_kanalizujacy",
+    "name": "Kanalizujący",
+    "definition": "Zwiększa bazowy poziom Many o ilość rozwinięć statystyki Arkana.",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed",
+    "autoLink": false
+  },
+  {
+    "id": "cecha_rabiacy",
+    "name": "Rąbiący",
+    "definition": "W przypadku ciosu krytycznego, na stałe zmniejsza klasę pancerza oponenta o 1.",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed",
+    "autoLink": false
+  },
+  {
+    "id": "cecha_wysysajacy",
+    "name": "Wysysający",
+    "definition": "Postać atakującą tą bronią odzyskuje Punkty Życia w wysokości 1/4 zadanych obrażeń.",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed",
+    "autoLink": false
+  },
+  {
+    "id": "cecha_krotki",
+    "name": "Krótki",
+    "definition": "Ataki tą bronią obarczone są utrudnieniem poza atakami z ukrycia lub zaskoczenia.",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed",
+    "autoLink": false
+  },
+  {
+    "id": "cecha_skrytobojczy",
+    "name": "Skrytobójczy",
+    "definition": "Ataki wykonywane tą bronią z ukrycia lub zaskoczenia omijają całkowicie pancerz oponenta kosztem 1 Staminy. Kosztem kolejnego 1 punktu Staminy, nakładają na przeciwnika 1 poziom Zatrucia.",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed",
+    "autoLink": false
+  },
+  {
+    "id": "cecha_krytyczny",
+    "name": "Krytyczny",
+    "definition": "Ciosy krytyczne wykonane tą bronią zapewniają 2 dodatkowe kostki w miejsce 1 za każdy maksymalny wynik wyrzucony na innych kościach.",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed",
+    "autoLink": false
+  },
+  {
+    "id": "cecha_kawaleryjski",
+    "name": "Kawaleryjski",
+    "definition": "Z broni tej można korzystać jedynie dosiadając wierzchowca.",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed",
+    "aliases": [
+      "Kawalerysjki"
+    ],
+    "autoLink": false
+  },
+  {
+    "id": "cecha_szybkostrzelny",
+    "name": "Szybkostrzelny",
+    "definition": "Kosztem 1 Staminy pozwala na zadanie obrażeń przeciwnikowi stojącemu bezpośrednio obok innego celu ataku. Pozwala również na wykonywanie dodatkowych ataków przeciwko hordom kosztem 1 Staminy / atak.",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed",
+    "autoLink": false
+  },
+  {
+    "id": "cecha_glosny",
+    "name": "Głośny",
+    "definition": "Każde użycie tej broni emituje bardzo głośne dźwięki, możliwe do zamaskowania jedynie innymi głośnymi odgłosami. Każda osoba w promieniu 100 metrów ma szansę na usłyszenie ataku.",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed",
+    "autoLink": false
+  },
+  {
+    "id": "cecha_niebezpieczny",
+    "name": "Niebezpieczny",
+    "definition": "Każdy wynik 1 na dowolnej kości obrażeń wymusza rzut 1k100. Każdy rzut niesie za sobą kumulatywną szansę 1% na eksplozję broni. W przypadku eksplozji, broń ulega zniszczeniu i zadaje wylosowane wcześniej obrażenia użytkownikowi, a nie przeciwnikowi.",
+    "source": "ekwipunek/broń.md",
+    "status": "detailed",
+    "autoLink": false
   }
 ]

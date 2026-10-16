@@ -9460,5 +9460,22 @@
     ],
     "status": "detailed",
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
+  },
+  {
+    "id": "majetnosc_rzadkosc_przedmiotow_konflikt",
+    "name": "Rzadkość przedmiotów: rozbieżne definicje Majętność vs Crafting",
+    "source": "ekwipunek/majętność.md",
+    "kind": "conflict",
+    "details": "Sekcja \"Rzadkość przedmiotów\" pojawia się w dwóch plikach i opisuje tę samą skalę (Niezwykłe/Niezwykły, Rzadkie, Potężne, Arcymistrzowskie, Mityczne, Boskie) w odmienny sposób. W ekwipunek/majętność.md poziomy opisane są opisowo przez \"kaliber\" mocy przedmiotu (np. Niezwykłe - kaliber broni +1, Rzadkie - kaliber tarczy z okiem), natomiast w mechaniki_bazowe/crafting.md te same poziomy opisane są konkretnymi wartościami mechanicznymi (np. Niezwykły +1 do statystyki pierwszorzędnej/defensywnej lub +2 drugorzędnej, Rzadki - trzy bonusy przedmiotu niezwykłego). Dodatkowo majętność.md używa liczby mnogiej (Niezwykłe), a crafting.md pojedynczej (Niezwykły). W danych kompendium mechanizm \"rzadkosc_przedmiotow\" źródłowany jest wyłącznie do mechaniki_bazowe/crafting.md.",
+    "evidence": "ekwipunek/majętność.md: \"Niezwykłe - Zapewniają jeden prosty bonus (kaliber broni +1)\"; mechaniki_bazowe/crafting.md: \"Niezwykły - Zapewnia bonus +1 do statystyki pierwszorzędnej lub defensywnej albo +2 do statystyki drugorzędnej\".",
+    "relatedSources": [
+      "ekwipunek/majętność.md",
+      "mechaniki_bazowe/crafting.md"
+    ],
+    "relatedEntryIds": [
+      "rzadkosc_przedmiotow"
+    ],
+    "status": "detailed",
+    "revision": "0f3239726b687f085593266a088c843f63d032ce"
   }
 ]
