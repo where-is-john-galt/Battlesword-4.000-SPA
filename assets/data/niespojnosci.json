@@ -2549,6 +2549,22 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
+    "id": "duchowa_szata_gorzkiego_rozkwitu_typo_odpornośc",
+    "name": "Duchowa Szata Gorzkiego Rozkwitu: literówka 'Odpornośc'",
+    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/duchowa_szata_gorzkiego_rozkwitu.md",
+    "kind": "typo",
+    "details": "W modyfikatorze zapisano \"Odpornośc\" bez polskiego znaku diakrytycznego; poprawna forma to \"Odporność\".",
+    "evidence": "* Odpornośc na obrażenia chaotyczne",
+    "relatedSources": [
+      "ekwipunek/przedmioty_magiczne/arcymistrzowskie/duchowa_szata_gorzkiego_rozkwitu.md"
+    ],
+    "relatedEntryIds": [
+      "duchowa_szata_gorzkiego_rozkwitu"
+    ],
+    "status": "detailed",
+    "revision": "0f3239726b687f085593266a088c843f63d032ce"
+  },
+  {
     "id": "duchowa_szata_gorzkiego_rozkwitu_typo_wewątrz",
     "name": "Duchowa Szata Gorzkiego Rozkwitu: literówka 'wewątrz'",
     "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/duchowa_szata_gorzkiego_rozkwitu.md",
@@ -9461,6 +9477,22 @@
     ],
     "status": "detailed",
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
+  },
+  {
+    "id": "łowca_głebin_typo_conajmniej",
+    "name": "Łowca Głebin: literówka 'conajmniej'",
+    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/łowca_głebin.md",
+    "kind": "typo",
+    "details": "W modyfikatorze zapisano \"conajmniej\" zamiast \"co najmniej\".",
+    "evidence": "* Złowione ryby są conajmniej niezwykłe",
+    "relatedSources": [
+      "ekwipunek/przedmioty_magiczne/arcymistrzowskie/łowca_głebin.md"
+    ],
+    "relatedEntryIds": [
+      "łowca_głebin"
+    ],
+    "status": "detailed",
+    "revision": "0f3239726b687f085593266a088c843f63d032ce"
   },
   {
     "id": "łowca_głebin_typo_nazwa",
