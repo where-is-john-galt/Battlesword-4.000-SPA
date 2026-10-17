@@ -842,12 +842,14 @@
       "sourceBlob": "3565a4f6f360319bbd81a4d74a53d8dd92dcd06d",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "complete",
       "attempts": 2,
       "updatedAt": "2026-10-17T11:02:33.000Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
       "startedAt": "2026-10-17T14:16:05.976Z",
-      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem.",
+      "completedAt": "2026-10-17T14:23:09.401Z",
+      "summary": "Objęto audytem oba przedmioty magiczne: Mocarny Nożyk Motylkowy i Pelerynę Wpływowego Cienia Tajemnego Mocarza. Ich dane w kompendium już wiernie odwzorowywały źródło, więc dodano testy regresyjne dokładnego odwzorowania, wpisów indeksu oraz istniejącej w Niespójnościach rozbieżności rzadkości nożyka (Potężny mimo folderu arcymistrzowskiego i patch notes)."
     },
     "ekwipunek/przedmioty_magiczne/arcymistrzowskie/peleryna_wpływowego_cienia_tajemnego_mocarza.md": {
       "id": "b848d370eaf1a0b4",
@@ -855,12 +857,14 @@
       "sourceBlob": "39d32236c77849d641db7beb7216d3ac9269126e",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "complete",
       "attempts": 2,
       "updatedAt": "2026-10-17T11:02:33.000Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
       "startedAt": "2026-10-17T14:16:05.976Z",
-      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem.",
+      "completedAt": "2026-10-17T14:23:09.401Z",
+      "summary": "Objęto audytem oba przedmioty magiczne: Mocarny Nożyk Motylkowy i Pelerynę Wpływowego Cienia Tajemnego Mocarza. Ich dane w kompendium już wiernie odwzorowywały źródło, więc dodano testy regresyjne dokładnego odwzorowania, wpisów indeksu oraz istniejącej w Niespójnościach rozbieżności rzadkości nożyka (Potężny mimo folderu arcymistrzowskiego i patch notes)."
     },
     "ekwipunek/przedmioty_magiczne/arcymistrzowskie/siła_bagna.md": {
       "id": "e8f60e2c0cf4c5f0",
@@ -1649,16 +1653,8 @@
   },
   "daily": {
     "date": "2026-10-17",
-    "spent": 2.4971756999999997
+    "spent": 3.1488329999999998
   },
-  "reservation": {
-    "taskId": "e31e2894e6833d13",
-    "taskIds": [
-      "901a6d40552cd8f3",
-      "b848d370eaf1a0b4"
-    ],
-    "amount": 2.5028243000000003,
-    "date": "2026-10-17"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
