@@ -149,10 +149,11 @@
       "sourceBlob": "680bb46b7c310cfe47381d10ca6bb75dd37c57dd",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T19:55:13.918Z",
-      "reason": "Pierwszy pełny audyt źródła."
+      "reason": "Pierwszy pełny audyt źródła.",
+      "startedAt": "2026-10-17T05:40:32.884Z"
     },
     "ekwipunek/przedmioty_magiczne/boskie/krew_maga.md": {
       "id": "360a867ee0c11cbe",
@@ -905,10 +906,11 @@
       "sourceBlob": "74e8d91d0029043361d9d2a4d58886e2d553d2eb",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.126Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-17T05:40:32.884Z"
     },
     "ekwipunek/przedmioty_magiczne/boskie/łowca_głów.md": {
       "id": "083c9055fc593a30",
@@ -1641,6 +1643,14 @@
     "date": "2026-10-17",
     "spent": 0.679593
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "3e151ba32436dda7",
+    "taskIds": [
+      "9ac3a888a698583d",
+      "ee0ea1bf9adecbfa"
+    ],
+    "amount": 3,
+    "date": "2026-10-17"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
