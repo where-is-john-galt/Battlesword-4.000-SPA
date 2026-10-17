@@ -872,11 +872,11 @@
       "sourceBlob": "6a189a208aaf76157de521825c1cd2adfe8c5ad7",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 1,
+      "status": "running",
+      "attempts": 2,
       "updatedAt": "2026-10-17T17:28:19.910Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-17T17:20:39.748Z",
+      "startedAt": "2026-10-17T20:43:38.603Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/arcymistrzowskie/warkocz_środka_nocy.md": {
@@ -885,11 +885,11 @@
       "sourceBlob": "5169d55ff7dc80bf6cf9e238a01ab3dbbe979b07",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 1,
+      "status": "running",
+      "attempts": 2,
       "updatedAt": "2026-10-17T17:28:19.910Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-17T17:20:39.748Z",
+      "startedAt": "2026-10-17T20:43:38.603Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/arcymistrzowskie/wrzoścce_hazardowego_biegu.md": {
@@ -1659,6 +1659,14 @@
     "date": "2026-10-17",
     "spent": 4.317368999999999
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "8f3845fec8299bdb",
+    "taskIds": [
+      "e8f60e2c0cf4c5f0",
+      "42d128d08ea61475"
+    ],
+    "amount": 0.6826310000000007,
+    "date": "2026-10-17"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
