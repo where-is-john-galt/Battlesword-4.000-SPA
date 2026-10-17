@@ -218,3 +218,130 @@ describe('przedmioty_magiczne.json — audyt Brązowej Brody i Cewki Liminalnej'
     expect(indexed?.source).toBe(BRONZE_BEARD_SOURCE);
   });
 });
+
+const SPIRIT_ROBE_SOURCE =
+  'ekwipunek/przedmioty_magiczne/arcymistrzowskie/duchowa_szata_gorzkiego_rozkwitu.md';
+const DEPTH_HUNTER_SOURCE = 'ekwipunek/przedmioty_magiczne/arcymistrzowskie/łowca_głebin.md';
+
+describe('przedmioty_magiczne.json — audyt Duchowej Szaty i Łowcy Głebin', () => {
+  it('odwzorowuje Duchową Szatę Gorzkiego Rozkwitu dokładnie tak, jak w źródle', () => {
+    expect(magicItem('duchowa_szata_gorzkiego_rozkwitu')).toEqual({
+      id: 'duchowa_szata_gorzkiego_rozkwitu',
+      name: 'Duchowa Szata Gorzkiego Rozkwitu',
+      source: SPIRIT_ROBE_SOURCE,
+      status: 'detailed',
+      type: 'Pancerz',
+      rarity: 'Arcymistrzowskie',
+      barrier: 39,
+      requirements: 'Inteligencja 8',
+      modifiers: [
+        'Inteligencja +1',
+        'Spryt +1',
+        'Odpornośc na obrażenia chaotyczne',
+        '25% Max HP zostaje zamienione na Barierę',
+        '25% zwiększona Bariera',
+        'Połowa leczenia odnawia Barierę zamiast HP',
+        'Flaszki Many regenerują również Barierę',
+      ],
+      description:
+        'Wiara rozkwita mnogo na krawędzi śmierci.\n\nDusza nie może rozkwitać wewątrz wątpiącego umysłu.',
+    });
+  });
+
+  it('zachowuje literówki "Odpornośc" i "wewątrz" ze źródła Duchowej Szaty', () => {
+    const { modifiers, description } = magicItem('duchowa_szata_gorzkiego_rozkwitu');
+
+    expect(modifiers).toContain('Odpornośc na obrażenia chaotyczne');
+    expect(description).toContain('wewątrz wątpiącego umysłu');
+  });
+
+  it('odwzorowuje Łowcę Głebin bez uzupełniania brakującego opisu', () => {
+    expect(magicItem('łowca_głebin')).toEqual({
+      id: 'łowca_głebin',
+      name: 'Łowca Głebin',
+      source: DEPTH_HUNTER_SOURCE,
+      status: 'detailed',
+      type: 'Broń',
+      baseItem: 'Wędka',
+      rarity: 'Arcymistrzowskie',
+      modifiers: [
+        'Łowienie ryb +10',
+        'Podwaja szansę na wyłowienie arcymistrzowskiej ryby',
+        'Złowione ryby są conajmniej niezwykłe',
+      ],
+    });
+  });
+
+  it('rejestruje oba przedmioty w indeksie wyszukiwania', () => {
+    const robe = indexEntry('duchowa_szata_gorzkiego_rozkwitu');
+    expect(robe.name).toBe('Duchowa Szata Gorzkiego Rozkwitu');
+    expect(robe.source).toBe(SPIRIT_ROBE_SOURCE);
+
+    const hunter = indexEntry('łowca_głebin');
+    expect(hunter.name).toBe('Łowca Głebin');
+    expect(hunter.source).toBe(DEPTH_HUNTER_SOURCE);
+  });
+
+  it('odnotowuje braki i nietypowy typ obu przedmiotów w Niespójnościach', () => {
+    const missingArmor = inconsistencies.find(
+      (entry) => entry.id === 'duchowa_szata_gorzkiego_rozkwitu_brak_pancerza',
+    );
+    expect(missingArmor).toMatchObject({
+      kind: 'missing_detail',
+      source: SPIRIT_ROBE_SOURCE,
+      evidence: '* Typ - Pancerz\n* Bariera - 39',
+      relatedEntryIds: ['duchowa_szata_gorzkiego_rozkwitu'],
+    });
+
+    const missingDescription = inconsistencies.find(
+      (entry) => entry.id === 'łowca_głebin_brak_opisu',
+    );
+    expect(missingDescription).toMatchObject({
+      kind: 'missing_detail',
+      source: DEPTH_HUNTER_SOURCE,
+      relatedEntryIds: ['łowca_głebin'],
+    });
+
+    const rodType = inconsistencies.find((entry) => entry.id === 'łowca_głebin_typ_wedka');
+    expect(rodType).toMatchObject({
+      kind: 'other',
+      source: DEPTH_HUNTER_SOURCE,
+      evidence: '* Typ - Wędka',
+      relatedEntryIds: ['łowca_głebin'],
+    });
+    expect(rodType?.relatedSources).toContain('mechaniki_bazowe/crafting.md');
+  });
+
+  it('odnotowuje wszystkie literówki z obu źródeł w Niespójnościach i indeksie', () => {
+    const typoIds = [
+      'duchowa_szata_gorzkiego_rozkwitu_typo_odpornośc',
+      'duchowa_szata_gorzkiego_rozkwitu_typo_wewątrz',
+      'łowca_głebin_typo_conajmniej',
+      'łowca_głebin_typo_nazwa',
+    ];
+
+    for (const id of typoIds) {
+      const typo = inconsistencies.find((entry) => entry.id === id);
+      expect(typo).toBeDefined();
+      expect(typo?.kind).toBe('typo');
+      expect(typo?.status).toBe('detailed');
+      expect(typo?.source).toBe(
+        id.startsWith('duchowa_szata') ? SPIRIT_ROBE_SOURCE : DEPTH_HUNTER_SOURCE,
+      );
+
+      const indexed = index.find((entry) => entry.type === 'inconsistency' && entry.id === id);
+      expect(indexed).toBeDefined();
+      expect(indexed?.source).toBe(typo?.source);
+      expect(indexed?.name).toBe(typo?.name);
+    }
+
+    expect(
+      inconsistencies.find(
+        (entry) => entry.id === 'duchowa_szata_gorzkiego_rozkwitu_typo_odpornośc',
+      )?.evidence,
+    ).toBe('* Odpornośc na obrażenia chaotyczne');
+    expect(
+      inconsistencies.find((entry) => entry.id === 'łowca_głebin_typo_conajmniej')?.evidence,
+    ).toBe('* Złowione ryby są conajmniej niezwykłe');
+  });
+});
