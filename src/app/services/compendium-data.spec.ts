@@ -345,3 +345,96 @@ describe('przedmioty_magiczne.json — audyt Duchowej Szaty i Łowcy Głebin', (
     ).toBe('* Złowione ryby są conajmniej niezwykłe');
   });
 });
+
+const BUTTERFLY_KNIFE_SOURCE =
+  'ekwipunek/przedmioty_magiczne/arcymistrzowskie/mocarny_nożyk_motylkowy.md';
+const INFLUENTIAL_CLOAK_SOURCE =
+  'ekwipunek/przedmioty_magiczne/arcymistrzowskie/peleryna_wpływowego_cienia_tajemnego_mocarza.md';
+
+describe('przedmioty_magiczne.json — audyt Mocarnego Nożyka Motylkowego i Peleryny Wpływowego Cienia', () => {
+  it('odwzorowuje Mocarny Nożyk Motylkowy dokładnie tak, jak w źródle', () => {
+    expect(magicItem('mocarny_nożyk_motylkowy')).toEqual({
+      id: 'mocarny_nożyk_motylkowy',
+      name: 'Mocarny Nożyk Motylkowy',
+      source: BUTTERFLY_KNIFE_SOURCE,
+      status: 'detailed',
+      type: 'Broń',
+      baseItem: 'Sztylet sprężynowy',
+      rarity: 'Potężne',
+      damage: '1k4',
+      usage: 'Jednoręczna',
+      baseStat: 'Zręczność',
+      specialFeatures: ['Skrytobójczy, Krótki, Krytyczny'],
+      modifiers: [
+        'Siła +1',
+        'Zręczność +1',
+        'Zwiększa obrażenia dodatkowo o 10% za każdy cios krytyczny',
+        'Jeśli w ciągu rundy broń zostanie użyta do zadania ciosu, na jej koniec postać zyskuje małe leczenie (25%+1d4)',
+      ],
+      description:
+        'Jestem malarzem, a karmazyn to moja ulubiona farba.\n\nPotężna bestia oznacza potężną ucztę.',
+    });
+  });
+
+  it('zachowuje zapis leczenia "(25%+1d4)" bez normalizowania go do innej formuły', () => {
+    const { modifiers } = magicItem('mocarny_nożyk_motylkowy');
+
+    expect(modifiers).toContain(
+      'Jeśli w ciągu rundy broń zostanie użyta do zadania ciosu, na jej koniec postać zyskuje małe leczenie (25%+1d4)',
+    );
+  });
+
+  it('odwzorowuje Pelerynę Wpływowego Cienia Tajemnego Mocarza dokładnie tak, jak w źródle', () => {
+    expect(magicItem('peleryna_wpływowego_cienia_tajemnego_mocarza')).toEqual({
+      id: 'peleryna_wpływowego_cienia_tajemnego_mocarza',
+      name: 'Peleryna Wpływowego Cienia Tajemnego Mocarza',
+      source: INFLUENTIAL_CLOAK_SOURCE,
+      status: 'detailed',
+      type: 'Peleryna',
+      rarity: 'Arcymistrzowskie',
+      modifiers: ['Skradanie +6', 'Atletyka +4', 'Przekonywanie +4', 'Arkana +2'],
+      description:
+        'Uszyty z natłuszczonej skóry bagiennego węża, farbowany korą namorzynów tak, by w mroku i szuwarach zlewał się z otoczeniem. Podszewka kryje dziesiątki potajemnych kieszeni - na kontrabandę, listy polecające i drobne fetysze kupione od zielarzy. Ten, kto go nosi, potrafi zniknąć w tłumie równie łatwo, jak w trzcinach, a jego słowa mają dziwną moc przekonywania. Mówi się, że farbę do tego płaszcza mieszano z odrobiną żywicy nasączonej Eterem.',
+    });
+  });
+
+  it('rejestruje oba przedmioty w indeksie wyszukiwania', () => {
+    const knife = indexEntry('mocarny_nożyk_motylkowy');
+    expect(knife.name).toBe('Mocarny Nożyk Motylkowy');
+    expect(knife.source).toBe(BUTTERFLY_KNIFE_SOURCE);
+
+    const cloak = indexEntry('peleryna_wpływowego_cienia_tajemnego_mocarza');
+    expect(cloak.name).toBe('Peleryna Wpływowego Cienia Tajemnego Mocarza');
+    expect(cloak.source).toBe(INFLUENTIAL_CLOAK_SOURCE);
+  });
+
+  it('odnotowuje rozbieżność rzadkości nożyka z folderem i patch notes w Niespójnościach', () => {
+    const conflict = inconsistencies.find(
+      (entry) => entry.id === 'mocarny_nożyk_motylkowy_rzadkosc_niezgodna_z_folderem',
+    );
+
+    expect(conflict).toMatchObject({
+      kind: 'conflict',
+      source: BUTTERFLY_KNIFE_SOURCE,
+      evidence: '* Rzadkość - Potężny',
+      relatedEntryIds: ['mocarny_nożyk_motylkowy'],
+    });
+    expect(conflict?.details).toContain('katalogu arcymistrzowskich');
+    expect(conflict?.details).toContain('rzadkość Potężny');
+    expect(conflict?.relatedSources).toEqual([BUTTERFLY_KNIFE_SOURCE, 'patch_notes.md']);
+  });
+
+  it('pokazuje rozbieżność rzadkości nożyka w indeksie wyszukiwania', () => {
+    const indexed = index.find(
+      (entry) =>
+        entry.type === 'inconsistency' &&
+        entry.id === 'mocarny_nożyk_motylkowy_rzadkosc_niezgodna_z_folderem',
+    );
+
+    expect(indexed).toBeDefined();
+    expect(indexed?.name).toBe(
+      'Mocarny Nożyk Motylkowy: rzadkość Potężny mimo folderu Arcymistrzowskie',
+    );
+    expect(indexed?.source).toBe(BUTTERFLY_KNIFE_SOURCE);
+  });
+});
