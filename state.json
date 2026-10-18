@@ -974,10 +974,11 @@
       "sourceBlob": "a1091e18e8331806e5f9faf05e1d37ef148c2b3c",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.133Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-18T18:41:52.849Z"
     },
     "ekwipunek/przedmioty_magiczne/mityczny/nagolenniki_ze_smoczych_kości.md": {
       "id": "25e261d07d4fca6a",
@@ -985,10 +986,11 @@
       "sourceBlob": "911bc12e6573dc07634cef558c06f696bfa4ef51",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.136Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-18T18:41:52.849Z"
     },
     "ekwipunek/przedmioty_magiczne/mityczny/zaprzysiężona_framuga_dębowego_oporu.md": {
       "id": "8e43bbb4df975d64",
@@ -1677,6 +1679,14 @@
     "date": "2026-10-18",
     "spent": 3.4142979000000007
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "c59fccda6ee92410",
+    "taskIds": [
+      "750029ded5c33598",
+      "25e261d07d4fca6a"
+    ],
+    "amount": 1.5857020999999993,
+    "date": "2026-10-18"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
