@@ -438,3 +438,83 @@ describe('przedmioty_magiczne.json — audyt Mocarnego Nożyka Motylkowego i Pel
     expect(indexed?.source).toBe(BUTTERFLY_KNIFE_SOURCE);
   });
 });
+
+const HAZARD_BOOTS_SOURCE =
+  'ekwipunek/przedmioty_magiczne/arcymistrzowskie/wrzoścce_hazardowego_biegu.md';
+const FORGOTTEN_GUARDIAN_SOURCE =
+  'ekwipunek/przedmioty_magiczne/arcymistrzowskie/zapomniany_strażnik.md';
+
+describe('przedmioty_magiczne.json — audyt Wrzoścce Hazardowego Biegu i Zapomnianego Strażnika', () => {
+  it('odwzorowuje Wrzoścce Hazardowego Biegu dokładnie tak, jak w źródle', () => {
+    expect(magicItem('wrzoścce_hazardowego_biegu')).toEqual({
+      id: 'wrzoścce_hazardowego_biegu',
+      name: 'Wrzoścce Hazardowego Biegu',
+      source: HAZARD_BOOTS_SOURCE,
+      status: 'detailed',
+      type: 'Buty',
+      rarity: 'Arcymistrzowskie',
+      modifiers: [
+        'Zwiększa ruch do dwóch sektorów w ramach jednej akcji',
+        'Max HP +5',
+        'Podwaja redukcję wszystkich statusów',
+        'Atakujący również otrzymuje 100% zadanych noszącemu obrażeń',
+        'Akrobatyka +2',
+        'Utrudnienie w testach Szczęścia na koniec sesji',
+        'Unik +1',
+        'Odporność na fizyczne obrażenia',
+        'Każde utracone 5 HP w trakcie walki pozwala na darmowe przesunięcie się o 1 sektor do końca walki',
+      ],
+      description:
+        'Druidzi kroczą po Lesie Altdris bez strachu.\n\nWszystkie twoje jutra są przed tobą, nieznane i splątane aż do ostatniego.',
+    });
+  });
+
+  it('odwzorowuje Zapomnianego Strażnika bez przenoszenia Bariery z modyfikatorów do statystyk', () => {
+    expect(magicItem('zapomniany_strażnik')).toEqual({
+      id: 'zapomniany_strażnik',
+      name: 'Zapomniany Strażnik',
+      source: FORGOTTEN_GUARDIAN_SOURCE,
+      status: 'detailed',
+      type: 'Pancerz',
+      rarity: 'Arcymistrzowskie',
+      armor: 9,
+      requirements: 'Siła 14',
+      modifiers: ['Bariera 39', '+2 do wszystkich statystyk defensywnych'],
+      description:
+        'Zbroja została wykonana z poskręcanych i nachodzących na siebie gałężi wierzby. Mimo to pancerz jest równie wytrzymały co adamantyt. Dar od Bogini, zagubiony w Ciemności. Brąz nuci. Tkanina wzdycha. Żyjące części niej, pragnące by istnieć.',
+    });
+  });
+
+  it('rejestruje oba przedmioty w indeksie wyszukiwania', () => {
+    const boots = indexEntry('wrzoścce_hazardowego_biegu');
+    expect(boots.name).toBe('Wrzoścce Hazardowego Biegu');
+    expect(boots.source).toBe(HAZARD_BOOTS_SOURCE);
+
+    const guardian = indexEntry('zapomniany_strażnik');
+    expect(guardian.name).toBe('Zapomniany Strażnik');
+    expect(guardian.source).toBe(FORGOTTEN_GUARDIAN_SOURCE);
+  });
+
+  it('odnotowuje literówki z obu źródeł w Niespójnościach i indeksie', () => {
+    const typoIds = ['wrzoścce_hazardowego_biegu_typo_nazwa', 'zapomniany_strażnik_typo_gałężi'];
+
+    for (const id of typoIds) {
+      const typo = inconsistencies.find((entry) => entry.id === id);
+      expect(typo).toBeDefined();
+      expect(typo?.kind).toBe('typo');
+      expect(typo?.status).toBe('detailed');
+      expect(typo?.source).toBe(
+        id.startsWith('wrzoścce') ? HAZARD_BOOTS_SOURCE : FORGOTTEN_GUARDIAN_SOURCE,
+      );
+
+      const indexed = index.find((entry) => entry.type === 'inconsistency' && entry.id === id);
+      expect(indexed).toBeDefined();
+      expect(indexed?.source).toBe(typo?.source);
+      expect(indexed?.name).toBe(typo?.name);
+    }
+
+    expect(
+      inconsistencies.find((entry) => entry.id === 'zapomniany_strażnik_typo_gałężi')?.evidence,
+    ).toBe('Zbroja została wykonana z poskręcanych i nachodzących na siebie gałężi wierzby.');
+  });
+});

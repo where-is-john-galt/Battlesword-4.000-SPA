@@ -9300,6 +9300,22 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
+    "id": "zapomniany_strażnik_typo_gałężi",
+    "name": "Zapomniany Strażnik: literówka 'gałężi'",
+    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/zapomniany_strażnik.md",
+    "kind": "typo",
+    "details": "W opisie zapisano \"gałężi\" zamiast \"gałęzi\".",
+    "evidence": "Zbroja została wykonana z poskręcanych i nachodzących na siebie gałężi wierzby.",
+    "relatedSources": [
+      "ekwipunek/przedmioty_magiczne/arcymistrzowskie/zapomniany_strażnik.md"
+    ],
+    "relatedEntryIds": [
+      "zapomniany_strażnik"
+    ],
+    "status": "detailed",
+    "revision": "0f3239726b687f085593266a088c843f63d032ce"
+  },
+  {
     "id": "zaprzysiężona_framuga_energia",
     "name": "Zaprzysiężona Framuga Dębowego Oporu: generowanie Energii",
     "source": "ekwipunek/przedmioty_magiczne/mityczny/zaprzysiężona_framuga_dębowego_oporu.md",

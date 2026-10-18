@@ -5103,6 +5103,13 @@
     "status": "detailed"
   },
   {
+    "id": "zapomniany_strażnik_typo_gałężi",
+    "type": "inconsistency",
+    "name": "Zapomniany Strażnik: literówka 'gałężi'",
+    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/zapomniany_strażnik.md",
+    "status": "detailed"
+  },
+  {
     "id": "zaprzysiężona_framuga_energia",
     "type": "inconsistency",
     "name": "Zaprzysiężona Framuga Dębowego Oporu: generowanie Energii",
