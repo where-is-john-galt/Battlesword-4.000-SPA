@@ -177,11 +177,13 @@
       "sourceBlob": "544d0f9e253c7f90539deab53757704bd27039fa",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit",
-      "status": "running",
+      "status": "complete",
       "attempts": 1,
       "updatedAt": "2026-10-14T19:55:13.923Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-10-18T15:58:11.055Z"
+      "startedAt": "2026-10-18T15:58:11.055Z",
+      "completedAt": "2026-10-18T16:04:42.574Z",
+      "summary": "Audyt obu mythicznych przedmiotów potwierdził, że ich wpisy są już wiernie odwzorowane w danych, wraz z literówkami źródła. Uzupełniono jedynie brakującą Niespójność o literówce „Odpornośc” w Bezczynnym Chwycie Północnej Zimy, dodano odpowiadający jej wpis w indeksie wyszukiwania oraz testy pilnujące pełnej zgodności obu przedmiotów, ich rejestracji i kompletności odnotowanych niespójności."
     },
     "ekwipunek/przedmioty_magiczne/rzadkie/cichy_klucz.md": {
       "id": "01789e27cb155e19",
@@ -958,11 +960,13 @@
       "sourceBlob": "420cbd7f34150c889c34a456c6f9541c99d02b48",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "complete",
       "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.131Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-18T15:58:11.055Z"
+      "startedAt": "2026-10-18T15:58:11.055Z",
+      "completedAt": "2026-10-18T16:04:42.574Z",
+      "summary": "Audyt obu mythicznych przedmiotów potwierdził, że ich wpisy są już wiernie odwzorowane w danych, wraz z literówkami źródła. Uzupełniono jedynie brakującą Niespójność o literówce „Odpornośc” w Bezczynnym Chwycie Północnej Zimy, dodano odpowiadający jej wpis w indeksie wyszukiwania oraz testy pilnujące pełnej zgodności obu przedmiotów, ich rejestracji i kompletności odnotowanych niespójności."
     },
     "ekwipunek/przedmioty_magiczne/mityczny/korona_ze_smoczych_zębów.md": {
       "id": "750029ded5c33598",
@@ -1671,16 +1675,8 @@
   },
   "daily": {
     "date": "2026-10-18",
-    "spent": 2.9100210000000004
+    "spent": 3.4142979000000007
   },
-  "reservation": {
-    "taskId": "ae02f74cb9d5c82d",
-    "taskIds": [
-      "1a02e74d4da6ef1b",
-      "8f0fff49d325852e"
-    ],
-    "amount": 2.0899789999999996,
-    "date": "2026-10-18"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
