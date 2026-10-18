@@ -736,3 +736,106 @@ describe('przedmioty_magiczne.json — audyt Bezczynnego Chwytu Północnej Zimy
     ).toBe('* Akcja: Odepchnięcie wszystkich przeciwników do sąsiednich sektrorów');
   });
 });
+
+const DRAGON_CROWN_SOURCE = 'ekwipunek/przedmioty_magiczne/mityczny/korona_ze_smoczych_zębów.md';
+const DRAGON_GREAVES_SOURCE =
+  'ekwipunek/przedmioty_magiczne/mityczny/nagolenniki_ze_smoczych_kości.md';
+
+describe('przedmioty_magiczne.json — audyt Korony ze Smoczych Zębów i Nagolenników ze Smoczych Kości', () => {
+  it('odwzorowuje Koronę ze Smoczych Zębów dokładnie tak, jak w źródle', () => {
+    expect(magicItem('korona_ze_smoczych_zębów')).toEqual({
+      id: 'korona_ze_smoczych_zębów',
+      name: 'Korona ze Smoczych Zębów',
+      source: DRAGON_CROWN_SOURCE,
+      status: 'detailed',
+      type: 'Hełm',
+      rarity: 'Mityczne',
+      modifiers: ['Inteligencja +2', 'Bazowa Mana +3'],
+      description:
+        'Korona wykonana jest z zielonej smoczej łuski, która przyczepiona jest do stelażu ze smoczych zębów. W stalażu oprawiono również dodatkowo elegancko rubiny.',
+    });
+  });
+
+  it('odwzorowuje Nagolenniki ze Smoczych Kości dokładnie tak, jak w źródle', () => {
+    expect(magicItem('nagolenniki_ze_smoczych_kości')).toEqual({
+      id: 'nagolenniki_ze_smoczych_kości',
+      name: 'Nagolenniki ze Smoczych Kości',
+      source: DRAGON_GREAVES_SOURCE,
+      status: 'detailed',
+      type: 'Buty',
+      rarity: 'Mityczne',
+      modifiers: [
+        'Zwiększa szybkość przemieszczania się do 2 sektorów w ramach jednej akcji',
+        'Bazowa Mana +3',
+      ],
+      description:
+        'Skórzane buty z wysokimi cholewami zostały wmocnione grubymi, smoczymi kościami, chroniąc golenie użytkownika. Buty są niezwykle wytrzymałe i lekkie, umożliwiając szybkie przemieszczenie oraz czerpanie energii z ziemi.',
+    });
+  });
+
+  it('zachowuje literówki obu źródeł bez ich poprawiania', () => {
+    expect(magicItem('korona_ze_smoczych_zębów').description).toContain('W stalażu oprawiono');
+    expect(magicItem('nagolenniki_ze_smoczych_kości').description).toContain(
+      'zostały wmocnione grubymi, smoczymi kościami',
+    );
+  });
+
+  it('rejestruje oba przedmioty w indeksie wyszukiwania', () => {
+    const crown = indexEntry('korona_ze_smoczych_zębów');
+    expect(crown.name).toBe('Korona ze Smoczych Zębów');
+    expect(crown.source).toBe(DRAGON_CROWN_SOURCE);
+    expect(crown.status).toBe('detailed');
+
+    const greaves = indexEntry('nagolenniki_ze_smoczych_kości');
+    expect(greaves.name).toBe('Nagolenniki ze Smoczych Kości');
+    expect(greaves.source).toBe(DRAGON_GREAVES_SOURCE);
+    expect(greaves.status).toBe('detailed');
+  });
+
+  it('odnotowuje adnotacje o braku identyfikacji oraz literówki w Niespójnościach i indeksie', () => {
+    const expected = [
+      {
+        id: 'korona_ze_smoczych_zębów_niezidentyfikowana',
+        kind: 'missing_detail',
+        source: DRAGON_CROWN_SOURCE,
+        evidence: '**Niezidentyfikowana**',
+        relatedEntryIds: ['korona_ze_smoczych_zębów'],
+      },
+      {
+        id: 'korona_ze_smoczych_zębów_typo_stelażu',
+        kind: 'typo',
+        source: DRAGON_CROWN_SOURCE,
+        evidence: 'W stalażu oprawiono również dodatkowo elegancko rubiny.',
+        relatedEntryIds: ['korona_ze_smoczych_zębów'],
+      },
+      {
+        id: 'nagolenniki_ze_smoczych_kości_niezidentyfikowane',
+        kind: 'missing_detail',
+        source: DRAGON_GREAVES_SOURCE,
+        evidence: '**Niezidentyfikowane**',
+        relatedEntryIds: ['nagolenniki_ze_smoczych_kości'],
+      },
+      {
+        id: 'nagolenniki_ze_smoczych_kości_typo_wmocnione',
+        kind: 'typo',
+        source: DRAGON_GREAVES_SOURCE,
+        evidence: 'zostały wmocnione grubymi, smoczymi kościami',
+        relatedEntryIds: ['nagolenniki_ze_smoczych_kości'],
+      },
+    ];
+
+    for (const expectedEntry of expected) {
+      const inconsistency = inconsistencies.find((entry) => entry.id === expectedEntry.id);
+      expect(inconsistency).toMatchObject(expectedEntry);
+      expect(inconsistency?.status).toBe('detailed');
+      expect(inconsistency?.revision).not.toBe('');
+
+      const indexed = index.find(
+        (entry) => entry.type === 'inconsistency' && entry.id === expectedEntry.id,
+      );
+      expect(indexed).toBeDefined();
+      expect(indexed?.source).toBe(expectedEntry.source);
+      expect(indexed?.name).toBe(inconsistency?.name);
+    }
+  });
+});
