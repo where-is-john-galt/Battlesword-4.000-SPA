@@ -611,3 +611,128 @@ describe('przedmioty_magiczne.json — audyt Krew Maga i Łowcy Głów', () => {
     ).toBe('Pas wyposażony są jest w igły, podajniki i pompy');
   });
 });
+
+const FROZEN_GRIP_SOURCE =
+  'ekwipunek/przedmioty_magiczne/mityczny/bezczynny_chwyt_północnej_zimy.md';
+const DIVINE_WILL_SOURCE = 'ekwipunek/przedmioty_magiczne/mityczny/boska_wola.md';
+
+describe('przedmioty_magiczne.json — audyt Bezczynnego Chwytu Północnej Zimy i Boskiej Woli', () => {
+  it('odwzorowuje Bezczynny Chwyt Północnej Zimy dokładnie tak, jak w źródle', () => {
+    expect(magicItem('bezczynny_chwyt_północnej_zimy')).toEqual({
+      id: 'bezczynny_chwyt_północnej_zimy',
+      name: 'Bezczynny Chwyt Północnej Zimy',
+      source: FROZEN_GRIP_SOURCE,
+      status: 'detailed',
+      type: 'Rękawice',
+      rarity: 'Mityczne',
+      modifiers: [
+        'Zręczność +1',
+        'Unik +1',
+        'Zwinne Dłonie +2',
+        'Zadawane obrażenia fizyzne zwiększone są o 2k10%',
+        'Zwiększa zadawane obrażenia o 5% za każdy cios krytyczny',
+        'Ciosy krytyczne generują o 1 kostkę obrażeń więcje niż zwykle',
+        'Zadawane obrażenia od zimna zwiększone są o 2k10%',
+        'Odpornośc na obrażenia od zimna',
+        'Podwaja nakładane poziomy Zamrożenia',
+        'Pozwala na zyskanie dodatkowej akcji kosztem 25% bazowej Energii',
+        'Bazowa Energia +1',
+      ],
+      description:
+        'Walcz z zapałem Pradawnych.\n\nPo erupcji, niebo zszarzało i zaczęło spadać, a potem nadszedł mróz...\n\nDiabeł zawsze znajdzie zajęcie dla bezczynnych dłoni.',
+    });
+  });
+
+  it('odwzorowuje Boską Wolę dokładnie tak, jak w źródle', () => {
+    expect(magicItem('boska_wola')).toEqual({
+      id: 'boska_wola',
+      name: 'Boska Wola',
+      source: DIVINE_WILL_SOURCE,
+      status: 'detailed',
+      type: 'Peleryna',
+      rarity: 'Mityczne',
+      modifiers: [
+        'Skradanie +4',
+        'Wytrzymałość +2',
+        'Pancerz +3',
+        'Zastraszanie +4',
+        'Ostrożność +1',
+        'Jeździectwo +4',
+      ],
+      corrupted: [
+        'Akcja: Odepchnięcie wszystkich przeciwników do sąsiednich sektrorów',
+        'Każde użycie spaczonego modyfikatora powoduje zyskanie 1k4 poziomów Krwawienia',
+      ],
+      description:
+        'Śmierć będzie twym kompasem.\n\nDzierż boską wolę jako swą pochodnię, nią niszcz cienie.\n\nMały umysł łatwo wypełnić wiarą.',
+    });
+  });
+
+  it('zachowuje literówki obu źródeł bez ich poprawiania', () => {
+    const frozenGrip = magicItem('bezczynny_chwyt_północnej_zimy');
+    expect(frozenGrip.modifiers).toContain('Zadawane obrażenia fizyzne zwiększone są o 2k10%');
+    expect(frozenGrip.modifiers).toContain(
+      'Ciosy krytyczne generują o 1 kostkę obrażeń więcje niż zwykle',
+    );
+    expect(frozenGrip.modifiers).toContain('Odpornośc na obrażenia od zimna');
+
+    expect(magicItem('boska_wola').corrupted).toContain(
+      'Akcja: Odepchnięcie wszystkich przeciwników do sąsiednich sektrorów',
+    );
+  });
+
+  it('rejestruje oba przedmioty w indeksie wyszukiwania', () => {
+    const frozenGrip = indexEntry('bezczynny_chwyt_północnej_zimy');
+    expect(frozenGrip.name).toBe('Bezczynny Chwyt Północnej Zimy');
+    expect(frozenGrip.source).toBe(FROZEN_GRIP_SOURCE);
+
+    const divineWill = indexEntry('boska_wola');
+    expect(divineWill.name).toBe('Boska Wola');
+    expect(divineWill.source).toBe(DIVINE_WILL_SOURCE);
+  });
+
+  it('odnotowuje odwołanie do Energii oraz wszystkie literówki z obu źródeł', () => {
+    const ambiguity = inconsistencies.find(
+      (entry) => entry.id === 'bezczynny_chwyt_północnej_zimy_energia',
+    );
+    expect(ambiguity).toMatchObject({
+      kind: 'ambiguity',
+      source: FROZEN_GRIP_SOURCE,
+      evidence: '* Pozwala na zyskanie dodatkowej akcji kosztem 25% bazowej Energii',
+      relatedEntryIds: ['bezczynny_chwyt_północnej_zimy'],
+    });
+
+    const typoIds = [
+      'bezczynny_chwyt_północnej_zimy_typo_fizyzne',
+      'bezczynny_chwyt_północnej_zimy_typo_więcje',
+      'bezczynny_chwyt_północnej_zimy_typo_odpornośc',
+      'boska_wola_typo_sektrorów',
+    ];
+
+    for (const id of typoIds) {
+      const typo = inconsistencies.find((entry) => entry.id === id);
+      expect(typo).toBeDefined();
+      expect(typo?.kind).toBe('typo');
+      expect(typo?.status).toBe('detailed');
+      expect(typo?.source).toBe(
+        id.startsWith('boska_wola') ? DIVINE_WILL_SOURCE : FROZEN_GRIP_SOURCE,
+      );
+      expect(typo?.revision).not.toBe('');
+
+      const indexed = index.find((entry) => entry.type === 'inconsistency' && entry.id === id);
+      expect(indexed).toBeDefined();
+      expect(indexed?.source).toBe(typo?.source);
+      expect(indexed?.name).toBe(typo?.name);
+    }
+
+    expect(
+      inconsistencies.find((entry) => entry.id === 'bezczynny_chwyt_północnej_zimy_typo_odpornośc'),
+    ).toMatchObject({
+      evidence: '* Odpornośc na obrażenia od zimna',
+      relatedEntryIds: ['bezczynny_chwyt_północnej_zimy'],
+    });
+    expect(
+      inconsistencies.find((entry) => entry.id === 'boska_wola_typo_sektrorów')?.evidence,
+    ).toBe('* Akcja: Odepchnięcie wszystkich przeciwników do sąsiednich sektrorów');
+  });
+});
