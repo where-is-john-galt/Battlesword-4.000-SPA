@@ -518,3 +518,96 @@ describe('przedmioty_magiczne.json — audyt Wrzoścce Hazardowego Biegu i Zapom
     ).toBe('Zbroja została wykonana z poskręcanych i nachodzących na siebie gałężi wierzby.');
   });
 });
+
+const MAGE_BLOOD_SOURCE = 'ekwipunek/przedmioty_magiczne/boskie/krew_maga.md';
+const HEAD_HUNTER_SOURCE = 'ekwipunek/przedmioty_magiczne/boskie/łowca_głów.md';
+
+describe('przedmioty_magiczne.json — audyt Krew Maga i Łowcy Głów', () => {
+  it('odwzorowuje Krew Maga dokładnie tak, jak w źródle', () => {
+    expect(magicItem('krew_maga')).toEqual({
+      id: 'krew_maga',
+      name: 'Krew Maga',
+      source: MAGE_BLOOD_SOURCE,
+      status: 'detailed',
+      type: 'Pas',
+      rarity: 'Boskie',
+      handItemSlots: 3,
+      effects: ['+1 Pancerza', '+1 bazowej Staminy / Many'],
+      modifiers: [
+        'Siła +2',
+        'Zręczność +2',
+        'Percepcja +2',
+        'Uniemożliwia wykorzystywanie przedmiotów podręcznych.',
+        'Użytkownik jest stale pod wpływem wyekwipowanych przedmiotów podręcznych. Efekty mikstur energetycznych nakładane są na początku każdej tury. Efekty eliksirów adaptujących trwają aż do ich odekwipowania.',
+      ],
+      description:
+        'Rzeki potęgi płyną poprzez ich żyły. Teraz ta siła jest twoja, na dobre i na złe.\n\nPas wyposażony są jest w igły, podajniki i pompy, które dozują mikstury dożylnie.',
+    });
+  });
+
+  it('odwzorowuje Łowcę Głów dokładnie tak, jak w źródle', () => {
+    expect(magicItem('łowca_głów')).toEqual({
+      id: 'łowca_głów',
+      name: 'Łowca Głów',
+      source: HEAD_HUNTER_SOURCE,
+      status: 'detailed',
+      type: 'Pas',
+      rarity: 'Boskie',
+      handItemSlots: 3,
+      effects: ['+1 Pancerza', '+1 bazowej Staminy / Many'],
+      modifiers: [
+        'Siła +3',
+        'Zręczność +3',
+        'Max HP +5',
+        'Zabicie przeciwnika natychmiast zwiększa Staminę lub Manę o jej bazową wartość',
+      ],
+      description:
+        '"Dusza ludzka włada z jaskini kości, uczy się i osądza przez okna urodzone z ciała. Serce to mięso. Człowiek rezyduje w głowie."\n\n~ Armando Lotniski, marszałek Gwardii Imperialnej',
+    });
+  });
+
+  it('zachowuje dosłowny zapis modyfikatora Łowcy Głów o zabiciu przeciwnika', () => {
+    expect(magicItem('łowca_głów').modifiers).toContain(
+      'Zabicie przeciwnika natychmiast zwiększa Staminę lub Manę o jej bazową wartość',
+    );
+  });
+
+  it('normalizuje rzadkość obu pasów do formy "Boskie" używanej w kompendium', () => {
+    expect(magicItem('krew_maga').rarity).toBe('Boskie');
+    expect(magicItem('łowca_głów').rarity).toBe('Boskie');
+  });
+
+  it('rejestruje oba przedmioty w indeksie wyszukiwania', () => {
+    const mageBlood = indexEntry('krew_maga');
+    expect(mageBlood.name).toBe('Krew Maga');
+    expect(mageBlood.source).toBe(MAGE_BLOOD_SOURCE);
+
+    const headHunter = indexEntry('łowca_głów');
+    expect(headHunter.name).toBe('Łowca Głów');
+    expect(headHunter.source).toBe(HEAD_HUNTER_SOURCE);
+  });
+
+  it('zachowuje odnotowane sprzeczność i literówkę Krew Maga w Niespójnościach i indeksie', () => {
+    const ids = ['krew_maga_handItemSlots_sprzecznosc', 'krew_maga_typo_wyposażony_są'];
+
+    for (const id of ids) {
+      const inconsistency = inconsistencies.find((entry) => entry.id === id);
+      expect(inconsistency).toBeDefined();
+      expect(inconsistency?.source).toBe(MAGE_BLOOD_SOURCE);
+      expect(inconsistency?.status).toBe('detailed');
+      expect(inconsistency?.relatedEntryIds).toEqual(['krew_maga']);
+
+      const indexed = index.find((entry) => entry.type === 'inconsistency' && entry.id === id);
+      expect(indexed).toBeDefined();
+      expect(indexed?.source).toBe(MAGE_BLOOD_SOURCE);
+      expect(indexed?.name).toBe(inconsistency?.name);
+    }
+
+    expect(
+      inconsistencies.find((entry) => entry.id === 'krew_maga_handItemSlots_sprzecznosc')?.kind,
+    ).toBe('conflict');
+    expect(
+      inconsistencies.find((entry) => entry.id === 'krew_maga_typo_wyposażony_są')?.evidence,
+    ).toBe('Pas wyposażony są jest w igły, podajniki i pompy');
+  });
+});
