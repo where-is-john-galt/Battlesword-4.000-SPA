@@ -177,10 +177,11 @@
       "sourceBlob": "544d0f9e253c7f90539deab53757704bd27039fa",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T19:55:13.923Z",
-      "reason": "Pierwszy pełny audyt źródła."
+      "reason": "Pierwszy pełny audyt źródła.",
+      "startedAt": "2026-10-18T15:58:11.055Z"
     },
     "ekwipunek/przedmioty_magiczne/rzadkie/cichy_klucz.md": {
       "id": "01789e27cb155e19",
@@ -957,10 +958,11 @@
       "sourceBlob": "420cbd7f34150c889c34a456c6f9541c99d02b48",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.131Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-18T15:58:11.055Z"
     },
     "ekwipunek/przedmioty_magiczne/mityczny/korona_ze_smoczych_zębów.md": {
       "id": "750029ded5c33598",
@@ -1671,6 +1673,14 @@
     "date": "2026-10-18",
     "spent": 2.9100210000000004
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "ae02f74cb9d5c82d",
+    "taskIds": [
+      "1a02e74d4da6ef1b",
+      "8f0fff49d325852e"
+    ],
+    "amount": 2.0899789999999996,
+    "date": "2026-10-18"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
