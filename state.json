@@ -163,11 +163,13 @@
       "sourceBlob": "48c6c55f709ba93c5fedcedd4a7b72844e6b0a0b",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit",
-      "status": "running",
+      "status": "complete",
       "attempts": 1,
       "updatedAt": "2026-10-14T19:55:13.920Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-10-18T11:21:02.834Z"
+      "startedAt": "2026-10-18T11:21:02.834Z",
+      "completedAt": "2026-10-18T11:29:31.494Z",
+      "summary": "Zweryfikowałem oba źródła z commita 0f3239726b687f085593266a088c843f63d032ce. Wpisy Krew Maga i Łowca Głów w danych kompendium oraz w indeksie wyszukiwania już dokładnie odwzorowują źródła, dlatego nie zmieniałem danych przedmiotów. Dodałem testy regresyjne pilnujące pełnych danych, indeksu, zachowania źródłowej literówki i sprzeczności Krew Maga oraz dosłownego brzmienia efektu Łowcy Głów."
     },
     "ekwipunek/przedmioty_magiczne/mityczny/boska_wola.md": {
       "id": "8f0fff49d325852e",
@@ -941,11 +943,13 @@
       "sourceBlob": "4bf08eb7857dfa3e88bdfc1b21c9d9c8f3f755e9",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "complete",
       "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.129Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-18T11:21:02.834Z"
+      "startedAt": "2026-10-18T11:21:02.834Z",
+      "completedAt": "2026-10-18T11:29:31.494Z",
+      "summary": "Zweryfikowałem oba źródła z commita 0f3239726b687f085593266a088c843f63d032ce. Wpisy Krew Maga i Łowca Głów w danych kompendium oraz w indeksie wyszukiwania już dokładnie odwzorowują źródła, dlatego nie zmieniałem danych przedmiotów. Dodałem testy regresyjne pilnujące pełnych danych, indeksu, zachowania źródłowej literówki i sprzeczności Krew Maga oraz dosłownego brzmienia efektu Łowcy Głów."
     },
     "ekwipunek/przedmioty_magiczne/mityczny/bezczynny_chwyt_północnej_zimy.md": {
       "id": "1a02e74d4da6ef1b",
@@ -1665,16 +1669,8 @@
   },
   "daily": {
     "date": "2026-10-18",
-    "spent": 1.9545870000000005
+    "spent": 2.9100210000000004
   },
-  "reservation": {
-    "taskId": "188c4098feeadb8d",
-    "taskIds": [
-      "360a867ee0c11cbe",
-      "083c9055fc593a30"
-    ],
-    "amount": 3,
-    "date": "2026-10-18"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
