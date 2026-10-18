@@ -898,10 +898,11 @@
       "sourceBlob": "4b7e0727cb367ec49707b1d4e9f3d6bd8423c333",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.121Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-18T06:01:53.489Z"
     },
     "ekwipunek/przedmioty_magiczne/arcymistrzowskie/zapomniany_strażnik.md": {
       "id": "33e6ba08a30900bd",
@@ -909,10 +910,11 @@
       "sourceBlob": "4817e70e4a100a8bb7de3e3bd2df3c8270c5068c",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.123Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-18T06:01:53.489Z"
     },
     "ekwipunek/przedmioty_magiczne/arcymistrzowskie/łowca_głebin.md": {
       "id": "ee0ea1bf9adecbfa",
@@ -1659,6 +1661,14 @@
     "date": "2026-10-18",
     "spent": 1.1936538000000003
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "97486f0ca8603e43",
+    "taskIds": [
+      "f682b16ea8747a15",
+      "33e6ba08a30900bd"
+    ],
+    "amount": 3,
+    "date": "2026-10-18"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
