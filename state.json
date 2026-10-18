@@ -974,12 +974,14 @@
       "sourceBlob": "a1091e18e8331806e5f9faf05e1d37ef148c2b3c",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "complete",
       "attempts": 2,
       "updatedAt": "2026-10-18T18:46:56.281Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
       "startedAt": "2026-10-18T21:34:51.623Z",
-      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem.",
+      "completedAt": "2026-10-18T21:42:31.412Z",
+      "summary": "Audyt Korony ze Smoczych Zębów i Nagolenników ze Smoczych Kości potwierdził, że oba przedmioty są już odwzorowane w danych, indeksie i sekcji Niespójności. Dodano testy regresyjne weryfikujące pełne mapowanie pól, zachowanie literówek, poprawne rzadkości kanoniczne, wpisy indeksu oraz adnotacje o braku identyfikacji i literówki."
     },
     "ekwipunek/przedmioty_magiczne/mityczny/nagolenniki_ze_smoczych_kości.md": {
       "id": "25e261d07d4fca6a",
@@ -987,12 +989,14 @@
       "sourceBlob": "911bc12e6573dc07634cef558c06f696bfa4ef51",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "complete",
       "attempts": 2,
       "updatedAt": "2026-10-18T18:46:56.281Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
       "startedAt": "2026-10-18T21:34:51.623Z",
-      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem.",
+      "completedAt": "2026-10-18T21:42:31.412Z",
+      "summary": "Audyt Korony ze Smoczych Zębów i Nagolenników ze Smoczych Kości potwierdził, że oba przedmioty są już odwzorowane w danych, indeksie i sekcji Niespójności. Dodano testy regresyjne weryfikujące pełne mapowanie pól, zachowanie literówek, poprawne rzadkości kanoniczne, wpisy indeksu oraz adnotacje o braku identyfikacji i literówki."
     },
     "ekwipunek/przedmioty_magiczne/mityczny/zaprzysiężona_framuga_dębowego_oporu.md": {
       "id": "8e43bbb4df975d64",
@@ -1679,16 +1683,8 @@
   },
   "daily": {
     "date": "2026-10-18",
-    "spent": 4.0213920000000005
+    "spent": 4.865855400000001
   },
-  "reservation": {
-    "taskId": "c59fccda6ee92410",
-    "taskIds": [
-      "750029ded5c33598",
-      "25e261d07d4fca6a"
-    ],
-    "amount": 0.9786079999999995,
-    "date": "2026-10-18"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
