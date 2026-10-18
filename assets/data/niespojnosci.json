@@ -304,6 +304,22 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
+    "id": "bezczynny_chwyt_północnej_zimy_typo_odpornośc",
+    "name": "Bezczynny Chwyt Północnej Zimy: literówka 'Odpornośc'",
+    "source": "ekwipunek/przedmioty_magiczne/mityczny/bezczynny_chwyt_północnej_zimy.md",
+    "kind": "typo",
+    "details": "W modyfikatorze zapisano \"Odpornośc\" bez polskiego znaku diakrytycznego; poprawna forma to \"Odporność\".",
+    "evidence": "* Odpornośc na obrażenia od zimna",
+    "relatedSources": [
+      "ekwipunek/przedmioty_magiczne/mityczny/bezczynny_chwyt_północnej_zimy.md"
+    ],
+    "relatedEntryIds": [
+      "bezczynny_chwyt_północnej_zimy"
+    ],
+    "status": "detailed",
+    "revision": "0f3239726b687f085593266a088c843f63d032ce"
+  },
+  {
     "id": "bezczynny_chwyt_północnej_zimy_typo_więcje",
     "name": "Bezczynny Chwyt Północnej Zimy: literówka 'więcje'",
     "source": "ekwipunek/przedmioty_magiczne/mityczny/bezczynny_chwyt_północnej_zimy.md",
