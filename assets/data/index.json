@@ -1239,20 +1239,6 @@
     "status": "detailed"
   },
   {
-    "id": "amulet_zastygłego_oka_typo_zastygłym",
-    "type": "inconsistency",
-    "name": "Amulet Zastygłego Oka: literówka 'zastygłym'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/amulet_zastygłego_oka.md",
-    "status": "detailed"
-  },
-  {
-    "id": "amulet_zastygłego_oka_typo_zastygłym_2",
-    "type": "inconsistency",
-    "name": "Amulet Zastygłego Oka: literówka 'zastygłym' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/amulet_zastygłego_oka.md",
-    "status": "detailed"
-  },
-  {
     "id": "aptekarz_efekt_22_brak_podmiotu",
     "type": "inconsistency",
     "name": "Aptekarz: efekt 22 bez wskazanego podmiotu",
