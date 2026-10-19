@@ -1116,11 +1116,13 @@
       "sourceBlob": "73801524feea67db79028946bcfddf55ed4e9c9e",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "complete",
       "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.160Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-19T22:28:16.517Z"
+      "startedAt": "2026-10-19T22:28:16.517Z",
+      "completedAt": "2026-10-19T22:36:33.179Z",
+      "summary": "Potwierdzono, że Hełm Strażnika Baszty i Kostur Oświecenia są już wiernie odwzorowane w danych SPA, i objęto oba wpisy testami regresyjnymi. Usunięto cztery fałszywe, zdublowane wpisy z sekcji Niespójności oraz odpowiadające im pozycje indeksu: formy „oblężeń” i „kanalizowanie” są poprawne, a dotychczasowe opisy porównywały je z nimi samymi."
     },
     "ekwipunek/przedmioty_magiczne/niezwykłe/kostur_oświecenia.md": {
       "id": "0552ba9c872b10be",
@@ -1128,11 +1130,13 @@
       "sourceBlob": "5ca24448971dd1928f8d86a2a174cf420afd80b7",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "complete",
       "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.162Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-19T22:28:16.517Z"
+      "startedAt": "2026-10-19T22:28:16.517Z",
+      "completedAt": "2026-10-19T22:36:33.179Z",
+      "summary": "Potwierdzono, że Hełm Strażnika Baszty i Kostur Oświecenia są już wiernie odwzorowane w danych SPA, i objęto oba wpisy testami regresyjnymi. Usunięto cztery fałszywe, zdublowane wpisy z sekcji Niespójności oraz odpowiadające im pozycje indeksu: formy „oblężeń” i „kanalizowanie” są poprawne, a dotychczasowe opisy porównywały je z nimi samymi."
     },
     "ekwipunek/przedmioty_magiczne/niezwykłe/pas_cyrkowca.md": {
       "id": "62b5901648e11d61",
@@ -1709,16 +1713,8 @@
   },
   "daily": {
     "date": "2026-10-19",
-    "spent": 2.8609755000000003
+    "spent": 3.8573399999999998
   },
-  "reservation": {
-    "taskId": "7294c611451efc59",
-    "taskIds": [
-      "6d50d9134f3f4456",
-      "0552ba9c872b10be"
-    ],
-    "amount": 2.1390244999999997,
-    "date": "2026-10-19"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
