@@ -1032,11 +1032,13 @@
       "sourceBlob": "f848f5396c1c0d6d56e233e4b762414176372f0d",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "complete",
       "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.144Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-19T04:55:25.647Z"
+      "startedAt": "2026-10-19T04:55:25.647Z",
+      "completedAt": "2026-10-19T05:02:49.365Z",
+      "summary": "Zweryfikowano Amulet Alertu Dobrej Okazji i Amulet Św. Krzysztofa: oba przedmioty były już wiernie odwzorowane w danych i indeksie wyszukiwania, z zachowaną literówką „uzytkownika”. Dodano testy pilnujące dokładnej zgodności obu wpisów, ich obecności w indeksie oraz prawdziwej literówki w Niespójnościach. Usunięto błędne, zdublowane wpisy o rzekomej literówce „lejce”, ponieważ jest to poprawny wyraz."
     },
     "ekwipunek/przedmioty_magiczne/niezwykłe/amulet_zastygłego_oka.md": {
       "id": "e218203c9c106256",
@@ -1055,11 +1057,13 @@
       "sourceBlob": "84cacfd13ac8fd38dc41864f2b5f1da4658d80ef",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "complete",
       "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.149Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-19T04:55:25.647Z"
+      "startedAt": "2026-10-19T04:55:25.647Z",
+      "completedAt": "2026-10-19T05:02:49.365Z",
+      "summary": "Zweryfikowano Amulet Alertu Dobrej Okazji i Amulet Św. Krzysztofa: oba przedmioty były już wiernie odwzorowane w danych i indeksie wyszukiwania, z zachowaną literówką „uzytkownika”. Dodano testy pilnujące dokładnej zgodności obu wpisów, ich obecności w indeksie oraz prawdziwej literówki w Niespójnościach. Usunięto błędne, zdublowane wpisy o rzekomej literówce „lejce”, ponieważ jest to poprawny wyraz."
     },
     "ekwipunek/przedmioty_magiczne/niezwykłe/buty_kowala.md": {
       "id": "88dc519d15b63061",
@@ -1691,16 +1695,8 @@
   },
   "daily": {
     "date": "2026-10-19",
-    "spent": 0.7519383
+    "spent": 1.4790834000000002
   },
-  "reservation": {
-    "taskId": "7e8def0edc9d8aab",
-    "taskIds": [
-      "eb26cd8a180365e9",
-      "f4c038cc5d5de57e"
-    ],
-    "amount": 3,
-    "date": "2026-10-19"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
