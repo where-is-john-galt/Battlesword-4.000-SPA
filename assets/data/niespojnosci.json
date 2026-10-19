@@ -1,37 +1,5 @@
 [
   {
-    "id": "alarmująca_peleryna_typo_samoczynnie",
-    "name": "Alarmująca Peleryna: literówka 'samoczynnie'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/alarmująca_peleryna.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"samoczynnie\" zamiast \"samoczynnie\" (prawdopodobnie \"samoczynnie\" od samoczynny, ale zapis nietypowy).",
-    "evidence": "peleryna łopocze samoczynnie",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/alarmująca_peleryna.md"
-    ],
-    "relatedEntryIds": [
-      "alarmująca_peleryna"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "alarmująca_peleryna_typo_samoczynnie_2",
-    "name": "Alarmująca Peleryna: literówka 'samoczynnie' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/alarmująca_peleryna.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"samoczynnie\" zamiast \"samoczynnie\" (prawdopodobnie \"samoczynnie\" od samoczynny, ale zapis nietypowy).",
-    "evidence": "peleryna łopocze samoczynnie",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/alarmująca_peleryna.md"
-    ],
-    "relatedEntryIds": [
-      "alarmująca_peleryna"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
     "id": "alchemik_typo_besposredni",
     "name": "Alchemik: zapis 'Bespośredni'",
     "source": "tworzenie_postaci/klasy/alchemik.md",
