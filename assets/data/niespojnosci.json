@@ -96,38 +96,6 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
-    "id": "amulet_św_krzysztofa_typo_lejce",
-    "name": "Amulet Św. Krzysztofa: literówka 'lejce'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/amulet_św_krzysztofa.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"lejce\" zamiast \"lejce\" (prawdopodobnie \"lejce\" od lejce, ale zapis nietypowy).",
-    "evidence": "gdy ten chwyci za lejce lub stery czegokolwiek",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/amulet_św_krzysztofa.md"
-    ],
-    "relatedEntryIds": [
-      "amulet_św_krzysztofa"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "amulet_św_krzysztofa_typo_lejce_2",
-    "name": "Amulet Św. Krzysztofa: literówka 'lejce' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/amulet_św_krzysztofa.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"lejce\" zamiast \"lejce\" (prawdopodobnie \"lejce\" od lejce, ale zapis nietypowy).",
-    "evidence": "gdy ten chwyci za lejce lub stery czegokolwiek",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/amulet_św_krzysztofa.md"
-    ],
-    "relatedEntryIds": [
-      "amulet_św_krzysztofa"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
     "id": "aptekarz_efekt_22_brak_podmiotu",
     "name": "Aptekarz: efekt 22 bez wskazanego podmiotu",
     "source": "tworzenie_postaci/profesje/aptekarz.md",

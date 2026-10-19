@@ -1253,20 +1253,6 @@
     "status": "detailed"
   },
   {
-    "id": "amulet_św_krzysztofa_typo_lejce",
-    "type": "inconsistency",
-    "name": "Amulet Św. Krzysztofa: literówka 'lejce'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/amulet_św_krzysztofa.md",
-    "status": "detailed"
-  },
-  {
-    "id": "amulet_św_krzysztofa_typo_lejce_2",
-    "type": "inconsistency",
-    "name": "Amulet Św. Krzysztofa: literówka 'lejce' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/amulet_św_krzysztofa.md",
-    "status": "detailed"
-  },
-  {
     "id": "aptekarz_efekt_22_brak_podmiotu",
     "type": "inconsistency",
     "name": "Aptekarz: efekt 22 bez wskazanego podmiotu",
