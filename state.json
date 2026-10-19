@@ -1116,10 +1116,11 @@
       "sourceBlob": "73801524feea67db79028946bcfddf55ed4e9c9e",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.160Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-19T22:28:16.517Z"
     },
     "ekwipunek/przedmioty_magiczne/niezwykłe/kostur_oświecenia.md": {
       "id": "0552ba9c872b10be",
@@ -1127,10 +1128,11 @@
       "sourceBlob": "5ca24448971dd1928f8d86a2a174cf420afd80b7",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.162Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-19T22:28:16.517Z"
     },
     "ekwipunek/przedmioty_magiczne/niezwykłe/pas_cyrkowca.md": {
       "id": "62b5901648e11d61",
@@ -1709,6 +1711,14 @@
     "date": "2026-10-19",
     "spent": 2.8609755000000003
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "7294c611451efc59",
+    "taskIds": [
+      "6d50d9134f3f4456",
+      "0552ba9c872b10be"
+    ],
+    "amount": 2.1390244999999997,
+    "date": "2026-10-19"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
