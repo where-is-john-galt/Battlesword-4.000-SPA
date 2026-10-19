@@ -1088,11 +1088,13 @@
       "sourceBlob": "7f69004cdc6fa3d26bb4dbe1f0d22a22a383fb0d",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "complete",
       "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.154Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-19T17:34:11.158Z"
+      "startedAt": "2026-10-19T17:34:11.158Z",
+      "completedAt": "2026-10-19T17:40:46.890Z",
+      "summary": "Obie pozycje były już wiernie odwzorowane w przedmioty_magiczne.json. Usunięto cztery nieprawdziwe wpisy o literówkach (po dwa duplikaty) z niespojnosci.json i index.json, a nowe testy audytowe potwierdzają dokładne dane obu butów oraz brak fałszywych zgłoszeń w sekcji Niespójności."
     },
     "ekwipunek/przedmioty_magiczne/niezwykłe/buty_wędrowca_bez_kresu.md": {
       "id": "75d48de540f7881a",
@@ -1100,11 +1102,13 @@
       "sourceBlob": "e90d6167f89fab571c24f0ac41bd3dbf22288c9c",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "complete",
       "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.157Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-19T17:34:11.158Z"
+      "startedAt": "2026-10-19T17:34:11.158Z",
+      "completedAt": "2026-10-19T17:40:46.890Z",
+      "summary": "Obie pozycje były już wiernie odwzorowane w przedmioty_magiczne.json. Usunięto cztery nieprawdziwe wpisy o literówkach (po dwa duplikaty) z niespojnosci.json i index.json, a nowe testy audytowe potwierdzają dokładne dane obu butów oraz brak fałszywych zgłoszeń w sekcji Niespójności."
     },
     "ekwipunek/przedmioty_magiczne/niezwykłe/hełm_strażnika_baszty.md": {
       "id": "6d50d9134f3f4456",
@@ -1703,16 +1707,8 @@
   },
   "daily": {
     "date": "2026-10-19",
-    "spent": 2.0445369
+    "spent": 2.8609755000000003
   },
-  "reservation": {
-    "taskId": "197c4834ae8988fe",
-    "taskIds": [
-      "0abe5d1d84dd9ef1",
-      "75d48de540f7881a"
-    ],
-    "amount": 2.9554631,
-    "date": "2026-10-19"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
