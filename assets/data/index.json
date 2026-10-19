@@ -2303,20 +2303,6 @@
     "status": "detailed"
   },
   {
-    "id": "hełm_strażnika_baszty_typo_oblężeń",
-    "type": "inconsistency",
-    "name": "Hełm Strażnika Baszty: literówka 'oblężeń'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/hełm_strażnika_baszty.md",
-    "status": "detailed"
-  },
-  {
-    "id": "hełm_strażnika_baszty_typo_oblężeń_2",
-    "type": "inconsistency",
-    "name": "Hełm Strażnika Baszty: literówka 'oblężeń' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/hełm_strażnika_baszty.md",
-    "status": "detailed"
-  },
-  {
     "id": "idealne_buty_typo_równiez",
     "type": "inconsistency",
     "name": "Idealne Buty: literówka 'równiez'",
@@ -2356,20 +2342,6 @@
     "type": "inconsistency",
     "name": "Korona ze Smoczych Zębów: literówka 'stalażu'",
     "source": "ekwipunek/przedmioty_magiczne/mityczny/korona_ze_smoczych_zębów.md",
-    "status": "detailed"
-  },
-  {
-    "id": "kostur_oświecenia_typo_kanalizowanie",
-    "type": "inconsistency",
-    "name": "Kostur Oświecenia: literówka 'kanalizowanie'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/kostur_oświecenia.md",
-    "status": "detailed"
-  },
-  {
-    "id": "kostur_oświecenia_typo_kanalizowanie_2",
-    "type": "inconsistency",
-    "name": "Kostur Oświecenia: literówka 'kanalizowanie' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/kostur_oświecenia.md",
     "status": "detailed"
   },
   {
