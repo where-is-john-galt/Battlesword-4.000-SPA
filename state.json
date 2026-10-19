@@ -1004,10 +1004,11 @@
       "sourceBlob": "1c6eedb3b255c198bbafd53111fc5dfc0705c57f",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.138Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-19T00:14:58.844Z"
     },
     "ekwipunek/przedmioty_magiczne/niezwykłe/alarmująca_peleryna.md": {
       "id": "cb812b982847c5d4",
@@ -1015,10 +1016,11 @@
       "sourceBlob": "1b7d194b29fb0f3f64f21604be12649eb03281b5",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.141Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-19T00:14:58.844Z"
     },
     "ekwipunek/przedmioty_magiczne/niezwykłe/amulet_alertu_dobrej_okazji.md": {
       "id": "eb26cd8a180365e9",
@@ -1682,9 +1684,17 @@
     }
   },
   "daily": {
-    "date": "2026-10-18",
-    "spent": 4.865855400000001
+    "date": "2026-10-19",
+    "spent": 0
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "d63afb51f94075f2",
+    "taskIds": [
+      "8e43bbb4df975d64",
+      "cb812b982847c5d4"
+    ],
+    "amount": 3,
+    "date": "2026-10-19"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
