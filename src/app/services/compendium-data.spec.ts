@@ -938,3 +938,87 @@ describe('przedmioty_magiczne.json — audyt Zaprzysiężonej Framugi Dębowego 
     ).toEqual([]);
   });
 });
+
+const GOOD_OMEN_AMULET_SOURCE =
+  'ekwipunek/przedmioty_magiczne/niezwykłe/amulet_alertu_dobrej_okazji.md';
+const SAINT_CHRISTOPHER_AMULET_SOURCE =
+  'ekwipunek/przedmioty_magiczne/niezwykłe/amulet_św_krzysztofa.md';
+
+describe('przedmioty_magiczne.json — audyt Amuletu Alertu Dobrej Okazji i Amuletu Św. Krzysztofa', () => {
+  it('odwzorowuje Amulet Alertu Dobrej Okazji dokładnie tak, jak w źródle', () => {
+    expect(magicItem('amulet_alertu_dobrej_okazji')).toEqual({
+      id: 'amulet_alertu_dobrej_okazji',
+      name: 'Amulet Alertu Dobrej Okazji',
+      source: GOOD_OMEN_AMULET_SOURCE,
+      status: 'detailed',
+      type: 'Amulet',
+      rarity: 'Niezwykłe',
+      modifiers: ['+2 do Znajdowania'],
+      description:
+        'Amulet to dosyć prosty wisiorek z wykonanym ze złota wykrzyknikiem jako wisiorkiem. Amulet podskakuje frenetycznie, alarmując uzytkownika o dobrych okazjach w okolicy.',
+    });
+  });
+
+  it('odwzorowuje Amulet Św. Krzysztofa dokładnie tak, jak w źródle', () => {
+    expect(magicItem('amulet_św_krzysztofa')).toEqual({
+      id: 'amulet_św_krzysztofa',
+      name: 'Amulet Św. Krzysztofa',
+      source: SAINT_CHRISTOPHER_AMULET_SOURCE,
+      status: 'detailed',
+      type: 'Amulet',
+      rarity: 'Niezwykłe',
+      modifiers: ['+2 do Prowadzenia'],
+      description:
+        'Wisiorek poświęcony jest świętemu Krzysztofowi, patronowi kierowców. Oby miał w opiece właściciela tego amuletu, gdy ten chwyci za lejce lub stery czegokolwiek...',
+    });
+  });
+
+  it('rejestruje oba amulety w indeksie wyszukiwania', () => {
+    const goodOmen = indexEntry('amulet_alertu_dobrej_okazji');
+    expect(goodOmen.name).toBe('Amulet Alertu Dobrej Okazji');
+    expect(goodOmen.source).toBe(GOOD_OMEN_AMULET_SOURCE);
+
+    const saintChristopher = indexEntry('amulet_św_krzysztofa');
+    expect(saintChristopher.name).toBe('Amulet Św. Krzysztofa');
+    expect(saintChristopher.source).toBe(SAINT_CHRISTOPHER_AMULET_SOURCE);
+  });
+
+  it('odnotowuje literówkę "uzytkownika" w Amulecie Alertu Dobrej Okazji', () => {
+    const typo = inconsistencies.find(
+      (entry) => entry.id === 'amulet_alertu_dobrej_okazji_typo_uzytkownika',
+    );
+
+    expect(typo).toMatchObject({
+      kind: 'typo',
+      source: GOOD_OMEN_AMULET_SOURCE,
+      evidence: 'alarmując uzytkownika o dobrych okazjach w okolicy',
+      relatedEntryIds: ['amulet_alertu_dobrej_okazji'],
+    });
+    expect(typo?.status).toBe('detailed');
+    expect(typo?.revision).not.toBe('');
+
+    const indexed = index.find(
+      (entry) =>
+        entry.type === 'inconsistency' &&
+        entry.id === 'amulet_alertu_dobrej_okazji_typo_uzytkownika',
+    );
+    expect(indexed).toBeDefined();
+    expect(indexed?.source).toBe(GOOD_OMEN_AMULET_SOURCE);
+    expect(indexed?.name).toBe(typo?.name);
+  });
+
+  it('nie zgłasza nieistniejącej literówki "lejce" w Amulecie Św. Krzysztofa', () => {
+    expect(magicItem('amulet_św_krzysztofa').description).toContain('chwyci za lejce');
+
+    const related = inconsistencies.filter((entry) =>
+      entry.relatedEntryIds.includes('amulet_św_krzysztofa'),
+    );
+    expect(related).toEqual([]);
+    expect(
+      index.filter(
+        (entry) =>
+          entry.type === 'inconsistency' && entry.source === SAINT_CHRISTOPHER_AMULET_SOURCE,
+      ),
+    ).toEqual([]);
+  });
+});
