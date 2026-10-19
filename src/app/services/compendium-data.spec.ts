@@ -1107,3 +1107,75 @@ describe('przedmioty_magiczne.json — audyt Amuletu Zastygłego Oka i Butów Ko
     expect(indexed?.name).toBe(typo?.name);
   });
 });
+
+const HEALER_BOOTS_SOURCE = 'ekwipunek/przedmioty_magiczne/niezwykłe/buty_uzdrowiciela.md';
+const ENDLESS_WANDERER_BOOTS_SOURCE =
+  'ekwipunek/przedmioty_magiczne/niezwykłe/buty_wędrowca_bez_kresu.md';
+
+describe('przedmioty_magiczne.json — audyt Butów Uzdrowiciela i Butów Wędrowca Bez Kresu', () => {
+  it('odwzorowuje Buty Uzdrowiciela dokładnie tak, jak w źródle', () => {
+    expect(magicItem('buty_uzdrowiciela')).toEqual({
+      id: 'buty_uzdrowiciela',
+      name: 'Buty Uzdrowiciela',
+      source: HEALER_BOOTS_SOURCE,
+      status: 'detailed',
+      type: 'Buty',
+      rarity: 'Niezwykłe',
+      modifiers: ['Medycyna +2'],
+      description:
+        'Niskie skórzane buty z miękkiej bielonej skóry, wzmocnione pasami ciemnozielonego rzemienia wokół kostki i podbicia. Ich powierzchnia pokryta jest delikatnym tłoczeniem przedstawiającym wijące się łodygi ziół: krwawnika, szałwii i księżycowego mchu. Szwy wykonano srebrzystą nicią, która subtelnie połyskuje w świetle świecy niczym wilgoć o poranku.\n\nPodeszwa jest niezwykle lekka i niemal bezszelestna, pozwalając na poruszanie się szybko po leśnym poszyciu, kamieniu czy drewnianej podłodze bez wzbudzania hałasu. Wewnętrzna wyściółka pachnie suszonymi ziołami, alkoholem leczniczym i świeżą miętą.\n\nLegenda głosi, że pierwszą parę uszył medyk, który przemierzał tereny objęte zarazą, odwiedzając każdą chatę, do której inni bali się wejść. Nigdy nie przybywał za późno.',
+    });
+  });
+
+  it('odwzorowuje Buty Wędrowca Bez Kresu dokładnie tak, jak w źródle', () => {
+    expect(magicItem('buty_wędrowca_bez_kresu')).toEqual({
+      id: 'buty_wędrowca_bez_kresu',
+      name: 'Buty Wędrowca Bez Kresu',
+      source: ENDLESS_WANDERER_BOOTS_SOURCE,
+      status: 'detailed',
+      type: 'Buty',
+      rarity: 'Niezwykłe',
+      modifiers: ['Bazowa Stamina / Mana +1'],
+      description:
+        'Para wysokich, solidnych butów wykonanych z ciemnobrązowej skóry o matowym wykończeniu, wzmocnionej przy piętach i noskach stalowoszarą okładziną. Skóra jest miękka, ale niemal niezniszczalna. Buty nie nasiąkają wodą, nie pękają od mrozu i nie parzą stóp w upale.\n\nPodeszwy utkano z mieszaniny garbowanej skóry, żywicy i pyłu z pradawnych kamiennych traktów. Pozostawiają ledwo widoczne ślady, które znikają po kilku oddechach. Sznurowadła wyglądają jak splecione z końskiego włosia i srebrnej nici, a przy każdym kroku wydają cichy dźwięk przypominający szelest suchej trawy poruszanej wiatrem.\n\nWedług starych opowieści należały do posłańca, który przebiegł całe pogranicze Imperium bez postoju, niosąc wieść o końcu wojny. Gdy dotarł do celu, podobno nie był nawet zadyszany.',
+    });
+  });
+
+  it('rejestruje oba przedmioty w indeksie wyszukiwania', () => {
+    const healerBoots = indexEntry('buty_uzdrowiciela');
+    expect(healerBoots.name).toBe('Buty Uzdrowiciela');
+    expect(healerBoots.source).toBe(HEALER_BOOTS_SOURCE);
+
+    const wandererBoots = indexEntry('buty_wędrowca_bez_kresu');
+    expect(wandererBoots.name).toBe('Buty Wędrowca Bez Kresu');
+    expect(wandererBoots.source).toBe(ENDLESS_WANDERER_BOOTS_SOURCE);
+  });
+
+  it('nie zgłasza nieistniejącej literówki "księżycowego" w Butach Uzdrowiciela', () => {
+    expect(magicItem('buty_uzdrowiciela').description).toContain('księżycowego mchu');
+
+    const related = inconsistencies.filter((entry) =>
+      entry.relatedEntryIds.includes('buty_uzdrowiciela'),
+    );
+    expect(related).toEqual([]);
+    expect(
+      index.filter(
+        (entry) => entry.type === 'inconsistency' && entry.source === HEALER_BOOTS_SOURCE,
+      ),
+    ).toEqual([]);
+  });
+
+  it('nie zgłasza nieistniejącej literówki "nasiąkają" w Butach Wędrowca Bez Kresu', () => {
+    expect(magicItem('buty_wędrowca_bez_kresu').description).toContain('nie nasiąkają wodą');
+
+    const related = inconsistencies.filter((entry) =>
+      entry.relatedEntryIds.includes('buty_wędrowca_bez_kresu'),
+    );
+    expect(related).toEqual([]);
+    expect(
+      index.filter(
+        (entry) => entry.type === 'inconsistency' && entry.source === ENDLESS_WANDERER_BOOTS_SOURCE,
+      ),
+    ).toEqual([]);
+  });
+});
