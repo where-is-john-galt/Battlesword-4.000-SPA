@@ -1456,34 +1456,6 @@
     "status": "detailed"
   },
   {
-    "id": "buty_uzdrowiciela_typo_księżycowego",
-    "type": "inconsistency",
-    "name": "Buty Uzdrowiciela: literówka 'księżycowego'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/buty_uzdrowiciela.md",
-    "status": "detailed"
-  },
-  {
-    "id": "buty_uzdrowiciela_typo_księżycowego_2",
-    "type": "inconsistency",
-    "name": "Buty Uzdrowiciela: literówka 'księżycowego' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/buty_uzdrowiciela.md",
-    "status": "detailed"
-  },
-  {
-    "id": "buty_wędrowca_bez_kresu_typo_nasiąkają",
-    "type": "inconsistency",
-    "name": "Buty Wędrowca Bez Kresu: literówka 'nasiąkają'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/buty_wędrowca_bez_kresu.md",
-    "status": "detailed"
-  },
-  {
-    "id": "buty_wędrowca_bez_kresu_typo_nasiąkają_2",
-    "type": "inconsistency",
-    "name": "Buty Wędrowca Bez Kresu: literówka 'nasiąkają' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/buty_wędrowca_bez_kresu.md",
-    "status": "detailed"
-  },
-  {
     "id": "centaur_typo_wierchowcu",
     "type": "inconsistency",
     "name": "Centaur: literówka 'wierchowcu'",
