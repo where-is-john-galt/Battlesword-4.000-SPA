@@ -1179,3 +1179,81 @@ describe('przedmioty_magiczne.json — audyt Butów Uzdrowiciela i Butów Wędro
     ).toEqual([]);
   });
 });
+
+const TOWER_GUARD_HELM_SOURCE =
+  'ekwipunek/przedmioty_magiczne/niezwykłe/hełm_strażnika_baszty.md';
+const STAFF_OF_ENLIGHTENMENT_SOURCE =
+  'ekwipunek/przedmioty_magiczne/niezwykłe/kostur_oświecenia.md';
+
+describe('przedmioty_magiczne.json — audyt Hełmu Strażnika Baszty i Kostura Oświecenia', () => {
+  it('odwzorowuje Hełm Strażnika Baszty dokładnie tak, jak w źródle', () => {
+    expect(magicItem('hełm_strażnika_baszty')).toEqual({
+      id: 'hełm_strażnika_baszty',
+      name: 'Hełm Strażnika Baszty',
+      source: TOWER_GUARD_HELM_SOURCE,
+      status: 'detailed',
+      type: 'Hełm',
+      rarity: 'Niezwykłe',
+      modifiers: ['Wytrzymałość +1'],
+      description:
+        'Ten ciężki hełm wykonano z ciemnej stali przesyconej pyłem bazaltowym. Na jego powierzchni wyryto motywy murów obronnych i blanków, a przez środek przyłbicy biegnie wąska srebrna linia przypominająca pęknięcie skały. Według legend pierwsze egzemplarze nosili strażnicy twierdz, którzy potrafili wytrwać na posterunku przez wiele dni podczas oblężeń.\n\nWnętrze hełmu wyściełane jest miękką skórą, która nigdy nie nasiąka potem ani wodą. Gdy jego właściciel staje w obronie siebie lub swoich towarzyszy, metal staje się wyraźnie cięższy i chłodniejszy w dotyku, jakby czerpał siłę z fundamentów samej ziemi.',
+    });
+  });
+
+  it('odwzorowuje Kostur Oświecenia dokładnie tak, jak w źródle', () => {
+    expect(magicItem('kostur_oświecenia')).toEqual({
+      id: 'kostur_oświecenia',
+      name: 'Kostur Oświecenia',
+      source: STAFF_OF_ENLIGHTENMENT_SOURCE,
+      status: 'detailed',
+      type: 'Broń',
+      baseItem: 'Kostur',
+      rarity: 'Niezwykłe',
+      modifiers: ['+1 do Inteligencji'],
+      description:
+        'Kostur wykonany jest z prostego kawałka drewna i opatrzony mistycznymi symbolami. Chwycenie jej pewnie w dłoniach i kanalizowanie przez nią energii magicznej nie tylko pozwala na lepszą kontrolę nad eterycznymi przepływami, ale również oczyszcza umysł, wzmacniając skupienie, koncentrację i ułatwiając myślenie nawet w ogniu walki.',
+    });
+  });
+
+  it('rejestruje oba przedmioty w indeksie wyszukiwania', () => {
+    const helm = indexEntry('hełm_strażnika_baszty');
+    expect(helm.name).toBe('Hełm Strażnika Baszty');
+    expect(helm.source).toBe(TOWER_GUARD_HELM_SOURCE);
+
+    const staff = indexEntry('kostur_oświecenia');
+    expect(staff.name).toBe('Kostur Oświecenia');
+    expect(staff.source).toBe(STAFF_OF_ENLIGHTENMENT_SOURCE);
+  });
+
+  it('nie zgłasza nieistniejącej literówki "oblężeń" w Hełmie Strażnika Baszty', () => {
+    expect(magicItem('hełm_strażnika_baszty').description).toContain(
+      'przez wiele dni podczas oblężeń',
+    );
+
+    const related = inconsistencies.filter((entry) =>
+      entry.relatedEntryIds.includes('hełm_strażnika_baszty'),
+    );
+    expect(related).toEqual([]);
+    expect(
+      index.filter(
+        (entry) => entry.type === 'inconsistency' && entry.source === TOWER_GUARD_HELM_SOURCE,
+      ),
+    ).toEqual([]);
+  });
+
+  it('nie zgłasza nieistniejącej literówki "kanalizowanie" w Kosturze Oświecenia', () => {
+    expect(magicItem('kostur_oświecenia').description).toContain(
+      'kanalizowanie przez nią energii magicznej',
+    );
+
+    const related = inconsistencies.filter((entry) =>
+      entry.relatedEntryIds.includes('kostur_oświecenia'),
+    );
+    expect(related).toEqual([]);
+    expect(
+      index.filter(
+        (entry) => entry.type === 'inconsistency' && entry.source === STAFF_OF_ENLIGHTENMENT_SOURCE,
+      ),
+    ).toEqual([]);
+  });
+});

@@ -2485,38 +2485,6 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
-    "id": "hełm_strażnika_baszty_typo_oblężeń",
-    "name": "Hełm Strażnika Baszty: literówka 'oblężeń'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/hełm_strażnika_baszty.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"oblężeń\" zamiast \"oblężeń\" (prawdopodobnie \"oblężeń\" od oblężenie, ale zapis nietypowy).",
-    "evidence": "potrafili wytrwać na posterunku przez wiele dni podczas oblężeń",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/hełm_strażnika_baszty.md"
-    ],
-    "relatedEntryIds": [
-      "hełm_strażnika_baszty"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "hełm_strażnika_baszty_typo_oblężeń_2",
-    "name": "Hełm Strażnika Baszty: literówka 'oblężeń' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/hełm_strażnika_baszty.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"oblężeń\" zamiast \"oblężeń\" (prawdopodobnie \"oblężeń\" od oblężenie, ale zapis nietypowy).",
-    "evidence": "potrafili wytrwać na posterunku przez wiele dni podczas oblężeń",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/hełm_strażnika_baszty.md"
-    ],
-    "relatedEntryIds": [
-      "hełm_strażnika_baszty"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
     "id": "idealne_buty_typo_równiez",
     "name": "Idealne Buty: literówka 'równiez'",
     "source": "ekwipunek/przedmioty_magiczne/potężne/idealne_buty.md",
@@ -2608,38 +2576,6 @@
     ],
     "relatedEntryIds": [
       "korona_ze_smoczych_zębów"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "kostur_oświecenia_typo_kanalizowanie",
-    "name": "Kostur Oświecenia: literówka 'kanalizowanie'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/kostur_oświecenia.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"kanalizowanie\" zamiast \"kanalizowanie\" (prawdopodobnie \"kanalizowanie\" od kanalizować, ale zapis nietypowy).",
-    "evidence": "kanalizowanie przez nią energii magicznej",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/kostur_oświecenia.md"
-    ],
-    "relatedEntryIds": [
-      "kostur_oświecenia"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "kostur_oświecenia_typo_kanalizowanie_2",
-    "name": "Kostur Oświecenia: literówka 'kanalizowanie' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/kostur_oświecenia.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"kanalizowanie\" zamiast \"kanalizowanie\" (prawdopodobnie \"kanalizowanie\" od kanalizować, ale zapis nietypowy).",
-    "evidence": "kanalizowanie przez nią energii magicznej",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/kostur_oświecenia.md"
-    ],
-    "relatedEntryIds": [
-      "kostur_oświecenia"
     ],
     "status": "detailed",
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
