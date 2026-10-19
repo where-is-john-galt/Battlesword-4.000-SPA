@@ -839,3 +839,102 @@ describe('przedmioty_magiczne.json — audyt Korony ze Smoczych Zębów i Nagole
     }
   });
 });
+
+const ALARMING_CLOAK_SOURCE = 'ekwipunek/przedmioty_magiczne/niezwykłe/alarmująca_peleryna.md';
+const OATHBOUND_DOOR_SOURCE =
+  'ekwipunek/przedmioty_magiczne/mityczny/zaprzysiężona_framuga_dębowego_oporu.md';
+
+describe('przedmioty_magiczne.json — audyt Zaprzysiężonej Framugi Dębowego Oporu i Alarmującej Peleryny', () => {
+  it('odwzorowuje Alarmującą Pelerynę dokładnie tak, jak w źródle', () => {
+    expect(magicItem('alarmująca_peleryna')).toEqual({
+      id: 'alarmująca_peleryna',
+      name: 'Alarmująca Peleryna',
+      source: ALARMING_CLOAK_SOURCE,
+      status: 'detailed',
+      type: 'Peleryna',
+      rarity: 'Niezwykłe',
+      modifiers: ['+1 do Ostrożności'],
+      description:
+        'Peleryna jest dosyć prostą tkaniną dostępną w różnych, podstawowych kolorach. Rzemieślnicy z Po-Singaru rzucili na nią urok sprawiający, że peleryna łopocze samoczynnie w momencie, w którym wykryje zbliżające się zagrożenie.',
+    });
+  });
+
+  it('odwzorowuje Zaprzysiężoną Framugę Dębowego Oporu dokładnie tak, jak w źródle', () => {
+    expect(magicItem('zaprzysiężona_framuga_dębowego_oporu')).toEqual({
+      id: 'zaprzysiężona_framuga_dębowego_oporu',
+      name: 'Zaprzysiężona Framuga Dębowego Oporu',
+      source: OATHBOUND_DOOR_SOURCE,
+      status: 'detailed',
+      type: 'Tarcza',
+      rarity: 'Mityczne',
+      armor: 1,
+      barrier: 6,
+      modifiers: [
+        'Siła +1',
+        'Inteligencja +1',
+        'Percepcja +1',
+        'Każdy udany test defensywny generuje 1k4 Energii',
+        'Podnosi rangę odbieranego leczenia o 1',
+        'Odporność na obrażenia od chaosu',
+        'Odporność na obrażenia żrące',
+        'Odpornosć na obrażenia święte',
+      ],
+      corrupted: [
+        'Utrudnienie w testach defensywnych',
+        'Rozwinięcia statystyk defensywnych wliczają się do Pancerza zamiast do statystyk defensywnych',
+      ],
+      description:
+        'Oby twój upór nigdy się nie ugiął.\n\nDruidzi przyrzekli, że będą bronili Lasu Altdris swoimi własnymi życiami.\n\nSzybki umysł rozwiązuje problemy zanim się pojawią.',
+    });
+  });
+
+  it('rejestruje oba przedmioty w indeksie wyszukiwania', () => {
+    const cloak = indexEntry('alarmująca_peleryna');
+    expect(cloak.name).toBe('Alarmująca Peleryna');
+    expect(cloak.source).toBe(ALARMING_CLOAK_SOURCE);
+
+    const door = indexEntry('zaprzysiężona_framuga_dębowego_oporu');
+    expect(door.name).toBe('Zaprzysiężona Framuga Dębowego Oporu');
+    expect(door.source).toBe(OATHBOUND_DOOR_SOURCE);
+  });
+
+  it('odnotowuje odwołanie do Energii oraz literówkę "Odpornosć" Framugi', () => {
+    const ambiguity = inconsistencies.find((entry) => entry.id === 'zaprzysiężona_framuga_energia');
+    expect(ambiguity).toMatchObject({
+      kind: 'ambiguity',
+      source: OATHBOUND_DOOR_SOURCE,
+      evidence: '* Każdy udany test defensywny generuje 1k4 Energii',
+      relatedEntryIds: ['zaprzysiężona_framuga_dębowego_oporu'],
+    });
+
+    const typo = inconsistencies.find(
+      (entry) => entry.id === 'zaprzysiężona_framuga_typo_odpornosć',
+    );
+    expect(typo).toMatchObject({
+      kind: 'typo',
+      source: OATHBOUND_DOOR_SOURCE,
+      evidence: '* Odpornosć na obrażenia święte',
+      relatedEntryIds: ['zaprzysiężona_framuga_dębowego_oporu'],
+    });
+
+    for (const id of ['zaprzysiężona_framuga_energia', 'zaprzysiężona_framuga_typo_odpornosć']) {
+      const indexed = index.find((entry) => entry.type === 'inconsistency' && entry.id === id);
+      expect(indexed).toBeDefined();
+      expect(indexed?.source).toBe(OATHBOUND_DOOR_SOURCE);
+    }
+  });
+
+  it('nie zgłasza nieistniejącej literówki "samoczynnie" w Alarmującej Pelerynie', () => {
+    expect(magicItem('alarmująca_peleryna').description).toContain('łopocze samoczynnie');
+
+    const related = inconsistencies.filter((entry) =>
+      entry.relatedEntryIds.includes('alarmująca_peleryna'),
+    );
+    expect(related).toEqual([]);
+    expect(
+      index.filter(
+        (entry) => entry.type === 'inconsistency' && entry.source === ALARMING_CLOAK_SOURCE,
+      ),
+    ).toEqual([]);
+  });
+});

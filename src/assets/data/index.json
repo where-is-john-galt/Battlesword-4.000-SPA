@@ -1211,20 +1211,6 @@
     "status": "detailed"
   },
   {
-    "id": "alarmująca_peleryna_typo_samoczynnie",
-    "type": "inconsistency",
-    "name": "Alarmująca Peleryna: literówka 'samoczynnie'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/alarmująca_peleryna.md",
-    "status": "detailed"
-  },
-  {
-    "id": "alarmująca_peleryna_typo_samoczynnie_2",
-    "type": "inconsistency",
-    "name": "Alarmująca Peleryna: literówka 'samoczynnie' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/alarmująca_peleryna.md",
-    "status": "detailed"
-  },
-  {
     "id": "alchemik_typo_besposredni",
     "type": "inconsistency",
     "name": "Alchemik: zapis 'Bespośredni'",
