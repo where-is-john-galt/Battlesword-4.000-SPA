@@ -1046,10 +1046,11 @@
       "sourceBlob": "dff368c3156127c262a817abe7ffc72efc7a16de",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.146Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-19T10:53:55.887Z"
     },
     "ekwipunek/przedmioty_magiczne/niezwykłe/amulet_św_krzysztofa.md": {
       "id": "f4c038cc5d5de57e",
@@ -1071,10 +1072,11 @@
       "sourceBlob": "96a023b65e8595d245985a6d0c78baacc051c0b0",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.151Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-19T10:53:55.887Z"
     },
     "ekwipunek/przedmioty_magiczne/niezwykłe/buty_uzdrowiciela.md": {
       "id": "0abe5d1d84dd9ef1",
@@ -1697,6 +1699,14 @@
     "date": "2026-10-19",
     "spent": 1.4790834000000002
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "2c5e674657382580",
+    "taskIds": [
+      "e218203c9c106256",
+      "88dc519d15b63061"
+    ],
+    "amount": 3,
+    "date": "2026-10-19"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
