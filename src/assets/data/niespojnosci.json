@@ -64,38 +64,6 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
-    "id": "amulet_zastygłego_oka_typo_zastygłym",
-    "name": "Amulet Zastygłego Oka: literówka 'zastygłym'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/amulet_zastygłego_oka.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"zastygłym\" zamiast \"zastygłym\" (prawdopodobnie \"zastygłym\" od zastygły, ale zapis nietypowy).",
-    "evidence": "z oprawionym w złotą ramkę zastygłym okiem",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/amulet_zastygłego_oka.md"
-    ],
-    "relatedEntryIds": [
-      "amulet_zastygłego_oka"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "amulet_zastygłego_oka_typo_zastygłym_2",
-    "name": "Amulet Zastygłego Oka: literówka 'zastygłym' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/amulet_zastygłego_oka.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"zastygłym\" zamiast \"zastygłym\" (prawdopodobnie \"zastygłym\" od zastygły, ale zapis nietypowy).",
-    "evidence": "z oprawionym w złotą ramkę zastygłym okiem",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/amulet_zastygłego_oka.md"
-    ],
-    "relatedEntryIds": [
-      "amulet_zastygłego_oka"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
     "id": "aptekarz_efekt_22_brak_podmiotu",
     "name": "Aptekarz: efekt 22 bez wskazanego podmiotu",
     "source": "tworzenie_postaci/profesje/aptekarz.md",

@@ -1022,3 +1022,88 @@ describe('przedmioty_magiczne.json — audyt Amuletu Alertu Dobrej Okazji i Amul
     ).toEqual([]);
   });
 });
+
+const CRYSTALLIZED_EYE_AMULET_SOURCE =
+  'ekwipunek/przedmioty_magiczne/niezwykłe/amulet_zastygłego_oka.md';
+const SMITH_BOOTS_SOURCE = 'ekwipunek/przedmioty_magiczne/niezwykłe/buty_kowala.md';
+
+describe('przedmioty_magiczne.json — audyt Amuletu Zastygłego Oka i Butów Kowala', () => {
+  it('odwzorowuje Amulet Zastygłego Oka dokładnie tak, jak w źródle', () => {
+    expect(magicItem('amulet_zastygłego_oka')).toEqual({
+      id: 'amulet_zastygłego_oka',
+      name: 'Amulet Zastygłego Oka',
+      source: CRYSTALLIZED_EYE_AMULET_SOURCE,
+      status: 'detailed',
+      type: 'Amulet',
+      rarity: 'Niezwykłe',
+      modifiers: ['+1 do Percepcji'],
+      corrupted: [
+        'Pozwala na przerzucenie dowolnego testu opartego o Percepcję.',
+        'Użytkownik traci 1 punkt Szczęścia.',
+      ],
+      description:
+        'Amulet to dosyć prosty wisiorek z oprawionym w złotą ramkę zastygłym okiem tajemniczej bestii. Trzecie oko zawsze się przyda, prawda?',
+    });
+  });
+
+  it('odwzorowuje Buty Kowala dokładnie tak, jak w źródle', () => {
+    expect(magicItem('buty_kowala')).toEqual({
+      id: 'buty_kowala',
+      name: 'Buty Kowala',
+      source: SMITH_BOOTS_SOURCE,
+      status: 'detailed',
+      type: 'Buty',
+      rarity: 'Niezwykłe',
+      modifiers: ['Kowalstwo +2'],
+      description:
+        'Buty pozwalają lepiej sie zaprzeć przy machaniu młotem w celu wykucia tego zajebistego miecza lub tej zajebistej zbroi.',
+    });
+  });
+
+  it('rejestruje oba przedmioty w indeksie wyszukiwania', () => {
+    const amulet = indexEntry('amulet_zastygłego_oka');
+    expect(amulet.name).toBe('Amulet Zastygłego Oka');
+    expect(amulet.source).toBe(CRYSTALLIZED_EYE_AMULET_SOURCE);
+
+    const boots = indexEntry('buty_kowala');
+    expect(boots.name).toBe('Buty Kowala');
+    expect(boots.source).toBe(SMITH_BOOTS_SOURCE);
+  });
+
+  it('nie zgłasza nieistniejącej literówki "zastygłym" w Amulecie Zastygłego Oka', () => {
+    expect(magicItem('amulet_zastygłego_oka').description).toContain(
+      'z oprawionym w złotą ramkę zastygłym okiem',
+    );
+
+    const related = inconsistencies.filter((entry) =>
+      entry.relatedEntryIds.includes('amulet_zastygłego_oka'),
+    );
+    expect(related).toEqual([]);
+    expect(
+      index.filter(
+        (entry) =>
+          entry.type === 'inconsistency' && entry.source === CRYSTALLIZED_EYE_AMULET_SOURCE,
+      ),
+    ).toEqual([]);
+  });
+
+  it('odnotowuje literówkę "sie" w Butach Kowala', () => {
+    const typo = inconsistencies.find((entry) => entry.id === 'buty_kowala_typo_sie');
+
+    expect(typo).toMatchObject({
+      kind: 'typo',
+      source: SMITH_BOOTS_SOURCE,
+      evidence: 'Buty pozwalają lepiej sie zaprzeć',
+      relatedEntryIds: ['buty_kowala'],
+    });
+    expect(typo?.status).toBe('detailed');
+    expect(typo?.revision).not.toBe('');
+
+    const indexed = index.find(
+      (entry) => entry.type === 'inconsistency' && entry.id === 'buty_kowala_typo_sie',
+    );
+    expect(indexed).toBeDefined();
+    expect(indexed?.source).toBe(SMITH_BOOTS_SOURCE);
+    expect(indexed?.name).toBe(typo?.name);
+  });
+});
