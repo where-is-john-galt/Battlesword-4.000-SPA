@@ -1427,3 +1427,114 @@ describe('przedmioty_magiczne.json — audyt Peleryny Snów i Pierścienia Niewz
     ).toEqual([]);
   });
 });
+
+const STIMULATING_RING_SOURCE =
+  'ekwipunek/przedmioty_magiczne/niezwykłe/pierścionek_stymulujący.md';
+const TONGUE_RING_SOURCE = 'ekwipunek/przedmioty_magiczne/niezwykłe/pierścionek_z_języczkiem.md';
+
+describe('przedmioty_magiczne.json — audyt Pierścionka Stymulującego i Pierścionka z Języczkiem', () => {
+  it('odwzorowuje Pierścionek Stymulujący dokładnie tak, jak w źródle', () => {
+    expect(magicItem('pierścionek_stymulujący')).toEqual({
+      id: 'pierścionek_stymulujący',
+      name: 'Pierścionek Stymulujący',
+      source: STIMULATING_RING_SOURCE,
+      status: 'detailed',
+      type: 'Pierścień',
+      rarity: 'Niezwykłe',
+      modifiers: ['Zwinne dłonie +2'],
+      description:
+        'Pierścionek jest wykonany z platyny i pokryty jest niezwykle stymulującymi dla opuszczków palców grawerunkiem, zachęcając do macania go w wolnych chwilach i zarazem ćwiczenia zwinności palców.',
+    });
+  });
+
+  it('odwzorowuje Pierścionek z Języczkiem dokładnie tak, jak w źródle', () => {
+    expect(magicItem('pierścionek_z_języczkiem')).toEqual({
+      id: 'pierścionek_z_języczkiem',
+      name: 'Pierścionek z Języczkiem',
+      source: TONGUE_RING_SOURCE,
+      status: 'detailed',
+      type: 'Pierścień',
+      rarity: 'Niezwykłe',
+      modifiers: ['Lingwistyka +2'],
+      description:
+        'Pierścionek jest wykonany z elektrum, a zamiast klejnotu, został w nim osadzony język ropuchy sułtańskiej. Jeśli pozwoli się temu językowi polizać za uchem, toksyna ropuchy pobudza częśc mózgu odpowiedzialną za rozumienie języków.',
+    });
+  });
+
+  it('rejestruje oba pierścionki w indeksie wyszukiwania', () => {
+    expect(indexEntry('pierścionek_stymulujący')).toEqual({
+      id: 'pierścionek_stymulujący',
+      type: 'magicItem',
+      name: 'Pierścionek Stymulujący',
+      source: STIMULATING_RING_SOURCE,
+      status: 'detailed',
+    });
+    expect(indexEntry('pierścionek_z_języczkiem')).toEqual({
+      id: 'pierścionek_z_języczkiem',
+      type: 'magicItem',
+      name: 'Pierścionek z Języczkiem',
+      source: TONGUE_RING_SOURCE,
+      status: 'detailed',
+    });
+  });
+
+  it('zapisuje literówkę "opuszczków" w Pierścionku Stymulującym', () => {
+    const entry = inconsistencies.find(
+      (item) => item.id === 'pierścionek_stymulujący_typo_opuszczków',
+    );
+
+    expect(entry).toMatchObject({
+      kind: 'typo',
+      source: STIMULATING_RING_SOURCE,
+      details: 'W opisie zapisano "opuszczków" zamiast "opuszków".',
+      evidence: 'niezwykle stymulującymi dla opuszczków palców grawerunkiem',
+      relatedEntryIds: ['pierścionek_stymulujący'],
+      status: 'detailed',
+    });
+    expect(
+      index.find(
+        (item) =>
+          item.id === 'pierścionek_stymulujący_typo_opuszczków' && item.type === 'inconsistency',
+      ),
+    ).toMatchObject({
+      name: "Pierścionek Stymulujący: literówka 'opuszczków'",
+      source: STIMULATING_RING_SOURCE,
+    });
+    expect(
+      inconsistencies.filter(
+        (item) =>
+          item.source === STIMULATING_RING_SOURCE &&
+          item.relatedEntryIds.includes('pierścionek_stymulujący'),
+      ),
+    ).toHaveLength(1);
+  });
+
+  it('zapisuje literówkę "częśc" w Pierścionku z Języczkiem', () => {
+    const entry = inconsistencies.find((item) => item.id === 'pierścionek_z_języczkiem_typo_częśc');
+
+    expect(entry).toMatchObject({
+      kind: 'typo',
+      source: TONGUE_RING_SOURCE,
+      details: 'W opisie zapisano "częśc" zamiast "część".',
+      evidence: 'toksyna ropuchy pobudza częśc mózgu',
+      relatedEntryIds: ['pierścionek_z_języczkiem'],
+      status: 'detailed',
+    });
+    expect(
+      index.find(
+        (item) =>
+          item.id === 'pierścionek_z_języczkiem_typo_częśc' && item.type === 'inconsistency',
+      ),
+    ).toMatchObject({
+      name: "Pierścionek z Języczkiem: literówka 'częśc'",
+      source: TONGUE_RING_SOURCE,
+    });
+    expect(
+      inconsistencies.filter(
+        (item) =>
+          item.source === TONGUE_RING_SOURCE &&
+          item.relatedEntryIds.includes('pierścionek_z_języczkiem'),
+      ),
+    ).toHaveLength(1);
+  });
+});
