@@ -1200,11 +1200,13 @@
       "sourceBlob": "dfa24fe7e11026e0e4af3d67fa31dda9e957bf72",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "complete",
       "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.175Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-20T13:39:17.094Z"
+      "startedAt": "2026-10-20T13:39:17.094Z",
+      "completedAt": "2026-10-20T13:45:52.648Z",
+      "summary": "Przeprowadzono audyt obu plików źródłowych. Wpisy przedmiotów, indeksu i Niespójności były już obecne i zgodne ze źródłem, więc dodano testy regresyjne w compendium-data.spec.ts, które pinują nazwy, rzadkość, modyfikatory, pełne opisy wraz z literówkami oraz wpisy indeksu i Niespójności. Testy i build przechodzą."
     },
     "ekwipunek/przedmioty_magiczne/niezwykłe/pierścionek_z_języczkiem.md": {
       "id": "64d6b8340992cc0b",
@@ -1212,11 +1214,13 @@
       "sourceBlob": "8ac5eb0b8838620c9888c1684b5278088bb957d2",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "complete",
       "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.177Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-20T13:39:17.094Z"
+      "startedAt": "2026-10-20T13:39:17.094Z",
+      "completedAt": "2026-10-20T13:45:52.648Z",
+      "summary": "Przeprowadzono audyt obu plików źródłowych. Wpisy przedmiotów, indeksu i Niespójności były już obecne i zgodne ze źródłem, więc dodano testy regresyjne w compendium-data.spec.ts, które pinują nazwy, rzadkość, modyfikatory, pełne opisy wraz z literówkami oraz wpisy indeksu i Niespójności. Testy i build przechodzą."
     },
     "ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_do_podnoszenia_ciężarów.md": {
       "id": "4bb3c18abf2e97dd",
@@ -1727,16 +1731,8 @@
   },
   "daily": {
     "date": "2026-10-20",
-    "spent": 1.9587111000000001
+    "spent": 2.5353414
   },
-  "reservation": {
-    "taskId": "f3abbb605bac8a44",
-    "taskIds": [
-      "05fbed6778f6cef0",
-      "64d6b8340992cc0b"
-    ],
-    "amount": 3,
-    "date": "2026-10-20"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
