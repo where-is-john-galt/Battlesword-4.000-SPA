@@ -4046,20 +4046,6 @@
     "status": "detailed"
   },
   {
-    "id": "pas_cyrkowca_typo_krępować",
-    "type": "inconsistency",
-    "name": "Pas Cyrkowca: literówka 'krępować'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/pas_cyrkowca.md",
-    "status": "detailed"
-  },
-  {
-    "id": "pas_cyrkowca_typo_krępować_2",
-    "type": "inconsistency",
-    "name": "Pas Cyrkowca: literówka 'krępować' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/pas_cyrkowca.md",
-    "status": "detailed"
-  },
-  {
     "id": "pas_głębinowego_uśmiechu_typo_rozłupujące",
     "type": "inconsistency",
     "name": "Pas Głębinowego Uśmiechu: literówka 'rozłupujące'",
@@ -4085,20 +4071,6 @@
     "type": "inconsistency",
     "name": "Pas Nuggitha: literówka 'wielkeigo'",
     "source": "ekwipunek/przedmioty_magiczne/potężne/pas_nuggitha.md",
-    "status": "detailed"
-  },
-  {
-    "id": "pas_powerlifterski_typo_bebehy",
-    "type": "inconsistency",
-    "name": "Pas Powerlifterski: literówka 'bebehy'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/pas_powerlifterski.md",
-    "status": "detailed"
-  },
-  {
-    "id": "pas_powerlifterski_typo_bebehy_2",
-    "type": "inconsistency",
-    "name": "Pas Powerlifterski: literówka 'bebehy' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/pas_powerlifterski.md",
     "status": "detailed"
   },
   {

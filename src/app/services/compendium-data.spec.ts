@@ -1257,3 +1257,81 @@ describe('przedmioty_magiczne.json — audyt Hełmu Strażnika Baszty i Kostura 
     ).toEqual([]);
   });
 });
+
+const CIRCUS_BELT_SOURCE = 'ekwipunek/przedmioty_magiczne/niezwykłe/pas_cyrkowca.md';
+const POWERLIFTING_BELT_SOURCE =
+  'ekwipunek/przedmioty_magiczne/niezwykłe/pas_powerlifterski.md';
+
+describe('przedmioty_magiczne.json — audyt Pasa Cyrkowca i Pasa Powerlifterskiego', () => {
+  it('odwzorowuje Pas Cyrkowca dokładnie tak, jak w źródle', () => {
+    expect(magicItem('pas_cyrkowca')).toEqual({
+      id: 'pas_cyrkowca',
+      name: 'Pas Cyrkowca',
+      source: CIRCUS_BELT_SOURCE,
+      status: 'detailed',
+      type: 'Pas',
+      rarity: 'Niezwykłe',
+      handItemSlots: 4,
+      modifiers: ['+2 do Akrobatyki'],
+      description:
+        'Pasek został zaprojektowany specjalnie tak, by być lekkim, nie krępować ruchów i zachować swoją funkcjonalność, umożliwiając szybki dostęp do wszystkich niezbędnych akcesoriów podczas występów.',
+    });
+  });
+
+  it('odwzorowuje Pas Powerlifterski dokładnie tak, jak w źródle', () => {
+    expect(magicItem('pas_powerlifterski')).toEqual({
+      id: 'pas_powerlifterski',
+      name: 'Pas Powerlifterski',
+      source: POWERLIFTING_BELT_SOURCE,
+      status: 'detailed',
+      type: 'Pas',
+      rarity: 'Niezwykłe',
+      handItemSlots: 3,
+      effects: ['+1 Pancerza', '+1 bazowej Staminy / Many'],
+      modifiers: ['Atletyka +2'],
+      description: 'Pas pomaga utrzymać bebechy w środku przy podnoszeniu niezwykłych ciężarów.',
+    });
+  });
+
+  it('normalizuje męską formę rzadkości Pasa Powerlifterskiego do formy kompendium', () => {
+    expect(magicItem('pas_powerlifterski').rarity).toBe('Niezwykłe');
+  });
+
+  it('rejestruje oba przedmioty w indeksie wyszukiwania', () => {
+    const circusBelt = indexEntry('pas_cyrkowca');
+    expect(circusBelt.name).toBe('Pas Cyrkowca');
+    expect(circusBelt.source).toBe(CIRCUS_BELT_SOURCE);
+
+    const powerliftingBelt = indexEntry('pas_powerlifterski');
+    expect(powerliftingBelt.name).toBe('Pas Powerlifterski');
+    expect(powerliftingBelt.source).toBe(POWERLIFTING_BELT_SOURCE);
+  });
+
+  it('nie zgłasza nieistniejącej literówki "krępować" w Pasie Cyrkowca', () => {
+    expect(magicItem('pas_cyrkowca').description).toContain('nie krępować ruchów');
+
+    const related = inconsistencies.filter((entry) =>
+      entry.relatedEntryIds.includes('pas_cyrkowca'),
+    );
+    expect(related).toEqual([]);
+    expect(
+      index.filter(
+        (entry) => entry.type === 'inconsistency' && entry.source === CIRCUS_BELT_SOURCE,
+      ),
+    ).toEqual([]);
+  });
+
+  it('nie zgłasza nieistniejącej literówki "bebehy" w Pasie Powerlifterskim', () => {
+    expect(magicItem('pas_powerlifterski').description).toContain('utrzymać bebechy w środku');
+
+    const related = inconsistencies.filter((entry) =>
+      entry.relatedEntryIds.includes('pas_powerlifterski'),
+    );
+    expect(related).toEqual([]);
+    expect(
+      index.filter(
+        (entry) => entry.type === 'inconsistency' && entry.source === POWERLIFTING_BELT_SOURCE,
+      ),
+    ).toEqual([]);
+  });
+});

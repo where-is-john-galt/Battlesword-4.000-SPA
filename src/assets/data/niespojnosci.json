@@ -6869,38 +6869,6 @@
     "revision": "0f3239726b687f085593266a088c843f63d032ce"
   },
   {
-    "id": "pas_cyrkowca_typo_krępować",
-    "name": "Pas Cyrkowca: literówka 'krępować'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/pas_cyrkowca.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"krępować\" zamiast \"krępować\" (prawdopodobnie \"krępować\" od krępować, ale zapis nietypowy).",
-    "evidence": "być lekkim, nie krępować ruchów",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/pas_cyrkowca.md"
-    ],
-    "relatedEntryIds": [
-      "pas_cyrkowca"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "pas_cyrkowca_typo_krępować_2",
-    "name": "Pas Cyrkowca: literówka 'krępować' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/pas_cyrkowca.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"krępować\" zamiast \"krępować\" (prawdopodobnie \"krępować\" od krępować, ale zapis nietypowy).",
-    "evidence": "być lekkim, nie krępować ruchów",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/pas_cyrkowca.md"
-    ],
-    "relatedEntryIds": [
-      "pas_cyrkowca"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
     "id": "pas_głębinowego_uśmiechu_typo_rozłupujące",
     "name": "Pas Głębinowego Uśmiechu: literówka 'rozłupujące'",
     "source": "ekwipunek/przedmioty_magiczne/rzadkie/pas_głębinowego_uśmiechu.md",
@@ -6960,38 +6928,6 @@
     ],
     "relatedEntryIds": [
       "pas_nuggitha"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "pas_powerlifterski_typo_bebehy",
-    "name": "Pas Powerlifterski: literówka 'bebehy'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/pas_powerlifterski.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"bebehy\" zamiast \"bebechy\".",
-    "evidence": "Pas pomaga utrzymać bebehy w środku",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/pas_powerlifterski.md"
-    ],
-    "relatedEntryIds": [
-      "pas_powerlifterski"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "pas_powerlifterski_typo_bebehy_2",
-    "name": "Pas Powerlifterski: literówka 'bebehy' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/pas_powerlifterski.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"bebehy\" zamiast \"bebechy\".",
-    "evidence": "Pas pomaga utrzymać bebehy w środku",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/pas_powerlifterski.md"
-    ],
-    "relatedEntryIds": [
-      "pas_powerlifterski"
     ],
     "status": "detailed",
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
