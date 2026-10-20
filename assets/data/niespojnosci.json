@@ -6976,7 +6976,7 @@
       "peleryna_snów"
     ],
     "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
+    "revision": "0f3239726b687f085593266a088c843f63d032ce"
   },
   {
     "id": "peleryna_wędrowca_tysiąca_dachów_typo_nietoperza",
@@ -7233,38 +7233,6 @@
     ],
     "relatedEntryIds": [
       "życie_na_krawędzi"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "pierścień_niewzruszonego_umysłu_typo_głąb",
-    "name": "Pierścień Niewzruszonego Umysłu: literówka 'głąb'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/pierścień_niewzruszonego_umysłu.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"głąb\" zamiast \"głąb\" (prawdopodobnie \"głąb\" od głębia, ale zapis nietypowy).",
-    "evidence": "wpatrując się w jego głąb",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/pierścień_niewzruszonego_umysłu.md"
-    ],
-    "relatedEntryIds": [
-      "pierścień_niewzruszonego_umysłu"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "pierścień_niewzruszonego_umysłu_typo_głąb_2",
-    "name": "Pierścień Niewzruszonego Umysłu: literówka 'głąb' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/pierścień_niewzruszonego_umysłu.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"głąb\" zamiast \"głąb\" (prawdopodobnie \"głąb\" od głębia, ale zapis nietypowy).",
-    "evidence": "wpatrując się w jego głąb",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/pierścień_niewzruszonego_umysłu.md"
-    ],
-    "relatedEntryIds": [
-      "pierścień_niewzruszonego_umysłu"
     ],
     "status": "detailed",
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
