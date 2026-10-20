@@ -1172,10 +1172,11 @@
       "sourceBlob": "d32d977793bdba51036024832cbfdeb5138d1c74",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.170Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-20T07:43:14.101Z"
     },
     "ekwipunek/przedmioty_magiczne/niezwykłe/pierścień_niewzruszonego_umysłu.md": {
       "id": "e9799092fc0df395",
@@ -1183,10 +1184,11 @@
       "sourceBlob": "6bca9486934157913df67de39dd1cdcb5e4dc079",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.172Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-20T07:43:14.101Z"
     },
     "ekwipunek/przedmioty_magiczne/niezwykłe/pierścionek_stymulujący.md": {
       "id": "05fbed6778f6cef0",
@@ -1721,6 +1723,14 @@
     "date": "2026-10-20",
     "spent": 1.0933248000000002
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "030bcde8b39619f3",
+    "taskIds": [
+      "ee29f0e06afa9ae4",
+      "e9799092fc0df395"
+    ],
+    "amount": 3,
+    "date": "2026-10-20"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
