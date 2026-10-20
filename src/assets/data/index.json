@@ -4207,20 +4207,6 @@
     "status": "detailed"
   },
   {
-    "id": "pierścień_niewzruszonego_umysłu_typo_głąb",
-    "type": "inconsistency",
-    "name": "Pierścień Niewzruszonego Umysłu: literówka 'głąb'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/pierścień_niewzruszonego_umysłu.md",
-    "status": "detailed"
-  },
-  {
-    "id": "pierścień_niewzruszonego_umysłu_typo_głąb_2",
-    "type": "inconsistency",
-    "name": "Pierścień Niewzruszonego Umysłu: literówka 'głąb' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/pierścień_niewzruszonego_umysłu.md",
-    "status": "detailed"
-  },
-  {
     "id": "pierścień_odkrywcy_typo_astrolabium",
     "type": "inconsistency",
     "name": "Pierścień Odkrywcy: literówka 'astrolabium'",

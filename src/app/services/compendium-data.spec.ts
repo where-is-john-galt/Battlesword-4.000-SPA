@@ -1335,3 +1335,95 @@ describe('przedmioty_magiczne.json — audyt Pasa Cyrkowca i Pasa Powerlifterski
     ).toEqual([]);
   });
 });
+
+const DREAM_CLOAK_SOURCE = 'ekwipunek/przedmioty_magiczne/niezwykłe/peleryna_snów.md';
+const STEADFAST_RING_SOURCE =
+  'ekwipunek/przedmioty_magiczne/niezwykłe/pierścień_niewzruszonego_umysłu.md';
+
+describe('przedmioty_magiczne.json — audyt Peleryny Snów i Pierścienia Niewzruszonego Umysłu', () => {
+  it('odwzorowuje Pelerynę Snów dokładnie tak, jak w źródle', () => {
+    expect(magicItem('peleryna_snów')).toEqual({
+      id: 'peleryna_snów',
+      name: 'Peleryna Snów',
+      source: DREAM_CLOAK_SOURCE,
+      status: 'detailed',
+      type: 'Peleryna',
+      rarity: 'Niezwykłe',
+      modifiers: ['+2 do Psychologii'],
+      description:
+        'Peleryna pokryta jest symbolami oczu a fioletowym tle. Jej widok jest o tyle niepokojący, że symbole zdają się stale pływać po całej pelerynie, jakby ta była jedynie ułudą utkaną z własnych myśli obserwatora.',
+    });
+  });
+
+  it('odwzorowuje Pierścień Niewzruszonego Umysłu dokładnie tak, jak w źródle', () => {
+    const item = magicItem('pierścień_niewzruszonego_umysłu');
+
+    expect(item).toMatchObject({
+      id: 'pierścień_niewzruszonego_umysłu',
+      name: 'Pierścień Niewzruszonego Umysłu',
+      source: STEADFAST_RING_SOURCE,
+      status: 'detailed',
+      type: 'Pierścień',
+      rarity: 'Niezwykłe',
+      modifiers: ['Niewrażliwość na Panikę'],
+    });
+    expect(item.description).toContain('Prosty, na pozór niepozorny pierścień');
+    expect(item.description).toContain('wpatrując się w jego głąb');
+    expect(item.description).toContain('artefaktem opanowania wobec grozy pola bitwy');
+    expect(item.description).toContain('rodzaj wewnętrznej kotwicy');
+    expect(item.description?.split('\n\n')).toHaveLength(4);
+  });
+
+  it('rejestruje oba przedmioty w indeksie wyszukiwania', () => {
+    expect(indexEntry('peleryna_snów')).toEqual({
+      id: 'peleryna_snów',
+      type: 'magicItem',
+      name: 'Peleryna Snów',
+      source: DREAM_CLOAK_SOURCE,
+      status: 'detailed',
+    });
+    expect(indexEntry('pierścień_niewzruszonego_umysłu')).toEqual({
+      id: 'pierścień_niewzruszonego_umysłu',
+      type: 'magicItem',
+      name: 'Pierścień Niewzruszonego Umysłu',
+      source: STEADFAST_RING_SOURCE,
+      status: 'detailed',
+    });
+  });
+
+  it('zapisuje rzeczywistą literówkę "a fioletowym tle" w Pelerynie Snów', () => {
+    const entry = inconsistencies.find((item) => item.id === 'peleryna_snów_typo_a_fioletowym');
+
+    expect(entry).toMatchObject({
+      kind: 'typo',
+      source: DREAM_CLOAK_SOURCE,
+      evidence: 'Peleryna pokryta jest symbolami oczu a fioletowym tle.',
+      relatedEntryIds: ['peleryna_snów'],
+      status: 'detailed',
+    });
+    expect(
+      index.find(
+        (item) => item.id === 'peleryna_snów_typo_a_fioletowym' && item.type === 'inconsistency',
+      ),
+    ).toMatchObject({
+      source: DREAM_CLOAK_SOURCE,
+    });
+  });
+
+  it('nie zgłasza nieistniejącej literówki "głąb" w Pierścieniu Niewzruszonego Umysłu', () => {
+    expect(magicItem('pierścień_niewzruszonego_umysłu').description).toContain(
+      'wpatrując się w jego głąb',
+    );
+
+    expect(
+      inconsistencies.filter((entry) =>
+        entry.relatedEntryIds.includes('pierścień_niewzruszonego_umysłu'),
+      ),
+    ).toEqual([]);
+    expect(
+      index.filter(
+        (entry) => entry.type === 'inconsistency' && entry.source === STEADFAST_RING_SOURCE,
+      ),
+    ).toEqual([]);
+  });
+});
