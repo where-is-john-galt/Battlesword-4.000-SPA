@@ -1228,10 +1228,11 @@
       "sourceBlob": "146bb55f43da7f6172a49bbc89b58b35380b30b2",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.180Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-20T18:32:09.670Z"
     },
     "ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_srebrnego_splotu.md": {
       "id": "ddbeab948a97fe1e",
@@ -1239,10 +1240,11 @@
       "sourceBlob": "6c78de17cbb095e8bd862688dffd5c385670d4e6",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.182Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-20T18:32:09.670Z"
     },
     "ekwipunek/przedmioty_magiczne/niezwykłe/skórznia_widzącego.md": {
       "id": "1b1c9a1d7d77030c",
@@ -1733,6 +1735,14 @@
     "date": "2026-10-20",
     "spent": 2.5353414
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "8f1a1d6b9a315d52",
+    "taskIds": [
+      "4bb3c18abf2e97dd",
+      "ddbeab948a97fe1e"
+    ],
+    "amount": 2.4646586,
+    "date": "2026-10-20"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
