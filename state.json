@@ -323,11 +323,12 @@
       "sourceBlob": "848ee0889ae6f68988286a5a7f33f6a415ba2c90",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "M",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-10-21T18:44:58.117Z",
+      "updatedAt": "2026-10-21T18:50:45.014Z",
       "reason": "Zmiana M pliku źródłowego od 65cce70e28f70cde8c97ef4ae7eb8f49db86b31e.",
-      "startedAt": "2026-10-21T18:44:58.137Z"
+      "startedAt": "2026-10-21T18:44:58.137Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "tworzenie_postaci/klasy/alchemik.md": {
       "id": "302c5ed3b048b1dd",
@@ -1751,25 +1752,18 @@
       "sourceBlob": "7496e413ae8e9877091d49e86082b54c5c28ebab",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "A",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-10-21T18:44:58.114Z",
+      "updatedAt": "2026-10-21T18:50:45.014Z",
       "reason": "Zmiana A pliku źródłowego od 65cce70e28f70cde8c97ef4ae7eb8f49db86b31e.",
-      "startedAt": "2026-10-21T18:44:58.137Z"
+      "startedAt": "2026-10-21T18:44:58.137Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     }
   },
   "daily": {
     "date": "2026-10-21",
-    "spent": 2.4723447000000003
+    "spent": 3.4011537000000005
   },
-  "reservation": {
-    "taskId": "1e705e587b0b4907",
-    "taskIds": [
-      "8bd807117209d892",
-      "8acae4ee0e6ac98d"
-    ],
-    "amount": 2.5276552999999997,
-    "date": "2026-10-21"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
