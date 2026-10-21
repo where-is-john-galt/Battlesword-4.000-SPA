@@ -8251,22 +8251,6 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
-    "id": "tarcza_szarżującego_kawalerzysty_typo_wierzchowcem",
-    "name": "Tarcza Szarżującego Kawalerzysty: literówka 'wierzchowcem'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/tarcza_szarżującego_kawalerzysty.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"wierzchowcem\" zamiast \"wierzchowcem\" (prawdopodobnie \"wierzchowcem\" od wierzchowiec, ale zapis nietypowy).",
-    "evidence": "a także wzmacniać więź między wojownikiem a jego wierzchowcem",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/tarcza_szarżującego_kawalerzysty.md"
-    ],
-    "relatedEntryIds": [
-      "tarcza_szarżującego_kawalerzysty"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
     "id": "targowy_bastion_typo_wypatrywać",
     "name": "Targowy Bastion: literówka 'wypatrywać'",
     "source": "ekwipunek/przedmioty_magiczne/rzadkie/targowy_bastion.md",
@@ -9073,38 +9057,6 @@
     "relatedEntryIds": [
       "żeglarz"
     ],
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "zmyślne_buty_typo_etykiecie",
-    "name": "Zmyślne Buty: literówka 'etykiecie'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/zmyślne_buty.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"etykiecie\" zamiast \"etykiecie\" (prawdopodobnie \"etykiecie\" od etykieta, ale zapis nietypowy).",
-    "evidence": "Na załączonej etykiecie napisano \"Zmyślne Buty\".",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/zmyślne_buty.md"
-    ],
-    "relatedEntryIds": [
-      "zmyślne_buty"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "zmyślne_buty_typo_etykiecie_2",
-    "name": "Zmyślne Buty: literówka 'etykiecie' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/zmyślne_buty.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"etykiecie\" zamiast \"etykiecie\" (prawdopodobnie \"etykiecie\" od etykieta, ale zapis nietypowy).",
-    "evidence": "Na załączonej etykiecie napisano \"Zmyślne Buty\".",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/zmyślne_buty.md"
-    ],
-    "relatedEntryIds": [
-      "zmyślne_buty"
-    ],
-    "status": "detailed",
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {

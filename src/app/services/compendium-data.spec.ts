@@ -1728,3 +1728,69 @@ describe('przedmioty_magiczne.json — audyt Skórzni Widzącego i Tarczy Kowals
     expect(magicItem('tarcza_kowalskiego_cechu').description).toContain('nieregularny kształt');
   });
 });
+
+const CHARGING_CAVALRYMAN_SHIELD_SOURCE =
+  'ekwipunek/przedmioty_magiczne/niezwykłe/tarcza_szarżującego_kawalerzysty.md';
+const CLEVER_BOOTS_SOURCE = 'ekwipunek/przedmioty_magiczne/niezwykłe/zmyślne_buty.md';
+
+describe('przedmioty_magiczne.json — audyt Tarczy Szarżującego Kawalerzysty i Zmyślnych Butów', () => {
+  it('odwzorowuje Tarczę Szarżującego Kawalerzysty dokładnie tak, jak w źródle', () => {
+    expect(magicItem('tarcza_szarżującego_kawalerzysty')).toEqual({
+      id: 'tarcza_szarżującego_kawalerzysty',
+      name: 'Tarcza Szarżującego Kawalerzysty',
+      source: CHARGING_CAVALRYMAN_SHIELD_SOURCE,
+      status: 'detailed',
+      type: 'Tarcza',
+      rarity: 'Niezwykłe',
+      armor: 3,
+      modifiers: ['Jeździectwo +2'],
+      description:
+        'Ta średniej wielkości tarcza została wykonana z dębu okutego polerowaną stalą. Jej powierzchnię zdobi wizerunek galopującego rumaka otoczonego promienistym ornamentem przypominającym ślady kopyt. Mimo solidnej konstrukcji tarcza wydaje się zadziwiająco lekka, szczególnie podczas jazdy konnej.\n\nWedług dawnych kronik pierwsze egzemplarze nosili zwiadowcy i kawalerzyści służący w armii wielkiego królestwa stepów. Tarcze te miały pomagać jeźdźcom utrzymać równowagę podczas gwałtownych manewrów, a także wzmacniać więź między wojownikiem a jego wierzchowcem. Z czasem zaczęto wierzyć, że w każdej z nich mieszka echo ducha dawnego bojowego rumaka.\n\nGdy właściciel dosiada wierzchowca, metalowe okucia delikatnie rozgrzewają się, a wygrawerowany koń zdaje się poruszać kątem oka obserwatora. Zwierzę pod jeźdźcem staje się spokojniejsze i bardziej posłuszne, jakby instynktownie ufało osobie dzierżącej tarczę.',
+    });
+  });
+
+  it('odwzorowuje Zmyślne Buty dokładnie tak, jak w źródle', () => {
+    expect(magicItem('zmyślne_buty')).toEqual({
+      id: 'zmyślne_buty',
+      name: 'Zmyślne Buty',
+      source: CLEVER_BOOTS_SOURCE,
+      status: 'detailed',
+      type: 'Buty',
+      rarity: 'Niezwykłe',
+      modifiers: ['Spryt +1'],
+      description:
+        'Buty wyglądają bardzo zmyślnie. Na załączonej etykiecie napisano "Zmyślne Buty".',
+    });
+  });
+
+  it('rejestruje oba przedmioty w indeksie wyszukiwania', () => {
+    expect(indexEntry('tarcza_szarżującego_kawalerzysty')).toEqual({
+      id: 'tarcza_szarżującego_kawalerzysty',
+      type: 'magicItem',
+      name: 'Tarcza Szarżującego Kawalerzysty',
+      source: CHARGING_CAVALRYMAN_SHIELD_SOURCE,
+      status: 'detailed',
+    });
+    expect(indexEntry('zmyślne_buty')).toEqual({
+      id: 'zmyślne_buty',
+      type: 'magicItem',
+      name: 'Zmyślne Buty',
+      source: CLEVER_BOOTS_SOURCE,
+      status: 'detailed',
+    });
+  });
+
+  it('nie zgłasza nieistniejących literówek "wierzchowcem" i "etykiecie"', () => {
+    expect(magicItem('tarcza_szarżującego_kawalerzysty').description).toContain(
+      'a jego wierzchowcem',
+    );
+    expect(magicItem('zmyślne_buty').description).toContain('Na załączonej etykiecie');
+
+    for (const source of [CHARGING_CAVALRYMAN_SHIELD_SOURCE, CLEVER_BOOTS_SOURCE]) {
+      expect(inconsistencies.filter((entry) => entry.source === source)).toEqual([]);
+      expect(
+        index.filter((entry) => entry.type === 'inconsistency' && entry.source === source),
+      ).toEqual([]);
+    }
+  });
+});
