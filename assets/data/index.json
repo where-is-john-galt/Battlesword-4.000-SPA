@@ -4648,13 +4648,6 @@
     "status": "detailed"
   },
   {
-    "id": "tarcza_szarżującego_kawalerzysty_typo_wierzchowcem",
-    "type": "inconsistency",
-    "name": "Tarcza Szarżującego Kawalerzysty: literówka 'wierzchowcem'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/tarcza_szarżującego_kawalerzysty.md",
-    "status": "detailed"
-  },
-  {
     "id": "targowy_bastion_typo_wypatrywać",
     "type": "inconsistency",
     "name": "Targowy Bastion: literówka 'wypatrywać'",
@@ -5002,20 +4995,6 @@
     "type": "inconsistency",
     "name": "Żeglarz: literówka 'Stabline'",
     "source": "tworzenie_postaci/profesje/żeglarz.md",
-    "status": "detailed"
-  },
-  {
-    "id": "zmyślne_buty_typo_etykiecie",
-    "type": "inconsistency",
-    "name": "Zmyślne Buty: literówka 'etykiecie'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/zmyślne_buty.md",
-    "status": "detailed"
-  },
-  {
-    "id": "zmyślne_buty_typo_etykiecie_2",
-    "type": "inconsistency",
-    "name": "Zmyślne Buty: literówka 'etykiecie' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/zmyślne_buty.md",
     "status": "detailed"
   },
   {
