@@ -1662,3 +1662,69 @@ describe('przedmioty_magiczne.json — audyt Rękawic do Podnoszenia Ciężarów
     });
   });
 });
+
+const SEER_LEATHER_SOURCE = 'ekwipunek/przedmioty_magiczne/niezwykłe/skórznia_widzącego.md';
+const SMITH_GUILD_SHIELD_SOURCE =
+  'ekwipunek/przedmioty_magiczne/niezwykłe/tarcza_kowalskiego_cechu.md';
+
+describe('przedmioty_magiczne.json — audyt Skórzni Widzącego i Tarczy Kowalskiego Cechu', () => {
+  it('odwzorowuje Skórznię Widzącego dokładnie tak, jak w źródle', () => {
+    expect(magicItem('skórznia_widzącego')).toEqual({
+      id: 'skórznia_widzącego',
+      name: 'Skórznia Widzącego',
+      source: SEER_LEATHER_SOURCE,
+      status: 'detailed',
+      type: 'Pancerz',
+      baseItem: 'Skórznia ćwiekowana',
+      rarity: 'Niezwykłe',
+      armor: 3,
+      modifiers: ['+1 do Percepcji'],
+      description:
+        'Ćwieki na skórzni ozdobione są specyficznymi grawerunkami przypominającymi oczy. Co ciekawe, osoby noszące tę skórznię raportują, że ich wzrok znacząco się wyostrza, a wady wzroku ustępują. Skórznia chroni więc nie tylko przed ciosami, ale również potykaniem się i obrażeniami przed upadkiem.',
+    });
+  });
+
+  it('odwzorowuje Tarczę Kowalskiego Cechu dokładnie tak, jak w źródle', () => {
+    expect(magicItem('tarcza_kowalskiego_cechu')).toEqual({
+      id: 'tarcza_kowalskiego_cechu',
+      name: 'Tarcza Kowalskiego Cechu',
+      source: SMITH_GUILD_SHIELD_SOURCE,
+      status: 'detailed',
+      type: 'Tarcza',
+      rarity: 'Niezwykłe',
+      armor: 3,
+      modifiers: ['Kowalstwo +2'],
+      description:
+        'Okuta pasami ciemnego, nierdzewiejącego żelaza, ta tarcza nie nosi herbu żadnego rodu ani chorągwi żadnego pułku. Zamiast tego jej powierzchnię zdobi wzór przypominający odciski młota, jakby kowal zamiast malować godło, po prostu bił w metal, aż ten ułożył się we własny, nieregularny kształt. Środek tarczy, tam gdzie zwykle widnieje umbo, uformowano na kształt kowadła w miniaturze, wypolerowanego do połysku od niezliczonych dotknięć.\n\nMówi się, że tarcza trafiła w ręce pierwszego właściciela jako zapłata za dług, którego nikt już nie pamięta. Kowal z cechu w Canbin miał ponoć wykuć ją w noc, gdy piec płonął niebieskim ogniem zamiast czerwonego. Od tamtej pory krąży między czeladnikami i mistrzami, zawsze trafiając do kogoś, kto potrzebuje jej bardziej niż poprzedni właściciel.\n\nTrzymana w dłoni podczas pracy przy kowadle, tarcza zdaje się uczyć ruchów ramienia. Ci, którzy jej używają, przysięgają, że młot sam znajduje właściwy kąt uderzenia, a metal chętniej poddaje się kształtowaniu.',
+    });
+  });
+
+  it('rejestruje oba przedmioty w indeksie wyszukiwania', () => {
+    expect(indexEntry('skórznia_widzącego')).toEqual({
+      id: 'skórznia_widzącego',
+      type: 'magicItem',
+      name: 'Skórznia Widzącego',
+      source: SEER_LEATHER_SOURCE,
+      status: 'detailed',
+    });
+    expect(indexEntry('tarcza_kowalskiego_cechu')).toEqual({
+      id: 'tarcza_kowalskiego_cechu',
+      type: 'magicItem',
+      name: 'Tarcza Kowalskiego Cechu',
+      source: SMITH_GUILD_SHIELD_SOURCE,
+      status: 'detailed',
+    });
+  });
+
+  it('nie zgłasza nieistniejących literówek "potykaniem" i "nieregularny"', () => {
+    for (const source of [SEER_LEATHER_SOURCE, SMITH_GUILD_SHIELD_SOURCE]) {
+      expect(inconsistencies.filter((entry) => entry.source === source)).toEqual([]);
+      expect(
+        index.filter((entry) => entry.type === 'inconsistency' && entry.source === source),
+      ).toEqual([]);
+    }
+
+    expect(magicItem('skórznia_widzącego').description).toContain('potykaniem się');
+    expect(magicItem('tarcza_kowalskiego_cechu').description).toContain('nieregularny kształt');
+  });
+});

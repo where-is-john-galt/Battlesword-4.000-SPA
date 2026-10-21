@@ -8074,38 +8074,6 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
-    "id": "skórznia_widzącego_typo_potykaniem",
-    "name": "Skórznia Widzącego: literówka 'potykaniem'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/skórznia_widzącego.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"potykaniem\" zamiast \"potykaniem\" (prawdopodobnie \"potykaniem\" od potykać, ale zapis nietypowy).",
-    "evidence": "chroni więc nie tylko przed ciosami, ale również potykaniem się",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/skórznia_widzącego.md"
-    ],
-    "relatedEntryIds": [
-      "skórznia_widzącego"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "skórznia_widzącego_typo_potykaniem_2",
-    "name": "Skórznia Widzącego: literówka 'potykaniem' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/skórznia_widzącego.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"potykaniem\" zamiast \"potykaniem\" (prawdopodobnie \"potykaniem\" od potykać, ale zapis nietypowy).",
-    "evidence": "chroni więc nie tylko przed ciosami, ale również potykaniem się",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/skórznia_widzącego.md"
-    ],
-    "relatedEntryIds": [
-      "skórznia_widzącego"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
     "id": "smieciarz_typo_sztuka_przetrwania",
     "name": "Śmieciarz: zapis 'Sztuka przetrwania' małą literą",
     "source": "tworzenie_postaci/profesje/śmieciarz.md",
@@ -8229,38 +8197,6 @@
     ],
     "relatedEntryIds": [
       "taktyk"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "tarcza_kowalskiego_cechu_typo_nieregularny",
-    "name": "Tarcza Kowalskiego Cechu: literówka 'nieregularny'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/tarcza_kowalskiego_cechu.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"nieregularny\" zamiast \"nieregularny\" (prawdopodobnie \"nieregularny\" od nieregularny, ale zapis nietypowy).",
-    "evidence": "aż ten ułożył się we własny, nieregularny kształt",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/tarcza_kowalskiego_cechu.md"
-    ],
-    "relatedEntryIds": [
-      "tarcza_kowalskiego_cechu"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "tarcza_kowalskiego_cechu_typo_nieregularny_2",
-    "name": "Tarcza Kowalskiego Cechu: literówka 'nieregularny' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/tarcza_kowalskiego_cechu.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"nieregularny\" zamiast \"nieregularny\" (prawdopodobnie \"nieregularny\" od nieregularny, ale zapis nietypowy).",
-    "evidence": "aż ten ułożył się we własny, nieregularny kształt",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/tarcza_kowalskiego_cechu.md"
-    ],
-    "relatedEntryIds": [
-      "tarcza_kowalskiego_cechu"
     ],
     "status": "detailed",
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
