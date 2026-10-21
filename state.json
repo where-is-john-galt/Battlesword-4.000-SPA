@@ -1258,10 +1258,11 @@
       "sourceBlob": "f9af143c9f785fa47ea6764a82ffbc0de41ee075",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.185Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-21T07:47:47.605Z"
     },
     "ekwipunek/przedmioty_magiczne/niezwykłe/tarcza_kowalskiego_cechu.md": {
       "id": "df8b2bc6b1dfb403",
@@ -1269,10 +1270,11 @@
       "sourceBlob": "ae949a0b9288d718c603165de17bb0124935208e",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.188Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-21T07:47:47.605Z"
     },
     "ekwipunek/przedmioty_magiczne/niezwykłe/tarcza_szarżującego_kawalerzysty.md": {
       "id": "9c7cea5f05887091",
@@ -1741,6 +1743,14 @@
     "date": "2026-10-21",
     "spent": 0.8859597000000002
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "70914031084fe6c4",
+    "taskIds": [
+      "1b1c9a1d7d77030c",
+      "df8b2bc6b1dfb403"
+    ],
+    "amount": 3,
+    "date": "2026-10-21"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
