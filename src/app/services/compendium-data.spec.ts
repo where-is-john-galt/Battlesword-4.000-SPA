@@ -1538,3 +1538,127 @@ describe('przedmioty_magiczne.json — audyt Pierścionka Stymulującego i Pier�
     ).toHaveLength(1);
   });
 });
+
+const WEIGHT_LIFTING_GLOVES_SOURCE =
+  'ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_do_podnoszenia_ciężarów.md';
+const SILVER_WEAVE_GLOVES_SOURCE =
+  'ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_srebrnego_splotu.md';
+
+describe('przedmioty_magiczne.json — audyt Rękawic do Podnoszenia Ciężarów i Rękawic Srebrnego Splotu', () => {
+  it('odwzorowuje Rękwice do Podnoszenia Ciężarów dokładnie tak, jak w źródle', () => {
+    expect(magicItem('rękawice_do_podnoszenia_ciężarów')).toEqual({
+      id: 'rękawice_do_podnoszenia_ciężarów',
+      name: 'Rękwice do Podnoszenia Ciężarów',
+      source: WEIGHT_LIFTING_GLOVES_SOURCE,
+      status: 'detailed',
+      type: 'Rękawice',
+      rarity: 'Niezwykłe',
+      modifiers: ['+2 do Atletyki'],
+      description:
+        'Rękawice zostały zaprojektowane specjalnie do podnoszenia ciężarów. Świetnie trzymają się dłoni, poprawiają chwytność, wzmacniają stawy i zapobiegają nieprzyjemnym otarciom.',
+    });
+  });
+
+  it('odwzorowuje Rękwice Srebrnego Splotu dokładnie tak, jak w źródle', () => {
+    const item = magicItem('rękawice_srebrnego_splotu');
+
+    expect(item).toMatchObject({
+      id: 'rękawice_srebrnego_splotu',
+      name: 'Rękwice Srebrnego Splotu',
+      source: SILVER_WEAVE_GLOVES_SOURCE,
+      status: 'detailed',
+      type: 'Rękawice',
+      rarity: 'Niezwykłe',
+      modifiers: ['Zręczność +1'],
+    });
+    expect(item.description).toContain('Para cienkich rękawic wykonanych z miękkiej czarnej skóry');
+    expect(item.description).toContain('srebrzystych nici wszytych wzdłuż palców');
+    expect(item.description).toContain('Mówi się, że pierwszą parę wykonano');
+    expect(item.description?.split('\n\n')).toHaveLength(3);
+  });
+
+  it('rejestruje oba przedmioty w indeksie wyszukiwania', () => {
+    expect(indexEntry('rękawice_do_podnoszenia_ciężarów')).toEqual({
+      id: 'rękawice_do_podnoszenia_ciężarów',
+      type: 'magicItem',
+      name: 'Rękwice do Podnoszenia Ciężarów',
+      source: WEIGHT_LIFTING_GLOVES_SOURCE,
+      status: 'detailed',
+    });
+    expect(indexEntry('rękawice_srebrnego_splotu')).toEqual({
+      id: 'rękawice_srebrnego_splotu',
+      type: 'magicItem',
+      name: 'Rękwice Srebrnego Splotu',
+      source: SILVER_WEAVE_GLOVES_SOURCE,
+      status: 'detailed',
+    });
+  });
+
+  it('zapisuje literówkę "Rękwice" w nazwach obu przedmiotów', () => {
+    const expectedEntries = [
+      {
+        inconsistencyId: 'rękawice_do_podnoszenia_ciężarów_typo_nazwa',
+        itemId: 'rękawice_do_podnoszenia_ciężarów',
+        name: 'Rękwice do Podnoszenia Ciężarów: literówka w nazwie',
+        source: WEIGHT_LIFTING_GLOVES_SOURCE,
+        evidence: '# Rękwice do Podnoszenia Ciężarów',
+      },
+      {
+        inconsistencyId: 'rękawice_srebrnego_splotu_typo_nazwa',
+        itemId: 'rękawice_srebrnego_splotu',
+        name: 'Rękwice Srebrnego Splotu: literówka w nazwie',
+        source: SILVER_WEAVE_GLOVES_SOURCE,
+        evidence: '# Rękwice Srebrnego Splotu',
+      },
+    ];
+
+    for (const expected of expectedEntries) {
+      const entry = inconsistencies.find((item) => item.id === expected.inconsistencyId);
+
+      expect(entry).toMatchObject({
+        kind: 'typo',
+        source: expected.source,
+        details: 'Nazwa przedmiotu zawiera zapis "Rękwice" zamiast "Rękawice".',
+        evidence: expected.evidence,
+        relatedEntryIds: [expected.itemId],
+        status: 'detailed',
+      });
+      expect(
+        index.find(
+          (item) => item.id === expected.inconsistencyId && item.type === 'inconsistency',
+        ),
+      ).toMatchObject({
+        name: expected.name,
+        source: expected.source,
+      });
+      expect(
+        inconsistencies.filter((item) => item.id === expected.inconsistencyId),
+      ).toHaveLength(1);
+    }
+  });
+
+  it('zapisuje literówkę "poznokcie" w Rękawicach Srebrnego Splotu', () => {
+    const entry = inconsistencies.find(
+      (item) => item.id === 'rękawice_srebrnego_splotu_typo_poznokcie',
+    );
+
+    expect(entry).toMatchObject({
+      kind: 'typo',
+      source: SILVER_WEAVE_GLOVES_SOURCE,
+      details: 'W opisie zapisano "poznokcie" zamiast "paznokcie".',
+      evidence: 'a nie miał poznokcie mniejsze w trakcie jazdy',
+      relatedEntryIds: ['rękawice_srebrnego_splotu'],
+      status: 'detailed',
+    });
+    expect(
+      index.find(
+        (item) =>
+          item.id === 'rękawice_srebrnego_splotu_typo_poznokcie' &&
+          item.type === 'inconsistency',
+      ),
+    ).toMatchObject({
+      name: "Rękwice Srebrnego Splotu: literówka 'poznokcie'",
+      source: SILVER_WEAVE_GLOVES_SOURCE,
+    });
+  });
+});

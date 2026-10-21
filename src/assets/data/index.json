@@ -4466,6 +4466,13 @@
     "status": "detailed"
   },
   {
+    "id": "rękawice_do_podnoszenia_ciężarów_typo_nazwa",
+    "type": "inconsistency",
+    "name": "Rękwice do Podnoszenia Ciężarów: literówka w nazwie",
+    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_do_podnoszenia_ciężarów.md",
+    "status": "detailed"
+  },
+  {
     "id": "rękawice_do_przesadzania_typo_bezpieczeniejsze",
     "type": "inconsistency",
     "name": "Rękawice Do Przesadzania: literówka 'bezpieczeniejsze'",
@@ -4491,6 +4498,13 @@
     "type": "inconsistency",
     "name": "Rękawice Do Przesadzania: literówka 'niezidentyifkowanych' (duplikat)",
     "source": "ekwipunek/przedmioty_magiczne/rzadkie/rękawice_do_przesadzania.md",
+    "status": "detailed"
+  },
+  {
+    "id": "rękawice_srebrnego_splotu_typo_nazwa",
+    "type": "inconsistency",
+    "name": "Rękwice Srebrnego Splotu: literówka w nazwie",
+    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_srebrnego_splotu.md",
     "status": "detailed"
   },
   {

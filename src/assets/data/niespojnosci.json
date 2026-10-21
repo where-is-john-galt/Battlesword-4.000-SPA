@@ -7830,6 +7830,22 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
+    "id": "rękawice_do_podnoszenia_ciężarów_typo_nazwa",
+    "name": "Rękwice do Podnoszenia Ciężarów: literówka w nazwie",
+    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_do_podnoszenia_ciężarów.md",
+    "kind": "typo",
+    "details": "Nazwa przedmiotu zawiera zapis \"Rękwice\" zamiast \"Rękawice\".",
+    "evidence": "# Rękwice do Podnoszenia Ciężarów",
+    "relatedSources": [
+      "ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_do_podnoszenia_ciężarów.md"
+    ],
+    "relatedEntryIds": [
+      "rękawice_do_podnoszenia_ciężarów"
+    ],
+    "status": "detailed",
+    "revision": "0f3239726b687f085593266a088c843f63d032ce"
+  },
+  {
     "id": "rękawice_do_przesadzania_typo_bezpieczeniejsze",
     "name": "Rękawice Do Przesadzania: literówka 'bezpieczeniejsze'",
     "source": "ekwipunek/przedmioty_magiczne/rzadkie/rękawice_do_przesadzania.md",
@@ -7892,6 +7908,22 @@
     ],
     "status": "detailed",
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
+  },
+  {
+    "id": "rękawice_srebrnego_splotu_typo_nazwa",
+    "name": "Rękwice Srebrnego Splotu: literówka w nazwie",
+    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_srebrnego_splotu.md",
+    "kind": "typo",
+    "details": "Nazwa przedmiotu zawiera zapis \"Rękwice\" zamiast \"Rękawice\".",
+    "evidence": "# Rękwice Srebrnego Splotu",
+    "relatedSources": [
+      "ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_srebrnego_splotu.md"
+    ],
+    "relatedEntryIds": [
+      "rękawice_srebrnego_splotu"
+    ],
+    "status": "detailed",
+    "revision": "0f3239726b687f085593266a088c843f63d032ce"
   },
   {
     "id": "rękawice_srebrnego_splotu_typo_poznokcie",
