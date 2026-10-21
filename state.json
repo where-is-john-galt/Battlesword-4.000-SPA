@@ -1286,10 +1286,11 @@
       "sourceBlob": "491e0fc54d8bdfa74232cd12bc148a8eabfdd05b",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.190Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-21T13:55:41.071Z"
     },
     "ekwipunek/przedmioty_magiczne/niezwykłe/zmyślne_buty.md": {
       "id": "0af17752066b1779",
@@ -1297,10 +1298,11 @@
       "sourceBlob": "204ee54c8ccd3e03939753e2a3243f9eced9e4a4",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.192Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-21T13:55:41.071Z"
     },
     "ekwipunek/przedmioty_magiczne/potężne/idealne_buty.md": {
       "id": "2d3db618aa70f726",
@@ -1747,6 +1749,14 @@
     "date": "2026-10-21",
     "spent": 1.5678581999999999
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "9976ef8468053866",
+    "taskIds": [
+      "9c7cea5f05887091",
+      "0af17752066b1779"
+    ],
+    "amount": 3,
+    "date": "2026-10-21"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
