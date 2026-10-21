@@ -4571,20 +4571,6 @@
     "status": "detailed"
   },
   {
-    "id": "skórznia_widzącego_typo_potykaniem",
-    "type": "inconsistency",
-    "name": "Skórznia Widzącego: literówka 'potykaniem'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/skórznia_widzącego.md",
-    "status": "detailed"
-  },
-  {
-    "id": "skórznia_widzącego_typo_potykaniem_2",
-    "type": "inconsistency",
-    "name": "Skórznia Widzącego: literówka 'potykaniem' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/skórznia_widzącego.md",
-    "status": "detailed"
-  },
-  {
     "id": "smieciarz_typo_sztuka_przetrwania",
     "type": "inconsistency",
     "name": "Śmieciarz: zapis 'Sztuka przetrwania' małą literą",
@@ -4638,20 +4624,6 @@
     "type": "inconsistency",
     "name": "Taktyk: literówka 'Predyszpozycje'",
     "source": "tworzenie_postaci/klasy/taktyk.md",
-    "status": "detailed"
-  },
-  {
-    "id": "tarcza_kowalskiego_cechu_typo_nieregularny",
-    "type": "inconsistency",
-    "name": "Tarcza Kowalskiego Cechu: literówka 'nieregularny'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/tarcza_kowalskiego_cechu.md",
-    "status": "detailed"
-  },
-  {
-    "id": "tarcza_kowalskiego_cechu_typo_nieregularny_2",
-    "type": "inconsistency",
-    "name": "Tarcza Kowalskiego Cechu: literówka 'nieregularny' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/tarcza_kowalskiego_cechu.md",
     "status": "detailed"
   },
   {
