@@ -1228,12 +1228,14 @@
       "sourceBlob": "146bb55f43da7f6172a49bbc89b58b35380b30b2",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "complete",
       "attempts": 2,
       "updatedAt": "2026-10-20T18:48:01.851Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
       "startedAt": "2026-10-21T01:41:32.162Z",
-      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem.",
+      "completedAt": "2026-10-21T01:49:10.537Z",
+      "summary": "Obie Rękawice były już wiernie odwzorowane w danych (nazwy z literówką \"Rękwice\", typ, rzadkość, modyfikatory i opisy). Uzupełniono brakujące wpisy w sekcji Niespójności o literówki w nazwach obu przedmiotów oraz dodano testy audytowe sprawdzające pełne dane, rejestrację w indeksie i zapis literówek \"Rękwice\" oraz \"poznokcie\"."
     },
     "ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_srebrnego_splotu.md": {
       "id": "ddbeab948a97fe1e",
@@ -1241,12 +1243,14 @@
       "sourceBlob": "6c78de17cbb095e8bd862688dffd5c385670d4e6",
       "sourceSha": "0f3239726b687f085593266a088c843f63d032ce",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "complete",
       "attempts": 2,
       "updatedAt": "2026-10-20T18:48:01.851Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
       "startedAt": "2026-10-21T01:41:32.162Z",
-      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem.",
+      "completedAt": "2026-10-21T01:49:10.537Z",
+      "summary": "Obie Rękawice były już wiernie odwzorowane w danych (nazwy z literówką \"Rękwice\", typ, rzadkość, modyfikatory i opisy). Uzupełniono brakujące wpisy w sekcji Niespójności o literówki w nazwach obu przedmiotów oraz dodano testy audytowe sprawdzające pełne dane, rejestrację w indeksie i zapis literówek \"Rękwice\" oraz \"poznokcie\"."
     },
     "ekwipunek/przedmioty_magiczne/niezwykłe/skórznia_widzącego.md": {
       "id": "1b1c9a1d7d77030c",
@@ -1735,16 +1739,8 @@
   },
   "daily": {
     "date": "2026-10-21",
-    "spent": 0
+    "spent": 0.8859597000000002
   },
-  "reservation": {
-    "taskId": "8f1a1d6b9a315d52",
-    "taskIds": [
-      "4bb3c18abf2e97dd",
-      "ddbeab948a97fe1e"
-    ],
-    "amount": 3,
-    "date": "2026-10-21"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
