@@ -1312,10 +1312,11 @@
       "sourceBlob": "bc1493f023c5e9c826940c1ecf7bc563b51ca021",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.195Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-22T07:43:16.599Z"
     },
     "ekwipunek/przedmioty_magiczne/potężne/klamra_z_urodzenia.md": {
       "id": "d9ed61060f6d481b",
@@ -1323,10 +1324,11 @@
       "sourceBlob": "69326e8db79bf0735627d13cf9c28ec58322c8a1",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.197Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-22T07:43:16.599Z"
     },
     "ekwipunek/przedmioty_magiczne/potężne/miażdżyciel.md": {
       "id": "d4de24739034988e",
@@ -1764,6 +1766,14 @@
     "date": "2026-10-22",
     "spent": 0.030702899999999998
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "79a78772d8ad56a4",
+    "taskIds": [
+      "2d3db618aa70f726",
+      "d9ed61060f6d481b"
+    ],
+    "amount": 3,
+    "date": "2026-10-22"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
