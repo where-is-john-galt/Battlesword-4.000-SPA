@@ -1364,11 +1364,11 @@
       "sourceBlob": "ea30bd8f35484b19ae69fbe310888e34687b341b",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 1,
+      "status": "running",
+      "attempts": 2,
       "updatedAt": "2026-10-23T13:35:24.351Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-23T13:34:39.731Z",
+      "startedAt": "2026-10-23T18:28:08.058Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/potężne/pas_nuggitha.md": {
@@ -1377,11 +1377,11 @@
       "sourceBlob": "10759c55b3149e1a29ad79385be2a05a00669f38",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 1,
+      "status": "running",
+      "attempts": 2,
       "updatedAt": "2026-10-23T13:35:24.351Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-23T13:34:39.731Z",
+      "startedAt": "2026-10-23T18:28:08.058Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/potężne/peleryna_podróżna.md": {
@@ -1776,6 +1776,14 @@
     "date": "2026-10-23",
     "spent": 0.055041
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "d7c064d9866820ac",
+    "taskIds": [
+      "0300ae99864f0634",
+      "e77bdeace6b87000"
+    ],
+    "amount": 3,
+    "date": "2026-10-23"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
