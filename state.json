@@ -1390,11 +1390,11 @@
       "sourceBlob": "8d23621dcb3f9296d831dba4cd2595a779dc10f2",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 1,
+      "status": "running",
+      "attempts": 2,
       "updatedAt": "2026-10-24T01:41:57.203Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-24T01:41:12.753Z",
+      "startedAt": "2026-10-24T07:24:46.588Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/potężne/rogaty_hełm_najeźdzcy.md": {
@@ -1403,11 +1403,11 @@
       "sourceBlob": "067463f0b50343de08e3024f7eb4c44a305ffe66",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 1,
+      "status": "running",
+      "attempts": 2,
       "updatedAt": "2026-10-24T01:41:57.203Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-24T01:41:12.753Z",
+      "startedAt": "2026-10-24T07:24:46.588Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/potężne/skórznia_z_dzikiego_dzika.md": {
@@ -1780,6 +1780,14 @@
     "date": "2026-10-24",
     "spent": 0.018357000000000002
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "7eca5182f9e63a43",
+    "taskIds": [
+      "e44dcf1bdfa12cc4",
+      "4ba13ba0caed204d"
+    ],
+    "amount": 3,
+    "date": "2026-10-24"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
