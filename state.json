@@ -1416,10 +1416,11 @@
       "sourceBlob": "c6cfb8b01d5361ede69a2ffd9e4dda8f0151a8dd",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.215Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-24T16:41:34.100Z"
     },
     "ekwipunek/przedmioty_magiczne/potężne/trzask.md": {
       "id": "b2e33207a198a8c8",
@@ -1427,10 +1428,11 @@
       "sourceBlob": "5850d7f137de68076fcd77b8de0b557ae55e36cc",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.218Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-24T16:41:34.101Z"
     },
     "ekwipunek/przedmioty_magiczne/potężne/wieczne_spojrzenie.md": {
       "id": "8feae2ee1cf52427",
@@ -1780,6 +1782,14 @@
     "date": "2026-10-24",
     "spent": 0.05507100000000001
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "943ed930afc0ecb7",
+    "taskIds": [
+      "6988f4f7bbaf5ed3",
+      "b2e33207a198a8c8"
+    ],
+    "amount": 3,
+    "date": "2026-10-24"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
