@@ -191,11 +191,12 @@
       "sourceBlob": "bcdf0de0444347a03249587fb9e3e1b6c52c161e",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-10-14T19:55:13.927Z",
+      "updatedAt": "2026-10-25T17:07:13.940Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-10-25T17:06:10.456Z"
+      "startedAt": "2026-10-25T17:06:10.456Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/rzadkie/krystaliczna_tarcza_energetyczna.md": {
       "id": "f20e376d2597f737",
@@ -1469,11 +1470,12 @@
       "sourceBlob": "98bcfb32f43510fa3b6db71d5fdd4c9eddabae23",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-10-14T20:58:03.225Z",
+      "updatedAt": "2026-10-25T17:07:13.940Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-25T17:06:10.456Z"
+      "startedAt": "2026-10-25T17:06:10.456Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/rzadkie/kostur_żelazdnego_rachmistrza.md": {
       "id": "49e510917b52f29b",
@@ -1788,16 +1790,8 @@
   },
   "daily": {
     "date": "2026-10-25",
-    "spent": 0.0550476
+    "spent": 0.0733608
   },
-  "reservation": {
-    "taskId": "868e8ffff68b7b53",
-    "taskIds": [
-      "01789e27cb155e19",
-      "b947c1112f78bcaa"
-    ],
-    "amount": 3,
-    "date": "2026-10-25"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
