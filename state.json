@@ -1442,11 +1442,11 @@
       "sourceBlob": "051fbd481215b56d3b8e15d7cf0eaad2afef9e08",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 2,
+      "status": "running",
+      "attempts": 3,
       "updatedAt": "2026-10-25T06:19:33.380Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-25T06:18:43.406Z",
+      "startedAt": "2026-10-25T12:37:52.970Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/potężne/wybebeszacz.md": {
@@ -1455,11 +1455,11 @@
       "sourceBlob": "2a71a061f7e33deb6d89bd2668d165de533f3051",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 2,
+      "status": "running",
+      "attempts": 3,
       "updatedAt": "2026-10-25T06:19:33.380Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-25T06:18:43.406Z",
+      "startedAt": "2026-10-25T12:37:52.970Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/rzadkie/czytelnik_wód.md": {
@@ -1788,6 +1788,14 @@
     "date": "2026-10-25",
     "spent": 0.0366984
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "eb9634b59661af69",
+    "taskIds": [
+      "8feae2ee1cf52427",
+      "b78ec9c10476aad3"
+    ],
+    "amount": 3,
+    "date": "2026-10-25"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
