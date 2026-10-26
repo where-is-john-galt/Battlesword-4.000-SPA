@@ -1483,11 +1483,12 @@
       "sourceBlob": "940e484ceefe074b6eb49a5cdaa971ecd8c07719",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-10-14T20:58:03.228Z",
+      "updatedAt": "2026-10-26T01:19:10.314Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-26T01:18:25.763Z"
+      "startedAt": "2026-10-26T01:18:25.763Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/rzadkie/krasnoludzki_ładny_hełm.md": {
       "id": "c3e173a01af6f678",
@@ -1495,11 +1496,12 @@
       "sourceBlob": "8f7cc0df7bb1820a7d4f7e063db86bd5ba75d8e9",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-10-14T20:58:03.230Z",
+      "updatedAt": "2026-10-26T01:19:10.314Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-26T01:18:25.763Z"
+      "startedAt": "2026-10-26T01:18:25.763Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/rzadkie/księga_protekcji.md": {
       "id": "86122d1d5a39a1db",
@@ -1792,16 +1794,8 @@
   },
   "daily": {
     "date": "2026-10-26",
-    "spent": 0
+    "spent": 0.0183624
   },
-  "reservation": {
-    "taskId": "09e498bbe62df683",
-    "taskIds": [
-      "49e510917b52f29b",
-      "c3e173a01af6f678"
-    ],
-    "amount": 3,
-    "date": "2026-10-26"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
