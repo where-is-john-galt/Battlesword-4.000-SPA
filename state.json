@@ -1483,9 +1483,9 @@
       "sourceBlob": "940e484ceefe074b6eb49a5cdaa971ecd8c07719",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "blocked",
       "attempts": 3,
-      "updatedAt": "2026-10-26T07:55:13.926Z",
+      "updatedAt": "2026-10-26T15:18:01.086Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
       "startedAt": "2026-10-26T15:17:15.194Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
@@ -1496,9 +1496,9 @@
       "sourceBlob": "8f7cc0df7bb1820a7d4f7e063db86bd5ba75d8e9",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "blocked",
       "attempts": 3,
-      "updatedAt": "2026-10-26T07:55:13.926Z",
+      "updatedAt": "2026-10-26T15:18:01.086Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
       "startedAt": "2026-10-26T15:17:15.194Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
@@ -1794,16 +1794,8 @@
   },
   "daily": {
     "date": "2026-10-26",
-    "spent": 0.0367248
+    "spent": 0.0550872
   },
-  "reservation": {
-    "taskId": "09e498bbe62df683",
-    "taskIds": [
-      "49e510917b52f29b",
-      "c3e173a01af6f678"
-    ],
-    "amount": 3,
-    "date": "2026-10-26"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
