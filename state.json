@@ -217,11 +217,11 @@
       "sourceBlob": "49f702500c333c26ec3f7dd97485d612b419357c",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 1,
+      "status": "running",
+      "attempts": 2,
       "updatedAt": "2026-10-27T13:22:02.120Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-10-27T13:21:05.073Z",
+      "startedAt": "2026-10-27T19:29:00.586Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/rzadkie/mundur_gwardii_feniksa.md": {
@@ -230,11 +230,11 @@
       "sourceBlob": "a32735cc9e173c43af567161c020b6bf77656edc",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 1,
+      "status": "running",
+      "attempts": 2,
       "updatedAt": "2026-10-27T13:22:02.120Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-10-27T13:21:05.073Z",
+      "startedAt": "2026-10-27T19:29:00.586Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/rzadkie/pas_kupca-naczelnika.md": {
@@ -1804,6 +1804,14 @@
     "date": "2026-10-27",
     "spent": 0.054945
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "e51545574578c781",
+    "taskIds": [
+      "2dd971f98d88da5c",
+      "66ebaebb9b4986b6"
+    ],
+    "amount": 3,
+    "date": "2026-10-27"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
