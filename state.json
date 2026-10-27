@@ -217,11 +217,12 @@
       "sourceBlob": "49f702500c333c26ec3f7dd97485d612b419357c",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-10-14T19:55:13.932Z",
+      "updatedAt": "2026-10-27T13:22:02.120Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-10-27T13:21:05.073Z"
+      "startedAt": "2026-10-27T13:21:05.073Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/rzadkie/mundur_gwardii_feniksa.md": {
       "id": "66ebaebb9b4986b6",
@@ -229,11 +230,12 @@
       "sourceBlob": "a32735cc9e173c43af567161c020b6bf77656edc",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-10-14T19:55:13.934Z",
+      "updatedAt": "2026-10-27T13:22:02.120Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-10-27T13:21:05.073Z"
+      "startedAt": "2026-10-27T13:21:05.073Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/rzadkie/pas_kupca-naczelnika.md": {
       "id": "89a953e5e5000a0c",
@@ -1800,16 +1802,8 @@
   },
   "daily": {
     "date": "2026-10-27",
-    "spent": 0.0366552
+    "spent": 0.054945
   },
-  "reservation": {
-    "taskId": "e51545574578c781",
-    "taskIds": [
-      "2dd971f98d88da5c",
-      "66ebaebb9b4986b6"
-    ],
-    "amount": 3,
-    "date": "2026-10-27"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
