@@ -204,11 +204,11 @@
       "sourceBlob": "3740ca92e407cc3d63e44632e1edd9efe23c28e7",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 2,
+      "status": "running",
+      "attempts": 3,
       "updatedAt": "2026-10-27T00:34:36.206Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-10-27T00:33:51.636Z",
+      "startedAt": "2026-10-27T06:24:24.265Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/rzadkie/maska_tharizduna.md": {
@@ -1511,11 +1511,11 @@
       "sourceBlob": "69bbb1a80b7d0425b0c8b6a18db9b4adf2c259c9",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 2,
+      "status": "running",
+      "attempts": 3,
       "updatedAt": "2026-10-27T00:34:36.206Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-27T00:33:51.636Z",
+      "startedAt": "2026-10-27T06:24:24.265Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/rzadkie/pas_głębinowego_uśmiechu.md": {
@@ -1800,6 +1800,14 @@
     "date": "2026-10-27",
     "spent": 0.0183276
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "bdff73e7ac892a1c",
+    "taskIds": [
+      "f20e376d2597f737",
+      "86122d1d5a39a1db"
+    ],
+    "amount": 3,
+    "date": "2026-10-27"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
