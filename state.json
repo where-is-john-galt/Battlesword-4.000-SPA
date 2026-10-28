@@ -243,11 +243,11 @@
       "sourceBlob": "22d2421c6f8ff5023e8c79473af65d7f612617b8",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 1,
+      "status": "running",
+      "attempts": 2,
       "updatedAt": "2026-10-28T05:55:08.638Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-10-28T05:54:10.015Z",
+      "startedAt": "2026-10-28T13:11:12.062Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/rzadkie/targowy_bastion.md": {
@@ -1530,11 +1530,11 @@
       "sourceBlob": "fe4b342c0c9579276456d3fd162d35fc8cadb47f",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 1,
+      "status": "running",
+      "attempts": 2,
       "updatedAt": "2026-10-28T05:55:08.638Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-28T05:54:10.015Z",
+      "startedAt": "2026-10-28T13:11:12.062Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/rzadkie/pas_nieskończonych_możliwości.md": {
@@ -1808,6 +1808,14 @@
     "date": "2026-10-28",
     "spent": 0.0183264
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "7e094bdbec8ceaaf",
+    "taskIds": [
+      "846a483f9ecb79f2",
+      "89a953e5e5000a0c"
+    ],
+    "amount": 3,
+    "date": "2026-10-28"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
