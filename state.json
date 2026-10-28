@@ -1543,11 +1543,12 @@
       "sourceBlob": "7421e84d2abe6ddf300d2454a9c61800c674c8a3",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-10-14T20:58:03.238Z",
+      "updatedAt": "2026-10-28T23:19:37.176Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-28T23:18:46.586Z"
+      "startedAt": "2026-10-28T23:18:46.586Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/rzadkie/peleryna_wędrowca_tysiąca_dachów.md": {
       "id": "90a55228b3d7fa2b",
@@ -1555,11 +1556,12 @@
       "sourceBlob": "a9eaf8a91e0231110355c03e84e843d6152a8ac3",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-10-14T20:58:03.240Z",
+      "updatedAt": "2026-10-28T23:19:37.176Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-28T23:18:46.586Z"
+      "startedAt": "2026-10-28T23:18:46.586Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/rzadkie/pierścień_odkrywcy.md": {
       "id": "30fbea980433a0f3",
@@ -1808,16 +1810,8 @@
   },
   "daily": {
     "date": "2026-10-28",
-    "spent": 0.0549792
+    "spent": 0.07334879999999999
   },
-  "reservation": {
-    "taskId": "66a54c70e3cac4a6",
-    "taskIds": [
-      "3bde5f7617f04490",
-      "90a55228b3d7fa2b"
-    ],
-    "amount": 3,
-    "date": "2026-10-28"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
