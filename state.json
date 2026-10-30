@@ -1569,11 +1569,11 @@
       "sourceBlob": "68436997f4a21753d6643a22fc8dc4be9aedf17e",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 2,
+      "status": "running",
+      "attempts": 3,
       "updatedAt": "2026-10-30T00:00:07.240Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-29T23:59:21.010Z",
+      "startedAt": "2026-10-30T05:59:53.437Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/rzadkie/rękawice_do_przesadzania.md": {
@@ -1582,11 +1582,11 @@
       "sourceBlob": "93f2c41298dd0da29205d1edf22fe658c7123fc4",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 2,
+      "status": "running",
+      "attempts": 3,
       "updatedAt": "2026-10-30T00:00:07.240Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-29T23:59:21.010Z",
+      "startedAt": "2026-10-30T05:59:53.437Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/rzadkie/tarcza_milczącej_kniei.md": {
@@ -1813,9 +1813,17 @@
     }
   },
   "daily": {
-    "date": "2026-10-29",
-    "spent": 0.07345199999999999
+    "date": "2026-10-30",
+    "spent": 0
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "8b851e6f3c4c4603",
+    "taskIds": [
+      "30fbea980433a0f3",
+      "81c29a0ee4ae9260"
+    ],
+    "amount": 3,
+    "date": "2026-10-30"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
