@@ -256,10 +256,11 @@
       "sourceBlob": "10dd6c4dc8189cf29a23fa8f9ff216fbc34e62d6",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T19:55:13.939Z",
-      "reason": "Pierwszy pełny audyt źródła."
+      "reason": "Pierwszy pełny audyt źródła.",
+      "startedAt": "2026-10-30T13:09:33.852Z"
     },
     "ekwipunek/reszta_ekwipunku.md": {
       "id": "8cfa4b3b9aef373e",
@@ -1595,10 +1596,11 @@
       "sourceBlob": "bb327b6652780194e7285d8971e526c0192c8cdb",
       "sourceSha": "6646c9087d5b6511baead1d4ae7ce29a50d24e7b",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.248Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-10-30T13:09:33.852Z"
     },
     "ekwipunek/przedmioty_magiczne/rzadkie/wilgotna_chwała.md": {
       "id": "3a1a15c5058c12c6",
@@ -1816,6 +1818,14 @@
     "date": "2026-10-30",
     "spent": 0.0183564
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "6c64e7345f47aee1",
+    "taskIds": [
+      "451e561ccda95022",
+      "dfe0be6f762a66a4"
+    ],
+    "amount": 3,
+    "date": "2026-10-30"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
