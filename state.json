@@ -335,10 +335,11 @@
       "sourceBlob": "aa73c128434170702aec2692bdcbc9df80b79d92",
       "sourceSha": "a0cb2adc82a8fd63218bc406a11ef2da5cceaa89",
       "change": "M",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-30T18:40:11.397Z",
-      "reason": "Zmiana M pliku źródłowego od 65cce70e28f70cde8c97ef4ae7eb8f49db86b31e."
+      "reason": "Zmiana M pliku źródłowego od 65cce70e28f70cde8c97ef4ae7eb8f49db86b31e.",
+      "startedAt": "2026-10-31T09:48:21.286Z"
     },
     "tworzenie_postaci/klasy/alchemik.md": {
       "id": "302c5ed3b048b1dd",
@@ -1845,16 +1846,25 @@
       "sourceBlob": "f1cfa7e44457948fe4a74e37839f1154731168ca",
       "sourceSha": "a0cb2adc82a8fd63218bc406a11ef2da5cceaa89",
       "change": "A",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-30T18:40:11.395Z",
-      "reason": "Zmiana A pliku źródłowego od 65cce70e28f70cde8c97ef4ae7eb8f49db86b31e."
+      "reason": "Zmiana A pliku źródłowego od 65cce70e28f70cde8c97ef4ae7eb8f49db86b31e.",
+      "startedAt": "2026-10-31T09:48:21.286Z"
     }
   },
   "daily": {
     "date": "2026-10-31",
     "spent": 0.0183636
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "24d89069d7cea626",
+    "taskIds": [
+      "c93ede775bf4816c",
+      "8acae4ee0e6ac98d"
+    ],
+    "amount": 3,
+    "date": "2026-10-31"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
