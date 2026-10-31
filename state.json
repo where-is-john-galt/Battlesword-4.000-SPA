@@ -256,11 +256,11 @@
       "sourceBlob": "10dd6c4dc8189cf29a23fa8f9ff216fbc34e62d6",
       "sourceSha": "a0cb2adc82a8fd63218bc406a11ef2da5cceaa89",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 1,
+      "status": "running",
+      "attempts": 2,
       "updatedAt": "2026-10-30T13:10:21.380Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-10-30T13:09:33.852Z",
+      "startedAt": "2026-10-31T23:27:48.708Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/reszta_ekwipunku.md": {
@@ -1597,11 +1597,11 @@
       "sourceBlob": "bb327b6652780194e7285d8971e526c0192c8cdb",
       "sourceSha": "a0cb2adc82a8fd63218bc406a11ef2da5cceaa89",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 1,
+      "status": "running",
+      "attempts": 2,
       "updatedAt": "2026-10-30T13:10:21.380Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-10-30T13:09:33.852Z",
+      "startedAt": "2026-10-31T23:27:48.708Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/rzadkie/wilgotna_chwała.md": {
@@ -1859,6 +1859,14 @@
     "date": "2026-10-31",
     "spent": 0.098025
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "ac9c3d0f32c93494",
+    "taskIds": [
+      "451e561ccda95022",
+      "dfe0be6f762a66a4"
+    ],
+    "amount": 3,
+    "date": "2026-10-31"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
