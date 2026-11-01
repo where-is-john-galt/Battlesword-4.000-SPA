@@ -1610,10 +1610,11 @@
       "sourceBlob": "900397f8f566ef7a6d778463c07233f022d1c979",
       "sourceSha": "a0cb2adc82a8fd63218bc406a11ef2da5cceaa89",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.250Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-11-01T14:21:23.795Z"
     },
     "ekwipunek/przedmioty_magiczne/rzadkie/zbroja_czerwonych_łusek.md": {
       "id": "ac1857f00d3fd5cb",
@@ -1621,10 +1622,11 @@
       "sourceBlob": "961cc9f3039de35acb1bd5807379e0632b16a27c",
       "sourceSha": "a0cb2adc82a8fd63218bc406a11ef2da5cceaa89",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.253Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-11-01T14:21:23.795Z"
     },
     "ekwipunek/przedmioty_podręczne.md": {
       "id": "6758fb30d19d2774",
@@ -1859,6 +1861,14 @@
     "date": "2026-11-01",
     "spent": 0.018321
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "69eb96fe4348fa61",
+    "taskIds": [
+      "3a1a15c5058c12c6",
+      "ac1857f00d3fd5cb"
+    ],
+    "amount": 3,
+    "date": "2026-11-01"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
