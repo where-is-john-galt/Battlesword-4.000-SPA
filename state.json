@@ -269,10 +269,11 @@
       "sourceBlob": "fdef2c702d7803690507e1de5ec8298b5ea74bb3",
       "sourceSha": "a0cb2adc82a8fd63218bc406a11ef2da5cceaa89",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T19:55:13.942Z",
-      "reason": "Pierwszy pełny audyt źródła."
+      "reason": "Pierwszy pełny audyt źródła.",
+      "startedAt": "2026-11-02T06:23:52.311Z"
     },
     "manifest.me": {
       "id": "db5a292b04ad183b",
@@ -1636,10 +1637,11 @@
       "sourceBlob": "205be694d04b9719b4bfd555b36474004b1d196f",
       "sourceSha": "a0cb2adc82a8fd63218bc406a11ef2da5cceaa89",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.255Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-11-02T06:23:52.311Z"
     },
     "mechaniki_bazowe/mądrość.md": {
       "id": "28ff85b706a68d32",
@@ -1860,9 +1862,17 @@
     }
   },
   "daily": {
-    "date": "2026-11-01",
-    "spent": 0.0733812
+    "date": "2026-11-02",
+    "spent": 0
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "e61cc3982e31ffc6",
+    "taskIds": [
+      "6758fb30d19d2774",
+      "8cfa4b3b9aef373e"
+    ],
+    "amount": 3,
+    "date": "2026-11-02"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
