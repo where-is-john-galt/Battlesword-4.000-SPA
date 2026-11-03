@@ -282,10 +282,11 @@
       "sourceBlob": "37a7b6922d280700bc705127268892273c54e218",
       "sourceSha": "a0cb2adc82a8fd63218bc406a11ef2da5cceaa89",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T19:55:13.944Z",
-      "reason": "Pierwszy pełny audyt źródła."
+      "reason": "Pierwszy pełny audyt źródła.",
+      "startedAt": "2026-11-03T06:58:14.667Z"
     },
     "mechaniki_bazowe/crafting.md": {
       "id": "c70beed9fa4e279f",
@@ -293,10 +294,11 @@
       "sourceBlob": "d80a18c0d0a365dd7a4b6df2603ae76789b94582",
       "sourceSha": "a0cb2adc82a8fd63218bc406a11ef2da5cceaa89",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T19:55:13.947Z",
-      "reason": "Pierwszy pełny audyt źródła."
+      "reason": "Pierwszy pełny audyt źródła.",
+      "startedAt": "2026-11-03T06:58:14.667Z"
     },
     "mechaniki_bazowe/przerwy_miedzy_przygodami.md": {
       "id": "85d6aa9957f1aafd",
@@ -1864,9 +1866,17 @@
     }
   },
   "daily": {
-    "date": "2026-11-02",
-    "spent": 0.0548604
+    "date": "2026-11-03",
+    "spent": 0
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "58d12a41c67caa18",
+    "taskIds": [
+      "db5a292b04ad183b",
+      "c70beed9fa4e279f"
+    ],
+    "amount": 3,
+    "date": "2026-11-03"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
