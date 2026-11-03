@@ -282,11 +282,11 @@
       "sourceBlob": "37a7b6922d280700bc705127268892273c54e218",
       "sourceSha": "a0cb2adc82a8fd63218bc406a11ef2da5cceaa89",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 2,
+      "status": "running",
+      "attempts": 3,
       "updatedAt": "2026-11-03T15:19:02.945Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-11-03T15:18:15.427Z",
+      "startedAt": "2026-11-03T21:50:28.613Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "mechaniki_bazowe/crafting.md": {
@@ -295,11 +295,11 @@
       "sourceBlob": "d80a18c0d0a365dd7a4b6df2603ae76789b94582",
       "sourceSha": "a0cb2adc82a8fd63218bc406a11ef2da5cceaa89",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 2,
+      "status": "running",
+      "attempts": 3,
       "updatedAt": "2026-11-03T15:19:02.945Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-11-03T15:18:15.427Z",
+      "startedAt": "2026-11-03T21:50:28.613Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "mechaniki_bazowe/przerwy_miedzy_przygodami.md": {
@@ -1871,6 +1871,14 @@
     "date": "2026-11-03",
     "spent": 0.0488397
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "58d12a41c67caa18",
+    "taskIds": [
+      "db5a292b04ad183b",
+      "c70beed9fa4e279f"
+    ],
+    "amount": 3,
+    "date": "2026-11-03"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
