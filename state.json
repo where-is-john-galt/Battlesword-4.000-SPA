@@ -341,9 +341,9 @@
       "sourceBlob": "3e862337f034763572ae6f9c972634a865605a12",
       "sourceSha": "9cee7469c3f9625cfc44ad2923dd4d1576852f75",
       "change": "M",
-      "status": "running",
+      "status": "queued",
       "attempts": 2,
-      "updatedAt": "2026-11-04T02:26:40.702Z",
+      "updatedAt": "2026-11-04T11:10:56.090Z",
       "reason": "Zmiana M pliku źródłowego od 65cce70e28f70cde8c97ef4ae7eb8f49db86b31e.",
       "startedAt": "2026-11-04T11:09:50.523Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
@@ -1872,9 +1872,9 @@
       "sourceBlob": "bc75ae725919913cf40ede068401a8a1ec569b11",
       "sourceSha": "9cee7469c3f9625cfc44ad2923dd4d1576852f75",
       "change": "A",
-      "status": "running",
+      "status": "queued",
       "attempts": 2,
-      "updatedAt": "2026-11-04T02:26:40.702Z",
+      "updatedAt": "2026-11-04T11:10:56.090Z",
       "reason": "Zmiana A pliku źródłowego od 65cce70e28f70cde8c97ef4ae7eb8f49db86b31e.",
       "startedAt": "2026-11-04T11:09:50.523Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
@@ -1882,16 +1882,8 @@
   },
   "daily": {
     "date": "2026-11-04",
-    "spent": 0.018309
+    "spent": 0.036618
   },
-  "reservation": {
-    "taskId": "c2cce416a2b36dd9",
-    "taskIds": [
-      "35d40866df1e57e1",
-      "8acae4ee0e6ac98d"
-    ],
-    "amount": 3,
-    "date": "2026-11-04"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
