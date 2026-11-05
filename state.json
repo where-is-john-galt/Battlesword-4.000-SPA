@@ -308,10 +308,11 @@
       "sourceBlob": "ec7f2822edacd627cd2db4ad4be9e08a49e8cd6a",
       "sourceSha": "9cee7469c3f9625cfc44ad2923dd4d1576852f75",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T19:55:13.949Z",
-      "reason": "Pierwszy pełny audyt źródła."
+      "reason": "Pierwszy pełny audyt źródła.",
+      "startedAt": "2026-11-05T22:42:24.919Z"
     },
     "mechaniki_bazowe/statystyki.md": {
       "id": "4050fcdfe492a8ac",
@@ -1681,10 +1682,11 @@
       "sourceBlob": "5c2be29760143eed4ccfbe6d525ab7f7cace7f84",
       "sourceSha": "9cee7469c3f9625cfc44ad2923dd4d1576852f75",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.262Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-11-05T22:42:24.920Z"
     },
     "mechaniki_bazowe/szczęście.md": {
       "id": "e00c91798b48d4de",
@@ -1888,6 +1890,14 @@
     "date": "2026-11-05",
     "spent": 0.0549558
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "3909f555de33e07f",
+    "taskIds": [
+      "85d6aa9957f1aafd",
+      "e7b3108fffe92fb9"
+    ],
+    "amount": 3,
+    "date": "2026-11-05"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
