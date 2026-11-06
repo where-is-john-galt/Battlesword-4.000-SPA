@@ -321,10 +321,11 @@
       "sourceBlob": "2343e14f9c5ac7639e320f58908892e1c48451fc",
       "sourceSha": "9cee7469c3f9625cfc44ad2923dd4d1576852f75",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T19:55:13.952Z",
-      "reason": "Pierwszy pełny audyt źródła."
+      "reason": "Pierwszy pełny audyt źródła.",
+      "startedAt": "2026-11-06T19:32:10.955Z"
     },
     "mechaniki_bazowe/testy.md": {
       "id": "0c0be20e0020f57b",
@@ -1707,10 +1708,11 @@
       "sourceBlob": "076b55daa4e0dd18a863f73020524f0303ab50f9",
       "sourceSha": "9cee7469c3f9625cfc44ad2923dd4d1576852f75",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.267Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-11-06T19:32:10.954Z"
     },
     "tworzenie_postaci/klasy/sabotażysta.md": {
       "id": "e627a1592420ef45",
@@ -1892,6 +1894,14 @@
     "date": "2026-11-06",
     "spent": 0.036594
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "f389908eaaea9137",
+    "taskIds": [
+      "5f40bedeac702518",
+      "4050fcdfe492a8ac"
+    ],
+    "amount": 3,
+    "date": "2026-11-06"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
