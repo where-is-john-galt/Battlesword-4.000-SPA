@@ -334,11 +334,12 @@
       "sourceBlob": "3f38fc264e59fc337b74dcc5955f0590e8f6e17e",
       "sourceSha": "9cee7469c3f9625cfc44ad2923dd4d1576852f75",
       "change": "initial audit",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-10-14T19:55:13.955Z",
+      "updatedAt": "2026-11-07T13:16:40.259Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-11-07T13:15:48.200Z"
+      "startedAt": "2026-11-07T13:15:48.200Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "patch_notes.md": {
       "id": "8acae4ee0e6ac98d",
@@ -1699,11 +1700,12 @@
       "sourceBlob": "eee3a8a5c6dc4fa15f8837f22e41df42e31ea569",
       "sourceSha": "9cee7469c3f9625cfc44ad2923dd4d1576852f75",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-10-14T20:58:03.265Z",
+      "updatedAt": "2026-11-07T13:16:40.259Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-11-07T13:15:48.200Z"
+      "startedAt": "2026-11-07T13:15:48.200Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "mechaniki_bazowe/sława.md": {
       "id": "5f40bedeac702518",
@@ -1896,16 +1898,8 @@
   },
   "daily": {
     "date": "2026-11-07",
-    "spent": 0.0365652
+    "spent": 0.0548478
   },
-  "reservation": {
-    "taskId": "4b4dd2c869b128bb",
-    "taskIds": [
-      "e00c91798b48d4de",
-      "0c0be20e0020f57b"
-    ],
-    "amount": 3,
-    "date": "2026-11-07"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
