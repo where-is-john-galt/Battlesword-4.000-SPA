@@ -321,11 +321,11 @@
       "sourceBlob": "2343e14f9c5ac7639e320f58908892e1c48451fc",
       "sourceSha": "9cee7469c3f9625cfc44ad2923dd4d1576852f75",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 2,
+      "status": "running",
+      "attempts": 3,
       "updatedAt": "2026-11-07T00:09:41.082Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-11-07T00:08:58.436Z",
+      "startedAt": "2026-11-07T06:12:15.366Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "mechaniki_bazowe/testy.md": {
@@ -1709,11 +1709,11 @@
       "sourceBlob": "076b55daa4e0dd18a863f73020524f0303ab50f9",
       "sourceSha": "9cee7469c3f9625cfc44ad2923dd4d1576852f75",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 2,
+      "status": "running",
+      "attempts": 3,
       "updatedAt": "2026-11-07T00:09:41.082Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-11-07T00:08:58.436Z",
+      "startedAt": "2026-11-07T06:12:15.366Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "tworzenie_postaci/klasy/sabotażysta.md": {
@@ -1896,6 +1896,14 @@
     "date": "2026-11-07",
     "spent": 0.0182826
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "f389908eaaea9137",
+    "taskIds": [
+      "5f40bedeac702518",
+      "4050fcdfe492a8ac"
+    ],
+    "amount": 3,
+    "date": "2026-11-07"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
