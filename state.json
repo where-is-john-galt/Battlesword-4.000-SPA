@@ -9,11 +9,12 @@
       "sourceBlob": "296d846b04d677bdb138a3dfff9ee3b8d1e2c4ad",
       "sourceSha": "9cee7469c3f9625cfc44ad2923dd4d1576852f75",
       "change": "initial audit",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-10-14T19:55:13.888Z",
+      "updatedAt": "2026-11-08T01:30:38.691Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-11-08T01:29:51.592Z"
+      "startedAt": "2026-11-08T01:29:51.592Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "bestiariusz/nieumarli/szkielet.md": {
       "id": "82bc419b8c9cd745",
@@ -361,11 +362,12 @@
       "sourceBlob": "07b33db30676727485c661ece75de1b77568cee4",
       "sourceSha": "9cee7469c3f9625cfc44ad2923dd4d1576852f75",
       "change": "initial audit",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-10-14T19:55:13.960Z",
+      "updatedAt": "2026-11-08T01:30:38.691Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-11-08T01:29:51.592Z"
+      "startedAt": "2026-11-08T01:29:51.592Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "tworzenie_postaci/klasy/grzybiarz.md": {
       "id": "bd052c8da2312843",
@@ -1900,16 +1902,8 @@
   },
   "daily": {
     "date": "2026-11-08",
-    "spent": 0
+    "spent": 0.0182412
   },
-  "reservation": {
-    "taskId": "d4cb1f2f9423179c",
-    "taskIds": [
-      "337e547a950fc8a9",
-      "302c5ed3b048b1dd"
-    ],
-    "amount": 3,
-    "date": "2026-11-08"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
