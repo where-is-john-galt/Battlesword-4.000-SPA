@@ -375,11 +375,11 @@
       "sourceBlob": "cf51850d80b63be0dfce164a74353b9e46e847e0",
       "sourceSha": "9cee7469c3f9625cfc44ad2923dd4d1576852f75",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 2,
+      "status": "running",
+      "attempts": 3,
       "updatedAt": "2026-11-09T01:01:13.467Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-11-09T01:00:20.726Z",
+      "startedAt": "2026-11-09T08:06:41.095Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "tworzenie_postaci/klasy/kawalerzysta.md": {
@@ -388,11 +388,11 @@
       "sourceBlob": "28f343be3d0046086f26f906b83a8b08ca06725e",
       "sourceSha": "9cee7469c3f9625cfc44ad2923dd4d1576852f75",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 2,
+      "status": "running",
+      "attempts": 3,
       "updatedAt": "2026-11-09T01:01:13.467Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-11-09T01:00:20.727Z",
+      "startedAt": "2026-11-09T08:06:41.095Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "tworzenie_postaci/klasy/lista_klas.md": {
@@ -1908,6 +1908,14 @@
     "date": "2026-11-09",
     "spent": 0.0182628
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "ee8f7b0d4cc7f9cf",
+    "taskIds": [
+      "bd052c8da2312843",
+      "d94178b380c5e8b1"
+    ],
+    "amount": 3,
+    "date": "2026-11-09"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
