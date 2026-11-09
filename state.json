@@ -401,11 +401,12 @@
       "sourceBlob": "bbafb47337ea2ed45b9f44f779702b7ea9484838",
       "sourceSha": "9cee7469c3f9625cfc44ad2923dd4d1576852f75",
       "change": "initial audit",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-10-14T19:55:13.967Z",
+      "updatedAt": "2026-11-09T18:55:51.291Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-11-09T18:54:58.460Z"
+      "startedAt": "2026-11-09T18:54:58.460Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "tworzenie_postaci/klasy/liturgista.md": {
       "id": "e73747e2c8f27e8e",
@@ -413,11 +414,12 @@
       "sourceBlob": "aad49549a5f4199dacb17e36d5dd9f7bff294f92",
       "sourceSha": "9cee7469c3f9625cfc44ad2923dd4d1576852f75",
       "change": "initial audit",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-10-14T19:55:13.970Z",
+      "updatedAt": "2026-11-09T18:55:51.291Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-11-09T18:54:58.460Z"
+      "startedAt": "2026-11-09T18:54:58.460Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "tworzenie_postaci/klasy/nekromanta.md": {
       "id": "ac1ca68f48d19d5b",
@@ -1908,16 +1910,8 @@
   },
   "daily": {
     "date": "2026-11-09",
-    "spent": 0.036525600000000005
+    "spent": 0.054787800000000005
   },
-  "reservation": {
-    "taskId": "9f1afdc4cdc24107",
-    "taskIds": [
-      "7dcec57bffbd63a0",
-      "e73747e2c8f27e8e"
-    ],
-    "amount": 3,
-    "date": "2026-11-09"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
