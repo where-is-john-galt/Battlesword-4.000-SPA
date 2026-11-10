@@ -427,10 +427,11 @@
       "sourceBlob": "21ae40dd2d28c7e0d161ece6707ae2ba0432e002",
       "sourceSha": "9cee7469c3f9625cfc44ad2923dd4d1576852f75",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T19:55:13.972Z",
-      "reason": "Pierwszy pełny audyt źródła."
+      "reason": "Pierwszy pełny audyt źródła.",
+      "startedAt": "2026-11-10T17:56:54.907Z"
     },
     "tworzenie_postaci/klasy/taktyk.md": {
       "id": "8d74dda707891348",
@@ -1738,10 +1739,11 @@
       "sourceBlob": "fcdd2d5b2fa9d188d812ee409897e03965c98024",
       "sourceSha": "9cee7469c3f9625cfc44ad2923dd4d1576852f75",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T20:58:03.270Z",
-      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki."
+      "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
+      "startedAt": "2026-11-10T17:56:54.907Z"
     },
     "tworzenie_postaci/klasy/skrytobójca.md": {
       "id": "492c0e4c64c24282",
@@ -1912,6 +1914,14 @@
     "date": "2026-11-10",
     "spent": 0.0488922
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "8e11864d4318008e",
+    "taskIds": [
+      "ac1ca68f48d19d5b",
+      "e627a1592420ef45"
+    ],
+    "amount": 3,
+    "date": "2026-11-10"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
