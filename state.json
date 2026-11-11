@@ -349,11 +349,12 @@
       "sourceBlob": "3e8161e62e82d596311adb651c58160c86fdb26b",
       "sourceSha": "3dc9ce1bef7d7a34fe22546f3c2d16ff21e77815",
       "change": "M",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-11-11T06:42:57.113Z",
+      "updatedAt": "2026-11-11T06:43:45.409Z",
       "reason": "Zmiana M pliku źródłowego od 65cce70e28f70cde8c97ef4ae7eb8f49db86b31e.",
-      "startedAt": "2026-11-11T06:42:57.152Z"
+      "startedAt": "2026-11-11T06:42:57.152Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "tworzenie_postaci/klasy/alchemik.md": {
       "id": "302c5ed3b048b1dd",
@@ -1916,11 +1917,12 @@
       "sourceBlob": "06c967b12cae684a4f8bbe4089b668f617b994fb",
       "sourceSha": "3dc9ce1bef7d7a34fe22546f3c2d16ff21e77815",
       "change": "A",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-11-11T06:42:57.110Z",
+      "updatedAt": "2026-11-11T06:43:45.409Z",
       "reason": "Zmiana A pliku źródłowego od 65cce70e28f70cde8c97ef4ae7eb8f49db86b31e.",
-      "startedAt": "2026-11-11T06:42:57.151Z"
+      "startedAt": "2026-11-11T06:42:57.151Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "tworzenie_postaci/klasy/skrytobójca_(nieskończone).md": {
       "id": "293d684fcce6d623",
@@ -1936,16 +1938,8 @@
   },
   "daily": {
     "date": "2026-11-11",
-    "spent": 0
+    "spent": 0.0183054
   },
-  "reservation": {
-    "taskId": "430a5bd17ca34f80",
-    "taskIds": [
-      "231e76689fedf659",
-      "8acae4ee0e6ac98d"
-    ],
-    "amount": 3,
-    "date": "2026-11-11"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
