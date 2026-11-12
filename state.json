@@ -1753,10 +1753,11 @@
       "sourceBlob": "deleted",
       "sourceSha": "3dc9ce1bef7d7a34fe22546f3c2d16ff21e77815",
       "change": "R100",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-11-11T06:42:57.116Z",
-      "reason": "Zmiana R100 pliku źródłowego od 65cce70e28f70cde8c97ef4ae7eb8f49db86b31e."
+      "reason": "Zmiana R100 pliku źródłowego od 65cce70e28f70cde8c97ef4ae7eb8f49db86b31e.",
+      "startedAt": "2026-11-12T03:53:59.009Z"
     },
     "tworzenie_postaci/klasy/władca_lasów.md": {
       "id": "1a4857acd5c0566f",
@@ -1930,16 +1931,25 @@
       "sourceBlob": "8025ce9c51ca610105f450753809b5e4cdbb343d",
       "sourceSha": "3dc9ce1bef7d7a34fe22546f3c2d16ff21e77815",
       "change": "R100",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-11-11T06:42:57.119Z",
-      "reason": "Zmiana R100 pliku źródłowego od 65cce70e28f70cde8c97ef4ae7eb8f49db86b31e."
+      "reason": "Zmiana R100 pliku źródłowego od 65cce70e28f70cde8c97ef4ae7eb8f49db86b31e.",
+      "startedAt": "2026-11-12T03:53:59.009Z"
     }
   },
   "daily": {
-    "date": "2026-11-11",
-    "spent": 0.0549162
+    "date": "2026-11-12",
+    "spent": 0
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "dc49c1c72829f855",
+    "taskIds": [
+      "293d684fcce6d623",
+      "492c0e4c64c24282"
+    ],
+    "amount": 3,
+    "date": "2026-11-12"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
