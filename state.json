@@ -1753,11 +1753,11 @@
       "sourceBlob": "deleted",
       "sourceSha": "3dc9ce1bef7d7a34fe22546f3c2d16ff21e77815",
       "change": "R100",
-      "status": "queued",
-      "attempts": 1,
+      "status": "running",
+      "attempts": 2,
       "updatedAt": "2026-11-12T03:54:45.513Z",
       "reason": "Zmiana R100 pliku źródłowego od 65cce70e28f70cde8c97ef4ae7eb8f49db86b31e.",
-      "startedAt": "2026-11-12T03:53:59.009Z",
+      "startedAt": "2026-11-12T12:53:59.718Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "tworzenie_postaci/klasy/władca_lasów.md": {
@@ -1932,11 +1932,11 @@
       "sourceBlob": "8025ce9c51ca610105f450753809b5e4cdbb343d",
       "sourceSha": "3dc9ce1bef7d7a34fe22546f3c2d16ff21e77815",
       "change": "R100",
-      "status": "queued",
-      "attempts": 1,
+      "status": "running",
+      "attempts": 2,
       "updatedAt": "2026-11-12T03:54:45.513Z",
       "reason": "Zmiana R100 pliku źródłowego od 65cce70e28f70cde8c97ef4ae7eb8f49db86b31e.",
-      "startedAt": "2026-11-12T03:53:59.009Z",
+      "startedAt": "2026-11-12T12:53:59.718Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     }
   },
@@ -1944,6 +1944,14 @@
     "date": "2026-11-12",
     "spent": 0.018316199999999998
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "dc49c1c72829f855",
+    "taskIds": [
+      "293d684fcce6d623",
+      "492c0e4c64c24282"
+    ],
+    "amount": 3,
+    "date": "2026-11-12"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
