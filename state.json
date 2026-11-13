@@ -427,11 +427,11 @@
       "sourceBlob": "21ae40dd2d28c7e0d161ece6707ae2ba0432e002",
       "sourceSha": "3dc9ce1bef7d7a34fe22546f3c2d16ff21e77815",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 2,
+      "status": "running",
+      "attempts": 3,
       "updatedAt": "2026-11-10T23:31:07.286Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-11-10T23:30:07.485Z",
+      "startedAt": "2026-11-13T01:55:57.584Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "tworzenie_postaci/klasy/taktyk.md": {
@@ -1740,11 +1740,11 @@
       "sourceBlob": "fcdd2d5b2fa9d188d812ee409897e03965c98024",
       "sourceSha": "3dc9ce1bef7d7a34fe22546f3c2d16ff21e77815",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 2,
+      "status": "running",
+      "attempts": 3,
       "updatedAt": "2026-11-10T23:31:07.286Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-11-10T23:30:07.485Z",
+      "startedAt": "2026-11-13T01:55:57.584Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "tworzenie_postaci/klasy/skrytobójca.md": {
@@ -1941,9 +1941,17 @@
     }
   },
   "daily": {
-    "date": "2026-11-12",
-    "spent": 0.05494859999999999
+    "date": "2026-11-13",
+    "spent": 0
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "67444f66dfad35a5",
+    "taskIds": [
+      "ac1ca68f48d19d5b",
+      "e627a1592420ef45"
+    ],
+    "amount": 3,
+    "date": "2026-11-13"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
