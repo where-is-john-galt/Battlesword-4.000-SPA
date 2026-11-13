@@ -440,10 +440,11 @@
       "sourceBlob": "5cbd4a369bf37e64c429553f54af64d6570a3160",
       "sourceSha": "3dc9ce1bef7d7a34fe22546f3c2d16ff21e77815",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T19:55:13.975Z",
-      "reason": "Pierwszy pełny audyt źródła."
+      "reason": "Pierwszy pełny audyt źródła.",
+      "startedAt": "2026-11-13T09:42:25.551Z"
     },
     "tworzenie_postaci/klasy/tytan.md": {
       "id": "63c46af213613b42",
@@ -451,10 +452,11 @@
       "sourceBlob": "82d2fad34a725857433f024bdd7bd005cb109939",
       "sourceSha": "3dc9ce1bef7d7a34fe22546f3c2d16ff21e77815",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 0,
+      "status": "running",
+      "attempts": 1,
       "updatedAt": "2026-10-14T19:55:13.977Z",
-      "reason": "Pierwszy pełny audyt źródła."
+      "reason": "Pierwszy pełny audyt źródła.",
+      "startedAt": "2026-11-13T09:42:25.551Z"
     },
     "tworzenie_postaci/perki.md": {
       "id": "fc9f8d9c1df43ba3",
@@ -1944,6 +1946,14 @@
     "date": "2026-11-13",
     "spent": 0.018294599999999998
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "f18148df2a9a9962",
+    "taskIds": [
+      "8d74dda707891348",
+      "63c46af213613b42"
+    ],
+    "amount": 3,
+    "date": "2026-11-13"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
