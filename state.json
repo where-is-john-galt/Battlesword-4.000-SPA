@@ -479,11 +479,12 @@
       "sourceBlob": "a3171c4286a345db90fb932c5e06f8145f0f394c",
       "sourceSha": "3dc9ce1bef7d7a34fe22546f3c2d16ff21e77815",
       "change": "initial audit",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-10-14T19:55:13.982Z",
+      "updatedAt": "2026-11-14T23:59:16.164Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-11-14T23:58:23.600Z"
+      "startedAt": "2026-11-14T23:58:23.600Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "tworzenie_postaci/profesje/bagiennik.md": {
       "id": "1356e52a65492508",
@@ -491,11 +492,12 @@
       "sourceBlob": "d044913379086b26f47ece7e2f32cba13b7b1848",
       "sourceSha": "3dc9ce1bef7d7a34fe22546f3c2d16ff21e77815",
       "change": "initial audit",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-10-14T19:55:13.985Z",
+      "updatedAt": "2026-11-14T23:59:16.164Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-11-14T23:58:23.600Z"
+      "startedAt": "2026-11-14T23:58:23.600Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "tworzenie_postaci/profesje/botanik.md": {
       "id": "7e3bde1d168c13b2",
@@ -1952,16 +1954,8 @@
   },
   "daily": {
     "date": "2026-11-14",
-    "spent": 0.054867599999999996
+    "spent": 0.07313159999999999
   },
-  "reservation": {
-    "taskId": "b359899ad9b3f57c",
-    "taskIds": [
-      "5a9923d09c3fda9c",
-      "1356e52a65492508"
-    ],
-    "amount": 3,
-    "date": "2026-11-14"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
