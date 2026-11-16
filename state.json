@@ -531,11 +531,12 @@
       "sourceBlob": "73f106740dcacdd1669985d3d20fa00117e36b20",
       "sourceSha": "3dc9ce1bef7d7a34fe22546f3c2d16ff21e77815",
       "change": "initial audit",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-10-14T19:55:13.993Z",
+      "updatedAt": "2026-11-16T18:40:39.094Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-11-16T18:39:44.673Z"
+      "startedAt": "2026-11-16T18:39:44.673Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "tworzenie_postaci/profesje/szlachic.md": {
       "id": "525990c864a3690f",
@@ -1794,11 +1795,12 @@
       "sourceBlob": "e27347c7572ff66a9f0dd819861e6738c58908cb",
       "sourceSha": "3dc9ce1bef7d7a34fe22546f3c2d16ff21e77815",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-10-14T20:58:03.277Z",
+      "updatedAt": "2026-11-16T18:40:39.094Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-11-16T18:39:44.673Z"
+      "startedAt": "2026-11-16T18:39:44.673Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "tworzenie_postaci/profesje/urzędnik_skarbowy.md": {
       "id": "63527573ee730fc6",
@@ -1960,16 +1962,8 @@
   },
   "daily": {
     "date": "2026-11-16",
-    "spent": 0.0365268
+    "spent": 0.054826799999999995
   },
-  "reservation": {
-    "taskId": "4b6be84bbfd64225",
-    "taskIds": [
-      "8899fcf37c67b09b",
-      "46eecfff9c9ad33a"
-    ],
-    "amount": 3,
-    "date": "2026-11-16"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
