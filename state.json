@@ -505,11 +505,11 @@
       "sourceBlob": "01f728e222d5583ecd494fffe2b51302c6fa452e",
       "sourceSha": "3dc9ce1bef7d7a34fe22546f3c2d16ff21e77815",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 1,
+      "status": "running",
+      "attempts": 2,
       "updatedAt": "2026-11-15T20:26:53.423Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-11-15T20:26:15.433Z",
+      "startedAt": "2026-11-16T01:07:29.715Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "tworzenie_postaci/profesje/gazeciarz.md": {
@@ -518,11 +518,11 @@
       "sourceBlob": "aaabe62876632d05c88803e5a31be5beee53142f",
       "sourceSha": "3dc9ce1bef7d7a34fe22546f3c2d16ff21e77815",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 1,
+      "status": "running",
+      "attempts": 2,
       "updatedAt": "2026-11-15T20:26:53.423Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-11-15T20:26:15.433Z",
+      "startedAt": "2026-11-16T01:07:29.715Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "tworzenie_postaci/profesje/lista_profesji.md": {
@@ -1957,9 +1957,17 @@
     }
   },
   "daily": {
-    "date": "2026-11-15",
-    "spent": 0.054791400000000004
+    "date": "2026-11-16",
+    "spent": 0
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "6377e36435948baf",
+    "taskIds": [
+      "7e3bde1d168c13b2",
+      "c3b5e7b7650b95f6"
+    ],
+    "amount": 3,
+    "date": "2026-11-16"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
