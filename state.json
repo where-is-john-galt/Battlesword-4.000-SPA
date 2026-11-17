@@ -531,11 +531,11 @@
       "sourceBlob": "73f106740dcacdd1669985d3d20fa00117e36b20",
       "sourceSha": "3dc9ce1bef7d7a34fe22546f3c2d16ff21e77815",
       "change": "initial audit",
-      "status": "queued",
-      "attempts": 2,
+      "status": "running",
+      "attempts": 3,
       "updatedAt": "2026-11-17T02:31:13.016Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-11-17T02:30:34.032Z",
+      "startedAt": "2026-11-17T12:03:48.298Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "tworzenie_postaci/profesje/szlachic.md": {
@@ -1795,11 +1795,11 @@
       "sourceBlob": "e27347c7572ff66a9f0dd819861e6738c58908cb",
       "sourceSha": "3dc9ce1bef7d7a34fe22546f3c2d16ff21e77815",
       "change": "initial audit (queue reconciliation)",
-      "status": "queued",
-      "attempts": 2,
+      "status": "running",
+      "attempts": 3,
       "updatedAt": "2026-11-17T02:31:13.016Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-11-17T02:30:34.032Z",
+      "startedAt": "2026-11-17T12:03:48.298Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "tworzenie_postaci/profesje/urzędnik_skarbowy.md": {
@@ -1964,6 +1964,14 @@
     "date": "2026-11-17",
     "spent": 0.0183
   },
-  "reservation": null,
+  "reservation": {
+    "taskId": "4b6be84bbfd64225",
+    "taskIds": [
+      "8899fcf37c67b09b",
+      "46eecfff9c9ad33a"
+    ],
+    "amount": 3,
+    "date": "2026-11-17"
+  },
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
