@@ -1955,11 +1955,12 @@
       "sourceBlob": "55a604afd89ec8f5f48f9b75190b10531a338902",
       "sourceSha": "d8a352450e093cdb4d1bb032f5b3b8d70db9ac9d",
       "change": "A",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-11-17T21:04:07.114Z",
+      "updatedAt": "2026-11-18T20:41:31.584Z",
       "reason": "Zmiana A pliku źródłowego od 65cce70e28f70cde8c97ef4ae7eb8f49db86b31e.",
-      "startedAt": "2026-11-18T20:40:36.015Z"
+      "startedAt": "2026-11-18T20:40:36.015Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/boskie/nić_czasu.md": {
       "id": "af167158d907b58c",
@@ -1967,25 +1968,18 @@
       "sourceBlob": "71fbffcbe5f825355602ac4b3a27e2cad4b729f3",
       "sourceSha": "d8a352450e093cdb4d1bb032f5b3b8d70db9ac9d",
       "change": "A",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-11-18T20:40:35.985Z",
+      "updatedAt": "2026-11-18T20:41:31.584Z",
       "reason": "Zmiana A pliku źródłowego od 65cce70e28f70cde8c97ef4ae7eb8f49db86b31e.",
-      "startedAt": "2026-11-18T20:40:36.015Z"
+      "startedAt": "2026-11-18T20:40:36.015Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     }
   },
   "daily": {
     "date": "2026-11-18",
-    "spent": 0.0367032
+    "spent": 0.0550152
   },
-  "reservation": {
-    "taskId": "54e88ce7b20cfd24",
-    "taskIds": [
-      "af167158d907b58c",
-      "28f844f23ea4ae3c"
-    ],
-    "amount": 3,
-    "date": "2026-11-18"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
