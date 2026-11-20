@@ -742,11 +742,12 @@
       "sourceBlob": "794bc8c2dd4817d1c6603374e9126f89d1889b62",
       "sourceSha": "d8a352450e093cdb4d1bb032f5b3b8d70db9ac9d",
       "change": "M",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-11-18T20:40:35.990Z",
+      "updatedAt": "2026-11-20T20:31:46.227Z",
       "reason": "Zmiana M pliku źródłowego od 65cce70e28f70cde8c97ef4ae7eb8f49db86b31e.",
-      "startedAt": "2026-11-20T20:30:36.533Z"
+      "startedAt": "2026-11-20T20:30:36.533Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "ekwipunek/przedmioty_magiczne/arcymistrzowskie/czarne_serce_potępienia.md": {
       "id": "dc04c9ff27cd35d1",
@@ -1983,15 +1984,8 @@
   },
   "daily": {
     "date": "2026-11-20",
-    "spent": 0.0489567
+    "spent": 0.0671691
   },
-  "reservation": {
-    "taskId": "055db6ddbbf1f8c1",
-    "taskIds": [
-      "eb874603c4712c50"
-    ],
-    "amount": 3,
-    "date": "2026-11-20"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
