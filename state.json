@@ -742,9 +742,9 @@
       "sourceBlob": "794bc8c2dd4817d1c6603374e9126f89d1889b62",
       "sourceSha": "d8a352450e093cdb4d1bb032f5b3b8d70db9ac9d",
       "change": "M",
-      "status": "running",
+      "status": "queued",
       "attempts": 2,
-      "updatedAt": "2026-11-20T20:31:46.227Z",
+      "updatedAt": "2026-11-21T02:28:33.313Z",
       "reason": "Zmiana M pliku źródłowego od 65cce70e28f70cde8c97ef4ae7eb8f49db86b31e.",
       "startedAt": "2026-11-21T02:27:32.784Z",
       "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
@@ -1984,15 +1984,8 @@
   },
   "daily": {
     "date": "2026-11-21",
-    "spent": 0
+    "spent": 0.0182124
   },
-  "reservation": {
-    "taskId": "055db6ddbbf1f8c1",
-    "taskIds": [
-      "eb874603c4712c50"
-    ],
-    "amount": 3,
-    "date": "2026-11-21"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
