@@ -544,11 +544,12 @@
       "sourceBlob": "186f398103f87ec036581a9f1c3c56080efe4dda",
       "sourceSha": "d8a352450e093cdb4d1bb032f5b3b8d70db9ac9d",
       "change": "initial audit",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-10-14T19:55:13.995Z",
+      "updatedAt": "2026-11-21T19:28:45.059Z",
       "reason": "Pierwszy pełny audyt źródła.",
-      "startedAt": "2026-11-21T19:27:43.540Z"
+      "startedAt": "2026-11-21T19:27:43.540Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "tworzenie_postaci/rasy/automat.md": {
       "id": "f63bc68399d1202f",
@@ -1816,11 +1817,12 @@
       "sourceBlob": "76fb6cb5ab777a1b641bf094351d4de988816c4c",
       "sourceSha": "d8a352450e093cdb4d1bb032f5b3b8d70db9ac9d",
       "change": "initial audit (queue reconciliation)",
-      "status": "running",
+      "status": "queued",
       "attempts": 1,
-      "updatedAt": "2026-10-14T20:58:03.282Z",
+      "updatedAt": "2026-11-21T19:28:45.059Z",
       "reason": "Pełny audyt źródła; wpis dodany przy uzgadnianiu kolejki.",
-      "startedAt": "2026-11-21T19:27:43.540Z"
+      "startedAt": "2026-11-21T19:27:43.540Z",
+      "lastError": "Jedno z niezależnych sprawdzeń agenta, publikacji lub deploymentu zakończyło się błędem."
     },
     "tworzenie_postaci/profesje/żeglarz.md": {
       "id": "4b4c1430d6d24cf4",
@@ -1986,16 +1988,8 @@
   },
   "daily": {
     "date": "2026-11-21",
-    "spent": 0.0364248
+    "spent": 0.0547206
   },
-  "reservation": {
-    "taskId": "0c9802e28ba7a397",
-    "taskIds": [
-      "525990c864a3690f",
-      "7d93e6665858062d"
-    ],
-    "amount": 3,
-    "date": "2026-11-21"
-  },
+  "reservation": null,
   "auditBaseSha": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
 }
