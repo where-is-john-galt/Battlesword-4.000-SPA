@@ -440,5 +440,12 @@
     "source": "ekwipunek/broń.md",
     "status": "detailed",
     "autoLink": false
+  },
+  {
+    "id": "rzadkosc_przedmiotow_majetnosc",
+    "name": "Rzadkość przedmiotów (Majętność)",
+    "definition": "Niezwykłe - Zapewniają jeden prosty bonus (kaliber broni +1)\nRzadkie - Zapewniają dwa proste bonusy (kaliber tarczy z okiem)\nPotężne - Zapewniają unikalny bonus lub sposób działania (kaliber miotły do latania)\nArcymistrzowskie - Zapewniają kilka unikalnych bonusów lub bonus wielkiego znaczenia (kaliber gadającego legendarnego miecza)\nMityczne - Zapewniają liczne bonusy oraz nowe możliwości, unikatowe w skali całego settingu (kaliber Papieskiego Miecza)\nBoskie - Pozwalają na kształtowanie otaczającej rzeczywistości (kaliber Ostrza Przeznaczenia)",
+    "source": "ekwipunek/majętność.md",
+    "status": "detailed"
   }
 ]

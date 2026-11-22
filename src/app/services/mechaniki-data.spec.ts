@@ -35,3 +35,24 @@ describe('mechaniki.json — trening po źródłowej zmianie 0.1.26', () => {
     ).toBe(true);
   });
 });
+
+
+describe('mechaniki.json — rzadkość przedmiotów z Majętności', () => {
+  const entry = () => mechaniki.find((e) => e.id === 'rzadkosc_przedmiotow_majetnosc');
+
+  it('ma źródło ekwipunek/majętność.md', () => {
+    expect(entry()?.source).toBe('ekwipunek/majętność.md');
+  });
+
+  it('odwzorowuje całą skalę', () => {
+    expect(entry()?.definition).toContain('Niezwykłe - Zapewniają jeden prosty bonus');
+    expect(entry()?.definition).toContain('Rzadkie - Zapewniają dwa proste bonusy');
+    expect(entry()?.definition).toContain('Boskie - Pozwalają na kształtowanie');
+  });
+
+  it('jest w indeksie', () => {
+    expect(
+      index.some((e) => e.id === 'rzadkosc_przedmiotow_majetnosc' && e.type === 'mechanic'),
+    ).toBe(true);
+  });
+});

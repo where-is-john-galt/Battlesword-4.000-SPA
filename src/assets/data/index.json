@@ -6074,5 +6074,12 @@
     "name": "Przebudzenie Destrukcji: literówka 'wtargięcie'",
     "source": "ekwipunek/przedmioty_magiczne/mityczny/przebudzenie_destrukcji_z_rozkazu_lotu_pochodu_duchów.md",
     "status": "detailed"
+  },
+  {
+    "id": "rzadkosc_przedmiotow_majetnosc",
+    "type": "mechanic",
+    "name": "Rzadkość przedmiotów (Majętność)",
+    "source": "ekwipunek/majętność.md",
+    "status": "detailed"
   }
 ]
