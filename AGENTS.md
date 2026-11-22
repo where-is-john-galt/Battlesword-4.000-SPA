@@ -9,6 +9,7 @@ This repo is a **SPA that assists play of the "Battlesword 4.000" RPG system**. 
 - The rules are the specification. When building features, read the relevant `.md` from `Battlesword-4.000/` first and match it (it is a work-in-progress alpha — content changes over time).
 - Battlesword is a d100-style roll-under system: roll ≤ stat succeeds, and how far under determines degrees of success. Combat is old-school, favoring planning/preparation; characters have a **profession** (past skills/passives) and a **combat class**; progression spends PD (XP) on stats/talents/perks — closest to Dark Heresy.
 - The submodule is a separate repo; do not edit its files from here (changes must go upstream).
+- Maintenance, the removed automation's history, and manual publishing: `docs/UTRZYMANIE.md`.
 
 ## Commands
 
@@ -29,7 +30,8 @@ This repo is a **SPA that assists play of the "Battlesword 4.000" RPG system**. 
 
 - Vitest, not Karma/Jasmine. The builder is `@angular/build:unit-test` (`ng test`).
 - Specs are colocated (`src/**/*.spec.ts`) and included only via `tsconfig.spec.json`.
-- No e2e framework is configured; `ng e2e` is not set up.
+- One-shot unit run: `npm test -- --watch=false`.
+- E2E: Playwright (`npm run test:e2e`, config `playwright.config.ts`, specs in `e2e/`); its `webServer` starts `npm start` automatically.
 
 ## Styling
 
