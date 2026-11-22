@@ -23,7 +23,7 @@ describe('mechaniki.json — trening po źródłowej zmianie 0.1.26', () => {
     expect(index.some((entry) => entry.id === 'trening' && entry.type === 'mechanic')).toBe(true);
   });
 
-  it('odnotowuje literówkę "sukesów" w Niespójnościach', () => {
+  it('odnotowuje literówkę "sukesców" w Niespójnościach', () => {
     const entry = inconsistencies.find((item) => item.id === 'przerwy_typo_sukescow');
     if (!entry) throw new Error('Brak wpisu Niespójności "przerwy_typo_sukescow"');
 

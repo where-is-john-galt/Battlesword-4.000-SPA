@@ -7299,5 +7299,12 @@
     "name": "Przerwy: literówka 'sukesców'",
     "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
     "status": "detailed"
+  },
+  {
+    "id": "przebudzenie_typo_wtargiecie",
+    "type": "inconsistency",
+    "name": "Przebudzenie Destrukcji: literówka 'wtargięcie'",
+    "source": "ekwipunek/przedmioty_magiczne/mityczny/przebudzenie_destrukcji_z_rozkazu_lotu_pochodu_duchów.md",
+    "status": "detailed"
   }
 ]

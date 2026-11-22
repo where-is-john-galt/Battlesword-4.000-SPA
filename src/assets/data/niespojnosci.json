@@ -9244,5 +9244,21 @@
     ],
     "status": "detailed",
     "revision": "d8a352450e093cdb4d1bb032f5b3b8d70db9ac9d"
+  },
+  {
+    "id": "przebudzenie_typo_wtargiecie",
+    "name": "Przebudzenie Destrukcji: literówka 'wtargięcie'",
+    "source": "ekwipunek/przedmioty_magiczne/mityczny/przebudzenie_destrukcji_z_rozkazu_lotu_pochodu_duchów.md",
+    "kind": "typo",
+    "details": "W opisie użyto zapisu „wtargięcie” zamiast „wtargnięcie”.",
+    "evidence": "Nie dozwól nikomu na wtargięcie tu",
+    "relatedSources": [
+      "ekwipunek/przedmioty_magiczne/mityczny/przebudzenie_destrukcji_z_rozkazu_lotu_pochodu_duchów.md"
+    ],
+    "relatedEntryIds": [
+      "przebudzenie_destrukcji_z_rozkazu_lotu_pochodu_duchów"
+    ],
+    "status": "detailed",
+    "revision": "d8a352450e093cdb4d1bb032f5b3b8d70db9ac9d"
   }
 ]

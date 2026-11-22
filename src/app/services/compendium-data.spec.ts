@@ -1947,6 +1947,7 @@ describe('przedmioty_magiczne.json — synchronizacja 0.1.24–0.1.26', () => {
       ['serce_zniszczenia_typo_niezlicoznych', 'typo', 'niezlicoznych'],
       ['koło_wozu_typo_przeciniwka', 'typo', 'przeciniwka'],
       ['korona_bladego_typo_rozkwitajace', 'typo', 'rozkwitajace'],
+      ['przebudzenie_typo_wtargiecie', 'typo', 'wtargięcie'],
       ['rzadkosc_arcymistrzowska_odmiana', 'other', 'Arcymistrzowski'],
     ] as const;
 
