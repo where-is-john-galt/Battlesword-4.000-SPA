@@ -53,6 +53,5 @@ This repo is a **SPA that assists play of the "Battlesword 4.000" RPG system**. 
 
 ## Deploy
 
-- `.github/workflows/deploy.yml` builds on push to `main` with `--base-href /Battlesword-4.000-SPA/`, copies `index.html` to `404.html` (SPA routing fallback), and publishes `dist/battlesword-spa/browser` to `gh-pages` via `peaceiris/actions-gh-pages`.
+- Deployment is manual: build with `--base-href /Battlesword-4.000-SPA/`, copy `index.html` to `404.html` (SPA routing fallback), and publish `dist/battlesword-spa/browser` to the `gh-pages` branch.
 - Any production build intended for GitHub Pages must keep that base-href; otherwise asset/route paths break.
-- CI uses Node 24 and `npm ci`.

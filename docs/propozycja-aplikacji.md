@@ -123,7 +123,7 @@ statyczna i niezależna od AI podczas działania w przeglądarce.
 - Routing: `provideRouter` (już skonfigurowany) — trasy per sekcja.
 - Stan: sygnały (bez NgRx); ustawienia (np. zapamiętane filtry) oraz **ulubione** w localStorage.
 - Dane statyczne: gotowe pliki JSON w `src/assets/data/`, ładowane jako statyczne assety.
-- GitHub Pages (deployment już skonfigurowany — bez backendu, w pełni statyczna SPA).
+- GitHub Pages (statyczny hosting — bez backendu, w pełni statyczna SPA).
 
 ---
 
