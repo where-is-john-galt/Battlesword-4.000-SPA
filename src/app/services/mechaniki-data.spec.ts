@@ -121,3 +121,13 @@ describe('mechaniki.json — Poczytalność i Szczęście', () => {
     );
   });
 });
+
+
+describe('mechaniki.json — reguła trudności wytwórstwa eksperymentalnego', () => {
+  it('zawiera poziom trudności równy Majętności bazy', () => {
+    const entry = mechaniki.find((e) => e.id === 'wytworstwo_eksperymentalne');
+    expect(entry?.definition).toContain(
+      'poziom trudności wytworzenia takiego przedmiotu jest równy wymaganej Majętności przedmiotu bazowego',
+    );
+  });
+});

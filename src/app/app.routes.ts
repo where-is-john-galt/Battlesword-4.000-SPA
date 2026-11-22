@@ -72,6 +72,11 @@ export const routes: Routes = [
     loadComponent: () => import('./features/pages/szukaj/szukaj-page').then((m) => m.SzukajPage),
   },
   {
+    path: 'karta/combat/stamina_mana',
+    redirectTo: 'karta/combat/stamina_mana_walka',
+    pathMatch: 'full',
+  },
+  {
     path: 'karta/:type/:id',
     loadComponent: () => import('./features/pages/karta/karta-page').then((m) => m.KartaPage),
   },

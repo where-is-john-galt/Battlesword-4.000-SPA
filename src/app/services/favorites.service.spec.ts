@@ -43,4 +43,19 @@ describe('FavoritesService', () => {
     const service = new FavoritesService();
     expect(service.favorites()).toEqual([]);
   });
+
+  it('migrates legacy combat id on read', () => {
+    localStorage.setItem(
+      'bs4k.favorites',
+      JSON.stringify([
+        { type: 'combat', id: 'stamina_mana' },
+        { type: 'stat', id: 'stamina_mana' },
+      ]),
+    );
+    const service = new FavoritesService();
+    expect(service.favorites()).toEqual([
+      { type: 'combat', id: 'stamina_mana_walka' },
+      { type: 'stat', id: 'stamina_mana' },
+    ]);
+  });
 });

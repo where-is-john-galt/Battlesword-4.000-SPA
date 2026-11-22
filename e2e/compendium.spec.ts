@@ -80,3 +80,10 @@ test('long rules card fits a mobile viewport', async ({ page }) => {
   );
   expect(overflow).toBe(false);
 });
+
+
+test('legacy combat card url redirects', async ({ page }) => {
+  await page.goto('/karta/combat/stamina_mana');
+  await expect(page).toHaveURL(/\/karta\/combat\/stamina_mana_walka$/);
+  await expect(page.locator('app-rule-card')).toBeVisible();
+});

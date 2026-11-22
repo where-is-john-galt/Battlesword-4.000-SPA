@@ -162,3 +162,16 @@ describe('walka.json — morale i akcje', () => {
     expect(combat('reakcje').definition).toContain('Przyjęcie ciosu');
   });
 });
+
+
+describe('walka.json — ogólne zasady terenów', () => {
+  it('zawiera regułę lewitacji i latania', () => {
+    expect(combat('sektor').definition).toContain(
+      'Lewitacja i latanie niweluje efekty działania terenów.',
+    );
+  });
+
+  it('nie wkleja nagłówka następnej sekcji do Bagna', () => {
+    expect(combat('bagno').definition).not.toContain('## Tereny specjalne');
+  });
+});

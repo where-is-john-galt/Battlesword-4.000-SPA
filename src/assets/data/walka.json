@@ -198,7 +198,7 @@
   {
     "id": "sektor",
     "name": "Sektor",
-    "definition": "Obszar pola bitwy oznaczony etykietą terenu; jednostka pozycji i ruchu w walce.",
+    "definition": "Teren - sektor oznaczony odpowiednią etykietą. Przemieszczenie - wykonanie ruchu kończącego lub zaczynającego się w danym sektorze. Wejście pierwszy raz w swojej turze - wykonanie ruchu kończącego się w danym sektorze lub rozpoczęcie swojej tury znajdując się w nim. Lewitacja i latanie niweluje efekty działania terenów.",
     "source": "walka/typy_terenów.md",
     "status": "detailed"
   },
@@ -662,7 +662,7 @@
   {
     "id": "bagno",
     "name": "Bagno (teren)",
-    "definition": "Przemieszczenie się przez bagno wymaga od Bohatera Gracza testu Atletyki. W przypadku porażki, otrzymuje stan Unieruchomienia do następnej tury.\n\nW przypadku NPCów, przemieszczenie zawsze zajmuje 2 akcje.\n\n## Tereny specjalne",
+    "definition": "Przemieszczenie się przez bagno wymaga od Bohatera Gracza testu Atletyki. W przypadku porażki, otrzymuje stan Unieruchomienia do następnej tury.\n\nW przypadku NPCów, przemieszczenie zawsze zajmuje 2 akcje.",
     "source": "walka/typy_terenów.md",
     "status": "detailed"
   },

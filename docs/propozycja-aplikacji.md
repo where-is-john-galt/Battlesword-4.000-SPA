@@ -77,7 +77,7 @@ Każda karta obiektu posiada **filtry** (np. klasy wg archetypu, broń wg bazowe
 
 ### 3.3. Ulubione
 
-- Każda pozycja (karta rasy/profesji/klasy/perku, element ekwipunku, statblock, termin glosariusza)
+- Każda pozycja (karta rasy/profesji/klasy/perku, element ekwipunku, statblock, termin mechaniki)
   ma przycisk **dodania do ulubionych** (ikona gwiazdki/serducha).
 - Osobna **zakładka Ulubione** agreguje wszystkie zapisane pozycje, z możliwością grupowania wg
   sekcji oraz usuwania pojedynczych wpisów.
@@ -98,7 +98,7 @@ a zmiany trafiają do JSON i kodu aplikacji.
   testy i deployment. W ramach rozwoju można dodać nowy sposób prezentacji albo narzędzie dla
   gracza, kiedy wynika to z zasad.
 - Pliki tabelaryczne (broń, pancerze, paski, przedmioty podręczne) mapowane na obiekty; pliki
-  opisowe (rasy, profesje, klasy, perki, bestiariusz, glosariusz) mapowane na pola struktury
+  opisowe (rasy, profesje, klasy, perki, bestiariusz, statystyki i mechaniki) mapowane na pola struktury
   (nazwa, sekcje, listy, wymagania, koszty).
 - Aplikacja ładuje JSON jako statyczne assety (bez backendu, w pełni statyczna SPA).
 - **Schemat TypeScript** w `src/app/models/compendium.ts` opisuje typy encji (`Race`, `Profession`,
@@ -132,7 +132,7 @@ statyczna i niezależna od AI podczas działania w przeglądarce.
 
 ## 7. Proponowana kolejność prac (roadmap)
 
-1. **Fundament** — layout, nawigacja per sekcja, wyszukiwarka oparta na `index.json`, glosariusz z
+1. **Fundament** — layout, nawigacja per sekcja, wyszukiwarka oparta na `index.json`, linkowanie pojęć z
    tooltipami.
 2. **Kompendium** — ekwipunek, bestiariusz, rasy/profesje/klasy/perki jako karty + filtry.
 3. **Ulubione** — przycisk dodawania na kartach + zakładka z zapisem w localStorage.

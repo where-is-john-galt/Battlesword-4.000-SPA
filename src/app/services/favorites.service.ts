@@ -23,13 +23,28 @@ export class FavoritesService {
       if (!Array.isArray(parsed)) {
         return [];
       }
-      return parsed.filter(
-        (item): item is FavoriteRef =>
-          typeof item === 'object' &&
-          item !== null &&
-          typeof (item as FavoriteRef).type === 'string' &&
-          typeof (item as FavoriteRef).id === 'string',
-      );
+      const migrated = parsed
+        .filter(
+          (item): item is FavoriteRef =>
+            typeof item === 'object' &&
+            item !== null &&
+            typeof (item as FavoriteRef).type === 'string' &&
+            typeof (item as FavoriteRef).id === 'string',
+        )
+        .map((item) =>
+          item.type === 'combat' && item.id === 'stamina_mana'
+            ? { ...item, id: 'stamina_mana_walka' }
+            : item,
+        );
+      const seen = new Set<string>();
+      return migrated.filter((item) => {
+        const key = `${item.type}:${item.id}`;
+        if (seen.has(key)) {
+          return false;
+        }
+        seen.add(key);
+        return true;
+      });
     } catch {
       return [];
     }

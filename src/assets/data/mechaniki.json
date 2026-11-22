@@ -125,7 +125,7 @@
   {
     "id": "wytworstwo_eksperymentalne",
     "name": "Wytwórstwo eksperymentalne",
-    "definition": "Ryzykowny wariant wytwórstwa o losowych efektach: wybiera się tylko bazowy typ przedmiotu, a rzadkość i cechy losuje na tabelach.",
+    "definition": "Ryzykowny wariant wytwórstwa o losowych efektach: wybiera się tylko bazowy typ przedmiotu, a rzadkość i cechy losuje na tabelach. Wtedy, poziom trudności wytworzenia takiego przedmiotu jest równy wymaganej Majętności przedmiotu bazowego.",
     "source": "mechaniki_bazowe/crafting.md",
     "status": "detailed"
   },
