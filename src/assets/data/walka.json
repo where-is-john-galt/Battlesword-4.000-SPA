@@ -156,7 +156,7 @@
   {
     "id": "statusy_pojedyncze",
     "name": "Status pojedynczy",
-    "definition": "Status przyjmujący dwie wartości (nałożony/brak), np. Bramy Śmierci, Na wierzchowcu, Oszołomienie, Oślepienie, Pochwycenie, Unieruchomienie, Ukryty, Osłabienie.",
+    "definition": "Status przyjmujący dwie wartości (nałożony/brak), np. Bramy Śmierci, Na wierzchowcu, Oszołomienie, Oślepienie, Pochwycenie, Unieruchomienie, Ukryty, Osłabienie, Wrażliwość.",
     "source": "walka/statusy.md",
     "status": "detailed"
   },
@@ -641,5 +641,15 @@
     "definition": "Elitarni przeciwnicy specjalizują się w rolach na polu bitwy, m.in.: zadawanie obrażeń, wytrzymywanie ciosów, leczenie sojuszników, dowodzenie, wspieranie sojuszników.",
     "source": "bestiariusz/rodzaje_oponentów.md",
     "status": "detailed"
+  },
+  {
+    "id": "wrażliwość",
+    "name": "Wrażliwość",
+    "definition": "Następne otrzymane przez postać obrażenia są zwiększone o połowę. Mnożnik ten nakłada się niezależnie od odporności i podatności na obrażenia.",
+    "source": "walka/statusy.md",
+    "status": "detailed",
+    "aliases": [
+      "wrażliwości"
+    ]
   }
 ]

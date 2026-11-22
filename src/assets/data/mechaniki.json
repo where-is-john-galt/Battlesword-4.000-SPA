@@ -209,7 +209,7 @@
   {
     "id": "trening",
     "name": "Trening",
-    "definition": "Postać poświęca czas na szlifowanie umiejętności bojowych. Za każdą poświęconą na to akcję, Bazowa Stamina / Mana zwiększa się o 1 do następnej przerwy.",
+    "definition": "Postać poświęca czas na szlifowanie swoich umiejętności bojowych. Za każdą poświęconą na to akcję, należy wykonać test statystyki najbardziej powiązanej z wykonywaną profesją. Bazowa Stamina / Mana zwiększa się o ilość sukesców / 3, zaokrąglone w górę, do następnej przerwy.",
     "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
     "status": "detailed"
   },

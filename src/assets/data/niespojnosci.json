@@ -9228,5 +9228,21 @@
     ],
     "status": "detailed",
     "revision": "d8a352450e093cdb4d1bb032f5b3b8d70db9ac9d"
+  },
+  {
+    "id": "przerwy_typo_sukescow",
+    "name": "Przerwy: literówka 'sukesców'",
+    "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
+    "kind": "typo",
+    "details": "W nowej zasadzie Treningu użyto zapisu „sukesców” zamiast „sukcesów”.",
+    "evidence": "ilość sukesców / 3",
+    "relatedSources": [
+      "mechaniki_bazowe/przerwy_miedzy_przygodami.md"
+    ],
+    "relatedEntryIds": [
+      "trening"
+    ],
+    "status": "detailed",
+    "revision": "d8a352450e093cdb4d1bb032f5b3b8d70db9ac9d"
   }
 ]

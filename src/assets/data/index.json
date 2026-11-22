@@ -409,7 +409,7 @@
     "id": "skrytobójca",
     "type": "class",
     "name": "Skrytobójca",
-    "source": "tworzenie_postaci/klasy/skrytobójca.md",
+    "source": "tworzenie_postaci/klasy/skrytobójca_(nieskończone).md",
     "status": "detailed"
   },
   {
@@ -7284,6 +7284,20 @@
     "type": "inconsistency",
     "name": "Rzadkość arcymistrzowska: odmiana w nagłówkach",
     "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/korona_bladego_króla_za_zasłoną_nocy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "wrażliwość",
+    "type": "combat",
+    "name": "Wrażliwość",
+    "source": "walka/statusy.md",
+    "status": "detailed"
+  },
+  {
+    "id": "przerwy_typo_sukescow",
+    "type": "inconsistency",
+    "name": "Przerwy: literówka 'sukesców'",
+    "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
     "status": "detailed"
   }
 ]

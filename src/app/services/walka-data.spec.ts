@@ -70,6 +70,26 @@ describe('walka.json — statusy z walka/statusy.md', () => {
     expect(combat('zamrożenie').definition).toContain('2k10 HP');
     expect(combat('zmęczenie').definition).toContain('których nie może odzyskiwać');
   });
+
+  it('zawiera status Wrażliwość zgodny ze źródłem', () => {
+    const entry = combat('wrażliwość');
+
+    expect(entry.name).toBe('Wrażliwość');
+    expect(entry.source).toBe('walka/statusy.md');
+    expect(entry.status).toBe('detailed');
+    expect(entry.definition).toContain('zwiększone o połowę');
+    expect(entry.definition).toContain('niezależnie od odporności i podatności');
+    expect(entry.aliases).toContain('wrażliwości');
+  });
+
+  it('wymienia Wrażliwość w opisie grupy statusów pojedynczych', () => {
+    expect(combat('statusy_pojedyncze').definition).toContain('Wrażliwość');
+  });
+
+  it('rejestruje Wrażliwość w indeksie wyszukiwania', () => {
+    expect(indexEntry('wrażliwość').name).toBe('Wrażliwość');
+    expect(indexEntry('wrażliwość').source).toBe('walka/statusy.md');
+  });
 });
 
 describe('walka.json — wierzchowce z walka/pojazdy_i_wierzchowce.md', () => {
