@@ -84,7 +84,7 @@
   {
     "id": "delirium",
     "name": "Delirium",
-    "definition": "Efekt porażki w teście Poczytalności, losowany rzutem 1k10 (np. Wypaczenie przedmiotu, Panika, Szał bojowy).",
+    "definition": "Rzut 1k10:\n1. Wypaczenie przedmiotu - Gracz wybiera jeden z wyekwipowanych, niewypaczonych przedmiotów. Następnie Mistrz Gry dodaje do przedmiotu odpowiedni efekt wypaczenia.\n2. Panika - Jeśli trwa walka, Bohater zyskuje 1k10 stanów Paniki. Poza walką, Bohater zyskuje 1k5 stanów Zmęczenia.\n3. Zamknięcie się w sobie - Wszystkie testy oparte o Charyzmę są wykonywane z modyfikatorem (-10) do końca dnia.\n4. Zwidy - Wszystkie testy oparte o Percepcję są wykonywane z modyfikatorem (-10) do końca dnia.\n5. Irracjonalność - Wszystkie testy oparte o Inteligencję są wykonywane z modyfikatorem (-10) do końca dnia.\n6. Bezsenność - Przez kolejne 1k10 dni, Bohater zaczyna je z 1 poziomem Zmęczenia.\n7. Przygnębienie - Wszystkie statystyki pierwszorzędne spadają o 2 do końca dnia.\n8. Złamana wola - Maksymalne HP spada o połowę do końca dnia.\n9. Otępienie - Stamina i Mana spadają do bazowej wartości 3 do końca dnia.\n10. Szał bojowy - Do końca dnia postać zadaje podwójne obrażenia. Na początku każdej swojej tury musi wykonać test Siły Woli (-6). Porażka oznacza, że losuje losowy najbliższy cel.",
     "source": "mechaniki_bazowe/poczytalność.md",
     "status": "detailed"
   },
@@ -481,6 +481,20 @@
     "name": "Eksperymentalne bonusy (potężne+)",
     "definition": "Jeżeli cecha nie została nabyta w wyniku spaczenia, maksymalna ilośc użyć na walkę jest równa Mądrości.\nRzut k100:\n1-3: Odporność na ogień\n4-6: Odporność na zimno\n7-9: Odporność na elektryczność\n10-12: Odporność na fizyczne\n13-15: Odporność na żrące\n16-18: Odporność na święte\n19-21: Odporność na chaotyczne\n22-24: Latanie\n25-27: Oddychanie pod wodą\n28-30: Pozwala na przerzut\n31-33: Akcja: Unieruchomienie wszystkich przeciwników w sektorze\n34-36: Akcja: Odepchnięcie wszystkich przeciwników do sąsiednich sektrorów\n37-39: Reakcja: Anulowanie ataku w krótkim zasięgu\n40-42: Reakcja: Odbicie otrzymanych obrażeń\n43-45: Akcja: Zyskanie niewrażliwości na 1 turę\n46-48: Zalanie sektora wodą\n49-51: Zamiana sektora w bagno\n52-54: Spaczenie sektora\n55-57: Zamrożenie sektora\n58-60: Podpalenie sektora\n61-63: Zagrzybienie sektora\n64-66: Uświęcenie sektora\n67-69: Elektryzacja sektora\n70-72: Teleportacja w długim zasięgu\n73-75: Zamiana miejsc z dowolnym sojusznikiem\n76-78: Zamiana miejsc z dowolnym przeciwnikiem\n79-81: Akcja: Utworzenie mirażu (3 kopie, każde trafienie w Bohatera jest losowane czy nie trafi w kopię, jeśli trafi to kopia jest niszczona)\n82-84: Pozwala na dokładne powtórzenie całej tury; trzeba zadeklarować przed wykonaniem pierwszej akcji\n85-87: Kradzież akcji\n88-90: Reakcja: Zmiana wyniku na kości k20 na 21-(oryginalny rzut)\n91-93: Akcja: Przywołanie dżina\n94-96: Akcja: Przywołanie demona\n97-99: Akcja: Przywołanie anioła\n100: Podwojenie zadanych obrażeń",
     "source": "mechaniki_bazowe/crafting.md",
+    "status": "detailed"
+  },
+  {
+    "id": "testy_poczytalnosci",
+    "name": "Testy poczytalności",
+    "definition": "Za każdym razem, gdy postać musi wykonać test Poczytalności, należy wykonać rzut 1k100. Wynik mniejszy lub równy aktualnej wartości Poczytalności oznacza sukces. W przypadku porażki, należy wykonać rzut na tabelę Delirium.",
+    "source": "mechaniki_bazowe/poczytalność.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zwiekszanie_szczescia",
+    "name": "Zwiększanie Szczęścia",
+    "definition": "Na koniec każdej sesji, każdy Bohater wykonuje test Szczęścia. Porażka w tym teście oznacza, że wartość Szczęścia wzrasta o 1. Niektóre przedmioty magiczne mogą zwiekszyć wartość zyskiwanego Szczęścia, nakładać utrudnienie na test zwiększania lub dodawać dodatkowe testy na koniec sesji. Aby Bohater mógł skorzystać z tego efektu, musi mieć wyekwipowany dany przedmiot przez cała sesję lub od momentu znalezienia / pozyskania go.",
+    "source": "mechaniki_bazowe/szczęście.md",
     "status": "detailed"
   }
 ]

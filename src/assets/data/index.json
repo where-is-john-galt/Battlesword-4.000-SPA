@@ -6193,5 +6193,19 @@
     "name": "Eksperymentalne bonusy (potężne+)",
     "source": "mechaniki_bazowe/crafting.md",
     "status": "detailed"
+  },
+  {
+    "id": "testy_poczytalnosci",
+    "type": "mechanic",
+    "name": "Testy poczytalności",
+    "source": "mechaniki_bazowe/poczytalność.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zwiekszanie_szczescia",
+    "type": "mechanic",
+    "name": "Zwiększanie Szczęścia",
+    "source": "mechaniki_bazowe/szczęście.md",
+    "status": "detailed"
   }
 ]

@@ -91,3 +91,33 @@ describe('mechaniki.json — crafting z mechaniki_bazowe/crafting.md', () => {
     );
   });
 });
+
+
+describe('mechaniki.json — Poczytalność i Szczęście', () => {
+  it('odwzorowuje tabelę Delirium', () => {
+    const delirium = mechaniki.find((e) => e.id === 'delirium')!.definition;
+    for (const text of [
+      'Wypaczenie przedmiotu',
+      'Panika',
+      'Zamknięcie się w sobie',
+      'Zwidy',
+      'Irracjonalność',
+      'Bezsenność',
+      'Przygnębienie',
+      'Złamana wola',
+      'Otępienie',
+      'Szał bojowy',
+    ]) {
+      expect(delirium).toContain(text);
+    }
+    expect(delirium).toContain('1k5');
+    expect(delirium).toContain('-10');
+  });
+
+  it('ma testy poczytalności i zwiększanie szczęścia', () => {
+    expect(mechaniki.find((e) => e.id === 'testy_poczytalnosci')?.definition).toContain('1k100');
+    expect(mechaniki.find((e) => e.id === 'zwiekszanie_szczescia')?.definition).toContain(
+      'koniec każdej sesji',
+    );
+  });
+});
