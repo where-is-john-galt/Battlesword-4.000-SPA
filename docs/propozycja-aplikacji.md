@@ -8,12 +8,11 @@ informacji o systemie.
 zastępuje tych plików — jest warstwą prezentacyjną na ich bazie.
 
 > **Aktualny status:** aplikacja prezentuje ustrukturyzowane pliki JSON w `src/assets/data/` jako
-> statyczne assety. Workflow autonomicznego rozwoju analizuje źródłowe Markdown i może rozszerzać
-> model danych oraz aplikację o nowe elementy systemu.
+> statyczne assety.
 
 Zakres może rosnąć wraz z systemem: poza leksykonem i podręcznikiem referencyjnym aplikacja może
-otrzymać narzędzia dla graczy, kalkulatory, kreatory i nowe sposoby przeglądania zasad, jeśli agent
-wykaże ich oparcie w źródle i uzasadni je w zadaniu. Aplikacja pozostaje statyczną SPA.
+otrzymać narzędzia dla graczy, kalkulatory, kreatory i nowe sposoby przeglądania zasad. Aplikacja
+pozostaje statyczną SPA.
 
 ---
 
@@ -88,13 +87,13 @@ Każda karta obiektu posiada **filtry** (np. klasy wg archetypu, broń wg bazowe
 ## 4. Podejście do danych
 
 Kluczowa decyzja architektoniczna pozostaje taka: **dane są commitowane jako JSON**, a aplikacja nie
-czyta Markdowna w runtime. Workflow AI analizuje źródło Markdown podczas zmian i rozwija JSON oraz
-kod aplikacji w repozytorium.
+czyta Markdowna w runtime. Źródłowy Markdown jest analizowany podczas ręcznej aktualizacji danych,
+a zmiany trafiają do JSON i kodu aplikacji.
 
 - Submoduł `Battlesword-4.000/` jest źródłem prawdy i **nie jest edytowany** z tego repo.
 - Proces rozwoju: analiza źródłowych zmian → zaplanowanie funkcji → aktualizacja JSON i kodu SPA →
-  testy i deployment. Agent może dodać nowy sposób prezentacji albo narzędzie dla gracza, kiedy
-  wynika to z zasad.
+  testy i deployment. W ramach rozwoju można dodać nowy sposób prezentacji albo narzędzie dla
+  gracza, kiedy wynika to z zasad.
 - Pliki tabelaryczne (broń, pancerze, paski, przedmioty podręczne) mapowane na obiekty; pliki
   opisowe (rasy, profesje, klasy, perki, bestiariusz, glosariusz) mapowane na pola struktury
   (nazwa, sekcje, listy, wymagania, koszty).
@@ -103,9 +102,8 @@ kod aplikacji w repozytorium.
   `CharacterClass`, `Perk`, `Weapon`, `Armor`, `Belt`, `HandItem`, `MagicItem`, `MiscItem`,
   `Monster`, `GlossaryEntry`) oraz `IndexEntry`.
 
-**Odświeżanie:** GitHub Actions wykrywa zmiany submodułu, kolejkuje zadania i po niezależnych
-kontrolach publikuje kompletny rozwój SPA. Aplikacja pozostaje statyczna i niezależna od AI podczas
-działania w przeglądarce.
+**Odświeżanie:** zmiany zasad są przenoszone do plików JSON ręcznie, a aplikacja pozostaje
+statyczna i niezależna od AI podczas działania w przeglądarce.
 
 ---
 

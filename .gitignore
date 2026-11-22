@@ -6,7 +6,6 @@
 /out-tsc
 /bazel-out
 /storybook-static
-/.autodev-runtime
 /playwright-report
 /test-results
 
