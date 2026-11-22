@@ -103,4 +103,11 @@ describe('RulesLinkService', () => {
   it('handles empty and whitespace text', () => {
     expect(service.linkify('')).toEqual([{ text: '' }]);
   });
+
+  it('preserves newlines between tokens', () => {
+    expect(service.linkify('Linia\nPorażenie')).toEqual([
+      { text: 'Linia\n' },
+      { text: 'Porażenie', link: { type: 'combat', id: 'porażenie' } },
+    ]);
+  });
 });

@@ -45,3 +45,12 @@ test('persists a favorite after navigation and reload', async ({ page }) => {
   await page.reload();
   await expect(page.getByRole('button', { name: 'Usuń z ulubionych' }).first()).toBeVisible();
 });
+
+
+test('rules card preserves line breaks', async ({ page }) => {
+  await page.goto('/karta/combat/tereny_specjalne');
+  const whiteSpace = await page
+    .locator('.rule__definition')
+    .evaluate((el) => getComputedStyle(el).whiteSpace);
+  expect(whiteSpace).toBe('pre-line');
+});
