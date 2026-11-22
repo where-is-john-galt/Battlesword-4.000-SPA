@@ -42,7 +42,10 @@ export class SzukajPage {
     if (!query) {
       return [];
     }
-    return this.compendium.index().filter((entry) => normalize(entry.name).includes(query));
+    return this.compendium
+      .index()
+      .filter((entry) => entry.type !== 'inconsistency')
+      .filter((entry) => normalize(entry.name).includes(query));
   });
 
   protected readonly groups = computed<ResultGroup[]>(() => {

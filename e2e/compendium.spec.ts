@@ -54,3 +54,10 @@ test('rules card preserves line breaks', async ({ page }) => {
     .evaluate((el) => getComputedStyle(el).whiteSpace);
   expect(whiteSpace).toBe('pre-line');
 });
+
+
+test('search does not show meta inconsistencies', async ({ page }) => {
+  await page.goto('/szukaj?q=morale');
+  await expect(page.getByRole('link', { name: /^Morale$/ }).first()).toBeVisible();
+  await expect(page.getByText('Niespójności · Niespójność')).toHaveCount(0);
+});
