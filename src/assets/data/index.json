@@ -6081,5 +6081,82 @@
     "name": "Rzadkość przedmiotów (Majętność)",
     "source": "ekwipunek/majętność.md",
     "status": "detailed"
+  },
+  {
+    "id": "woda",
+    "type": "combat",
+    "name": "Woda (teren)",
+    "source": "walka/typy_terenów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "bagno",
+    "type": "combat",
+    "name": "Bagno (teren)",
+    "source": "walka/typy_terenów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "spaczony",
+    "type": "combat",
+    "name": "Spaczony",
+    "source": "walka/typy_terenów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zamrozony",
+    "type": "combat",
+    "name": "Zamrożony",
+    "source": "walka/typy_terenów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "podpalony",
+    "type": "combat",
+    "name": "Podpalony",
+    "source": "walka/typy_terenów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zagrzybialy",
+    "type": "combat",
+    "name": "Zagrzybiały",
+    "source": "walka/typy_terenów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "uswiecony",
+    "type": "combat",
+    "name": "Uświęcony",
+    "source": "walka/typy_terenów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "naelektryzowany",
+    "type": "combat",
+    "name": "Naelektryzowany",
+    "source": "walka/typy_terenów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zadymiony",
+    "type": "combat",
+    "name": "Zadymiony",
+    "source": "walka/typy_terenów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "strawiony",
+    "type": "combat",
+    "name": "Strawiony",
+    "source": "walka/typy_terenów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "halucynogenny",
+    "type": "combat",
+    "name": "Halucynogenny",
+    "source": "walka/typy_terenów.md",
+    "status": "detailed"
   }
 ]

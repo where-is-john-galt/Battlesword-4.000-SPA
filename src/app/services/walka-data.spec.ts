@@ -114,3 +114,35 @@ describe('walka.json — wierzchowce z walka/pojazdy_i_wierzchowce.md', () => {
     expect(entry.status).toBe('detailed');
   });
 });
+
+
+describe('walka.json — tereny z walka/typy_terenów.md', () => {
+  const ids = [
+    'woda',
+    'bagno',
+    'spaczony',
+    'zamrozony',
+    'podpalony',
+    'zagrzybialy',
+    'uswiecony',
+    'naelektryzowany',
+    'zadymiony',
+    'strawiony',
+    'halucynogenny',
+  ];
+
+  it('ma wpis dla każdego terenu', () => {
+    for (const id of ids) {
+      expect(combat(id).source).toBe('walka/typy_terenów.md');
+      expect(indexEntry(id).status).toBe('detailed');
+    }
+  });
+
+  it('zachowuje wartości źródłowe', () => {
+    expect(combat('spaczony').definition).toContain('2k10');
+    expect(combat('spaczony').definition).toContain('5k10');
+    expect(combat('woda').definition).toContain('2 akcje');
+    expect(combat('zadymiony').definition).toContain('utrudnieniem');
+    expect(combat('halucynogenny').definition).toContain('połowę obrażeń');
+  });
+});

@@ -651,5 +651,82 @@
     "aliases": [
       "wrażliwości"
     ]
+  },
+  {
+    "id": "woda",
+    "name": "Woda (teren)",
+    "definition": "Przemieszczenie się przez wodę wymaga od Bohatera Gracza testu Pływania. W przypadku porażki, przemieszczenie zajmuje 2 akcje zamiast jednej.\n\nW przypadku NPCów, przemieszczenie zawsze zajmuje 2 akcje, o ile NPC nie posiada tagu \"pływający\".\n\nZnajdowanie się w wodzie automatycznie zdejmuje wszystkie poziomy Podpalenia oraz zapewnia odporność na obrażenia od ognia i podatnośc na obrażenia od elektryczności.",
+    "source": "walka/typy_terenów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "bagno",
+    "name": "Bagno (teren)",
+    "definition": "Przemieszczenie się przez bagno wymaga od Bohatera Gracza testu Atletyki. W przypadku porażki, otrzymuje stan Unieruchomienia do następnej tury.\n\nW przypadku NPCów, przemieszczenie zawsze zajmuje 2 akcje.\n\n## Tereny specjalne",
+    "source": "walka/typy_terenów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "spaczony",
+    "name": "Spaczony",
+    "definition": "Każdy Bohater Gracza wchodzący pierwszy raz w swojej turze na spaczony teren, musi wykonać test Siły Woli. W przypadku porażki, otrzymuje 2k10 obrażeń chaotycznych i traci 1 punkt Poczytalności.\n\nKażdy NPC automatycznie otrzymuje 5k10 obrażeń chaotycznych i 1 poziom Paniki.",
+    "source": "walka/typy_terenów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zamrozony",
+    "name": "Zamrożony",
+    "definition": "Każdy Bohater Gracza próbujący przemieścić się przez zamrożony teren, musi wykonać test Akrobatyki. W przypadku porażki, upada, otrzymując 2k6 obrażeń fizycznych i stan Unieruchomienia do następnej tury.\n\nKażdy NPC próbujący się przemieścić przez zamrożony teren, musi poświęcić na to podwójną akcję. Dodatkowo, otrzymuje 5k6 obrażeń od zimna i 1k4 poziomów Zamrożenia.",
+    "source": "walka/typy_terenów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "podpalony",
+    "name": "Podpalony",
+    "definition": "Każdy Bohater Gracza wchodzący pierwszy raz w swojej turze na podpalony teren, musi wykonać test Uniku. W przypadku porażki, otrzymuje 2k10 obrażeń od ognia i 1 poziom Podpalenia.\n\nKażdy NPC automatycznie otrzymuje 5k10 obrażeń od ognia i 1 poziom Podpalenia.",
+    "source": "walka/typy_terenów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zagrzybialy",
+    "name": "Zagrzybiały",
+    "definition": "Każdy Bohater Gracza wchodzący pierwszy raz w swojej turze na zagrzybiały teren, musi wykonać test Wytrzymałości. W przypadku porażki, otrzymuje 1k6 obrażeń żrących i 1 poziom Zatrucia za każdy poziom porażki.\n\nKażdy NPC automatycznmie otrzymuje 5k6 obrażeń żrących i 1k4 poziomów Zatrucia.",
+    "source": "walka/typy_terenów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "uswiecony",
+    "name": "Uświęcony",
+    "definition": "Każda dobra postać wchodząca pierwszy raz w swojej turze na uświęcony teren otrzymuje małe leczenie (25%+1d4).\n\nKażda zła postać wchodząca pierwszy raz w swojej turze na uświęcony teren otrzymuje 5k10 świętych obrażeń i 1 poziom Podpalenia.",
+    "source": "walka/typy_terenów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "naelektryzowany",
+    "name": "Naelektryzowany",
+    "definition": "Każda postać wykonująca jakąkolwiek akcję na naelektryzowanym terenie otrzymuje 3k6 obrażeń od elektryczności i 1 poziom Porażenia.",
+    "source": "walka/typy_terenów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "zadymiony",
+    "name": "Zadymiony",
+    "definition": "Ogranicza widoczność, utrudniając wybieranie na cel przeciwników znajdujących się na i za zadymionym sektorem. Atakowanie przeciwników znajdujących się w zadymionym sektorze i za nim obarczone jest utrudnieniem. Postaci znajdujące w zadymionym sektorze muszą zdać test Spostrzegawczości, aby móc atakować postaci znajdujące się poza sektorem bez utrudnienia.",
+    "source": "walka/typy_terenów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "strawiony",
+    "name": "Strawiony",
+    "definition": "Każdy Bohater Gracza wchodzący pierwszy raz w swojej turze na strawiony teren, musi wykonać test Wytrzymałości. W przypadku porażki, otrzymuje 1 obrażeń żrących za każdą porażkę, które omijają Barierę, a wartość jego Pancerza zostaje obniżona o połowę do końca walki.\n\nKażdy NPC automatycznie otrzymuje 5k10 obrażeń żrących, a klasa jego Pancerza zostaje zmniejszona o 1.",
+    "source": "walka/typy_terenów.md",
+    "status": "detailed"
+  },
+  {
+    "id": "halucynogenny",
+    "name": "Halucynogenny",
+    "definition": "Postać kończąca swoją turę w Halucynogennym sektorze musi zdać test Siły Woli lub zyskuje 1 poziom Pokiereszowania. Jeśli cel ataku znajduje się w sektorze Halucynogennym, atakujący musi zdać test Sprytu lub zada tylko połowę obrażeń i statusów.",
+    "source": "walka/typy_terenów.md",
+    "status": "detailed"
   }
 ]
