@@ -69,3 +69,14 @@ test('footer shows source version and revision', async ({ page }) => {
   await expect(footer).toContainText('0.1.24');
   await expect(footer).toContainText('d8a3524');
 });
+
+
+test('long rules card fits a mobile viewport', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto('/karta/combat/tereny_specjalne');
+  await expect(page.locator('app-rule-card')).toBeVisible();
+  const overflow = await page.evaluate(
+    () => document.documentElement.scrollWidth > window.innerWidth + 1,
+  );
+  expect(overflow).toBe(false);
+});
