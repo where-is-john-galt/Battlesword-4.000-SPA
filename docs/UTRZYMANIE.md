@@ -55,10 +55,13 @@ Markdowna w runtime. Źródłem prawdy jest submoduł `Battlesword-4.000/`.
 
 3. Dla każdego zmienionego pliku źródłowego:
 
-   - przenieś treść 1:1 do odpowiedniego JSON-a (`przedmioty_magiczne.json`,
-     `walka.json`, `mechaniki.json`, `klasy.json` itd.),
-   - zachowaj literówki i błędy źródła; rozbieżności dopisz do
-     `niespojnosci.json` z `revision` aktualnego SHA,
+   - tabele i statblocki przenieś **1:1** do odpowiedniego JSON-a,
+   - prozę odwzoruj sekcja po sekcji, zachowując literówki; każdą nową
+     sekcję/tabelę pokryj testem tokenów w `src/app/services/*-data.spec.ts`,
+   - `detailed` znaczy „karta istnieje”, a nie „treść jest 1:1”; nie zmieniaj
+     tego statusu na `stub` tylko dlatego, że wpis jest streszczeniem,
+   - rozbieżności dopisz do `niespojnosci.json` z `revision` aktualnego SHA;
+     deduplikuj po `source + details + evidence`,
    - dodaj wpis do `index.json` z tym samym `id`, `type`, `name`, `source`
      i `status`,
    - nie zmieniaj stabilnych `id` istniejących wpisów; przy zmianie nazwy pliku
@@ -95,12 +98,10 @@ Bez `--base-href` ścieżki assetów i routingu przestaną działać.
 
 ## Znane luki
 
-- Wskaźnik submodułu w `main` to nadal `0f32397` (14.10.2026), a dane obejmują
-  źródło `d8a3524` (18.11.2026). To celowa pozostałość po usuniętym automacie;
-  przed kolejną synchronizacją trzeba go zaktualizować ręcznie.
 - `tools/validate-data.mjs` nie jest podłączony do żadnego skryptu ani workflow
   i ma nieaktualne, zaszyte liczniki wpisów.
-- `patch_notes.md` nie jest prezentowany w aplikacji.
 - Brak CI: testy i build uruchamiane są tylko lokalnie.
+- Wersja źródła i link do `patch_notes.md` są w stopce aplikacji, ale nie ma
+  automatycznego sprawdzania, czy submoduł wskazuje ten sam commit co dane.
 - Testy e2e Playwright istnieją (`npm run test:e2e`), ale nie są częścią żadnego
   automatycznego pipeline'u.

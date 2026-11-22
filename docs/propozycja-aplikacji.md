@@ -21,7 +21,7 @@ pozostaje statyczną SPA.
 - **Kompendium treści** — rasy, profesje, klasy, perki, ekwipunek i bestiariusz jako przeglądalne,
   filtrowalne karty.
 - **Szybkie wyszukiwanie** — znalezienie statystyki, broni czy przeciwnika w kilka sekund.
-- **Glosariusz** — definicje pojęć z tooltipami podpiętymi pod całą aplikację.
+- **Linkowanie pojęć w treści** — statystyki, mechaniki i walka są podlinkowane w opisach; nie ma osobnej sekcji Glosariusza.
 - **Zawsze aktualne** — treść pochodzi z wygenerowanych plików JSON, dzięki czemu zmiany zasad
   upstream są widoczne po ponownej generacji danych i aktualizacji submodułu.
 
@@ -34,13 +34,16 @@ priorytetem czytelności — to narzędzie referencyjne, nie wizytówka.
 
 Podział na sekcje odpowiadające kategoriom wygenerowanych danych:
 
-| Sekcja          | Zawartość (plik JSON w `src/assets/data/`)                                                                                   |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| **Postać**      | `rasy.json`, `profesje.json`, `klasy.json`, `perki.json`                                                                     |
-| **Ekwipunek**   | `bron.json`, `pancerze.json`, `paski.json`, `przedmioty_podreczne.json`, `przedmioty_magiczne.json`, `reszta_ekwipunku.json` |
-| **Bestiariusz** | `bestiariusz.json` — statblocki (Trep/Elita/Mistrz/Boss)                                                                     |
-| **Glosariusz**  | `glosariusz.json` — pojęcia typu „Bramy Śmierci", „ułatwienie", „Bariera", „Majętność"                                       |
-| **Ulubione**    | — (wybór użytkownika, zapis w localStorage; nie pochodzi z danych)                                                           |
+| Sekcja | Zawartość (plik JSON w `src/assets/data/`) |
+| --- | --- |
+| **Postać** | `rasy.json`, `profesje.json`, `klasy.json`, `perki.json` |
+| **Statystyki** | `statystyki.json` |
+| **Mechaniki** | `mechaniki.json` |
+| **Ekwipunek** | `bron.json`, `pancerze.json`, `paski.json`, `przedmioty_podreczne.json`, `przedmioty_magiczne.json`, `reszta_ekwipunku.json` |
+| **Walka** | `walka.json` |
+| **Bestiariusz** | `bestiariusz.json` — statblocki (Trep/Elita/Mistrz/Boss) |
+| **Niespójności** | `niespojnosci.json` — ustalenia audytu źródła; poza globalnym wyszukiwaniem |
+| **Ulubione** | — (wybór użytkownika, zapis w localStorage; nie pochodzi z danych) |
 
 Wszystkie pozycje są też dostępne przez zagregowany indeks `index.json` (id, typ, nazwa, źródło,
 status `detailed`/`stub`), który napędza wyszukiwarkę i listy.
@@ -61,15 +64,15 @@ status `detailed`/`stub`), który napędza wyszukiwarkę i listy.
   tabele (typ broni, bazowa statystyka, użycie, wymagana majętność).
 - **Bestiariusz** — statblocki (typ, tagi, odporności/podatności, HP, pancerz, akcje) w czytelnej
   formie; filtrowanie po typie (Trep/Elita/Mistrz/Boss) i tagach.
-- **Glosariusz** — karty terminów z definicjami; tooltipy podpięte pod nazwy obiektów w całej
-  aplikacji.
+- **Linkowanie pojęć** — statystyki, mechaniki i walka podlinkowują się w opisach; tooltipy
+  pokazują definicję bez osobnej sekcji Glosariusza.
 
 Każda karta obiektu posiada **filtry** (np. klasy wg archetypu, broń wg bazowej statystyki) oraz
 **linkowanie krzyżowe** do powiązanych obiektów (profesja → predyspozycje, klasa → archetyp).
 
 ### 3.2. Wyszukiwarka
 
-- Wyszukiwanie pełnotekstowe po `index.json` (nazwy obiektów, kategorie, tagi, statusy).
+- Wyszukiwanie po nazwach z `index.json`; wpisy Niespójności są dostępne w swojej sekcji, ale nie w globalnych wynikach.
 - Wyniki pogrupowane wg typu encji z linkami do kart.
 
 ### 3.3. Ulubione
@@ -100,7 +103,7 @@ a zmiany trafiają do JSON i kodu aplikacji.
 - Aplikacja ładuje JSON jako statyczne assety (bez backendu, w pełni statyczna SPA).
 - **Schemat TypeScript** w `src/app/models/compendium.ts` opisuje typy encji (`Race`, `Profession`,
   `CharacterClass`, `Perk`, `Weapon`, `Armor`, `Belt`, `HandItem`, `MagicItem`, `MiscItem`,
-  `Monster`, `GlossaryEntry`) oraz `IndexEntry`.
+  `Monster`, `Stat`, `Rule`, `Inconsistency`) oraz `IndexEntry`.
 
 **Odświeżanie:** zmiany zasad są przenoszone do plików JSON ręcznie, a aplikacja pozostaje
 statyczna i niezależna od AI podczas działania w przeglądarce.
