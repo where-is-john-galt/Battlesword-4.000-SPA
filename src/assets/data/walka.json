@@ -587,7 +587,7 @@
     "status": "detailed"
   },
   {
-    "id": "stamina_mana",
+    "id": "stamina_mana_walka",
     "name": "Stamina / Mana (walka)",
     "definition": "Bazowa wartość to połowa statystyki powiązanej z bronią zaokrąglona w dół. Przy zmianie broni lub dwóch broniach z różnymi statystykami wartość równa jest najniższej z nich i aktualnej rezerwy. Stamina wzmacnia ataki fizyczne, mana magiczne.",
     "source": "walka/stamina_mana_i_podsatwowe_ataki.md",

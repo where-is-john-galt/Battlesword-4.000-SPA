@@ -847,7 +847,7 @@
     "status": "detailed"
   },
   {
-    "id": "stamina_mana",
+    "id": "stamina_mana_walka",
     "type": "combat",
     "name": "Stamina / Mana (walka)",
     "source": "walka/stamina_mana_i_podsatwowe_ataki.md",
