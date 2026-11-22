@@ -1470,13 +1470,6 @@
     "status": "detailed"
   },
   {
-    "id": "cichy_klucz_typo_wytrychowej_2",
-    "type": "inconsistency",
-    "name": "Cichy Klucz: literówka 'wytrychowej' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/cichy_klucz.md",
-    "status": "detailed"
-  },
-  {
     "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4",
     "type": "inconsistency",
     "name": "Crafting: brak procedury efektu negatywnego dla wyniku 4",
@@ -1813,13 +1806,6 @@
     "status": "detailed"
   },
   {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_52",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'HP +3'",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
     "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_53",
     "type": "inconsistency",
     "name": "Crafting: niejasna negatywna interpretacja 'Bariera +5' (duplikat)",
@@ -1851,328 +1837,6 @@
     "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_57",
     "type": "inconsistency",
     "name": "Crafting: niejasna negatywna interpretacja 'Szczęście (Ułatwienie)' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_58",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Poczytalność (Ułatwienie) +3' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_59",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Siła +1' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_6",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Stamina / Mana +1'",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_60",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Zręczność +1' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_61",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Inteligencja +1' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_62",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Percepcja +1' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_63",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Charyzma +1' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_64",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Wytrzymałość +1' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_65",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Unik +1' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_66",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Spryt +1' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_67",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Ostrożność +1' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_68",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Siła Woli +1' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_69",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Akrobatyka +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_7",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Odporność na Śmierć +1'",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_70",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Analiza +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_71",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Arkana +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_72",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Atletyka +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_73",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Dowodzenie +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_74",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Gadanina +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_75",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Jeździectwo +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_76",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Kowalstwo +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_77",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Księgowość +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_78",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Lingwistyka +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_79",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Majsterkowanie +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_8",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Pancerz +1'",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_80",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Medycyna +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_81",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Nawigacja +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_82",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Oszustwo +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_83",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Otwieranie zamków +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_84",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Pływanie +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_85",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Prowadzenie +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_86",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Przekonywanie +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_87",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Psychologia +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_88",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Skradanie +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_89",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Spostrzegawczość +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_9",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Szczęście (Ułatwienie)'",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_90",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Sztuka +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_91",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Sztuka Przetrwania +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_92",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Targowanie +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_93",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Wiedza +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_94",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Wspinaczka +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_95",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Wynalazczość +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_96",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Zastraszanie +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_97",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Znajdowanie +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_98",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Zwinne dłonie +2' (duplikat)",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_brak_okreslenia_efektu_negatywnego_dla_wyniku_4_99",
-    "type": "inconsistency",
-    "name": "Crafting: niejasna negatywna interpretacja 'Żeglarstwo +2' (duplikat)",
     "source": "mechaniki_bazowe/crafting.md",
     "status": "detailed"
   },
@@ -2250,13 +1914,6 @@
     "id": "czytelnik_wód_typo_inkrustowana",
     "type": "inconsistency",
     "name": "Czytelnik Wód: literówka 'inkrustowana'",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/czytelnik_wód.md",
-    "status": "detailed"
-  },
-  {
-    "id": "czytelnik_wód_typo_inkrustowana_2",
-    "type": "inconsistency",
-    "name": "Czytelnik Wód: literówka 'inkrustowana' (duplikat)",
     "source": "ekwipunek/przedmioty_magiczne/rzadkie/czytelnik_wód.md",
     "status": "detailed"
   },
@@ -2359,23 +2016,9 @@
     "status": "detailed"
   },
   {
-    "id": "kostur_żelazdnego_rachmistrza_typo_spatynowanym_2",
-    "type": "inconsistency",
-    "name": "Kostur Żelaznego Rachmistrza: literówka 'spatynowanym' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/kostur_żelazdnego_rachmistrza.md",
-    "status": "detailed"
-  },
-  {
     "id": "kostur_żelazdnego_rachmistrza_typo_zakonserwowania",
     "type": "inconsistency",
     "name": "Kostur Żelaznego Rachmistrza: literówka 'zakonserwowania'",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/kostur_żelazdnego_rachmistrza.md",
-    "status": "detailed"
-  },
-  {
-    "id": "kostur_żelazdnego_rachmistrza_typo_zakonserwowania_2",
-    "type": "inconsistency",
-    "name": "Kostur Żelaznego Rachmistrza: literówka 'zakonserwowania' (duplikat)",
     "source": "ekwipunek/przedmioty_magiczne/rzadkie/kostur_żelazdnego_rachmistrza.md",
     "status": "detailed"
   },
@@ -2394,23 +2037,9 @@
     "status": "detailed"
   },
   {
-    "id": "krasnoludzki_ładny_hełm_typo_perswazji_2",
-    "type": "inconsistency",
-    "name": "Krasnoludzki Ładny Hełm: literówka 'perswazji' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/krasnoludzki_ładny_hełm.md",
-    "status": "detailed"
-  },
-  {
     "id": "krasnoludzki_ładny_hełm_typo_zdobień",
     "type": "inconsistency",
     "name": "Krasnoludzki Ładny Hełm: literówka 'zdobień'",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/krasnoludzki_ładny_hełm.md",
-    "status": "detailed"
-  },
-  {
-    "id": "krasnoludzki_ładny_hełm_typo_zdobień_2",
-    "type": "inconsistency",
-    "name": "Krasnoludzki Ładny Hełm: literówka 'zdobień' (duplikat)",
     "source": "ekwipunek/przedmioty_magiczne/rzadkie/krasnoludzki_ładny_hełm.md",
     "status": "detailed"
   },
@@ -2467,13 +2096,6 @@
     "id": "lista_klas_brak_grzybiarz_w_archetypie",
     "type": "inconsistency",
     "name": "Lista klas: Grzybiarz wymieniony w archetypie Druid",
-    "source": "tworzenie_postaci/klasy/lista_klas.md",
-    "status": "detailed"
-  },
-  {
-    "id": "lista_klas_brak_kawalerzysta_w_archetypie_2",
-    "type": "inconsistency",
-    "name": "Lista klas: Kawalerzysta nie wymieniony w archetypie",
     "source": "tworzenie_postaci/klasy/lista_klas.md",
     "status": "detailed"
   },
@@ -3192,699 +2814,6 @@
     "status": "detailed"
   },
   {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_10",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 9)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_100",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 99)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_11",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 10)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_12",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 11)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_13",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 12)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_14",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 13)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_15",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 14)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_16",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 15)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_17",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 16)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_18",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 17)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_19",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 18)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_2",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_20",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 19)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_21",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 20)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_22",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 21)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_23",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 22)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_24",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 23)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_25",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 24)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_26",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 25)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_27",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 26)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_28",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 27)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_29",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 28)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_3",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 2)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_30",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 29)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_31",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 30)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_32",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 31)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_33",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 32)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_34",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 33)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_35",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 34)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_36",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 35)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_37",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 36)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_38",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 37)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_39",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 38)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_4",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 3)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_40",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 39)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_41",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 40)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_42",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 41)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_43",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 42)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_44",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 43)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_45",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 44)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_46",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 45)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_47",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 46)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_48",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 47)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_49",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 48)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_5",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 4)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_50",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 49)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_51",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 50)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_52",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 51)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_53",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 52)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_54",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 53)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_55",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 54)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_56",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 55)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_57",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 56)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_58",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 57)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_59",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 58)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_6",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 5)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_60",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 59)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_61",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 60)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_62",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 61)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_63",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 62)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_64",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 63)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_65",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 64)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_66",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 65)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_67",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 66)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_68",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 67)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_69",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 68)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_7",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 6)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_70",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 69)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_71",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 70)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_72",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 71)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_73",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 72)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_74",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 73)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_75",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 74)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_76",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 75)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_77",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 76)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_78",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 77)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_79",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 78)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_8",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 7)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_80",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 79)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_81",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 80)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_82",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 81)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_83",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 82)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_84",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 83)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_85",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 84)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_86",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 85)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_87",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 86)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_88",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 87)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_89",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 88)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_9",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 8)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_90",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 89)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_91",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 90)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_92",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 91)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_93",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 92)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_94",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 93)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_95",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 94)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_96",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 95)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_97",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 96)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_98",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 97)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
-    "id": "morale_brak_wartosci_odzyskiwania_dla_poziomu_paniki_pojedynczego_99",
-    "type": "inconsistency",
-    "name": "Morale: niejasny wpływ pojedynczego poziomu Paniki (duplikat 98)",
-    "source": "walka/morale.md",
-    "status": "detailed"
-  },
-  {
     "id": "morale_brak_wartosci_odzyskiwania_dla_smierci",
     "type": "inconsistency",
     "name": "Morale: niejasna wartość odzyskiwania za śmierć Bohatera",
@@ -4053,13 +2982,6 @@
     "status": "detailed"
   },
   {
-    "id": "pas_głębinowego_uśmiechu_typo_rozłupujące_2",
-    "type": "inconsistency",
-    "name": "Pas Głębinowego Uśmiechu: literówka 'rozłupujące' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/pas_głębinowego_uśmiechu.md",
-    "status": "detailed"
-  },
-  {
     "id": "pas_nuggitha_potraja_podwaja",
     "type": "inconsistency",
     "name": "Pas Nuggitha: jednoczesne potrojenie i podwojenie zużycia",
@@ -4102,23 +3024,9 @@
     "status": "detailed"
   },
   {
-    "id": "peleryna_wędrowca_tysiąca_dachów_typo_nietoperza_2",
-    "type": "inconsistency",
-    "name": "Peleryna Wędrowca Tysiąca Dachów: literówka 'nietoperza' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/peleryna_wędrowca_tysiąca_dachów.md",
-    "status": "detailed"
-  },
-  {
     "id": "peleryna_wędrowca_tysiąca_dachów_typo_rozerwania",
     "type": "inconsistency",
     "name": "Peleryna Wędrowca Tysiąca Dachów: literówka 'rozerwania'",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/peleryna_wędrowca_tysiąca_dachów.md",
-    "status": "detailed"
-  },
-  {
-    "id": "peleryna_wędrowca_tysiąca_dachów_typo_rozerwania_2",
-    "type": "inconsistency",
-    "name": "Peleryna Wędrowca Tysiąca Dachów: literówka 'rozerwania' (duplikat)",
     "source": "ekwipunek/przedmioty_magiczne/rzadkie/peleryna_wędrowca_tysiąca_dachów.md",
     "status": "detailed"
   },
@@ -4214,23 +3122,9 @@
     "status": "detailed"
   },
   {
-    "id": "pierścień_odkrywcy_typo_astrolabium_2",
-    "type": "inconsistency",
-    "name": "Pierścień Odkrywcy: literówka 'astrolabium' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/pierścień_odkrywcy.md",
-    "status": "detailed"
-  },
-  {
     "id": "pierścień_odkrywcy_typo_mgiełkę",
     "type": "inconsistency",
     "name": "Pierścień Odkrywcy: literówka 'mgiełkę'",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/pierścień_odkrywcy.md",
-    "status": "detailed"
-  },
-  {
-    "id": "pierścień_odkrywcy_typo_mgiełkę_2",
-    "type": "inconsistency",
-    "name": "Pierścień Odkrywcy: literówka 'mgiełkę' (duplikat)",
     "source": "ekwipunek/przedmioty_magiczne/rzadkie/pierścień_odkrywcy.md",
     "status": "detailed"
   },
@@ -4480,23 +3374,9 @@
     "status": "detailed"
   },
   {
-    "id": "rękawice_do_przesadzania_typo_bezpieczeniejsze_2",
-    "type": "inconsistency",
-    "name": "Rękawice Do Przesadzania: literówka 'bezpieczeniejsze' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/rękawice_do_przesadzania.md",
-    "status": "detailed"
-  },
-  {
     "id": "rękawice_do_przesadzania_typo_niezidentyifkowanych",
     "type": "inconsistency",
     "name": "Rękawice Do Przesadzania: literówka 'niezidentyifkowanych'",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/rękawice_do_przesadzania.md",
-    "status": "detailed"
-  },
-  {
-    "id": "rękawice_do_przesadzania_typo_niezidentyifkowanych_2",
-    "type": "inconsistency",
-    "name": "Rękawice Do Przesadzania: literówka 'niezidentyifkowanych' (duplikat)",
     "source": "ekwipunek/przedmioty_magiczne/rzadkie/rękawice_do_przesadzania.md",
     "status": "detailed"
   },
@@ -4511,13 +3391,6 @@
     "id": "rękawice_srebrnego_splotu_typo_poznokcie",
     "type": "inconsistency",
     "name": "Rękwice Srebrnego Splotu: literówka 'poznokcie'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_srebrnego_splotu.md",
-    "status": "detailed"
-  },
-  {
-    "id": "rękawice_srebrnego_splotu_typo_poznokcie_2",
-    "type": "inconsistency",
-    "name": "Rękwice Srebrnego Splotu: literówka 'poznokcie' (duplikat)",
     "source": "ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_srebrnego_splotu.md",
     "status": "detailed"
   },
@@ -4641,23 +3514,9 @@
     "status": "detailed"
   },
   {
-    "id": "tarcza_milczącej_kniei_typo_pochłaniać_2",
-    "type": "inconsistency",
-    "name": "Tarcza Milczącej Kniei: literówka 'pochłaniać' (duplikat)",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/tarcza_milczącej_kniei.md",
-    "status": "detailed"
-  },
-  {
     "id": "targowy_bastion_typo_wypatrywać",
     "type": "inconsistency",
     "name": "Targowy Bastion: literówka 'wypatrywać'",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/targowy_bastion.md",
-    "status": "detailed"
-  },
-  {
-    "id": "targowy_bastion_typo_wypatrywać_2",
-    "type": "inconsistency",
-    "name": "Targowy Bastion: literówka 'wypatrywać' (duplikat)",
     "source": "ekwipunek/przedmioty_magiczne/rzadkie/targowy_bastion.md",
     "status": "detailed"
   },
@@ -4669,23 +3528,9 @@
     "status": "detailed"
   },
   {
-    "id": "testy_brak_okreslenia_ekstremalnej_manifestacji_2",
-    "type": "inconsistency",
-    "name": "Testy: brak efektu ekstremalnej manifestacji chaosu (duplikat)",
-    "source": "mechaniki_bazowe/testy.md",
-    "status": "detailed"
-  },
-  {
     "id": "testy_brak_okreslenia_krytycznego_sukcesu",
     "type": "inconsistency",
     "name": "Testy: brak wartości krytycznego sukcesu i porażki",
-    "source": "mechaniki_bazowe/testy.md",
-    "status": "detailed"
-  },
-  {
-    "id": "testy_brak_okreslenia_krytycznego_sukcesu_2",
-    "type": "inconsistency",
-    "name": "Testy: brak wartości krytycznego sukcesu i porażki (duplikat)",
     "source": "mechaniki_bazowe/testy.md",
     "status": "detailed"
   },
@@ -4697,23 +3542,9 @@
     "status": "detailed"
   },
   {
-    "id": "testy_brak_okreslenia_krytykow_2",
-    "type": "inconsistency",
-    "name": "Testy: niejasny zakres krytyków (duplikat)",
-    "source": "mechaniki_bazowe/testy.md",
-    "status": "detailed"
-  },
-  {
     "id": "testy_brak_okreslenia_manifestacji",
     "type": "inconsistency",
     "name": "Testy: niejasny zakres ekstremalnej manifestacji chaosu",
-    "source": "mechaniki_bazowe/testy.md",
-    "status": "detailed"
-  },
-  {
-    "id": "testy_brak_okreslenia_manifestacji_2",
-    "type": "inconsistency",
-    "name": "Testy: niejasny zakres ekstremalnej manifestacji chaosu (duplikat)",
     "source": "mechaniki_bazowe/testy.md",
     "status": "detailed"
   },
@@ -4725,23 +3556,9 @@
     "status": "detailed"
   },
   {
-    "id": "testy_brak_okreslenia_poziomow_trudnosci_2",
-    "type": "inconsistency",
-    "name": "Testy: niejasny sposób stosowania modyfikatorów trudności (duplikat)",
-    "source": "mechaniki_bazowe/testy.md",
-    "status": "detailed"
-  },
-  {
     "id": "testy_brak_okreslenia_sukcesow",
     "type": "inconsistency",
     "name": "Testy: niejasny sposób liczenia poziomów sukcesu",
-    "source": "mechaniki_bazowe/testy.md",
-    "status": "detailed"
-  },
-  {
-    "id": "testy_brak_okreslenia_sukcesow_2",
-    "type": "inconsistency",
-    "name": "Testy: niejasny sposób liczenia poziomów sukcesu (duplikat)",
     "source": "mechaniki_bazowe/testy.md",
     "status": "detailed"
   },
@@ -4753,23 +3570,9 @@
     "status": "detailed"
   },
   {
-    "id": "testy_brak_okreslenia_szczescia_2",
-    "type": "inconsistency",
-    "name": "Testy: niejasny moment wykorzystania Szczęścia (duplikat)",
-    "source": "mechaniki_bazowe/testy.md",
-    "status": "detailed"
-  },
-  {
     "id": "testy_brak_okreslenia_szczesliwego_trafu",
     "type": "inconsistency",
     "name": "Testy: niejasny zakres Szczęśliwego trafu",
-    "source": "mechaniki_bazowe/testy.md",
-    "status": "detailed"
-  },
-  {
-    "id": "testy_brak_okreslenia_szczesliwego_trafu_2",
-    "type": "inconsistency",
-    "name": "Testy: niejasny zakres Szczęśliwego trafu (duplikat)",
     "source": "mechaniki_bazowe/testy.md",
     "status": "detailed"
   },
@@ -4781,23 +3584,9 @@
     "status": "detailed"
   },
   {
-    "id": "testy_brak_okreslenia_testow_przeciwstawnych_2",
-    "type": "inconsistency",
-    "name": "Testy: brak rozstrzygnięcia remisu w testach przeciwstawnych (duplikat)",
-    "source": "mechaniki_bazowe/testy.md",
-    "status": "detailed"
-  },
-  {
     "id": "testy_brak_okreslenia_testu",
     "type": "inconsistency",
     "name": "Testy: niejasny zakres testowanych statystyk",
-    "source": "mechaniki_bazowe/testy.md",
-    "status": "detailed"
-  },
-  {
-    "id": "testy_brak_okreslenia_testu_2",
-    "type": "inconsistency",
-    "name": "Testy: niejasny zakres testowanych statystyk (duplikat)",
     "source": "mechaniki_bazowe/testy.md",
     "status": "detailed"
   },
@@ -4826,13 +3615,6 @@
     "id": "testy_brak_okreslenia_zwiekszania_szczescia",
     "type": "inconsistency",
     "name": "Testy: niejasny zakres zwiększania Szczęścia",
-    "source": "mechaniki_bazowe/testy.md",
-    "status": "detailed"
-  },
-  {
-    "id": "testy_brak_okreslenia_zwiekszania_szczescia_2",
-    "type": "inconsistency",
-    "name": "Testy: niejasny zakres zwiększania Szczęścia (duplikat)",
     "source": "mechaniki_bazowe/testy.md",
     "status": "detailed"
   },
@@ -4882,13 +3664,6 @@
     "id": "wilgotna_chwała_typo_wyszczerbiona",
     "type": "inconsistency",
     "name": "Wilgotna Chwała: literówka 'wyszczerbiona'",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/wilgotna_chwała.md",
-    "status": "detailed"
-  },
-  {
-    "id": "wilgotna_chwała_typo_wyszczerbiona_2",
-    "type": "inconsistency",
-    "name": "Wilgotna Chwała: literówka 'wyszczerbiona' (duplikat)",
     "source": "ekwipunek/przedmioty_magiczne/rzadkie/wilgotna_chwała.md",
     "status": "detailed"
   },
