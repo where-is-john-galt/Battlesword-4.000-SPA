@@ -6158,5 +6158,40 @@
     "name": "Halucynogenny",
     "source": "walka/typy_terenów.md",
     "status": "detailed"
+  },
+  {
+    "id": "testy_wytworstwa",
+    "type": "mechanic",
+    "name": "Testy wytwórstwa",
+    "source": "mechaniki_bazowe/crafting.md",
+    "status": "detailed"
+  },
+  {
+    "id": "baza_przedmiotu",
+    "type": "mechanic",
+    "name": "Baza przedmiotu",
+    "source": "mechaniki_bazowe/crafting.md",
+    "status": "detailed"
+  },
+  {
+    "id": "eksperymentalna_rzadkosc",
+    "type": "mechanic",
+    "name": "Eksperymentalna rzadkość",
+    "source": "mechaniki_bazowe/crafting.md",
+    "status": "detailed"
+  },
+  {
+    "id": "eksperymentalne_bonusy_niezwykle_rzadkie",
+    "type": "mechanic",
+    "name": "Eksperymentalne bonusy (niezwykłe / rzadkie)",
+    "source": "mechaniki_bazowe/crafting.md",
+    "status": "detailed"
+  },
+  {
+    "id": "eksperymentalne_bonusy_potezne",
+    "type": "mechanic",
+    "name": "Eksperymentalne bonusy (potężne+)",
+    "source": "mechaniki_bazowe/crafting.md",
+    "status": "detailed"
   }
 ]

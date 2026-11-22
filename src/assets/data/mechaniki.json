@@ -447,5 +447,40 @@
     "definition": "Niezwykłe - Zapewniają jeden prosty bonus (kaliber broni +1)\nRzadkie - Zapewniają dwa proste bonusy (kaliber tarczy z okiem)\nPotężne - Zapewniają unikalny bonus lub sposób działania (kaliber miotły do latania)\nArcymistrzowskie - Zapewniają kilka unikalnych bonusów lub bonus wielkiego znaczenia (kaliber gadającego legendarnego miecza)\nMityczne - Zapewniają liczne bonusy oraz nowe możliwości, unikatowe w skali całego settingu (kaliber Papieskiego Miecza)\nBoskie - Pozwalają na kształtowanie otaczającej rzeczywistości (kaliber Ostrza Przeznaczenia)",
     "source": "ekwipunek/majętność.md",
     "status": "detailed"
+  },
+  {
+    "id": "testy_wytworstwa",
+    "name": "Testy wytwórstwa",
+    "definition": "Poziom trudności należy podzielić na ilość sukcesów niezbędnych do zebrania w danym teście, by ukończyć prace nad przedmiotem. Proporcje powinny zależeć od tego, które umiejętności mają najwyższy wkład w stworzenie danego przedmiotu. Umiejętności powiązane z wytwórstwem to:\nKowalstwo\nMajsterkowanie\nWynalaczość\nZnajdowanie\nSztuka\noraz jeśli wytwórstwo ma związek z badaniami magicznymi - Arkana\nW niektórych przypadkach mogą to być równiez inne umiejętności, jeśli ma to większy sens, np. Nawigacja przy tworzeniu magicznych kompasów lub map.",
+    "source": "mechaniki_bazowe/crafting.md",
+    "status": "detailed"
+  },
+  {
+    "id": "baza_przedmiotu",
+    "name": "Baza przedmiotu",
+    "definition": "1. Hełm\n2. Peleryna\n3. Amulet\n4. Pancerz\n5. Pierścionek\n6. Rękawice\n7. Buty\n8. Pas\n9. Broń\n10. Tarcza",
+    "source": "mechaniki_bazowe/crafting.md",
+    "status": "detailed"
+  },
+  {
+    "id": "eksperymentalna_rzadkosc",
+    "name": "Eksperymentalna rzadkość",
+    "definition": "Rzut k100:\n1-33: Niezwykła\n34-63: Rzadka\n64-83: Potężne\n84-93: Arcymistrzowska\n94-99: Mityczna\n100: Boska",
+    "source": "mechaniki_bazowe/crafting.md",
+    "status": "detailed"
+  },
+  {
+    "id": "eksperymentalne_bonusy_niezwykle_rzadkie",
+    "name": "Eksperymentalne bonusy (niezwykłe / rzadkie)",
+    "definition": "Rzut k100:\n1-2: Siła +1\n3-4: Zręczność +1\n5-6: Inteligencja +1\n7-8: Percepcja +1\n9-10: Charyzma +1\n11-12: Wytrzymałość +1\n13-14: Unik +1\n15-16: Spryt +1\n17-18: Ostrożność +1\n19-20: Siła Woli +1\n21-22: Akrobatyka +2\n23-24: Analiza +2\n25-26: Arkana +2\n27-28: Atletyka +2\n29-30: Dowodzenie +2\n31-32: Gadanina +2\n33-34: Jeździectwo +2\n35-36: Kowalstwo +2\n37-38: Księgowość +2\n39-40: Lingwistyka +2\n41-42: Majsterkowanie +2\n43-44: Medycyna +2\n45-46: Nawigacja +2\n47-48: Oszustwo +2\n49-50: Otwieranie zamków +2\n51-52: Pływanie +2\n53-54: Prowadzenie +2\n55-56: Przekonywanie +2\n57-58: Psychologia +2\n59-60: Skradanie +2\n61-62: Spostrzegawczość +2\n63-64: Sztuka +2\n65-66: Sztuka Przetrwania +2\n67-68: Targowanie +2\n69-70: Wiedza +2\n71-72: Wspinaczka +2\n73-74: Wynalazczość +2\n75-76: Zastraszanie +2\n77-78: Znajdowanie +2\n79-80: Zwinne dłonie +2\n81-82: Żeglarstwo +2\n83-85: Pancerz +1\n86-88: Bariera +5\n89-91: Stamina / Mana +1\n92-94: HP +3\n95-96: Szczęście (Ułatwienie)\n97-98: Odporność na Śmierć +1\n99-100: Poczytalność (Ułatwienie) +3",
+    "source": "mechaniki_bazowe/crafting.md",
+    "status": "detailed"
+  },
+  {
+    "id": "eksperymentalne_bonusy_potezne",
+    "name": "Eksperymentalne bonusy (potężne+)",
+    "definition": "Jeżeli cecha nie została nabyta w wyniku spaczenia, maksymalna ilośc użyć na walkę jest równa Mądrości.\nRzut k100:\n1-3: Odporność na ogień\n4-6: Odporność na zimno\n7-9: Odporność na elektryczność\n10-12: Odporność na fizyczne\n13-15: Odporność na żrące\n16-18: Odporność na święte\n19-21: Odporność na chaotyczne\n22-24: Latanie\n25-27: Oddychanie pod wodą\n28-30: Pozwala na przerzut\n31-33: Akcja: Unieruchomienie wszystkich przeciwników w sektorze\n34-36: Akcja: Odepchnięcie wszystkich przeciwników do sąsiednich sektrorów\n37-39: Reakcja: Anulowanie ataku w krótkim zasięgu\n40-42: Reakcja: Odbicie otrzymanych obrażeń\n43-45: Akcja: Zyskanie niewrażliwości na 1 turę\n46-48: Zalanie sektora wodą\n49-51: Zamiana sektora w bagno\n52-54: Spaczenie sektora\n55-57: Zamrożenie sektora\n58-60: Podpalenie sektora\n61-63: Zagrzybienie sektora\n64-66: Uświęcenie sektora\n67-69: Elektryzacja sektora\n70-72: Teleportacja w długim zasięgu\n73-75: Zamiana miejsc z dowolnym sojusznikiem\n76-78: Zamiana miejsc z dowolnym przeciwnikiem\n79-81: Akcja: Utworzenie mirażu (3 kopie, każde trafienie w Bohatera jest losowane czy nie trafi w kopię, jeśli trafi to kopia jest niszczona)\n82-84: Pozwala na dokładne powtórzenie całej tury; trzeba zadeklarować przed wykonaniem pierwszej akcji\n85-87: Kradzież akcji\n88-90: Reakcja: Zmiana wyniku na kości k20 na 21-(oryginalny rzut)\n91-93: Akcja: Przywołanie dżina\n94-96: Akcja: Przywołanie demona\n97-99: Akcja: Przywołanie anioła\n100: Podwojenie zadanych obrażeń",
+    "source": "mechaniki_bazowe/crafting.md",
+    "status": "detailed"
   }
 ]

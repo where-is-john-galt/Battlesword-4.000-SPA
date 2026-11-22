@@ -56,3 +56,38 @@ describe('mechaniki.json — rzadkość przedmiotów z Majętności', () => {
     ).toBe(true);
   });
 });
+
+
+describe('mechaniki.json — crafting z mechaniki_bazowe/crafting.md', () => {
+  const ids = [
+    'testy_wytworstwa',
+    'baza_przedmiotu',
+    'eksperymentalna_rzadkosc',
+    'eksperymentalne_bonusy_niezwykle_rzadkie',
+    'eksperymentalne_bonusy_potezne',
+  ];
+
+  it('ma wszystkie sekcje i wpisy w indeksie', () => {
+    for (const id of ids) {
+      expect(mechaniki.find((e) => e.id === id)?.source).toBe('mechaniki_bazowe/crafting.md');
+      expect(index.some((e) => e.id === id && e.type === 'mechanic')).toBe(true);
+    }
+  });
+
+  it('odwzorowuje tabele', () => {
+    const niezwykle = mechaniki.find(
+      (e) => e.id === 'eksperymentalne_bonusy_niezwykle_rzadkie',
+    )!.definition;
+    expect(niezwykle.split('\n').filter((l) => /^\d+-\d+:/.test(l))).toHaveLength(48);
+    expect(niezwykle).toContain('99-100: Poczytalność (Ułatwienie) +3');
+
+    const potezne = mechaniki.find(
+      (e) => e.id === 'eksperymentalne_bonusy_potezne',
+    )!.definition;
+    expect(potezne.split('\n').filter((l) => /^\d+-\d+:/.test(l))).toHaveLength(33);
+    expect(potezne).toContain('100: Podwojenie zadanych obrażeń');
+    expect(mechaniki.find((e) => e.id === 'eksperymentalna_rzadkosc')!.definition).toContain(
+      '100: Boska',
+    );
+  });
+});
