@@ -201,3 +201,18 @@
   text-transform: none !important;
   color: hsl(0 0% 100% / 0.35) !important;
 }
+
+.shell__footer-link {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--color-bronze);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--color-gold);
+  }
+}

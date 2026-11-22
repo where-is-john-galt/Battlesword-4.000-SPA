@@ -5,6 +5,7 @@ import { SearchInput } from '../../ui/search-input/search-input';
 import { Icon } from '../../ui/icon/icon';
 import { SECTIONS } from '../../models/sections';
 import { sectionIcon } from '../../models/icons';
+import { SOURCE_PATCH_NOTES_URL, SOURCE_REVISION, SOURCE_VERSION } from '../../models/source';
 
 interface NavItem {
   path: string;
@@ -21,6 +22,9 @@ export class Shell {
   private readonly router = inject(Router);
 
   protected readonly menuOpen = signal(false);
+  protected readonly sourceVersion = SOURCE_VERSION;
+  protected readonly sourceRevision = SOURCE_REVISION;
+  protected readonly patchNotesUrl = SOURCE_PATCH_NOTES_URL;
 
   protected readonly navItems: NavItem[] = [
     ...SECTIONS.map((section) => ({ path: section.path, label: section.label })),

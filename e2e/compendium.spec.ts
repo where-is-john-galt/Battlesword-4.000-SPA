@@ -61,3 +61,11 @@ test('search does not show meta inconsistencies', async ({ page }) => {
   await expect(page.getByRole('link', { name: /^Morale$/ }).first()).toBeVisible();
   await expect(page.getByText('Niespójności · Niespójność')).toHaveCount(0);
 });
+
+
+test('footer shows source version and revision', async ({ page }) => {
+  await page.goto('/');
+  const footer = page.locator('footer');
+  await expect(footer).toContainText('0.1.24');
+  await expect(footer).toContainText('d8a3524');
+});
