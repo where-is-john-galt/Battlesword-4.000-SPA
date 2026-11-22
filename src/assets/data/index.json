@@ -5334,13 +5334,6 @@
     "status": "detailed"
   },
   {
-    "id": "bariera",
-    "type": "stat",
-    "name": "Bariera",
-    "source": "mechaniki_bazowe/statystyki.md",
-    "status": "detailed"
-  },
-  {
     "id": "charyzma",
     "type": "stat",
     "name": "Charyzma",

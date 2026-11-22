@@ -572,18 +572,6 @@
     ]
   },
   {
-    "id": "bariera",
-    "name": "Bariera",
-    "group": "trzeciorzędna",
-    "definition": "Defensywny zasób postaci, pochłaniający obrażenia niezależnie od Punktów Życia; wartość bazowa wynika ze statystyk.",
-    "source": "mechaniki_bazowe/statystyki.md",
-    "status": "detailed",
-    "aliases": [
-      "bariery",
-      "barierę"
-    ]
-  },
-  {
     "id": "majętność",
     "name": "Majętność",
     "group": "drużynowa",
