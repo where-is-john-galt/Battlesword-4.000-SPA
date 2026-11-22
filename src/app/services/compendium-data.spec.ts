@@ -65,7 +65,7 @@ describe('przedmioty_magiczne.json — nowe przedmioty z 0.1.23', () => {
     );
     expect(item.armor).toBe(7);
     expect(item.barrier).toBe(12);
-    expect(item.requirements).toBe('Siła 10, Inteligencja 6');
+    expect(item.requirements).toBeUndefined();
     expect(item.modifiers).toHaveLength(10);
     expect(item.corrupted).toHaveLength(6);
   });
@@ -82,14 +82,14 @@ describe('przedmioty_magiczne.json — nowe przedmioty z 0.1.23', () => {
     expect(ability?.enhancements?.[6]).toContain('5 Bariery');
   });
 
-  it('zachowuje polski opis i tłumaczenie z pliku źródłowego', () => {
+  it('zachowuje polski opis bez usuniętego tłumaczenia', () => {
     const { description } = magicItem('zaduma_świtu_otulającego_lodowy_grobowiec');
 
+    expect(description).toContain('Ani nocny blask');
     expect(description).toContain('Gdy Pelor zamknie swe płonące oko');
     expect(description).toContain('- Pytonż IV z Altdris');
-    expect(description).toContain('Enfolding Dawn');
-    expect(description).toContain('When Solaris closes his burning eye');
-    expect(description).toContain('- Cirel of Caer Tarth');
+    expect(description).not.toContain('Enfolding Dawn');
+    expect(description).not.toContain('Cirel of Caer Tarth');
   });
 
   it('rejestruje oba przedmioty w indeksie wyszukiwania', () => {
@@ -1791,6 +1791,178 @@ describe('przedmioty_magiczne.json — audyt Tarczy Szarżującego Kawalerzysty 
       expect(
         index.filter((entry) => entry.type === 'inconsistency' && entry.source === source),
       ).toEqual([]);
+    }
+  });
+});
+
+const SYNC_REVISION = 'd8a352450e093cdb4d1bb032f5b3b8d70db9ac9d';
+
+const syncedMagicItems = [
+  {
+    id: 'nić_czasu',
+    name: 'Nić Czasu',
+    type: 'Pancerz',
+    rarity: 'Boskie',
+    source: 'ekwipunek/przedmioty_magiczne/boskie/nić_czasu.md',
+  },
+  {
+    id: 'korona_bladego_króla_za_zasłoną_nocy',
+    name: 'Korona Bladego Króla Za Zasłoną Nocy',
+    type: 'Hełm',
+    rarity: 'Arcymistrzowskie',
+    source:
+      'ekwipunek/przedmioty_magiczne/arcymistrzowskie/korona_bladego_króla_za_zasłoną_nocy.md',
+  },
+  {
+    id: 'korona_zwycięzcy_brązowej_brody',
+    name: 'Korona Zwycięzcy Brązowej Brody',
+    type: 'Hełm',
+    rarity: 'Arcymistrzowskie',
+    source:
+      'ekwipunek/przedmioty_magiczne/arcymistrzowskie/korona_zwycięzcy_brązowej_brody.md',
+  },
+  {
+    id: 'plazmoidyczne_symulakrum',
+    name: 'Plazmoidyczne Symulakrum',
+    type: 'Pierścień',
+    rarity: 'Arcymistrzowskie',
+    source: 'ekwipunek/przedmioty_magiczne/arcymistrzowskie/plazmoidyczne_symulakrum.md',
+  },
+  {
+    id: 'koło_wozu_skrzydlatej_fortecy',
+    name: 'Koło Wozu Skrzydlatej Fortecy',
+    type: 'Tarcza',
+    rarity: 'Arcymistrzowskie',
+    source: 'ekwipunek/przedmioty_magiczne/arcymistrzowskie/koło_wozu_skrzydlatej_fortecy.md',
+  },
+  {
+    id: 'przebudzenie_destrukcji_z_rozkazu_lotu_pochodu_duchów',
+    name: 'Przebudzenie Destrukcji z Rozkazu Lotu Pochodu Duchów',
+    type: 'Buty',
+    rarity: 'Mityczne',
+    source:
+      'ekwipunek/przedmioty_magiczne/mityczny/przebudzenie_destrukcji_z_rozkazu_lotu_pochodu_duchów.md',
+  },
+  {
+    id: 'serce_zniszczenia',
+    name: 'Serce Zniszczenia',
+    type: 'Amulet',
+    rarity: 'Potężne',
+    source: 'ekwipunek/przedmioty_magiczne/potężne/serce_zniszczenia.md',
+  },
+  {
+    id: 'amulet',
+    name: 'Amulet Sprytnego Wytrzymywania Kwasu na Farcie',
+    type: 'Amulet',
+    rarity: 'Potężne',
+    source: 'ekwipunek/przedmioty_magiczne/potężne/amulet.md',
+  },
+] as const;
+
+describe('przedmioty_magiczne.json — synchronizacja 0.1.24–0.1.26', () => {
+  it('dodaje osiem przedmiotów z commitów 6646c90..d8a3524', () => {
+    for (const item of syncedMagicItems) {
+      expect(magicItem(item.id)).toMatchObject({ ...item, status: 'detailed' });
+    }
+  });
+
+  it('odwzorowuje charakterystyczne pola nowych przedmiotów', () => {
+    const timeThread = magicItem('nić_czasu');
+    expect(timeThread.barrier).toBe(39);
+    expect(timeThread.modifiers).toHaveLength(5);
+    expect(timeThread.description).toContain('Ostatnim żywiołem do opanowania jest sam Czas.');
+
+    const paleKing = magicItem('korona_bladego_króla_za_zasłoną_nocy');
+    expect(paleKing.modifiers).toHaveLength(8);
+    expect(paleKing.corrupted).toHaveLength(2);
+    expect(paleKing.description).toContain('Bezświatły świat');
+    expect(paleKing.description).toContain('rozkwitajace');
+
+    const bronzeWinner = magicItem('korona_zwycięzcy_brązowej_brody');
+    expect(bronzeWinner.modifiers).toHaveLength(8);
+    expect(bronzeWinner.corrupted).toHaveLength(1);
+    expect(bronzeWinner.description).toContain('Nieskończona rzeka ciał');
+
+    const simulacrum = magicItem('plazmoidyczne_symulakrum');
+    expect(simulacrum.modifiers).toEqual(['Kopiuje drugi wyekwipowany pierścień']);
+    expect(simulacrum.description).toBe('Potęga to kwestia perspektywy');
+
+    const wagonWheel = magicItem('koło_wozu_skrzydlatej_fortecy');
+    expect(wagonWheel.armor).toBe(3);
+    expect(wagonWheel.modifiers).toHaveLength(9);
+    expect(wagonWheel.corrupted).toHaveLength(2);
+    expect(wagonWheel.description).toContain('Leć na zachodnim wietrze');
+    expect(wagonWheel.corrupted?.join(' ')).toContain('przeciniwka');
+
+    const destruction = magicItem(
+      'przebudzenie_destrukcji_z_rozkazu_lotu_pochodu_duchów',
+    );
+    expect(destruction.modifiers).toHaveLength(10);
+    expect(destruction.description).toContain('Potęga burzy');
+    expect(destruction.description).toContain('Przeklęci maszerują wiecznie');
+
+    const heart = magicItem('serce_zniszczenia');
+    expect(heart.modifiers).toHaveLength(4);
+    expect(heart.corrupted).toHaveLength(2);
+    expect(heart.description).toContain('niezlicoznych');
+
+    const amulet = magicItem('amulet');
+    expect(amulet.effects).toEqual([
+      'Odporność na żrące',
+      'Spryt +1',
+      'Wytrzymałość +1',
+    ]);
+    expect(amulet.corrupted).toHaveLength(2);
+    expect(amulet.modifiers).toBeUndefined();
+    expect('description' in amulet).toBe(false);
+  });
+
+  it('aktualizuje Zadumę po hotfixach źródła', () => {
+    const zaduma = magicItem('zaduma_świtu_otulającego_lodowy_grobowiec');
+
+    expect(zaduma.requirements).toBeUndefined();
+    expect(zaduma.description).toContain('Ani nocny blask');
+    expect(zaduma.description).toContain('Pytonż IV z Altdris');
+    expect(zaduma.description).not.toContain('Enfolding Dawn');
+    expect(zaduma.description).not.toContain('Icetomb');
+    expect(zaduma.description).not.toContain('Cirel of Caer Tarth');
+    expect(zaduma.modifiers).toHaveLength(10);
+    expect(zaduma.corrupted).toHaveLength(6);
+  });
+
+  it('rejestruje nowe przedmioty w indeksie wyszukiwania', () => {
+    for (const item of syncedMagicItems) {
+      expect(indexEntry(item.id)).toEqual({
+        id: item.id,
+        type: 'magicItem',
+        name: item.name,
+        source: item.source,
+        status: 'detailed',
+      });
+    }
+  });
+
+  it('odnotowuje literówki i odmianę rzadkości nowych źródeł w Niespójnościach', () => {
+    const checks = [
+      ['serce_zniszczenia_typo_niezlicoznych', 'typo', 'niezlicoznych'],
+      ['koło_wozu_typo_przeciniwka', 'typo', 'przeciniwka'],
+      ['korona_bladego_typo_rozkwitajace', 'typo', 'rozkwitajace'],
+      ['rzadkosc_arcymistrzowska_odmiana', 'other', 'Arcymistrzowski'],
+    ] as const;
+
+    for (const [id, kind, evidence] of checks) {
+      const entry = inconsistencies.find((item) => item.id === id);
+      if (!entry) throw new Error(`Brak wpisu Niespójności "${id}"`);
+
+      expect(entry.kind).toBe(kind);
+      expect(entry.evidence).toContain(evidence);
+      expect(entry.revision).toBe(SYNC_REVISION);
+      expect(entry.status).toBe('detailed');
+      expect(
+        index.some(
+          (item) => item.type === 'inconsistency' && item.id === id && item.source === entry.source,
+        ),
+      ).toBe(true);
     }
   });
 });

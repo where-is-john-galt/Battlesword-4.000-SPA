@@ -1143,7 +1143,6 @@
     "rarity": "Mityczne",
     "armor": 7,
     "barrier": 12,
-    "requirements": "Siła 10, Inteligencja 6",
     "newAbility": {
       "name": "Rytuał odnowy",
       "activationTime": "Akcja",
@@ -1179,6 +1178,162 @@
       "HP odzyskane z flaszek życia nie może być nałożone na cokolwiek innego niż użytkownik",
       "Obniża HP odzyskiwane z flaszek życia o połowę"
     ],
-    "description": "Ani nocny blask, ani szczerzone kły nie zdołały powstrzymać wschodu słońca.\n\nGdy Pelor zamknie swe płonące oko na końcu czasów, świat pochłonie lód.\n\n\"Nie rozpaczaj! Oddaj się lasom! Stań się pustym, a Bogini cię znajdzie. Z jej korzeni... nadejdzie odnowa.\"\n- Pytonż IV z Altdris\n\nEnfolding Dawn\nThe gleam of the night and the howling teeth alike could not abate the rising of the sun.\n\nIcetomb\nWhen Solaris closes his burning eye\nAt the end of time,\nthe world will perish in ice.\n\nReverie\n\"Do not despair! Give yourself to the woods!\nBecome empty, and the Goddess will find you.\nFrom within her roots... you shall be restored.\"\n- Cirel of Caer Tarth"
+    "description": "Ani nocny blask, ani szczerzone kły nie zdołały powstrzymać wschodu słońca.\n\nGdy Pelor zamknie swe płonące oko na końcu czasów, świat pochłonie lód.\n\n\"Nie rozpaczaj! Oddaj się lasom! Stań się pustym, a Bogini cię znajdzie. Z jej korzeni... nadejdzie odnowa.\" \n- Pytonż IV z Altdris"
+  },
+  {
+    "id": "nić_czasu",
+    "name": "Nić Czasu",
+    "source": "ekwipunek/przedmioty_magiczne/boskie/nić_czasu.md",
+    "status": "detailed",
+    "type": "Pancerz",
+    "rarity": "Boskie",
+    "barrier": 39,
+    "modifiers": [
+      "Max Bariera x2",
+      "Odporność na wybrane obrażenia (deklaracja przy pierwszym założeniu)",
+      "Małe leczenie (25%+1d4) na koniec tury właściciela",
+      "Każdy utracone HP i Bariera zostaje odzyskane jako Energia",
+      "Dodatkowa akcja"
+    ],
+    "description": "Ostatnim żywiołem do opanowania jest sam Czas."
+  },
+  {
+    "id": "korona_bladego_króla_za_zasłoną_nocy",
+    "name": "Korona Bladego Króla Za Zasłoną Nocy",
+    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/korona_bladego_króla_za_zasłoną_nocy.md",
+    "status": "detailed",
+    "type": "Hełm",
+    "rarity": "Arcymistrzowskie",
+    "modifiers": [
+      "Energia +1",
+      "Medycyna +2",
+      "Max HP +3",
+      "Utrudnienie w testach Szczęścia na koniec sesji",
+      "Każde otrzymane trafienie zadaje 200% otrzymanych obrażeń atakującemu w formie obrażeń fizycznych",
+      "Max HP +50%",
+      "Spostrzegawczość +2",
+      "Otwieranie zamków +2"
+    ],
+    "corrupted": [
+      "Właściciel traci wszystkie odporności na obrażenia",
+      "Koszt Wydłużenia zasięgu umiejętności jest zwiększony o 1"
+    ],
+    "description": "Bezświatły świat, ciche rządy, para niewidzących oczu, żerują na twym bólu.\n\nZiarno wielkości zasadzane jest w ciemności, podlewane cierpieniem, doglądane przez desperację i rozkwitajace stalowymi kwiatami zwycięstwa."
+  },
+  {
+    "id": "korona_zwycięzcy_brązowej_brody",
+    "name": "Korona Zwycięzcy Brązowej Brody",
+    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/korona_zwycięzcy_brązowej_brody.md",
+    "status": "detailed",
+    "type": "Hełm",
+    "rarity": "Arcymistrzowskie",
+    "modifiers": [
+      "Utrudnienie w rzutach na Szczęście na koniec sesji",
+      "+1 HP za każdego pokonanego przeciwnika",
+      "+1 Energii za każdego pokonanego przeciwnika",
+      "Jedno wzmocnienie akcji jest zawsze darmowe",
+      "Ułatwienie we wszystkich testach Poczytalności",
+      "Zastraszanie +2",
+      "Max HP +5",
+      "Redukuje ilość otrzymywanych poziomów Podpalenia, Zamrożenia i Porażenia o połowę"
+    ],
+    "corrupted": [
+      "Zmniejsza prędkość o 1 sektor"
+    ],
+    "description": "Nieskończona rzeka ciał leży na dnie ambicji.\n\nCiężka jest głowa."
+  },
+  {
+    "id": "plazmoidyczne_symulakrum",
+    "name": "Plazmoidyczne Symulakrum",
+    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/plazmoidyczne_symulakrum.md",
+    "status": "detailed",
+    "type": "Pierścień",
+    "rarity": "Arcymistrzowskie",
+    "modifiers": [
+      "Kopiuje drugi wyekwipowany pierścień"
+    ],
+    "description": "Potęga to kwestia perspektywy"
+  },
+  {
+    "id": "koło_wozu_skrzydlatej_fortecy",
+    "name": "Koło Wozu Skrzydlatej Fortecy",
+    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/koło_wozu_skrzydlatej_fortecy.md",
+    "status": "detailed",
+    "type": "Tarcza",
+    "rarity": "Arcymistrzowskie",
+    "armor": 3,
+    "modifiers": [
+      "Max HP +3",
+      "Bazowa Energia +1",
+      "Targowanie +2",
+      "Żeglarstwo +2",
+      "Zwiększa maksymalne użycie flaszek Energii o 1",
+      "Odporność na Śmierć +1",
+      "Otwieranie zamków +2",
+      "Odporność na obrażenia fizyczne",
+      "Udany test defensywny pozwala na przemieszczenie o 1 sektor"
+    ],
+    "corrupted": [
+      "Każde pokonanie przeciwnika zabiera 1 HP",
+      "Każde pokonanie przeciniwka zabiera 1 Energii"
+    ],
+    "description": "Niekończąca się rzeź wojny bezlitośnie ściera ciało i umysł.\n\nLeć na zachodnim wietrze, wzbij się w powietrze."
+  },
+  {
+    "id": "przebudzenie_destrukcji_z_rozkazu_lotu_pochodu_duchów",
+    "name": "Przebudzenie Destrukcji z Rozkazu Lotu Pochodu Duchów",
+    "source": "ekwipunek/przedmioty_magiczne/mityczny/przebudzenie_destrukcji_z_rozkazu_lotu_pochodu_duchów.md",
+    "status": "detailed",
+    "type": "Buty",
+    "rarity": "Mityczne",
+    "modifiers": [
+      "Podwajają ruch",
+      "Pancerz +3",
+      "Bariera +15",
+      "Podwaja zadawane obrażenia od elektryczności",
+      "Każda akcja ruchu pozwala naelektryzować jeden z sektorów leżących na trasie przemieszczenia",
+      "Unik +1",
+      "Udany test Uniku pozwala na wykonanie akcji ruchu w ramach reakcji",
+      "Każdy udany test defensywny zapewnia 5 Bariery",
+      "Zapewnia stałą lewitację",
+      "Bazowa Energia +1"
+    ],
+    "description": "Potęga burzy obleczona w formę,\nUciekaj przed kroczącym sztormem.\n\nSzybuj. Bądź szybki. Nie dozwól nikomu na wtargięcie tu, z góry jak z i dołu, lub twój cel będzie zaprzepaszczony.\n\nPrzeklęci maszerują wiecznie,\nPrzez ich beznadzieję, ostatni wysiłek."
+  },
+  {
+    "id": "serce_zniszczenia",
+    "name": "Serce Zniszczenia",
+    "source": "ekwipunek/przedmioty_magiczne/potężne/serce_zniszczenia.md",
+    "status": "detailed",
+    "type": "Amulet",
+    "rarity": "Potężne",
+    "modifiers": [
+      "Siła +1",
+      "Otwieranie zamków +2",
+      "Odporność na obrażenia ogniste",
+      "Podwaja ilość odzyskiwanych HP"
+    ],
+    "corrupted": [
+      "Max HP zmniejszone o 25%",
+      "25% odzyskiwanego HP jest konwertowane na Energię"
+    ],
+    "description": "Wykute z krwi niezlicoznych wojen,\njego pragnienie dopiero się zaczęło."
+  },
+  {
+    "id": "amulet",
+    "name": "Amulet Sprytnego Wytrzymywania Kwasu na Farcie",
+    "source": "ekwipunek/przedmioty_magiczne/potężne/amulet.md",
+    "status": "detailed",
+    "type": "Amulet",
+    "rarity": "Potężne",
+    "effects": [
+      "Odporność na żrące",
+      "Spryt +1",
+      "Wytrzymałość +1"
+    ],
+    "corrupted": [
+      "Reakcja: Zmiana wyniku na kości k20 na 21-(oryginalny rzut) (użycia: tyle ile Mądrości na sesję)",
+      "Każde użycie spaczonego modyfikatora powoduje utratę 1 Pancerza"
+    ]
   }
 ]

@@ -9158,5 +9158,75 @@
     ],
     "status": "detailed",
     "revision": "0f3239726b687f085593266a088c843f63d032ce"
+  },
+  {
+    "id": "serce_zniszczenia_typo_niezlicoznych",
+    "name": "Serce Zniszczenia: literówka 'niezlicoznych'",
+    "source": "ekwipunek/przedmioty_magiczne/potężne/serce_zniszczenia.md",
+    "kind": "typo",
+    "details": "W opisie użyto zapisu „niezlicoznych” zamiast „niezliczonych”.",
+    "evidence": "* Wykute z krwi niezlicoznych wojen,",
+    "relatedSources": [
+      "ekwipunek/przedmioty_magiczne/potężne/serce_zniszczenia.md"
+    ],
+    "relatedEntryIds": [
+      "serce_zniszczenia"
+    ],
+    "status": "detailed",
+    "revision": "d8a352450e093cdb4d1bb032f5b3b8d70db9ac9d"
+  },
+  {
+    "id": "koło_wozu_typo_przeciniwka",
+    "name": "Koło Wozu: literówka 'przeciniwka'",
+    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/koło_wozu_skrzydlatej_fortecy.md",
+    "kind": "typo",
+    "details": "W opisie spaczenia użyto zapisu „przeciniwka” zamiast „przeciwnika”.",
+    "evidence": "* Każde pokonanie przeciniwka zabiera 1 Energii",
+    "relatedSources": [
+      "ekwipunek/przedmioty_magiczne/arcymistrzowskie/koło_wozu_skrzydlatej_fortecy.md"
+    ],
+    "relatedEntryIds": [
+      "koło_wozu_skrzydlatej_fortecy"
+    ],
+    "status": "detailed",
+    "revision": "d8a352450e093cdb4d1bb032f5b3b8d70db9ac9d"
+  },
+  {
+    "id": "korona_bladego_typo_rozkwitajace",
+    "name": "Korona Bladego Króla: literówka 'rozkwitajace'",
+    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/korona_bladego_króla_za_zasłoną_nocy.md",
+    "kind": "typo",
+    "details": "W opisie użyto zapisu „rozkwitajace” zamiast „rozkwitające”.",
+    "evidence": "rozkwitajace stalowymi kwiatami zwycięstwa",
+    "relatedSources": [
+      "ekwipunek/przedmioty_magiczne/arcymistrzowskie/korona_bladego_króla_za_zasłoną_nocy.md"
+    ],
+    "relatedEntryIds": [
+      "korona_bladego_króla_za_zasłoną_nocy"
+    ],
+    "status": "detailed",
+    "revision": "d8a352450e093cdb4d1bb032f5b3b8d70db9ac9d"
+  },
+  {
+    "id": "rzadkosc_arcymistrzowska_odmiana",
+    "name": "Rzadkość arcymistrzowska: odmiana w nagłówkach",
+    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/korona_bladego_króla_za_zasłoną_nocy.md",
+    "kind": "other",
+    "details": "W nagłówkach nowych przedmiotów rzadkość zapisano jako „Arcymistrzowski” lub „Arcymistrzowska”, podczas gdy foldery i aplikacja używają formy „Arcymistrzowskie”.",
+    "evidence": "* Rzadkość - Arcymistrzowski",
+    "relatedSources": [
+      "ekwipunek/przedmioty_magiczne/arcymistrzowskie/korona_bladego_króla_za_zasłoną_nocy.md",
+      "ekwipunek/przedmioty_magiczne/arcymistrzowskie/korona_zwycięzcy_brązowej_brody.md",
+      "ekwipunek/przedmioty_magiczne/arcymistrzowskie/plazmoidyczne_symulakrum.md",
+      "ekwipunek/przedmioty_magiczne/arcymistrzowskie/koło_wozu_skrzydlatej_fortecy.md"
+    ],
+    "relatedEntryIds": [
+      "korona_bladego_króla_za_zasłoną_nocy",
+      "korona_zwycięzcy_brązowej_brody",
+      "plazmoidyczne_symulakrum",
+      "koło_wozu_skrzydlatej_fortecy"
+    ],
+    "status": "detailed",
+    "revision": "d8a352450e093cdb4d1bb032f5b3b8d70db9ac9d"
   }
 ]
