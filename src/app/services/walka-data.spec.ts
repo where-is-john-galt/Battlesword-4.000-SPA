@@ -146,3 +146,19 @@ describe('walka.json — tereny z walka/typy_terenów.md', () => {
     expect(combat('halucynogenny').definition).toContain('połowę obrażeń');
   });
 });
+
+
+describe('walka.json — morale i akcje', () => {
+  it('zawiera modyfikatory pościgu', () => {
+    const morale = combat('zlamane_morale').definition;
+    expect(morale).toContain('Każdy sektor różnicy');
+    expect(morale).toContain('-3');
+  });
+
+  it('opisuje efekty akcji', () => {
+    expect(combat('akcje_glowne').definition).toContain(
+      'zadaje obrażenia równe obrażeniom dzierżonej broni',
+    );
+    expect(combat('reakcje').definition).toContain('Przyjęcie ciosu');
+  });
+});

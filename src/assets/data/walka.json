@@ -400,14 +400,14 @@
   {
     "id": "akcje_glowne",
     "name": "Akcje główne",
-    "definition": "Atak, Ruch, Analiza, Ukrywanie, Postawa obronna, Stworzenie otwarcia, Użycie przedmiotu, Zdolność specjalna, Szukanie, Dowodzenie.",
+    "definition": "Atak - zadaje obrażenia równe obrażeniom dzierżonej broni\nRuch - przemieszczenie się o 30 stóp lub 1 sektor\nAnaliza - test Spostrzegawczości; sukces - zadanie jednego pytania odnośnie obecnej sytuacji na polu bitwy, na które MG musi szczerze odpowiedzieć\nUkrywanie - jeśli postać nie jest związana walką w zwarciu, test Ukrywania; sukces - Ukryty\nPostawa obronna - zapewnia ułatwienie w rzutach obronnych\nStworzenie otwarcia - zapewnia ułatwienie w następnym teście ataku przeciwko wybranemu celowi, niezależnie kto ów atak wykona\nUżycie przedmiotu - wykorzystanie jednego z przedmiotów znajdujących się na polu bitwy lub w zasobniku podręcznym\nZdolność specjalna - wykorzystanie jednej ze zdolności klasowej lub zapewnianej przez przedmiot magiczny\nSzukanie - test Spostrzegawczości; sukces - spostrzeżenie ukrytej postaci\nDowodzenie - test Dowodzenia; więcej w rodziale Walka: Miniony",
     "source": "walka/akcje.md",
     "status": "detailed"
   },
   {
     "id": "reakcje",
     "name": "Reakcje",
-    "definition": "Wsparcie, Reakcja specjalna, Przekazanie przedmiotu, Przyjęcie ciosu.",
+    "definition": "Wsparcie - Bohater musi uzasadnić jak zamierza wesprzeć sojusznika w wykonywanej przez niego akcji. Jeśli MG uzna wsparcie za zasadne, sojusznik zyskuje ułatwienie w wykonywanej przez siebie akcji. MG może równiez uzależnić udzielenie wsparia od wykonania jakiegoś testu.\nReakcja specjalna - wykorzystanie jednej ze zdolności klasowej lub zapewnianej przez przedmiot magiczny\nPrzekazanie przedmiotu - rzucenie przedmiotu do sojusznika znajdującego się w bezpośrednim sąsiedztwie (10 stóp lub ten sam sektor)\nPrzyjęcie ciosu - jeśli sojusznik będący celem ataku i znajdujący się w tym samym sektorze wykona rzut defensywny i poniesie w nim porażkę, należy wykonać ten sam test defensywny. Sukces oznacza otrzymanie obrażeń wynikających z ataku zamiast sojusznika.",
     "source": "walka/akcje.md",
     "status": "detailed"
   },
@@ -449,7 +449,7 @@
   {
     "id": "zlamane_morale",
     "name": "Złamane morale",
-    "definition": "Gdy morale zostaje złamane, przeciwnicy w sektorach z Bohaterem poddają się, a pozostali uciekają. Pościg rozstrzygany testem poruszania się z modyfikatorami zależnymi od odległości, terenu i tieru przeciwnika.",
+    "definition": "W momencie, w którym morale zostaje złamane, wszyscy przeciwnicy znajdujący się w tych samych sektorach co przynajmniej jeden Bohater Gracza, automatycznie poddają się.\nPozostali przeciwnicy rzucają się do ucieczki. Jeśli Bohaterowie chcą ich dogonić i złapać, muszą wykonać test związany z poruszaniem się, zależny od terenu (Atletyka, Wspinaczka, Prowadzenie, Pływanie, itp.) obarczony modyfikatorem zależnym od odległością i prędkością ścigających się:\nKażdy sektor różnicy pomiędzy uciekającym a ścigającym Bohaterem (-1)\nPrzeciwnik dysponuje ułatwieniem w poruszaniu się po danym terenie - latający, pływający, wspinający, itp. (-2)\nBohater dysponuje ułatwieniem w poruszaniu się po danym terenie (+2)\nPrzeciwnik jest elitą (-1)\nPrzeciwnik jest mistrzem (-2)\nPrzeciwnik jest bossem (-3)\nKażdy dodatkowy sukces w tym teście pozwala na złapanie dodatkowego przeciwnika.",
     "source": "walka/morale.md",
     "status": "detailed"
   },
