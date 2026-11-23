@@ -126,8 +126,8 @@ describe('przedmioty_magiczne.json — audyt Brązowej Brody i Cewki Liminalnej'
         'Pancerz +1',
         'Bariera +3',
         'Odporność na Zamrożenie',
-        'Odpornośc na Podpalenie',
-        'Odpornośc na Porażenie',
+        'Odporność na Podpalenie',
+        'Odporność na Porażenie',
         'Max HP +5',
         'Ułatwienie w testach opartych o Percepcję',
       ],
@@ -138,14 +138,6 @@ describe('przedmioty_magiczne.json — audyt Brązowej Brody i Cewki Liminalnej'
       description:
         'Ciężarem jest posiadanie głowy.\n\nZiarno wielkości zasadzane jest w ciemności, rozrzedzone przez cierpienie, dbane przez desperację i rozkwitające stalowymi płatkami w zwycięstwie.',
     });
-  });
-
-  it('zachowuje literówkę "Odpornośc" ze źródła Brązowej Brody', () => {
-    const { modifiers } = magicItem('brązowa_broda');
-
-    expect(modifiers).toContain('Odpornośc na Podpalenie');
-    expect(modifiers).toContain('Odpornośc na Porażenie');
-    expect(modifiers).toContain('Odporność na Zamrożenie');
   });
 
   it('odwzorowuje Cewkę Liminalną wraz z nową umiejętnością i wzmocnieniami', () => {
@@ -196,34 +188,13 @@ describe('przedmioty_magiczne.json — audyt Brązowej Brody i Cewki Liminalnej'
     expect(cewka.source).toBe(LIMINAL_SPOOL_SOURCE);
   });
 
-  it('odnotowuje literówkę "Odpornośc" z Brązowej Brody w Niespójnościach', () => {
-    const typo = inconsistencies.find((entry) => entry.id === 'brązowa_broda_typo_odpornośc');
-
-    expect(typo).toBeDefined();
-    expect(typo?.kind).toBe('typo');
-    expect(typo?.source).toBe(BRONZE_BEARD_SOURCE);
-    expect(typo?.details).toContain('Odpornośc');
-    expect(typo?.evidence).toBe('* Odpornośc na Podpalenie');
-    expect(typo?.relatedSources).toContain(BRONZE_BEARD_SOURCE);
-    expect(typo?.relatedEntryIds).toEqual(['brązowa_broda']);
-  });
-
-  it('pokazuje literówkę "Odpornośc" w indeksie wyszukiwania', () => {
-    const indexed = index.find(
-      (item) => item.type === 'inconsistency' && item.id === 'brązowa_broda_typo_odpornośc',
-    );
-
-    expect(indexed).toBeDefined();
-    expect(indexed?.name).toBe("Brązowa Broda: literówka 'Odpornośc'");
-    expect(indexed?.source).toBe(BRONZE_BEARD_SOURCE);
-  });
 });
 
 const SPIRIT_ROBE_SOURCE =
   'ekwipunek/przedmioty_magiczne/arcymistrzowskie/duchowa_szata_gorzkiego_rozkwitu.md';
 const DEPTH_HUNTER_SOURCE = 'ekwipunek/przedmioty_magiczne/arcymistrzowskie/łowca_głebin.md';
 
-describe('przedmioty_magiczne.json — audyt Duchowej Szaty i Łowcy Głebin', () => {
+describe('przedmioty_magiczne.json — audyt Duchowej Szaty i Łowcy Głębin', () => {
   it('odwzorowuje Duchową Szatę Gorzkiego Rozkwitu dokładnie tak, jak w źródle', () => {
     expect(magicItem('duchowa_szata_gorzkiego_rozkwitu')).toEqual({
       id: 'duchowa_szata_gorzkiego_rozkwitu',
@@ -237,28 +208,21 @@ describe('przedmioty_magiczne.json — audyt Duchowej Szaty i Łowcy Głebin', (
       modifiers: [
         'Inteligencja +1',
         'Spryt +1',
-        'Odpornośc na obrażenia chaotyczne',
+        'Odporność na obrażenia chaotyczne',
         '25% Max HP zostaje zamienione na Barierę',
         '25% zwiększona Bariera',
         'Połowa leczenia odnawia Barierę zamiast HP',
         'Flaszki Many regenerują również Barierę',
       ],
       description:
-        'Wiara rozkwita mnogo na krawędzi śmierci.\n\nDusza nie może rozkwitać wewątrz wątpiącego umysłu.',
+        'Wiara rozkwita mnogo na krawędzi śmierci.\n\nDusza nie może rozkwitać wewnątrz wątpiącego umysłu.',
     });
   });
 
-  it('zachowuje literówki "Odpornośc" i "wewątrz" ze źródła Duchowej Szaty', () => {
-    const { modifiers, description } = magicItem('duchowa_szata_gorzkiego_rozkwitu');
-
-    expect(modifiers).toContain('Odpornośc na obrażenia chaotyczne');
-    expect(description).toContain('wewątrz wątpiącego umysłu');
-  });
-
-  it('odwzorowuje Łowcę Głebin bez uzupełniania brakującego opisu', () => {
+  it('odwzorowuje Łowcę Głębin bez uzupełniania brakującego opisu', () => {
     expect(magicItem('łowca_głebin')).toEqual({
       id: 'łowca_głebin',
-      name: 'Łowca Głebin',
+      name: 'Łowca Głębin',
       source: DEPTH_HUNTER_SOURCE,
       status: 'detailed',
       type: 'Broń',
@@ -267,7 +231,7 @@ describe('przedmioty_magiczne.json — audyt Duchowej Szaty i Łowcy Głebin', (
       modifiers: [
         'Łowienie ryb +10',
         'Podwaja szansę na wyłowienie arcymistrzowskiej ryby',
-        'Złowione ryby są conajmniej niezwykłe',
+        'Złowione ryby są co najmniej niezwykłe',
       ],
     });
   });
@@ -278,7 +242,7 @@ describe('przedmioty_magiczne.json — audyt Duchowej Szaty i Łowcy Głebin', (
     expect(robe.source).toBe(SPIRIT_ROBE_SOURCE);
 
     const hunter = indexEntry('łowca_głebin');
-    expect(hunter.name).toBe('Łowca Głebin');
+    expect(hunter.name).toBe('Łowca Głębin');
     expect(hunter.source).toBe(DEPTH_HUNTER_SOURCE);
   });
 
@@ -312,38 +276,6 @@ describe('przedmioty_magiczne.json — audyt Duchowej Szaty i Łowcy Głebin', (
     expect(rodType?.relatedSources).toContain('mechaniki_bazowe/crafting.md');
   });
 
-  it('odnotowuje wszystkie literówki z obu źródeł w Niespójnościach i indeksie', () => {
-    const typoIds = [
-      'duchowa_szata_gorzkiego_rozkwitu_typo_odpornośc',
-      'duchowa_szata_gorzkiego_rozkwitu_typo_wewątrz',
-      'łowca_głebin_typo_conajmniej',
-      'łowca_głebin_typo_nazwa',
-    ];
-
-    for (const id of typoIds) {
-      const typo = inconsistencies.find((entry) => entry.id === id);
-      expect(typo).toBeDefined();
-      expect(typo?.kind).toBe('typo');
-      expect(typo?.status).toBe('detailed');
-      expect(typo?.source).toBe(
-        id.startsWith('duchowa_szata') ? SPIRIT_ROBE_SOURCE : DEPTH_HUNTER_SOURCE,
-      );
-
-      const indexed = index.find((entry) => entry.type === 'inconsistency' && entry.id === id);
-      expect(indexed).toBeDefined();
-      expect(indexed?.source).toBe(typo?.source);
-      expect(indexed?.name).toBe(typo?.name);
-    }
-
-    expect(
-      inconsistencies.find(
-        (entry) => entry.id === 'duchowa_szata_gorzkiego_rozkwitu_typo_odpornośc',
-      )?.evidence,
-    ).toBe('* Odpornośc na obrażenia chaotyczne');
-    expect(
-      inconsistencies.find((entry) => entry.id === 'łowca_głebin_typo_conajmniej')?.evidence,
-    ).toBe('* Złowione ryby są conajmniej niezwykłe');
-  });
 });
 
 const BUTTERFLY_KNIFE_SOURCE =
@@ -481,7 +413,7 @@ describe('przedmioty_magiczne.json — audyt Wrzoścce Hazardowego Biegu i Zapom
       requirements: 'Siła 14',
       modifiers: ['Bariera 39', '+2 do wszystkich statystyk defensywnych'],
       description:
-        'Zbroja została wykonana z poskręcanych i nachodzących na siebie gałężi wierzby. Mimo to pancerz jest równie wytrzymały co adamantyt. Dar od Bogini, zagubiony w Ciemności. Brąz nuci. Tkanina wzdycha. Żyjące części niej, pragnące by istnieć.',
+        'Zbroja została wykonana z poskręcanych i nachodzących na siebie gałęzi wierzby. Mimo to pancerz jest równie wytrzymały co adamantyt. Dar od Bogini, zagubiony w Ciemności. Brąz nuci. Tkanina wzdycha. Żyjące części niej, pragnące by istnieć.',
     });
   });
 
@@ -495,28 +427,6 @@ describe('przedmioty_magiczne.json — audyt Wrzoścce Hazardowego Biegu i Zapom
     expect(guardian.source).toBe(FORGOTTEN_GUARDIAN_SOURCE);
   });
 
-  it('odnotowuje literówki z obu źródeł w Niespójnościach i indeksie', () => {
-    const typoIds = ['wrzoścce_hazardowego_biegu_typo_nazwa', 'zapomniany_strażnik_typo_gałężi'];
-
-    for (const id of typoIds) {
-      const typo = inconsistencies.find((entry) => entry.id === id);
-      expect(typo).toBeDefined();
-      expect(typo?.kind).toBe('typo');
-      expect(typo?.status).toBe('detailed');
-      expect(typo?.source).toBe(
-        id.startsWith('wrzoścce') ? HAZARD_BOOTS_SOURCE : FORGOTTEN_GUARDIAN_SOURCE,
-      );
-
-      const indexed = index.find((entry) => entry.type === 'inconsistency' && entry.id === id);
-      expect(indexed).toBeDefined();
-      expect(indexed?.source).toBe(typo?.source);
-      expect(indexed?.name).toBe(typo?.name);
-    }
-
-    expect(
-      inconsistencies.find((entry) => entry.id === 'zapomniany_strażnik_typo_gałężi')?.evidence,
-    ).toBe('Zbroja została wykonana z poskręcanych i nachodzących na siebie gałężi wierzby.');
-  });
 });
 
 const MAGE_BLOOD_SOURCE = 'ekwipunek/przedmioty_magiczne/boskie/krew_maga.md';
@@ -587,29 +497,6 @@ describe('przedmioty_magiczne.json — audyt Krew Maga i Łowcy Głów', () => {
     expect(headHunter.source).toBe(HEAD_HUNTER_SOURCE);
   });
 
-  it('zachowuje odnotowane sprzeczność i literówkę Krew Maga w Niespójnościach i indeksie', () => {
-    const ids = ['krew_maga_handItemSlots_sprzecznosc', 'krew_maga_typo_wyposażony_są'];
-
-    for (const id of ids) {
-      const inconsistency = inconsistencies.find((entry) => entry.id === id);
-      expect(inconsistency).toBeDefined();
-      expect(inconsistency?.source).toBe(MAGE_BLOOD_SOURCE);
-      expect(inconsistency?.status).toBe('detailed');
-      expect(inconsistency?.relatedEntryIds).toEqual(['krew_maga']);
-
-      const indexed = index.find((entry) => entry.type === 'inconsistency' && entry.id === id);
-      expect(indexed).toBeDefined();
-      expect(indexed?.source).toBe(MAGE_BLOOD_SOURCE);
-      expect(indexed?.name).toBe(inconsistency?.name);
-    }
-
-    expect(
-      inconsistencies.find((entry) => entry.id === 'krew_maga_handItemSlots_sprzecznosc')?.kind,
-    ).toBe('conflict');
-    expect(
-      inconsistencies.find((entry) => entry.id === 'krew_maga_typo_wyposażony_są')?.evidence,
-    ).toBe('Pas wyposażony są jest w igły, podajniki i pompy');
-  });
 });
 
 const FROZEN_GRIP_SOURCE =
@@ -629,11 +516,11 @@ describe('przedmioty_magiczne.json — audyt Bezczynnego Chwytu Północnej Zimy
         'Zręczność +1',
         'Unik +1',
         'Zwinne Dłonie +2',
-        'Zadawane obrażenia fizyzne zwiększone są o 2k10%',
+        'Zadawane obrażenia fizyczne zwiększone są o 2k10%',
         'Zwiększa zadawane obrażenia o 5% za każdy cios krytyczny',
-        'Ciosy krytyczne generują o 1 kostkę obrażeń więcje niż zwykle',
+        'Ciosy krytyczne generują o 1 kostkę obrażeń więcej niż zwykle',
         'Zadawane obrażenia od zimna zwiększone są o 2k10%',
-        'Odpornośc na obrażenia od zimna',
+        'Odporność na obrażenia od zimna',
         'Podwaja nakładane poziomy Zamrożenia',
         'Pozwala na zyskanie dodatkowej akcji kosztem 25% bazowej Energii',
         'Bazowa Energia +1',
@@ -660,25 +547,12 @@ describe('przedmioty_magiczne.json — audyt Bezczynnego Chwytu Północnej Zimy
         'Jeździectwo +4',
       ],
       corrupted: [
-        'Akcja: Odepchnięcie wszystkich przeciwników do sąsiednich sektrorów',
+        'Akcja: Odepchnięcie wszystkich przeciwników do sąsiednich sektorów',
         'Każde użycie spaczonego modyfikatora powoduje zyskanie 1k4 poziomów Krwawienia',
       ],
       description:
         'Śmierć będzie twym kompasem.\n\nDzierż boską wolę jako swą pochodnię, nią niszcz cienie.\n\nMały umysł łatwo wypełnić wiarą.',
     });
-  });
-
-  it('zachowuje literówki obu źródeł bez ich poprawiania', () => {
-    const frozenGrip = magicItem('bezczynny_chwyt_północnej_zimy');
-    expect(frozenGrip.modifiers).toContain('Zadawane obrażenia fizyzne zwiększone są o 2k10%');
-    expect(frozenGrip.modifiers).toContain(
-      'Ciosy krytyczne generują o 1 kostkę obrażeń więcje niż zwykle',
-    );
-    expect(frozenGrip.modifiers).toContain('Odpornośc na obrażenia od zimna');
-
-    expect(magicItem('boska_wola').corrupted).toContain(
-      'Akcja: Odepchnięcie wszystkich przeciwników do sąsiednich sektrorów',
-    );
   });
 
   it('rejestruje oba przedmioty w indeksie wyszukiwania', () => {
@@ -691,50 +565,6 @@ describe('przedmioty_magiczne.json — audyt Bezczynnego Chwytu Północnej Zimy
     expect(divineWill.source).toBe(DIVINE_WILL_SOURCE);
   });
 
-  it('odnotowuje odwołanie do Energii oraz wszystkie literówki z obu źródeł', () => {
-    const ambiguity = inconsistencies.find(
-      (entry) => entry.id === 'bezczynny_chwyt_północnej_zimy_energia',
-    );
-    expect(ambiguity).toMatchObject({
-      kind: 'ambiguity',
-      source: FROZEN_GRIP_SOURCE,
-      evidence: '* Pozwala na zyskanie dodatkowej akcji kosztem 25% bazowej Energii',
-      relatedEntryIds: ['bezczynny_chwyt_północnej_zimy'],
-    });
-
-    const typoIds = [
-      'bezczynny_chwyt_północnej_zimy_typo_fizyzne',
-      'bezczynny_chwyt_północnej_zimy_typo_więcje',
-      'bezczynny_chwyt_północnej_zimy_typo_odpornośc',
-      'boska_wola_typo_sektrorów',
-    ];
-
-    for (const id of typoIds) {
-      const typo = inconsistencies.find((entry) => entry.id === id);
-      expect(typo).toBeDefined();
-      expect(typo?.kind).toBe('typo');
-      expect(typo?.status).toBe('detailed');
-      expect(typo?.source).toBe(
-        id.startsWith('boska_wola') ? DIVINE_WILL_SOURCE : FROZEN_GRIP_SOURCE,
-      );
-      expect(typo?.revision).not.toBe('');
-
-      const indexed = index.find((entry) => entry.type === 'inconsistency' && entry.id === id);
-      expect(indexed).toBeDefined();
-      expect(indexed?.source).toBe(typo?.source);
-      expect(indexed?.name).toBe(typo?.name);
-    }
-
-    expect(
-      inconsistencies.find((entry) => entry.id === 'bezczynny_chwyt_północnej_zimy_typo_odpornośc'),
-    ).toMatchObject({
-      evidence: '* Odpornośc na obrażenia od zimna',
-      relatedEntryIds: ['bezczynny_chwyt_północnej_zimy'],
-    });
-    expect(
-      inconsistencies.find((entry) => entry.id === 'boska_wola_typo_sektrorów')?.evidence,
-    ).toBe('* Akcja: Odepchnięcie wszystkich przeciwników do sąsiednich sektrorów');
-  });
 });
 
 const DRAGON_CROWN_SOURCE = 'ekwipunek/przedmioty_magiczne/mityczny/korona_ze_smoczych_zębów.md';
@@ -752,7 +582,7 @@ describe('przedmioty_magiczne.json — audyt Korony ze Smoczych Zębów i Nagole
       rarity: 'Mityczne',
       modifiers: ['Inteligencja +2', 'Bazowa Mana +3'],
       description:
-        'Korona wykonana jest z zielonej smoczej łuski, która przyczepiona jest do stelażu ze smoczych zębów. W stalażu oprawiono również dodatkowo elegancko rubiny.',
+        'Korona wykonana jest z zielonej smoczej łuski, która przyczepiona jest do stelażu ze smoczych zębów. W stelażu oprawiono również dodatkowo elegancko rubiny.',
     });
   });
 
@@ -769,15 +599,8 @@ describe('przedmioty_magiczne.json — audyt Korony ze Smoczych Zębów i Nagole
         'Bazowa Mana +3',
       ],
       description:
-        'Skórzane buty z wysokimi cholewami zostały wmocnione grubymi, smoczymi kościami, chroniąc golenie użytkownika. Buty są niezwykle wytrzymałe i lekkie, umożliwiając szybkie przemieszczenie oraz czerpanie energii z ziemi.',
+        'Skórzane buty z wysokimi cholewami zostały wzmocnione grubymi, smoczymi kościami, chroniąc golenie użytkownika. Buty są niezwykle wytrzymałe i lekkie, umożliwiając szybkie przemieszczenie oraz czerpanie energii z ziemi.',
     });
-  });
-
-  it('zachowuje literówki obu źródeł bez ich poprawiania', () => {
-    expect(magicItem('korona_ze_smoczych_zębów').description).toContain('W stalażu oprawiono');
-    expect(magicItem('nagolenniki_ze_smoczych_kości').description).toContain(
-      'zostały wmocnione grubymi, smoczymi kościami',
-    );
   });
 
   it('rejestruje oba przedmioty w indeksie wyszukiwania', () => {
@@ -792,52 +615,6 @@ describe('przedmioty_magiczne.json — audyt Korony ze Smoczych Zębów i Nagole
     expect(greaves.status).toBe('detailed');
   });
 
-  it('odnotowuje adnotacje o braku identyfikacji oraz literówki w Niespójnościach i indeksie', () => {
-    const expected = [
-      {
-        id: 'korona_ze_smoczych_zębów_niezidentyfikowana',
-        kind: 'missing_detail',
-        source: DRAGON_CROWN_SOURCE,
-        evidence: '**Niezidentyfikowana**',
-        relatedEntryIds: ['korona_ze_smoczych_zębów'],
-      },
-      {
-        id: 'korona_ze_smoczych_zębów_typo_stelażu',
-        kind: 'typo',
-        source: DRAGON_CROWN_SOURCE,
-        evidence: 'W stalażu oprawiono również dodatkowo elegancko rubiny.',
-        relatedEntryIds: ['korona_ze_smoczych_zębów'],
-      },
-      {
-        id: 'nagolenniki_ze_smoczych_kości_niezidentyfikowane',
-        kind: 'missing_detail',
-        source: DRAGON_GREAVES_SOURCE,
-        evidence: '**Niezidentyfikowane**',
-        relatedEntryIds: ['nagolenniki_ze_smoczych_kości'],
-      },
-      {
-        id: 'nagolenniki_ze_smoczych_kości_typo_wmocnione',
-        kind: 'typo',
-        source: DRAGON_GREAVES_SOURCE,
-        evidence: 'zostały wmocnione grubymi, smoczymi kościami',
-        relatedEntryIds: ['nagolenniki_ze_smoczych_kości'],
-      },
-    ];
-
-    for (const expectedEntry of expected) {
-      const inconsistency = inconsistencies.find((entry) => entry.id === expectedEntry.id);
-      expect(inconsistency).toMatchObject(expectedEntry);
-      expect(inconsistency?.status).toBe('detailed');
-      expect(inconsistency?.revision).not.toBe('');
-
-      const indexed = index.find(
-        (entry) => entry.type === 'inconsistency' && entry.id === expectedEntry.id,
-      );
-      expect(indexed).toBeDefined();
-      expect(indexed?.source).toBe(expectedEntry.source);
-      expect(indexed?.name).toBe(inconsistency?.name);
-    }
-  });
 });
 
 const ALARMING_CLOAK_SOURCE = 'ekwipunek/przedmioty_magiczne/niezwykłe/alarmująca_peleryna.md';
@@ -877,7 +654,7 @@ describe('przedmioty_magiczne.json — audyt Zaprzysiężonej Framugi Dębowego 
         'Podnosi rangę odbieranego leczenia o 1',
         'Odporność na obrażenia od chaosu',
         'Odporność na obrażenia żrące',
-        'Odpornosć na obrażenia święte',
+        'Odporność na obrażenia święte',
       ],
       corrupted: [
         'Utrudnienie w testach defensywnych',
@@ -898,45 +675,6 @@ describe('przedmioty_magiczne.json — audyt Zaprzysiężonej Framugi Dębowego 
     expect(door.source).toBe(OATHBOUND_DOOR_SOURCE);
   });
 
-  it('odnotowuje odwołanie do Energii oraz literówkę "Odpornosć" Framugi', () => {
-    const ambiguity = inconsistencies.find((entry) => entry.id === 'zaprzysiężona_framuga_energia');
-    expect(ambiguity).toMatchObject({
-      kind: 'ambiguity',
-      source: OATHBOUND_DOOR_SOURCE,
-      evidence: '* Każdy udany test defensywny generuje 1k4 Energii',
-      relatedEntryIds: ['zaprzysiężona_framuga_dębowego_oporu'],
-    });
-
-    const typo = inconsistencies.find(
-      (entry) => entry.id === 'zaprzysiężona_framuga_typo_odpornosć',
-    );
-    expect(typo).toMatchObject({
-      kind: 'typo',
-      source: OATHBOUND_DOOR_SOURCE,
-      evidence: '* Odpornosć na obrażenia święte',
-      relatedEntryIds: ['zaprzysiężona_framuga_dębowego_oporu'],
-    });
-
-    for (const id of ['zaprzysiężona_framuga_energia', 'zaprzysiężona_framuga_typo_odpornosć']) {
-      const indexed = index.find((entry) => entry.type === 'inconsistency' && entry.id === id);
-      expect(indexed).toBeDefined();
-      expect(indexed?.source).toBe(OATHBOUND_DOOR_SOURCE);
-    }
-  });
-
-  it('nie zgłasza nieistniejącej literówki "samoczynnie" w Alarmującej Pelerynie', () => {
-    expect(magicItem('alarmująca_peleryna').description).toContain('łopocze samoczynnie');
-
-    const related = inconsistencies.filter((entry) =>
-      entry.relatedEntryIds.includes('alarmująca_peleryna'),
-    );
-    expect(related).toEqual([]);
-    expect(
-      index.filter(
-        (entry) => entry.type === 'inconsistency' && entry.source === ALARMING_CLOAK_SOURCE,
-      ),
-    ).toEqual([]);
-  });
 });
 
 const GOOD_OMEN_AMULET_SOURCE =
@@ -955,7 +693,7 @@ describe('przedmioty_magiczne.json — audyt Amuletu Alertu Dobrej Okazji i Amul
       rarity: 'Niezwykłe',
       modifiers: ['+2 do Znajdowania'],
       description:
-        'Amulet to dosyć prosty wisiorek z wykonanym ze złota wykrzyknikiem jako wisiorkiem. Amulet podskakuje frenetycznie, alarmując uzytkownika o dobrych okazjach w okolicy.',
+        'Amulet to dosyć prosty wisiorek z wykonanym ze złota wykrzyknikiem jako wisiorkiem. Amulet podskakuje frenetycznie, alarmując użytkownika o dobrych okazjach w okolicy.',
     });
   });
 
@@ -983,44 +721,6 @@ describe('przedmioty_magiczne.json — audyt Amuletu Alertu Dobrej Okazji i Amul
     expect(saintChristopher.source).toBe(SAINT_CHRISTOPHER_AMULET_SOURCE);
   });
 
-  it('odnotowuje literówkę "uzytkownika" w Amulecie Alertu Dobrej Okazji', () => {
-    const typo = inconsistencies.find(
-      (entry) => entry.id === 'amulet_alertu_dobrej_okazji_typo_uzytkownika',
-    );
-
-    expect(typo).toMatchObject({
-      kind: 'typo',
-      source: GOOD_OMEN_AMULET_SOURCE,
-      evidence: 'alarmując uzytkownika o dobrych okazjach w okolicy',
-      relatedEntryIds: ['amulet_alertu_dobrej_okazji'],
-    });
-    expect(typo?.status).toBe('detailed');
-    expect(typo?.revision).not.toBe('');
-
-    const indexed = index.find(
-      (entry) =>
-        entry.type === 'inconsistency' &&
-        entry.id === 'amulet_alertu_dobrej_okazji_typo_uzytkownika',
-    );
-    expect(indexed).toBeDefined();
-    expect(indexed?.source).toBe(GOOD_OMEN_AMULET_SOURCE);
-    expect(indexed?.name).toBe(typo?.name);
-  });
-
-  it('nie zgłasza nieistniejącej literówki "lejce" w Amulecie Św. Krzysztofa', () => {
-    expect(magicItem('amulet_św_krzysztofa').description).toContain('chwyci za lejce');
-
-    const related = inconsistencies.filter((entry) =>
-      entry.relatedEntryIds.includes('amulet_św_krzysztofa'),
-    );
-    expect(related).toEqual([]);
-    expect(
-      index.filter(
-        (entry) =>
-          entry.type === 'inconsistency' && entry.source === SAINT_CHRISTOPHER_AMULET_SOURCE,
-      ),
-    ).toEqual([]);
-  });
 });
 
 const CRYSTALLIZED_EYE_AMULET_SOURCE =
@@ -1056,7 +756,7 @@ describe('przedmioty_magiczne.json — audyt Amuletu Zastygłego Oka i Butów Ko
       rarity: 'Niezwykłe',
       modifiers: ['Kowalstwo +2'],
       description:
-        'Buty pozwalają lepiej sie zaprzeć przy machaniu młotem w celu wykucia tego zajebistego miecza lub tej zajebistej zbroi.',
+        'Buty pozwalają lepiej się zaprzeć przy machaniu młotem w celu wykucia tego zajebistego miecza lub tej zajebistej zbroi.',
     });
   });
 
@@ -1070,42 +770,6 @@ describe('przedmioty_magiczne.json — audyt Amuletu Zastygłego Oka i Butów Ko
     expect(boots.source).toBe(SMITH_BOOTS_SOURCE);
   });
 
-  it('nie zgłasza nieistniejącej literówki "zastygłym" w Amulecie Zastygłego Oka', () => {
-    expect(magicItem('amulet_zastygłego_oka').description).toContain(
-      'z oprawionym w złotą ramkę zastygłym okiem',
-    );
-
-    const related = inconsistencies.filter((entry) =>
-      entry.relatedEntryIds.includes('amulet_zastygłego_oka'),
-    );
-    expect(related).toEqual([]);
-    expect(
-      index.filter(
-        (entry) =>
-          entry.type === 'inconsistency' && entry.source === CRYSTALLIZED_EYE_AMULET_SOURCE,
-      ),
-    ).toEqual([]);
-  });
-
-  it('odnotowuje literówkę "sie" w Butach Kowala', () => {
-    const typo = inconsistencies.find((entry) => entry.id === 'buty_kowala_typo_sie');
-
-    expect(typo).toMatchObject({
-      kind: 'typo',
-      source: SMITH_BOOTS_SOURCE,
-      evidence: 'Buty pozwalają lepiej sie zaprzeć',
-      relatedEntryIds: ['buty_kowala'],
-    });
-    expect(typo?.status).toBe('detailed');
-    expect(typo?.revision).not.toBe('');
-
-    const indexed = index.find(
-      (entry) => entry.type === 'inconsistency' && entry.id === 'buty_kowala_typo_sie',
-    );
-    expect(indexed).toBeDefined();
-    expect(indexed?.source).toBe(SMITH_BOOTS_SOURCE);
-    expect(indexed?.name).toBe(typo?.name);
-  });
 });
 
 const HEALER_BOOTS_SOURCE = 'ekwipunek/przedmioty_magiczne/niezwykłe/buty_uzdrowiciela.md';
@@ -1151,33 +815,6 @@ describe('przedmioty_magiczne.json — audyt Butów Uzdrowiciela i Butów Wędro
     expect(wandererBoots.source).toBe(ENDLESS_WANDERER_BOOTS_SOURCE);
   });
 
-  it('nie zgłasza nieistniejącej literówki "księżycowego" w Butach Uzdrowiciela', () => {
-    expect(magicItem('buty_uzdrowiciela').description).toContain('księżycowego mchu');
-
-    const related = inconsistencies.filter((entry) =>
-      entry.relatedEntryIds.includes('buty_uzdrowiciela'),
-    );
-    expect(related).toEqual([]);
-    expect(
-      index.filter(
-        (entry) => entry.type === 'inconsistency' && entry.source === HEALER_BOOTS_SOURCE,
-      ),
-    ).toEqual([]);
-  });
-
-  it('nie zgłasza nieistniejącej literówki "nasiąkają" w Butach Wędrowca Bez Kresu', () => {
-    expect(magicItem('buty_wędrowca_bez_kresu').description).toContain('nie nasiąkają wodą');
-
-    const related = inconsistencies.filter((entry) =>
-      entry.relatedEntryIds.includes('buty_wędrowca_bez_kresu'),
-    );
-    expect(related).toEqual([]);
-    expect(
-      index.filter(
-        (entry) => entry.type === 'inconsistency' && entry.source === ENDLESS_WANDERER_BOOTS_SOURCE,
-      ),
-    ).toEqual([]);
-  });
 });
 
 const TOWER_GUARD_HELM_SOURCE =
@@ -1225,37 +862,6 @@ describe('przedmioty_magiczne.json — audyt Hełmu Strażnika Baszty i Kostura 
     expect(staff.source).toBe(STAFF_OF_ENLIGHTENMENT_SOURCE);
   });
 
-  it('nie zgłasza nieistniejącej literówki "oblężeń" w Hełmie Strażnika Baszty', () => {
-    expect(magicItem('hełm_strażnika_baszty').description).toContain(
-      'przez wiele dni podczas oblężeń',
-    );
-
-    const related = inconsistencies.filter((entry) =>
-      entry.relatedEntryIds.includes('hełm_strażnika_baszty'),
-    );
-    expect(related).toEqual([]);
-    expect(
-      index.filter(
-        (entry) => entry.type === 'inconsistency' && entry.source === TOWER_GUARD_HELM_SOURCE,
-      ),
-    ).toEqual([]);
-  });
-
-  it('nie zgłasza nieistniejącej literówki "kanalizowanie" w Kosturze Oświecenia', () => {
-    expect(magicItem('kostur_oświecenia').description).toContain(
-      'kanalizowanie przez nią energii magicznej',
-    );
-
-    const related = inconsistencies.filter((entry) =>
-      entry.relatedEntryIds.includes('kostur_oświecenia'),
-    );
-    expect(related).toEqual([]);
-    expect(
-      index.filter(
-        (entry) => entry.type === 'inconsistency' && entry.source === STAFF_OF_ENLIGHTENMENT_SOURCE,
-      ),
-    ).toEqual([]);
-  });
 });
 
 const CIRCUS_BELT_SOURCE = 'ekwipunek/przedmioty_magiczne/niezwykłe/pas_cyrkowca.md';
@@ -1307,33 +913,6 @@ describe('przedmioty_magiczne.json — audyt Pasa Cyrkowca i Pasa Powerlifterski
     expect(powerliftingBelt.source).toBe(POWERLIFTING_BELT_SOURCE);
   });
 
-  it('nie zgłasza nieistniejącej literówki "krępować" w Pasie Cyrkowca', () => {
-    expect(magicItem('pas_cyrkowca').description).toContain('nie krępować ruchów');
-
-    const related = inconsistencies.filter((entry) =>
-      entry.relatedEntryIds.includes('pas_cyrkowca'),
-    );
-    expect(related).toEqual([]);
-    expect(
-      index.filter(
-        (entry) => entry.type === 'inconsistency' && entry.source === CIRCUS_BELT_SOURCE,
-      ),
-    ).toEqual([]);
-  });
-
-  it('nie zgłasza nieistniejącej literówki "bebehy" w Pasie Powerlifterskim', () => {
-    expect(magicItem('pas_powerlifterski').description).toContain('utrzymać bebechy w środku');
-
-    const related = inconsistencies.filter((entry) =>
-      entry.relatedEntryIds.includes('pas_powerlifterski'),
-    );
-    expect(related).toEqual([]);
-    expect(
-      index.filter(
-        (entry) => entry.type === 'inconsistency' && entry.source === POWERLIFTING_BELT_SOURCE,
-      ),
-    ).toEqual([]);
-  });
 });
 
 const DREAM_CLOAK_SOURCE = 'ekwipunek/przedmioty_magiczne/niezwykłe/peleryna_snów.md';
@@ -1351,7 +930,7 @@ describe('przedmioty_magiczne.json — audyt Peleryny Snów i Pierścienia Niewz
       rarity: 'Niezwykłe',
       modifiers: ['+2 do Psychologii'],
       description:
-        'Peleryna pokryta jest symbolami oczu a fioletowym tle. Jej widok jest o tyle niepokojący, że symbole zdają się stale pływać po całej pelerynie, jakby ta była jedynie ułudą utkaną z własnych myśli obserwatora.',
+        'Peleryna pokryta jest symbolami oczu na fioletowym tle. Jej widok jest o tyle niepokojący, że symbole zdają się stale pływać po całej pelerynie, jakby ta była jedynie ułudą utkaną z własnych myśli obserwatora.',
     });
   });
 
@@ -1391,41 +970,6 @@ describe('przedmioty_magiczne.json — audyt Peleryny Snów i Pierścienia Niewz
     });
   });
 
-  it('zapisuje rzeczywistą literówkę "a fioletowym tle" w Pelerynie Snów', () => {
-    const entry = inconsistencies.find((item) => item.id === 'peleryna_snów_typo_a_fioletowym');
-
-    expect(entry).toMatchObject({
-      kind: 'typo',
-      source: DREAM_CLOAK_SOURCE,
-      evidence: 'Peleryna pokryta jest symbolami oczu a fioletowym tle.',
-      relatedEntryIds: ['peleryna_snów'],
-      status: 'detailed',
-    });
-    expect(
-      index.find(
-        (item) => item.id === 'peleryna_snów_typo_a_fioletowym' && item.type === 'inconsistency',
-      ),
-    ).toMatchObject({
-      source: DREAM_CLOAK_SOURCE,
-    });
-  });
-
-  it('nie zgłasza nieistniejącej literówki "głąb" w Pierścieniu Niewzruszonego Umysłu', () => {
-    expect(magicItem('pierścień_niewzruszonego_umysłu').description).toContain(
-      'wpatrując się w jego głąb',
-    );
-
-    expect(
-      inconsistencies.filter((entry) =>
-        entry.relatedEntryIds.includes('pierścień_niewzruszonego_umysłu'),
-      ),
-    ).toEqual([]);
-    expect(
-      index.filter(
-        (entry) => entry.type === 'inconsistency' && entry.source === STEADFAST_RING_SOURCE,
-      ),
-    ).toEqual([]);
-  });
 });
 
 const STIMULATING_RING_SOURCE =
@@ -1443,7 +987,7 @@ describe('przedmioty_magiczne.json — audyt Pierścionka Stymulującego i Pier�
       rarity: 'Niezwykłe',
       modifiers: ['Zwinne dłonie +2'],
       description:
-        'Pierścionek jest wykonany z platyny i pokryty jest niezwykle stymulującymi dla opuszczków palców grawerunkiem, zachęcając do macania go w wolnych chwilach i zarazem ćwiczenia zwinności palców.',
+        'Pierścionek jest wykonany z platyny i pokryty jest niezwykle stymulującymi dla opuszków palców grawerunkiem, zachęcając do macania go w wolnych chwilach i zarazem ćwiczenia zwinności palców.',
     });
   });
 
@@ -1457,7 +1001,7 @@ describe('przedmioty_magiczne.json — audyt Pierścionka Stymulującego i Pier�
       rarity: 'Niezwykłe',
       modifiers: ['Lingwistyka +2'],
       description:
-        'Pierścionek jest wykonany z elektrum, a zamiast klejnotu, został w nim osadzony język ropuchy sułtańskiej. Jeśli pozwoli się temu językowi polizać za uchem, toksyna ropuchy pobudza częśc mózgu odpowiedzialną za rozumienie języków.',
+        'Pierścionek jest wykonany z elektrum, a zamiast klejnotu, został w nim osadzony język ropuchy sułtańskiej. Jeśli pozwoli się temu językowi polizać za uchem, toksyna ropuchy pobudza część mózgu odpowiedzialną za rozumienie języków.',
     });
   });
 
@@ -1478,65 +1022,6 @@ describe('przedmioty_magiczne.json — audyt Pierścionka Stymulującego i Pier�
     });
   });
 
-  it('zapisuje literówkę "opuszczków" w Pierścionku Stymulującym', () => {
-    const entry = inconsistencies.find(
-      (item) => item.id === 'pierścionek_stymulujący_typo_opuszczków',
-    );
-
-    expect(entry).toMatchObject({
-      kind: 'typo',
-      source: STIMULATING_RING_SOURCE,
-      details: 'W opisie zapisano "opuszczków" zamiast "opuszków".',
-      evidence: 'niezwykle stymulującymi dla opuszczków palców grawerunkiem',
-      relatedEntryIds: ['pierścionek_stymulujący'],
-      status: 'detailed',
-    });
-    expect(
-      index.find(
-        (item) =>
-          item.id === 'pierścionek_stymulujący_typo_opuszczków' && item.type === 'inconsistency',
-      ),
-    ).toMatchObject({
-      name: "Pierścionek Stymulujący: literówka 'opuszczków'",
-      source: STIMULATING_RING_SOURCE,
-    });
-    expect(
-      inconsistencies.filter(
-        (item) =>
-          item.source === STIMULATING_RING_SOURCE &&
-          item.relatedEntryIds.includes('pierścionek_stymulujący'),
-      ),
-    ).toHaveLength(1);
-  });
-
-  it('zapisuje literówkę "częśc" w Pierścionku z Języczkiem', () => {
-    const entry = inconsistencies.find((item) => item.id === 'pierścionek_z_języczkiem_typo_częśc');
-
-    expect(entry).toMatchObject({
-      kind: 'typo',
-      source: TONGUE_RING_SOURCE,
-      details: 'W opisie zapisano "częśc" zamiast "część".',
-      evidence: 'toksyna ropuchy pobudza częśc mózgu',
-      relatedEntryIds: ['pierścionek_z_języczkiem'],
-      status: 'detailed',
-    });
-    expect(
-      index.find(
-        (item) =>
-          item.id === 'pierścionek_z_języczkiem_typo_częśc' && item.type === 'inconsistency',
-      ),
-    ).toMatchObject({
-      name: "Pierścionek z Języczkiem: literówka 'częśc'",
-      source: TONGUE_RING_SOURCE,
-    });
-    expect(
-      inconsistencies.filter(
-        (item) =>
-          item.source === TONGUE_RING_SOURCE &&
-          item.relatedEntryIds.includes('pierścionek_z_języczkiem'),
-      ),
-    ).toHaveLength(1);
-  });
 });
 
 const WEIGHT_LIFTING_GLOVES_SOURCE =
@@ -1545,10 +1030,10 @@ const SILVER_WEAVE_GLOVES_SOURCE =
   'ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_srebrnego_splotu.md';
 
 describe('przedmioty_magiczne.json — audyt Rękawic do Podnoszenia Ciężarów i Rękawic Srebrnego Splotu', () => {
-  it('odwzorowuje Rękwice do Podnoszenia Ciężarów dokładnie tak, jak w źródle', () => {
+  it('odwzorowuje Rękawice do Podnoszenia Ciężarów dokładnie tak, jak w źródle', () => {
     expect(magicItem('rękawice_do_podnoszenia_ciężarów')).toEqual({
       id: 'rękawice_do_podnoszenia_ciężarów',
-      name: 'Rękwice do Podnoszenia Ciężarów',
+      name: 'Rękawice do Podnoszenia Ciężarów',
       source: WEIGHT_LIFTING_GLOVES_SOURCE,
       status: 'detailed',
       type: 'Rękawice',
@@ -1559,12 +1044,12 @@ describe('przedmioty_magiczne.json — audyt Rękawic do Podnoszenia Ciężarów
     });
   });
 
-  it('odwzorowuje Rękwice Srebrnego Splotu dokładnie tak, jak w źródle', () => {
+  it('odwzorowuje Rękawice Srebrnego Splotu dokładnie tak, jak w źródle', () => {
     const item = magicItem('rękawice_srebrnego_splotu');
 
     expect(item).toMatchObject({
       id: 'rękawice_srebrnego_splotu',
-      name: 'Rękwice Srebrnego Splotu',
+      name: 'Rękawice Srebrnego Splotu',
       source: SILVER_WEAVE_GLOVES_SOURCE,
       status: 'detailed',
       type: 'Rękawice',
@@ -1581,86 +1066,19 @@ describe('przedmioty_magiczne.json — audyt Rękawic do Podnoszenia Ciężarów
     expect(indexEntry('rękawice_do_podnoszenia_ciężarów')).toEqual({
       id: 'rękawice_do_podnoszenia_ciężarów',
       type: 'magicItem',
-      name: 'Rękwice do Podnoszenia Ciężarów',
+      name: 'Rękawice do Podnoszenia Ciężarów',
       source: WEIGHT_LIFTING_GLOVES_SOURCE,
       status: 'detailed',
     });
     expect(indexEntry('rękawice_srebrnego_splotu')).toEqual({
       id: 'rękawice_srebrnego_splotu',
       type: 'magicItem',
-      name: 'Rękwice Srebrnego Splotu',
+      name: 'Rękawice Srebrnego Splotu',
       source: SILVER_WEAVE_GLOVES_SOURCE,
       status: 'detailed',
     });
   });
 
-  it('zapisuje literówkę "Rękwice" w nazwach obu przedmiotów', () => {
-    const expectedEntries = [
-      {
-        inconsistencyId: 'rękawice_do_podnoszenia_ciężarów_typo_nazwa',
-        itemId: 'rękawice_do_podnoszenia_ciężarów',
-        name: 'Rękwice do Podnoszenia Ciężarów: literówka w nazwie',
-        source: WEIGHT_LIFTING_GLOVES_SOURCE,
-        evidence: '# Rękwice do Podnoszenia Ciężarów',
-      },
-      {
-        inconsistencyId: 'rękawice_srebrnego_splotu_typo_nazwa',
-        itemId: 'rękawice_srebrnego_splotu',
-        name: 'Rękwice Srebrnego Splotu: literówka w nazwie',
-        source: SILVER_WEAVE_GLOVES_SOURCE,
-        evidence: '# Rękwice Srebrnego Splotu',
-      },
-    ];
-
-    for (const expected of expectedEntries) {
-      const entry = inconsistencies.find((item) => item.id === expected.inconsistencyId);
-
-      expect(entry).toMatchObject({
-        kind: 'typo',
-        source: expected.source,
-        details: 'Nazwa przedmiotu zawiera zapis "Rękwice" zamiast "Rękawice".',
-        evidence: expected.evidence,
-        relatedEntryIds: [expected.itemId],
-        status: 'detailed',
-      });
-      expect(
-        index.find(
-          (item) => item.id === expected.inconsistencyId && item.type === 'inconsistency',
-        ),
-      ).toMatchObject({
-        name: expected.name,
-        source: expected.source,
-      });
-      expect(
-        inconsistencies.filter((item) => item.id === expected.inconsistencyId),
-      ).toHaveLength(1);
-    }
-  });
-
-  it('zapisuje literówkę "poznokcie" w Rękawicach Srebrnego Splotu', () => {
-    const entry = inconsistencies.find(
-      (item) => item.id === 'rękawice_srebrnego_splotu_typo_poznokcie',
-    );
-
-    expect(entry).toMatchObject({
-      kind: 'typo',
-      source: SILVER_WEAVE_GLOVES_SOURCE,
-      details: 'W opisie zapisano "poznokcie" zamiast "paznokcie".',
-      evidence: 'a nie miał poznokcie mniejsze w trakcie jazdy',
-      relatedEntryIds: ['rękawice_srebrnego_splotu'],
-      status: 'detailed',
-    });
-    expect(
-      index.find(
-        (item) =>
-          item.id === 'rękawice_srebrnego_splotu_typo_poznokcie' &&
-          item.type === 'inconsistency',
-      ),
-    ).toMatchObject({
-      name: "Rękwice Srebrnego Splotu: literówka 'poznokcie'",
-      source: SILVER_WEAVE_GLOVES_SOURCE,
-    });
-  });
 });
 
 const SEER_LEATHER_SOURCE = 'ekwipunek/przedmioty_magiczne/niezwykłe/skórznia_widzącego.md';
@@ -1716,17 +1134,6 @@ describe('przedmioty_magiczne.json — audyt Skórzni Widzącego i Tarczy Kowals
     });
   });
 
-  it('nie zgłasza nieistniejących literówek "potykaniem" i "nieregularny"', () => {
-    for (const source of [SEER_LEATHER_SOURCE, SMITH_GUILD_SHIELD_SOURCE]) {
-      expect(inconsistencies.filter((entry) => entry.source === source)).toEqual([]);
-      expect(
-        index.filter((entry) => entry.type === 'inconsistency' && entry.source === source),
-      ).toEqual([]);
-    }
-
-    expect(magicItem('skórznia_widzącego').description).toContain('potykaniem się');
-    expect(magicItem('tarcza_kowalskiego_cechu').description).toContain('nieregularny kształt');
-  });
 });
 
 const CHARGING_CAVALRYMAN_SHIELD_SOURCE =
@@ -1780,19 +1187,6 @@ describe('przedmioty_magiczne.json — audyt Tarczy Szarżującego Kawalerzysty 
     });
   });
 
-  it('nie zgłasza nieistniejących literówek "wierzchowcem" i "etykiecie"', () => {
-    expect(magicItem('tarcza_szarżującego_kawalerzysty').description).toContain(
-      'a jego wierzchowcem',
-    );
-    expect(magicItem('zmyślne_buty').description).toContain('Na załączonej etykiecie');
-
-    for (const source of [CHARGING_CAVALRYMAN_SHIELD_SOURCE, CLEVER_BOOTS_SOURCE]) {
-      expect(inconsistencies.filter((entry) => entry.source === source)).toEqual([]);
-      expect(
-        index.filter((entry) => entry.type === 'inconsistency' && entry.source === source),
-      ).toEqual([]);
-    }
-  });
 });
 
 const SYNC_REVISION = 'd8a352450e093cdb4d1bb032f5b3b8d70db9ac9d';
@@ -1876,7 +1270,7 @@ describe('przedmioty_magiczne.json — synchronizacja 0.1.24–0.1.26', () => {
     expect(paleKing.modifiers).toHaveLength(8);
     expect(paleKing.corrupted).toHaveLength(2);
     expect(paleKing.description).toContain('Bezświatły świat');
-    expect(paleKing.description).toContain('rozkwitajace');
+    expect(paleKing.description).toContain('rozkwitające');
 
     const bronzeWinner = magicItem('korona_zwycięzcy_brązowej_brody');
     expect(bronzeWinner.modifiers).toHaveLength(8);
@@ -1892,7 +1286,7 @@ describe('przedmioty_magiczne.json — synchronizacja 0.1.24–0.1.26', () => {
     expect(wagonWheel.modifiers).toHaveLength(9);
     expect(wagonWheel.corrupted).toHaveLength(2);
     expect(wagonWheel.description).toContain('Leć na zachodnim wietrze');
-    expect(wagonWheel.corrupted?.join(' ')).toContain('przeciniwka');
+    expect(wagonWheel.corrupted?.join(' ')).toContain('przeciwnika');
 
     const destruction = magicItem(
       'przebudzenie_destrukcji_z_rozkazu_lotu_pochodu_duchów',
@@ -1904,7 +1298,7 @@ describe('przedmioty_magiczne.json — synchronizacja 0.1.24–0.1.26', () => {
     const heart = magicItem('serce_zniszczenia');
     expect(heart.modifiers).toHaveLength(4);
     expect(heart.corrupted).toHaveLength(2);
-    expect(heart.description).toContain('niezlicoznych');
+    expect(heart.description).toContain('niezliczonych');
 
     const amulet = magicItem('amulet');
     expect(amulet.effects).toEqual([
@@ -1942,28 +1336,4 @@ describe('przedmioty_magiczne.json — synchronizacja 0.1.24–0.1.26', () => {
     }
   });
 
-  it('odnotowuje literówki i odmianę rzadkości nowych źródeł w Niespójnościach', () => {
-    const checks = [
-      ['serce_zniszczenia_typo_niezlicoznych', 'typo', 'niezlicoznych'],
-      ['koło_wozu_typo_przeciniwka', 'typo', 'przeciniwka'],
-      ['korona_bladego_typo_rozkwitajace', 'typo', 'rozkwitajace'],
-      ['przebudzenie_typo_wtargiecie', 'typo', 'wtargięcie'],
-      ['rzadkosc_arcymistrzowska_odmiana', 'other', 'Arcymistrzowski'],
-    ] as const;
-
-    for (const [id, kind, evidence] of checks) {
-      const entry = inconsistencies.find((item) => item.id === id);
-      if (!entry) throw new Error(`Brak wpisu Niespójności "${id}"`);
-
-      expect(entry.kind).toBe(kind);
-      expect(entry.evidence).toContain(evidence);
-      expect(entry.revision).toBe(SYNC_REVISION);
-      expect(entry.status).toBe('detailed');
-      expect(
-        index.some(
-          (item) => item.type === 'inconsistency' && item.id === id && item.source === entry.source,
-        ),
-      ).toBe(true);
-    }
-  });
 });

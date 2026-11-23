@@ -21,7 +21,7 @@
     "modifiers": [
       "+2 do Znajdowania"
     ],
-    "description": "Amulet to dosyć prosty wisiorek z wykonanym ze złota wykrzyknikiem jako wisiorkiem. Amulet podskakuje frenetycznie, alarmując uzytkownika o dobrych okazjach w okolicy."
+    "description": "Amulet to dosyć prosty wisiorek z wykonanym ze złota wykrzyknikiem jako wisiorkiem. Amulet podskakuje frenetycznie, alarmując użytkownika o dobrych okazjach w okolicy."
   },
   {
     "id": "amulet_zastygłego_oka",
@@ -61,7 +61,7 @@
     "modifiers": [
       "Kowalstwo +2"
     ],
-    "description": "Buty pozwalają lepiej sie zaprzeć przy machaniu młotem w celu wykucia tego zajebistego miecza lub tej zajebistej zbroi."
+    "description": "Buty pozwalają lepiej się zaprzeć przy machaniu młotem w celu wykucia tego zajebistego miecza lub tej zajebistej zbroi."
   },
   {
     "id": "buty_uzdrowiciela",
@@ -152,7 +152,7 @@
     "modifiers": [
       "+2 do Psychologii"
     ],
-    "description": "Peleryna pokryta jest symbolami oczu a fioletowym tle. Jej widok jest o tyle niepokojący, że symbole zdają się stale pływać po całej pelerynie, jakby ta była jedynie ułudą utkaną z własnych myśli obserwatora."
+    "description": "Peleryna pokryta jest symbolami oczu na fioletowym tle. Jej widok jest o tyle niepokojący, że symbole zdają się stale pływać po całej pelerynie, jakby ta była jedynie ułudą utkaną z własnych myśli obserwatora."
   },
   {
     "id": "pierścień_niewzruszonego_umysłu",
@@ -176,7 +176,7 @@
     "modifiers": [
       "Zwinne dłonie +2"
     ],
-    "description": "Pierścionek jest wykonany z platyny i pokryty jest niezwykle stymulującymi dla opuszczków palców grawerunkiem, zachęcając do macania go w wolnych chwilach i zarazem ćwiczenia zwinności palców."
+    "description": "Pierścionek jest wykonany z platyny i pokryty jest niezwykle stymulującymi dla opuszków palców grawerunkiem, zachęcając do macania go w wolnych chwilach i zarazem ćwiczenia zwinności palców."
   },
   {
     "id": "pierścionek_z_języczkiem",
@@ -188,11 +188,11 @@
     "modifiers": [
       "Lingwistyka +2"
     ],
-    "description": "Pierścionek jest wykonany z elektrum, a zamiast klejnotu, został w nim osadzony język ropuchy sułtańskiej. Jeśli pozwoli się temu językowi polizać za uchem, toksyna ropuchy pobudza częśc mózgu odpowiedzialną za rozumienie języków."
+    "description": "Pierścionek jest wykonany z elektrum, a zamiast klejnotu, został w nim osadzony język ropuchy sułtańskiej. Jeśli pozwoli się temu językowi polizać za uchem, toksyna ropuchy pobudza część mózgu odpowiedzialną za rozumienie języków."
   },
   {
     "id": "rękawice_do_podnoszenia_ciężarów",
-    "name": "Rękwice do Podnoszenia Ciężarów",
+    "name": "Rękawice do Podnoszenia Ciężarów",
     "source": "ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_do_podnoszenia_ciężarów.md",
     "status": "detailed",
     "type": "Rękawice",
@@ -204,7 +204,7 @@
   },
   {
     "id": "rękawice_srebrnego_splotu",
-    "name": "Rękwice Srebrnego Splotu",
+    "name": "Rękawice Srebrnego Splotu",
     "source": "ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_srebrnego_splotu.md",
     "status": "detailed",
     "type": "Rękawice",
@@ -212,7 +212,7 @@
     "modifiers": [
       "Zręczność +1"
     ],
-    "description": "Para cienkich rękawic wykonanych z miękkiej czarnej skóry, tak elastycznej, że niemal zachowuje się jak druga skóra. Ich powierzchnię przecina delikatna siatka srebrzystych nici wszytych wzdłuż palców, nadgarstków i grzbietu dłoni. Nici połyskują subtelnie przy ruchu, jakby odpowiadały na każdy gest noszącego.\n\nWewnętrzna strona rękawic jest wyjątkowo gładka i ciepła, a opuszki palców pokryto niemal niewidoczną warstwą materiału, która nie tłumi dotyku, a wręcz przeciwnie, sprawia, że każda faktura wydaje się bardziej wyraźna.\n\nMówi się, że pierwszą parę wykonano dla nadwornego jubilera, który potrafił oprawić klejnot mniejszy od paznokcia podczas jazdy konnej (wykonywał klejnoty podczas jazdy, a nie miał poznokcie mniejsze w trakcie jazdy), choć inni twierdzą, że należały do legendarnego włamywacza, którego nigdy nie schwytano."
+    "description": "Para cienkich rękawic wykonanych z miękkiej czarnej skóry, tak elastycznej, że niemal zachowuje się jak druga skóra. Ich powierzchnię przecina delikatna siatka srebrzystych nici wszytych wzdłuż palców, nadgarstków i grzbietu dłoni. Nici połyskują subtelnie przy ruchu, jakby odpowiadały na każdy gest noszącego.\n\nWewnętrzna strona rękawic jest wyjątkowo gładka i ciepła, a opuszki palców pokryto niemal niewidoczną warstwą materiału, która nie tłumi dotyku, a wręcz przeciwnie, sprawia, że każda faktura wydaje się bardziej wyraźna.\n\nMówi się, że pierwszą parę wykonano dla nadwornego jubilera, który potrafił oprawić klejnot mniejszy od paznokcia podczas jazdy konnej (wykonywał klejnoty podczas jazdy, a nie miał paznokcie mniejsze w trakcie jazdy), choć inni twierdzą, że należały do legendarnego włamywacza, którego nigdy nie schwytano."
   },
   {
     "id": "skórznia_widzącego",
@@ -333,7 +333,7 @@
   },
   {
     "id": "krystaliczna_tarcza_energetyczna",
-    "name": "Krystaliczna Tarcza Eneretyczna",
+    "name": "Krystaliczna Tarcza Energetyczna",
     "source": "ekwipunek/przedmioty_magiczne/rzadkie/krystaliczna_tarcza_energetyczna.md",
     "status": "detailed",
     "type": "Tarcza",
@@ -344,7 +344,7 @@
       "+2 do Przekonywania",
       "+2 do Sztuki"
     ],
-    "description": "Tarcza energetyczna przypomina nieduży puklerz z umieszczonym w lekkiej, drewnianej ramie dużym kryształem kwarcu. Pod wpływem energii magicznej, kwarc generuje nieduże ochronne pole enrgetyczne. Nieduże rozmiary nie ograniczają ruchów, pozwalając podpierać się dłonią w trakcie manewrów i akrobacji. Oprócz funkcjonalności, oprawiony kwarc jest również przepiękną ozdobą, inspirującą do tworzenia własnych dzieł sztuki."
+    "description": "Tarcza energetyczna przypomina nieduży puklerz z umieszczonym w lekkiej, drewnianej ramie dużym kryształem kwarcu. Pod wpływem energii magicznej, kwarc generuje nieduże ochronne pole energetyczne. Nieduże rozmiary nie ograniczają ruchów, pozwalając podpierać się dłonią w trakcie manewrów i akrobacji. Oprócz funkcjonalności, oprawiony kwarc jest również przepiękną ozdobą, inspirującą do tworzenia własnych dzieł sztuki."
   },
   {
     "id": "księga_protekcji",
@@ -359,7 +359,7 @@
       "+2 do Zwinnych Dłoni",
       "+2 do Lingwistyki"
     ],
-    "description": "Tarcza jest prostym kwadratowym kawałekim drewna z żelaznymi okuciami. Do niej jednak przykuta jest otwarta księga z wypisanymi błogosławieństwami ochronnymi w licznych językach. Sama księga jest również obłożona zaklęciami ochronnymi, dzięki czemu ta nie rozpada się po osłonięciu przed kilkoma ciosami. Choć bardzo przydatna, korzystanie z niej wymaga sporo siły i zręczności. Przynajmniej można sobie zrobić przy okazji trening."
+    "description": "Tarcza jest prostym kwadratowym kawałkiem drewna z żelaznymi okuciami. Do niej jednak przykuta jest otwarta księga z wypisanymi błogosławieństwami ochronnymi w licznych językach. Sama księga jest również obłożona zaklęciami ochronnymi, dzięki czemu ta nie rozpada się po osłonięciu przed kilkoma ciosami. Choć bardzo przydatna, korzystanie z niej wymaga sporo siły i zręczności. Przynajmniej można sobie zrobić przy okazji trening."
   },
   {
     "id": "maska_tharizduna",
@@ -374,7 +374,7 @@
       "+1 do Arkan"
     ],
     "corrupted": [
-      "Pozwala na zadanie masymalnych obrażeń w dowolnym ataku zadającym obrażenia od Chaosu (wyłącza obrażenia krytyczne)",
+      "Pozwala na zadanie maksymalnych obrażeń w dowolnym ataku zadającym obrażenia od Chaosu (wyłącza obrażenia krytyczne)",
       "Użytkownik traci 1 punkt Poczytalności"
     ],
     "description": "Maska wykonana jest z polerowanego, złocistego metalu, który ma ciepły, niemal miodowy odcień. Jej powierzchnia jest gładka, ale ozdobiona subtelnymi, niemal niewidocznymi liniami podkreślającymi rysy twarzy. Przedstawia idealizowane, spokojne oblicze o delikatnych, niemal posągowych rysach - wysokie kości policzkowe, wąskie usta i lekko przymrużone oczy nadają jej wyraz chłodnej, wyniosłej godności.\n\nNajbardziej charakterystycznym elementem są dwa potężne, spiralne rogi, wyrastające z boków maski. Wyglądają jak rogi barana lub demonicznego stworzenia. Ich powierzchnia jest segmentowana i błyszcząca, a końce wyginają się ku górze w eleganckich łukach. Rogi sprawiają wrażenie symbolu siły, chaosu albo pierwotnej magii.\n\nGórna część maski przechodzi w ozdobną koronę lub diadem o ostrych, wielokątnych krawędziach. Jest ona inkrustowana ciemnofioletową emalią pokrytą misternymi, złotymi ornamentami - wijącymi się wzorami przypominającymi pofalowane spirale, symbolami Tharizduna."
@@ -397,7 +397,7 @@
       "Zwinne Dłonie +2",
       "Każdy niezdany test Zwinnych Dłoni powoduje utratę 1 Szczęścia"
     ],
-    "description": "Mundur to purpurowa tunika wzmocniona umagicznioną nicią generującą pole ochronne. Na ramionach wyszyte białą nicią są symbole Białego Feniksa. Tunika jest na tyle gruba, by zapewnić ciepło w chłodne dni i na tyle przewiewna, by nie przegrzewać użytkownika w ciepłe dni. Jest również na tyle gruba, by częściowo amortyzować nadchodzące uderzenia.\n\nZ noszeniem tego munduru jest również związana stojąca za nim pewność siebie i autorytet tego starożytnego mocarstwa. Noszący nie tylko są bardziej skłonni do stawienia czoła najgorszym horrorom, ale również znacznie wyłatwiej wychodzi im inspirowanie i wywieranie wpływu na otaczających ich podwładnych i współwalczących.\n\nNiestety, energie Wielkiego Kataklizmu wpłynęły na ten mundur, kąpiąc go w wypaczających energiach."
+    "description": "Mundur to purpurowa tunika wzmocniona umagicznioną nicią generującą pole ochronne. Na ramionach wyszyte białą nicią są symbole Białego Feniksa. Tunika jest na tyle gruba, by zapewnić ciepło w chłodne dni i na tyle przewiewna, by nie przegrzewać użytkownika w ciepłe dni. Jest również na tyle gruba, by częściowo amortyzować nadchodzące uderzenia.\n\nZ noszeniem tego munduru jest również związana stojąca za nim pewność siebie i autorytet tego starożytnego mocarstwa. Noszący nie tylko są bardziej skłonni do stawienia czoła najgorszym horrorom, ale również znacznie łatwiej wychodzi im inspirowanie i wywieranie wpływu na otaczających ich podwładnych i współwalczących.\n\nNiestety, energie Wielkiego Kataklizmu wpłynęły na ten mundur, kąpiąc go w wypaczających energiach."
   },
   {
     "id": "pas_głębinowego_uśmiechu",
@@ -497,7 +497,7 @@
       "+2 do Znajdowania",
       "+1 do Uniku"
     ],
-    "description": "Rękawice wykonane są z grubej tkaniny ochronnej, dzięki czemu można w nich przesadzać nawet kaktusy. Przeglądanie różnych krzaków, skrzyń i innych bliżej niezidentyifkowanych kolekcji obiektów nigdy nie było bezpieczeniejsze! Dobrze chronione ręce zapewniają również komfort psychiczny, zachęcający do większego zaangażowania w eksplorację! Drobne wypustki na wewnętrznej stronie rękawic pozwalają również na lepszy chwyt, a dzięki temu lepszy refleks!"
+    "description": "Rękawice wykonane są z grubej tkaniny ochronnej, dzięki czemu można w nich przesadzać nawet kaktusy. Przeglądanie różnych krzaków, skrzyń i innych bliżej niezidentyfikowanych kolekcji obiektów nigdy nie było bezpieczniejsze! Dobrze chronione ręce zapewniają również komfort psychiczny, zachęcający do większego zaangażowania w eksplorację! Drobne wypustki na wewnętrznej stronie rękawic pozwalają również na lepszy chwyt, a dzięki temu lepszy refleks!"
   },
   {
     "id": "tarcza_milczącej_kniei",
@@ -579,7 +579,7 @@
       "Pozwala na przejście trzech sektorów w ramach jednej akcji ruchu.",
       "Każde użycie spaczonego modyfikatora powoduje zyskanie 1k4 poziomów Paniki."
     ],
-    "description": "Buty zostały wykonane z najlepszej jakości skóry przez mistrzów magicznego rzemiosła z Mossden. Dzięki temu, buty idealnie dopasowują się do stopy i stanowią perfekcyjną ochronę, nigdy nie powodując otarć, odcisków ani żadnych innych podrażnień. Nie wymagają równiez łyżki do zakładania i schodzą z nogi bez problemu. Jest to zaiste szczytowe osiągnięcie magii użytkowej."
+    "description": "Buty zostały wykonane z najlepszej jakości skóry przez mistrzów magicznego rzemiosła z Mossden. Dzięki temu, buty idealnie dopasowują się do stopy i stanowią perfekcyjną ochronę, nigdy nie powodując otarć, odcisków ani żadnych innych podrażnień. Nie wymagają również łyżki do zakładania i schodzą z nogi bez problemu. Jest to zaiste szczytowe osiągnięcie magii użytkowej."
   },
   {
     "id": "klamra_z_urodzenia",
@@ -608,7 +608,7 @@
     "usage": "Jędnoręczna",
     "baseStat": "Siła",
     "specialFeatures": [
-      "Ogłsuzający"
+      "Ogłuszający"
     ],
     "modifiers": [
       "Nałożenie Oszołomienia kosztuje 2x więcej Staminy.",
@@ -633,13 +633,13 @@
       "Głośny, Niebezpieczny"
     ],
     "modifiers": [
-      "Za każde 10 Staminy zużytej na wzmonienia ataków tą bronią, kolejny atak wykonywany jest z ułatwieniem"
+      "Za każde 10 Staminy zużytej na wzmocnienia ataków tą bronią, kolejny atak wykonywany jest z ułatwieniem"
     ],
     "corrupted": [
       "Podwaja ilość kości obrażeń we wszystkich atakach",
       "Ataki tą bronią nie mogą być krytyczne"
     ],
-    "description": "Broń to krótkolufowy muszkiet z bębenkiem rewolwerowym. Lufa pokryta jest krasnoludzkimi grawerunkami opowiadającymi sagę wyprawy morskiej, która podczas sztrormu została przeteleportowana do Południowych Krain, skąd przy pomocy kościannych drakkarów powracała do domu na północy.\n\nWg. legendy broń ta należała do krasnoludzkiego rewolwerowca, który posiadał ukryty pistolet w każdej nogawce, każdym rękawie i nie tylko..."
+    "description": "Broń to krótkolufowy muszkiet z bębenkiem rewolwerowym. Lufa pokryta jest krasnoludzkimi grawerunkami opowiadającymi sagę wyprawy morskiej, która podczas sztormu została przeteleportowana do Południowych Krain, skąd przy pomocy kościannych drakkarów powracała do domu na północy.\n\nWg. legendy broń ta należała do krasnoludzkiego rewolwerowca, który posiadał ukryty pistolet w każdej nogawce, każdym rękawie i nie tylko..."
   },
   {
     "id": "ostrze_armageddonu",
@@ -682,7 +682,7 @@
       "Potraja ilość zużyć przedmiotów podręcznych",
       "Podwaja zużycie przedmiotów podręcznych"
     ],
-    "description": "Potężny podwójny pas został skonstruowany z myślą o gabarytach ogra, ale na szczęście sprzączki pozwalają na dostosowanie szerokości. Na przedzie znajduje się wielka płyta mająca na celu zasłonięcie bebecha i osłonienie go przed wrogimi atakami oraz zimnem.\n\nWedle legend należał do Nuggitha, potężnego szermierza, niezwykłego mocarza i wielkeigo ogra, który siłom Chaosu się nie kłaniał, odbijając dalekie, ośnieżone krainy z jego rąk."
+    "description": "Potężny podwójny pas został skonstruowany z myślą o gabarytach ogra, ale na szczęście sprzączki pozwalają na dostosowanie szerokości. Na przedzie znajduje się wielka płyta mająca na celu zasłonięcie bebecha i osłonienie go przed wrogimi atakami oraz zimnem.\n\nWedle legend należał do Nuggitha, potężnego szermierza, niezwykłego mocarza i wielkiego ogra, który siłom Chaosu się nie kłaniał, odbijając dalekie, ośnieżone krainy z jego rąk."
   },
   {
     "id": "peleryna_podróżna",
@@ -696,11 +696,11 @@
       "Znajdowanie +4",
       "Zręczność +2"
     ],
-    "description": "Długa, podróżna peleryna z gęsto tkanej wełny w kolorze zbłoconej drogi, z kapturem obszytym pasami wytartej skóry, jakby setki podróży wygładziły ją niczym kamień w rzece. Na wewnętrznej podszewce widnieje misternie wyszyta sieć linii, które z bliska przypominają plątaninę traktów, ścieżek i skrótów. Jest to mapa, która zdaje się zmieniać ułożenie w zależności od tego, dokąd zmierza właściciel.\n\nNależała niegdyś do woźnicy, który podobno nigdy nie zgubił drogi, nawet w najgęstszej mgle czy podczas najgorszej zamieci, i który potrafił znaleźć zgubiony przedmiot w wozie pełnym bagażu jednym rzutem oka. Ci, którzy dziś noszą pelerynę, czują dziwną pewność w dłoniach trzymających lejce. Konie i wozy zdają się słuchać ich poleceń z niemal nadprzyrodzoną gładkością, a drobne, zgubione rzeczy jakby same wyskakują im na oczy spośród bałaganu. Materiał peleryny jest lekki i elastyczny, nie krępuje ruchów nawet przy gwałtownym skoku z kozła czy szybkim unikaniu przeszkody na drodze.\n\nMówi się, że stary woźnica w końcu odjechał swoim wozem w głąb mgły za Nowym Brzegiem i już nigdy nie wrócił, a peleryna, którą po nim znaleziono zawieszoną na drogowskazie, wciąż pachnie kurzem tysiąca traktów."
+    "description": "Długa, podróżna peleryna z gęsto tkanej wełny w kolorze ubłoconej drogi, z kapturem obszytym pasami wytartej skóry, jakby setki podróży wygładziły ją niczym kamień w rzece. Na wewnętrznej podszewce widnieje misternie wyszyta sieć linii, które z bliska przypominają plątaninę traktów, ścieżek i skrótów. Jest to mapa, która zdaje się zmieniać ułożenie w zależności od tego, dokąd zmierza właściciel.\n\nNależała niegdyś do woźnicy, który podobno nigdy nie zgubił drogi, nawet w najgęstszej mgle czy podczas najgorszej zamieci, i który potrafił znaleźć zgubiony przedmiot w wozie pełnym bagażu jednym rzutem oka. Ci, którzy dziś noszą pelerynę, czują dziwną pewność w dłoniach trzymających lejce. Konie i wozy zdają się słuchać ich poleceń z niemal nadprzyrodzoną gładkością, a drobne, zgubione rzeczy jakby same wyskakują im na oczy spośród bałaganu. Materiał peleryny jest lekki i elastyczny, nie krępuje ruchów nawet przy gwałtownym skoku z kozła czy szybkim unikaniu przeszkody na drodze.\n\nMówi się, że stary woźnica w końcu odjechał swoim wozem w głąb mgły za Nowym Brzegiem i już nigdy nie wrócił, a peleryna, którą po nim znaleziono zawieszoną na drogowskazie, wciąż pachnie kurzem tysiąca traktów."
   },
   {
     "id": "rogaty_hełm_najeźdzcy",
-    "name": "Rogaty Hełm Najeźdzcy",
+    "name": "Rogaty Hełm Najeźdźcy",
     "source": "ekwipunek/przedmioty_magiczne/potężne/rogaty_hełm_najeźdzcy.md",
     "status": "detailed",
     "type": "Hełm",
@@ -765,7 +765,7 @@
       "Bazowa Mana rośnie o 1 w każdej rundzie walki",
       "Bariera +(50% Bazowej Many)"
     ],
-    "description": "To co zobaczli było tym w co uwierzyli i uwierzyli w Sehnaine, która ich nie opuściła"
+    "description": "To co zobaczyli było tym w co uwierzyli i uwierzyli w Sehnaine, która ich nie opuściła"
   },
   {
     "id": "wybebeszacz",
@@ -785,7 +785,7 @@
       "Zwiększa obrażenia zadawane krwawiącym przeciwnikom o 1 kość za każdy poziom Krwawienia",
       "+1 do Zręczności"
     ],
-    "description": "Wybebeszacz to bardzo prosty w swojej formie sztylet sprężynowy, którego ostrza zostały specjalnie poząbkowane, by ułatwić krojenie już zranionej tkanki. Jest to idealny oręż stworzony do dobijania już zranionych przeciwników. Przedmiot został dodatkowo zaklęty, aby zawsze być nieco zardzewiałym i pozostawiac utlenione żelazo w ranach oponenta dla dodatkowego skurwysyństwa."
+    "description": "Wybebeszacz to bardzo prosty w swojej formie sztylet sprężynowy, którego ostrza zostały specjalnie poząbkowane, by ułatwić krojenie już zranionej tkanki. Jest to idealny oręż stworzony do dobijania już zranionych przeciwników. Przedmiot został dodatkowo zaklęty, aby zawsze być nieco zardzewiałym i pozostawiać utlenione żelazo w ranach oponenta dla dodatkowego skurwysyństwa."
   },
   {
     "id": "brązowa_broda",
@@ -801,8 +801,8 @@
       "Pancerz +1",
       "Bariera +3",
       "Odporność na Zamrożenie",
-      "Odpornośc na Podpalenie",
-      "Odpornośc na Porażenie",
+      "Odporność na Podpalenie",
+      "Odporność na Porażenie",
       "Max HP +5",
       "Ułatwienie w testach opartych o Percepcję"
     ],
@@ -857,13 +857,13 @@
     "modifiers": [
       "Inteligencja +1",
       "Spryt +1",
-      "Odpornośc na obrażenia chaotyczne",
+      "Odporność na obrażenia chaotyczne",
       "25% Max HP zostaje zamienione na Barierę",
       "25% zwiększona Bariera",
       "Połowa leczenia odnawia Barierę zamiast HP",
       "Flaszki Many regenerują również Barierę"
     ],
-    "description": "Wiara rozkwita mnogo na krawędzi śmierci.\n\nDusza nie może rozkwitać wewątrz wątpiącego umysłu."
+    "description": "Wiara rozkwita mnogo na krawędzi śmierci.\n\nDusza nie może rozkwitać wewnątrz wątpiącego umysłu."
   },
   {
     "id": "mocarny_nożyk_motylkowy",
@@ -965,11 +965,11 @@
       "Bariera 39",
       "+2 do wszystkich statystyk defensywnych"
     ],
-    "description": "Zbroja została wykonana z poskręcanych i nachodzących na siebie gałężi wierzby. Mimo to pancerz jest równie wytrzymały co adamantyt. Dar od Bogini, zagubiony w Ciemności. Brąz nuci. Tkanina wzdycha. Żyjące części niej, pragnące by istnieć."
+    "description": "Zbroja została wykonana z poskręcanych i nachodzących na siebie gałęzi wierzby. Mimo to pancerz jest równie wytrzymały co adamantyt. Dar od Bogini, zagubiony w Ciemności. Brąz nuci. Tkanina wzdycha. Żyjące części niej, pragnące by istnieć."
   },
   {
     "id": "łowca_głebin",
-    "name": "Łowca Głebin",
+    "name": "Łowca Głębin",
     "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/łowca_głebin.md",
     "status": "detailed",
     "type": "Broń",
@@ -978,7 +978,7 @@
     "modifiers": [
       "Łowienie ryb +10",
       "Podwaja szansę na wyłowienie arcymistrzowskiej ryby",
-      "Złowione ryby są conajmniej niezwykłe"
+      "Złowione ryby są co najmniej niezwykłe"
     ]
   },
   {
@@ -1033,11 +1033,11 @@
       "Zręczność +1",
       "Unik +1",
       "Zwinne Dłonie +2",
-      "Zadawane obrażenia fizyzne zwiększone są o 2k10%",
+      "Zadawane obrażenia fizyczne zwiększone są o 2k10%",
       "Zwiększa zadawane obrażenia o 5% za każdy cios krytyczny",
-      "Ciosy krytyczne generują o 1 kostkę obrażeń więcje niż zwykle",
+      "Ciosy krytyczne generują o 1 kostkę obrażeń więcej niż zwykle",
       "Zadawane obrażenia od zimna zwiększone są o 2k10%",
-      "Odpornośc na obrażenia od zimna",
+      "Odporność na obrażenia od zimna",
       "Podwaja nakładane poziomy Zamrożenia",
       "Pozwala na zyskanie dodatkowej akcji kosztem 25% bazowej Energii",
       "Bazowa Energia +1"
@@ -1060,7 +1060,7 @@
       "Jeździectwo +4"
     ],
     "corrupted": [
-      "Akcja: Odepchnięcie wszystkich przeciwników do sąsiednich sektrorów",
+      "Akcja: Odepchnięcie wszystkich przeciwników do sąsiednich sektorów",
       "Każde użycie spaczonego modyfikatora powoduje zyskanie 1k4 poziomów Krwawienia"
     ],
     "description": "Śmierć będzie twym kompasem.\n\nDzierż boską wolę jako swą pochodnię, nią niszcz cienie.\n\nMały umysł łatwo wypełnić wiarą."
@@ -1076,7 +1076,7 @@
       "Inteligencja +2",
       "Bazowa Mana +3"
     ],
-    "description": "Korona wykonana jest z zielonej smoczej łuski, która przyczepiona jest do stelażu ze smoczych zębów. W stalażu oprawiono również dodatkowo elegancko rubiny."
+    "description": "Korona wykonana jest z zielonej smoczej łuski, która przyczepiona jest do stelażu ze smoczych zębów. W stelażu oprawiono również dodatkowo elegancko rubiny."
   },
   {
     "id": "nagolenniki_ze_smoczych_kości",
@@ -1089,7 +1089,7 @@
       "Zwiększa szybkość przemieszczania się do 2 sektorów w ramach jednej akcji",
       "Bazowa Mana +3"
     ],
-    "description": "Skórzane buty z wysokimi cholewami zostały wmocnione grubymi, smoczymi kościami, chroniąc golenie użytkownika. Buty są niezwykle wytrzymałe i lekkie, umożliwiając szybkie przemieszczenie oraz czerpanie energii z ziemi."
+    "description": "Skórzane buty z wysokimi cholewami zostały wzmocnione grubymi, smoczymi kościami, chroniąc golenie użytkownika. Buty są niezwykle wytrzymałe i lekkie, umożliwiając szybkie przemieszczenie oraz czerpanie energii z ziemi."
   },
   {
     "id": "zaprzysiężona_framuga_dębowego_oporu",
@@ -1108,7 +1108,7 @@
       "Podnosi rangę odbieranego leczenia o 1",
       "Odporność na obrażenia od chaosu",
       "Odporność na obrażenia żrące",
-      "Odpornosć na obrażenia święte"
+      "Odporność na obrażenia święte"
     ],
     "corrupted": [
       "Utrudnienie w testach defensywnych",
@@ -1218,7 +1218,7 @@
       "Właściciel traci wszystkie odporności na obrażenia",
       "Koszt Wydłużenia zasięgu umiejętności jest zwiększony o 1"
     ],
-    "description": "Bezświatły świat, ciche rządy, para niewidzących oczu, żerują na twym bólu.\n\nZiarno wielkości zasadzane jest w ciemności, podlewane cierpieniem, doglądane przez desperację i rozkwitajace stalowymi kwiatami zwycięstwa."
+    "description": "Bezświatły świat, ciche rządy, para niewidzących oczu, żerują na twym bólu.\n\nZiarno wielkości zasadzane jest w ciemności, podlewane cierpieniem, doglądane przez desperację i rozkwitające stalowymi kwiatami zwycięstwa."
   },
   {
     "id": "korona_zwycięzcy_brązowej_brody",
@@ -1275,7 +1275,7 @@
     ],
     "corrupted": [
       "Każde pokonanie przeciwnika zabiera 1 HP",
-      "Każde pokonanie przeciniwka zabiera 1 Energii"
+      "Każde pokonanie przeciwnika zabiera 1 Energii"
     ],
     "description": "Niekończąca się rzeź wojny bezlitośnie ściera ciało i umysł.\n\nLeć na zachodnim wietrze, wzbij się w powietrze."
   },
@@ -1298,7 +1298,7 @@
       "Zapewnia stałą lewitację",
       "Bazowa Energia +1"
     ],
-    "description": "Potęga burzy obleczona w formę,\nUciekaj przed kroczącym sztormem.\n\nSzybuj. Bądź szybki. Nie dozwól nikomu na wtargięcie tu, z góry jak z i dołu, lub twój cel będzie zaprzepaszczony.\n\nPrzeklęci maszerują wiecznie,\nPrzez ich beznadzieję, ostatni wysiłek."
+    "description": "Potęga burzy obleczona w formę,\nUciekaj przed kroczącym sztormem.\n\nSzybuj. Bądź szybki. Nie dozwól nikomu na wtargnięcie tu, z góry jak z i dołu, lub twój cel będzie zaprzepaszczony.\n\nPrzeklęci maszerują wiecznie,\nPrzez ich beznadzieję, ostatni wysiłek."
   },
   {
     "id": "serce_zniszczenia",
@@ -1317,7 +1317,7 @@
       "Max HP zmniejszone o 25%",
       "25% odzyskiwanego HP jest konwertowane na Energię"
     ],
-    "description": "Wykute z krwi niezlicoznych wojen,\njego pragnienie dopiero się zaczęło."
+    "description": "Wykute z krwi niezliczonych wojen,\njego pragnienie dopiero się zaczęło."
   },
   {
     "id": "amulet",

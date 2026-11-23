@@ -67,7 +67,7 @@ test('footer shows source version and revision', async ({ page }) => {
   await page.goto('/');
   const footer = page.locator('footer');
   await expect(footer).toContainText('0.1.24');
-  await expect(footer).toContainText('d8a3524');
+  await expect(footer).toContainText('8956f4d');
 });
 
 

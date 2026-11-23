@@ -84,6 +84,14 @@ Markdowna w runtime. Źródłem prawdy jest submoduł `Battlesword-4.000/`.
 Przykład pełnej synchronizacji: `docs/superpowers/specs/2026-11-22-source-sync-design.md`
 i `docs/superpowers/plans/2026-11-22-source-sync.md` (8 commitów, `0f32397..d8a3524`).
 
+## Synchronizacja poprawek literówek (2026-11-24)
+
+PR z poprawkami literówek został zmergowany do źródła jako `8956f4d`
+(68 plików, 131 korekt). Aplikacja przyjęła poprawki w danych, usunęła 180
+rozwiązanych wpisów typu `typo` (zostało 31 niepewnych/false positives) i
+pokazuje w stopce `0.1.24 · 8956f4d`. Raport po korektach:
+`docs/niespojnosci.md`.
+
 ## Publikacja GitHub Pages
 
 Deployment jest ręczny. GitHub Pages ma źródło `gh-pages` (`build_type: legacy`).

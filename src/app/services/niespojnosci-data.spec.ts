@@ -15,7 +15,7 @@ describe('niespojnosci.json — deduplikacja', () => {
     expect(
       niespojnosci.filter((e) => e.name === 'Morale: niejasny wpływ pojedynczego poziomu Paniki'),
     ).toHaveLength(1);
-    expect(niespojnosci.filter((e) => e.name === "Majętność: literówka 'okreslana'")).toHaveLength(1);
+    expect(niespojnosci.some((e) => e.name.includes("okreslana"))).toBe(false);
   });
 
   it('nie ma wpisów indeksu bez danych', () => {
@@ -32,7 +32,7 @@ describe('niespojnosci.json — deduplikacja', () => {
     }
   });
 
-  it('ma 378 wpisów po deduplikacji', () => {
-    expect(niespojnosci).toHaveLength(378);
+  it('ma 198 wpisów po deduplikacji i korektach', () => {
+    expect(niespojnosci).toHaveLength(198);
   });
 });

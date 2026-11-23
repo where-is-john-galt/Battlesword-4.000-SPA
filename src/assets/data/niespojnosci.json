@@ -1,69 +1,5 @@
 [
   {
-    "id": "alchemik_typo_besposredni",
-    "name": "Alchemik: zapis 'Bespośredni'",
-    "source": "tworzenie_postaci/klasy/alchemik.md",
-    "kind": "typo",
-    "details": "W opisach zasięgu umiejętności Alchemika (Remiks, Spopielenie / Zamrożenie, Wybuch) użyto zapisu 'Bespośredni' zamiast 'Bezpośredni'.",
-    "evidence": "* Zasięg - Bespośredni",
-    "relatedSources": [
-      "tworzenie_postaci/klasy/alchemik.md"
-    ],
-    "relatedEntryIds": [
-      "alchemik"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "alchemik_typo_misktura",
-    "name": "Alchemik: literówka 'miskturę'",
-    "source": "tworzenie_postaci/klasy/alchemik.md",
-    "kind": "typo",
-    "details": "W opisie umiejętności Skimer użyto zapisu 'miskturę' zamiast 'miksturę'.",
-    "evidence": "Alchemik tworzy defensywną miskturę na poczekaniu",
-    "relatedSources": [
-      "tworzenie_postaci/klasy/alchemik.md"
-    ],
-    "relatedEntryIds": [
-      "alchemik"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "alchemik_typo_wmocnienia",
-    "name": "Alchemik: literówka 'Wmocnienia'",
-    "source": "tworzenie_postaci/klasy/alchemik.md",
-    "kind": "typo",
-    "details": "W sekcji umiejętności Skimer nagłówek wzmocnień zapisano jako 'Wmocnienia'.",
-    "evidence": "* Wmocnienia",
-    "relatedSources": [
-      "tworzenie_postaci/klasy/alchemik.md"
-    ],
-    "relatedEntryIds": [
-      "alchemik"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "amulet_alertu_dobrej_okazji_typo_uzytkownika",
-    "name": "Amulet Alertu Dobrej Okazji: literówka 'uzytkownika'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/amulet_alertu_dobrej_okazji.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"uzytkownika\" zamiast \"użytkownika\".",
-    "evidence": "alarmując uzytkownika o dobrych okazjach w okolicy",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/amulet_alertu_dobrej_okazji.md"
-    ],
-    "relatedEntryIds": [
-      "amulet_alertu_dobrej_okazji"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
     "id": "aptekarz_efekt_22_brak_podmiotu",
     "name": "Aptekarz: efekt 22 bez wskazanego podmiotu",
     "source": "tworzenie_postaci/profesje/aptekarz.md",
@@ -87,54 +23,6 @@
     "kind": "ambiguity",
     "details": "Efekt nr 9 'Zamienia wszystkie HP -1 na Barierę' nie precyzuje, czy chodzi o wszystkie brakujące punkty życia, ani jaką wartość Bariery należy przyznać.",
     "evidence": "9. Zamienia wszystkie HP -1 na Barierę.",
-    "relatedSources": [
-      "tworzenie_postaci/profesje/aptekarz.md"
-    ],
-    "relatedEntryIds": [
-      "aptekarz"
-    ],
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "aptekarz_typo_eksplopdujace",
-    "name": "Aptekarz: literówka 'eksplopdujące'",
-    "source": "tworzenie_postaci/profesje/aptekarz.md",
-    "status": "detailed",
-    "kind": "typo",
-    "details": "W efekcie nr 12 występuje zapis 'eksplopdujące' zamiast 'eksplodujące'.",
-    "evidence": "12. Ciosy krytyczne nakładają stany Zatrucia zamiast zadawać eksplopdujące obrażenia do końca walki.",
-    "relatedSources": [
-      "tworzenie_postaci/profesje/aptekarz.md"
-    ],
-    "relatedEntryIds": [
-      "aptekarz"
-    ],
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "aptekarz_typo_odpornosc",
-    "name": "Aptekarz: literówka 'odpornośc'",
-    "source": "tworzenie_postaci/profesje/aptekarz.md",
-    "status": "detailed",
-    "kind": "typo",
-    "details": "W efekcie nr 6 występuje zapis 'odpornośc' bez polskiego znaku diakrytycznego.",
-    "evidence": "Postać zyskuje odpornośc na święte obrażenia.",
-    "relatedSources": [
-      "tworzenie_postaci/profesje/aptekarz.md"
-    ],
-    "relatedEntryIds": [
-      "aptekarz"
-    ],
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "aptekarz_typo_zuzycia",
-    "name": "Aptekarz: literówka 'zuzycia'",
-    "source": "tworzenie_postaci/profesje/aptekarz.md",
-    "status": "detailed",
-    "kind": "typo",
-    "details": "W tabeli efektów przerwy profesyjnej występuje zapis 'zuzycia' zamiast 'zużycia'.",
-    "evidence": "1. Zmniejsza zuzycia o 1.",
     "relatedSources": [
       "tworzenie_postaci/profesje/aptekarz.md"
     ],
@@ -192,70 +80,6 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
-    "id": "bezczynny_chwyt_północnej_zimy_typo_fizyzne",
-    "name": "Bezczynny Chwyt Północnej Zimy: literówka 'fizyzne'",
-    "source": "ekwipunek/przedmioty_magiczne/mityczny/bezczynny_chwyt_północnej_zimy.md",
-    "kind": "typo",
-    "details": "W modyfikatorze zapisano \"fizyzne\" zamiast \"fizyczne\".",
-    "evidence": "* Zadawane obrażenia fizyzne zwiększone są o 2k10%",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/mityczny/bezczynny_chwyt_północnej_zimy.md"
-    ],
-    "relatedEntryIds": [
-      "bezczynny_chwyt_północnej_zimy"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "bezczynny_chwyt_północnej_zimy_typo_odpornośc",
-    "name": "Bezczynny Chwyt Północnej Zimy: literówka 'Odpornośc'",
-    "source": "ekwipunek/przedmioty_magiczne/mityczny/bezczynny_chwyt_północnej_zimy.md",
-    "kind": "typo",
-    "details": "W modyfikatorze zapisano \"Odpornośc\" bez polskiego znaku diakrytycznego; poprawna forma to \"Odporność\".",
-    "evidence": "* Odpornośc na obrażenia od zimna",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/mityczny/bezczynny_chwyt_północnej_zimy.md"
-    ],
-    "relatedEntryIds": [
-      "bezczynny_chwyt_północnej_zimy"
-    ],
-    "status": "detailed",
-    "revision": "0f3239726b687f085593266a088c843f63d032ce"
-  },
-  {
-    "id": "bezczynny_chwyt_północnej_zimy_typo_więcje",
-    "name": "Bezczynny Chwyt Północnej Zimy: literówka 'więcje'",
-    "source": "ekwipunek/przedmioty_magiczne/mityczny/bezczynny_chwyt_północnej_zimy.md",
-    "kind": "typo",
-    "details": "W modyfikatorze zapisano \"więcje\" zamiast \"więcej\".",
-    "evidence": "* Ciosy krytyczne generują o 1 kostkę obrażeń więcje niż zwykle",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/mityczny/bezczynny_chwyt_północnej_zimy.md"
-    ],
-    "relatedEntryIds": [
-      "bezczynny_chwyt_północnej_zimy"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "boska_wola_typo_sektrorów",
-    "name": "Boska Wola: literówka 'sektrorów'",
-    "source": "ekwipunek/przedmioty_magiczne/mityczny/boska_wola.md",
-    "kind": "typo",
-    "details": "W spaczonym modyfikatorze zapisano \"sektrorów\" zamiast \"sektorów\".",
-    "evidence": "* Akcja: Odepchnięcie wszystkich przeciwników do sąsiednich sektrorów",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/mityczny/boska_wola.md"
-    ],
-    "relatedEntryIds": [
-      "boska_wola"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
     "id": "botanik_rosliny_imiona_w_nawiasach",
     "name": "Botanik: imiona graczy w nawiasach przy roślinach",
     "source": "tworzenie_postaci/profesje/botanik.md",
@@ -263,86 +87,6 @@
     "kind": "other",
     "details": "Przy niektórych roślinach w nawiasach podano imiona (Rafał, Aurora, Mycelis, Velo, Crossword), co sugeruje przypisanie opcji do konkretnych postaci graczy. Nie jest to mechanika, ale warto odnotować jako niespójność prezentacji.",
     "evidence": "Alfunas - zwiększa Odporność na Śmierć wybranej postaci o 1 lub wybrana postać zyskuje 2 Pancerza (Rafał)",
-    "relatedSources": [
-      "tworzenie_postaci/profesje/botanik.md"
-    ],
-    "relatedEntryIds": [
-      "botanik"
-    ],
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "botanik_typo_krawienia",
-    "name": "Botanik: literówka 'Krawienia'",
-    "source": "tworzenie_postaci/profesje/botanik.md",
-    "status": "detailed",
-    "kind": "typo",
-    "details": "W opisie rośliny 'Przygłupnik' występuje zapis 'Krawienia' zamiast 'Krwawienia'.",
-    "evidence": "przedmiot podręczny: kataplazm tamujący (usuwa wszystkie poziomy Krawienia i zapewnia niewrażliwość na Krwawienie do końca walki)",
-    "relatedSources": [
-      "tworzenie_postaci/profesje/botanik.md"
-    ],
-    "relatedEntryIds": [
-      "botanik"
-    ],
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "botanik_typo_misktury",
-    "name": "Botanik: literówka 'misktury'",
-    "source": "tworzenie_postaci/profesje/botanik.md",
-    "status": "detailed",
-    "kind": "typo",
-    "details": "W opisie rośliny 'Pajęczy liść' występuje zapis 'misktury' zamiast 'mikstury'.",
-    "evidence": "Pajęczy liść - ulepsza leczenie jednej wybranej misktury o jeden stopień",
-    "relatedSources": [
-      "tworzenie_postaci/profesje/botanik.md"
-    ],
-    "relatedEntryIds": [
-      "botanik"
-    ],
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "botanik_typo_odpornosc",
-    "name": "Botanik: literówka 'odpornośc'",
-    "source": "tworzenie_postaci/profesje/botanik.md",
-    "status": "detailed",
-    "kind": "typo",
-    "details": "W opisie rośliny 'Czerstwiak' występuje zapis 'odpornośc' bez polskiego znaku diakterycznego.",
-    "evidence": "wybrana postać może zyskać tymczasową odpornośc na otrzymany cios kosztem 1 Zmęczenia",
-    "relatedSources": [
-      "tworzenie_postaci/profesje/botanik.md"
-    ],
-    "relatedEntryIds": [
-      "botanik"
-    ],
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "botanik_typo_wykonac",
-    "name": "Botanik: literówka 'wykonac'",
-    "source": "tworzenie_postaci/profesje/botanik.md",
-    "status": "detailed",
-    "kind": "typo",
-    "details": "W opisie przerwy profesyjnej 'Ogród' występuje zapis 'wykonac' zamiast 'wykonać'.",
-    "evidence": "W ramach akcji przerwy, Botanik może wykonac testy:",
-    "relatedSources": [
-      "tworzenie_postaci/profesje/botanik.md"
-    ],
-    "relatedEntryIds": [
-      "botanik"
-    ],
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "botanik_typo_znaduje",
-    "name": "Botanik: literówka 'znaduje'",
-    "source": "tworzenie_postaci/profesje/botanik.md",
-    "status": "detailed",
-    "kind": "typo",
-    "details": "W opisie aktywnej umiejętności 'Nawóz na porost żywopłotów' występuje zapis 'znaduje' zamiast 'znajduje'.",
-    "evidence": "rozdzielając sektor w którym się znaduje na dwa mniejsze",
     "relatedSources": [
       "tworzenie_postaci/profesje/botanik.md"
     ],
@@ -398,20 +142,6 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
-    "id": "bron_typo_automatyczie",
-    "name": "Broń: literówka 'automatyczie'",
-    "source": "ekwipunek/broń.md",
-    "kind": "typo",
-    "details": "W opisie cechy Parujący występuje literówka 'automatyczie' zamiast 'automatycznie'.",
-    "evidence": "* Parujący - Jeśli postać uzbrojona w taką broń obroni się przed atakiem wykonywanym w zwarciu, automatyczie zadaje atakującemu podstawowe obrażenia.",
-    "relatedSources": [
-      "ekwipunek/broń.md"
-    ],
-    "relatedEntryIds": [],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
     "id": "bron_typo_kanalizujacy_rozwinięć",
     "name": "Broń: niejasny zapis 'ilość rozwinięć' w Kanalizujący",
     "source": "ekwipunek/broń.md",
@@ -423,143 +153,6 @@
     ],
     "relatedEntryIds": [
       "kostur"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "bron_typo_kawalerysjki",
-    "name": "Broń: literówka 'Kawalerysjki'",
-    "source": "ekwipunek/broń.md",
-    "kind": "typo",
-    "details": "Cecha specjalna kopii i lancy zapisana jest jako 'Kawalerysjki', podczas gdy w słowniczku cecha występuje jako 'Kawaleryjski'.",
-    "evidence": "| Kopia              | 2k10      | 1H      | Siła              | Druzgocący, Kawalerysjki             | 28                 |",
-    "relatedSources": [
-      "ekwipunek/broń.md"
-    ],
-    "relatedEntryIds": [
-      "kopia",
-      "lanca"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "bron_typo_odpowiednia",
-    "name": "Broń: literówka 'odpowiednia'",
-    "source": "ekwipunek/broń.md",
-    "kind": "typo",
-    "details": "W opisie cechy Ogłuszający zapisano 'odpowiednia 1 i 2 Staminy' zamiast 'odpowiednio'.",
-    "evidence": "Oszołomienie elitarnych i mistrzowskich przeciwników jest również możliwe poprzez wmocnienie ataku kosztem odpowiednia 1 i 2 Staminy.",
-    "relatedSources": [
-      "ekwipunek/broń.md"
-    ],
-    "relatedEntryIds": [],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "bron_typo_offhand_rece",
-    "name": "Broń: literówka 'z drugiej ręce'",
-    "source": "ekwipunek/broń.md",
-    "kind": "typo",
-    "details": "W słowniczku przy opisie użycia offhand zapisano 'trzymane jedynie z drugiej ręce' zamiast 'w drugiej ręce'.",
-    "evidence": "* Użycie - Bronie mogą być jednoręczne, dwuręczne lub offhandowe (czyli mogą być trzymane jedynie z drugiej ręce).",
-    "relatedSources": [
-      "ekwipunek/broń.md"
-    ],
-    "relatedEntryIds": [],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "bron_typo_postawowa_ilosc",
-    "name": "Broń: literówki w słowniczku 'Postawowa ilośc'",
-    "source": "ekwipunek/broń.md",
-    "kind": "typo",
-    "details": "W słowniczku opis obrażeń zawiera literówki: 'Postawowa' zamiast 'Podstawowa' oraz 'ilośc' zamiast 'ilość'.",
-    "evidence": "* Obrażenia - Postawowa ilośc kości wykorzystywanych przy ustalaniu obrażeń.",
-    "relatedSources": [
-      "ekwipunek/broń.md"
-    ],
-    "relatedEntryIds": [],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "bron_typo_wmocnienie",
-    "name": "Broń: literówka 'wmocnienie'",
-    "source": "ekwipunek/broń.md",
-    "kind": "typo",
-    "details": "W opisie cechy Ogłuszający występuje literówka 'wmocnienie' zamiast 'wzmocnienie'.",
-    "evidence": "Oszołomienie elitarnych i mistrzowskich przeciwników jest również możliwe poprzez wmocnienie ataku kosztem odpowiednia 1 i 2 Staminy.",
-    "relatedSources": [
-      "ekwipunek/broń.md"
-    ],
-    "relatedEntryIds": [],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "bron_typo_wszechtronny",
-    "name": "Broń: literówka 'Wszechtronny'",
-    "source": "ekwipunek/broń.md",
-    "kind": "typo",
-    "details": "Cecha specjalna długiego miecza zapisana jest jako 'Wszechtronny', podczas gdy w słowniczku cecha występuje jako 'Wszechstronny'.",
-    "evidence": "| Długi miecz        | 1k10      | 1H      | Zręczność         | Wszechtronny                         | 30                 |",
-    "relatedSources": [
-      "ekwipunek/broń.md"
-    ],
-    "relatedEntryIds": [
-      "długi_miecz"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "brązowa_broda_typo_odpornośc",
-    "name": "Brązowa Broda: literówka 'Odpornośc'",
-    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/brązowa_broda.md",
-    "kind": "typo",
-    "details": "W modyfikatorach zapisano \"Odpornośc\" bez polskiego znaku diakrytycznego.",
-    "evidence": "* Odpornośc na Podpalenie",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/arcymistrzowskie/brązowa_broda.md"
-    ],
-    "relatedEntryIds": [
-      "brązowa_broda"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "buty_kowala_typo_sie",
-    "name": "Buty Kowala: literówka 'sie'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/buty_kowala.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"sie\" zamiast \"się\".",
-    "evidence": "Buty pozwalają lepiej sie zaprzeć",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/buty_kowala.md"
-    ],
-    "relatedEntryIds": [
-      "buty_kowala"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "centaur_typo_wierchowcu",
-    "name": "Centaur: literówka 'wierchowcu'",
-    "source": "tworzenie_postaci/rasy/centaur.md",
-    "kind": "typo",
-    "details": "W opisie pasywnej cechy 'Pół człowiek, pół koń' słowo 'wierzchowcu' zapisane jest jako 'wierchowcu'.",
-    "evidence": "Centaur może zawsze korzystać z dodatkowych cech wynikających z jazdy na wierchowcu",
-    "relatedSources": [
-      "tworzenie_postaci/rasy/centaur.md"
-    ],
-    "relatedEntryIds": [
-      "centaur"
     ],
     "status": "detailed",
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
@@ -1477,118 +1070,6 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
-    "id": "crafting_typo_ilosc_uzyc",
-    "kind": "typo",
-    "details": "W zdaniu o maksymalnej ilości użyć zapisano 'ilośc' bez polskiego znaku diakrytycznego.",
-    "evidence": "maksymalna ilośc użyć na walkę jest równa Mądrości",
-    "relatedSources": [
-      "mechaniki_bazowe/crafting.md"
-    ],
-    "relatedEntryIds": [
-      "wytworstwo_eksperymentalne"
-    ],
-    "name": "Crafting: literówka 'ilośc'",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "crafting_typo_nalezy",
-    "kind": "typo",
-    "details": "W sekcji o spaczeniu zapisano 'nalezy' bez polskiego znaku diakrytycznego.",
-    "evidence": "W przypadku wyników 1-3 w rzucie na efekt pozytywny, nalezy rzucić na tabelę eksperymentalnych bonusów",
-    "relatedSources": [
-      "mechaniki_bazowe/crafting.md"
-    ],
-    "relatedEntryIds": [
-      "spaczenie"
-    ],
-    "name": "Crafting: literówka 'nalezy'",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "crafting_typo_punkt_eferencyjny",
-    "kind": "typo",
-    "details": "Zdanie 'Z punkt eferencyjny mogą posłużyć modyfikatory...' zawiera błąd składniowy i literówkę ('eferencyjny' zamiast 'referencyjny').",
-    "evidence": "Z punkt eferencyjny mogą posłużyć modyfikatory wylistowane w sekcji o wytwórstwie eksperymentalnym.",
-    "relatedSources": [
-      "mechaniki_bazowe/crafting.md"
-    ],
-    "relatedEntryIds": [
-      "rzadkosc_przedmiotow"
-    ],
-    "name": "Crafting: literówka 'eferencyjny'",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "crafting_typo_rowniez",
-    "kind": "typo",
-    "details": "W zdaniu o innych umiejętnościach zapisano 'równiez' bez polskiego znaku diakrytycznego.",
-    "evidence": "W niektórych przypadkach mogą to być równiez inne umiejętności",
-    "relatedSources": [
-      "mechaniki_bazowe/crafting.md"
-    ],
-    "relatedEntryIds": [
-      "crafting"
-    ],
-    "name": "Crafting: literówka 'równiez'",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "crafting_typo_sektrorow",
-    "kind": "typo",
-    "details": "W tabeli eksperymentalnych bonusów (potężne+) zapisano 'sektrorów' zamiast 'sektorów'.",
-    "evidence": "* 34-36: Akcja: Odepchnięcie wszystkich przeciwników do sąsiednich sektrorów",
-    "relatedSources": [
-      "mechaniki_bazowe/crafting.md"
-    ],
-    "relatedEntryIds": [
-      "wytworstwo_eksperymentalne"
-    ],
-    "name": "Crafting: literówka 'sektrorów'",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "crafting_typo_wynalaczosc",
-    "kind": "typo",
-    "details": "W liście umiejętności powiązanych z wytwórstwem zapisano 'Wynalaczość' zamiast 'Wynalazczość' (nazwa statystyki w innych plikach to 'Wynalazczość').",
-    "evidence": "* Wynalaczość",
-    "relatedSources": [
-      "mechaniki_bazowe/crafting.md"
-    ],
-    "relatedEntryIds": [
-      "crafting"
-    ],
-    "name": "Crafting: literówka 'Wynalaczość'",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "czlowiek_typo_wykonie",
-    "name": "Człowiek: literówka 'wykonie'",
-    "source": "tworzenie_postaci/rasy/człowiek.md",
-    "kind": "typo",
-    "details": "W opisie aktywnej umiejętności 'Ferwor wiary' zapis 'wykonie' zamiast 'wykonanie'.",
-    "evidence": "W ramach akcji, pozwala na wykonie testu Szczęścia.",
-    "relatedSources": [
-      "tworzenie_postaci/rasy/człowiek.md"
-    ],
-    "relatedEntryIds": [
-      "człowiek"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
     "id": "czytelnik_wód_typo_inkrustowana",
     "name": "Czytelnik Wód: literówka 'inkrustowana'",
     "source": "ekwipunek/przedmioty_magiczne/rzadkie/czytelnik_wód.md",
@@ -1621,70 +1102,6 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
-    "id": "duchowa_szata_gorzkiego_rozkwitu_typo_odpornośc",
-    "name": "Duchowa Szata Gorzkiego Rozkwitu: literówka 'Odpornośc'",
-    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/duchowa_szata_gorzkiego_rozkwitu.md",
-    "kind": "typo",
-    "details": "W modyfikatorze zapisano \"Odpornośc\" bez polskiego znaku diakrytycznego; poprawna forma to \"Odporność\".",
-    "evidence": "* Odpornośc na obrażenia chaotyczne",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/arcymistrzowskie/duchowa_szata_gorzkiego_rozkwitu.md"
-    ],
-    "relatedEntryIds": [
-      "duchowa_szata_gorzkiego_rozkwitu"
-    ],
-    "status": "detailed",
-    "revision": "0f3239726b687f085593266a088c843f63d032ce"
-  },
-  {
-    "id": "duchowa_szata_gorzkiego_rozkwitu_typo_wewątrz",
-    "name": "Duchowa Szata Gorzkiego Rozkwitu: literówka 'wewątrz'",
-    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/duchowa_szata_gorzkiego_rozkwitu.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"wewątrz\" zamiast \"wewnątrz\".",
-    "evidence": "Dusza nie może rozkwitać wewątrz wątpiącego umysłu.",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/arcymistrzowskie/duchowa_szata_gorzkiego_rozkwitu.md"
-    ],
-    "relatedEntryIds": [
-      "duchowa_szata_gorzkiego_rozkwitu"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "gazeciarz_typo_każdy_postac",
-    "name": "Gazeciarz: niezgodność 'Każdy postać'",
-    "source": "tworzenie_postaci/profesje/gazeciarz.md",
-    "status": "detailed",
-    "kind": "typo",
-    "details": "W opisie przerwy profesyjnej występuje 'Każdy postać może być wyposażona' zamiast 'Każda postać'.",
-    "evidence": "Każdy postać może być wyposażona maksymalnie w jedną krzyżówkę danego typu.",
-    "relatedSources": [
-      "tworzenie_postaci/profesje/gazeciarz.md"
-    ],
-    "relatedEntryIds": [
-      "gazeciarz"
-    ],
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "gazeciarz_typo_otrzymywanne",
-    "name": "Gazeciarz: literówka 'otrzymywanne'",
-    "source": "tworzenie_postaci/profesje/gazeciarz.md",
-    "status": "detailed",
-    "kind": "typo",
-    "details": "W opisie krzyżówki magicznej występuje zapis 'otrzymywanne' zamiast 'otrzymywane'.",
-    "evidence": "Biżuteria - Zmniejsza obrażenia otrzymywanne ze wszystkich źródeł o 2",
-    "relatedSources": [
-      "tworzenie_postaci/profesje/gazeciarz.md"
-    ],
-    "relatedEntryIds": [
-      "gazeciarz"
-    ],
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
     "id": "gazeciarz_typo_ukosnik",
     "name": "Gazeciarz: literówka 'Ukośnik'",
     "source": "tworzenie_postaci/profesje/gazeciarz.md",
@@ -1701,92 +1118,12 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
-    "id": "idealne_buty_typo_równiez",
-    "name": "Idealne Buty: literówka 'równiez'",
-    "source": "ekwipunek/przedmioty_magiczne/potężne/idealne_buty.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"równiez\" zamiast \"również\".",
-    "evidence": "Nie wymagają równiez łyżki do zakładania",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/potężne/idealne_buty.md"
-    ],
-    "relatedEntryIds": [
-      "idealne_buty"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "kawalerzysta_typo_wierchowcem",
-    "name": "Kawalerzysta: literówka 'wierchowcem'",
-    "source": "tworzenie_postaci/klasy/kawalerzysta.md",
-    "kind": "typo",
-    "details": "W opisie umiejętności eksploracyjnej Zwierzęcy Instynkt użyto zapisu 'wierchowcem' zamiast 'wierzchowcem'.",
-    "evidence": "Zestrojenie się ze swoim wierchowcem wymaga poświęcenia mu chwili czasu.",
-    "relatedSources": [
-      "tworzenie_postaci/klasy/kawalerzysta.md"
-    ],
-    "relatedEntryIds": [
-      "kawalerzysta"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "kon_pociagowy_typo_jezdzca",
-    "name": "Koń Pociągowy: literówka 'jeźdzca'",
-    "source": "bestiariusz/zwierzaki/koń_pociągowy.md",
-    "kind": "typo",
-    "details": "W opisie cechy 'Silny jak koń' słowo 'jeźdźca' zapisano jako 'jeźdzca'.",
-    "evidence": "Potrafi udźwignąć jeźdzca i dwóch pasażerów.",
-    "relatedSources": [
-      "bestiariusz/zwierzaki/koń_pociągowy.md"
-    ],
-    "relatedEntryIds": [
-      "koń_pociągowy"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "konik_blotny_typo_predkosc",
-    "name": "Konik błotny: literówka 'prędkośc'",
-    "source": "bestiariusz/zwierzaki/konik_błotny.md",
-    "kind": "typo",
-    "details": "W opisie cechy 'Błotnisty łowca dżdżownic' słowo 'prędkość' zapisano bez 'ć'.",
-    "evidence": "Jego prędkośc to 2 sektory na akcję.",
-    "relatedSources": [
-      "bestiariusz/zwierzaki/konik_błotny.md"
-    ],
-    "relatedEntryIds": [
-      "konik_błotny"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
     "id": "korona_ze_smoczych_zębów_niezidentyfikowana",
     "name": "Korona ze Smoczych Zębów: adnotacja Niezidentyfikowana",
     "source": "ekwipunek/przedmioty_magiczne/mityczny/korona_ze_smoczych_zębów.md",
     "kind": "missing_detail",
     "details": "Przedmiot posiada adnotację \"Niezidentyfikowana\", ale źródło nie definiuje mechanicznego znaczenia tego stanu ani sposobu identyfikacji przedmiotu.",
     "evidence": "**Niezidentyfikowana**",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/mityczny/korona_ze_smoczych_zębów.md"
-    ],
-    "relatedEntryIds": [
-      "korona_ze_smoczych_zębów"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "korona_ze_smoczych_zębów_typo_stelażu",
-    "name": "Korona ze Smoczych Zębów: literówka 'stalażu'",
-    "source": "ekwipunek/przedmioty_magiczne/mityczny/korona_ze_smoczych_zębów.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"stalażu\" zamiast \"stelażu\".",
-    "evidence": "W stalażu oprawiono również dodatkowo elegancko rubiny.",
     "relatedSources": [
       "ekwipunek/przedmioty_magiczne/mityczny/korona_ze_smoczych_zębów.md"
     ],
@@ -1840,22 +1177,6 @@
     ],
     "relatedEntryIds": [
       "kostur_żelazdnego_rachmistrza"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "krasnolud_typo_znajdowaia",
-    "name": "Krasnolud: literówka 'Znajdowaia'",
-    "source": "tworzenie_postaci/rasy/krasnolud.md",
-    "kind": "typo",
-    "details": "W opisie aktywnej umiejętności 'Krasnoludzkie rzemiosło' nazwa statystyki 'Znajdowanie' zapisana jest jako 'Znajdowaia'.",
-    "evidence": "pozwala na wykonanie testu Kowalstwa, Majsterkowania, Wynalazczości, Znajdowaia lub Sztuki.",
-    "relatedSources": [
-      "tworzenie_postaci/rasy/krasnolud.md"
-    ],
-    "relatedEntryIds": [
-      "krasnolud"
     ],
     "status": "detailed",
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
@@ -1925,54 +1246,6 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
-    "id": "krystaliczna_tarcza_energetyczna_typo_enrgetyczne",
-    "name": "Krystaliczna Tarcza Eneretyczna: literówka 'enrgetyczne'",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/krystaliczna_tarcza_energetyczna.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"enrgetyczne\" zamiast \"energetyczne\".",
-    "evidence": "kwarc generuje nieduże ochronne pole enrgetyczne",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/rzadkie/krystaliczna_tarcza_energetyczna.md"
-    ],
-    "relatedEntryIds": [
-      "krystaliczna_tarcza_energetyczna"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "krystaliczna_tarcza_energetyczna_typo_nazwa",
-    "name": "Krystaliczna Tarcza Eneretyczna: literówka w nazwie",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/krystaliczna_tarcza_energetyczna.md",
-    "kind": "typo",
-    "details": "Nazwa przedmiotu zawiera zapis \"Eneretyczna\" zamiast \"Energetyczna\".",
-    "evidence": "# Krystaliczna Tarcza Eneretyczna",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/rzadkie/krystaliczna_tarcza_energetyczna.md"
-    ],
-    "relatedEntryIds": [
-      "krystaliczna_tarcza_energetyczna"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "księga_protekcji_typo_kawałekim",
-    "name": "Księga Protekcji: literówka 'kawałekim'",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/księga_protekcji.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"kawałekim\" zamiast \"kawałkiem\".",
-    "evidence": "Tarcza jest prostym kwadratowym kawałekim drewna",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/rzadkie/księga_protekcji.md"
-    ],
-    "relatedEntryIds": [
-      "księga_protekcji"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
     "id": "lista_klas_brak_alchemik_w_archetypie",
     "name": "Lista klas: Alchemik wymieniony w archetypie Rzemieślnicy",
     "source": "tworzenie_postaci/klasy/lista_klas.md",
@@ -1995,7 +1268,7 @@
     "source": "tworzenie_postaci/klasy/lista_klas.md",
     "kind": "asymmetry",
     "details": "Kawalerzysta posiada własny plik opisu klasy, ale nie został wymieniony w żadnym z archetypów na liście klas. W związku z tym jego pole archetype pozostaje puste.",
-    "evidence": "## Żołnierze\n* Taktyk - skupia sie na dowodzeniu i manewrach na polu bitwy",
+    "evidence": "## Żołnierze\n* Taktyk - skupia się na dowodzeniu i manewrach na polu bitwy",
     "relatedSources": [
       "tworzenie_postaci/klasy/lista_klas.md",
       "tworzenie_postaci/klasy/kawalerzysta.md"
@@ -2046,7 +1319,7 @@
     "source": "tworzenie_postaci/klasy/lista_klas.md",
     "kind": "other",
     "details": "Nekromanta posiada własny plik opisu klasy i jest jednocześnie wymieniony w archetypie Czarnoksiężnicy na liście klas. Zgodnie z zasadą list-to-description, jego wpis pochodzi z pliku opisu, a nie z listy.",
-    "evidence": "* Nekromanta - skupia sie na budowaniu armii nieumarłych minionów",
+    "evidence": "* Nekromanta - skupia się na budowaniu armii nieumarłych minionów",
     "relatedSources": [
       "tworzenie_postaci/klasy/lista_klas.md",
       "tworzenie_postaci/klasy/nekromanta.md"
@@ -2083,7 +1356,7 @@
     "evidence": "* Skrytobójca - skupia się na atakach z zaskoczenia",
     "relatedSources": [
       "tworzenie_postaci/klasy/lista_klas.md",
-      "tworzenie_postaci/klasy/skrytobójca.md"
+      "tworzenie_postaci/klasy/skrytobójca_(nieskończone).md"
     ],
     "relatedEntryIds": [
       "skrytobójca"
@@ -2097,7 +1370,7 @@
     "source": "tworzenie_postaci/klasy/lista_klas.md",
     "kind": "other",
     "details": "Taktyk posiada własny plik opisu klasy i jest jednocześnie wymieniony w archetypie Żołnierze na liście klas. Zgodnie z zasadą list-to-description, jego wpis pochodzi z pliku opisu, a nie z listy.",
-    "evidence": "* Taktyk - skupia sie na dowodzeniu i manewrach na polu bitwy",
+    "evidence": "* Taktyk - skupia się na dowodzeniu i manewrach na polu bitwy",
     "relatedSources": [
       "tworzenie_postaci/klasy/lista_klas.md",
       "tworzenie_postaci/klasy/taktyk.md"
@@ -2154,84 +1427,6 @@
     ],
     "relatedEntryIds": [
       "jesienny_gawędziarz"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "lista_klas_typo_pojedycznym",
-    "name": "Lista klas: literówka 'pojedycznym'",
-    "source": "tworzenie_postaci/klasy/lista_klas.md",
-    "kind": "typo",
-    "details": "W opisie archetypu Strzelcy przy klasie Snajper użyto zapisu 'pojedycznym' zamiast 'pojedynczym'.",
-    "evidence": "* Snajper - skupia się na walce długodystansowej przeciwko pojedycznym celom",
-    "relatedSources": [
-      "tworzenie_postaci/klasy/lista_klas.md"
-    ],
-    "relatedEntryIds": [
-      "snajper"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "lista_klas_typo_poteznym",
-    "name": "Lista klas: literówka 'poteżnym'",
-    "source": "tworzenie_postaci/klasy/lista_klas.md",
-    "kind": "typo",
-    "details": "W opisie archetypu Żołnierze przy klasie Łowca użyto zapisu 'poteżnym' zamiast 'potężnym'.",
-    "evidence": "* Łowca - skupia się na zadawaniu obrażeń poteżnym przeciwnikom",
-    "relatedSources": [
-      "tworzenie_postaci/klasy/lista_klas.md"
-    ],
-    "relatedEntryIds": [
-      "łowca"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "lista_klas_typo_przesukiwanie",
-    "name": "Lista klas: literówka 'przesukiwanie'",
-    "source": "tworzenie_postaci/klasy/lista_klas.md",
-    "kind": "typo",
-    "details": "We wstępie do listy klas użyto zapisu 'przesukiwanie' zamiast 'przeszukiwanie'.",
-    "evidence": "aby ułatwić przesukiwanie i wybór docelowej klasy",
-    "relatedSources": [
-      "tworzenie_postaci/klasy/lista_klas.md"
-    ],
-    "relatedEntryIds": [],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "lista_klas_typo_przsl",
-    "name": "Lista klas: literówka 'przsl'",
-    "source": "tworzenie_postaci/klasy/lista_klas.md",
-    "kind": "typo",
-    "details": "W opisie archetypu Druid przy klasie Mistrz Przemian użyto zapisu 'przsl' zamiast 'przemian'.",
-    "evidence": "* Mistrz Przemian - skupia sie na przmienianach w aspekty zwierzęce",
-    "relatedSources": [
-      "tworzenie_postaci/klasy/lista_klas.md"
-    ],
-    "relatedEntryIds": [
-      "mistrz_przemian"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "lista_klas_typo_sie",
-    "name": "Lista klas: literówka 'sie'",
-    "source": "tworzenie_postaci/klasy/lista_klas.md",
-    "kind": "typo",
-    "details": "W opisie archetypu Czarnoksiężnicy przy klasie Nekromanta użyto zapisu 'sie' zamiast 'się'.",
-    "evidence": "* Nekromanta - skupia sie na budowaniu armii nieumarłych minionów",
-    "relatedSources": [
-      "tworzenie_postaci/klasy/lista_klas.md"
-    ],
-    "relatedEntryIds": [
-      "nekromanta"
     ],
     "status": "detailed",
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
@@ -2365,24 +1560,6 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
-    "id": "lista_profesji_przewoznik_typo",
-    "name": "Lista profesji: literówka 'Prezewoźnik'",
-    "source": "tworzenie_postaci/profesje/lista_profesji.md",
-    "status": "detailed",
-    "kind": "typo",
-    "details": "Lista profesji zawiera wpis 'Prezewoźnik', podczas gdy plik szczegółowy używa nazwy 'Przewoźnik'. Ta sama profesja, błędna pisownia w liście.",
-    "evidence": "* Prezewoźnik",
-    "relatedSources": [
-      "tworzenie_postaci/profesje/lista_profesji.md",
-      "tworzenie_postaci/profesje/przewoźnik.md"
-    ],
-    "relatedEntryIds": [
-      "prezewoźnik",
-      "przewoźnik"
-    ],
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
     "id": "lista_profesji_smieciarz_duplikat",
     "name": "Lista profesji wymienia Śmieciarza, który ma osobny opis",
     "source": "tworzenie_postaci/profesje/lista_profesji.md",
@@ -2477,966 +1654,6 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
-    "id": "liturgista_typo_wytrzymalosc",
-    "name": "Liturgista: literówka 'Wytrzymałosć'",
-    "source": "tworzenie_postaci/klasy/liturgista.md",
-    "kind": "typo",
-    "details": "W predyspozycjach defensywnych zapisano 'Wytrzymałosć' zamiast 'Wytrzymałość'.",
-    "evidence": "* Wytrzymałosć",
-    "relatedSources": [
-      "tworzenie_postaci/klasy/liturgista.md"
-    ],
-    "relatedEntryIds": [
-      "liturgista"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "liturgista_typo_zwiekszone",
-    "name": "Liturgista: literówka 'zwiekszone'",
-    "source": "tworzenie_postaci/klasy/liturgista.md",
-    "kind": "typo",
-    "details": "W wzmocnieniu umiejętności Błogosławieństwo użyto zapisu 'zwiekszone' zamiast 'zwiększone'.",
-    "evidence": "Następne obrażenia zadane przez sojusznika są zwiekszone o wartość jego głównej statystyki - 2 many",
-    "relatedSources": [
-      "tworzenie_postaci/klasy/liturgista.md"
-    ],
-    "relatedEntryIds": [
-      "liturgista"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_doadtku",
-    "name": "Majętność: literówka 'doadtku'",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'doadtku' zamiast 'dodatku'.",
-    "evidence": "Więcej w nadchodzącym doadtku o działalnościach gospodarczych.",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_druzyna",
-    "name": "Majętność: literówka 'Druzyna'",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'Druzyna' zamiast 'Drużyna'.",
-    "evidence": "Za każdym razem, gdy Druzyna zbierze odpowiednią ilość kosztowności",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana",
-    "name": "Majętność: literówka 'okreslana'",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana'.",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_10",
-    "name": "Majętność: literówka 'okreslana' (10)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (dziesiąte wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_11",
-    "name": "Majętność: literówka 'okreslana' (11)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (jedenaste wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_12",
-    "name": "Majętność: literówka 'okreslana' (12)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (dwunaste wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_13",
-    "name": "Majętność: literówka 'okreslana' (13)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (trzynaste wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_14",
-    "name": "Majętność: literówka 'okreslana' (14)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (czternaste wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_15",
-    "name": "Majętność: literówka 'okreslana' (15)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (piętnaste wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_16",
-    "name": "Majętność: literówka 'okreslana' (16)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (szesnaste wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_17",
-    "name": "Majętność: literówka 'okreslana' (17)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (siedemnaste wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_18",
-    "name": "Majętność: literówka 'okreslana' (18)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (osiemnaste wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_19",
-    "name": "Majętność: literówka 'okreslana' (19)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (dziewiętnaste wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_2",
-    "name": "Majętność: literówka 'okreslana' (2)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (drugie wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_20",
-    "name": "Majętność: literówka 'okreslana' (20)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (dwudzieste wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_21",
-    "name": "Majętność: literówka 'okreslana' (21)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (dwudzieste pierwsze wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_22",
-    "name": "Majętność: literówka 'okreslana' (22)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (dwudzieste drugie wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_23",
-    "name": "Majętność: literówka 'okreslana' (23)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (dwudzieste trzecie wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_24",
-    "name": "Majętność: literówka 'okreslana' (24)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (dwudzieste czwarte wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_25",
-    "name": "Majętność: literówka 'okreslana' (25)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (dwudzieste piąte wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_26",
-    "name": "Majętność: literówka 'okreslana' (26)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (dwudzieste szóste wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_27",
-    "name": "Majętność: literówka 'okreslana' (27)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (dwudzieste siódme wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_28",
-    "name": "Majętność: literówka 'okreslana' (28)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (dwudzieste ósme wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_29",
-    "name": "Majętność: literówka 'okreslana' (29)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (dwudzieste dziewiąte wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_3",
-    "name": "Majętność: literówka 'okreslana' (3)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (trzecie wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_30",
-    "name": "Majętność: literówka 'okreslana' (30)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (trzydzieste wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_31",
-    "name": "Majętność: literówka 'okreslana' (31)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (trzydzieste pierwsze wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_32",
-    "name": "Majętność: literówka 'okreslana' (32)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (trzydzieste drugie wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_33",
-    "name": "Majętność: literówka 'okreslana' (33)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (trzydzieste trzecie wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_34",
-    "name": "Majętność: literówka 'okreslana' (34)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (trzydzieste czwarte wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_35",
-    "name": "Majętność: literówka 'okreslana' (35)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (trzydzieste piąte wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_36",
-    "name": "Majętność: literówka 'okreslana' (36)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (trzydzieste szóste wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_37",
-    "name": "Majętność: literówka 'okreslana' (37)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (trzydzieste siódme wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_38",
-    "name": "Majętność: literówka 'okreslana' (38)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (trzydzieste ósme wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_39",
-    "name": "Majętność: literówka 'okreslana' (39)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (trzydzieste dziewiąte wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_4",
-    "name": "Majętność: literówka 'okreslana' (4)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (czwarte wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_40",
-    "name": "Majętność: literówka 'okreslana' (40)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (czterdzieste wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_41",
-    "name": "Majętność: literówka 'okreslana' (41)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (czterdzieste pierwsze wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_42",
-    "name": "Majętność: literówka 'okreslana' (42)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (czterdzieste drugie wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_43",
-    "name": "Majętność: literówka 'okreslana' (43)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (czterdzieste trzecie wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_44",
-    "name": "Majętność: literówka 'okreslana' (44)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (czterdzieste czwarte wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_45",
-    "name": "Majętność: literówka 'okreslana' (45)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (czterdzieste piąte wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_46",
-    "name": "Majętność: literówka 'okreslana' (46)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (czterdzieste szóste wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_47",
-    "name": "Majętność: literówka 'okreslana' (47)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (czterdzieste siódme wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_48",
-    "name": "Majętność: literówka 'okreslana' (48)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (czterdzieste ósme wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_49",
-    "name": "Majętność: literówka 'okreslana' (49)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (czterdzieste dziewiąte wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_5",
-    "name": "Majętność: literówka 'okreslana' (5)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (piąte wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_50",
-    "name": "Majętność: literówka 'okreslana' (50)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (pięćdziesiąte wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_6",
-    "name": "Majętność: literówka 'okreslana' (6)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (szóste wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_7",
-    "name": "Majętność: literówka 'okreslana' (7)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (siódme wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_8",
-    "name": "Majętność: literówka 'okreslana' (8)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (ósme wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_9",
-    "name": "Majętność: literówka 'okreslana' (9)",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'okreslana' zamiast 'określana' (dziewiąte wystąpienie).",
-    "evidence": "Początkowa Majętność jest okreslana podczas tworzenia postaci",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_postawie",
-    "name": "Majętność: literówka 'na postawie'",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'na postawie' zamiast 'na podstawie'.",
-    "evidence": "okreslana podczas tworzenia postaci na postawie najwyższej Majętności startowej",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_skladaja_sie",
-    "name": "Majętność: zapis 'Składają sie'",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności użyto formy 'Składają sie' zamiast 'Składają się'.",
-    "evidence": "Składają sie na nią zarówno środki finansowe",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_spenienienia",
-    "name": "Majętność: literówka 'speniężenia'",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'speniężenia' zamiast 'spieniężenia'.",
-    "evidence": "potencjał speniężenia posiadanych przedmiotów",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_uipropszczonego",
-    "name": "Majętność: literówka 'uipropszczonego'",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'uipropszczonego' zamiast 'uproszczonego'.",
-    "evidence": "korzystając z nieco bardziej uipropszczonego sposobu",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_zlola",
-    "name": "Majętność: literówka 'złola'",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'złola' zamiast 'złola' (prawdopodobnie 'trolla' lub podobne).",
-    "evidence": "np. smoczą górę zlota lub skarbiec złola",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "majetnosc_typo_zlota",
-    "name": "Majętność: literówka 'zlota'",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'zlota' zamiast 'złota'.",
-    "evidence": "np. smoczą górę zlota lub skarbiec złola",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
     "id": "majetnosc_typo_zmiana_slawy",
     "name": "Majętność: zapis 'zmiana wartości Sławy'",
     "source": "ekwipunek/majętność.md",
@@ -3469,22 +1686,6 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
-    "id": "majetnosc_typo_zwieksza_o_dodatkowy",
-    "name": "Majętność: zapis 'Majętność zwiększa o dodatkowy punkt'",
-    "source": "ekwipunek/majętność.md",
-    "kind": "typo",
-    "details": "W opisie Majętności występuje zapis 'Majętność zwiększa o dodatkowy punkt' zamiast 'zwiększa się o dodatkowy punkt'.",
-    "evidence": "Co 3 dodatkowe sukcesy, Majętność zwiększa o dodatkowy punkt.",
-    "relatedSources": [
-      "ekwipunek/majętność.md"
-    ],
-    "relatedEntryIds": [
-      "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
     "id": "majetnosc_typo_zwieksza_sie",
     "name": "Majętność: zapis 'Majętność zwiększa się'",
     "source": "ekwipunek/majętność.md",
@@ -3496,38 +1697,6 @@
     ],
     "relatedEntryIds": [
       "majętność"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "maska_tharizduna_typo_masymalnych",
-    "name": "Maska Tharizduna: literówka 'masymalnych'",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/maska_tharizduna.md",
-    "kind": "typo",
-    "details": "W spaczonym modyfikatorze zapisano \"masymalnych\" zamiast \"maksymalnych\".",
-    "evidence": "* Pozwala na zadanie masymalnych obrażeń w dowolnym ataku zadającym obrażenia od Chaosu (wyłącza obrażenia krytyczne)",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/rzadkie/maska_tharizduna.md"
-    ],
-    "relatedEntryIds": [
-      "maska_tharizduna"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "miażdżyciel_typo_ogłsuzający",
-    "name": "Miażdżyciel: literówka w cesze specjalnej",
-    "source": "ekwipunek/przedmioty_magiczne/potężne/miażdżyciel.md",
-    "kind": "typo",
-    "details": "Cecha specjalna zapisana jako \"Ogłsuzający\" zamiast \"Ogłuszający\".",
-    "evidence": "* Cechy specjalne - Ogłsuzający",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/potężne/miażdżyciel.md"
-    ],
-    "relatedEntryIds": [
-      "miażdżyciel"
     ],
     "status": "detailed",
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
@@ -3848,92 +2017,12 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
-    "id": "mundur_gwardii_feniksa_typo_wyłatwiej",
-    "name": "Mundur Gwardii Feniksa: literówka 'wyłatwiej'",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/mundur_gwardii_feniksa.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"wyłatwiej\" zamiast \"łatwiej\".",
-    "evidence": "znacznie wyłatwiej wychodzi im inspirowanie",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/rzadkie/mundur_gwardii_feniksa.md"
-    ],
-    "relatedEntryIds": [
-      "mundur_gwardii_feniksa"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
     "id": "mykonid_passive_unnamed",
     "name": "Mykonid: bezimienna pasywna cecha specjalna",
     "source": "tworzenie_postaci/rasy/mykonid.md",
     "kind": "missing_detail",
     "details": "Trzecia pasywna cecha specjalna Mykonida (telepatia zarodnikowa na 100 metrów) nie posiada nazwy w źródle, w przeciwieństwie do dwóch pozostałych cech pasywnych. Wpisano ją bez pola name.",
-    "evidence": "* Mykonidy nie muszą mówić na głos do innych mykoidów. Wypuszczają niewidoczne chmury zarodników, które pozwalają im przesyłać obrazy, emocje i proste myśli w promieniu 100 metrów.",
-    "relatedSources": [
-      "tworzenie_postaci/rasy/mykonid.md"
-    ],
-    "relatedEntryIds": [
-      "mykonid"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "mykonid_typo_czescia",
-    "name": "Mykonid: literówka 'częscią'",
-    "source": "tworzenie_postaci/rasy/mykonid.md",
-    "kind": "typo",
-    "details": "W opisie Ekspansji Mycelium słowo 'częścią' zapisane jest jako 'częscią'.",
-    "evidence": "Musi być to jednak ziemia, która jest częscią większej całości a nie doniczka lub wanna z ziemią.",
-    "relatedSources": [
-      "tworzenie_postaci/rasy/mykonid.md"
-    ],
-    "relatedEntryIds": [
-      "mykonid"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "mykonid_typo_falna",
-    "name": "Mykonid: literówka 'fałną'",
-    "source": "tworzenie_postaci/rasy/mykonid.md",
-    "kind": "typo",
-    "details": "W opisie Ekspansji Mycelium słowo 'fauną' zapisane jest jako 'fałną'.",
-    "evidence": "jego ciało transformuje sie zlewając się z lokalna fałną oraz tkanką rzeczywistości",
-    "relatedSources": [
-      "tworzenie_postaci/rasy/mykonid.md"
-    ],
-    "relatedEntryIds": [
-      "mykonid"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "mykonid_typo_mykoidow",
-    "name": "Mykonid: literówka 'mykoidów'",
-    "source": "tworzenie_postaci/rasy/mykonid.md",
-    "kind": "typo",
-    "details": "W opisie pasywnej cechy telepatii zarodnikowej nazwa rasy zapisana jest jako 'mykoidów' zamiast 'mykonidów'.",
-    "evidence": "Mykonidy nie muszą mówić na głos do innych mykoidów.",
-    "relatedSources": [
-      "tworzenie_postaci/rasy/mykonid.md"
-    ],
-    "relatedEntryIds": [
-      "mykonid"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "mykonid_typo_transformuje_sie",
-    "name": "Mykonid: literówka 'transformuje sie'",
-    "source": "tworzenie_postaci/rasy/mykonid.md",
-    "kind": "typo",
-    "details": "W opisie Ekspansji Mycelium zapis 'transformuje sie' zamiast 'transformuje się'.",
-    "evidence": "Gdy wchodzi w ten tryb jego ciało transformuje sie zlewając się z lokalna fałną",
+    "evidence": "* Mykonidy nie muszą mówić na głos do innych mykonidów. Wypuszczają niewidoczne chmury zarodników, które pozwalają im przesyłać obrazy, emocje i proste myśli w promieniu 100 metrów.",
     "relatedSources": [
       "tworzenie_postaci/rasy/mykonid.md"
     ],
@@ -3955,54 +2044,6 @@
     ],
     "relatedEntryIds": [
       "nagolenniki_ze_smoczych_kości"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "nagolenniki_ze_smoczych_kości_typo_wmocnione",
-    "name": "Nagolenniki ze Smoczych Kości: literówka 'wmocnione'",
-    "source": "ekwipunek/przedmioty_magiczne/mityczny/nagolenniki_ze_smoczych_kości.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"wmocnione\" zamiast \"wzmocnione\".",
-    "evidence": "zostały wmocnione grubymi, smoczymi kościami",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/mityczny/nagolenniki_ze_smoczych_kości.md"
-    ],
-    "relatedEntryIds": [
-      "nagolenniki_ze_smoczych_kości"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "nekromanta_typo_mioninem",
-    "name": "Nekromanta: literówka 'mioninem'",
-    "source": "tworzenie_postaci/klasy/nekromanta.md",
-    "kind": "typo",
-    "details": "W opisie umiejętności Przywołanie awatara śmierci użyto zapisu 'mioninem' zamiast 'minionem'.",
-    "evidence": "pojawia się Awatar Śmierci i jest mioninem do końca walki.",
-    "relatedSources": [
-      "tworzenie_postaci/klasy/nekromanta.md"
-    ],
-    "relatedEntryIds": [
-      "nekromanta"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "nekromanta_typo_przeszktałcenie",
-    "name": "Nekromanta: literówka 'przeszktałcenie'",
-    "source": "tworzenie_postaci/klasy/nekromanta.md",
-    "kind": "typo",
-    "details": "W opisie umiejętności eksploracyjnej Formowanie zwłok użyto zapisu 'przeszktałcenie' zamiast 'przekształcenie'.",
-    "evidence": "Udany test Arkan pozwala na przeszktałcenie pobliskich zwłok",
-    "relatedSources": [
-      "tworzenie_postaci/klasy/nekromanta.md"
-    ],
-    "relatedEntryIds": [
-      "nekromanta"
     ],
     "status": "detailed",
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
@@ -4040,54 +2081,6 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
-    "id": "niedzwiedz_typo_swoja",
-    "name": "Niedźwiedź: literówka 'swoja'",
-    "source": "bestiariusz/zwierzaki/niedźwiedź.md",
-    "kind": "typo",
-    "details": "W opisie cechy Miodek zapisano 'swoja akcję' zamiast 'swoją akcję'.",
-    "evidence": "Niedźwiedź automatycznie poświęca jedną swoja akcję",
-    "relatedSources": [
-      "bestiariusz/zwierzaki/niedźwiedź.md"
-    ],
-    "relatedEntryIds": [
-      "niedźwiedź"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "odkupienie_typo_sztrormu",
-    "name": "Odkupienie: literówka 'sztrormu'",
-    "source": "ekwipunek/przedmioty_magiczne/potężne/odkupienie.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"sztrormu\" zamiast \"sztormu\".",
-    "evidence": "podczas sztrormu została przeteleportowana",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/potężne/odkupienie.md"
-    ],
-    "relatedEntryIds": [
-      "odkupienie"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "odkupienie_typo_wzmonienia",
-    "name": "Odkupienie: literówka 'wzmonienia'",
-    "source": "ekwipunek/przedmioty_magiczne/potężne/odkupienie.md",
-    "kind": "typo",
-    "details": "W modyfikatorze zapisano \"wzmonienia\" zamiast \"wzmocnienia\".",
-    "evidence": "* Za każde 10 Staminy zużytej na wzmonienia ataków tą bronią, kolejny atak wykonywany jest z ułatwieniem",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/potężne/odkupienie.md"
-    ],
-    "relatedEntryIds": [
-      "odkupienie"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
     "id": "ostrze_armageddonu_zdetonowany_zamrozenie",
     "name": "Ostrze Armageddonu: spaczone zdetonowanie odnosi się do Zamrożenia",
     "source": "ekwipunek/przedmioty_magiczne/potężne/ostrze_armageddonu.md",
@@ -4104,23 +2097,6 @@
     ],
     "status": "detailed",
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "pancerze_typo_adamntytowa",
-    "name": "Pancerze: literówka 'adamntytowa'",
-    "source": "ekwipunek/pancerze.md",
-    "kind": "typo",
-    "details": "W tabelach Ciężkie i Tarcza materiał zapisano jako 'adamntytowa' (Zbroja adamntytowa, Tarcza adamntytowa), pomijając literę 'a'. W pozostałych plikach źródłowych ten materiał występuje jako 'adamantyt' (np. mechaniki_bazowe/crafting.md, ekwipunek/przedmioty_magiczne/arcymistrzowskie/zapomniany_strażnik.md).",
-    "evidence": "| Zbroja adamntytowa  | 55                 | 9       |\n| Tarcza adamntytowa  | 45                 | 3       |",
-    "relatedSources": [
-      "ekwipunek/pancerze.md"
-    ],
-    "relatedEntryIds": [
-      "zbroja_adamntytowa",
-      "tarcza_adamntytowa"
-    ],
-    "status": "detailed",
-    "revision": "0f3239726b687f085593266a088c843f63d032ce"
   },
   {
     "id": "pas_głębinowego_uśmiechu_typo_rozłupujące",
@@ -4155,22 +2131,6 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
-    "id": "pas_nuggitha_typo_wielkeigo",
-    "name": "Pas Nuggitha: literówka 'wielkeigo'",
-    "source": "ekwipunek/przedmioty_magiczne/potężne/pas_nuggitha.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"wielkeigo\" zamiast \"wielkiego\".",
-    "evidence": "niezwykłego mocarza i wielkeigo ogra",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/potężne/pas_nuggitha.md"
-    ],
-    "relatedEntryIds": [
-      "pas_nuggitha"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
     "id": "paski_typo_bnich",
     "name": "Paski: literówka 'b nich'",
     "source": "ekwipunek/paski.md",
@@ -4183,38 +2143,6 @@
     "relatedEntryIds": [],
     "status": "detailed",
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "peleryna_podróżna_typo_zbłoconej",
-    "name": "Peleryna Podróżna: literówka 'zbłoconej'",
-    "source": "ekwipunek/przedmioty_magiczne/potężne/peleryna_podróżna.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"zbłoconej\" zamiast \"ubłoconej\".",
-    "evidence": "z gęsto tkanej wełny w kolorze zbłoconej drogi",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/potężne/peleryna_podróżna.md"
-    ],
-    "relatedEntryIds": [
-      "peleryna_podróżna"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "peleryna_snów_typo_a_fioletowym",
-    "name": "Peleryna Snów: literówka 'a fioletowym'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/peleryna_snów.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"a fioletowym tle\" zamiast \"na fioletowym tle\".",
-    "evidence": "Peleryna pokryta jest symbolami oczu a fioletowym tle.",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/peleryna_snów.md"
-    ],
-    "relatedEntryIds": [
-      "peleryna_snów"
-    ],
-    "status": "detailed",
-    "revision": "0f3239726b687f085593266a088c843f63d032ce"
   },
   {
     "id": "peleryna_wędrowca_tysiąca_dachów_typo_nietoperza",
@@ -4315,102 +2243,6 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
-    "id": "perki_typo_kazdej",
-    "name": "Perki: literówka 'kazdej'",
-    "source": "tworzenie_postaci/perki.md",
-    "kind": "typo",
-    "details": "W opisie perka Magia krwi zapisano 'kazdej' zamiast 'każdej'.",
-    "evidence": "Zapewnia małe leczenie (25%+1d4) na początku kazdej tury.",
-    "relatedSources": [
-      "tworzenie_postaci/perki.md"
-    ],
-    "relatedEntryIds": [
-      "magia_krwi"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "perki_typo_krawienie",
-    "name": "Perki: literówka 'Krawienie'",
-    "source": "tworzenie_postaci/perki.md",
-    "kind": "typo",
-    "details": "W opisie perka Karmazynowy szturm zapisano 'Krawienie' zamiast 'Krwawienie'.",
-    "evidence": "Podwaja nakładane Krawienie.",
-    "relatedSources": [
-      "tworzenie_postaci/perki.md"
-    ],
-    "relatedEntryIds": [
-      "karmazynowy_szturm"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "perki_typo_misktur",
-    "name": "Perki: literówka 'misktur'",
-    "source": "tworzenie_postaci/perki.md",
-    "kind": "typo",
-    "details": "W opisie perka Pakt Feniksa zapisano 'misktur' zamiast 'mikstur'.",
-    "evidence": "Nie można korzystać z misktur życia.",
-    "relatedSources": [
-      "tworzenie_postaci/perki.md"
-    ],
-    "relatedEntryIds": [
-      "pakt_feniksa"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "perki_typo_poczatku",
-    "name": "Perki: literówka 'poczatku'",
-    "source": "tworzenie_postaci/perki.md",
-    "kind": "typo",
-    "details": "W opisie perka Umysł ponad materią zapisano 'poczatku' zamiast 'początku'.",
-    "evidence": "Trwa do poczatku kolejnej tury.",
-    "relatedSources": [
-      "tworzenie_postaci/perki.md"
-    ],
-    "relatedEntryIds": [
-      "umysł_ponad_materią"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "perki_typo_zapewani",
-    "name": "Perki: literówka 'Zapewani'",
-    "source": "tworzenie_postaci/perki.md",
-    "kind": "typo",
-    "details": "W opisie perka Życie na krawędzi zapisano 'Zapewani' zamiast 'Zapewnia'.",
-    "evidence": "Zapewani niewrażliwość na obrażenia od chaosu i świętości.",
-    "relatedSources": [
-      "tworzenie_postaci/perki.md"
-    ],
-    "relatedEntryIds": [
-      "życie_na_krawędzi"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "perki_typo_zwiekszaja_sie",
-    "name": "Perki: zapis 'zwiększają sie'",
-    "source": "tworzenie_postaci/perki.md",
-    "kind": "typo",
-    "details": "W opisie perka Zaufana kompania zapisano 'sie' zamiast 'się'.",
-    "evidence": "Zadawane obrażenia zwiększają sie o jedną kostkę",
-    "relatedSources": [
-      "tworzenie_postaci/perki.md"
-    ],
-    "relatedEntryIds": [
-      "zaufana_kompania"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
     "id": "perki_zabliźniona_wiara_bariera",
     "name": "Perki: Zabliźniona wiara - '1 Bariery' nieprecyzyjne",
     "source": "tworzenie_postaci/perki.md",
@@ -4471,86 +2303,6 @@
     ],
     "relatedEntryIds": [
       "pierścień_odkrywcy"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "pierścionek_stymulujący_typo_opuszczków",
-    "name": "Pierścionek Stymulujący: literówka 'opuszczków'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/pierścionek_stymulujący.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"opuszczków\" zamiast \"opuszków\".",
-    "evidence": "niezwykle stymulującymi dla opuszczków palców grawerunkiem",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/pierścionek_stymulujący.md"
-    ],
-    "relatedEntryIds": [
-      "pierścionek_stymulujący"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "pierścionek_z_języczkiem_typo_częśc",
-    "name": "Pierścionek z Języczkiem: literówka 'częśc'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/pierścionek_z_języczkiem.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"częśc\" zamiast \"część\".",
-    "evidence": "toksyna ropuchy pobudza częśc mózgu",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/pierścionek_z_języczkiem.md"
-    ],
-    "relatedEntryIds": [
-      "pierścionek_z_języczkiem"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "plazmoid_typo_pochloniety",
-    "name": "Plazmoid: literówka 'Pochłoniety'",
-    "source": "tworzenie_postaci/rasy/plazmoid.md",
-    "kind": "typo",
-    "details": "W opisie aktywnej umiejętności 'Pochłonięcie' zapis 'Pochłoniety' zamiast 'Pochłonięty'.",
-    "evidence": "Pochłoniety przeciwnik jest traktowany jako Unieruchomiony",
-    "relatedSources": [
-      "tworzenie_postaci/rasy/plazmoid.md"
-    ],
-    "relatedEntryIds": [
-      "plazmoid"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "plazmoid_typo_uytrzymac",
-    "name": "Plazmoid: literówka 'uytrzymać'",
-    "source": "tworzenie_postaci/rasy/plazmoid.md",
-    "kind": "typo",
-    "details": "W opisie aktywnej umiejętności 'Pochłonięcie' zapis 'uytrzymać' zamiast 'utrzymać'.",
-    "evidence": "Plazmoid musi wykonać test Atletyki, aby uytrzymać pochłoniętego przeciwnika w sobie.",
-    "relatedSources": [
-      "tworzenie_postaci/rasy/plazmoid.md"
-    ],
-    "relatedEntryIds": [
-      "plazmoid"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "plazmoid_typo_zrecznosc",
-    "name": "Plazmoid: odmiana 'do Zręczność'",
-    "source": "tworzenie_postaci/rasy/plazmoid.md",
-    "kind": "typo",
-    "details": "W sekcji Bonusy zapis '+2 do Zręczność' zamiast poprawnej formy dopełniacza 'do Zręczności'.",
-    "evidence": "* +2 do Zręczność",
-    "relatedSources": [
-      "tworzenie_postaci/rasy/plazmoid.md"
-    ],
-    "relatedEntryIds": [
-      "plazmoid"
     ],
     "status": "detailed",
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
@@ -4684,38 +2436,6 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
-    "id": "przerwy_typo_aktynosci",
-    "kind": "typo",
-    "details": "We wstępie zapisano 'aktyności' zamiast 'aktywności'.",
-    "evidence": "aczkolwiek nie wyczerpuje ona listy potencjalnych aktyności",
-    "relatedSources": [
-      "mechaniki_bazowe/przerwy_miedzy_przygodami.md"
-    ],
-    "relatedEntryIds": [
-      "przerwy_miedzy_przygodami"
-    ],
-    "name": "Przerwy: literówka 'aktyności'",
-    "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "przerwy_typo_nbiezbednych",
-    "kind": "typo",
-    "details": "W liście elementów do ustalenia przy wytwórstwie zapisano 'nbiezbędnych' zamiast 'niezbędnych'.",
-    "evidence": "* Koszt składników nbiezbędnych do wytworzenia",
-    "relatedSources": [
-      "mechaniki_bazowe/przerwy_miedzy_przygodami.md"
-    ],
-    "relatedEntryIds": [
-      "wytworstwo_w_przerwie"
-    ],
-    "name": "Przerwy: literówka 'nbiezbędnych'",
-    "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
     "id": "przerwy_typo_nekromanta",
     "kind": "typo",
     "details": "We wstępie zapisano 'nekromanta' małą literą w środku zdania, podczas gdy inne nazwy profesji/klas pisane są wielką literą.",
@@ -4727,38 +2447,6 @@
       "przerwy_miedzy_przygodami"
     ],
     "name": "Przerwy: niekonsekwentna kapitalizacja 'nekromanta'",
-    "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "przerwy_typo_ostać",
-    "kind": "typo",
-    "details": "W sekcji 'Impreza okolicznościowa' zapisano 'ostać' zamiast 'postać'.",
-    "evidence": "W ramach akcji, ostać wyprawia imprezę",
-    "relatedSources": [
-      "mechaniki_bazowe/przerwy_miedzy_przygodami.md"
-    ],
-    "relatedEntryIds": [
-      "impreza_okolicznosciowa"
-    ],
-    "name": "Przerwy: literówka 'ostać'",
-    "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "przerwy_typo_tymczosowe",
-    "kind": "typo",
-    "details": "W sekcji 'Kreatywna księgowość' zapisano 'tymczosowe' zamiast 'tymczasowe'.",
-    "evidence": "Postać stara się zorganizować tymczosowe dodatkowe środki.",
-    "relatedSources": [
-      "mechaniki_bazowe/przerwy_miedzy_przygodami.md"
-    ],
-    "relatedEntryIds": [
-      "kreatywna_ksiegowosc"
-    ],
-    "name": "Przerwy: literówka 'tymczosowe'",
     "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
     "status": "detailed",
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
@@ -4793,38 +2481,6 @@
     "relatedEntryIds": [
       "przewoźnik"
     ],
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "przewoznik_typo_podrecznnych",
-    "name": "Przewoźnik: literówka 'podręcznnych'",
-    "source": "tworzenie_postaci/profesje/przewoźnik.md",
-    "status": "detailed",
-    "kind": "typo",
-    "details": "W opisie pasywnej cechy 'Pewny ładunek' występuje zapis 'podręcznnych' zamiast 'podręcznych'.",
-    "evidence": "maksymalne zużycia przedmiotów podręcznnych są zwiększone o 1",
-    "relatedSources": [
-      "tworzenie_postaci/profesje/przewoźnik.md"
-    ],
-    "relatedEntryIds": [
-      "przewoźnik"
-    ],
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "rogaty_hełm_najeźdzcy_typo_nazwa",
-    "name": "Rogaty Hełm Najeźdzcy: literówka w nazwie",
-    "source": "ekwipunek/przedmioty_magiczne/potężne/rogaty_hełm_najeźdzcy.md",
-    "kind": "typo",
-    "details": "Nazwa przedmiotu zawiera zapis \"Najeźdzcy\" zamiast \"Najeźdźcy\".",
-    "evidence": "# Rogaty Hełm Najeźdzcy",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/potężne/rogaty_hełm_najeźdzcy.md"
-    ],
-    "relatedEntryIds": [
-      "rogaty_hełm_najeźdzcy"
-    ],
-    "status": "detailed",
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
@@ -5004,134 +2660,6 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
-    "id": "rękawice_do_podnoszenia_ciężarów_typo_nazwa",
-    "name": "Rękwice do Podnoszenia Ciężarów: literówka w nazwie",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_do_podnoszenia_ciężarów.md",
-    "kind": "typo",
-    "details": "Nazwa przedmiotu zawiera zapis \"Rękwice\" zamiast \"Rękawice\".",
-    "evidence": "# Rękwice do Podnoszenia Ciężarów",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_do_podnoszenia_ciężarów.md"
-    ],
-    "relatedEntryIds": [
-      "rękawice_do_podnoszenia_ciężarów"
-    ],
-    "status": "detailed",
-    "revision": "0f3239726b687f085593266a088c843f63d032ce"
-  },
-  {
-    "id": "rękawice_do_przesadzania_typo_bezpieczeniejsze",
-    "name": "Rękawice Do Przesadzania: literówka 'bezpieczeniejsze'",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/rękawice_do_przesadzania.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"bezpieczeniejsze\" zamiast \"bezpieczniejsze\".",
-    "evidence": "nigdy nie było bezpieczeniejsze!",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/rzadkie/rękawice_do_przesadzania.md"
-    ],
-    "relatedEntryIds": [
-      "rękawice_do_przesadzania"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "rękawice_do_przesadzania_typo_niezidentyifkowanych",
-    "name": "Rękawice Do Przesadzania: literówka 'niezidentyifkowanych'",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/rękawice_do_przesadzania.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"niezidentyifkowanych\" zamiast \"niezidentyfikowanych\".",
-    "evidence": "innych bliżej niezidentyifkowanych kolekcji obiektów",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/rzadkie/rękawice_do_przesadzania.md"
-    ],
-    "relatedEntryIds": [
-      "rękawice_do_przesadzania"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "rękawice_srebrnego_splotu_typo_nazwa",
-    "name": "Rękwice Srebrnego Splotu: literówka w nazwie",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_srebrnego_splotu.md",
-    "kind": "typo",
-    "details": "Nazwa przedmiotu zawiera zapis \"Rękwice\" zamiast \"Rękawice\".",
-    "evidence": "# Rękwice Srebrnego Splotu",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_srebrnego_splotu.md"
-    ],
-    "relatedEntryIds": [
-      "rękawice_srebrnego_splotu"
-    ],
-    "status": "detailed",
-    "revision": "0f3239726b687f085593266a088c843f63d032ce"
-  },
-  {
-    "id": "rękawice_srebrnego_splotu_typo_poznokcie",
-    "name": "Rękwice Srebrnego Splotu: literówka 'poznokcie'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_srebrnego_splotu.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"poznokcie\" zamiast \"paznokcie\".",
-    "evidence": "a nie miał poznokcie mniejsze w trakcie jazdy",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_srebrnego_splotu.md"
-    ],
-    "relatedEntryIds": [
-      "rękawice_srebrnego_splotu"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "sabotazysta_typo_intregralnej",
-    "name": "Sabotażysta: literówka 'intregralnej'",
-    "source": "tworzenie_postaci/klasy/sabotażysta.md",
-    "kind": "typo",
-    "details": "W wzmocnieniu umiejętności Rozbrojenie użyto zapisu 'intregralnej' zamiast 'integralnej'.",
-    "evidence": "Unieszkodliwienie broni intregralnej na 1 rundę - 3 staminy",
-    "relatedSources": [
-      "tworzenie_postaci/klasy/sabotażysta.md"
-    ],
-    "relatedEntryIds": [
-      "sabotażysta"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "sabotazysta_typo_nnaley",
-    "name": "Sabotażysta: literówka 'nnależy'",
-    "source": "tworzenie_postaci/klasy/sabotażysta.md",
-    "kind": "typo",
-    "details": "W opisie umiejętności eksploracyjnej Odwrócenie uwagi użyto zapisu 'nnależy'.",
-    "evidence": "W takim przypadku nnależy wykonać test Zwinnych dłoni.",
-    "relatedSources": [
-      "tworzenie_postaci/klasy/sabotażysta.md"
-    ],
-    "relatedEntryIds": [
-      "sabotażysta"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "sabotazysta_typo_obrazen",
-    "name": "Sabotażysta: literówka 'obrazeń'",
-    "source": "tworzenie_postaci/klasy/sabotażysta.md",
-    "kind": "typo",
-    "details": "W wzmocnieniu umiejętności Opóźniony zapłon użyto zapisu 'obrazeń' zamiast 'obrażeń'.",
-    "evidence": "Zwiększenie obrazeń o 1k10 - 1 staminy",
-    "relatedSources": [
-      "tworzenie_postaci/klasy/sabotażysta.md"
-    ],
-    "relatedEntryIds": [
-      "sabotażysta"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
     "id": "sabotazysta_typo_orezy",
     "name": "Sabotażysta: literówka 'oręży'",
     "source": "tworzenie_postaci/klasy/sabotażysta.md",
@@ -5168,33 +2696,17 @@
   {
     "id": "skrytoboja_duplikat_alchemik",
     "name": "Skrytobójca: umiejętności skopiowane od Alchemika",
-    "source": "tworzenie_postaci/klasy/skrytobójca.md",
+    "source": "tworzenie_postaci/klasy/skrytobójca_(nieskończone).md",
     "kind": "conflict",
     "details": "Sekcja 'Aktywne umiejętności bojowe do wykupienia' Skrytobójcy zawiera umiejętności Spopielenie / Zamrożenie, Kto wie?, Trawiący kwas i Wybuch, których opisy wprost odnoszą się do Alchemika ('Alchemik popala lub zamraża...', 'Alchemik zadaje obrażenia...'). Wygląda to na błędne skopiowanie treści z pliku alchemik.md.",
     "evidence": "Opis - Alchemik popala lub zamraża cały wybrany sektor w zasięgu",
     "relatedSources": [
-      "tworzenie_postaci/klasy/skrytobójca.md",
+      "tworzenie_postaci/klasy/skrytobójca_(nieskończone).md",
       "tworzenie_postaci/klasy/alchemik.md"
     ],
     "relatedEntryIds": [
       "skrytobójca",
       "alchemik"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "skrytoboja_typo_wmocnienia",
-    "name": "Skrytobójca: literówka 'Wmocnienia'",
-    "source": "tworzenie_postaci/klasy/skrytobójca.md",
-    "kind": "typo",
-    "details": "W sekcji umiejętności Odsłonięcie nagłówek wzmocnień zapisano jako 'Wmocnienia'.",
-    "evidence": "* Wmocnienia",
-    "relatedSources": [
-      "tworzenie_postaci/klasy/skrytobójca.md"
-    ],
-    "relatedEntryIds": [
-      "skrytobójca"
     ],
     "status": "detailed",
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
@@ -5207,22 +2719,6 @@
     "kind": "typo",
     "details": "W predyspozycjach drugorzędnych zapisano 'Sztuka przetrwania' małą literą, podczas gdy w innych plikach statystyka występuje jako 'Sztuka Przetrwania'.",
     "evidence": "* Sztuka przetrwania",
-    "relatedSources": [
-      "tworzenie_postaci/profesje/śmieciarz.md"
-    ],
-    "relatedEntryIds": [
-      "śmieciarz"
-    ],
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "smieciarz_typo_znajdujace",
-    "name": "Śmieciarz: literówka 'znajdujace'",
-    "source": "tworzenie_postaci/profesje/śmieciarz.md",
-    "status": "detailed",
-    "kind": "typo",
-    "details": "W opisie aktywnej umiejętności 'Wyniesienie śmieci' występuje zapis 'znajdujace' zamiast 'znajdujące'.",
-    "evidence": "przeszukać dowolne zwłoki znajdujace się w tym samym sektorze co on",
     "relatedSources": [
       "tworzenie_postaci/profesje/śmieciarz.md"
     ],
@@ -5248,54 +2744,6 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
-    "id": "szlachic_typo_lingiwstyka",
-    "name": "Szlachic: literówka 'Lingiwstyka'",
-    "source": "tworzenie_postaci/profesje/szlachic.md",
-    "status": "detailed",
-    "kind": "typo",
-    "details": "W liście testów przerwy profesyjnej występuje 'Lingiwstyka' zamiast 'Lingwistyka'.",
-    "evidence": "* Lingiwstyka",
-    "relatedSources": [
-      "tworzenie_postaci/profesje/szlachic.md"
-    ],
-    "relatedEntryIds": [
-      "szlachic"
-    ],
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "szlachic_typo_powala",
-    "name": "Szlachic: literówka 'powala'",
-    "source": "tworzenie_postaci/profesje/szlachic.md",
-    "status": "detailed",
-    "kind": "typo",
-    "details": "W opisie sojuszu z Rodem Larethorn występuje 'powala dwóm Bohaterom Gracza' zamiast 'pozwala'.",
-    "evidence": "Sojusz - W trakcie walki, raz na rundę, powala dwóm Bohaterom Gracza na wykonanie swoich tur pod rząd bez tury przeciwnika między nimi. *",
-    "relatedSources": [
-      "tworzenie_postaci/profesje/szlachic.md"
-    ],
-    "relatedEntryIds": [
-      "szlachic"
-    ],
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "szlachic_typo_szlachci",
-    "name": "Szlachic: literówka 'szlachci'",
-    "source": "tworzenie_postaci/profesje/szlachic.md",
-    "status": "detailed",
-    "kind": "typo",
-    "details": "W opisie przerwy profesyjnej występuje 'szlachci może wykonać' zamiast 'szlachcic może wykonać'.",
-    "evidence": "W ramach akcji przerwy, szlachci może wykonać następujące testy i zsumować sukcesy:",
-    "relatedSources": [
-      "tworzenie_postaci/profesje/szlachic.md"
-    ],
-    "relatedEntryIds": [
-      "szlachic"
-    ],
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
     "id": "szlachic_typo_teunilaa",
     "name": "Szlachic: nietypowy zapis 'Teunìlaa'",
     "source": "tworzenie_postaci/profesje/szlachic.md",
@@ -5309,22 +2757,6 @@
     "relatedEntryIds": [
       "szlachic"
     ],
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "taktyk_typo_predyszpozycje",
-    "name": "Taktyk: literówka 'Predyszpozycje'",
-    "source": "tworzenie_postaci/klasy/taktyk.md",
-    "kind": "typo",
-    "details": "Nagłówek sekcji predyspozycji zapisano jako 'Predyszpozycje' zamiast 'Predyspozycje'.",
-    "evidence": "## Predyszpozycje",
-    "relatedSources": [
-      "tworzenie_postaci/klasy/taktyk.md"
-    ],
-    "relatedEntryIds": [
-      "taktyk"
-    ],
-    "status": "detailed",
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
@@ -5396,7 +2828,7 @@
     "id": "testy_brak_okreslenia_krytycznego_sukcesu",
     "kind": "missing_detail",
     "details": "Sekcja o krytycznych sukcesach i porażkach mówi, że mają one wyższą wartość od dowolnego poziomu sukcesów lub porażek, ale nie podaje konkretnej wartości mechanicznej.",
-    "evidence": "Mają one wyższą wartość od dowolnego poziomu sukeców lub porażek, również w przypadku testów przeciwstawnych.",
+    "evidence": "Mają one wyższą wartość od dowolnego poziomu sukcesów lub porażek, również w przypadku testów przeciwstawnych.",
     "relatedSources": [
       "mechaniki_bazowe/testy.md"
     ],
@@ -5622,86 +3054,6 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
-    "id": "testy_typo_rozicy",
-    "kind": "typo",
-    "details": "W sekcji o sukcesach i porażkach zapisano 'różicy' zamiast 'różnicy'.",
-    "evidence": "na każdy punkt różicy pomiędzy wynikiem rzutu a testowaną statystyką",
-    "relatedSources": [
-      "mechaniki_bazowe/testy.md"
-    ],
-    "relatedEntryIds": [
-      "sukcesy_i_porażki"
-    ],
-    "name": "Testy: literówka 'różicy'",
-    "source": "mechaniki_bazowe/testy.md",
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "testy_typo_sukecow",
-    "kind": "typo",
-    "details": "W sekcji o krytycznych sukcesach zapisano 'sukeców' zamiast 'sukcesów'.",
-    "evidence": "Mają one wyższą wartość od dowolnego poziomu sukeców lub porażek",
-    "relatedSources": [
-      "mechaniki_bazowe/testy.md"
-    ],
-    "relatedEntryIds": [
-      "krytyczny_sukces"
-    ],
-    "name": "Testy: literówka 'sukeców'",
-    "source": "mechaniki_bazowe/testy.md",
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "tytan_typo_suckes",
-    "name": "Tytan: literówka 'Suckes'",
-    "source": "tworzenie_postaci/klasy/tytan.md",
-    "kind": "typo",
-    "details": "W opisie umiejętności eksploracyjnej Wolny spadek użyto zapisu 'Suckes' zamiast 'Sukces'.",
-    "evidence": "Suckes oznacza zyskanie odporności na obrażenia od upadku.",
-    "relatedSources": [
-      "tworzenie_postaci/klasy/tytan.md"
-    ],
-    "relatedEntryIds": [
-      "tytan"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "tytan_typo_tetsu",
-    "name": "Tytan: literówka 'tetsu'",
-    "source": "tworzenie_postaci/klasy/tytan.md",
-    "kind": "typo",
-    "details": "W opisie umiejętności eksploracyjnej Wolny spadek użyto zapisu 'tetsu' zamiast 'testu'.",
-    "evidence": "Podczas upadku pozwala na wykonanie tetsu Wytrzymałości.",
-    "relatedSources": [
-      "tworzenie_postaci/klasy/tytan.md"
-    ],
-    "relatedEntryIds": [
-      "tytan"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "wieczne_spojrzenie_typo_zobaczli",
-    "name": "Wieczne Spojrzenie: literówka 'zobaczli'",
-    "source": "ekwipunek/przedmioty_magiczne/potężne/wieczne_spojrzenie.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"zobaczli\" zamiast \"zobaczyli\".",
-    "evidence": "To co zobaczli było tym w co uwierzyli",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/potężne/wieczne_spojrzenie.md"
-    ],
-    "relatedEntryIds": [
-      "wieczne_spojrzenie"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
     "id": "wilgotna_chwała_typo_wyszczerbiona",
     "name": "Wilgotna Chwała: literówka 'wyszczerbiona'",
     "source": "ekwipunek/przedmioty_magiczne/rzadkie/wilgotna_chwała.md",
@@ -5752,54 +3104,6 @@
     "revision": "0f3239726b687f085593266a088c843f63d032ce"
   },
   {
-    "id": "wladca_lasow_typo_miejse",
-    "name": "Władca Lasów: literówka 'miejse'",
-    "source": "tworzenie_postaci/klasy/władca_lasów.md",
-    "kind": "typo",
-    "details": "W opisie umiejętności Podróż Przez Knieje użyto zapisu 'miejse' zamiast 'miejsce'.",
-    "evidence": "natychmiastowo przemieszcza się w wybrane miejse w wybranym sektorze w zasięgu.",
-    "relatedSources": [
-      "tworzenie_postaci/klasy/władca_lasów.md"
-    ],
-    "relatedEntryIds": [
-      "władca_lasów"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "wladca_lasow_typo_niedzwiedzia",
-    "name": "Władca Lasów: literówka 'niedżwiedzia'",
-    "source": "tworzenie_postaci/klasy/władca_lasów.md",
-    "kind": "typo",
-    "details": "W opisie umiejętności Miodny Zew Lasu użyto zapisu 'niedżwiedzia' zamiast 'niedźwiedzia'.",
-    "evidence": "Władca lasu przywołuje na pomoc 1 niedżwiedzia",
-    "relatedSources": [
-      "tworzenie_postaci/klasy/władca_lasów.md"
-    ],
-    "relatedEntryIds": [
-      "władca_lasów"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "wladca_lasow_typo_wmocnienia",
-    "name": "Władca Lasów: literówka 'Wmocnienia'",
-    "source": "tworzenie_postaci/klasy/władca_lasów.md",
-    "kind": "typo",
-    "details": "W sekcji umiejętności Las Jest Wszędzie nagłówek wzmocnień zapisano jako 'Wmocnienia'.",
-    "evidence": "* Wmocnienia",
-    "relatedSources": [
-      "tworzenie_postaci/klasy/władca_lasów.md"
-    ],
-    "relatedEntryIds": [
-      "władca_lasów"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
     "id": "wrzoścce_hazardowego_biegu_typo_nazwa",
     "name": "Wrzoścce Hazardowego Biegu: literówka w nazwie",
     "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/wrzoścce_hazardowego_biegu.md",
@@ -5811,22 +3115,6 @@
     ],
     "relatedEntryIds": [
       "wrzoścce_hazardowego_biegu"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "wybebeszacz_typo_pozostawiac",
-    "name": "Wybebeszacz: literówka 'pozostawiac'",
-    "source": "ekwipunek/przedmioty_magiczne/potężne/wybebeszacz.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"pozostawiac\" zamiast \"pozostawiać\".",
-    "evidence": "aby zawsze być nieco zardzewiałym i pozostawiac utlenione żelazo",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/potężne/wybebeszacz.md"
-    ],
-    "relatedEntryIds": [
-      "wybebeszacz"
     ],
     "status": "detailed",
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
@@ -5848,44 +3136,12 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
-    "id": "zapomniany_strażnik_typo_gałężi",
-    "name": "Zapomniany Strażnik: literówka 'gałężi'",
-    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/zapomniany_strażnik.md",
-    "kind": "typo",
-    "details": "W opisie zapisano \"gałężi\" zamiast \"gałęzi\".",
-    "evidence": "Zbroja została wykonana z poskręcanych i nachodzących na siebie gałężi wierzby.",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/arcymistrzowskie/zapomniany_strażnik.md"
-    ],
-    "relatedEntryIds": [
-      "zapomniany_strażnik"
-    ],
-    "status": "detailed",
-    "revision": "0f3239726b687f085593266a088c843f63d032ce"
-  },
-  {
     "id": "zaprzysiężona_framuga_energia",
     "name": "Zaprzysiężona Framuga Dębowego Oporu: generowanie Energii",
     "source": "ekwipunek/przedmioty_magiczne/mityczny/zaprzysiężona_framuga_dębowego_oporu.md",
     "kind": "ambiguity",
     "details": "Modyfikator mówi o generowaniu 1k4 Energii, ale Energia nie jest zdefiniowaną statystyką w systemie. Nie jest jasne, czy chodzi o Staminę / Manę, czy o osobny zasób.",
     "evidence": "* Każdy udany test defensywny generuje 1k4 Energii",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/mityczny/zaprzysiężona_framuga_dębowego_oporu.md"
-    ],
-    "relatedEntryIds": [
-      "zaprzysiężona_framuga_dębowego_oporu"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "zaprzysiężona_framuga_typo_odpornosć",
-    "name": "Zaprzysiężona Framuga Dębowego Oporu: literówka 'Odpornosć'",
-    "source": "ekwipunek/przedmioty_magiczne/mityczny/zaprzysiężona_framuga_dębowego_oporu.md",
-    "kind": "typo",
-    "details": "W modyfikatorach zapisano \"Odpornosć\" zamiast \"Odporność\".",
-    "evidence": "* Odpornosć na obrażenia święte",
     "relatedSources": [
       "ekwipunek/przedmioty_magiczne/mityczny/zaprzysiężona_framuga_dębowego_oporu.md"
     ],
@@ -5944,22 +3200,6 @@
     "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
   },
   {
-    "id": "zeglarz_typo_stabline",
-    "name": "Żeglarz: literówka 'Stabline'",
-    "source": "tworzenie_postaci/profesje/żeglarz.md",
-    "status": "detailed",
-    "kind": "typo",
-    "details": "W nazwie pasywnej cechy specjalnej występuje zapis 'Stabline nogi' zamiast 'Stabilne nogi'.",
-    "evidence": "Stabline nogi - Żeglarz nie otrzymuje kar do testów i walki za chybotliwy grunt, sztorm ani za wykonywanie akcji w ruchu.",
-    "relatedSources": [
-      "tworzenie_postaci/profesje/żeglarz.md"
-    ],
-    "relatedEntryIds": [
-      "żeglarz"
-    ],
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
     "id": "zombie_tag_szkielet",
     "name": "Zombie: tag 'Szkielet'",
     "source": "bestiariusz/nieumarli/zombie.md",
@@ -5979,11 +3219,11 @@
   },
   {
     "id": "łowca_głebin_brak_opisu",
-    "name": "Łowca Głebin: brak sekcji Opis",
+    "name": "Łowca Głębin: brak sekcji Opis",
     "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/łowca_głebin.md",
     "kind": "missing_detail",
     "details": "Plik zawiera jedynie typ, rzadkość i modyfikatory, bez sekcji Opis obecnej w pozostałych przedmiotach magicznych.",
-    "evidence": "* Złowione ryby są conajmniej niezwykłe",
+    "evidence": "* Złowione ryby są co najmniej niezwykłe",
     "relatedSources": [
       "ekwipunek/przedmioty_magiczne/arcymistrzowskie/łowca_głebin.md"
     ],
@@ -5995,7 +3235,7 @@
   },
   {
     "id": "łowca_głebin_typ_wedka",
-    "name": "Łowca Głebin: typ Wędka poza listą typów przedmiotów",
+    "name": "Łowca Głębin: typ Wędka poza listą typów przedmiotów",
     "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/łowca_głebin.md",
     "kind": "other",
     "details": "Przedmiot zadeklarowano jako Wędka, co nie odpowiada żadnemu z bazowych typów przedmiotów magicznych wymienionych w tabeli bazy przedmiotu w craftingu. Nie jest jasne, do której kategorii ekwipunku należy.",
@@ -6003,38 +3243,6 @@
     "relatedSources": [
       "ekwipunek/przedmioty_magiczne/arcymistrzowskie/łowca_głebin.md",
       "mechaniki_bazowe/crafting.md"
-    ],
-    "relatedEntryIds": [
-      "łowca_głebin"
-    ],
-    "status": "detailed",
-    "revision": "65cce70e28f70cde8c97ef4ae7eb8f49db86b31e"
-  },
-  {
-    "id": "łowca_głebin_typo_conajmniej",
-    "name": "Łowca Głebin: literówka 'conajmniej'",
-    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/łowca_głebin.md",
-    "kind": "typo",
-    "details": "W modyfikatorze zapisano \"conajmniej\" zamiast \"co najmniej\".",
-    "evidence": "* Złowione ryby są conajmniej niezwykłe",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/arcymistrzowskie/łowca_głebin.md"
-    ],
-    "relatedEntryIds": [
-      "łowca_głebin"
-    ],
-    "status": "detailed",
-    "revision": "0f3239726b687f085593266a088c843f63d032ce"
-  },
-  {
-    "id": "łowca_głebin_typo_nazwa",
-    "name": "Łowca Głebin: literówka w nazwie",
-    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/łowca_głebin.md",
-    "kind": "typo",
-    "details": "Nazwa przedmiotu zawiera zapis \"Głebin\" zamiast \"Głębin\".",
-    "evidence": "# Łowca Głebin",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/arcymistrzowskie/łowca_głebin.md"
     ],
     "relatedEntryIds": [
       "łowca_głebin"
@@ -6060,54 +3268,6 @@
     "revision": "0f3239726b687f085593266a088c843f63d032ce"
   },
   {
-    "id": "serce_zniszczenia_typo_niezlicoznych",
-    "name": "Serce Zniszczenia: literówka 'niezlicoznych'",
-    "source": "ekwipunek/przedmioty_magiczne/potężne/serce_zniszczenia.md",
-    "kind": "typo",
-    "details": "W opisie użyto zapisu „niezlicoznych” zamiast „niezliczonych”.",
-    "evidence": "* Wykute z krwi niezlicoznych wojen,",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/potężne/serce_zniszczenia.md"
-    ],
-    "relatedEntryIds": [
-      "serce_zniszczenia"
-    ],
-    "status": "detailed",
-    "revision": "d8a352450e093cdb4d1bb032f5b3b8d70db9ac9d"
-  },
-  {
-    "id": "koło_wozu_typo_przeciniwka",
-    "name": "Koło Wozu: literówka 'przeciniwka'",
-    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/koło_wozu_skrzydlatej_fortecy.md",
-    "kind": "typo",
-    "details": "W opisie spaczenia użyto zapisu „przeciniwka” zamiast „przeciwnika”.",
-    "evidence": "* Każde pokonanie przeciniwka zabiera 1 Energii",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/arcymistrzowskie/koło_wozu_skrzydlatej_fortecy.md"
-    ],
-    "relatedEntryIds": [
-      "koło_wozu_skrzydlatej_fortecy"
-    ],
-    "status": "detailed",
-    "revision": "d8a352450e093cdb4d1bb032f5b3b8d70db9ac9d"
-  },
-  {
-    "id": "korona_bladego_typo_rozkwitajace",
-    "name": "Korona Bladego Króla: literówka 'rozkwitajace'",
-    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/korona_bladego_króla_za_zasłoną_nocy.md",
-    "kind": "typo",
-    "details": "W opisie użyto zapisu „rozkwitajace” zamiast „rozkwitające”.",
-    "evidence": "rozkwitajace stalowymi kwiatami zwycięstwa",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/arcymistrzowskie/korona_bladego_króla_za_zasłoną_nocy.md"
-    ],
-    "relatedEntryIds": [
-      "korona_bladego_króla_za_zasłoną_nocy"
-    ],
-    "status": "detailed",
-    "revision": "d8a352450e093cdb4d1bb032f5b3b8d70db9ac9d"
-  },
-  {
     "id": "rzadkosc_arcymistrzowska_odmiana",
     "name": "Rzadkość arcymistrzowska: odmiana w nagłówkach",
     "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/korona_bladego_króla_za_zasłoną_nocy.md",
@@ -6125,38 +3285,6 @@
       "korona_zwycięzcy_brązowej_brody",
       "plazmoidyczne_symulakrum",
       "koło_wozu_skrzydlatej_fortecy"
-    ],
-    "status": "detailed",
-    "revision": "d8a352450e093cdb4d1bb032f5b3b8d70db9ac9d"
-  },
-  {
-    "id": "przerwy_typo_sukescow",
-    "name": "Przerwy: literówka 'sukesców'",
-    "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
-    "kind": "typo",
-    "details": "W nowej zasadzie Treningu użyto zapisu „sukesców” zamiast „sukcesów”.",
-    "evidence": "ilość sukesców / 3",
-    "relatedSources": [
-      "mechaniki_bazowe/przerwy_miedzy_przygodami.md"
-    ],
-    "relatedEntryIds": [
-      "trening"
-    ],
-    "status": "detailed",
-    "revision": "d8a352450e093cdb4d1bb032f5b3b8d70db9ac9d"
-  },
-  {
-    "id": "przebudzenie_typo_wtargiecie",
-    "name": "Przebudzenie Destrukcji: literówka 'wtargięcie'",
-    "source": "ekwipunek/przedmioty_magiczne/mityczny/przebudzenie_destrukcji_z_rozkazu_lotu_pochodu_duchów.md",
-    "kind": "typo",
-    "details": "W opisie użyto zapisu „wtargięcie” zamiast „wtargnięcie”.",
-    "evidence": "Nie dozwól nikomu na wtargięcie tu",
-    "relatedSources": [
-      "ekwipunek/przedmioty_magiczne/mityczny/przebudzenie_destrukcji_z_rozkazu_lotu_pochodu_duchów.md"
-    ],
-    "relatedEntryIds": [
-      "przebudzenie_destrukcji_z_rozkazu_lotu_pochodu_duchów"
     ],
     "status": "detailed",
     "revision": "d8a352450e093cdb4d1bb032f5b3b8d70db9ac9d"

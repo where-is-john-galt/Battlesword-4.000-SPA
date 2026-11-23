@@ -121,7 +121,7 @@
   {
     "id": "tarcza_adamntytowa",
     "type": "armor",
-    "name": "Tarcza adamntytowa",
+    "name": "Tarcza adamantytowa",
     "source": "ekwipunek/pancerze.md",
     "status": "detailed"
   },
@@ -142,7 +142,7 @@
   {
     "id": "zbroja_adamntytowa",
     "type": "armor",
-    "name": "Zbroja adamntytowa",
+    "name": "Zbroja adamantytowa",
     "source": "ekwipunek/pancerze.md",
     "status": "detailed"
   },
@@ -1211,34 +1211,6 @@
     "status": "detailed"
   },
   {
-    "id": "alchemik_typo_besposredni",
-    "type": "inconsistency",
-    "name": "Alchemik: zapis 'Bespośredni'",
-    "source": "tworzenie_postaci/klasy/alchemik.md",
-    "status": "detailed"
-  },
-  {
-    "id": "alchemik_typo_misktura",
-    "type": "inconsistency",
-    "name": "Alchemik: literówka 'miskturę'",
-    "source": "tworzenie_postaci/klasy/alchemik.md",
-    "status": "detailed"
-  },
-  {
-    "id": "alchemik_typo_wmocnienia",
-    "type": "inconsistency",
-    "name": "Alchemik: literówka 'Wmocnienia'",
-    "source": "tworzenie_postaci/klasy/alchemik.md",
-    "status": "detailed"
-  },
-  {
-    "id": "amulet_alertu_dobrej_okazji_typo_uzytkownika",
-    "type": "inconsistency",
-    "name": "Amulet Alertu Dobrej Okazji: literówka 'uzytkownika'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/amulet_alertu_dobrej_okazji.md",
-    "status": "detailed"
-  },
-  {
     "id": "aptekarz_efekt_22_brak_podmiotu",
     "type": "inconsistency",
     "name": "Aptekarz: efekt 22 bez wskazanego podmiotu",
@@ -1249,27 +1221,6 @@
     "id": "aptekarz_efekt_9_brak_zakresu",
     "type": "inconsistency",
     "name": "Aptekarz: efekt 9 nie precyzuje zakresu HP -1",
-    "source": "tworzenie_postaci/profesje/aptekarz.md",
-    "status": "detailed"
-  },
-  {
-    "id": "aptekarz_typo_eksplopdujace",
-    "type": "inconsistency",
-    "name": "Aptekarz: literówka 'eksplopdujące'",
-    "source": "tworzenie_postaci/profesje/aptekarz.md",
-    "status": "detailed"
-  },
-  {
-    "id": "aptekarz_typo_odpornosc",
-    "type": "inconsistency",
-    "name": "Aptekarz: literówka 'odpornośc'",
-    "source": "tworzenie_postaci/profesje/aptekarz.md",
-    "status": "detailed"
-  },
-  {
-    "id": "aptekarz_typo_zuzycia",
-    "type": "inconsistency",
-    "name": "Aptekarz: literówka 'zuzycia'",
     "source": "tworzenie_postaci/profesje/aptekarz.md",
     "status": "detailed"
   },
@@ -1295,72 +1246,9 @@
     "status": "detailed"
   },
   {
-    "id": "bezczynny_chwyt_północnej_zimy_typo_fizyzne",
-    "type": "inconsistency",
-    "name": "Bezczynny Chwyt Północnej Zimy: literówka 'fizyzne'",
-    "source": "ekwipunek/przedmioty_magiczne/mityczny/bezczynny_chwyt_północnej_zimy.md",
-    "status": "detailed"
-  },
-  {
-    "id": "bezczynny_chwyt_północnej_zimy_typo_odpornośc",
-    "type": "inconsistency",
-    "name": "Bezczynny Chwyt Północnej Zimy: literówka 'Odpornośc'",
-    "source": "ekwipunek/przedmioty_magiczne/mityczny/bezczynny_chwyt_północnej_zimy.md",
-    "status": "detailed"
-  },
-  {
-    "id": "bezczynny_chwyt_północnej_zimy_typo_więcje",
-    "type": "inconsistency",
-    "name": "Bezczynny Chwyt Północnej Zimy: literówka 'więcje'",
-    "source": "ekwipunek/przedmioty_magiczne/mityczny/bezczynny_chwyt_północnej_zimy.md",
-    "status": "detailed"
-  },
-  {
-    "id": "boska_wola_typo_sektrorów",
-    "type": "inconsistency",
-    "name": "Boska Wola: literówka 'sektrorów'",
-    "source": "ekwipunek/przedmioty_magiczne/mityczny/boska_wola.md",
-    "status": "detailed"
-  },
-  {
     "id": "botanik_rosliny_imiona_w_nawiasach",
     "type": "inconsistency",
     "name": "Botanik: imiona graczy w nawiasach przy roślinach",
-    "source": "tworzenie_postaci/profesje/botanik.md",
-    "status": "detailed"
-  },
-  {
-    "id": "botanik_typo_krawienia",
-    "type": "inconsistency",
-    "name": "Botanik: literówka 'Krawienia'",
-    "source": "tworzenie_postaci/profesje/botanik.md",
-    "status": "detailed"
-  },
-  {
-    "id": "botanik_typo_misktury",
-    "type": "inconsistency",
-    "name": "Botanik: literówka 'misktury'",
-    "source": "tworzenie_postaci/profesje/botanik.md",
-    "status": "detailed"
-  },
-  {
-    "id": "botanik_typo_odpornosc",
-    "type": "inconsistency",
-    "name": "Botanik: literówka 'odpornośc'",
-    "source": "tworzenie_postaci/profesje/botanik.md",
-    "status": "detailed"
-  },
-  {
-    "id": "botanik_typo_wykonac",
-    "type": "inconsistency",
-    "name": "Botanik: literówka 'wykonac'",
-    "source": "tworzenie_postaci/profesje/botanik.md",
-    "status": "detailed"
-  },
-  {
-    "id": "botanik_typo_znaduje",
-    "type": "inconsistency",
-    "name": "Botanik: literówka 'znaduje'",
     "source": "tworzenie_postaci/profesje/botanik.md",
     "status": "detailed"
   },
@@ -1386,80 +1274,10 @@
     "status": "detailed"
   },
   {
-    "id": "bron_typo_automatyczie",
-    "type": "inconsistency",
-    "name": "Broń: literówka 'automatyczie'",
-    "source": "ekwipunek/broń.md",
-    "status": "detailed"
-  },
-  {
     "id": "bron_typo_kanalizujacy_rozwinięć",
     "type": "inconsistency",
     "name": "Broń: niejasny zapis 'ilość rozwinięć' w Kanalizujący",
     "source": "ekwipunek/broń.md",
-    "status": "detailed"
-  },
-  {
-    "id": "bron_typo_kawalerysjki",
-    "type": "inconsistency",
-    "name": "Broń: literówka 'Kawalerysjki'",
-    "source": "ekwipunek/broń.md",
-    "status": "detailed"
-  },
-  {
-    "id": "bron_typo_odpowiednia",
-    "type": "inconsistency",
-    "name": "Broń: literówka 'odpowiednia'",
-    "source": "ekwipunek/broń.md",
-    "status": "detailed"
-  },
-  {
-    "id": "bron_typo_offhand_rece",
-    "type": "inconsistency",
-    "name": "Broń: literówka 'z drugiej ręce'",
-    "source": "ekwipunek/broń.md",
-    "status": "detailed"
-  },
-  {
-    "id": "bron_typo_postawowa_ilosc",
-    "type": "inconsistency",
-    "name": "Broń: literówki w słowniczku 'Postawowa ilośc'",
-    "source": "ekwipunek/broń.md",
-    "status": "detailed"
-  },
-  {
-    "id": "bron_typo_wmocnienie",
-    "type": "inconsistency",
-    "name": "Broń: literówka 'wmocnienie'",
-    "source": "ekwipunek/broń.md",
-    "status": "detailed"
-  },
-  {
-    "id": "bron_typo_wszechtronny",
-    "type": "inconsistency",
-    "name": "Broń: literówka 'Wszechtronny'",
-    "source": "ekwipunek/broń.md",
-    "status": "detailed"
-  },
-  {
-    "id": "brązowa_broda_typo_odpornośc",
-    "type": "inconsistency",
-    "name": "Brązowa Broda: literówka 'Odpornośc'",
-    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/brązowa_broda.md",
-    "status": "detailed"
-  },
-  {
-    "id": "buty_kowala_typo_sie",
-    "type": "inconsistency",
-    "name": "Buty Kowala: literówka 'sie'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/buty_kowala.md",
-    "status": "detailed"
-  },
-  {
-    "id": "centaur_typo_wierchowcu",
-    "type": "inconsistency",
-    "name": "Centaur: literówka 'wierchowcu'",
-    "source": "tworzenie_postaci/rasy/centaur.md",
     "status": "detailed"
   },
   {
@@ -1862,55 +1680,6 @@
     "status": "detailed"
   },
   {
-    "id": "crafting_typo_ilosc_uzyc",
-    "type": "inconsistency",
-    "name": "Crafting: literówka 'ilośc'",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_typo_nalezy",
-    "type": "inconsistency",
-    "name": "Crafting: literówka 'nalezy'",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_typo_punkt_eferencyjny",
-    "type": "inconsistency",
-    "name": "Crafting: literówka 'eferencyjny'",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_typo_rowniez",
-    "type": "inconsistency",
-    "name": "Crafting: literówka 'równiez'",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_typo_sektrorow",
-    "type": "inconsistency",
-    "name": "Crafting: literówka 'sektrorów'",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "crafting_typo_wynalaczosc",
-    "type": "inconsistency",
-    "name": "Crafting: literówka 'Wynalaczość'",
-    "source": "mechaniki_bazowe/crafting.md",
-    "status": "detailed"
-  },
-  {
-    "id": "czlowiek_typo_wykonie",
-    "type": "inconsistency",
-    "name": "Człowiek: literówka 'wykonie'",
-    "source": "tworzenie_postaci/rasy/człowiek.md",
-    "status": "detailed"
-  },
-  {
     "id": "czytelnik_wód_typo_inkrustowana",
     "type": "inconsistency",
     "name": "Czytelnik Wód: literówka 'inkrustowana'",
@@ -1925,34 +1694,6 @@
     "status": "detailed"
   },
   {
-    "id": "duchowa_szata_gorzkiego_rozkwitu_typo_odpornośc",
-    "type": "inconsistency",
-    "name": "Duchowa Szata Gorzkiego Rozkwitu: literówka 'Odpornośc'",
-    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/duchowa_szata_gorzkiego_rozkwitu.md",
-    "status": "detailed"
-  },
-  {
-    "id": "duchowa_szata_gorzkiego_rozkwitu_typo_wewątrz",
-    "type": "inconsistency",
-    "name": "Duchowa Szata Gorzkiego Rozkwitu: literówka 'wewątrz'",
-    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/duchowa_szata_gorzkiego_rozkwitu.md",
-    "status": "detailed"
-  },
-  {
-    "id": "gazeciarz_typo_każdy_postac",
-    "type": "inconsistency",
-    "name": "Gazeciarz: niezgodność 'Każdy postać'",
-    "source": "tworzenie_postaci/profesje/gazeciarz.md",
-    "status": "detailed"
-  },
-  {
-    "id": "gazeciarz_typo_otrzymywanne",
-    "type": "inconsistency",
-    "name": "Gazeciarz: literówka 'otrzymywanne'",
-    "source": "tworzenie_postaci/profesje/gazeciarz.md",
-    "status": "detailed"
-  },
-  {
     "id": "gazeciarz_typo_ukosnik",
     "type": "inconsistency",
     "name": "Gazeciarz: literówka 'Ukośnik'",
@@ -1960,44 +1701,9 @@
     "status": "detailed"
   },
   {
-    "id": "idealne_buty_typo_równiez",
-    "type": "inconsistency",
-    "name": "Idealne Buty: literówka 'równiez'",
-    "source": "ekwipunek/przedmioty_magiczne/potężne/idealne_buty.md",
-    "status": "detailed"
-  },
-  {
-    "id": "kawalerzysta_typo_wierchowcem",
-    "type": "inconsistency",
-    "name": "Kawalerzysta: literówka 'wierchowcem'",
-    "source": "tworzenie_postaci/klasy/kawalerzysta.md",
-    "status": "detailed"
-  },
-  {
-    "id": "kon_pociagowy_typo_jezdzca",
-    "type": "inconsistency",
-    "name": "Koń Pociągowy: literówka 'jeźdzca'",
-    "source": "bestiariusz/zwierzaki/koń_pociągowy.md",
-    "status": "detailed"
-  },
-  {
-    "id": "konik_blotny_typo_predkosc",
-    "type": "inconsistency",
-    "name": "Konik błotny: literówka 'prędkośc'",
-    "source": "bestiariusz/zwierzaki/konik_błotny.md",
-    "status": "detailed"
-  },
-  {
     "id": "korona_ze_smoczych_zębów_niezidentyfikowana",
     "type": "inconsistency",
     "name": "Korona ze Smoczych Zębów: adnotacja Niezidentyfikowana",
-    "source": "ekwipunek/przedmioty_magiczne/mityczny/korona_ze_smoczych_zębów.md",
-    "status": "detailed"
-  },
-  {
-    "id": "korona_ze_smoczych_zębów_typo_stelażu",
-    "type": "inconsistency",
-    "name": "Korona ze Smoczych Zębów: literówka 'stalażu'",
     "source": "ekwipunek/przedmioty_magiczne/mityczny/korona_ze_smoczych_zębów.md",
     "status": "detailed"
   },
@@ -2020,13 +1726,6 @@
     "type": "inconsistency",
     "name": "Kostur Żelaznego Rachmistrza: literówka 'zakonserwowania'",
     "source": "ekwipunek/przedmioty_magiczne/rzadkie/kostur_żelazdnego_rachmistrza.md",
-    "status": "detailed"
-  },
-  {
-    "id": "krasnolud_typo_znajdowaia",
-    "type": "inconsistency",
-    "name": "Krasnolud: literówka 'Znajdowaia'",
-    "source": "tworzenie_postaci/rasy/krasnolud.md",
     "status": "detailed"
   },
   {
@@ -2055,27 +1754,6 @@
     "type": "inconsistency",
     "name": "Krew Maga: literówka 'wyposażony są jest'",
     "source": "ekwipunek/przedmioty_magiczne/boskie/krew_maga.md",
-    "status": "detailed"
-  },
-  {
-    "id": "krystaliczna_tarcza_energetyczna_typo_enrgetyczne",
-    "type": "inconsistency",
-    "name": "Krystaliczna Tarcza Eneretyczna: literówka 'enrgetyczne'",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/krystaliczna_tarcza_energetyczna.md",
-    "status": "detailed"
-  },
-  {
-    "id": "krystaliczna_tarcza_energetyczna_typo_nazwa",
-    "type": "inconsistency",
-    "name": "Krystaliczna Tarcza Eneretyczna: literówka w nazwie",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/krystaliczna_tarcza_energetyczna.md",
-    "status": "detailed"
-  },
-  {
-    "id": "księga_protekcji_typo_kawałekim",
-    "type": "inconsistency",
-    "name": "Księga Protekcji: literówka 'kawałekim'",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/księga_protekcji.md",
     "status": "detailed"
   },
   {
@@ -2156,41 +1834,6 @@
     "status": "detailed"
   },
   {
-    "id": "lista_klas_typo_pojedycznym",
-    "type": "inconsistency",
-    "name": "Lista klas: literówka 'pojedycznym'",
-    "source": "tworzenie_postaci/klasy/lista_klas.md",
-    "status": "detailed"
-  },
-  {
-    "id": "lista_klas_typo_poteznym",
-    "type": "inconsistency",
-    "name": "Lista klas: literówka 'poteżnym'",
-    "source": "tworzenie_postaci/klasy/lista_klas.md",
-    "status": "detailed"
-  },
-  {
-    "id": "lista_klas_typo_przesukiwanie",
-    "type": "inconsistency",
-    "name": "Lista klas: literówka 'przesukiwanie'",
-    "source": "tworzenie_postaci/klasy/lista_klas.md",
-    "status": "detailed"
-  },
-  {
-    "id": "lista_klas_typo_przsl",
-    "type": "inconsistency",
-    "name": "Lista klas: literówka 'przsl'",
-    "source": "tworzenie_postaci/klasy/lista_klas.md",
-    "status": "detailed"
-  },
-  {
-    "id": "lista_klas_typo_sie",
-    "type": "inconsistency",
-    "name": "Lista klas: literówka 'sie'",
-    "source": "tworzenie_postaci/klasy/lista_klas.md",
-    "status": "detailed"
-  },
-  {
     "id": "lista_profesji_aptekarz_duplikat",
     "type": "inconsistency",
     "name": "Lista profesji wymienia Aptekarza, który ma osobny opis",
@@ -2233,13 +1876,6 @@
     "status": "detailed"
   },
   {
-    "id": "lista_profesji_przewoznik_typo",
-    "type": "inconsistency",
-    "name": "Lista profesji: literówka 'Prezewoźnik'",
-    "source": "tworzenie_postaci/profesje/lista_profesji.md",
-    "status": "detailed"
-  },
-  {
     "id": "lista_profesji_smieciarz_duplikat",
     "type": "inconsistency",
     "name": "Lista profesji wymienia Śmieciarza, który ma osobny opis",
@@ -2275,426 +1911,6 @@
     "status": "detailed"
   },
   {
-    "id": "liturgista_typo_wytrzymalosc",
-    "type": "inconsistency",
-    "name": "Liturgista: literówka 'Wytrzymałosć'",
-    "source": "tworzenie_postaci/klasy/liturgista.md",
-    "status": "detailed"
-  },
-  {
-    "id": "liturgista_typo_zwiekszone",
-    "type": "inconsistency",
-    "name": "Liturgista: literówka 'zwiekszone'",
-    "source": "tworzenie_postaci/klasy/liturgista.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_doadtku",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'doadtku'",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_druzyna",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'Druzyna'",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana'",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_10",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (10)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_11",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (11)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_12",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (12)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_13",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (13)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_14",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (14)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_15",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (15)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_16",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (16)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_17",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (17)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_18",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (18)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_19",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (19)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_2",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (2)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_20",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (20)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_21",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (21)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_22",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (22)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_23",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (23)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_24",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (24)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_25",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (25)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_26",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (26)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_27",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (27)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_28",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (28)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_29",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (29)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_3",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (3)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_30",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (30)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_31",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (31)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_32",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (32)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_33",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (33)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_34",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (34)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_35",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (35)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_36",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (36)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_37",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (37)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_38",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (38)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_39",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (39)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_4",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (4)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_40",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (40)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_41",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (41)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_42",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (42)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_43",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (43)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_44",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (44)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_45",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (45)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_46",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (46)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_47",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (47)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_48",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (48)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_49",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (49)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_5",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (5)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_50",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (50)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_6",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (6)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_7",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (7)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_8",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (8)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_okreslana_9",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'okreslana' (9)",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_postawie",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'na postawie'",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_skladaja_sie",
-    "type": "inconsistency",
-    "name": "Majętność: zapis 'Składają sie'",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_spenienienia",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'speniężenia'",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_uipropszczonego",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'uipropszczonego'",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_zlola",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'złola'",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "majetnosc_typo_zlota",
-    "type": "inconsistency",
-    "name": "Majętność: literówka 'zlota'",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
     "id": "majetnosc_typo_zmiana_slawy",
     "type": "inconsistency",
     "name": "Majętność: zapis 'zmiana wartości Sławy'",
@@ -2709,31 +1925,10 @@
     "status": "detailed"
   },
   {
-    "id": "majetnosc_typo_zwieksza_o_dodatkowy",
-    "type": "inconsistency",
-    "name": "Majętność: zapis 'Majętność zwiększa o dodatkowy punkt'",
-    "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
     "id": "majetnosc_typo_zwieksza_sie",
     "type": "inconsistency",
     "name": "Majętność: zapis 'Majętność zwiększa się'",
     "source": "ekwipunek/majętność.md",
-    "status": "detailed"
-  },
-  {
-    "id": "maska_tharizduna_typo_masymalnych",
-    "type": "inconsistency",
-    "name": "Maska Tharizduna: literówka 'masymalnych'",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/maska_tharizduna.md",
-    "status": "detailed"
-  },
-  {
-    "id": "miażdżyciel_typo_ogłsuzający",
-    "type": "inconsistency",
-    "name": "Miażdżyciel: literówka w cesze specjalnej",
-    "source": "ekwipunek/przedmioty_magiczne/potężne/miażdżyciel.md",
     "status": "detailed"
   },
   {
@@ -2856,44 +2051,9 @@
     "status": "detailed"
   },
   {
-    "id": "mundur_gwardii_feniksa_typo_wyłatwiej",
-    "type": "inconsistency",
-    "name": "Mundur Gwardii Feniksa: literówka 'wyłatwiej'",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/mundur_gwardii_feniksa.md",
-    "status": "detailed"
-  },
-  {
     "id": "mykonid_passive_unnamed",
     "type": "inconsistency",
     "name": "Mykonid: bezimienna pasywna cecha specjalna",
-    "source": "tworzenie_postaci/rasy/mykonid.md",
-    "status": "detailed"
-  },
-  {
-    "id": "mykonid_typo_czescia",
-    "type": "inconsistency",
-    "name": "Mykonid: literówka 'częscią'",
-    "source": "tworzenie_postaci/rasy/mykonid.md",
-    "status": "detailed"
-  },
-  {
-    "id": "mykonid_typo_falna",
-    "type": "inconsistency",
-    "name": "Mykonid: literówka 'fałną'",
-    "source": "tworzenie_postaci/rasy/mykonid.md",
-    "status": "detailed"
-  },
-  {
-    "id": "mykonid_typo_mykoidow",
-    "type": "inconsistency",
-    "name": "Mykonid: literówka 'mykoidów'",
-    "source": "tworzenie_postaci/rasy/mykonid.md",
-    "status": "detailed"
-  },
-  {
-    "id": "mykonid_typo_transformuje_sie",
-    "type": "inconsistency",
-    "name": "Mykonid: literówka 'transformuje sie'",
     "source": "tworzenie_postaci/rasy/mykonid.md",
     "status": "detailed"
   },
@@ -2902,27 +2062,6 @@
     "type": "inconsistency",
     "name": "Nagolenniki ze Smoczych Kości: adnotacja Niezidentyfikowane",
     "source": "ekwipunek/przedmioty_magiczne/mityczny/nagolenniki_ze_smoczych_kości.md",
-    "status": "detailed"
-  },
-  {
-    "id": "nagolenniki_ze_smoczych_kości_typo_wmocnione",
-    "type": "inconsistency",
-    "name": "Nagolenniki ze Smoczych Kości: literówka 'wmocnione'",
-    "source": "ekwipunek/przedmioty_magiczne/mityczny/nagolenniki_ze_smoczych_kości.md",
-    "status": "detailed"
-  },
-  {
-    "id": "nekromanta_typo_mioninem",
-    "type": "inconsistency",
-    "name": "Nekromanta: literówka 'mioninem'",
-    "source": "tworzenie_postaci/klasy/nekromanta.md",
-    "status": "detailed"
-  },
-  {
-    "id": "nekromanta_typo_przeszktałcenie",
-    "type": "inconsistency",
-    "name": "Nekromanta: literówka 'przeszktałcenie'",
-    "source": "tworzenie_postaci/klasy/nekromanta.md",
     "status": "detailed"
   },
   {
@@ -2940,38 +2079,10 @@
     "status": "detailed"
   },
   {
-    "id": "niedzwiedz_typo_swoja",
-    "type": "inconsistency",
-    "name": "Niedźwiedź: literówka 'swoja'",
-    "source": "bestiariusz/zwierzaki/niedźwiedź.md",
-    "status": "detailed"
-  },
-  {
-    "id": "odkupienie_typo_sztrormu",
-    "type": "inconsistency",
-    "name": "Odkupienie: literówka 'sztrormu'",
-    "source": "ekwipunek/przedmioty_magiczne/potężne/odkupienie.md",
-    "status": "detailed"
-  },
-  {
-    "id": "odkupienie_typo_wzmonienia",
-    "type": "inconsistency",
-    "name": "Odkupienie: literówka 'wzmonienia'",
-    "source": "ekwipunek/przedmioty_magiczne/potężne/odkupienie.md",
-    "status": "detailed"
-  },
-  {
     "id": "ostrze_armageddonu_zdetonowany_zamrozenie",
     "type": "inconsistency",
     "name": "Ostrze Armageddonu: spaczone zdetonowanie odnosi się do Zamrożenia",
     "source": "ekwipunek/przedmioty_magiczne/potężne/ostrze_armageddonu.md",
-    "status": "detailed"
-  },
-  {
-    "id": "pancerze_typo_adamntytowa",
-    "type": "inconsistency",
-    "name": "Pancerze: literówka 'adamntytowa'",
-    "source": "ekwipunek/pancerze.md",
     "status": "detailed"
   },
   {
@@ -2989,31 +2100,10 @@
     "status": "detailed"
   },
   {
-    "id": "pas_nuggitha_typo_wielkeigo",
-    "type": "inconsistency",
-    "name": "Pas Nuggitha: literówka 'wielkeigo'",
-    "source": "ekwipunek/przedmioty_magiczne/potężne/pas_nuggitha.md",
-    "status": "detailed"
-  },
-  {
     "id": "paski_typo_bnich",
     "type": "inconsistency",
     "name": "Paski: literówka 'b nich'",
     "source": "ekwipunek/paski.md",
-    "status": "detailed"
-  },
-  {
-    "id": "peleryna_podróżna_typo_zbłoconej",
-    "type": "inconsistency",
-    "name": "Peleryna Podróżna: literówka 'zbłoconej'",
-    "source": "ekwipunek/przedmioty_magiczne/potężne/peleryna_podróżna.md",
-    "status": "detailed"
-  },
-  {
-    "id": "peleryna_snów_typo_a_fioletowym",
-    "type": "inconsistency",
-    "name": "Peleryna Snów: literówka 'a fioletowym'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/peleryna_snów.md",
     "status": "detailed"
   },
   {
@@ -3059,48 +2149,6 @@
     "status": "detailed"
   },
   {
-    "id": "perki_typo_kazdej",
-    "type": "inconsistency",
-    "name": "Perki: literówka 'kazdej'",
-    "source": "tworzenie_postaci/perki.md",
-    "status": "detailed"
-  },
-  {
-    "id": "perki_typo_krawienie",
-    "type": "inconsistency",
-    "name": "Perki: literówka 'Krawienie'",
-    "source": "tworzenie_postaci/perki.md",
-    "status": "detailed"
-  },
-  {
-    "id": "perki_typo_misktur",
-    "type": "inconsistency",
-    "name": "Perki: literówka 'misktur'",
-    "source": "tworzenie_postaci/perki.md",
-    "status": "detailed"
-  },
-  {
-    "id": "perki_typo_poczatku",
-    "type": "inconsistency",
-    "name": "Perki: literówka 'poczatku'",
-    "source": "tworzenie_postaci/perki.md",
-    "status": "detailed"
-  },
-  {
-    "id": "perki_typo_zapewani",
-    "type": "inconsistency",
-    "name": "Perki: literówka 'Zapewani'",
-    "source": "tworzenie_postaci/perki.md",
-    "status": "detailed"
-  },
-  {
-    "id": "perki_typo_zwiekszaja_sie",
-    "type": "inconsistency",
-    "name": "Perki: zapis 'zwiększają sie'",
-    "source": "tworzenie_postaci/perki.md",
-    "status": "detailed"
-  },
-  {
     "id": "perki_zabliźniona_wiara_bariera",
     "type": "inconsistency",
     "name": "Perki: Zabliźniona wiara - '1 Bariery' nieprecyzyjne",
@@ -3126,41 +2174,6 @@
     "type": "inconsistency",
     "name": "Pierścień Odkrywcy: literówka 'mgiełkę'",
     "source": "ekwipunek/przedmioty_magiczne/rzadkie/pierścień_odkrywcy.md",
-    "status": "detailed"
-  },
-  {
-    "id": "pierścionek_stymulujący_typo_opuszczków",
-    "type": "inconsistency",
-    "name": "Pierścionek Stymulujący: literówka 'opuszczków'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/pierścionek_stymulujący.md",
-    "status": "detailed"
-  },
-  {
-    "id": "pierścionek_z_języczkiem_typo_częśc",
-    "type": "inconsistency",
-    "name": "Pierścionek z Języczkiem: literówka 'częśc'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/pierścionek_z_języczkiem.md",
-    "status": "detailed"
-  },
-  {
-    "id": "plazmoid_typo_pochloniety",
-    "type": "inconsistency",
-    "name": "Plazmoid: literówka 'Pochłoniety'",
-    "source": "tworzenie_postaci/rasy/plazmoid.md",
-    "status": "detailed"
-  },
-  {
-    "id": "plazmoid_typo_uytrzymac",
-    "type": "inconsistency",
-    "name": "Plazmoid: literówka 'uytrzymać'",
-    "source": "tworzenie_postaci/rasy/plazmoid.md",
-    "status": "detailed"
-  },
-  {
-    "id": "plazmoid_typo_zrecznosc",
-    "type": "inconsistency",
-    "name": "Plazmoid: odmiana 'do Zręczność'",
-    "source": "tworzenie_postaci/rasy/plazmoid.md",
     "status": "detailed"
   },
   {
@@ -3220,37 +2233,9 @@
     "status": "detailed"
   },
   {
-    "id": "przerwy_typo_aktynosci",
-    "type": "inconsistency",
-    "name": "Przerwy: literówka 'aktyności'",
-    "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
-    "status": "detailed"
-  },
-  {
-    "id": "przerwy_typo_nbiezbednych",
-    "type": "inconsistency",
-    "name": "Przerwy: literówka 'nbiezbędnych'",
-    "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
-    "status": "detailed"
-  },
-  {
     "id": "przerwy_typo_nekromanta",
     "type": "inconsistency",
     "name": "Przerwy: niekonsekwentna kapitalizacja 'nekromanta'",
-    "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
-    "status": "detailed"
-  },
-  {
-    "id": "przerwy_typo_ostać",
-    "type": "inconsistency",
-    "name": "Przerwy: literówka 'ostać'",
-    "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
-    "status": "detailed"
-  },
-  {
-    "id": "przerwy_typo_tymczosowe",
-    "type": "inconsistency",
-    "name": "Przerwy: literówka 'tymczosowe'",
     "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
     "status": "detailed"
   },
@@ -3266,20 +2251,6 @@
     "type": "inconsistency",
     "name": "Przewoźnik: wyposażenie początkowe jako nagłówek H1",
     "source": "tworzenie_postaci/profesje/przewoźnik.md",
-    "status": "detailed"
-  },
-  {
-    "id": "przewoznik_typo_podrecznnych",
-    "type": "inconsistency",
-    "name": "Przewoźnik: literówka 'podręcznnych'",
-    "source": "tworzenie_postaci/profesje/przewoźnik.md",
-    "status": "detailed"
-  },
-  {
-    "id": "rogaty_hełm_najeźdzcy_typo_nazwa",
-    "type": "inconsistency",
-    "name": "Rogaty Hełm Najeźdzcy: literówka w nazwie",
-    "source": "ekwipunek/przedmioty_magiczne/potężne/rogaty_hełm_najeźdzcy.md",
     "status": "detailed"
   },
   {
@@ -3360,62 +2331,6 @@
     "status": "detailed"
   },
   {
-    "id": "rękawice_do_podnoszenia_ciężarów_typo_nazwa",
-    "type": "inconsistency",
-    "name": "Rękwice do Podnoszenia Ciężarów: literówka w nazwie",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_do_podnoszenia_ciężarów.md",
-    "status": "detailed"
-  },
-  {
-    "id": "rękawice_do_przesadzania_typo_bezpieczeniejsze",
-    "type": "inconsistency",
-    "name": "Rękawice Do Przesadzania: literówka 'bezpieczeniejsze'",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/rękawice_do_przesadzania.md",
-    "status": "detailed"
-  },
-  {
-    "id": "rękawice_do_przesadzania_typo_niezidentyifkowanych",
-    "type": "inconsistency",
-    "name": "Rękawice Do Przesadzania: literówka 'niezidentyifkowanych'",
-    "source": "ekwipunek/przedmioty_magiczne/rzadkie/rękawice_do_przesadzania.md",
-    "status": "detailed"
-  },
-  {
-    "id": "rękawice_srebrnego_splotu_typo_nazwa",
-    "type": "inconsistency",
-    "name": "Rękwice Srebrnego Splotu: literówka w nazwie",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_srebrnego_splotu.md",
-    "status": "detailed"
-  },
-  {
-    "id": "rękawice_srebrnego_splotu_typo_poznokcie",
-    "type": "inconsistency",
-    "name": "Rękwice Srebrnego Splotu: literówka 'poznokcie'",
-    "source": "ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_srebrnego_splotu.md",
-    "status": "detailed"
-  },
-  {
-    "id": "sabotazysta_typo_intregralnej",
-    "type": "inconsistency",
-    "name": "Sabotażysta: literówka 'intregralnej'",
-    "source": "tworzenie_postaci/klasy/sabotażysta.md",
-    "status": "detailed"
-  },
-  {
-    "id": "sabotazysta_typo_nnaley",
-    "type": "inconsistency",
-    "name": "Sabotażysta: literówka 'nnależy'",
-    "source": "tworzenie_postaci/klasy/sabotażysta.md",
-    "status": "detailed"
-  },
-  {
-    "id": "sabotazysta_typo_obrazen",
-    "type": "inconsistency",
-    "name": "Sabotażysta: literówka 'obrazeń'",
-    "source": "tworzenie_postaci/klasy/sabotażysta.md",
-    "status": "detailed"
-  },
-  {
     "id": "sabotazysta_typo_orezy",
     "type": "inconsistency",
     "name": "Sabotażysta: literówka 'oręży'",
@@ -3437,23 +2352,9 @@
     "status": "detailed"
   },
   {
-    "id": "skrytoboja_typo_wmocnienia",
-    "type": "inconsistency",
-    "name": "Skrytobójca: literówka 'Wmocnienia'",
-    "source": "tworzenie_postaci/klasy/skrytobójca.md",
-    "status": "detailed"
-  },
-  {
     "id": "smieciarz_typo_sztuka_przetrwania",
     "type": "inconsistency",
     "name": "Śmieciarz: zapis 'Sztuka przetrwania' małą literą",
-    "source": "tworzenie_postaci/profesje/śmieciarz.md",
-    "status": "detailed"
-  },
-  {
-    "id": "smieciarz_typo_znajdujace",
-    "type": "inconsistency",
-    "name": "Śmieciarz: literówka 'znajdujace'",
     "source": "tworzenie_postaci/profesje/śmieciarz.md",
     "status": "detailed"
   },
@@ -3465,38 +2366,10 @@
     "status": "detailed"
   },
   {
-    "id": "szlachic_typo_lingiwstyka",
-    "type": "inconsistency",
-    "name": "Szlachic: literówka 'Lingiwstyka'",
-    "source": "tworzenie_postaci/profesje/szlachic.md",
-    "status": "detailed"
-  },
-  {
-    "id": "szlachic_typo_powala",
-    "type": "inconsistency",
-    "name": "Szlachic: literówka 'powala'",
-    "source": "tworzenie_postaci/profesje/szlachic.md",
-    "status": "detailed"
-  },
-  {
-    "id": "szlachic_typo_szlachci",
-    "type": "inconsistency",
-    "name": "Szlachic: literówka 'szlachci'",
-    "source": "tworzenie_postaci/profesje/szlachic.md",
-    "status": "detailed"
-  },
-  {
     "id": "szlachic_typo_teunilaa",
     "type": "inconsistency",
     "name": "Szlachic: nietypowy zapis 'Teunìlaa'",
     "source": "tworzenie_postaci/profesje/szlachic.md",
-    "status": "detailed"
-  },
-  {
-    "id": "taktyk_typo_predyszpozycje",
-    "type": "inconsistency",
-    "name": "Taktyk: literówka 'Predyszpozycje'",
-    "source": "tworzenie_postaci/klasy/taktyk.md",
     "status": "detailed"
   },
   {
@@ -3626,41 +2499,6 @@
     "status": "detailed"
   },
   {
-    "id": "testy_typo_rozicy",
-    "type": "inconsistency",
-    "name": "Testy: literówka 'różicy'",
-    "source": "mechaniki_bazowe/testy.md",
-    "status": "detailed"
-  },
-  {
-    "id": "testy_typo_sukecow",
-    "type": "inconsistency",
-    "name": "Testy: literówka 'sukeców'",
-    "source": "mechaniki_bazowe/testy.md",
-    "status": "detailed"
-  },
-  {
-    "id": "tytan_typo_suckes",
-    "type": "inconsistency",
-    "name": "Tytan: literówka 'Suckes'",
-    "source": "tworzenie_postaci/klasy/tytan.md",
-    "status": "detailed"
-  },
-  {
-    "id": "tytan_typo_tetsu",
-    "type": "inconsistency",
-    "name": "Tytan: literówka 'tetsu'",
-    "source": "tworzenie_postaci/klasy/tytan.md",
-    "status": "detailed"
-  },
-  {
-    "id": "wieczne_spojrzenie_typo_zobaczli",
-    "type": "inconsistency",
-    "name": "Wieczne Spojrzenie: literówka 'zobaczli'",
-    "source": "ekwipunek/przedmioty_magiczne/potężne/wieczne_spojrzenie.md",
-    "status": "detailed"
-  },
-  {
     "id": "wilgotna_chwała_typo_wyszczerbiona",
     "type": "inconsistency",
     "name": "Wilgotna Chwała: literówka 'wyszczerbiona'",
@@ -3682,38 +2520,10 @@
     "status": "detailed"
   },
   {
-    "id": "wladca_lasow_typo_miejse",
-    "type": "inconsistency",
-    "name": "Władca Lasów: literówka 'miejse'",
-    "source": "tworzenie_postaci/klasy/władca_lasów.md",
-    "status": "detailed"
-  },
-  {
-    "id": "wladca_lasow_typo_niedzwiedzia",
-    "type": "inconsistency",
-    "name": "Władca Lasów: literówka 'niedżwiedzia'",
-    "source": "tworzenie_postaci/klasy/władca_lasów.md",
-    "status": "detailed"
-  },
-  {
-    "id": "wladca_lasow_typo_wmocnienia",
-    "type": "inconsistency",
-    "name": "Władca Lasów: literówka 'Wmocnienia'",
-    "source": "tworzenie_postaci/klasy/władca_lasów.md",
-    "status": "detailed"
-  },
-  {
     "id": "wrzoścce_hazardowego_biegu_typo_nazwa",
     "type": "inconsistency",
     "name": "Wrzoścce Hazardowego Biegu: literówka w nazwie",
     "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/wrzoścce_hazardowego_biegu.md",
-    "status": "detailed"
-  },
-  {
-    "id": "wybebeszacz_typo_pozostawiac",
-    "type": "inconsistency",
-    "name": "Wybebeszacz: literówka 'pozostawiac'",
-    "source": "ekwipunek/przedmioty_magiczne/potężne/wybebeszacz.md",
     "status": "detailed"
   },
   {
@@ -3724,23 +2534,9 @@
     "status": "detailed"
   },
   {
-    "id": "zapomniany_strażnik_typo_gałężi",
-    "type": "inconsistency",
-    "name": "Zapomniany Strażnik: literówka 'gałężi'",
-    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/zapomniany_strażnik.md",
-    "status": "detailed"
-  },
-  {
     "id": "zaprzysiężona_framuga_energia",
     "type": "inconsistency",
     "name": "Zaprzysiężona Framuga Dębowego Oporu: generowanie Energii",
-    "source": "ekwipunek/przedmioty_magiczne/mityczny/zaprzysiężona_framuga_dębowego_oporu.md",
-    "status": "detailed"
-  },
-  {
-    "id": "zaprzysiężona_framuga_typo_odpornosć",
-    "type": "inconsistency",
-    "name": "Zaprzysiężona Framuga Dębowego Oporu: literówka 'Odpornosć'",
     "source": "ekwipunek/przedmioty_magiczne/mityczny/zaprzysiężona_framuga_dębowego_oporu.md",
     "status": "detailed"
   },
@@ -3766,13 +2562,6 @@
     "status": "detailed"
   },
   {
-    "id": "zeglarz_typo_stabline",
-    "type": "inconsistency",
-    "name": "Żeglarz: literówka 'Stabline'",
-    "source": "tworzenie_postaci/profesje/żeglarz.md",
-    "status": "detailed"
-  },
-  {
     "id": "zombie_tag_szkielet",
     "type": "inconsistency",
     "name": "Zombie: tag 'Szkielet'",
@@ -3782,28 +2571,14 @@
   {
     "id": "łowca_głebin_brak_opisu",
     "type": "inconsistency",
-    "name": "Łowca Głebin: brak sekcji Opis",
+    "name": "Łowca Głębin: brak sekcji Opis",
     "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/łowca_głebin.md",
     "status": "detailed"
   },
   {
     "id": "łowca_głebin_typ_wedka",
     "type": "inconsistency",
-    "name": "Łowca Głebin: typ Wędka poza listą typów przedmiotów",
-    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/łowca_głebin.md",
-    "status": "detailed"
-  },
-  {
-    "id": "łowca_głebin_typo_conajmniej",
-    "type": "inconsistency",
-    "name": "Łowca Głebin: literówka 'conajmniej'",
-    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/łowca_głebin.md",
-    "status": "detailed"
-  },
-  {
-    "id": "łowca_głebin_typo_nazwa",
-    "type": "inconsistency",
-    "name": "Łowca Głebin: literówka w nazwie",
+    "name": "Łowca Głębin: typ Wędka poza listą typów przedmiotów",
     "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/łowca_głebin.md",
     "status": "detailed"
   },
@@ -3971,7 +2746,7 @@
   {
     "id": "krystaliczna_tarcza_energetyczna",
     "type": "magicItem",
-    "name": "Krystaliczna Tarcza Eneretyczna",
+    "name": "Krystaliczna Tarcza Energetyczna",
     "source": "ekwipunek/przedmioty_magiczne/rzadkie/krystaliczna_tarcza_energetyczna.md",
     "status": "detailed"
   },
@@ -4132,14 +2907,14 @@
   {
     "id": "rogaty_hełm_najeźdzcy",
     "type": "magicItem",
-    "name": "Rogaty Hełm Najeźdzcy",
+    "name": "Rogaty Hełm Najeźdźcy",
     "source": "ekwipunek/przedmioty_magiczne/potężne/rogaty_hełm_najeźdzcy.md",
     "status": "detailed"
   },
   {
     "id": "rękawice_do_podnoszenia_ciężarów",
     "type": "magicItem",
-    "name": "Rękwice do Podnoszenia Ciężarów",
+    "name": "Rękawice do Podnoszenia Ciężarów",
     "source": "ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_do_podnoszenia_ciężarów.md",
     "status": "detailed"
   },
@@ -4153,7 +2928,7 @@
   {
     "id": "rękawice_srebrnego_splotu",
     "type": "magicItem",
-    "name": "Rękwice Srebrnego Splotu",
+    "name": "Rękawice Srebrnego Splotu",
     "source": "ekwipunek/przedmioty_magiczne/niezwykłe/rękawice_srebrnego_splotu.md",
     "status": "detailed"
   },
@@ -4286,7 +3061,7 @@
   {
     "id": "łowca_głebin",
     "type": "magicItem",
-    "name": "Łowca Głebin",
+    "name": "Łowca Głębin",
     "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/łowca_głebin.md",
     "status": "detailed"
   },
@@ -5070,7 +3845,7 @@
   {
     "id": "prezewoźnik",
     "type": "profession",
-    "name": "Prezewoźnik",
+    "name": "Przewoźnik",
     "source": "tworzenie_postaci/profesje/lista_profesji.md",
     "status": "stub"
   },
@@ -6027,27 +4802,6 @@
     "status": "detailed"
   },
   {
-    "id": "serce_zniszczenia_typo_niezlicoznych",
-    "type": "inconsistency",
-    "name": "Serce Zniszczenia: literówka 'niezlicoznych'",
-    "source": "ekwipunek/przedmioty_magiczne/potężne/serce_zniszczenia.md",
-    "status": "detailed"
-  },
-  {
-    "id": "koło_wozu_typo_przeciniwka",
-    "type": "inconsistency",
-    "name": "Koło Wozu: literówka 'przeciniwka'",
-    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/koło_wozu_skrzydlatej_fortecy.md",
-    "status": "detailed"
-  },
-  {
-    "id": "korona_bladego_typo_rozkwitajace",
-    "type": "inconsistency",
-    "name": "Korona Bladego Króla: literówka 'rozkwitajace'",
-    "source": "ekwipunek/przedmioty_magiczne/arcymistrzowskie/korona_bladego_króla_za_zasłoną_nocy.md",
-    "status": "detailed"
-  },
-  {
     "id": "rzadkosc_arcymistrzowska_odmiana",
     "type": "inconsistency",
     "name": "Rzadkość arcymistrzowska: odmiana w nagłówkach",
@@ -6059,20 +4813,6 @@
     "type": "combat",
     "name": "Wrażliwość",
     "source": "walka/statusy.md",
-    "status": "detailed"
-  },
-  {
-    "id": "przerwy_typo_sukescow",
-    "type": "inconsistency",
-    "name": "Przerwy: literówka 'sukesców'",
-    "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
-    "status": "detailed"
-  },
-  {
-    "id": "przebudzenie_typo_wtargiecie",
-    "type": "inconsistency",
-    "name": "Przebudzenie Destrukcji: literówka 'wtargięcie'",
-    "source": "ekwipunek/przedmioty_magiczne/mityczny/przebudzenie_destrukcji_z_rozkazu_lotu_pochodu_duchów.md",
     "status": "detailed"
   },
   {

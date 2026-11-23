@@ -37,7 +37,7 @@
         {
           "name": "Remiks",
           "activationTime": "Akcja",
-          "range": "Bespośredni",
+          "range": "Bezpośredni",
           "description": "Alchemik tworzy bojową miksturę na poczekaniu, gotów do miotnięcia nią i zadanie 1k8 losowych obrażeń.",
           "enhancements": [
             "+1 kość obrażeń - 1 Staminy",
@@ -53,7 +53,7 @@
           "name": "Skimer",
           "activationTime": "Akcja",
           "range": "Bezpośredni (obecny sektor)",
-          "description": "Alchemik tworzy defensywną miskturę na poczekaniu, gotów do miotnięcia nią i uleczenia sojusznika (małe leczenie)",
+          "description": "Alchemik tworzy defensywną miksturę na poczekaniu, gotów do miotnięcia nią i uleczenia sojusznika (małe leczenie)",
           "enhancements": [
             "Zwiększenie zasięgu do krótkiego - 1 Staminy",
             "Zwiększenie zasięgu do średniego - 2 Staminy",
@@ -69,7 +69,7 @@
           "name": "Spopielenie / Zamrożenie",
           "purchaseCost": "250 PD",
           "activationTime": "Akcja",
-          "range": "Bespośredni",
+          "range": "Bezpośredni",
           "description": "Alchemik popala lub zamraża cały wybrany sektor w zasięgu",
           "enhancements": [
             "Zwiększenie zasięgu do krótkiego - 1 Staminy / Many",
@@ -112,7 +112,7 @@
           ],
           "purchaseCost": "800 PD",
           "activationTime": "Akcja",
-          "range": "Bespośredni",
+          "range": "Bezpośredni",
           "activationCost": [
             "10 Staminy / Many"
           ],
@@ -329,7 +329,7 @@
           "name": "Spopielenie / Zamrożenie",
           "purchaseCost": "250 PD",
           "activationTime": "Akcja",
-          "range": "Bespośredni",
+          "range": "Bezpośredni",
           "description": "Alchemik popala lub zamraża cały wybrany sektor w zasięgu",
           "enhancements": [
             "Zwiększenie zasięgu do krótkiego - 1 Staminy / Many",
@@ -372,7 +372,7 @@
           ],
           "purchaseCost": "800 PD",
           "activationTime": "Akcja",
-          "range": "Bespośredni",
+          "range": "Bezpośredni",
           "activationCost": [
             "10 Staminy / Many"
           ],
@@ -463,7 +463,7 @@
             "Rozbrojenie mistrzowskiego oponenta - 2 staminy",
             "Rozbrojenie bossa - 5 staminy",
             "Rozbrojenie uber bossa - 10 staminy",
-            "Unieszkodliwienie broni intregralnej na 1 rundę - 3 staminy"
+            "Unieszkodliwienie broni integralnej na 1 rundę - 3 staminy"
           ]
         },
         {
@@ -488,7 +488,7 @@
           "range": "Średni (60 stóp) (do 2 sąsiednich sektorów)",
           "description": "Pozwala na powiązanie oczekiwanego wydarzenia na polu bitwy z eksplozją ładunków wybuchowych w innym, np. ładunki pod murem obronnym wybuchną, gry strzelec na strażnicy zaatakuje drużynowego kapłana. Im mniej precyzyjny będzie opis aktywatora wybuchu, tym więcej staminy kosztować będzie użycie tej umiejętności. Eksplozja wywołana aktywatorem obejmuje wszystkich przeciwników w danym sektorze pola bitwy i zadaje im 3k10+10 obrażeń od ognia.",
           "enhancements": [
-            "Zwiększenie obrazeń o 1k10 - 1 staminy"
+            "Zwiększenie obrażeń o 1k10 - 1 staminy"
           ]
         },
         {
@@ -520,7 +520,7 @@
       {
         "name": "Odwrócenie uwagi",
         "duration": "10 sekund",
-        "description": "Pozwala na uratowanie pojedynczego sojusznika w momencie, gdy nie powiedzie się mu test Skradania. W takim przypadku nnależy wykonać test Zwinnych dłoni. Ilość sukcesów w tym teście zastępuje wynik testu Skradania wybranego sojusznika."
+        "description": "Pozwala na uratowanie pojedynczego sojusznika w momencie, gdy nie powiedzie się mu test Skradania. W takim przypadku należy wykonać test Zwinnych dłoni. Ilość sukcesów w tym teście zastępuje wynik testu Skradania wybranego sojusznika."
       }
     ]
   },
@@ -643,7 +643,7 @@
     "explorationAbilities": [
       {
         "name": "Wolny spadek",
-        "description": "Podczas upadku pozwala na wykonanie tetsu Wytrzymałości. Suckes oznacza zyskanie odporności na obrażenia od upadku. 10 sukcesów lub więcej oznacza niewrażliwość na obrażenia od upadku."
+        "description": "Podczas upadku pozwala na wykonanie testu Wytrzymałości. Sukces oznacza zyskanie odporności na obrażenia od upadku. 10 sukcesów lub więcej oznacza niewrażliwość na obrażenia od upadku."
       },
       {
         "name": "Mocna głowa",
@@ -807,7 +807,7 @@
           "purchaseCost": "800 PD",
           "activationTime": "3 akcje",
           "range": "Pole bitwy",
-          "description": "Zużywa 10 staminy. Można użyć raz na walkę. W wybranym miejscu na polu bitwy pojawia się Awatar Śmierci i jest mioninem do końca walki.",
+          "description": "Zużywa 10 staminy. Można użyć raz na walkę. W wybranym miejscu na polu bitwy pojawia się Awatar Śmierci i jest minionem do końca walki.",
           "enhancements": [
             "+5 hp dla Awatara - 2 staminy"
           ]
@@ -828,7 +828,7 @@
       {
         "name": "Formowanie zwłok",
         "duration": "1 minuta",
-        "description": "Udany test Arkan pozwala na przeszktałcenie pobliskich zwłok w dowolny przedmiot codziennego użytku wykonany z kości. Im większy obiekt, tym trudniejszy test."
+        "description": "Udany test Arkan pozwala na przekształcenie pobliskich zwłok w dowolny przedmiot codziennego użytku wykonany z kości. Im większy obiekt, tym trudniejszy test."
       }
     ]
   },
@@ -927,7 +927,7 @@
         "Inteligencja"
       ],
       "defensive": [
-        "Wytrzymałosć",
+        "Wytrzymałość",
         "Siła Woli"
       ],
       "secondary": [
@@ -957,7 +957,7 @@
           "description": "Wybrany sojusznik w zasięgu otrzymuje 5 Bariery.",
           "enhancements": [
             "+5 Bariery - 1 many",
-            "Następne obrażenia zadane przez sojusznika są zwiekszone o wartość jego głównej statystyki - 2 many",
+            "Następne obrażenia zadane przez sojusznika są zwiększone o wartość jego głównej statystyki - 2 many",
             "Usunięcie 1 poziomu paniki - 1 many",
             "Usunięcie 1 poziomu pokiereszowania - 2 many",
             "Dodatkowy sojusznik otrzymuje błogosławieństwo - 2 many",
@@ -1293,7 +1293,7 @@
         {
           "name": "Zew Lasu",
           "activationTime": "Akcja",
-          "range": "Bespośredni",
+          "range": "Bezpośredni",
           "description": "Władca lasu przywołuje na pomoc 1 wilka, który walczy po jego stronie do końca walki.",
           "enhancements": [
             "+1 wilk - 2 Staminy / Many",
@@ -1325,8 +1325,8 @@
           "name": "Miodny Zew Lasu",
           "purchaseCost": "250 PD",
           "activationTime": "Akcja",
-          "range": "Bespośredni",
-          "description": "Władca lasu przywołuje na pomoc 1 niedżwiedzia, który walczy po jego stronie do końca walki.",
+          "range": "Bezpośredni",
+          "description": "Władca lasu przywołuje na pomoc 1 niedźwiedzia, który walczy po jego stronie do końca walki.",
           "enhancements": [
             "+1 niedźwiedź - 4 Staminy / Many",
             "+10 Max HP dla niedźwiedzi - 1 Staminy / Many",
@@ -1357,7 +1357,7 @@
           "activationCost": [
             "1 Staminy / Many za każdy przebyty sektor"
           ],
-          "description": "Władca Lasu wykorzystuje mistyczne ścieżki życia obecne w każdym ekosystemie i natychmiastowo przemieszcza się w wybrane miejse w wybranym sektorze w zasięgu.",
+          "description": "Władca Lasu wykorzystuje mistyczne ścieżki życia obecne w każdym ekosystemie i natychmiastowo przemieszcza się w wybrane miejsce w wybranym sektorze w zasięgu.",
           "enhancements": [
             "Dodatkowe małe leczenie (25%+1d4) - 1 Staminy / Many",
             "Dodatkowe średnie leczenie (50%+1d6) - 2 Staminy / Many",
@@ -1372,7 +1372,7 @@
           ],
           "purchaseCost": "800 PD",
           "activationTime": "Akcja",
-          "range": "Bespośredni",
+          "range": "Bezpośredni",
           "description": "Władca lasu przywołuje na pomoc 1 zielonego smoka, który walczy po jego stronie do końca walki.",
           "enhancements": [
             "+50 Max HP dla smoka - 1 Staminy / Many",
@@ -1522,7 +1522,7 @@
       {
         "name": "Zwierzęcy Instynkt",
         "duration": "30 minut",
-        "description": "Zestrojenie się ze swoim wierchowcem wymaga poświęcenia mu chwili czasu. Raz dziennie należy wykonać test Jeździectwa. Sukces zapewnia ułatwienie we wszystkich testach Spostrzegawczości oraz Ostrożności."
+        "description": "Zestrojenie się ze swoim wierzchowcem wymaga poświęcenia mu chwili czasu. Raz dziennie należy wykonać test Jeździectwa. Sukces zapewnia ułatwienie we wszystkich testach Spostrzegawczości oraz Ostrożności."
       },
       {
         "name": "Przetarcie szlaku",

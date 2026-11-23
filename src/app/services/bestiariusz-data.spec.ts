@@ -154,7 +154,7 @@ describe('bestiariusz.json — zwierzaki z bestiariusz/zwierzaki/*.md', () => {
     expect(entry.traits?.[0].name).toBe('Błotnisty łowca dżdżownic');
     expect(entry.traits?.[0].description).toContain('Ignoruje kary za ciężki teren');
     expect(entry.traits?.[0].description).toContain('błotnistych sektorów');
-    expect(entry.traits?.[0].description).toContain('prędkośc to 2 sektory na akcję');
+    expect(entry.traits?.[0].description).toContain('prędkość to 2 sektory na akcję');
 
     expect(entry.actions).toEqual([
       {
@@ -193,7 +193,7 @@ describe('bestiariusz.json — zwierzaki z bestiariusz/zwierzaki/*.md', () => {
     expect(entry.traits).toHaveLength(1);
     expect(entry.traits?.[0].name).toBe('Silny jak koń');
     expect(entry.traits?.[0].description).toContain('wielkich ciężarów');
-    expect(entry.traits?.[0].description).toContain('jeźdzca i dwóch pasażerów');
+    expect(entry.traits?.[0].description).toContain('jeźdźca i dwóch pasażerów');
     expect(entry.traits?.[0].description).toContain('1 sektor na akcję');
 
     expect(entry.actions).toEqual([
@@ -262,14 +262,8 @@ describe('bestiariusz.json — zwierzaki z bestiariusz/zwierzaki/*.md', () => {
     expect(wierzchowy.status).toBe('detailed');
   });
 
-  it('odnotowuje w Niespójnościach literówkę "jeźdzca" ze źródła Konia Pociągowego', () => {
-    const inconsistency = niespojnosci.find((item) => item.id === 'kon_pociagowy_typo_jezdzca');
-
-    expect(inconsistency).toBeDefined();
-    expect(inconsistency?.kind).toBe('typo');
-    expect(inconsistency?.source).toBe('bestiariusz/zwierzaki/koń_pociągowy.md');
-    expect(inconsistency?.evidence).toContain('jeźdzca');
-    expect(inconsistency?.relatedEntryIds).toContain('koń_pociągowy');
+  it('nie zgłasza już poprawionej literówki "jeźdźca"', () => {
+    expect(niespojnosci.some((item) => item.id === 'kon_pociagowy_typo_jezdzca')).toBe(false);
   });
 
   it('rejestruje Gryfa i Konika błotnego w indeksie wyszukiwania', () => {
@@ -284,14 +278,8 @@ describe('bestiariusz.json — zwierzaki z bestiariusz/zwierzaki/*.md', () => {
     expect(konik.status).toBe('detailed');
   });
 
-  it('odnotowuje w Niespójnościach literówkę "prędkośc" ze źródła Konika błotnego', () => {
-    const inconsistency = niespojnosci.find((item) => item.id === 'konik_blotny_typo_predkosc');
-
-    expect(inconsistency).toBeDefined();
-    expect(inconsistency?.kind).toBe('typo');
-    expect(inconsistency?.source).toBe('bestiariusz/zwierzaki/konik_błotny.md');
-    expect(inconsistency?.evidence).toContain('prędkośc');
-    expect(inconsistency?.relatedEntryIds).toContain('konik_błotny');
+  it('nie zgłasza już poprawionej literówki "prędkość"', () => {
+    expect(niespojnosci.some((item) => item.id === 'konik_blotny_typo_predkosc')).toBe(false);
   });
 
   it('odwzorowuje blok statystyk Niedźwiedzia zgodnie ze źródłem', () => {
@@ -350,13 +338,7 @@ describe('bestiariusz.json — zwierzaki z bestiariusz/zwierzaki/*.md', () => {
   });
 
   it('odnotowuje w Niespójnościach literówkę "swoja" i format leczenia w Miodku', () => {
-    const typo = niespojnosci.find((item) => item.id === 'niedzwiedz_typo_swoja');
-
-    expect(typo).toBeDefined();
-    expect(typo?.kind).toBe('typo');
-    expect(typo?.source).toBe('bestiariusz/zwierzaki/niedźwiedź.md');
-    expect(typo?.evidence).toContain('swoja');
-    expect(typo?.relatedEntryIds).toContain('niedźwiedź');
+    expect(niespojnosci.some((item) => item.id === 'niedzwiedz_typo_swoja')).toBe(false);
 
     const format = niespojnosci.find((item) => item.id === 'niedzwiedz_miodek_leczenie_format');
 

@@ -229,7 +229,7 @@ describe('pancerze.json — audyt ekwipunek/pancerze.md', () => {
       },
       {
         id: 'zbroja_adamntytowa',
-        name: 'Zbroja adamntytowa',
+        name: 'Zbroja adamantytowa',
         source: ARMOR_SOURCE,
         status: 'detailed',
         category: 'Ciężkie',
@@ -257,7 +257,7 @@ describe('pancerze.json — audyt ekwipunek/pancerze.md', () => {
       },
       {
         id: 'tarcza_adamntytowa',
-        name: 'Tarcza adamntytowa',
+        name: 'Tarcza adamantytowa',
         source: ARMOR_SOURCE,
         status: 'detailed',
         category: 'Tarcza',
@@ -273,9 +273,9 @@ describe('pancerze.json — audyt ekwipunek/pancerze.md', () => {
     }
   });
 
-  it('zachowuje literówki nazw materiału ze źródła', () => {
-    expect(armor.find((a) => a.id === 'zbroja_adamntytowa')?.name).toBe('Zbroja adamntytowa');
-    expect(armor.find((a) => a.id === 'tarcza_adamntytowa')?.name).toBe('Tarcza adamntytowa');
+  it('używa poprawnej nazwy materiału ze źródła', () => {
+    expect(armor.find((a) => a.id === 'zbroja_adamntytowa')?.name).toBe('Zbroja adamantytowa');
+    expect(armor.find((a) => a.id === 'tarcza_adamntytowa')?.name).toBe('Tarcza adamantytowa');
   });
 
   it('rejestruje każdy wpis w indeksie wyszukiwania', () => {
@@ -381,28 +381,9 @@ describe('paski.json — audyt ekwipunek/paski.md', () => {
   });
 });
 
-describe('niespojnosci.json — literówka "adamntytowa" w ekwipunek/pancerze.md', () => {
-  it('zapisuje literówkę materiału w tabelach Ciężkie i Tarcza', () => {
-    const typo = inconsistencies.find((entry) => entry.id === 'pancerze_typo_adamntytowa');
-
-    expect(typo).toBeDefined();
-    expect(typo?.kind).toBe('typo');
-    expect(typo?.source).toBe(ARMOR_SOURCE);
-    expect(typo?.details).toContain('adamantyt');
-    expect(typo?.evidence).toContain('Zbroja adamntytowa');
-    expect(typo?.evidence).toContain('Tarcza adamntytowa');
-    expect(typo?.relatedSources).toContain(ARMOR_SOURCE);
-    expect(typo?.relatedEntryIds).toEqual(['zbroja_adamntytowa', 'tarcza_adamntytowa']);
-    expect(typo?.revision).toBe('0f3239726b687f085593266a088c843f63d032ce');
-  });
-
-  it('jest widoczna w indeksie wyszukiwania', () => {
-    const indexed = index.find(
-      (item) => item.type === 'inconsistency' && item.id === 'pancerze_typo_adamntytowa',
-    );
-
-    expect(indexed).toBeDefined();
-    expect(indexed?.name).toBe("Pancerze: literówka 'adamntytowa'");
-    expect(indexed?.source).toBe(ARMOR_SOURCE);
+describe('niespojnosci.json — literówka "adamntytowa"', () => {
+  it('nie jest już zgłaszana po korekcie źródła', () => {
+    expect(inconsistencies.some((entry) => entry.id === 'pancerze_typo_adamntytowa')).toBe(false);
+    expect(index.some((item) => item.id === 'pancerze_typo_adamntytowa')).toBe(false);
   });
 });

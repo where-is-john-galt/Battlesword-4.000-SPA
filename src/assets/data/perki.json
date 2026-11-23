@@ -6,7 +6,7 @@
     "status": "detailed",
     "requirements": "Siła Woli 11; Mądrość 3",
     "cost": "500 PD",
-    "description": "HP zawsze wynosi 0. Bramy Śmierci nie nakładają żadnych kar. Zapewani niewrażliwość na obrażenia od chaosu i świętości."
+    "description": "HP zawsze wynosi 0. Bramy Śmierci nie nakładają żadnych kar. Zapewnia niewrażliwość na obrażenia od chaosu i świętości."
   },
   {
     "id": "nienaturalna_więź",
@@ -42,7 +42,7 @@
     "status": "detailed",
     "requirements": "Inteligencja 9",
     "cost": "300 PD",
-    "description": "Brak Many. Umożliwia wzmacnianie zaklęć Punktami Życia. Zapewnia małe leczenie (25%+1d4) na początku kazdej tury."
+    "description": "Brak Many. Umożliwia wzmacnianie zaklęć Punktami Życia. Zapewnia małe leczenie (25%+1d4) na początku każdej tury."
   },
   {
     "id": "bastion",
@@ -60,7 +60,7 @@
     "status": "detailed",
     "requirements": "Siła 8",
     "cost": "100 PD",
-    "description": "Podwaja nakładane Krawienie. Przeciwnicy z nałożonym w ten sposób Krwawieniem otrzymują dodatkowe obrażenia eskalujące za każdym razem, gdy wykonają akcję ruchu."
+    "description": "Podwaja nakładane Krwawienie. Przeciwnicy z nałożonym w ten sposób Krwawieniem otrzymują dodatkowe obrażenia eskalujące za każdym razem, gdy wykonają akcję ruchu."
   },
   {
     "id": "taniec_ze_śmiercią",
@@ -159,7 +159,7 @@
     "status": "detailed",
     "requirements": "Siła Woli 10; Mądrość 3",
     "cost": "500 PD",
-    "description": "Stamina, która pozostaje na koniec tury jest konwertowana na Pancerz. Mana, która pozostaje na koniec tury jest konwertowana na Barierę. Trwa do poczatku kolejnej tury. Regeneracja Staminy i Many spada o połowę."
+    "description": "Stamina, która pozostaje na koniec tury jest konwertowana na Pancerz. Mana, która pozostaje na koniec tury jest konwertowana na Barierę. Trwa do początku kolejnej tury. Regeneracja Staminy i Many spada o połowę."
   },
   {
     "id": "nekromantyczny_talizman",
@@ -240,7 +240,7 @@
     "status": "detailed",
     "requirements": "Charyzma 10",
     "cost": "400 PD",
-    "description": "Zadawane obrażenia zwiększają sie o jedną kostkę za każdego sojusznika, który zaatakował ten sam cel w trakcie tej samej rundy. Zmniejsza Pancerz o 1."
+    "description": "Zadawane obrażenia zwiększają się o jedną kostkę za każdego sojusznika, który zaatakował ten sam cel w trakcie tej samej rundy. Zmniejsza Pancerz o 1."
   },
   {
     "id": "niezłomna_postawa",
@@ -285,6 +285,6 @@
     "status": "detailed",
     "requirements": "Mądrość 5",
     "cost": "500 PD",
-    "description": "Można skorzystać raz na postać. Przegrany test Odporności na Śmierć pozwala na powrót do życia i pełnych sił w kolejnej turze. Nie można korzystać z misktur życia."
+    "description": "Można skorzystać raz na postać. Przegrany test Odporności na Śmierć pozwala na powrót do życia i pełnych sił w kolejnej turze. Nie można korzystać z mikstur życia."
   }
 ]

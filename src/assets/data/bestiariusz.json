@@ -81,7 +81,7 @@
     "traits": [
       {
         "name": "Błotnisty łowca dżdżownic",
-        "description": "Ignoruje kary za ciężki teren w przypadku błotnistych sektorów. Jego prędkośc to 2 sektory na akcję."
+        "description": "Ignoruje kary za ciężki teren w przypadku błotnistych sektorów. Jego prędkość to 2 sektory na akcję."
       }
     ],
     "actions": [
@@ -104,7 +104,7 @@
     "traits": [
       {
         "name": "Silny jak koń",
-        "description": "Zdolny do przenoszenia wielkich ciężarów. Potrafi udźwignąć jeźdzca i dwóch pasażerów. Jego prędkość to 1 sektor na akcję."
+        "description": "Zdolny do przenoszenia wielkich ciężarów. Potrafi udźwignąć jeźdźca i dwóch pasażerów. Jego prędkość to 1 sektor na akcję."
       }
     ],
     "actions": [
@@ -149,7 +149,7 @@
     "traits": [
       {
         "name": "Miodek",
-        "description": "Jeśli HP spadnie poniżej 50%, Niedźwiedź automatycznie poświęca jedną swoja akcję, aby skonsumować podręczny słoiczek miodu i uzyskać małe leczenie (25%+1d4)."
+        "description": "Jeśli HP spadnie poniżej 50%, Niedźwiedź automatycznie poświęca jedną swoją akcję, aby skonsumować podręczny słoiczek miodu i uzyskać małe leczenie (25%+1d4)."
       }
     ],
     "actions": [

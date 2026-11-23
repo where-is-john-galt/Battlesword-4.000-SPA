@@ -209,7 +209,7 @@
   {
     "id": "trening",
     "name": "Trening",
-    "definition": "Postać poświęca czas na szlifowanie swoich umiejętności bojowych. Za każdą poświęconą na to akcję, należy wykonać test statystyki najbardziej powiązanej z wykonywaną profesją. Bazowa Stamina / Mana zwiększa się o ilość sukesców / 3, zaokrąglone w górę, do następnej przerwy.",
+    "definition": "Postać poświęca czas na szlifowanie swoich umiejętności bojowych. Za każdą poświęconą na to akcję, należy wykonać test statystyki najbardziej powiązanej z wykonywaną profesją. Bazowa Stamina / Mana zwiększa się o ilość sukcesów / 3, zaokrąglone w górę, do następnej przerwy.",
     "source": "mechaniki_bazowe/przerwy_miedzy_przygodami.md",
     "status": "detailed"
   },
@@ -290,7 +290,7 @@
     "source": "ekwipunek/broń.md",
     "status": "detailed",
     "aliases": [
-      "Wszechtronny"
+      "Wszechstronny"
     ],
     "autoLink": false
   },
@@ -305,7 +305,7 @@
   {
     "id": "cecha_parujacy",
     "name": "Parujący",
-    "definition": "Jeśli postać uzbrojona w taką broń obroni się przed atakiem wykonywanym w zwarciu, automatyczie zadaje atakującemu podstawowe obrażenia.",
+    "definition": "Jeśli postać uzbrojona w taką broń obroni się przed atakiem wykonywanym w zwarciu, automatycznie zadaje atakującemu podstawowe obrażenia.",
     "source": "ekwipunek/broń.md",
     "status": "detailed",
     "autoLink": false
@@ -321,7 +321,7 @@
   {
     "id": "cecha_ogluszajacy",
     "name": "Ogłuszający",
-    "definition": "Zwyczajni przeciwnicy trafieni tą bronią, zostają Oszołomieni na 1 turę. Oszołomienie elitarnych i mistrzowskich przeciwników jest również możliwe poprzez wmocnienie ataku kosztem odpowiednia 1 i 2 Staminy. Bossowie są odporni na Oszołomienie.",
+    "definition": "Zwyczajni przeciwnicy trafieni tą bronią, zostają Oszołomieni na 1 turę. Oszołomienie elitarnych i mistrzowskich przeciwników jest również możliwe poprzez wzmocnienie ataku kosztem odpowiednio 1 i 2 Staminy. Bossowie są odporni na Oszołomienie.",
     "source": "ekwipunek/broń.md",
     "status": "detailed",
     "autoLink": false
@@ -413,7 +413,7 @@
     "source": "ekwipunek/broń.md",
     "status": "detailed",
     "aliases": [
-      "Kawalerysjki"
+      "Kawaleryjski"
     ],
     "autoLink": false
   },
@@ -451,7 +451,7 @@
   {
     "id": "testy_wytworstwa",
     "name": "Testy wytwórstwa",
-    "definition": "Poziom trudności należy podzielić na ilość sukcesów niezbędnych do zebrania w danym teście, by ukończyć prace nad przedmiotem. Proporcje powinny zależeć od tego, które umiejętności mają najwyższy wkład w stworzenie danego przedmiotu. Umiejętności powiązane z wytwórstwem to:\nKowalstwo\nMajsterkowanie\nWynalaczość\nZnajdowanie\nSztuka\noraz jeśli wytwórstwo ma związek z badaniami magicznymi - Arkana\nW niektórych przypadkach mogą to być równiez inne umiejętności, jeśli ma to większy sens, np. Nawigacja przy tworzeniu magicznych kompasów lub map.",
+    "definition": "Poziom trudności należy podzielić na ilość sukcesów niezbędnych do zebrania w danym teście, by ukończyć prace nad przedmiotem. Proporcje powinny zależeć od tego, które umiejętności mają najwyższy wkład w stworzenie danego przedmiotu. Umiejętności powiązane z wytwórstwem to:\nKowalstwo\nMajsterkowanie\nWynalazczość\nZnajdowanie\nSztuka\noraz jeśli wytwórstwo ma związek z badaniami magicznymi - Arkana\nW niektórych przypadkach mogą to być również inne umiejętności, jeśli ma to większy sens, np. Nawigacja przy tworzeniu magicznych kompasów lub map.",
     "source": "mechaniki_bazowe/crafting.md",
     "status": "detailed"
   },
@@ -479,7 +479,7 @@
   {
     "id": "eksperymentalne_bonusy_potezne",
     "name": "Eksperymentalne bonusy (potężne+)",
-    "definition": "Jeżeli cecha nie została nabyta w wyniku spaczenia, maksymalna ilośc użyć na walkę jest równa Mądrości.\nRzut k100:\n1-3: Odporność na ogień\n4-6: Odporność na zimno\n7-9: Odporność na elektryczność\n10-12: Odporność na fizyczne\n13-15: Odporność na żrące\n16-18: Odporność na święte\n19-21: Odporność na chaotyczne\n22-24: Latanie\n25-27: Oddychanie pod wodą\n28-30: Pozwala na przerzut\n31-33: Akcja: Unieruchomienie wszystkich przeciwników w sektorze\n34-36: Akcja: Odepchnięcie wszystkich przeciwników do sąsiednich sektrorów\n37-39: Reakcja: Anulowanie ataku w krótkim zasięgu\n40-42: Reakcja: Odbicie otrzymanych obrażeń\n43-45: Akcja: Zyskanie niewrażliwości na 1 turę\n46-48: Zalanie sektora wodą\n49-51: Zamiana sektora w bagno\n52-54: Spaczenie sektora\n55-57: Zamrożenie sektora\n58-60: Podpalenie sektora\n61-63: Zagrzybienie sektora\n64-66: Uświęcenie sektora\n67-69: Elektryzacja sektora\n70-72: Teleportacja w długim zasięgu\n73-75: Zamiana miejsc z dowolnym sojusznikiem\n76-78: Zamiana miejsc z dowolnym przeciwnikiem\n79-81: Akcja: Utworzenie mirażu (3 kopie, każde trafienie w Bohatera jest losowane czy nie trafi w kopię, jeśli trafi to kopia jest niszczona)\n82-84: Pozwala na dokładne powtórzenie całej tury; trzeba zadeklarować przed wykonaniem pierwszej akcji\n85-87: Kradzież akcji\n88-90: Reakcja: Zmiana wyniku na kości k20 na 21-(oryginalny rzut)\n91-93: Akcja: Przywołanie dżina\n94-96: Akcja: Przywołanie demona\n97-99: Akcja: Przywołanie anioła\n100: Podwojenie zadanych obrażeń",
+    "definition": "Jeżeli cecha nie została nabyta w wyniku spaczenia, maksymalna ilość użyć na walkę jest równa Mądrości.\nRzut k100:\n1-3: Odporność na ogień\n4-6: Odporność na zimno\n7-9: Odporność na elektryczność\n10-12: Odporność na fizyczne\n13-15: Odporność na żrące\n16-18: Odporność na święte\n19-21: Odporność na chaotyczne\n22-24: Latanie\n25-27: Oddychanie pod wodą\n28-30: Pozwala na przerzut\n31-33: Akcja: Unieruchomienie wszystkich przeciwników w sektorze\n34-36: Akcja: Odepchnięcie wszystkich przeciwników do sąsiednich sektorów\n37-39: Reakcja: Anulowanie ataku w krótkim zasięgu\n40-42: Reakcja: Odbicie otrzymanych obrażeń\n43-45: Akcja: Zyskanie niewrażliwości na 1 turę\n46-48: Zalanie sektora wodą\n49-51: Zamiana sektora w bagno\n52-54: Spaczenie sektora\n55-57: Zamrożenie sektora\n58-60: Podpalenie sektora\n61-63: Zagrzybienie sektora\n64-66: Uświęcenie sektora\n67-69: Elektryzacja sektora\n70-72: Teleportacja w długim zasięgu\n73-75: Zamiana miejsc z dowolnym sojusznikiem\n76-78: Zamiana miejsc z dowolnym przeciwnikiem\n79-81: Akcja: Utworzenie mirażu (3 kopie, każde trafienie w Bohatera jest losowane czy nie trafi w kopię, jeśli trafi to kopia jest niszczona)\n82-84: Pozwala na dokładne powtórzenie całej tury; trzeba zadeklarować przed wykonaniem pierwszej akcji\n85-87: Kradzież akcji\n88-90: Reakcja: Zmiana wyniku na kości k20 na 21-(oryginalny rzut)\n91-93: Akcja: Przywołanie dżina\n94-96: Akcja: Przywołanie demona\n97-99: Akcja: Przywołanie anioła\n100: Podwojenie zadanych obrażeń",
     "source": "mechaniki_bazowe/crafting.md",
     "status": "detailed"
   },

@@ -36,7 +36,7 @@ describe('bron.json — słowniczek cech specjalnych z ekwipunek/broń.md', () =
       'Druzgocący',
       'Głośny',
       'Kanalizujący',
-      'Kawalerysjki',
+      'Kawaleryjski',
       'Krytyczny',
       'Krótki',
       'Magiczny',
@@ -48,7 +48,7 @@ describe('bron.json — słowniczek cech specjalnych z ekwipunek/broń.md', () =
       'Rąbiący',
       'Skrytobójczy',
       'Szybkostrzelny',
-      'Wszechtronny',
+      'Wszechstronny',
       'Wyprzedzający',
       'Wysysający',
     ]);
@@ -72,11 +72,11 @@ describe('bron.json — słowniczek cech specjalnych z ekwipunek/broń.md', () =
   });
 
   it('zachowuje literówki źródła w definicjach i aliasach', () => {
-    expect(findMechanic('Wszechtronny')?.name).toBe('Wszechstronny');
-    expect(findMechanic('Kawalerysjki')?.name).toBe('Kawaleryjski');
-    expect(findMechanic('Parujący')?.definition).toContain('automatyczie');
-    expect(findMechanic('Ogłuszający')?.definition).toContain('wmocnienie');
-    expect(findMechanic('Ogłuszający')?.definition).toContain('odpowiednia');
+    expect(findMechanic('Wszechstronny')?.name).toBe('Wszechstronny');
+    expect(findMechanic('Kawaleryjski')?.name).toBe('Kawaleryjski');
+    expect(findMechanic('Parujący')?.definition).toContain('automatycznie');
+    expect(findMechanic('Ogłuszający')?.definition).toContain('wzmocnienie');
+    expect(findMechanic('Ogłuszający')?.definition).toContain('odpowiednio');
   });
 
   it('rejestruje każde hasło słowniczka w indeksie wyszukiwania', () => {

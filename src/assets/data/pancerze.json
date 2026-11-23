@@ -20,8 +20,8 @@
   { "id": "zbroja_łuskowa", "name": "Zbroja łuskowa", "source": "ekwipunek/pancerze.md", "status": "detailed", "category": "Średnie", "requirements": "Siła 10", "requiredWealth": 40, "armor": 6 },
   { "id": "pancerz_półpłytowy", "name": "Pancerz półpłytowy", "source": "ekwipunek/pancerze.md", "status": "detailed", "category": "Ciężkie", "requirements": "Siła 14", "requiredWealth": 45, "armor": 7 },
   { "id": "zbroja_płytowa", "name": "Zbroja płytowa", "source": "ekwipunek/pancerze.md", "status": "detailed", "category": "Ciężkie", "requirements": "Siła 14", "requiredWealth": 50, "armor": 8 },
-  { "id": "zbroja_adamntytowa", "name": "Zbroja adamntytowa", "source": "ekwipunek/pancerze.md", "status": "detailed", "category": "Ciężkie", "requirements": "Siła 14", "requiredWealth": 55, "armor": 9 },
+  { "id": "zbroja_adamntytowa", "name": "Zbroja adamantytowa", "source": "ekwipunek/pancerze.md", "status": "detailed", "category": "Ciężkie", "requirements": "Siła 14", "requiredWealth": 55, "armor": 9 },
   { "id": "tarcza_drewniana", "name": "Tarcza drewniana", "source": "ekwipunek/pancerze.md", "status": "detailed", "category": "Tarcza", "requiredWealth": 15, "armor": 1 },
   { "id": "tarcza_metalowa", "name": "Tarcza metalowa", "source": "ekwipunek/pancerze.md", "status": "detailed", "category": "Tarcza", "requiredWealth": 30, "armor": 2 },
-  { "id": "tarcza_adamntytowa", "name": "Tarcza adamntytowa", "source": "ekwipunek/pancerze.md", "status": "detailed", "category": "Tarcza", "requiredWealth": 45, "armor": 3 }
+  { "id": "tarcza_adamntytowa", "name": "Tarcza adamantytowa", "source": "ekwipunek/pancerze.md", "status": "detailed", "category": "Tarcza", "requiredWealth": 45, "armor": 3 }
 ]
