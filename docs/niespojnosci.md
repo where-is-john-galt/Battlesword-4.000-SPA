@@ -6,6 +6,16 @@ Po poprawkach w źródle usunięto **180 rozwiązanych wpisów typu literówka**
 
 ## 1. Podsumowanie
 
+### Historia liczby wpisów
+
+| Etap | Wpisy |
+| --- | ---: |
+| Pierwotny audyt | 553 |
+| Po deduplikacji | 378 |
+| Po synchronizacji poprawek literówek (2026-11-24) | **198** |
+
+Łącznie wyeliminowano **355 wpisów**: 175 duplikatów i 180 rozwiązanych literówek.
+
 | Kategoria | Wpisy |
 | --- | ---: |
 | Literówki i zapisy | 31 |
